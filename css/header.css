@@ -1,0 +1,151 @@
+h1 {
+    margin: 0;
+}
+
+.p{
+    font-weight: bold;
+}
+
+header {
+    z-index: 20000;
+    width: 100%;
+    height: 80px;
+    color: white;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font: tahoma, sans-serif;
+    justify-content: center;
+}
+
+
+
+
+
+.header_logo2 {
+    margin-left: 28px;
+}
+
+.riot_logo > a > img {
+    width: 85px;
+}
+
+.header > .center-section > .info > .dropdown > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+.header > .center-section > .media > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+.header > .center-section > .news > .dropdown > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+.header > .center-section > .scoreboard > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+.header > .center-section > .service > .dropdown > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+.header > .center-section > .event > .dropdown > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+.header > .center-section > .socialmedia > .dropdown > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+.header > .center-section > .esports > .arrow > a > p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.nav-a{
+    color: white;
+}
+
+.nav-right-a{
+    color: white;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 36px;
+}
+
+.center-section {
+    margin-left: 18px;
+    display: inline-block;
+    width: 100%;
+}
+
+.center-section > div {
+    display: inline-block;
+}
+
+.center-section > div > a {
+    text-decoration: none;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 32px;
+}
+
+.playnow_btn {
+    width: 100px;
+    /* background: (135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%) */
+}
+
+
+.search{
+    background-color: aqua;
+}
+
+.first_section{
+    display: flex;
+    height: 32rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_section > .valorant-info{
+    justify-content: center;
+    align-items: center;
+}
+
+.first_section > video {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+.first_section > div > p {
+    color: white;
+    font-family: arial,georgia,sans-serif;
+}
+
+.valorant-info {
+    text-align: center;
+    padding-left: 88px;
+    padding-right: 88px;
+}
+
+.valorant-info > p{
+    margin: 0 0 35px;
+}
+
+.valorant-info > button{
+    margin: 4.25rem 0 6rem;
+}
+.second_section{
+    background-color: blueviolet;
+}

@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     border-top: 3px solid #00cd3c;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .util_menu {
@@ -12,16 +13,24 @@
     padding: 0 20px;
 }
 
-.util_menu a {
-    margin-right: 20px;
+.util_menu section {
+    padding-top: 7px;
+}
+
+.util_menu section a {
+
 }
 
 .util_menu span {
-    color: #888888;
+    color: #999999;
     font-size: 14px;
     font-weight: bold;
 }
 
 .util_menu span:hover {
     color: #1a1a1a;
+}
+
+.top_right a {
+    margin-right: 20px;
 }

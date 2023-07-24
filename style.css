@@ -1,0 +1,75 @@
+
+ol, ul{
+  list-style: none;
+}
+body{
+  margin: 0;
+}
+
+/* 네비게이션 바 */
+
+.header{
+  width:100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 60px;
+  position: fixed;
+  top:0;
+  left: 0;
+  align-items: center;
+  z-index: 100;
+  padding: 0 100px;
+  background-color: white;
+}
+
+.header_tosslogo{
+  height: 60px;
+}
+
+.navbar_menu{
+  display:flex;
+  margin-right: 100px;
+}
+
+.navbar_menu .navbar_item{
+  padding-left: 15px;
+  white-space: nowrap;
+}
+
+.navbar_lan{
+  display: flex;
+  margin-left: 30px;
+}
+.navbar_lan li{
+  padding: 0 15px;
+  white-space: nowrap;
+}
+
+
+/* Intro Section */
+
+.intro_wrap{
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+}
+
+.intro_wallpaper{
+  height: 100%;
+  background: url('./static/asset/newtossim/new_main.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.intro_container{
+  position: relative;
+  top: 150px;
+}
+
+.intro_textwrap{
+  text-align: center;
+}
+
+/*  */

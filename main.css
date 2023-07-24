@@ -14,7 +14,6 @@ html {
 
 body {
   font-size: 18px;
-  padding: 0 40px;
 }
 
 /* HOME SECTION */
@@ -22,6 +21,7 @@ body {
   width: 100%;
   height: 100dvh;
   border-bottom: 1px solid #505050;
+  padding: 0 40px;
 }
 
 .header {
@@ -102,6 +102,7 @@ body {
   font-size: inherit;
 }
 
+/* 1024px colums */
 .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -111,6 +112,18 @@ body {
   margin-bottom: 40px;
 }
 
+.header-bottom-btn {
+  display: flex;
+  column-gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-bottom-btn {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
 .header-bottom-btn button {
   border: none;
   background-color: #212121;
@@ -118,12 +131,14 @@ body {
   padding: 15px 30px;
   font-size: 1.125rem;
   border-radius: 30px;
+  white-space: nowrap;
 }
 
 /* INTRODUCE SECTION */
 .introduce {
   margin-top: 4rem;
   margin-bottom: 8rem;
+  padding-right: 8rem;
 }
 
 .introduce .container {
@@ -156,4 +171,73 @@ body {
 .keyword .detail {
   color: #b5b5b5;
   font-weight: 400;
+}
+
+/* SERVICE SECTION */
+.service {
+  margin-bottom: 8rem;
+}
+
+.service__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service__container .card {
+  position: relative;
+  height: 56vw;
+  padding: 3rem;
+  color: white;
+}
+
+.all-solutions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #151623;
+}
+
+.all-solutions > p:first-child {
+  font-size: 3.5vw;
+}
+
+.all-solutions button {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 15px 25px;
+  font-size: 1.2vw;
+  margin-top: 40px;
+}
+
+.on-demand {
+  display: flex;
+  align-items: end;
+  font-size: 2.5vw;
+}
+
+.on-demand::before {
+  position: absolute;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.shared-flights {
+  display: flex;
+  align-items: end;
+  font-size: 2.5vw;
+  background-color: #bc7154;
+}
+
+.shared-flights svg {
+  position: absolute;
+  top: 30px;
+  right: 0;
 }

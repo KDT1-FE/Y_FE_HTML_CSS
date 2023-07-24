@@ -55,3 +55,152 @@ HTML, CSS 등에 대한 W3C규격 준수
 ### Lighthouse를 활용한 점검 및 피드백 반영
 
 ### 검색엔진 최적화
+
+---
+
+sprite image bgc-position
+
+#image_0 {
+background-image: url("/");
+background-position: 0px -0px;
+width: 3840px;
+height: 600px;
+}
+#image_1 {
+background-image: url("/");
+background-position: 3840px -0px;
+width: 1921px;
+height: 801px;
+}
+#image_2 {
+background-image: url("/");
+background-position: 5761px -0px;
+width: 1920px;
+height: 800px;
+}
+#image_3 {
+background-image: url("/");
+background-position: 7681px -0px;
+width: 1920px;
+height: 800px;
+}
+#image_4 {
+background-image: url("/");
+background-position: 9601px -0px;
+width: 1920px;
+height: 730px;
+}
+#image_5 {
+background-image: url("/");
+background-position: 11521px -0px;
+width: 1920px;
+height: 600px;
+}
+#image_6 {
+background-image: url("/");
+background-position: 13441px -0px;
+width: 1171px;
+height: 501px;
+}
+#image_7 {
+background-image: url("/");
+background-position: 14612px -0px;
+width: 1171px;
+height: 501px;
+}
+#image_8 {
+background-image: url("/");
+background-position: 15783px -0px;
+width: 1171px;
+height: 501px;
+}
+#image_9 {
+background-image: url("/");
+background-position: 16954px -0px;
+width: 1171px;
+height: 501px;
+}
+#image_10 {
+background-image: url("/");
+background-position: 18125px -0px;
+width: 1171px;
+height: 501px;
+}
+#image_11 {
+background-image: url("/");
+background-position: 19296px -0px;
+width: 1171px;
+height: 501px;
+}
+#image_12 {
+background-image: url("/");
+background-position: 20467px -0px;
+width: 1170px;
+height: 500px;
+}
+#image_13 {
+background-image: url("/");
+background-position: 21637px -0px;
+width: 210px;
+height: 110px;
+}
+#image_14 {
+background-image: url("/");
+background-position: 21847px -0px;
+width: 172px;
+height: 106px;
+}
+#image_15 {
+background-image: url("/");
+background-position: 22019px -0px;
+width: 258px;
+height: 46px;
+}
+#image_16 {
+background-image: url("/");
+background-position: 22277px -0px;
+width: 54px;
+height: 51px;
+}
+#image_17 {
+background-image: url("/");
+background-position: 22331px -0px;
+width: 51px;
+height: 51px;
+}
+#image_18 {
+background-image: url("/");
+background-position: 22382px -0px;
+width: 51px;
+height: 51px;
+}
+#image_19 {
+background-image: url("/");
+background-position: 22433px -0px;
+width: 51px;
+height: 51px;
+}
+#image_20 {
+background-image: url("/");
+background-position: 22484px -0px;
+width: 51px;
+height: 51px;
+}
+#image_21 {
+background-image: url("/");
+background-position: 22535px -0px;
+width: 51px;
+height: 51px;
+}
+#image_22 {
+background-image: url("/");
+background-position: 22586px -0px;
+width: 51px;
+height: 51px;
+}
+#image_23 {
+background-image: url("/");
+background-position: 22637px -0px;
+width: 42px;
+height: 42px;
+}

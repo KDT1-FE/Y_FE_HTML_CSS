@@ -1,36 +1,43 @@
 .header {
     width: 100%;
+    min-width: 1048px;
+    height: 200px;
     border-top: 3px solid #00cd3c;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #c9c9c9;
 }
 
-/* uil menu */
+.header_line {
+    width: 100%;
+    display: block;
+    border: 1px solid #c9c9c9;
+}
+
+/* header_menu */
+
+.header_menu {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header_menu span {
+    color: #999999;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.header_menu span:hover {
+    color: #1a1a1a;
+}
 
 .util_menu {
     width: 1000px;
     height: 35px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.util_menu section {
-    padding-top: 7px;
-}
-
-.util_menu section a {
-
-}
-
-.util_menu span {
-    color: #999999;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.util_menu span:hover {
-    color: #1a1a1a;
+    flex-wrap: wrap;
+    align-content: center;
+    border-bottom: 1px solid #c9c9c9;
 }
 
 .top_right {
@@ -47,12 +54,69 @@
 
 .top_right a:first-child img {
     width: 25px;
-    height: 23px;
+    height: 25px;
     margin-right: 4px;
 }
 
 .top_right a:first-child span {
-    height: 16.5px;
-    margin-top: 2px;
+    height: 17px;
+    margin-top: 3.5px;
 }
 
+/* end header_menu */
+
+/* searchbar */
+
+.util_menu2 {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.main_logo img {
+    width: 140px;
+}
+
+.searchbar {
+    width: 340px; 
+    height: 40px;
+    margin-left: 15px;
+}
+
+.searchbar_field {
+    width: 340px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 2px solid #00cd3c;
+    border-radius: 20px;
+}
+
+.searchbar legend{
+    display: none;
+}
+
+.searchbar input {
+    width: 270px;
+    height: 25px;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+}
+
+.searchbar_button {
+    border: none;
+    background: none;
+    margin-right: 10px;
+}
+
+.searchbar_button img {
+    width: 25px;
+}
+
+.searchbar_button img:hover {
+    background-image: url(/assets/icons/searchbutton_hover.png);
+}

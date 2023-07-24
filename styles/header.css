@@ -70,6 +70,11 @@
 .util_menu2 {
     height: 100px;
     display: flex;
+    margin-top: 5px;
+}
+
+.main_logo {
+    display: flex;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -80,8 +85,11 @@
 
 .searchbar {
     width: 340px; 
-    height: 40px;
+    height: 100px;
     margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .searchbar_field {
@@ -117,6 +125,34 @@
     width: 25px;
 }
 
-.searchbar_button img:hover {
-    background-image: url(/assets/icons/searchbutton_hover.png);
+/* realtime_keyword */
+
+.realtime_keyword {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 15px;
+}
+
+.realtime_keyword span {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #00cd3c;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #00cd3c;
+    font-size: 12px;
+}
+
+.keyword_overlay {
+    width: 150px;
+    border: none;
+    margin-left: 7px;
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 8px;
 }

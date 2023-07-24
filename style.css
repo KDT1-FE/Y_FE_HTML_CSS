@@ -84,3 +84,78 @@ body{
   background-color: white;
   text-align: center;
 }
+
+
+/* home section */
+
+.home_wrap{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+}
+.home_container{
+  width: 100%;
+  height: 100%;
+  padding: 250px 0 165px 0;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.home_container_inner{
+  height: 100%;
+  width:92%;
+  margin: 0 auto;
+  max-width: calc(100% - 48px);
+}
+
+.home_wrap img{
+  position:absolute;
+}
+
+.home_wrap img:first-of-type{
+  right: 0;
+}
+
+.home_wrap img:last-of-type{
+  left: 0;
+
+}
+
+.iphone_wrap{
+  position:absolute;
+  width: 600px;
+  height: 936px;
+
+}
+
+.iphone_wrap:first-of-type{
+  top: 0;
+  right: -104px;
+}
+
+.iphone_wrap:last-of-type{
+  bottom:0;
+  left:-104px; 
+}
+
+.iphone_wrap img:first-of-type{
+  position:absolute;
+  top: 10%;
+  left: 22.5%;
+  width: 57%;
+  height: auto;
+}
+.iphone_wrap img:last-of-type{
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.home_text2{
+  position:absolute;
+  bottom: 166px;
+  right: 0;
+}

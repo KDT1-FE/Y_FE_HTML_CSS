@@ -1,0 +1,23 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: Seol-Sans, sans-serif;
+  margin: 0;
+  background-color: #040714;
+  color: white;
+  letter-spacing: 0.2px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

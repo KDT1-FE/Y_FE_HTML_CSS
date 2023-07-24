@@ -1,3 +1,52 @@
 .header {
+  width: 100%;
+  position: sticky;
+}
+
+.navigation {
   height: 70px;
+  padding: 0 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.disney-icon {
+  width: 80px;
+  padding: 0 14px;
+  margin: 5px;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up {
+  padding: 8px 14px;
+  height: 34px;
+  background-color: #0063e5;
+}
+
+.sign-up:hover {
+  background-color: #1972e7;
+}
+
+.sign-in {
+  padding: 8px 16px;
+  height: 32px;
+  border: 1px solid #f9f9f9;
+}
+
+.sign-in:hover {
+  background-color: #f9f9f9;
+  color: #040714;
 }

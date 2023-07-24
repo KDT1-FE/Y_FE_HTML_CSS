@@ -1,0 +1,142 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-size: 18px;
+  padding: 0 40px;
+}
+
+/* HOME SECTION */
+.home {
+  width: 100%;
+  height: 100dvh;
+  border-bottom: 1px solid #505050;
+}
+
+.header {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+}
+
+.canvas img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.logo-desktop {
+  padding: 40px 0 0 40px;
+  max-width: 1000px;
+}
+
+.logo-desktop svg {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+.nav-list .top {
+  display: flex;
+}
+
+.nav-list .bottom {
+  padding: 15px;
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.nav-item {
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.nav-btn {
+  display: flex;
+}
+
+.nav-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #212121;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: inherit;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 80px;
+  margin-bottom: 40px;
+}
+
+.header-bottom-btn button {
+  border: none;
+  background-color: #212121;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.125rem;
+  border-radius: 30px;
+}
+
+/* INTRODUCE SECTION */
+.introduce {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.introduce .container {
+  padding-left: 40%;
+}
+
+.description {
+  font-size: 4vw;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 4rem;
+}
+
+.keywords {
+  display: flex;
+}

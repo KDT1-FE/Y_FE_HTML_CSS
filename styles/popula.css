@@ -1,0 +1,28 @@
+.popula-contents {
+  padding: 5.6vw;
+}
+
+.popula-title {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: #f9f9f9;
+}
+
+.popula-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.popula-box li {
+  width: calc(33.3% - 16px);
+}
+
+.popula-box img {
+  width: 100%;
+  border-radius: 4px;
+}

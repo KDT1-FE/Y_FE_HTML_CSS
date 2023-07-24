@@ -21,3 +21,16 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+.center {
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.middle {
+  justify-content: center;
+}

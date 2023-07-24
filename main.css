@@ -139,4 +139,21 @@ body {
 
 .keywords {
   display: flex;
+  margin-bottom: 4rem;
+  column-gap: 4rem;
+}
+
+.keyword {
+  border-top: 1px solid #505050;
+  padding-top: 2rem;
+}
+
+.keyword .title {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.keyword .detail {
+  color: #b5b5b5;
+  font-weight: 400;
 }

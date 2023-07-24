@@ -25,7 +25,7 @@
           padding: 15px;
         }
       }
-      .menu__item--before::before {
+      .menu__item::before {
         margin: auto 10px;
         display: block;
         width: 1px;
@@ -34,7 +34,16 @@
         background-color: #e1e2e3;
         padding: 0;
       }
-      .menu__item--login {
+      .menu__item--button {
+        font-size: 14px;
+        color: #666;
+        line-height: 30px;
+        height: 30px;
+        border: 1px solid #e1e2e3;
+        border-radius: 15px;
+        padding: 0 10px;
+      }
+      .menu__item {
         padding: 0 0 0 15px;
       }
     }

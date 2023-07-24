@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 
-a {
+p, a {
+    margin: 0;
     text-decoration: none;
 }

@@ -4,6 +4,8 @@
     border-bottom: 1px solid #e4e4e4;
 }
 
+/* uil menu */
+
 .util_menu {
     width: 1000px;
     height: 35px;
@@ -31,6 +33,26 @@
     color: #1a1a1a;
 }
 
+.top_right {
+    display: flex;
+}
+
 .top_right a {
     margin-right: 20px;
 }
+
+.top_right a:first-child {
+    display: flex;
+}
+
+.top_right a:first-child img {
+    width: 25px;
+    height: 23px;
+    margin-right: 4px;
+}
+
+.top_right a:first-child span {
+    height: 16.5px;
+    margin-top: 2px;
+}
+

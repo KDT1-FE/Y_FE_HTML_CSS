@@ -1,0 +1,198 @@
+.main-visual {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  .main-visual--swiper {
+    height: 100%;
+    .swiper-slide {
+      /* 동영상 배경 스타일 */
+      .video-bg {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: calc(50% - 88.88885vh);
+          width: 177.7777vh;
+          height: 100%;
+        }
+      }
+
+      /* 각 슬라이드 내부 배경 스타일 */
+      .slide-bg {
+        height: 100%;
+        width: 100%;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &.slide01 {
+          background-image: url(../../static/images/main-visual-01.jpg);
+        }
+        &.slide02 {
+          background-image: url(../../static/images/main-visual-02.jpg);
+        }
+        &.slide03 {
+          background-image: url(../../static/images/main-visual-03.jpg);
+        }
+        &.slide04 {
+          background-image: url(../../static/images/main-visual-04.jpg);
+        }
+        &.slide05 {
+          background-image: url(../../static/images/main-visual-05.jpg);
+        }
+        &.slide06 {
+          background-image: url(../../static/images/main-visual-06.jpg);
+        }
+        &.slide07 {
+          background-image: url(../../static/images/main-visual-07.jpg);
+        }
+        &.slide08 {
+          background-image: url(../../static/images/main-visual-08.jpg);
+        }
+        &.slide09 {
+          background-image: url(../../static/images/main-visual-09.jpg);
+        }
+        &.slide10 {
+          background-image: url(../../static/images/main-visual-10.jpg);
+        }
+        &.slide11 {
+          background-image: url(../../static/images/main-visual-11.jpg);
+        }
+        &.slide12 {
+          background-image: url(../../static/images/main-visual-12.jpg);
+        }
+        &.slide13 {
+          background-image: url(../../static/images/main-visual-13.jpg);
+        }
+        &.slide14 {
+          background-image: url(../../static/images/main-visual-14.jpg);
+        }
+        &.slide15 {
+          background-image: url(../../static/images/main-visual-15.jpg);
+        }
+        &.slide16 {
+          background-image: url(../../static/images/main-visual-16.jpg);
+        }
+        &.slide17 {
+          background-image: url(../../static/images/main-visual-17.jpg);
+        }
+      }
+    }
+
+    /* swiper-controls - prev, next 버튼 스타일 */
+    .swiper-controls {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      :is(.swiper-controls__prev-btn, .swiper-controls__next-btn) {
+        border-top: 1px solid rgba(255, 255, 255, 0.35);
+        position: absolute;
+        width: 200px;
+        top: 0;
+        padding-top: 17px;
+        font-family: $venti;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        box-sizing: border-box;
+        &:hover::before {
+          transform: scaleX(1);
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          top: -1px;
+          height: 2px;
+          background-color: #fff;
+          transform: scaleX(0.4);
+          transition: transform 0.6s;
+        }
+      }
+      .swiper-controls__prev-btn {
+        left: 0;
+        text-align: right;
+        padding-right: 25px;
+        &::before {
+          right: 0;
+          transform-origin: right;
+        }
+      }
+
+      .swiper-controls__next-btn {
+        right: 0;
+        padding-left: 25px;
+        &::before {
+          left: 0;
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}
+.main-visual__fixed {
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+  left: 0;
+  z-index: 1;
+  h2 {
+    letter-spacing: 0.28em;
+    color: #fff;
+  }
+  h3 {
+    color: #fff;
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+  .watch-link {
+    font-size: 20px;
+    color: white;
+    font-family: $venti;
+    font-weight: 300;
+    padding: 15px;
+    display: block;
+    &:hover {
+      .circle::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+    .circle {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 10px;
+      top: -3px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform-origin: center center;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.6s;
+      }
+    }
+  }
+
+  .sns-list {
+    display: flex;
+    li + li {
+      margin-left: 20px;
+    }
+  }
+}

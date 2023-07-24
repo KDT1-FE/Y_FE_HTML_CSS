@@ -1,1 +1,0 @@
-{"mappings":"AAEA","sources":["src/styles/main.scss","src/styles/_config.scss"],"sourcesContent":["@import 'config';\r\n\r\nh1 {\r\n  color: $color-primary;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}",null],"names":[],"version":3,"file":"index.971c2ea4.css.map","sourceRoot":"/__parcel_source_root/"}

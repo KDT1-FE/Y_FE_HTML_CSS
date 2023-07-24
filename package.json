@@ -2,10 +2,11 @@
   "name": "y_fe_html_css",
   "version": "1.0.0",
   "description": "[참고 내용]",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",

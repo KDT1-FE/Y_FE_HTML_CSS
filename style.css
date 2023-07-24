@@ -62,6 +62,11 @@ body{
 
 .header_tosslogo{
   height: 60px;
+  color: black;
+}
+
+.header > a{
+  margin-left: 100px;
 }
 
 .navbar_menu{
@@ -70,18 +75,29 @@ body{
 }
 
 .navbar_menu .navbar_item{
-  padding-left: 15px;
+  padding-left: 35px;
   white-space: nowrap;
 }
 
 .navbar_lan{
   display: flex;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 .navbar_lan li{
   padding: 0 15px;
   white-space: nowrap;
 }
+
+.navbar_lan li:last-of-type{
+  margin-right: 200px;
+}
+
+.navbar_menu a, .navbar_lan li {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(78, 89, 104)
+}
+
 
 /* main Start*/
 /* Intro Section */
@@ -445,3 +461,4 @@ body{
 }
 
 /* home4 section */
+

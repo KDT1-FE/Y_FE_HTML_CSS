@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오버워치 2</title>
+
+  <!-- favicon.ico 루트 경로에 놓으면 자동으로 사진 연결해줌 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- reset.css -->
+  <link href="
+  https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+  <!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- js -->
+  <script defer src="youtube.js"></script>
+  <script defer src="main.js"></script>
+
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+
+      <!-- 로고 -->
+      <div class="front">
+        <a href="/" class="logo">
+          <img src="./images/블리자드로고.png" alt="블리자드로고">
+        </a>
+      </div>
+      
+      <!-- 드롭다운 -->
+      <div class="middle">
+        <div class="middle__logo">
+          <img src="./images/오버워치로고.png" alt="오버워치로고">
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">게임 정보</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>개요</li>
+            <li>자료실</li>
+            <li>패치노트</li>
+          </ul>
+        </div>
+
+        <div class="hero">
+          <div>영웅</div>
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">시즌</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>5시즌</li>
+            <li>6시즌</li>
+          </ul>
+        </div>
+
+        <div class="new">
+          <div>새 소식</div>
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">커뮤니티</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>토론장</li>
+            <li>프로필</li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected shop">샵</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>스토어</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="end">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="account">
+          <a href="https://account.battle.net/login/ko/?ref=https://oauth.battle.net/oauth/authorize?response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Foverwatch.blizzard.com%252Fauth%252Fbnet%252Fcallback%26scope%3Daccount.full%26client_id%3Dcc72d2c0468146f8ae723e4aa7f935a4&app=oauth" target="_blank">
+            <div><i class="fa-solid fa-user"></i></div>
+            <div class="log-in">
+              계정
+            </div>
+          </a>
+        </div>
+        <div class="play-now btn">
+          지금 플레이하기
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </header>
+
+
+  <!-- 배경 영상 + 글씨와 링크들 -->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+
+    <div class="inner">
+
+      <div class="title">
+        <div class="title__logo">
+          <img src="./images/Overwatch2_Logo.png" alt="">
+        </div >
+        <div class="title__text">
+          8월 11일,<br>오버워치 2: 침공이 시작됩니다
+        </div>
+        <div>
+          <a href="https://overwatch.blizzard.com/ko-kr/news/23964186/" target="_blank">
+            <button class="btn">자세히 보기</button>
+          </a>
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="link-logo">
+      <div class="battelnet">
+        <a href="https://kr.shop.battle.net/ko-kr/product/overwatch?blzcmp=ow_gamesite&_gl=1*9fbd3v*_ga*MTI5MjcxNzcxNS4xNjg3NDAwNjE2*_ga_VYKNV7C0S3*MTY4OTk0NTYzNC41LjEuMTY4OTk0NzM3Mi4zNC4wLjA." target="_blank">
+          <img src="./images/배틀넷.png" alt="배틀넷" />
+        </a>
+      </div>
+      <div class="xbox">
+        <a href="https://www.xbox.com/ko-KR/games/store/overwatch-origins-edition/C1C4DZJPBC2V/0001" target="_blank">
+          <img src="./images/엑스박스.png" alt="엑스박스">
+        </a>
+      </div>
+      <div class="playstation">
+        <a href="https://store.playstation.com/ko-kr/product/UP0002-PPSA07805_00-OWORIGINS0000000/" target="_blank">
+          <img src="./images/플스.png" alt="플스">
+        </a>
+      </div>
+      <div class="nintendo">
+        <a href="https://www.nintendo.com/store/products/overwatch-2-switch/" target="_blank">
+          <img src="./images/닌텐도.png" alt="닌텐도">
+        </a>
+      </div>
+      <div class="steam">
+        <a href="javascript:void(0)">
+          <img src="./images/스팀.png" alt="스팀">
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+  
+  <!-- 새로운 모험 + 유튜브 영상 플레이 -->
+  <section class="youtube-player">
+    <div class="box">
+      <div class="box-text">
+        <div class="box-text__title">
+          새로운 모험이 <br>기다립니다
+        </div>
+        <div class="box-text__description">
+          8월 11일, 오버워치 2의 새로운 장이 열립니다. 흥미진진한 오버워치 2 경험과 새로운 모험, 사상 최대 규모의 콘텐츠와 새로운 플레이 방식에 빠져들어 보세요.
+        </div>
+      </div>
+
+      <div class="box-link">
+        <div id="player2"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 둠피 루피스킨 -->
+  <section class="doom-scroll">
+    <div class="inner">
+
+      <div class="doom-photo">
+        <img src="./images/루피둠피.png" alt="루피둠피">
+      </div>
+
+      <div class="text-group">
+        
+        <div class="text-title">
+          신규 모드 및 보상과<br> 함께 뜨거운 태양<br> 아래에서 즐기세요!
+        </div>
+        <div class="text-description">
+          하계 스포츠 대회 시즌 이벤트에서 뜨거운 태양 아래 즐거움을 만끽하세요! 로그인하여 최신 모드, 윈스턴의 비치 발리볼 또는 이번에 돌아온 루시우볼 모드를 플레이하세요. 둠피스트 특급 스킨을 비롯한 신규 꾸미기 보상과<br> 함께 큰 승리를 거두세요.
+        </div>
+
+        <div class="btn-group">
+          <div>
+            <a href="https://kr.shop.battle.net/ko-kr/product/overwatch-battle-pass?blzcmp=ow_gamesite" class="btn" target="_blank">배틀 패스 구매</a>
+          </div>
+          <div class="btn--white">
+            <a href="https://overwatch.blizzard.com/ko-kr/season/" class="btn" target="_blank">자세히 보기</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+</body>
+</html>

@@ -63,7 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px 80px;
+  padding: 40px 3rem;
 }
 
 .nav-list .top {
@@ -108,7 +108,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 40px;
-  padding-right: 80px;
+  padding-right: 3rem;
   margin-bottom: 40px;
 }
 
@@ -138,7 +138,7 @@ body {
 .introduce {
   margin-top: 4rem;
   margin-bottom: 8rem;
-  padding-right: 8rem;
+  padding-right: 6rem;
 }
 
 .introduce .container {
@@ -175,7 +175,7 @@ body {
 
 /* SERVICE SECTION */
 .service {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .service__container {
@@ -240,4 +240,87 @@ body {
   position: absolute;
   top: 30px;
   right: 0;
+}
+
+/* DESTINATION SECTION */
+/* 1024px */
+.destination {
+  padding: 0 6rem;
+  margin-bottom: 6rem;
+}
+
+.destination__title {
+  font-size: 3.5vw;
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin-bottom: 3rem;
+}
+
+.block-slider-list {
+  position: relative;
+  display: flex;
+}
+
+.block-slider-images {
+  display: block;
+  width: 50%;
+  height: 32vw;
+  overflow: hidden;
+  border-bottom-right-radius: 5vw;
+}
+
+.block-slider-slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.block-slider-slider img {
+  width: 100%;
+}
+
+.block-slider-items {
+  position: relative;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.block-slider-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid #d6d6d6;
+  padding: 15px 0;
+  margin-left: 20px;
+  font-size: 2vw;
+  letter-spacing: -0.5px;
+}
+
+.block-slider-item:nth-child(n + 3) {
+  border-top: none;
+}
+
+.block-slider-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  border-bottom: 1px solid #d5d3d4;
+  border-right: 1px solid #d5d3d4;
+  border-bottom-right-radius: 25px;
+}
+
+.block-slider-item span {
+  font-weight: 300;
+}
+
+.block-slider-item > span {
+  font-size: 1.2vw;
+  letter-spacing: 0px;
 }

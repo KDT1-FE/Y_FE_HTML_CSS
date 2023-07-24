@@ -234,3 +234,51 @@
 }
 
 /* section */
+.SectionContainer {
+  height: 679.6px;
+  max-width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.SectionContainerImg {
+  height: 643.6px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.SectionSubContainer {
+  position: absolute;
+  bottom: 0;
+  height: 220px;
+  padding: 0 45px;
+}
+
+.SectionTitle {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+
+.SectionDescription {
+  color: white;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.SectionLook {
+  width: 149.81px;
+  height: 56px;
+  cursor: pointer;
+  margin: 0px 4px 28px 0px;
+  padding: 16px 32px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.SectionLook:hover{
+  background-color: gray;
+}

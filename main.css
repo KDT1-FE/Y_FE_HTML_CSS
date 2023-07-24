@@ -324,3 +324,40 @@ body {
   font-size: 1.2vw;
   letter-spacing: 0px;
 }
+
+/* MANAGER SECTIOn */
+.manager {
+  margin-bottom: 6rem;
+}
+
+.manager__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 56vw;
+}
+
+.manager__container .image {
+  background-color: #000000;
+  position: relative;
+}
+
+.manager__container .description {
+  padding: 3.125vw;
+  background-color: #151623;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.manager__container .description h2 {
+  font-weight: 600;
+}
+
+.manager__container .description p {
+  font-size: 1.2vw;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.2;
+}

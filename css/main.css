@@ -1,0 +1,240 @@
+/* header */
+.HeadContainer {
+  position: relative;
+  width: 100%;
+  height: 72px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.Inner {
+  display: flex;
+  height: 72px;
+  padding: 0 70px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.HeadLogo {
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 16px;
+  width: 33%;
+}
+
+.HeadLogoImg {
+  height: 40px;
+  width: 69px;
+  margin: 0 auto;
+}
+
+.HeadMenu {
+  display: block;
+  position: relative;
+  order: -1;
+  width: 33%;
+}
+
+.HeadMenuBtn {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  border: 0 none;
+  margin: 24px 0;
+  text-align: left;
+}
+
+.HeadLines {
+  height: 18px;
+  position: relative;
+  width: 18px;
+  margin: 3px 12px 3px 3px;
+}
+
+.HeadLine1 {
+  top: 6px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  height: 1px;
+  position: absolute;
+  /* animation: 420ms ease 0s 1 normal forwards running disappear; */
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+100% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+}
+
+@keyframes disappearback {
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+50% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+0% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+}
+
+.HeadLine2 {
+  height: 1px;
+  top: 9px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  position: absolute;
+  /* animation: 240ms ease 180ms 1 normal forwards running leftX; */
+}
+
+@keyframes leftX {
+0% {
+    transform: rotate(0deg);
+}
+
+100% {
+    transform: rotate(45deg);
+}
+}
+
+@keyframes leftbackX {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.HeadLine3 {
+  height: 1px;
+  top: 9px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  position: absolute;
+  /* animation: 240ms ease 180ms 1 normal forwards running rightX; */
+}
+
+@keyframes rightX {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(-45deg);
+}
+
+}
+
+@keyframes rightbackX {
+  100% {
+      transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+      transform: rotate(-45deg);
+  }
+  
+  }
+
+
+.HeadLine4 {
+  height: 1px;
+  top: 12px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  position: absolute;
+  /* animation: 420ms ease 0s 1 normal forwards running disappear; */
+}
+
+.HeadAnother {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33%;
+}
+
+.HeadAnother > .material-symbols-outlined {
+  width: 24px;
+  height: 24px;
+  display: none;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.HeadFont {
+  font-size: 16px;
+  font-stretch: 105%;
+  line-height: 24px;
+}
+
+#HeadNavi {
+  padding: 24px 70px;
+  position: relative;
+  display: none;
+  max-width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+
+.HeadNaviFont1 {
+  cursor: pointer;
+  color: gray;
+  padding: 12px 0;
+  line-height: 24px;
+}
+
+.HeadNaviContainer{
+  display: flex;
+  cursor: pointer;
+  color: gray;
+  padding: 12px 0;
+  line-height: 24px;
+}
+
+.HeadNaviFont2 {
+  display: flex;
+  cursor: pointer;
+  color: gray;
+  padding: 12px 0;
+  line-height: 24px;
+  justify-content: space-between;
+}
+
+.HeadNaviFontRight{
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeadNaviFont1:hover,
+.HeadNaviFont2:hover{
+  color: black;
+}
+
+/* section */

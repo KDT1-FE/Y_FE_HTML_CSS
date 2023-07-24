@@ -267,6 +267,7 @@
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 20px;
+  font-size: 21px;
 }
 
 .SectionLook {
@@ -281,4 +282,41 @@
 
 .SectionLook:hover{
   background-color: gray;
+}
+
+.SectionSearchContainer{
+  display: flex;
+  padding: 0 45px;
+  width: inherit;
+  height: 90px;
+  background-color: #4c4c4c;
+}
+
+.SearchTitle{
+  margin: 12px 0 24px;
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 3.5rem;
+}
+
+.SectionDropdown {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  width: 300px;
+  height: 55px;
+  margin-left: 50px;
+  margin-top: 10px;
+  justify-content: space-between;
+  background-color: red;
+}
+
+.SectionDropdownTitle{
+  display: block;
+  height: 18px;
+  color: #b3b3b3;
+  margin-bottom: 3px;
+  font-size: 15px;
+  line-height: 1.8rem;
 }

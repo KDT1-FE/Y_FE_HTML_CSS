@@ -153,9 +153,60 @@ body{
 }
 
 
-
 .home_text2{
   position:absolute;
   bottom: 166px;
   right: 0;
+}
+
+/* home2 section*/
+.home2_wrap{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home2_container{
+  width: 100%;
+  background-color: white;
+  padding: 250px 0;
+  
+}
+
+.home2_container_inner{
+  width: 92%;
+  height: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+.home2_flex_container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.home2_item{
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.home2_item div{
+  flex-basis:calc(50% - 30px);
+  max-width: calc(50% - 30px);
+}
+
+.home2_content{
+  margin-left: 40px;
+}
+
+.home2_image_container{
+  margin-right: 40px;
+}
+
+.home2_image_container img{
+  width: 100%;
 }

@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    border-top: 3px solid #00cd3c;
+}
+
+.util_menu {
+    width: 1000px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.util_menu a {
+    margin-right: 20px;
+}
+
+.util_menu span {
+    color: #888888;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.util_menu span:hover {
+    color: #1a1a1a;
+}

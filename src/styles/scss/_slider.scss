@@ -1,0 +1,53 @@
+.slider-section {
+  margin-top: 25px;
+  position: relative;
+  .items {
+    display: flex;
+    // overflow: hidden;
+    position: absolute;
+    transform: translate(-530px);
+    gap: 30px;
+    top: 0;
+    &.active {
+      transition: 0.3s;
+    }
+    div {
+      width: 1060px;
+    }
+  }
+  .wrapper {
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: 0;
+    background: rgba(250, 250, 250, 0.3);
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 2rem;
+    background: #c3c3c3;
+    opacity: 0.3;
+    &:hover {
+      background: rgba(250, 250, 250, 0.5);
+    }
+  }
+  //   나중에 marin 해서 prev와 next에 넣어놓는 게 나을ㄷ스
+  .btn__prev {
+    left: 0;
+    color: black;
+  }
+  .btn__next {
+    right: 0;
+  }
+}

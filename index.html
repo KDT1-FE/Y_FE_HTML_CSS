@@ -10,9 +10,10 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css"
     />
+    <script defer src="src/main.js"></script>
   </head>
   <body>
-    <heder class="header">
+    <header class="header">
       <div class="inner">
         <div class="menu">
           <ul>
@@ -20,12 +21,12 @@
             <img src="/assets/wantedLogo.png" alt="wantedLogo" />
           </ul>
           <ul>
-            <li>채용</li>
-            <li>이벤트</li>
-            <li>이력서</li>
-            <li>커뮤니티</li>
-            <li>프리랜서</li>
-            <li>AI 합격 예측</li>
+            <li class="menu__category">채용</li>
+            <li class="menu__category">이벤트</li>
+            <li class="menu__category">이력서</li>
+            <li class="menu__category">커뮤니티</li>
+            <li class="menu__category">프리랜서</li>
+            <li class="menu__category">AI 합격 예측</li>
           </ul>
           <ul>
             <img src="../Y_FE_HTML_CSS/assets/searchLogo.png" alt="로고" />
@@ -35,7 +36,47 @@
             </li>
           </ul>
         </div>
-      </div></heder
-    >
+      </div>
+    </header>
+    <main>
+      <section class="slider-section">
+        <button class="btn__prev"><</button>
+        <div class="wrapper">
+          <div class="items">
+            <div class="items__item">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2095%2F7a4fd7c9.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2117%2Fde64f45c.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2101%2F4fc3c7bc.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2116%2Feb44f6dd.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2059%2F24c52879.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2109%2F96eea574.jpg&w=1060&q=100"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="btn__next">></button>
+      </section>
+    </main>
   </body>
 </html>

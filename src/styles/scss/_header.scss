@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
   .inner {
@@ -17,6 +17,7 @@
         height: inherit;
         li {
           display: flex;
+          margin: 0;
           color: #333333;
           list-style: none;
           font-size: 16px;
@@ -24,6 +25,10 @@
           line-height: 20px;
           padding: 15px;
         }
+      }
+      // header 태그 안에 클래스 이름에 따른 css
+      .menu__category:hover {
+        box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
       }
       .menu__item::before {
         margin: auto 10px;

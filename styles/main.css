@@ -28,6 +28,7 @@
 }
 
 .new_album_a h2 {
+    height: 24px;
     font-size: 16px;
     color: #525252;
 }
@@ -114,4 +115,69 @@
     border: 1px solid #999999;
     border-left: none;
     border-radius: 0 10px 10px 0;
+}
+
+
+.new_album_contents {
+
+}
+
+.new_album_contents_ul {
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new_album_contents_ul li {
+    height: 160px;
+    margin: 3px 2px 0 0;
+}
+
+.none {
+    position: absolute;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.img {
+    width: 156px;
+    height: 156px;
+    border: 1px solid #f2f2f2;
+}
+
+.thum {
+    width: 156px;
+    height: 156px;
+    display: block;
+    overflow: hidden;
+}
+
+.thum img {
+    width: 156px;
+    height: 156px;
+}
+
+.singer {
+    width: 156px;
+    height: 30px;
+    left: 1px;
+    bottom: 30px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background-color: #45454599;
+    justify-content: center;
+    align-items: center;
+}
+
+.singer_a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.singer_a span {
+    display: block;
+    height: 20px;
+    font-size: 13px;
+    color: #fff;
 }

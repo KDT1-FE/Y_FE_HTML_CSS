@@ -17,11 +17,8 @@ header {
     font-size: 13px;
     font: tahoma, sans-serif;
     justify-content: center;
+    position: fixed;
 }
-
-
-
-
 
 .header_logo2 {
     margin-left: 28px;
@@ -110,42 +107,3 @@ header {
     background-color: aqua;
 }
 
-.first_section{
-    display: flex;
-    height: 32rem;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.first_section > .valorant-info{
-    justify-content: center;
-    align-items: center;
-}
-
-.first_section > video {
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-}
-.first_section > div > p {
-    color: white;
-    font-family: arial,georgia,sans-serif;
-}
-
-.valorant-info {
-    text-align: center;
-    padding-left: 88px;
-    padding-right: 88px;
-}
-
-.valorant-info > p{
-    margin: 0 0 35px;
-}
-
-.valorant-info > button{
-    margin: 4.25rem 0 6rem;
-}
-.second_section{
-    background-color: blueviolet;
-}

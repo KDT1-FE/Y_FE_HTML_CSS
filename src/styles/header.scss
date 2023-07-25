@@ -4,15 +4,30 @@
   left: 0;
   width: 100%;
   z-index: 10;
+  background-color: #171b24;
+  height: 120px;
+  &.header--scrolled {
+    background-color: transparent;
+    height: auto;
+    .header__logo {
+      transform: translate(0, 0) scale(1);
+    }
+    .header__btn-wrap {
+      transform: translate(0, 0);
+    }
+  }
   .header__inner {
     padding-top: 80px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   /* 헤더 로고 스타일 */
   .header__logo {
     width: 140px;
+    transform: translate(-20px, -72px) scale(0.71);
+    transition: 0.5s;
     a {
       display: block;
       img {
@@ -25,6 +40,8 @@
   .header__btn-wrap {
     display: flex;
     align-items: flex-start;
+    transform: translate(0, -24px);
+    transition: 0.6s;
     a {
       font-size: 20px;
       font-family: "VentiCF", sans-serif;
@@ -32,6 +49,8 @@
       margin-right: 70px;
       display: block;
       color: #fff;
+      position: relative;
+      top: 3px;
     }
     .hamberger-btn {
       width: 55px;
@@ -75,13 +94,5 @@
         }
       }
     }
-  }
-}
-@keyframes hambergerLine1 {
-  0% {
-  }
-  50% {
-  }
-  100% {
   }
 }

@@ -43,3 +43,8 @@
 3. 다운로드 원하는 이미지 선택
 4. 서브 폴더 이름(Save to subfolder) 명시
 5. 다운로드!
+
+# Tesla Korea 공식 홈페이지 clone 코딩 (with. CSS, HTML)
+
+- [Tesla Korea 공식 홈페이지](https://www.tesla.com/ko_kr "Tesla Korea 공홈")
+- [Tesla Korea Clone Site](https://www.tesla.com/ko_kr "Tesla Korea 클론")

@@ -8,6 +8,7 @@
     width: 1000px;
     min-height: 800px;
     padding-top: 20px;
+    display: flex;
 }
 
 /* new_album */
@@ -47,7 +48,7 @@
 }
 
 .new_album_ul a {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .new_album_ul li:nth-child(1) a {
@@ -78,7 +79,7 @@
 }
 
 .page span {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .page span:nth-child(1) {
@@ -103,7 +104,7 @@
 }
 
 .page_btn img{
-    width: 15px;
+    width: 13px;
 }
 
 .right {
@@ -130,9 +131,7 @@
 }
 
 .none {
-    position: absolute;
-    font-size: 0;
-    overflow: hidden;
+    display: none;
 }
 
 .img {
@@ -176,4 +175,109 @@
     height: 20px;
     font-size: 13px;
     color: #fff;
+}
+
+/* end new_album */
+
+/* event */
+
+.event {
+    width: 240px;
+    height: 350px;
+    margin-left: 5px;
+}
+
+.event_top {
+    height: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.move {
+    display: flex;
+}
+
+.move a {
+    margin-right: 2px;
+}
+
+.move a:nth-child(1) {
+    border: 1px solid #525252;
+}
+
+.circle {
+    display: block;
+    width: 9px;
+    height: 9px;
+    border: 1px solid #999999;
+    border-radius: 50%;
+}
+
+.playbutton {
+    margin: 0 5px 0 5px;
+}
+
+.playbutton img{
+    width: 14px;
+}
+
+.event_img {
+    margin-top: 4px;
+}
+
+.event_img img {
+    width: 235px;
+    height: 320px;
+}
+
+/* login_banner */
+
+.login_banner {
+    width: 270px;
+    height: 320px;
+    margin: 27px 0 0 5px;
+}
+
+.login {
+    width: 270px;
+    height: 120px;
+    border: 1px solid #ebebeb;
+    background-color: #fbfbfb;
+}
+
+.create {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.create p {
+    font-size: 12px;
+    color: #999999;
+}
+
+.create a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.login_button {
+    width: 230px;
+    height: 40px;
+    margin: 10px 0 0 20px;
+    color: #fff;
+    background-color: #00cd3c;
+    border: none;
+    font-size: 15px;
+}
+
+.banner {
+    width: 272px;
+}
+
+.banner img {
+    width: 272px;
+    height: 188px;
+    margin-top: 11px;
 }

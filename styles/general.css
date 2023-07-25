@@ -22,6 +22,10 @@ ul {
   margin: 0;
 }
 
+section {
+  padding: 5.6vw;
+}
+
 .center {
   text-align: center;
 }

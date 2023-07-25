@@ -365,4 +365,83 @@ body {
 /* ========== FOOTER ========== */
 .footer {
   background-color: #000e11;
+  color: white;
+  padding: 4rem 4rem 0 4rem;
+  font-size: 1.5vw;
+}
+
+.footer__logo {
+  width: 10%;
+  margin-bottom: 6rem;
+}
+
+.footer__logo svg {
+  width: 100%;
+}
+
+.footer__sections {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.footer__sections .socials {
+  width: 30%;
+}
+
+.footer__sections .sections {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  max-width: 50%;
+  line-height: 1.5;
+}
+
+.footer__sections .sections .item {
+  width: 15vw;
+}
+
+.footer__sections .sections span {
+  font-weight: 300;
+  font-size: 1.3vw;
+  color: #8d8d8d;
+}
+
+.footer__others {
+  display: flex;
+  font-weight: 300;
+  font-size: 1.3vw;
+}
+
+.footer__others .info {
+  width: 30%;
+}
+
+.footer__others .info p {
+  font-size: 1.1vw;
+  color: #8d8d8d;
+  margin-top: 3vw;
+  line-height: 1.2;
+}
+
+.footer__others .policies {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy-names {
+  display: flex;
+}
+
+.policy-names h3 {
+  white-space: nowrap;
+  width: 15vw;
+  color: #8d8d8d;
+}
+
+.policies .description {
+  font-weight: 300;
+  font-size: 1.2vw;
+  letter-spacing: 0;
+  color: #8d8d8d;
+  line-height: 1.2;
+  margin-top: 3vw;
 }

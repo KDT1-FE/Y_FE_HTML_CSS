@@ -408,6 +408,7 @@ strong {
   width: 100%;
   display: grid;
   grid-template-columns: 9fr 10fr;
+  grid-column-gap: 4%;
 }
 
 .experience-grid p {
@@ -415,6 +416,12 @@ strong {
   font-size: 1.31vw;
   width: 23vw;
   line-height: 1.1;
+}
+
+.experience-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 /* ========== FOOTER ========== */

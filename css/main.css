@@ -46,6 +46,15 @@ body {
   font-size: 18px;
 }
 
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
+  line-height: 1.1;
+}
+
 strong {
   font-weight: bolder;
 }
@@ -393,6 +402,7 @@ strong {
 /* ========== EXPERIENCE SECTION ========== */
 .experience {
   padding: 4rem;
+  margin-bottom: 2rem;
 }
 
 .experience__logo h2 {
@@ -422,6 +432,14 @@ strong {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 4%;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5vw;
+  margin-bottom: 4rem;
 }
 
 .experience-item .icon {
@@ -431,6 +449,15 @@ strong {
   align-items: center;
   width: 6.4vw;
   height: 6.4vw;
+}
+
+.experience-item h2 {
+  font-size: 1.56vw;
+}
+
+.experience-item p {
+  width: 20.5vw;
+  font-size: 1.36vw;
 }
 
 .experience-item .icon::after {
@@ -446,6 +473,15 @@ strong {
 
 .experience-item svg {
   font-size: 2.5vw;
+}
+
+.experience button {
+  border: none;
+  background-color: #151623;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.15vw;
 }
 
 /* ========== FOOTER ========== */

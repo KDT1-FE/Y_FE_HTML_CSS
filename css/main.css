@@ -22,6 +22,14 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display ExtBlk"),
+    local("HelveticaNowDisplay-ExtBlk"),
+    url("../fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -36,6 +44,10 @@ html {
 
 body {
   font-size: 18px;
+}
+
+strong {
+  font-weight: bolder;
 }
 
 /* HOME SECTION */
@@ -376,6 +388,33 @@ body {
   font-size: 1.2vw;
   font-weight: 300;
   line-height: 1.2;
+}
+
+/* ========== EXPERIENCE SECTION ========== */
+.experience {
+  padding: 4rem;
+}
+
+.experience__logo h2 {
+  font-weight: bold;
+  font-size: 13vw;
+  line-height: 0.8;
+  margin-bottom: 6rem;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.experience-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 10fr;
+}
+
+.experience-grid p {
+  font-weight: 300;
+  font-size: 1.31vw;
+  width: 23vw;
+  line-height: 1.1;
 }
 
 /* ========== FOOTER ========== */

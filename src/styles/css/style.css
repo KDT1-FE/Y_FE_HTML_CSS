@@ -29,6 +29,9 @@
   line-height: 20px;
   padding: 15px;
 }
+.header .inner .menu .menu__logo img {
+  margin: 7px;
+}
 .header .inner .menu .menu__category:hover {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
 }

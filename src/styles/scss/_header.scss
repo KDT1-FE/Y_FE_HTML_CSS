@@ -26,6 +26,11 @@
           padding: 15px;
         }
       }
+      .menu__logo {
+        img {
+          margin: 7px;
+        }
+      }
       // header 태그 안에 클래스 이름에 따른 css
       .menu__category:hover {
         box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
@@ -51,6 +56,6 @@
       .menu__item {
         padding: 0 0 0 15px;
       }
-    }
+    } // 메뉴
   }
 }

@@ -1,5 +1,27 @@
 @import "./reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700&display=swap");
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display Medium"),
+    local("Helvetica-Now-Display-Medium"),
+    url("../fonts/HelveticaNowDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display Light"), local("HelveticaNowDisplay-Light"),
+    url("../fonts/HelveticaNowDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display Bold"), local("HelveticaNowDisplay-Bold"),
+    url("../fonts/HelveticaNowDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -8,8 +30,8 @@
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-family: "Helvetica Now Display";
+  font-weight: 500;
 }
 
 body {
@@ -74,13 +96,12 @@ body {
   padding: 15px;
   font-size: 4vw;
   font-weight: 600;
-  letter-spacing: -2px;
 }
 
 .nav-item {
   padding: 15px;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   white-space: nowrap;
 }
 
@@ -148,7 +169,6 @@ body {
 .description {
   font-size: 4vw;
   font-weight: 700;
-  letter-spacing: -2px;
   margin-bottom: 4rem;
 }
 
@@ -170,7 +190,7 @@ body {
 
 .keyword .detail {
   color: #b5b5b5;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* SERVICE SECTION */
@@ -252,7 +272,6 @@ body {
 .destination__title {
   font-size: 3.5vw;
   font-weight: 600;
-  letter-spacing: -2px;
   margin-bottom: 3rem;
 }
 
@@ -297,7 +316,6 @@ body {
   padding: 15px 0;
   margin-left: 20px;
   font-size: 2vw;
-  letter-spacing: -0.5px;
 }
 
 .block-slider-item:nth-child(n + 3) {
@@ -322,7 +340,6 @@ body {
 
 .block-slider-item > span {
   font-size: 1.2vw;
-  letter-spacing: 0px;
 }
 
 /* MANAGER SECTIOn */
@@ -358,7 +375,6 @@ body {
 .manager__container .description p {
   font-size: 1.2vw;
   font-weight: 300;
-  letter-spacing: 0;
   line-height: 1.2;
 }
 
@@ -440,7 +456,6 @@ body {
 .policies .description {
   font-weight: 300;
   font-size: 1.2vw;
-  letter-spacing: 0;
   color: #8d8d8d;
   line-height: 1.2;
   margin-top: 3vw;

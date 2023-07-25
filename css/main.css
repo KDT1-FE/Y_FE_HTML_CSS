@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'BauerBodoni';
+  src: url(../assets/fonts/BauerBodoni-Roman.woff) format('woff'),
+    url(../assets/fonts/BauerBodoni-Roman.woff) format('woff2');
+}
+@font-face {
+  font-family: 'BauerBodoni-Italic';
+  src: url(../assets/fonts/BauerBodoni-Italic.woff) format('woff'),
+    url(../assets/fonts/BauerBodoni-Italic.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'PostGrotesk';
+  font-weight: 400;
+  src: url(../assets/fonts/PostGrotesk-Book.woff) format('woff'),
+    url(../assets/fonts/PostGrotesk-Book.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'PostGrotesk';
+  font-weight: 500;
+  src: url(../assets/fonts/PostGrotesk-Medium.woff) format('woff'),
+    url(../assets/fonts/PostGrotesk-Medium.woff2) format('woff2');
+}

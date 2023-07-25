@@ -1,0 +1,47 @@
+.target-value-banner {
+  padding: 5.6vw;
+  padding-top: 2.6vw;
+}
+
+.target-value-banner li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc(25% - 18px);
+  position: relative;
+}
+
+.target-value-banner p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: silver;
+}
+
+.target-value-banner span {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #f9f9f9;
+}
+
+.line-divided p {
+  padding: 0 10px;
+}
+
+.line-divided::after {
+  background: #f9f9f9;
+  content: "";
+  display: block;
+  height: 80px;
+  left: -12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+}
+
+.line-divided:first-of-type::after {
+  width: 0;
+}

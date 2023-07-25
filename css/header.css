@@ -2,7 +2,7 @@ h1 {
     margin: 0;
 }
 
-.p{
+.p {
     font-weight: bold;
 }
 
@@ -24,49 +24,70 @@ header {
     margin-left: 28px;
 }
 
-.riot_logo > a > img {
+.riot_logo>a>img {
     width: 85px;
 }
 
-.header > .center-section > .info > .dropdown > a > p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-.header > .center-section > .media > a > p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-.header > .center-section > .news > .dropdown > a > p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-.header > .center-section > .scoreboard > a > p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-.header > .center-section > .service > .dropdown > a > p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-.header > .center-section > .event > .dropdown > a > p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-.header > .center-section > .socialmedia > .dropdown > a > p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-.header > .center-section > .esports > .arrow > a > p {
+.header>.center-section>.info>.dropdown>a>p {
     padding: 7.5px 16px;
     margin: 0 4px 0 0;
 }
 
-.nav-a{
-    color: white;
+.header>.center-section>.media>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
 }
 
-.nav-right-a{
+.header>.center-section>.news>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.scoreboard>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.service>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.event>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.socialmedia>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.esports>.arrow>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.nav-a {
     color: white;
+}
+.playnow_btn{
+    padding: 8px 16px;
+}
+
+.nav-right-a {
+    width: 125px;
+    height: 22px;
+    padding: 5px;
+    border-radius: 10px ;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    color: #111;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left-section {
@@ -82,11 +103,11 @@ header {
     width: 100%;
 }
 
-.center-section > div {
+.center-section>div {
     display: inline-block;
 }
 
-.center-section > div > a {
+.center-section>div>a {
     text-decoration: none;
 }
 
@@ -103,7 +124,6 @@ header {
 }
 
 
-.search{
+.search {
     background-color: aqua;
 }
-

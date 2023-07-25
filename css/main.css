@@ -281,7 +281,7 @@
 }
 
 .SectionLook:hover{
-  background-color: gray;
+  background-color: #666;
 }
 
 .SectionSearchContainer{
@@ -561,4 +561,66 @@
     position: absolute;
     top: calc(50% - 24px);
     width: 48px;
+}
+
+/* article */
+
+.AD {
+  display: flex;
+  margin: 200px 10%;
+  height: 100%;
+  position: relative;
+
+}
+
+.AD1 {
+  padding-bottom: 50%;
+  align-self: flex-start;
+  flex: 0 0 50%;
+  position: relative;
+
+}
+
+.AD1pic {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.AD1text {
+  align-self: center;
+  margin-block-start: unset;
+  margin-inline-start: 40px;
+  flex: 0 1 auto;
+}
+
+.AD1title{
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: -0.015em;
+  line-height: 60px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.AD1des{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 45px;
+}
+
+.AD1btn{
+  width: 149.81px;
+  height: 56px;
+  cursor: pointer;
+  margin: 0px 4px 28px 0px;
+  padding: 16px 32px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.AD1btn:hover {
+  background-color: #666;
 }

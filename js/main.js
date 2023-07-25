@@ -13,6 +13,7 @@ const SectionModelEl=document.querySelector('.SectionModelList')
 const SectionSearchEls=document.querySelector('.SectionSearchContainer')
 const CarListEl=document.querySelector('.CarListModels')
 const CarList=document.querySelector('.CarList')
+const ADEl=document.querySelectorAll('.AD')
 HeadMenuEls.addEventListener('click', function(e) {
   i++;
   if(i%2!=0){
@@ -25,6 +26,9 @@ HeadMenuEls.addEventListener('click', function(e) {
     CarListEl.style.display='none';
     CarList.style.display='none';
     CarTypeEl.style.display='none';
+    ADEl.forEach(element => {
+      element.style.display = 'none';
+    });
     HeadLines1.style.animation='420ms ease 0s 1 normal forwards running disappear';
     HeadLines2.style.animation='240ms ease 180ms 1 normal forwards running leftX';
     HeadLines3.style.animation='240ms ease 180ms 1 normal forwards running rightX';
@@ -39,13 +43,16 @@ HeadMenuEls.addEventListener('click', function(e) {
     SectionModelEl.style.display='inline-block';
     CarListEl.style.display='flex';
     CarList.style.display='block';
+    ADEl.forEach(element => {
+      element.style.display = 'flex';
+    });
     if(ModelTypeEl.getAttribute('aria-selected')=='true'){
       CarTypeEl.style.display='block';
     }
     HeadLines1.style.animation='420ms ease 0s 1 normal none running disappearback';
     HeadLines2.style.animation='240ms ease 0s 1 normal none running leftbackX';
     HeadLines3.style.animation='240ms ease 0s 1 normal none running rightbackX';
-    HeadLines4.stylem.animation='420ms ease 0s 1 normal none running disappearback';
+    HeadLines4.style.animation='420ms ease 0s 1 normal none running disappearback';
   }
 });
 

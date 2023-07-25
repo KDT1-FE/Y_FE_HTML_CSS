@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="img" transform="translate(-44 -60)">
+    <rect id="사각형_21" data-name="사각형 21" width="36" height="36" transform="translate(44 60)" fill="none"/>
+    <g id="그룹_469058" data-name="그룹 469058" transform="translate(97.364 22.018)">
+      <g id="그룹_38" data-name="그룹 38" transform="translate(-45.614 44.482)">
+        <rect id="사각형_20" data-name="사각형 20" width="15" height="23" rx="2" transform="translate(0 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="선_25" data-name="선 25" x2="2.734" transform="translate(6.133 18.999)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="그룹_469166" data-name="그룹 469166" transform="translate(97.614 22.301)">
+      <circle id="타원_207" data-name="타원 207" cx="5.5" cy="5.5" r="5.5" transform="translate(-33.614 57.482)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="패스_70043" data-name="패스 70043" d="M75.38,82.568l1.195,1.193,3.048-3.048" transform="translate(-105.616 -19.257)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

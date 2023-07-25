@@ -95,4 +95,102 @@
       }
     }
   }
+
+  .main-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-color: #171b24;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 1.2s;
+    .inner-container {
+      height: 100%;
+      padding-top: 75px;
+    }
+    .main-navigation__img-wrap {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+
+      .main-navigation__img-list {
+        position: relative;
+        li {
+          opacity: 0;
+          transition: 1.5s linear;
+          &:first-child {
+            opacity: 1;
+          }
+        }
+        li + li {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        li.menu-item--hovered {
+          opacity: 1;
+        }
+      }
+    }
+    .main-navigation__menu-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .main-navigation__menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        li.menu-item {
+          flex: 50%;
+          padding-left: 60px;
+          box-sizing: border-box;
+          > a {
+            font-family: $mango;
+            font-size: 58px;
+            font-weight: 400;
+          }
+        }
+        .sub-menu {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: start;
+          min-height: 110px;
+          margin-top: 8px;
+          li {
+            margin-right: 20px;
+            a {
+              font-size: 15px;
+              font-weight: 300;
+              line-height: 2;
+            }
+          }
+        }
+      }
+      .main-navigation__social-wrap {
+        padding-left: 60px;
+        font-family: $venti;
+        font-weight: 400;
+        li a span {
+          margin-left: 5px;
+          vertical-align: 3px;
+        }
+        li + li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  &.header--open {
+    .main-navigation {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
 }

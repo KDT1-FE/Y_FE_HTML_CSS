@@ -1,6 +1,8 @@
 @import "./utils";
 $color-primary: royalblue;
+$body-font: "S-CoreDream-3Light", Arial, Helvetica, sans-serif;
 $venti: "VentiCF", sans-serif;
+$mango: "Mango", "Helvetica Neue";
 $font-color: #d3ceb9;
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -137,7 +139,7 @@ a {
 }
 html,
 body {
-  font-family: "S-CoreDream-3Light", Arial, Helvetica, sans-serif;
+  font-family: $body-font;
   background-color: #2e353d;
   color: $font-color;
 }
@@ -180,9 +182,9 @@ body {
 .inner-container {
   width: 100%;
   max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 .grid-container {
   display: grid;
@@ -209,10 +211,14 @@ body {
   font-family: "Mango", "Helvetica Neue";
 }
 .heading-3 {
-  font-size: 100px;
+  font-size: 120px;
   font-family: "Mango", "Helvetica Neue";
 }
 .heading-4 {
+  font-size: 100px;
+  font-family: "Mango", "Helvetica Neue";
+}
+.heading-5 {
   font-size: 20px;
   font-family: "VentiCF", sans-serif;
   font-weight: 400;
@@ -230,13 +236,15 @@ body {
   letter-spacing: 0.16em;
   color: $font-color;
 }
+.link-text + .link-arrow {
+  margin-top: 20px;
+}
 .link-arrow {
   width: 20px;
   height: 1px;
   background-color: $font-color;
   display: block;
   position: relative;
-  margin-top: 20px;
   &::before {
     content: "";
     display: block;

@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.wrap .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 72px;
+  padding: 0 6.25rem;
+}
+
+.wrap .header .header_item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.wrap .header .header_item .logo_box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap .header .header_item .logo_box .audi_logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.wrap .header .header_item .menu_button {
+  font-size: 17px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .header .header_item .menu_button .menu_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.1rem;
+  margin-right: 0.8rem;
+}
+
+.wrap .header .header_item .menu_button .menu_bar .bar {
+  width: 1.2rem;
+  height: 1px;
+  border: 1px solid black;
+}
+
+.wrap .home_img_box {
+  width: 100%;
+  height: calc(100vh - 72px);
+  position: relative;
+  z-index: 0;
+}
+
+.wrap .home_img_box .home_img_desc {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  padding-left: 6.8rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.wrap .home_img_box .home_img_desc h2 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.wrap .home_img_box .home_img_desc h4 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.wrap .home_img_box .home_img_desc .home_img_detail_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.wrap .home_img_box .home_img_desc .home_img_detail_button button {
+  padding: 1.2rem 2.2rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.wrap .home_img_box .home_img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .home_img_box_bottom {
+  height: 4rem;
+  background-color: black;
+}
+
+.wrap .car_search_box {
+  height: 90px;
+  background-color: #333;
+}
+/*# sourceMappingURL=style.css.map */

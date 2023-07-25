@@ -81,7 +81,7 @@ p figure,
 article {
   text-align: center;
 }
-a{
+a {
   text-decoration: none;
   color: #000;
 }
@@ -143,7 +143,8 @@ figcaption {
 .insta a {
   cursor: url(../img/cursor-heart.png), auto;
 }
-.header, .footer nav a{
+.header,
+.footer nav a {
   cursor: url(../img/cursor-pointer.png), auto;
 }
 
@@ -153,13 +154,19 @@ figcaption {
   width: 10vw;
 }
 .header {
+  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 2vw 4vw;
   height: 10vh;
+  top: 0;
+  z-index: 5;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
 }
+
 .nav {
   width: 62vw;
   /* background: #ff0; */
@@ -192,7 +199,6 @@ ul.gnb li a {
   text-align: center;
   color: #000;
 }
-
 
 /* 메인 */
 .main .inner {
@@ -432,57 +438,99 @@ ul.gnb li a {
 }
 
 /* footer */
-.footer { background:#f0ece5  url(../img/footer-layer.svg); background-position: top;background-repeat: no-repeat;}
+.footer {
+  background: #f0ece5 url(../img/footer-layer.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 7vw 0 0;
+}
 .footer .inner,
-.footer .bottom{width: 100%;height: 100%;background: #000;}
-.footer .row{width: 90%;margin:0 auto;align-items: flex-start;}
+.footer .bottom {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.footer .row {
+  width: 90%;
+  margin: 0 auto;
+  align-items: flex-start;
+}
 /* .footer {background: linear-gradient(to bottom, #f0ece5 10%, #000 90%)     */
-  .footer a, .footer p{color:#F0EDE6;}
-  .footer .menu{text-transform: capitalize;font-size: 3rem;}
-  .footer .menu li{margin:0 0 2vw}
-  .footer .menu li a:hover{color:#ccc;}
-  .footer .sns_nav {display: flex;flex-direction: row;width:40%;}
-  .footer .sns_nav li{ padding: 0 0 0 3vw;}
-  .footer .sns_nav li a{font-size: 1.5rem;text-transform: lowercase;}
-  .footer .sns_nav li a:hover{border-bottom: 2px solid #fff;}
-  .footer .sns_nav li:last-child>a:after{
-    content:'\e928';
-    font-family: 'jt-font';
-    display: block;
-    color:#fd0;
-    font-weight: 400;
-    font-size: 4rem;
-    margin-top: -2vw;
-  }
+.footer a,
+.footer p {
+  color: #f0ede6;
+}
+.footer .menu {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+.footer .menu li {
+  margin: 0 0 2vw;
+}
+.footer .menu li a:hover {
+  color: #bbb;
+}
+.footer .sns_nav {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+.footer .sns_nav li {
+  padding: 0 0 0 3vw;
+}
+.footer .sns_nav li a {
+  font-size: 1.5rem;
+  text-transform: lowercase;
+}
+.footer .sns_nav li a:hover {
+  border-bottom: 2px solid #fff;
+}
+.footer .sns_nav li:last-child > a:after {
+  content: "\e928";
+  font-family: "jt-font";
+  display: block;
+  color: #fd0;
+  font-weight: 400;
+  font-size: 4rem;
+  margin-top: -2vw;
+}
 
+.footer .bottom {
+  text-align: left;
+  padding: 2vw 0 10vw 5vw;
+  box-sizing: border-box;
+}
 
-  .footer .bottom{
-    text-align: left;
-    padding: 2vw 0 10vw 5vw;
-    box-sizing: border-box;
-  }
-
-
-  .footer .bottom .shop_toggle{position:relative;font-size: 1.2rem;}
-  .footer .bottom .shop_toggle::after{
-    display: block;
-    width: 20rem;
-    height: 20rem;
-    position: absolute;
-    left: -3vw;
-    top: 10.5vw;
-    margin-top: -9rem;
-    font-family: 'jt-font';
-    content: '\e901';
-    font-size: 1rem;
-    line-height: 1rem;
-    font-weight: 400;
-    text-align: center;
-    color: #F0EDE6;
-  }
-  .footer .bottom .address{line-height: 2rem;display:none;margin-top:1vw}
-  .footer .bottom .address p{color:rgba(240, 237, 230, 0.502);}
-  .footer .bottom i{}
-  .footer .bottom .copy {font-size: 1.2rem;color:rgba(240, 237, 230, 0.502);margin-top:3rem}
-  .footer i{font-style: normal;}
-
+.footer .bottom .shop_toggle {
+  position: relative;
+  font-size: 1.2rem;
+}
+.footer .bottom .shop_toggle::after {
+  display: block;
+  top: 6.8vw;
+  font-family: 'jt-font';
+  content: "";
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  color: rgb(240, 237, 230);
+  position: absolute;
+  right: -30px;
+  top: 5px;
+}
+.footer .bottom .address {
+  line-height: 2rem;
+  display: none;
+  margin-top: 1vw;
+}
+.footer .bottom .address p {
+  color: rgba(240, 237, 230, 0.502);
+}
+.footer .bottom .copy {
+  font-size: 1.2rem;
+  color: rgba(240, 237, 230, 0.502);
+  margin-top: 3rem;
+}
+.footer i {
+  font-style: normal;
+}

@@ -1,0 +1,339 @@
+@import "reset.css";
+
+/* nav */
+nav {
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+}
+
+.navigation-item {
+    padding: 0 22px;
+}
+
+.navigation-item:hover {
+    cursor: pointer;
+}
+
+
+/* slide show */
+.slide-show {
+    background-color: sandybrown;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 480px;
+}
+
+.carousel-items {
+    display: block;
+    width: 100%;
+    height: 480px;
+    white-space: nowrap;
+}
+
+.carousel-item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+/* #lowest-loan-rates-banner, #app, #curation, #card */
+#app, #curation, #card {
+    display: none;
+}
+
+.lowest-loan-rates-banner-section {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    width: 100%;
+    max-width: 946px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 122px 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.lowest-loan-rates-banner-info {
+    display: block;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.lowest-loan-rates-banner-button {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    padding: 12px 19px;
+    align-items: center;
+    gap: 6px;
+}
+
+.app-container, .curation-container, .card-container {
+    position: relative;
+    z-index: 999;
+    display: block;
+    width: 100%;
+    max-width: 946px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 130px 20px 0;
+}
+
+.app-title, .curation-title, .card-title {
+    position: relative;
+    display: block;
+}
+
+.app-buttons, .curation-buttons, .card-buttons {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 0;
+}
+
+.curation-description, .card-description {
+    position: relative;
+    margin: 8px 0 0;
+}
+
+.navagation-button-wrap {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 8px;
+    left: 0;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.navagation-button-wrap > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* promotion */
+.promotion {
+    background-color: yellow;
+    display: block;
+    padding: 48px 0;
+    height: 333px;
+}
+
+.promotion-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 882px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.promotion-title {
+    display: block;
+    text-align: center;
+}
+
+.promotion-items {
+    display: block;
+    margin: 42px 0 0;
+}
+
+.promotion-item {
+    float: left;
+    display: block;
+    width: 260px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.promotion-image {
+    display: inline-block;
+    width: 160px;
+    height: 110px;
+    margin-bottom: 16px;
+}
+
+
+/* pick */
+.pick {
+    background-color: chartreuse;
+    display: block;
+    padding: 48px 0;
+}
+
+.pick-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 882px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.pick-container::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.pick-title {
+    display: block;
+    margin: 0 0 32px;
+}
+
+.pick-items {
+    display: block;
+    width: 100%;
+    margin: 24px -16px 0 0;
+}
+
+.pick-item {
+    float: left;
+    display: block;
+    width: 204.5px;
+    margin: 0 16px 16px 0;
+}
+
+.content-image {
+    width: 100%;
+    height: 130px;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.content-box {
+    position: relative;
+    height: 122px;
+    padding: 16px 12px;
+}
+
+.button-container {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+
+/* download */
+.download {
+    background-color: skyblue;
+    position: relative;
+    display: block;
+    height: 320px;
+    text-align: left;
+    padding-top: 80px;
+}
+
+.download-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 946px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.download-buttons {
+    display: block;
+    text-align: left;
+}
+
+
+/* alliance */
+.alliance {  
+    background-color: blue;
+    position: relative;
+    overflow: hidden;
+    padding: 72px 20px;
+    text-align: center;
+}
+
+
+/* contact */
+.contact {  
+    background-color: purple;
+    height: 100%;
+    padding: 32px 10px;
+    height: 100%;
+    padding: 32px 10px;
+    text-align: center;
+}
+
+
+/* footer */
+footer {
+    background-color: pink;
+    display: block;
+    width: 100%;
+    padding: 71px 0 88px;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 946px;
+    margin: 0 auto;
+}
+
+.footer-services-container {
+    display: flex;
+    max-width: 946px;
+    margin: 0 auto;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer-download {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1;
+}
+
+.footer-best, .footer-banksalad {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-best {
+    margin-right: 128px;
+}
+
+.footer-information-container {
+    display: flex;
+    max-width: 946px;
+    margin: 0 auto;
+}
+
+.footer-guide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-company {
+    display: inline;
+}
+
+.email-address {
+    display: inline;
+}

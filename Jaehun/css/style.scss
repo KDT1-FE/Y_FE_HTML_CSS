@@ -3,9 +3,133 @@
   padding: 0;
   box-sizing: border-box;
 }
-.box {
-  background-color: darksalmon;
-  h2 {
-    color: red;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  ::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(/Jaehun/assets/img/background.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    filter: brightness(0.3);
+  }
+
+  header.nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    // 왼쪽 nav
+    div.nl_left {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding-left: 30px;
+      padding-top: 20px;
+      gap: 13px;
+
+      .menu_bar_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+        .menu_bar {
+          width: 20px;
+          height: 20px;
+          object-fit: contain;
+        }
+      }
+      .menu_bar_wrap:hover {
+        background-color: rgb(48, 48, 48);
+        cursor: pointer;
+      }
+    }
+    .search_input {
+      width: 400px;
+      height: 50px;
+      border-radius: 10px;
+      margin-left: 100px;
+      padding: 10px 10px 10px 50px;
+
+      border: 1px solid rgb(77, 77, 77);
+
+      background: none;
+      background: url(/Jaehun/assets/img/search-interface-symbol.png) no-repeat;
+      background-position: 15px center;
+      opacity: 0.8;
+
+      color: white;
+
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+
+    .search_input:focus {
+      width: 600px;
+      outline: none !important;
+      border-image: conic-gradient(
+        90deg,
+        #ff1b69 0deg 90deg,
+        #ff0 90deg 180deg,
+        #2196f3 180deg 270deg,
+        #9c27b0 270deg 360deg
+      );
+      animation: mymove 7s infinite;
+      box-shadow: 0 0 4px rgb(145, 189, 144);
+      transition: 0.5s;
+    }
+    @keyframes mymove {
+      0% {
+        border-color: rgb(223, 160, 160);
+      }
+      33% {
+        border-color: rgb(230, 230, 169);
+      }
+      66% {
+        border-color: rgb(165, 226, 165);
+      }
+      100% {
+        border-color: rgb(161, 161, 236);
+      }
+    }
+
+    // 오른쪽 nav
+    div.nl_right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 100px;
+
+      .connect_image {
+        display: flex;
+      }
+      .connect_image:hover {
+        cursor: pointer;
+      }
+      .user_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 30px;
+      }
+      .user_image:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

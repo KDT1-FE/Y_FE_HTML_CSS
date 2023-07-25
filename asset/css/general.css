@@ -1,0 +1,19 @@
+body, div, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51,51,51);
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}

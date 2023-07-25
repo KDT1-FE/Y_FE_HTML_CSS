@@ -402,7 +402,6 @@ strong {
 /* ========== EXPERIENCE SECTION ========== */
 .experience {
   padding: 4rem;
-  margin-bottom: 2rem;
 }
 
 .experience__logo h2 {
@@ -482,6 +481,17 @@ strong {
   color: white;
   border-radius: 30px;
   font-size: 1.15vw;
+}
+
+/* ========== PHOTOS SECTION ========== */
+.photos {
+  padding: 0 6rem;
+  width: 100%;
+  position: relative;
+}
+
+.photo-grid img {
+  width: 100%;
 }
 
 /* ========== FOOTER ========== */

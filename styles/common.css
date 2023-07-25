@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  height: 700vh;
+}
+
+video{
+  display: block;
+  
+  height: 100vh;
+  object-fit: cover;
+  
+  inline-size: 100%;
+  overflow: visible;
+
+  outline: none;
+  border: none;
+
+  position: relative;
+  z-index: -1;
+}

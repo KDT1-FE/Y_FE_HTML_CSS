@@ -1,14 +1,4 @@
-/* ol,ul {
-    list-style: none
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer
-} */
-
-header nav {
+header {
     position: fixed;
     z-index: 100;
     background-color: rgba(255,255,255,0.95);

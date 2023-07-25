@@ -485,13 +485,33 @@ strong {
 
 /* ========== PHOTOS SECTION ========== */
 .photos {
-  padding: 0 6rem;
+  padding: 0 4rem;
   width: 100%;
   position: relative;
 }
 
 .photo-grid img {
   width: 100%;
+  margin-top: 2rem;
+}
+
+.message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 49vw;
+}
+
+.message h2 {
+  font-size: 9vw;
+}
+
+.message p {
+  font-weight: bold;
+  font-size: 2vw;
+  color: #8d8d8d;
 }
 
 /* ========== FOOTER ========== */

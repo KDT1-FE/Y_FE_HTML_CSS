@@ -290,6 +290,7 @@
   width: inherit;
   height: 90px;
   background-color: #4c4c4c;
+  margin-bottom: 60px;
 }
 
 .SearchTitle{
@@ -305,11 +306,16 @@
   box-sizing: border-box;
   display: flex;
   width: 300px;
-  height: 55px;
+  height: 52.8px;
   margin-left: 50px;
   margin-top: 10px;
   justify-content: space-between;
-  background-color: red;
+  border-bottom: 1px solid white;
+}
+
+.SectionText {
+  display: inline-flex;
+  flex-flow: column nowrap;
 }
 
 .SectionDropdownTitle{
@@ -319,4 +325,240 @@
   margin-bottom: 3px;
   font-size: 15px;
   line-height: 1.8rem;
+}
+
+.SectionCarsCategory {
+  color: white;
+  font-size: 16px;
+  height: 24px;
+  line-height: 2.4rem;
+}
+
+.SectionDropdown > .material-symbols-outlined {
+  transition: .3s;
+  transform: none;
+  margin-top: 30px;
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.SectionCarList {
+  display: block;
+  max-height: 288px;
+  position: absolute;
+  z-index: 1;
+}
+
+.SectionCarNums {
+  display: flex;
+  width: 500px;
+  height: 45px;
+  align-items: flex-end;
+  margin: 18px 0 3px 30px;
+}
+
+.SectionNewCarsContainer{
+  width: auto;
+  height: 24px;
+  text-decoration: none;
+  display: flex;
+}
+
+.SectionNewCarsContainer:hover .SectionNumOfNewcars,
+.SectionNewCarsContainer:hover .SectionNewCars, 
+.SectionNewCarsContainer:hover .material-symbols-outlined{
+  cursor: pointer;
+  color: gray;
+}
+
+.SectionNumOfNewcars{
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: white;
+
+}
+.SectionNewCars {
+  margin-left: 10px;
+  padding-right: 15px;
+  margin-bottom: 0px;
+  width: 70px;
+  color: white;
+}
+
+.SectionNewCarsContainer > .material-symbols-outlined {
+  color: white;
+}
+
+.SectionOldCarsContainer{
+  width: auto;
+  height: 24px;
+  text-decoration: none;
+  display: flex;
+}
+
+.SectionOldCarsContainer:hover .SectionNumOfOldcars,
+.SectionOldCarsContainer:hover .SectionOldCars, 
+.SectionOldCarsContainer:hover .material-symbols-outlined{
+  cursor: pointer;
+  color: gray;
+}
+
+.SectionNumOfOldcars{
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: white;
+
+}
+.SectionOldCars {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  width: 140px;
+  color: white;
+}
+
+.SectionOldCarsContainer > .material-symbols-outlined {
+  color: white;
+}
+
+.SectionModelList{
+  padding: 0 45px;
+  width: 92%;
+}
+
+.SectionModel{
+  margin-left: 0!important;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.SectionModelType{
+  display: inline-block;
+  margin-left: 30px;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+
+.CarList{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.CarListSroll{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.CarListSroll::-webkit-scrollbar{
+  display: none;
+}
+
+.CarListModels{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 43px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  list-style: none;
+  animation: .3s ease-out forwards;
+
+}
+
+.Cars {
+  animation-delay: calc(.1s * 0);
+}
+
+.CarImg {
+  cursor: pointer;
+}
+
+.CarImg:hover .CarName{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #4c4c4c;
+}
+
+.CarImage {
+  padding: 0;
+  transform: scale(1);
+  height: 100px;
+  margin: 0 auto;
+}
+
+.CarName {
+  display: block;
+  text-align: center;
+}
+
+.Left {
+    background: #fff;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 54px;
+    cursor: pointer;
+    border-right: 1px solid #b3b3b3;
+}
+
+.Left > .material-symbols-outlined {
+    height: 48px;
+    left: calc(50% - 10px);
+    position: absolute;
+    top: calc(50% - 24px);
+    width: 48px;
+}
+
+.Right {
+  background: #fff;
+    display: block;
+    height: 150px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 54px;
+    cursor: pointer;
+    border-left: 1px solid #b3b3b3;
+}
+
+.Right > .material-symbols-outlined {
+    height: 48px;
+    right: calc(50% - 35px);
+    position: absolute;
+    top: calc(50% - 24px);
+    width: 48px;
+}
+
+.CarType {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+
+.RightType {
+  background: #fff;
+    display: block;
+    height: 130px;
+    right: 0;
+    position: absolute;
+    top: -6px;
+    width: 54px;
+    cursor: pointer;
+    border-left: 1px solid #b3b3b3;
+}
+
+.RightType > .material-symbols-outlined {
+    height: 48px;
+    right: calc(50% - 35px);
+    position: absolute;
+    top: calc(50% - 24px);
+    width: 48px;
 }

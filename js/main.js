@@ -1,4 +1,5 @@
 let i=0;
+let j=0;
 const HeadMenuEls=document.querySelector('.HeadMenuBtn')
 const NaviEl=document.getElementById('HeadNavi')
 const HeadLogoEl=document.querySelector('.HeadLogoImg')
@@ -34,3 +35,72 @@ HeadMenuEls.addEventListener('click', function(e) {
     HeadLines4.style.animation='420ms ease 0s 1 normal none running disappearback';
   }
 });
+
+const SectEl=document.querySelector('.SectionDropdown')
+const DownEl=document.querySelector('.SectionDropdown > .material-symbols-outlined')
+const ListEl=document.querySelector('.SectionCarList')
+
+SectEl.addEventListener('click',function(e){
+  j++;
+  if(j%2!=0){
+    //리스트 열기
+    DownEl.style.transform='rotate(180deg)';
+    ListEl.style.maxHeight='288px';
+  }
+  else{
+    //리스트 접고 애니메이션 효과
+    DownEl.style.transform='none';
+    ListEl.style.maxHeight='none';
+  }
+})
+
+const ModelEl=document.querySelector('.SectionModel')
+const ModelTypeEl=document.querySelector('.SectionModelType')
+const CarListEl=document.querySelector('.CarListModels')
+const CarEl=document.querySelector('.CarListSroll')
+const CarTypeEl=document.querySelector('.CarType')
+const LeftEl=document.querySelector('.Left')
+const RightEl=document.querySelector('.Right')
+
+ModelEl.addEventListener('click',function(e){
+  ModelEl.setAttribute('aria-selected',true);
+  ModelTypeEl.setAttribute('aria-selected',false);
+  CarListEl.style.display='flex';
+  ModelEl.style.color='black';
+  ModelEl.style.textDecoration='underline';
+  ModelTypeEl.style.color='#d9d9d9';
+  ModelTypeEl.style.textDecoration='none';
+  CarEl.style.display='block';
+  CarTypeEl.style.display='none';
+})
+
+ModelTypeEl.addEventListener('click',function(e){
+  ModelTypeEl.setAttribute('aria-selected',true);
+  ModelEl.setAttribute('aria-selected',false);
+  CarListEl.style.display='none';
+  ModelTypeEl.style.color='black';
+  ModelTypeEl.style.textDecoration='underline';
+  ModelEl.style.color='#d9d9d9';
+  ModelEl.style.textDecoration='none';
+  CarEl.style.display='none';
+  CarTypeEl.style.display='block';
+  LeftEl.style.display='none';
+})
+
+let initialScrollPos = CarEl.scrollLeft;
+
+CarEl.addEventListener('scroll', function(e) {
+  if (CarEl.scrollLeft === initialScrollPos) {
+    LeftEl.style.display = 'none';
+  } else {
+    LeftEl.style.display = 'block';
+  }
+});
+
+LeftEl.addEventListener('click',function(e){
+  CarEl.scrollLeft-=1000;
+})
+
+RightEl.addEventListener('click',function(e){
+  CarEl.scrollLeft+=1000;
+})

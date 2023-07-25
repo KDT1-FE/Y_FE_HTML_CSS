@@ -32,7 +32,7 @@
 .new_album_a h2 {
     height: 24px;
     font-size: 16px;
-    color: #525252;
+    color: #1b1b1b;
 }
 
 .new_album_a img {
@@ -53,7 +53,7 @@
 }
 
 .new_album_ul li:nth-child(1) a {
-    color: #525252;
+    color: #1b1b1b;
     font-weight: bold;
 }
 
@@ -84,11 +84,11 @@
 }
 
 .page span:nth-child(1) {
-    color: #525252;
+    color: #1b1b1b;
 }
 
 .page span:nth-child(2) {
-    color: #525252;
+    color: #1b1b1b;
 }
 
 .page span:nth-child(3) {
@@ -204,7 +204,7 @@
 }
 
 .move a:nth-child(1) {
-    border: 1px solid #525252;
+    border: 1px solid #1b1b1b;
 }
 
 .circle {
@@ -314,7 +314,7 @@
 
 .hot_issue_title {
     font-size: 16px;
-    color: #525252;
+    color: #1b1b1b;
 }
 
 .hot_issue_intro {
@@ -358,7 +358,7 @@
 .song_name span:nth-child(1) {
     font-size: 12px;
     font-weight: bold;
-    color: #525252;
+    color: #1b1b1b;
 }
 
 .song_name span:nth-child(2) {
@@ -373,4 +373,39 @@
 
 .hot_issue_melontv:hover {
     text-decoration: underline;
+}
+
+/* end hot_issue */
+
+/* chart */
+
+.chart {
+    width: 275px;
+    height: 472px;
+    margin: 16px 0 0 20px;
+}
+
+.chart_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart_section {
+    display: flex;
+}
+
+.chart_section a {
+    font-size: 16px;
+    color: #1b1b1b;
+}
+
+.chart_section img {
+    width: 20px;
+}
+
+.chart span {
+    font-size: 13px;
+    font-weight: normal;
+    color: #999999;
 }

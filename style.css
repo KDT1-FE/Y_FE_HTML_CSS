@@ -537,3 +537,99 @@ body{
   color: rgb(107, 118, 132);
   
 }
+
+/* home5 Section */
+
+.home5_wrap{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.home5_container{
+  padding:200px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home5_container_inner{
+  width: 92%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.home5_textwrap h1{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #3182f6;
+  margin-bottom: 30px;
+}
+
+.home5_textwrap h2{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #191f28;
+  margin-bottom: 0px;
+}
+
+.home5_container .iphone_wrap{
+  position:relative;
+  margin: 0 auto;
+}
+
+.home5_content_text{
+  display: block;
+  position: absolute;
+  top: 400px;
+}
+.home5_content_text{
+  width: 100%;
+}
+
+.home5_content_text_inner{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+.home5_content_text p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(51, 61, 75);
+  max-width: 250px;
+}
+
+.home5_content_text p:first-of-type{
+  margin-right:300px;
+}
+
+.home5_content_text p:last-of-type{
+  margin-left: 300px;
+}
+
+.home5_icon_wrap{
+  display: flex;
+  position: absolute;
+  bottom: 124px;
+  left: -65%;
+  z-index: 10;
+}
+
+.home5_icon_wrap img{
+  width:178px;
+  height: 178px;
+  margin: 0 10px;
+}
+
+
+.image_iphone_highz{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}

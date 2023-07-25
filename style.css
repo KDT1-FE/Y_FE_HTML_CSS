@@ -15,6 +15,7 @@ h1 {
     padding-top: 27rem;
     margin-bottom: 3.2rem;
     letter-spacing: -0.4px;
+    font-weight: 700;
 }
 
 p {
@@ -119,4 +120,18 @@ button {
     cursor: pointer;
 }
 
-/*  */
+/* main__home--first */
+
+.home--first {
+    background-color: #FBF7F2;
+}
+
+.home__img--first {
+    width: 804px;
+    height: 685px;
+}
+
+.main__home--first{
+    display: flex;
+    justify-content: space-between;
+}

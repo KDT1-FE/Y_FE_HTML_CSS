@@ -12,9 +12,6 @@
 }
 
 .popula-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
   margin-bottom: 20px;
 }
 

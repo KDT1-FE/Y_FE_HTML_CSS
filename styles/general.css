@@ -34,3 +34,10 @@ h2 {
 .middle {
   justify-content: center;
 }
+
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-left: 0;
+}

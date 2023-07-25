@@ -72,6 +72,10 @@ header nav .mainmenu__secondbox > li > a {
     text-align: left;
 }
 
+header nav .mainmenu__secondbox > li > a:hover {
+    color: #06c755;
+}
+
 
 header nav .mainmenu__thirdbox {
     width: 70.891px;
@@ -103,6 +107,13 @@ header nav .mainmenu__forthbox > li > a {
     color: #838383;
 }
 
+header nav .mainmenu__forthbox > li > a::after {
+    content: "∨";
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+/* Main */
 /* Container contentfirst */
 
 .container__contentfirst {
@@ -140,7 +151,6 @@ p.container__contentfirst__textbox-text {
 }
 
 .container__contentfirst__textbox > a {
-    width: 155.062px;
     height: 43px;
     padding: 0 32px 0 25px;
     border: 1px solid rgba(255,255,255,0.7);
@@ -152,8 +162,13 @@ p.container__contentfirst__textbox-text {
 .container__contentfirst__textbox > a > p {
     color: rgb(255,255,255);
     font-size: 16px;
+    font-weight: 500;
     padding-right: 7px;
     margin: 10px;
+}
+
+.container__contentfirst__textbox > a > p::after {
+    content: ">";
 }
 
 /* Container contentsecond */
@@ -198,7 +213,7 @@ p.container__contentfirst__textbox-text {
 .container__contentsecond__inner__newslist {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
+    gap: 30px;
 }
 
 .container__contentsecond__inner__newslist > div > a > p {
@@ -209,6 +224,9 @@ p.container__contentfirst__textbox-text {
 .container__contentsecond__inner__newslist > div > a > h4 {
     color: black;
     font-weight: 535;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /* Container contentthird */
@@ -239,3 +257,54 @@ p.container__contentfirst__textbox-text {
 }
 
 /* Footer */
+footer {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.attachment {
+    width: 1120px;
+    display: flex;
+    align-items: center;
+
+}
+
+.attachment__leftitem {
+    flex: 1;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+
+.attachment__leftitem > table {
+    margin-left: 20px;
+    color: #111111;
+}
+
+
+.attachment__rightitem {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.attachment__rightitem > a {
+    border: 1px solid #c8c8c8;
+    border-radius: 20px;
+    padding-left: 30px;
+    width: 186px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.attachment__rightitem > a > div {
+    color: #777777;
+}
+
+.attachment__rightitem > a > div::after {
+    content: "∨";
+    margin-left: 70px;
+}
+

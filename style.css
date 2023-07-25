@@ -633,3 +633,16 @@ body{
   top: 0;
   left: 0;
 }
+
+.home5_textwrap2{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home5_textwrap2 h4{
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgb(51, 61, 75);
+  text-align: center;
+}

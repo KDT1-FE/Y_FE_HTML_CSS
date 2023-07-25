@@ -2,19 +2,43 @@
 
 /* nav */
 nav {
-    background-color: tomato;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    align-items: center;
+    z-index: 1;
     width: 100%;
     height: 85px;
+    background: #fff;
+    align-items: center;
 }
 
 .navigation-item {
+    flex-direction: column;
+    justify-content: center;
     padding: 0 22px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -.08px;
+}
+
+.navigation-logo {
+    display: block;
+    cursor: pointer;
+    margin-left: 32px;
+    margin-right: 42px;
+}
+
+.navigation-logo > img {
+    width: 141px;
+    height: 25.88px;
 }
 
 .navigation-item:hover {
     cursor: pointer;
+    color: #19cd8c;
 }
 
 
@@ -22,6 +46,8 @@ nav {
 .slide-show {
     background-color: sandybrown;
     position: relative;
+    z-index: 0;
+    margin-top: 85px;
     display: block;
     overflow: hidden;
     width: 100%;

@@ -7,14 +7,14 @@
 .contents {
     width: 1000px;
     min-height: 800px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 /* new_album */
 
 .new_album {
     width: 480px;
-    height: 340px;
+    height: 360px;
 }
 
 .new_album_top {
@@ -118,12 +118,8 @@
 }
 
 
-.new_album_contents {
-
-}
-
 .new_album_contents_ul {
-    height: 160px;
+    height: 320px;
     display: flex;
     flex-wrap: wrap;
 }

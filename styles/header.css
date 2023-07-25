@@ -6,7 +6,7 @@
 .header {
     width: 100%;
     min-width: 1048px;
-    height: 200px;
+    height: 180px;
     border-top: 3px solid #00cd3c;
     border-bottom: 1px solid #c9c9c9;
 }
@@ -87,7 +87,7 @@
 }
 
 .main_logo img {
-    width: 140px;
+    width: 130px;
 }
 
 
@@ -103,7 +103,7 @@
 
 .searchbar_field {
     width: 340px;
-    height: 40px;
+    height: 37px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -117,9 +117,9 @@
 }
 
 .searchbar input {
-    width: 270px;
+    width: 260px;
     height: 25px;
-    margin-top: 1px;
+    padding-top: 2px;
     margin-left: 15px;
     border: none;
     outline: none;
@@ -181,9 +181,9 @@
 
 .util_menu3 {
     height: 45px;
-    padding-top: 12px;
     display: flex;
     justify-content: space-between;
+    padding-top: 2px;
 }
 
 .util_menu3_ul {

@@ -424,6 +424,30 @@ strong {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.experience-item .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.4vw;
+  height: 6.4vw;
+}
+
+.experience-item .icon::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/dashed.svg);
+  background-repeat: no-repeat;
+}
+
+.experience-item svg {
+  font-size: 2.5vw;
+}
+
 /* ========== FOOTER ========== */
 .footer {
   background-color: #000e11;

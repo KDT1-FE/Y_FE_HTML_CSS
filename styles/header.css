@@ -6,7 +6,7 @@
 .header {
     width: 100%;
     min-width: 1048px;
-    height: 180px;
+    height: 188px;
     border-top: 3px solid #00cd3c;
     border-bottom: 1px solid #c9c9c9;
 }
@@ -19,19 +19,19 @@
 
 /* header_menu */
 
-.header_menu {
+.header_content {
     width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.header_menu span {
+.header_content span {
     color: #999999;
     font-size: 13px;
     font-weight: bold;
 }
 
-.header_menu span:hover {
+.header_content span:hover {
     color: #1a1a1a;
 }
 
@@ -108,7 +108,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
-    border: 2px solid #00cd3c;
+    border: 2.5px solid #00cd3c;
     border-radius: 20px;
 }
 
@@ -119,10 +119,11 @@
 .searchbar input {
     width: 260px;
     height: 25px;
-    padding-top: 2px;
+    padding-top: 4px;
     margin-left: 15px;
     border: none;
     outline: none;
+    font-size: 13px;
 }
 
 .searchbar_button {
@@ -133,6 +134,8 @@
 
 .searchbar_button img {
     width: 25px;
+    height: 25px;
+    padding-top: 4px;
 }
 
 /* end searchbar */
@@ -183,7 +186,7 @@
     height: 45px;
     display: flex;
     justify-content: space-between;
-    padding-top: 2px;
+    padding-top: 8px;
 }
 
 .util_menu3_ul {
@@ -196,7 +199,7 @@
 
 .util_menu3_ul span {
     font-size: 17px;
-    color: #1b1b1b;
+    color: #5e5e5e;
 }
 
 .util_menu3_ul span:hover {
@@ -210,7 +213,7 @@
 
 .util_menu3_ul2 span {
     font-size: 17px;
-    color: #1b1b1b;
+    color: #777777;
 }
 
 .util_menu3_ul2 span:hover {

@@ -6,8 +6,8 @@
 
 .contents {
     width: 1000px;
-    height: 1020px;
-    padding-top: 20px;
+    height: 1000px;
+    padding-top: 28px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -34,7 +34,7 @@
 .new_album_a h2 {
     height: 24px;
     font-size: 16px;
-    color: #1b1b1b;
+    color: #5e5e5e;
 }
 
 .new_album_a img {
@@ -47,7 +47,7 @@
 }
 
 .new_album_ul li {
-    margin-right: 12px;
+    margin-right: 18px;
 }
 
 .new_album_ul a {
@@ -55,7 +55,7 @@
 }
 
 .new_album_ul li:nth-child(1) a {
-    color: #1b1b1b;
+    color: #5e5e5e;
     font-weight: bold;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .move a {
-    margin-right: 2px;
+    margin-right: 3.5px;
 }
 
 .move a:nth-child(1) {
@@ -211,8 +211,8 @@
 
 .circle {
     display: block;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     border: 1px solid #999999;
     border-radius: 50%;
 }
@@ -222,7 +222,7 @@
 }
 
 .playbutton img{
-    width: 14px;
+    width: 12px;
 }
 
 .event_img {
@@ -256,13 +256,13 @@
 }
 
 .create p {
-    font-size: 12px;
+    font-size: 11px;
     color: #999999;
 }
 
 .create a {
-    font-size: 12px;
-    color: #999999;
+    font-size: 11px;
+    color: #777777;
 }
 
 .login_button {
@@ -295,6 +295,7 @@
 
 .main_banner img {
     width: 1002px;
+    height: 82px;
 }
 
 /* end main_banner */
@@ -304,7 +305,7 @@
 .hot_issue {
     width: 705px;
     height: 500px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .hot_issue_top {
@@ -384,13 +385,14 @@
 .chart {
     width: 275px;
     height: 472px;
-    margin: 16px 0 0 20px;
+    margin: 21px 0 0 20px;
 }
 
 .chart_top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .chart_section {
@@ -407,7 +409,7 @@
 }
 
 .chart_top_time {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: normal;
     color: #999999;
 }
@@ -618,12 +620,20 @@
     align-items: center;
     color: #1b1b1b;
     background-color: #f9f9f9;
+    border: 1.5px solid #cfcfcf;
+}
+
+.shuffle:hover {
     border: 1.5px solid #999999;
 }
 
 .more {
     display: flex;
     align-items: center;
+}
+
+.more:hover {
+    text-decoration: underline;
 }
 
 .more span {
@@ -661,14 +671,18 @@
 
 .notice_a2 {
     margin-left: 30px;
-    font-size: 13px;
-    font-weight: lighter;
+    font-size: 12px;
     color: #777777;
+}
+
+.notice_a2:hover {
+    text-decoration: underline;
 }
 
 .date {
     margin-left: 15px;
-    font-size: 13px;
-    font-weight: lighter;
-    color: #555555;
+    font-size: 12px;
+    color: #777777;
 }
+
+

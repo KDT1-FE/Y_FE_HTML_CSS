@@ -825,3 +825,26 @@
 .Space {
   padding: 42px 4%;
 }
+
+/* footer */
+
+.Footer {
+  padding: 24px 60px 40px 60px;
+  height: 100%;
+  background-color: black;
+}
+
+.UpScroll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.Up {
+  text-decoration: none;
+  display: flex;
+}
+
+.Up span {
+  color: white;
+}

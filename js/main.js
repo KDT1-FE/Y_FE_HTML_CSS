@@ -136,3 +136,8 @@ LeftEl.addEventListener('click',function(e){
 RightEl.addEventListener('click',function(e){
   CarEl.scrollLeft+=1000;
 })
+
+const UpEl = document.querySelector('.Up')
+UpEl.addEventListener('click', function(e){
+  window.scrollTo(0,0);
+})

@@ -22,7 +22,14 @@ p {
     font-size: 1.6rem !important;
     line-height: 1.5;
     letter-spacing: -0.3px;
+    color : #212529;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+
 
 a {
     text-decoration: none;
@@ -34,7 +41,7 @@ ul , ol , li {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -42,17 +49,20 @@ button {
     border: none;
     background-color: inherit;
     font-family: -apple-system;
+    margin: 0 0;
 }
 
-.main__img {
-    width: 804px;
-    height: 685px;
-}
+
 /* header */
 
 .header {
     display: flex;
     height: 6.4rem;
+}
+
+.header.container {
+    max-width: 1200px;
+        margin: 0 auto;
 }
 
 .header--left {
@@ -137,6 +147,11 @@ button {
 
 /* main__home--first */
 
+.main__home--first.container {
+    max-width: 1200px;
+        margin: 0 auto;
+}
+
 .home--first {
     background-color: #FBF7F2;
 }
@@ -148,5 +163,64 @@ button {
     justify-content: space-between;
 }
 
+.home__img--first {
+    width: 80.4rem;
+    height: 68.5rem;
+}
+
 /* main__home--second */
 
+.main__home--second {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home__title--second {
+    font-size: 4rem;
+}
+
+.home__img--second {
+    width: 53rem;
+    height: 68.4rem;
+}
+
+.home__desc--second{
+    margin-bottom: 3.2rem;
+}
+
+
+.btn--feat1 {
+    background-color: #F1F3F5;
+    color: #212529;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 1.45rem 2.6rem;
+    display: inline-block;
+    margin-left: 1.6rem;
+    font-size: 1.8rem !important;
+    line-height: 1.47;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    margin: 0 0;
+}
+
+.btn--feat2 {
+    background-color: #F1F3F5;
+    color: #212529;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 1.45rem 2.6rem;
+    display: inline-block;
+    margin-left: 1.6rem;
+    font-size: 1.8rem !important;
+    line-height: 1.47;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+}
+
+.btn--feat1:hover , .btn--feat2:hover{
+    background-color: #E9ECEF;
+    cursor: pointer;
+}

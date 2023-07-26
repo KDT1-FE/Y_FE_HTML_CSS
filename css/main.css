@@ -336,3 +336,38 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   margin-top:30px;
   background-color: white;
 }
+
+/* business-solution */
+.business-solution-slider{
+  margin-top:30px;
+}
+.business-solution-slider .swiper-pagination-bullet { 
+	width: 33vw; /*여기 수정하기 */
+	border-radius:1px;
+	height: 4px; 
+	background: lightgray; 
+	opacity: 0.4;
+  margin-top:40px;
+	;}
+.business-solution-slider .swiper-pagination-bullet-active {  
+	opacity:1;
+	transition: opacity .6s; 
+	border-radius:1px;
+	background: rgb(124, 124, 124); 
+	border: 1px solid transparent; 
+}
+.whereText{
+  margin-top: 60px;
+  margin-right:20px;
+  text-align:end;
+}
+.whereText .firstPlace {
+  display:block;
+}
+.whereText .secondPlace {
+  display:none;
+}
+.whereText .thirdPlace {
+  display:none;
+}
+

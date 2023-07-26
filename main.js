@@ -68,3 +68,16 @@ new Swiper('.select-shop-container .swiper-container', {
   loop:false,
   slidesPerView:3
 })
+
+new Swiper('.business-solution-slider .swiper-container', {
+  direction: 'horizontal',
+  autoplay:{
+    delay:3000
+  },
+  loop:true,
+  slidesPerView: 1,
+  pagination: { // 페이지 번호 사용 여부
+    el: '.business-solution-slider .swiper-pagination', // 페이지 번호 요소 선택자
+    clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
+  }
+})

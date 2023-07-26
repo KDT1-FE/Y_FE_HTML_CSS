@@ -15,7 +15,7 @@ h1 {
     line-height: 1.3;
     margin-bottom: 3.2rem;
     letter-spacing: -0.4px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 p {
@@ -165,7 +165,9 @@ header{
 }
 
 .home__title--first {
-    padding-top: 27rem;
+    padding-top: 21rem;
+    color: #212529;
+    font-weight: 600;
 }
 
 .main__home--first{
@@ -422,4 +424,121 @@ header{
     letter-spacing: -0.3px;
     cursor: pointer;
     text-decoration: underline;
+}
+
+/* footer__nav--pp */
+
+footer {
+    padding: 6rem 0;
+}
+
+.footer__nav--pp {
+    display: flex;
+    margin: 4rem auto;
+
+}
+
+.nav__title--pp {
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    color: #212529;
+    font-weight: bold;
+    margin-right: 4rem;
+}
+
+.nav__list--pp {
+    display: flex;
+    justify-content: space-between;
+    width: 85rem;
+    height: 5.6rem;
+}
+
+
+
+.nav__item--pp > a{
+    text-decoration: none;
+    color: #212529;
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    
+}
+
+.footer--navs {
+    border-top: 1px solid #eaebee;
+}
+
+.footer__content {
+    display: flex;
+    
+}
+.footer__content.container{
+    max-width: 76rem;
+    height: 35rem;
+    padding: 4.8rem;
+}
+
+.footer__content__navs {
+    display: flex;
+    margin-right: 7rem;
+}
+
+
+.footer__content__item > a{
+    color: #212124;
+    line-height: 1.4;
+    font-size: 1.4rem;
+    margin : 1.6rem;
+    display: block;
+}
+
+.footer__content__list {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+    height: 26rem;
+}
+
+.download__title{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.downlad__box {
+    display: flex;
+}
+.btn--download {
+    background-color: #f2f3f6;
+    
+    display: flex;
+    padding: 1.2rem 0.8rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    width: 14.7rem;
+    height: 4.4rem;
+    margin-right: 8px;
+    
+}
+
+
+.btn--download > i {
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    
+    
+}
+
+.fa-apple {
+    position: relative;
+    top: -0.5rem;
+}
+
+.fa-google-play {
+    position: relative;
+    top : -0.3rem;
 }

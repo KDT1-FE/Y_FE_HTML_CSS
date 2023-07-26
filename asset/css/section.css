@@ -2,7 +2,6 @@
     position: relative;
     max-width: 1296px;
     margin: 0 auto;
-    padding-bottom: 182px;
 }
 
 .calendar {
@@ -23,25 +22,31 @@
     box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
 }
 
-article {
+.item {
     margin: 0 -18px;
     padding: 96px 0 0;
 }
-
+.item-2 {
+    margin: 0 -18px;
+    padding: 0px
+}
 .article-container {
     display: flex;
 }
 
-.item-container {
+.item-big-container {
     width: 50%;
     padding: 0 18px;
-    justify-content: space-between;
 }
 
-.item-container:nth-child(2) {
+.item-small-container {
+    width: 50%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    justify-content: space-between;
+    padding: 0 18px;
 }
 
 .item-big-box {
@@ -172,6 +177,7 @@ article {
     height: 92px;
     font-size: 32px;
     letter-spacing: -1px;
+    color: #000;
 }
 
 .tag-container {
@@ -195,24 +201,26 @@ article {
     border-radius: 0;
 }
 
+
 .item-big-box img {
-    margin-top: 10px;
+    margin-top: 12px;
     margin-left: -24px;
     border-radius: 0px 0px 14px 14px;
 }
 
-
-
 .item-small-box {
     width: 297px;
+    height: 363px;
     background-color: #fff;
     transition: all .2s ease-in-out;
     box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
-    padding: 25px 24px 10px;
+    padding: 25px 24px 0px;
     border-radius: 14px;
     cursor: pointer;
 }
-
+.half {
+    height: 192px;
+}
 .item-small-box:hover {
     transform: translateY(-5px);
     box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.2);
@@ -226,7 +234,7 @@ article {
     font-size: 18px;
     line-height: 28px;
     margin-top: 13px;
-    height: 62px;
+    height: 52px;
     /* 2줄까지 표시 및 넘칠경우 ... */
     display: -webkit-box;
     overflow: hidden;
@@ -242,11 +250,188 @@ article {
     font-size: 13px;
     color: #666;
 }
-.item-small-box img {
+.box {
     position: relative;
-    top: 14px;
+}
+.item-small-box img {
+    margin-top: 24px;
     width: 297px;
     height: 160px;
     margin-left: -24px;
     border-radius: 0px 0px 14px 14px;
+}
+.culture-container {
+    height: 540px;
+    background-color: #fff;
+    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
+    padding: 54px 66px 0;
+    margin: 36px 0px;
+    border-radius: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+.culture-text {
+    display: block;
+    font-size: 42px;
+    line-height: 62px;
+    color: #000;
+    font-weight: bold;
+}
+.culture-link {
+    display: inline-block;
+    height: 33px;
+    margin-top: 36px;
+    padding: 9px 20px 0;
+    border-radius: 42px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #000;
+    vertical-align: top;
+}
+.culture-img-wrap {
+    width: 900px;
+    height: 240px;
+    margin: 50px auto 0;
+}
+.culture-img-wrap img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.subscribe-container {
+    display: flex;
+    justify-content: space-between;
+    height: 116px;
+    margin: 36px 0px;
+    border-radius:14px;
+    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
+    padding: 28px 36px;
+    align-items: center;
+    font-size: 32px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #000;
+}
+.subscribe-list {
+    display: flex;
+}
+.subscribe-list li {
+    margin-left: 5px;
+}
+.kakao {
+    width: 60px;
+    height: 60px;
+    background-image: url("https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 317px;
+}
+.youtube {
+    width: 60px;
+    height: 60px;
+    background: url("https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png") -65px 0/317px no-repeat;
+}
+.insta {
+    width: 60px;
+    height: 60px;
+    background: url("https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png") -130px 0/317px no-repeat;
+}
+.facebook {
+    width: 60px;
+    height: 60px;
+    background: url("https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png") -190px 0/317px no-repeat;
+}
+.linked-in {
+    width: 60px;
+    height: 60px;
+    background: url("https://www.kakaocorp.com/page/_nuxt/img/ico_sns.2acc182.png") -255px 0/317px no-repeat;
+}
+.sticky {
+    position: sticky;
+    top: 100px;
+}
+.shortcut-container {
+    margin-top: 36px;
+    height: 360px;
+    display: flex;
+}
+
+.half-box {
+    width: 50%;
+    height: 360px;
+    padding: 0px 18px;
+}
+.shortcut-wrap-1 {
+    padding:36px 36px 0px;
+    height: 100%;
+    border-radius: 14px;
+    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
+    background-color: #fae100;
+}
+.shortcut-wrap-2 {
+    padding:36px 36px 0px;
+    height: 100%;
+    border-radius: 14px;
+    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
+    background-color: #3c64ff;
+}
+.shortcut-title {
+    font-size: 32px;
+    line-height: 44px;
+    color: #000;
+}
+.shortcut-link {
+    display: inline-block;
+    height: 33px;
+    margin-top: 24px;
+    padding: 9px 20px 0;
+    border-radius: 42px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    background-color: #000;
+    vertical-align: top;
+}
+.shortcut-wrap-1 .shortcut-img {
+    width: 160px;
+    height: 160px;
+    background-image: url("https://www.kakaocorp.com/page/bg_home_service.png");
+    background-size: cover;
+    margin-left: auto;
+}
+.shortcut-wrap-2 .shortcut-img {
+    width: 309px;
+    height: 160px;
+    background-image: url("https://www.kakaocorp.com/page/bg_home_recruit.png");
+    background-size: cover;
+    margin-left: auto;
+}
+.notice-container {
+    width: 260px;
+    height: 60px;
+    margin: 84px auto 182px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+    border-radius: 60px;
+    background-color: #eee;
+    color: #000;
+    cursor: pointer;
+}
+.stt {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+    float: right;
+    cursor: pointer;
 }

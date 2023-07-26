@@ -36,3 +36,10 @@ li {
 .list li + li {
     margin-left: 10px;
 }
+
+.separator {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0;
+  }
+  

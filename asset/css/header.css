@@ -61,6 +61,6 @@ button {
     margin-left:12px;
     background-color: #fff;
 }
-nav button:hover {
+.header-container-right button:hover {
     background-color: #eee;
 }

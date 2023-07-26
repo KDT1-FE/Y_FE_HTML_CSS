@@ -1,0 +1,187 @@
+body {
+  font-family: 'NotoSans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  height: 3000px;
+}
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  object-fit: cover;
+}
+.btn{
+  display: block;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 64px;
+  margin-top: 48px;
+  height: 60px;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn_white {
+  position: relative;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn_white:hover {
+  color : #333;
+  background-color: #fff;
+}
+.btn_black {
+  position: relative;
+  color: #333;
+  border: 1px solid #333;
+}
+.btn_black:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+
+/* HEADER */
+header {
+  position: fixed;
+  background-color: rgba(255,255,255,0);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  z-index: 999;
+}
+header > .inner {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  gap: 102px;
+  margin: 0 auto;
+  z-index: 9;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 100%;
+}
+.gnb {
+  display: flex;
+  gap: 0 48px;
+}
+.gnb li {
+}
+.gnb li > a {
+  color: #FFF;
+}
+.gnb li > a:hover {
+  font-weight:700;
+  cursor: pointer;
+}
+
+/* VISUAL */
+.visual {
+  background-image: url("../imges/visual_main.gif");
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 670px;
+  background-size: cover;
+  overflow: hidden;
+  background-position: 50% 0;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+.visual::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.4);
+}
+.visual .inner {
+  height: 100%;
+}
+.visual_text {
+  z-index:5;
+  padding-left: 104px;
+  position: absolute;
+  left: 50%;
+  bottom: 14%;
+  width: 1224px;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 56px;
+}
+.visual_txt .title {
+  font-weight: 700;
+}
+.visual_txt .title span {
+  display: block;
+  line-height: 72px;
+}
+.visual_txt .description {
+  margin-top: 32px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+/* MAIN */
+
+/* 러쉬 앱 소개 */
+.lush_app {
+  padding-top: 100px;
+  background-color: #fff;
+}
+.lush_app .inner {
+  width: 100%;
+}
+.title_area {
+  text-align: center;
+  font-weight: 700;
+}
+.title_area h2 {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.title_area p {
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: -2px;
+}
+
+.app_service {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  text-align: center;
+  gap: 72px;
+}
+.app_service img {
+  width: 288px;
+  height: 288px;
+}
+.app_service .tit {
+  margin-top: 24px;
+  font-weight: 700;
+}
+.app_service .explain {
+  margin-top: 8px;
+  line-height: 23px;
+}

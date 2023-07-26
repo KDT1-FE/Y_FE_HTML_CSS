@@ -8,6 +8,15 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" defer src="./js/slide.js"></script>
   </head>
 
   <body>
@@ -41,5 +50,33 @@
         </nav>
       </div>
     </header>
+
+    <!-- MAIN TOP BANNER -->
+    <section class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <a href="javascript:void(0)">
+            <img
+              src="./images/main_slide1.png"
+              alt="인스타 구매 인증하고 도넛 1+1 받자!"
+            />
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="javascript:void(0)">
+            <img src="./images/main_slide2.png" alt="노티드 new 썸머 레시피!" />
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="javascript:void(0)">
+            <img
+              src="./images/main_slide3.png"
+              alt="노티드 베이커리 예약하러 가기"
+            />
+          </a>
+        </li>
+      </ul>
+      <div style="bottom: 75px" class="swiper-pagination"></div>
+    </section>
   </body>
 </html>

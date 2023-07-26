@@ -1,0 +1,19 @@
+/* 메인 슬라이드 베너 */
+.swiper {
+  position: relative;
+  margin-bottom: 40px;
+}
+.swiper .swiper-wrapper {
+  margin: 0;
+  padding: 60px 0;
+}
+
+.swiper .swiper-wrapper .swiper-slide > a > img {
+  width: 100%;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+}

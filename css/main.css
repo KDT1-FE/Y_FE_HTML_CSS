@@ -567,7 +567,7 @@
 
 .AD {
   display: flex;
-  margin: 200px 10%;
+  margin: 250px 13%;
   height: 100%;
   position: relative;
 
@@ -614,7 +614,7 @@
   width: 149.81px;
   height: 56px;
   cursor: pointer;
-  margin: 0px 4px 28px 0px;
+  margin: 10px 4px 28px 0px;
   padding: 16px 32px;
   text-align: center;
   box-sizing: border-box;
@@ -623,4 +623,87 @@
 
 .AD1btn:hover {
   background-color: #666;
+}
+
+.Service {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 60px;
+}
+
+.Servicetitle {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 4.2rem;
+}
+
+.Compos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.ServiceComponent1 {
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+
+
+}
+
+.CompoImg1 {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.ServiceComponent2 {
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+
+}
+
+.CompoImg2 {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+
+.ServiceComponent3 {
+  margin-bottom: 0;
+  width: calc(33.33333%);
+  text-decoration: none;
+
+
+}
+
+.CompoImg3 {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.CompoText {
+  width: calc(100% - 30px);
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.CompoLook {
+  color: black;
+  display: flex;
+}
+
+.CompoLook > .material-symbols-outlined {
+  color: black;
+  margin-left: 10px;
 }

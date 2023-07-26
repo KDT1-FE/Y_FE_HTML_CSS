@@ -14,6 +14,7 @@ const SectionSearchEls=document.querySelector('.SectionSearchContainer')
 const CarListEl=document.querySelector('.CarListModels')
 const CarList=document.querySelector('.CarList')
 const ADEl=document.querySelectorAll('.AD')
+const ServiceEl=document.querySelector('.Service')
 HeadMenuEls.addEventListener('click', function(e) {
   i++;
   if(i%2!=0){
@@ -26,6 +27,7 @@ HeadMenuEls.addEventListener('click', function(e) {
     CarListEl.style.display='none';
     CarList.style.display='none';
     CarTypeEl.style.display='none';
+    ServiceEl.style.display='none';
     ADEl.forEach(element => {
       element.style.display = 'none';
     });
@@ -43,6 +45,7 @@ HeadMenuEls.addEventListener('click', function(e) {
     SectionModelEl.style.display='inline-block';
     CarListEl.style.display='flex';
     CarList.style.display='block';
+    ServiceEl.style.display='block';
     ADEl.forEach(element => {
       element.style.display = 'flex';
     });

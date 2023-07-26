@@ -92,8 +92,9 @@ header nav .mainmenu__thirdbox > li > a {
 }
 
 header nav .mainmenu__forthbox {
+    position: relative;
     margin: 25px 0px;
-    width: 128px;
+    width: 126.5px;
     height: 30px;
     border: 1px solid #c8c8c8;
     border-radius: 20px;
@@ -111,6 +112,33 @@ header nav .mainmenu__forthbox > li > a::after {
     content: "∨";
     margin-left: 30px;
     font-size: 18px;
+}
+
+.mainmenu__language__basket {
+    position: absolute;
+    top: -2px;
+    width: 128px;
+    height: 150px;
+    background-color: rgb(245,245,245);
+    border-radius: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.mainmenu__language__basket > a {
+    flex-basis: 28px;
+    padding-left: 15px;
+    width: auto;
+    height: auto;
+    color: rgb(131, 131, 131);
+}
+
+.mainmenu__language__basket a:first-child::after {
+    content: "^";
+    margin-left: 22px;
 }
 
 /* Main */

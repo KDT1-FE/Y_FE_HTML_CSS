@@ -367,6 +367,7 @@ a{
 }
 
 .home_text{
+  display: none;
   animation: appear_from_bottom ease 1.5s;
 }
 
@@ -791,6 +792,7 @@ a{
 }
 
 .home6_container{
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 160px 0;
@@ -804,6 +806,7 @@ a{
 }
 
 .home6_wallpaper{
+  position:relative;
   width: 100%;
   height: 700px;
   overflow: hidden;
@@ -824,6 +827,23 @@ a{
   line-height: 1.3;
   color: #f9fafb;
   text-align: center;
+}
+
+.home6_wallpaper_wall{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow:hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home6_wall{
+  height: 100%;
+  width: 200px;
+  background-color: white;
 }
 
 .home6_content1{

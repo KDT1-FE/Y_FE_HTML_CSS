@@ -266,5 +266,41 @@ const home5AppearHandler = () => {
     }
 }
 
-
 window.addEventListener('scroll', home5AppearHandler)
+
+
+/* home6 스크롤 width 조절 이벤트 */
+const walls = document.querySelectorAll('.home6_wall')
+const home6Wall = document.querySelector('.home6_wallpaper')
+console.log(walls)
+let difference
+const home6WidthControlHandler = ()=>{
+    difference = windowHeight - home6Wall.getBoundingClientRect().top
+    console.log(difference)
+    
+    if(difference<=150){
+        walls.forEach(item=>{
+            item.style.width = `200px`
+            console.log('왜안돼?')
+        }
+            )
+    }
+    else if(difference>150 && difference<700){
+
+        walls.forEach(item=>
+            item.style.width = `${-(4/11)*difference + 255 }px`)
+    }
+    else if(difference>=700){
+
+        walls.forEach(item=>
+            item.style.width = '0px')
+    }
+
+    // console.log(home6Wall.getBoundingClientRect().top, windowHeight)
+    // 150 이하면 width 200 그대로, 700 이상이면 width 0
+    // windowHeight - home6Wall.getBoundingClientRect().top  == 150 : 200px
+    // windowHeight - home6Wall.getBoundingClientRect().top  == 700 : 0px
+
+}
+
+window.addEventListener('scroll', home6WidthControlHandler)

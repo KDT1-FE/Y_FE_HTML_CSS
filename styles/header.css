@@ -1,18 +1,12 @@
 body, button, input, select, table, textarea {
     font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
-body {
-    margin : 0;
-    display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
 
-}
 .container {
     display : flex;
     position: fixed;
     flex-direction: column;
     justify-content : center;
-    text-align : center;
     align-items : center;
     top: 0;
     left : 0;
@@ -20,7 +14,7 @@ body {
     z-index: 100;
     margin : 0 auto;
     background-color : white;
-    padding: 8px 40px 0;
+    
 
 }
 .header {
@@ -36,6 +30,7 @@ body {
     height : 22px;
     display : flex;
     max-width : 1280px;
+    padding: 8px 40px 0;
 
 
 }
@@ -63,7 +58,7 @@ body {
     height : 24px;
     flex-direction : row;
     justify-content : space-between;
-    padding : 20px 0px;
+    padding : 20px 40px;
 }
 .left_secton {
     display: flex;
@@ -125,14 +120,16 @@ body {
 }
 .nav {
     position : relative;
-    max-width : 1280px;
     width : 100%;
     height : 44px;
+    max-width : 1280px;
+    
 
 }
+
 .sidebar_link {
     list-style-type: none;
-    padding : 0px;
+    padding : 0px 40px;
     
 }
 #rapbeat {

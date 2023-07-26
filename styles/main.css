@@ -4,45 +4,43 @@ body, button, input, main, table, textarea,p {
 .main {
     position : relative;
     padding-top : 130px;
-    max_width : 1280px;
     width :100%;
-    padding : 130px 0 40px;
     margin : 0 auto;
     
 }
 .banner_section {
-    position : relative;
-    width : 100%; //이건 다시 해결해야함
-    margin : 0 ;
-    max-height: 480px;
     
 }
 .img_box {
-    position : relative;
-    width : 100%;
-    max-height: 480px;
-    display : flex;
-    flex-wrap :nowrap;
-    animation : bannermove 2s linear infinite;
-    justify-content : center;
+
 }
 .img_box div {
+    position : relative;
+    width : 100%;
     white-space: nowrap;
     font-size:0; /*빈공간을 없애기 위함*/
     overflow: hidden; /*초과해서 이미지가 나올 경우 나오지 않게 함*/
 }
 .img_box div img {
     position : relative;
-    object-fit: cover;
-    max-width : 100%;
+    max-height: 480px;
+    width : 100%;
     overflow : hidden;
 }
-.grid_container {
-    display : grid;
+.grid_section {
     position : relative;
+    margin : 40px auto 56px auto ;
+    text-align: center;
+    justify-content:center;
     max-width : 1280px;
     padding : 0 40px;
-    margin : 40px auto 56px auto ;
+
+}
+.grid_section_container {
+    display : grid;
+    position : relative;
+    padding : 0 40px;
+    max-width : 1280px;
     grid-template-columns : repeat(5,minmax(0,1fr));
     grid-column-gap : 8px;
     grid-row-gap : 8px;
@@ -50,11 +48,10 @@ body, button, input, main, table, textarea,p {
     justify-content : center;
 
 }
-.grid_container div {
-    text-align : center;
-    justify-content : center;
+.grid_section_container div {
+    
 }
-.grid_container > div > img {
+.grid_section_container > div > img {
     text-align : center;
     justify-content : center;
     box-sizing: border-box;
@@ -62,10 +59,12 @@ body, button, input, main, table, textarea,p {
     overflow : hidden;
     display : flex;
     border : none;
-    height : 100px;
     width : 100%;
+    height : 100px;
+
+    
 }
-.grid_container div p {
+.grid_section_container div p {
     text-align : center;
     justify-content : center;
     font-size: 15px;
@@ -78,7 +77,6 @@ body, button, input, main, table, textarea,p {
     position: relative;
     flex-direction : column;
     max-width: 1280px;
-    padding: 0 40px;
     margin: 40px auto 56px auto;
     grid-template-columns: repeat(5,minmax(0,1fr));
     grid-column-gap: 8px;
@@ -93,13 +91,14 @@ body, button, input, main, table, textarea,p {
     grid-template-columns: repeat(4,minmax(0,1fr));
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-    width : 100%;
     max-width : 1280px;
     margin : 0 auto;
+    padding : 0 40px;
 
 }
 .container_title {
     text-align : start;
+    padding : 0 40px;
     
 
 }
@@ -213,6 +212,7 @@ hr {
     text-align : center;
     justify-content : center;
     margin : 16px 0;
+    padding : 0 40px;
 
 
 }
@@ -242,7 +242,7 @@ hr {
     display : flex;
     position : relative;
     flex-direction : row;
-    width : 100%;
+    padding : 0 40px;
     max-width : 1280px;
     text-align : center;
     justify-content : space-between;

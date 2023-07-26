@@ -1,12 +1,17 @@
 .footer {
-    position : absolute;
-    bottom : 0;
-
+    position : relative;
+    padding : 0 40px;
+    margin : 0  auto;
+    max-width : 1280px;
+    width : 100%;
 }
 .info_container {
     display : flex;
-    justify-content : space-between;
     position : relative;
+    max-width : 1280px;
+    width : 100%;
+    justify-content : space-between;
+    margin : 0  auto;
     
 }
 .info_list {

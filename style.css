@@ -43,6 +43,11 @@ button {
     background-color: inherit;
     font-family: -apple-system;
 }
+
+.main__img {
+    width: 804px;
+    height: 685px;
+}
 /* header */
 
 .header {
@@ -69,9 +74,19 @@ button {
     letter-spacing: -2%;
     margin-right: 3rem;
     color: #4D5159;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
+
+.nav__item:hover {
+    color: #868b94;
+    cursor: pointer;
+}
+
+.nav__item.active {
+    color: #fa6616;
+    cursor: pointer;
+}
+
 .header--left > a > img {
     width: 100px;
     height: 28px;
@@ -126,12 +141,12 @@ button {
     background-color: #FBF7F2;
 }
 
-.home__img--first {
-    width: 804px;
-    height: 685px;
-}
+
 
 .main__home--first{
     display: flex;
     justify-content: space-between;
 }
+
+/* main__home--second */
+

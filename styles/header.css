@@ -7,6 +7,7 @@ header {
   align-items: center;
 
   position: fixed;
+  z-index: 1;
 }
 
 .site-logo{
@@ -19,7 +20,7 @@ header {
 
   padding: 0px 16px;
 
-  color:#171A20;
+  color: #F9F8F8;
 }
 
 .site-nav-products{
@@ -42,20 +43,18 @@ header {
   align-items: center;
 }
 
-header ol span {
-  color: #181A1F;
-}
-
 header ol a{
   padding: 4px 8px;
 }
 
-header ol span{
+.site-nav li span{
   margin: 0px 8px;
-  
+
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  font-weight: 450;
   letter-spacing: .5px;
+  color: #F9F8F8;
 }
 
 .site-nav-items-menu{

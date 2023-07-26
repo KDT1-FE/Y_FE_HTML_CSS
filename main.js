@@ -48,6 +48,7 @@ setTimeout(()=>{
 
 /* home 스크롤 애니메이션 */
 
+/* home 스크롤 이벤트 */
 const windowHeight = window.outerHeight
 
 const homeEventHandler = ()=>{
@@ -74,17 +75,16 @@ const homeEventHandler = ()=>{
                 },600)
             },600)
         },300)
-
         // 성능 최적화를 위하여 한번 사용한 eventListener를 제거 => 딱 한번만 동작하게 됨
         window.removeEventListener('scroll',homeEventHandler)
     }
 }
-
 window.addEventListener('scroll',homeEventHandler)
 
 
 /* home2 애니메이션 */
 
+/* home2 스크롤 이벤트 */
 const home2EventHandler = ()=>{
     const home2Text = document.querySelector('.home2_textwrap')
     const home2Contents = document.querySelectorAll('.home2_content')
@@ -109,16 +109,14 @@ const home2EventHandler = ()=>{
                 },600)
             },600)
         },200)
-
-        
         window.removeEventListener('scroll',home2EventHandler)
     }
 }
-
 window.addEventListener('scroll',home2EventHandler)
 
-/* home3  */
+/* home3 */
 
+/* home3 스크롤 이벤트 */
 const home3EventHandler = ()=>{
     const home3Text = document.querySelector('.home3_textwrap')
     const home3ImageContainer = document.querySelector('.home3_image_container .iphone_wrap')
@@ -159,6 +157,7 @@ window.addEventListener('scroll',home3EventHandler)
 
 /* home4 animation */
 
+/* home4 스크롤 이벤트 */
 const home4EventHandler = ()=>{
     const home4Text = document.querySelector('.home4_textwrap')
     const home4Contents = document.querySelectorAll('.home4_content_textwrap')
@@ -189,11 +188,8 @@ const home4EventHandler = ()=>{
 window.addEventListener('scroll',home4EventHandler)
 
 /* home5 animation */
-// home5_textwrap 
-// home5_content_text_inner p:first-of-child
-// home5_content_text_inner p:last-of-child
-// home5_textwrap2
 
+/* home5 스크롤 이벤트 */
 const home5EventHandler = ()=>{
     const home5Text = document.querySelector('.home5_textwrap')
     const home5P1 = document.querySelector('.home5_content_text_inner p:first-of-type')
@@ -215,15 +211,11 @@ const home5EventHandler = ()=>{
                         home5Text2.style.animation = 'appear_from_bottom ease 1.5s'
                         home5Text2.style.opacity = 1
                     },600)
-                },600)
-                
-            },600)
-            
+                },600)      
+            },600)     
         },200)
-
-        
         window.removeEventListener('scroll',home5EventHandler)
     }
 }
-
 window.addEventListener('scroll',home5EventHandler)
+

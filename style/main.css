@@ -89,3 +89,94 @@ body {
     font-size: 17px;
     font-weight: 550;
 }
+
+
+#home-main-middle2 {
+    display: flex;
+    background-color: #E6F3E6;
+    align-items: center;
+}
+
+.home-main-desc3 {
+    flex: 1;
+    margin-left: 180px;
+ }
+
+.text-m3 {
+    color:#212529;
+}
+.home-main-title3 {
+    font-size: 40px;
+}
+
+.home-story-list {
+    margin-top: 60px;
+    display: flex;
+    /* ul을 써서 디폴트값으로 padding-left값이 30px 들어가있어서 padding-left=0;으로 줌 */
+    padding-left: 0;
+}
+
+.home-story-list-item {
+    margin-right: 50px;
+}
+
+.icon-story1 {
+    background-image: url(https://d1unjqcospf8gs.cloudfront.net/assets/home/main/icon-story-1-9226479b836cdc960291ffda91ace46c90a632f6cc868aa8983b3624e662a924.svg);
+    width: 56px;
+    height: 56px;
+}
+
+.icon-story2 {
+    background-image: url(https://d1unjqcospf8gs.cloudfront.net/assets/home/main/icon-story-2-208bb88cad31e335b40bc8ac5b7684dcf8a36d77ac50770a497a9c967a3bfc4f.svg);
+    width: 56px;
+    height: 56px;
+}
+
+.icon-story3 {
+    background-image: url(https://d1unjqcospf8gs.cloudfront.net/assets/home/main/icon-story-3-0a14d64c6101a7271655747d8401b9f71506578f8a4c0640608074e977bbc7c0.svg);
+    width: 56px;
+    height: 56px;
+}
+
+.text1-1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text1-2 {
+    margin-top: 20px;
+    font-size: 13px;
+    color:#212529;
+}
+
+.text2-1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text2-2 {
+    margin-top: 20px;
+    font-size: 13px;
+    color:#212529;
+}
+
+.text3-1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text3-2 {
+    margin-top: 20px;
+    font-size: 13px;
+    color:#212529;
+}
+
+
+.home-main-image-top3 {
+    flex: 1;
+    width: 546px;
+    height: 740px;
+}

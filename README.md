@@ -4,7 +4,7 @@
 ### 안녕하세요!
 클론코딩한 사이트는 라인플러스(주)입니다.</br>
 원본 사이트 : https://linepluscorp.com/ 입니다.</br>
-배포 사이트 : 입니다.
+배포 사이트 : https://app.netlify.com/sites/silver-parfait-b1a37d/overview 입니다.
 </br>
 </br>
 

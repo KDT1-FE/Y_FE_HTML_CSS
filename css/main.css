@@ -1,0 +1,142 @@
+/* 폰트 및 텍스트 색상 점검 해야 함 */
+/* 시간 남으면 창 줄였을때도 생각해서 동적으로 만들 것 */
+
+/* GLOBAL */
+/* 밑은 reset.css 와 동일한 동작. 현재는 reset.css 사용중 글씨체 조정을 위해 reser.css 없애야 할 수 있음
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+*/
+html {
+  font-size: 10px;
+  font-family: 'SF Pro Display', sans-serif;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* 애플 공식 홈페이지의 header 블러처리를 위함 */
+  backdrop-filter: blur(2rem);
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+.nav-link {
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0 1rem;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.nav-link:hover {
+  opacity: 1;
+}
+.nav-link-apple {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url('../images/apple.svg') center no-repeat;
+}
+.nav-link-search {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url('../images/search.svg') center no-repeat;
+}
+.nav-link-bag {
+  width: 1.4rem;
+  height: 4.4rem;
+  background: url('../images/bag.svg') center no-repeat;
+}
+
+/* TRADE IN */
+
+/* YOUTUBE VIDEO */
+
+/* HERO IPHONE SECTION */
+.iphone-14-pro {
+  background: url('../images/hero_iphone-14-pro.jpg');
+  /* 아마 없애고 youtube-video가 이거 가짐 */
+  margin-top: 4.4rem;
+}
+.title {
+  color: #fff;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+.title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+.title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: -0.008rem;
+  font-weight: 400;
+}
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.cta-link {
+  color: #66bbff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+.cta-link:hover {
+  border-bottom: 2px solid #66bbff;
+}
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+/* HERO MACBOOK SECTION */
+.macbook-air-15 {
+  background: url('../images/hero-macbook-air-15.jpg');
+}
+.title-dark {
+  color: #000;
+}
+.cta-link-darker {
+  color: #0070c9;
+}
+.cta-link-darker:hover {
+  border-bottom-color: #0070c9;
+}
+
+/* OVERRIDE HERO IMAGES */
+/* Moved to the bottom of all section styles to keep consistent styles */
+.hero {
+  height: 69.2rem;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid #fff;
+  border-bottom: 0.6rem solid #fff;
+}
+
+/* PRODUCTS GRID */
+
+/* APPLE TV PLUS */
+
+/* FOOTER */

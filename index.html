@@ -11,13 +11,12 @@
     <!-- web icon ico 파일의 화질 저하 및 캐싱에 의존하지 않기 위해 png 따로 지정 -->
     <link rel="icon" href="./favicon.png" />
 
-    <!-- rest.css cdn -->
+    <!-- reset.css cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 
-    <!-- TODO: Nanum Gothic font 적용, 추후에 글꼴 확인 후 수정 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- TODO: SF Pro Display font -->
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+
     <!-- google material icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- link css file -->
@@ -53,51 +52,53 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="inner">
-        <a href="" class="logo"></a>
+      <div class="container">
+        <nav class="nav">
+          <!-- nav-list -->
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/" class="nav-link nav-link-apple"></a>
+            </li>
 
-        <ul class="menu">
-          <li class="item">
-            <div class="item_name">스토어</div>
-          </li>
-          <li class="item">
-            <div class="item_name">Mac</div>
-          </li>
-          <li class="item">
-            <div class="item_name">iPad</div>
-          </li>
-          <li class="item">
-            <div class="item_name">iPhone</div>
-          </li>
-          <li class="item">
-            <div class="item_name">Watch</div>
-          </li>
-          <li class="item">
-            <div class="item_name">AirPods</div>
-          </li>
-          <li class="item">
-            <div class="item_name">TV 및 홈</div>
-          </li>
-          <li class="item">
-            <div class="item_name">엔터테인먼트</div>
-          </li>
-          <li class="item">
-            <div class="item_name">액세서리</div>
-          </li>
-          <li class="item">
-            <div class="item_name">고객지원</div>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">스토어</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">Mac</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">iPad</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">iPhone</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">Watch</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">AirPods</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">TV 및 홈</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">엔터테인먼트</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">액세서리</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">고객지원</a>
+            </li>
 
-        <!-- TODO: 밑에 search 및 cart 수정 -->
-        <div class="search">
-          <div class="material-icons">search</div>
-        </div>
-
-        <div class="shopping bag">
-          <!-- svg file 고려 -->
-          <div class="material-icons">shopping_bag</div>
-        </div>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link nav-link-search"></a>
+            </li>
+            <li class="nav-item nav-item-hidden">
+              <a href="javascript:void(0)" class="nav-link nav-link-bag"></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -105,9 +106,34 @@
 
     <!-- YOUTUBE VIDEO -->
 
-    <!-- IPHONE VISUAL-->
+    <!-- HERO IPHONE SECTION-->
+    <section class="hero iphone-14-pro">
+      <div class="container">
+        <div class="title">
+          <h2 class="title-heading">iPhone 14 Pro</h2>
+          <h3 class="title-sub-heading">프로 그 이상.</h3>
+        </div>
+        <div class="cta">
+          <a href="javascript:void(0)" class="cta-link cta-link-darker">더 알아보기</a>
+          <a href="javascript:void(0)" class="cta-link cta-link-darker">구입하기</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- MACBOOK VISUAL-->
+    <!-- HERO MACBOOK SECTION-->
+
+    <section class="hero macbook-air-15">
+      <div class="container">
+        <div class="title title-dark">
+          <h2 class="title-heading">MacBook Air 15</h2>
+          <h3 class="title-sub-heading">크게 펼치고, 얇게 접다.</h3>
+        </div>
+        <div class="cta">
+          <a href="javascript:void(0)" class="cta-link cta-link-darker">더 알아보기</a>
+          <a href="javascript:void(0)" class="cta-link cta-link-darker">구입하기</a>
+        </div>
+      </div>
+    </section>
 
     <!-- PRODUCTS GRID -->
 

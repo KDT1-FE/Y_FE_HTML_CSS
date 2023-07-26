@@ -323,6 +323,7 @@ footer {
 }
 
 .attachment__rightitem > a {
+    position: relative;
     border: 1px solid #c8c8c8;
     border-radius: 20px;
     padding-left: 30px;
@@ -341,3 +342,34 @@ footer {
     margin-left: 70px;
 }
 
+.familysite_basket {
+    position: absolute;
+    bottom: 40px;
+    border: 1px solid #c8c8c8;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 217.5px;
+    height: 200px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 13px 0px 13px 20px;
+    box-sizing: border-box;
+    z-index: 10;
+    opacity: 0;
+}
+
+.familysite_basket.show {
+    opacity: 0.9;
+}
+
+
+.familysite_basket > a {
+    padding: 5px 0;
+    font-size: 0.95rem;
+}
+
+.familysite_basket > a:hover {
+    color: #06c755;
+}

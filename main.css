@@ -1,0 +1,1273 @@
+@font-face {
+  font-family: 'Koverwatch';
+  src: url("./font/koverwatch.eot");
+  src: url("./font/koverwatch.woff");
+}
+
+/* COMMON */
+body {
+  font-family: "Poppins",Helvetica,Arial,sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  height: 55px;
+  padding: 5px;
+  border: none;
+  background-color: #f06414;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 2px;
+  opacity: 0.85;
+  transition: 0.2s;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #f06414;
+  opacity: 1;
+}
+
+/* 상단 고정바 */
+header {
+  width: 98%;
+  background-color: #dfdfdf;
+  position: fixed;
+  z-index: 20;
+  margin: 20px;
+  border-radius: 10px;
+  right: 0;
+  left: 0;
+  opacity: 0.85;
+}
+
+header .inner {
+  display: flex;
+  align-items: center;
+}
+
+header .inner .front {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-right: 1px solid #fff;
+  border-radius: 10px 0 0 10px;
+}
+
+header .front a img {
+  width: 80px;
+  margin-top: 10px;
+}
+
+
+/* 메뉴 이름 */
+header .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header .middle .middle__logo > img {
+  width: 50px;
+  padding: 10px 20px;
+}
+
+/* 드롭다운 */
+.dropdown {
+  padding: 10px;
+}
+
+.dropdown .dropdown-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown .dropdown-title > li {
+  color: #1d253a;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 20px;
+}
+
+.dropdown .dropdown-title i {
+  font-size: 13px;
+  padding-left: 3px;
+}
+
+.dropdown .dropdown-bar {
+  opacity: 0;
+  display: none;
+  font-weight: 500;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 10;
+  list-style: none;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 8em;
+}
+
+.dropdown .dropdown-bar > li {
+  padding: 10px;
+}
+
+.dropdown .dropdown-bar > li:hover {
+  background-color: #e7e7e7;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.dropdown .title:hover .dropdown-bar{
+  opacity: 1;
+  display: block;
+}
+
+/* hover */
+.mouseover {
+  color: rgb(0, 0, 0);
+  background-color: #d4d4d4;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+
+
+
+
+/* 상단바 오른쪽 부분 */
+header .end {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+}
+
+header .end .search,
+header .end .account {
+  font-size: 21px;
+  font-weight: 700;
+  color: #16181f;
+  padding: 15px;
+  margin: 0 10px;
+  transition: background .3s;
+}
+
+header .end .search:hover,
+header .end .account:hover {
+  background-color: #d4d4d4;
+  border-radius: 12px;
+}
+
+header .end .account a {
+  display: flex;
+  color: #16181f;
+  text-decoration: none;
+}
+
+header .end .account a i {
+  padding-right: 15px;
+}
+
+header .end .play-now {
+  width: 150px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+header .end .play-now:hover {
+  cursor: pointer;
+}
+
+
+
+
+/* YOUTUBE BACKGROUND */
+.youtube {
+  position: relative;
+  height: 850px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.youtube .youtube__area {
+  width: 1920px;
+  background-color: orange;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  top: 50%;
+  margin-top: calc(1920px * 9 / 16 / -2);
+}
+
+.youtube .youtube__area::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.youtube .youtube__cover {
+  background-image: url("#");
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.youtube .inner {
+  height: 850px;
+}
+
+.youtube .inner .title {
+  height: 850px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+/* 중앙에 글씨 */
+.youtube .inner .title .title__logo img {
+  width: 500px;
+}
+
+.youtube .inner .title .title__text {
+  font-family: Koverwatch, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  color: #fff;
+  margin: 30px 0;
+}
+
+
+/* 하단에 각종 링크 */
+.link-logo {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-logo a img {
+  width: 120px;
+}
+
+.link-logo .battelnet {
+  padding: 30px 50px;
+}
+
+.link-logo .battelnet a img {
+  width: 180px;
+}
+
+.link-logo .xbox {
+  padding: 0 30px;
+}
+
+.link-logo .xbox a img {
+  width: 100px;
+}
+
+.link-logo .playstation {
+  padding: 0 30px;
+}
+
+.link-logo .nintendo {
+  padding: 0 30px;
+}
+
+.link-logo .steam {
+  padding: 0 30px;
+}
+
+
+/* 새로운 모험 + 유튜브 영상 플레이 */
+.youtube-player {
+  width: 100%;
+  padding: 70px 0;
+  background-image: url(images/background_img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+
+.youtube-player .box {
+  display: flex;
+  align-items: center;
+}
+
+.youtube-player .box .box-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 110px;
+  padding: 35px; 
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+}
+
+.youtube-player .box .box-text__title {
+  color: #1d253a;
+  font-weight: 900;
+  font-size: 60px;
+  padding-bottom: 40px;
+  line-height: 1.2;
+  letter-spacing: -8px;
+  word-spacing: 8px
+}
+
+.youtube-player .box .box-text__description {
+  color: #1d253a;
+  font-weight: 600;
+  font-size: 20px;
+  flex-wrap: wrap;
+  line-height: 1.3;
+}
+
+.youtube-player .box .box-link {
+  right: 50px;
+  width: 46.5%;
+  height: 500px;
+  background-color: #1d253a;
+  overflow: hidden;
+}
+/* 이거 calc()로 해야하는데 귀찮다... */
+
+.youtube-player .box .box-link #player2 {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 둠피 루피스킨 */
+.doom-scroll {
+  background-image: url("./images/해변가.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.doom-scroll .inner {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+.doom-scroll .inner .doom-photo img {
+  width: 100%;
+  margin-left: 150px;
+}
+
+
+.doom-scroll .text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 70px;
+  margin-right: 100px;
+  margin-left: 180px;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.doom-scroll .text-group .text-title {
+  font-size: 60px;
+  letter-spacing: -5px;
+  word-spacing: -3px;
+  margin-bottom: 30px;
+}
+
+.doom-scroll .text-group .text-description {
+  color: #d4d4d4;
+  line-height: 1.4;
+  margin-bottom: 60px;
+}
+
+.doom-scroll .btn-group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.doom-scroll .btn-group .btn{
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  word-spacing: 2px;
+  text-decoration: none;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.doom-scroll .btn-group .btn--white a {
+  color: #16181f;
+  background-color: #fff;
+}
+
+
+/* 새 소식 */
+.new-event {
+  background-image: url('./images/background_img1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+}
+
+.new-event .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-event .inner .new-event__title {
+  color: #16181f;
+  font-size: 45px;
+  font-weight: 800;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  letter-spacing: -2px;
+  padding-top: 30px;
+}
+
+.new-event .new-event__body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.new-event .new-event__body .box {
+  width: 320px;
+  height: 330px;
+  margin: 50px 20px;
+  border: 2px solid #617cbe;
+  position: relative;
+  border-radius: 4px;
+}
+
+.new-event .new-event__body .box .box-img {
+  width: 320px;
+  overflow: hidden;
+}
+
+.new-event .new-event__body .box img {
+  width: 100%;
+  height: 190px;
+}
+
+.new-event .new-event__body .box .box-text {
+  width: 100%;
+  height: 140px;
+  background-color: #1d253a;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: -1px;
+}
+
+.new-event .new-event__body .box .box-text .box-text__title {
+  padding: 25px;
+  color: hsla(0,0%,100%,.7);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .4);
+}
+
+.new-event .new-event__body .box .box-text .box-text__date {
+  padding: 0 25px;
+  position: absolute;
+  bottom: 20px;
+  color: hsla(0, 0%, 100%, .55);
+}
+
+
+
+.new-event .new-event__btn a {
+  text-decoration: none;
+}
+
+.new-event .new-event__btn .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.new-event .new-event__btn .blue--btn {
+  background-color: #19a6f9;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.new-event .box a:hover .box-img img {
+  transform: scale(1.05);
+  z-index: -1;
+  transition: .15s;
+}
+
+.new-event .box a:hover .box-text {
+  background-color: #2d3a5a;
+  transition: .15s;
+}
+
+
+/* 동료 영웅들과 싸우세요 */
+.fight {
+  background-image: url('./images/파란하늘배경.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.fight .inner {
+  padding: 30px;
+}
+
+.fight .fight-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  word-spacing: 3px;
+}
+
+.fight .fight-title .top {
+  padding-top: 30px;
+  opacity: .9;
+}
+
+.fight .fight-title .middle {
+  padding-top: 5px;
+  font-size: 60px;
+  font-weight: 900;
+  width: 520px;
+  text-align: center;
+  letter-spacing: -5px;
+  line-height: 1.2;
+}
+
+.fight .fight-title .bottom {
+  padding-top: 20px;
+  opacity: .85;
+}
+
+.fight .fight-middle {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.fight .fight-middle .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 600px;
+  padding: 0 22px;
+}
+
+.fight .fight-middle .box img {
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.fight .fight-middle .box .box__text {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 900;
+  width: 250px;
+  text-align: center;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+}
+
+.fight .fight-middle .box .box__text .title {
+  font-size: 20px;
+  letter-spacing: -2px;
+  line-height: 1.4;
+}
+
+.fight .fight-middle .box .box__text .description {
+  padding-top: 20px;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.fight .hr img {
+  width: 90vw;
+}
+
+
+/* 영웅 보기 스와이퍼 */
+
+.hero {
+  padding-top: 80px;
+}
+
+
+.hero .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .swiper-slide .img-group {
+  width: 850px;
+  height: 600px;
+  position: relative;
+}
+
+.hero .swiper-slide .img-group img {
+  width: 700px;
+  position: absolute;
+  bottom: -500px;
+  left: 50px;
+}
+
+.hero .swiper-slide .img-group .down {
+  width: 600px;
+    bottom: -370px;
+}
+
+
+.hero .swiper-slide .text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-size: 23px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  font-weight: 900;
+  width: 650px;
+  letter-spacing: -2px;
+  word-spacing: 2px;
+  position: relative;
+}
+
+.hero .swiper-slide .text-group .title {
+  font-size: 58px;
+  margin-bottom: 160px;
+}
+
+.hero .swiper-slide .text-group .hero-title {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.hero .swiper-slide .text-group .hero-description {
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.hero .swiper-slide .text-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 15px 10px;
+  width: 250px;
+}
+
+.hero .swiper-slide .text-group .btn:hover {
+  padding: 15px 12px;
+}
+
+.hero .swiper-slide .text-group .btn--white {
+  background-color: #fff;
+  color: #080808;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.hero .swiper-slide .text-group .swiper-pagination {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2.8px solid #fff;
+  width: 60px;
+  height: 60px;
+  margin-right: 6px;
+  outline: none;
+  margin-right: 30px;
+}
+
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet:first-child {
+    background-image: url("./images/탱커.png");
+}
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet:nth-child(2) {
+  background-image: url("./images/딜러.png");
+}
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet:last-child {
+  background-image: url("./images/힐러.png");
+}
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet {
+  opacity: .7;
+}
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(255,255,255,.2);
+  opacity: 1;
+}
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet:hover {
+  opacity: 1;
+  background-color: rgba(255,255,255,.2);
+}
+
+
+/* 전장 */
+.battle-field {
+  width: 100vw;
+}
+
+
+.battle-field .background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: .2s;
+}
+
+.battle-field .push .background {
+  background: url('./images/전장사진-밀기배경.png'); 
+}
+
+.battle-field .scramble .background {
+  background: url('./images/전장사진-쟁탈.png'); 
+}
+
+.battle-field .guard .background {
+  background: url('./images/전장사진-호위.png'); 
+}
+
+.battle-field .mix .background {
+  background: url('./images/전장사진-혼합.png'); 
+}
+
+.battle-field .flag .background {
+  background: url('./images/전장사진-깃발뺏기.png'); 
+}
+
+.battle-field .battle .background {
+  background: url('./images/전장사진-섬멸전.png'); 
+}
+
+.battle-field .death .background {
+  background: url('./images/전장사진-데스매치.png'); 
+}
+
+.battle-field .team-death .background {
+  background: url('./images/전장사진-팀데스매치.png'); 
+}
+
+.battle-field .background .back-inner {
+  backdrop-filter: blur(40px);
+  width: 100vw;
+  height: 930px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.battle-field .background .battle-top {
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.battle-field .background .battle-top .title {
+  padding-top: 40px;
+  font-size: 55px;
+  letter-spacing: -3px;
+}
+
+.battle-field .background .battle-top .description {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  opacity: .8;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.battle-field .background .battle-middle img {
+  width: 600px;
+  border: 2px solid rgba(255,255,255,.2);
+}
+
+.battle-field .background .battle-top .swiper-pagination {
+  position: absolute;
+  top: 290px;
+  text-align: center;
+}
+
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet {
+background-color: transparent;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 30px;
+border-radius: 50%;
+border: 2.8px solid #fff;
+width: 45px;
+height: 45px;
+padding: 1px;
+margin-right: 6px;
+outline: none;
+margin-right: 15px;
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:first-child {
+  background-image: url('./images/전장-밀기.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(2) {
+  background-image: url('./images/전장-쟁탈.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(3) {
+  background-image: url('./images/전장-호위.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(4) {
+  background-image: url('./images/전장-혼합.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(5) {
+  background-image: url('./images/전장-깃발뺏기.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(6) {
+  background-image: url('./images/전장-섬멸전.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(7) {
+  background-image: url('./images/전장-데스매치.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:last-child {
+  background-image: url('./images/전장-팀데스매치.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet {
+  opacity: .6;
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, .2);
+  opacity: 1;
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:hover {
+  background-color: rgba(255, 255, 255, .2);
+  opacity: 1;
+}
+
+.battle-field .background .battle-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.battle-field .background .battle-end .title {
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+.battle-field .background .battle-end .description {
+  padding-top: 20px;
+  opacity: .8;
+  margin-bottom: 70px;
+  letter-spacing: -1px;
+  width: 710px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.battle-field .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("../images/promotion_slide_pager.png");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+}
+
+.battle-field .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.battle-field .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/promotion_slide_pager_on.png");
+}
+
+.classhr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.classhr .hr {
+  width: 90%;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  z-index: 15;
+  background-color: rgb(138, 179, 240);
+  box-shadow: 0px -25px 20px -20px rgba(122, 168, 236, 0.9), 0px 25px 20px -20px rgba(141, 177, 233, 0.8);
+  opacity: .7;
+  border-radius: 50%;
+}
+
+.release {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  background-image: url('./images/background_img1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+  position: relative;
+}
+
+.release .text-group {
+  color: #1d253a;
+  text-shadow: 0 4px 10px hsla(0,0%,100%,.8);
+  font-weight: 700;
+  width: 800px;
+  margin-left: 200px;
+}
+
+.release .text-group .text-top {
+  font-size: 18px;
+  opacity: .7;
+  letter-spacing: -1px;
+  word-spacing: 3px;
+  padding-bottom: 10px;
+}
+
+.release .text-group .text-middle {
+  font-size: 60px;
+  letter-spacing: -5px;  
+  word-spacing: 3px;
+  line-height: 1.1;
+  padding-bottom: 20px;
+}
+
+.release .text-group .text-description {
+  font-size: 20px;
+  opacity: .8;
+  line-height: 1.4;
+}
+
+.release .img-group {
+  position: absolute;
+  right: -60px;
+  bottom: -120px;
+  z-index: 20;
+  transition: 1s;
+}
+
+.release .img-group img {
+  width: 800px;
+}
+
+.release .img-group:hover {
+  transform: translateX(-100px);
+}
+
+
+/* 마지막 섹션 */
+.last-hero {
+  background-image: url('./images/하늘배경.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.last-hero .inner img {
+  width: 100%;
+}
+
+.last-hero .text-group {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.last-hero .text-group .text {
+  width: 550px;
+  font-size: 62px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0,0,0,.2);
+  line-height: 1.2;
+  padding-bottom: 40px;
+  letter-spacing: -8px;
+  word-spacing: 5px;
+}
+
+.last-hero .text-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding: 8px;
+}
+
+.last-hero .text-group .btn:hover {
+  padding: 8px 12px;
+}
+
+.classedhr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.classedhr .hred {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: -3px;
+  z-index: 15;
+  background-color: #1d253a;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #1d253a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+footer .social .title {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: -3px;
+  word-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+footer .social .icons {
+  font-size: 40px;
+  word-spacing: 15px;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+footer .social .icons a {
+  text-decoration: none;
+  opacity: .7;
+  color: #fff;
+}
+
+footer .social a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .footer-info .logo {
+  margin-bottom: 30px;
+}
+
+footer .footer-info .logo img {
+  width: 125px;
+}
+
+footer .footer-info .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: .7;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .info .info-hr {
+  margin: 0 5px;
+}
+
+
+footer .footer-info .info .info-hr::before {
+  content: "|";
+  margin-right: 1em;
+  font-size: 13px;
+}
+
+footer .footer-info .info .info-hr:first-child::before {
+  content: "";
+}
+
+footer .footer-info .battle-net {
+  color: #fff;
+  opacity: .7;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .battle-net a {
+  color: #19a6f9;
+}
+
+footer .footer-info .battle-net img {
+  width: 15px;
+}
+
+
+footer .footer-info .license {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  opacity: .7;
+}
+
+footer .footer-info .license .license-top {
+  font-size: 11px;
+  text-align: center;
+  opacity: .5;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+footer .footer-info .license .license-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .license .license-end .license-end__child {
+  margin: 0 3px;
+}
+
+footer .footer-info .license .license-end .license-end__child::before {
+  content: "|";
+  margin-right: .4em;
+}
+
+footer .footer-info .license .license-end .license-end__child:first-child::before {
+  content: "";
+}
+
+footer .footer-info .company {
+  text-align: center;
+  color: #fff;
+  opacity: .7;
+  font-size: 11px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer .footer-info .blue {
+  margin-bottom: 60px;
+}

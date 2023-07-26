@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오버워치 2</title>
+
+  <!-- favicon.ico 루트 경로에 놓으면 자동으로 사진 연결해줌 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- reset.css -->
+  <link href="
+  https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+  <!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- js -->
+  <script defer src="youtube.js"></script>
+  <script defer src="main.js"></script>
+
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+
+      <!-- 로고 -->
+      <div class="front">
+        <a href="/" class="logo">
+          <img src="./images/블리자드로고.png" alt="블리자드로고">
+        </a>
+      </div>
+      
+      <!-- 드롭다운 -->
+      <div class="middle">
+        <div class="middle__logo">
+          <img src="./images/오버워치로고.png" alt="오버워치로고">
+        </div>
+
+        <div class="dropdown">
+          <ul class="dropdown-title">
+            <li class="title">게임 정보
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-bar">
+                <li>개요</li>
+                <li>자료실</li>
+                <li>패치노트</li>
+              </ul>
+            </li>
+
+            <li class="title">영웅</li>
+
+            <li class="title">시즌
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-bar">
+                <li>5시즌</li>
+                <li>6시즌</li>
+              </ul>
+            </li>
+
+            <li class="title">새 소식</li>
+
+            <li class="title">커뮤니티
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-bar">
+                <li>토론장</li>
+                <li>프로필</li>
+              </ul>
+            </li>
+
+            <li class="title">샵
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-bar">
+                <li>스토어</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="end">
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="account">
+          <a href="https://account.battle.net/login/ko/?ref=https://oauth.battle.net/oauth/authorize?response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Foverwatch.blizzard.com%252Fauth%252Fbnet%252Fcallback%26scope%3Daccount.full%26client_id%3Dcc72d2c0468146f8ae723e4aa7f935a4&app=oauth" target="_blank">
+            <div><i class="fa-solid fa-user"></i></div>
+            <div class="log-in">
+              계정
+            </div>
+          </a>
+        </div>
+        <div class="play-now btn">
+          지금 플레이하기
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- 배경 영상 + 글씨와 링크들 -->
+  <section class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+
+    <div class="inner">
+
+      <div class="title">
+        <div class="title__logo">
+          <img src="./images/Overwatch2_Logo.png" alt="">
+        </div >
+        <div class="title__text">
+          8월 11일,<br>오버워치 2: 침공이 시작됩니다
+        </div>
+        <div>
+          <a href="https://overwatch.blizzard.com/ko-kr/news/23964186/" target="_blank">
+            <button class="btn">자세히 보기</button>
+          </a>
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="link-logo">
+      <div class="battelnet">
+        <a href="https://kr.shop.battle.net/ko-kr/product/overwatch?blzcmp=ow_gamesite&_gl=1*9fbd3v*_ga*MTI5MjcxNzcxNS4xNjg3NDAwNjE2*_ga_VYKNV7C0S3*MTY4OTk0NTYzNC41LjEuMTY4OTk0NzM3Mi4zNC4wLjA." target="_blank">
+          <img src="./images/배틀넷.png" alt="배틀넷" />
+        </a>
+      </div>
+      <div class="xbox">
+        <a href="https://www.xbox.com/ko-KR/games/store/overwatch-origins-edition/C1C4DZJPBC2V/0001" target="_blank">
+          <img src="./images/엑스박스.png" alt="엑스박스">
+        </a>
+      </div>
+      <div class="playstation">
+        <a href="https://store.playstation.com/ko-kr/product/UP0002-PPSA07805_00-OWORIGINS0000000/" target="_blank">
+          <img src="./images/플스.png" alt="플스">
+        </a>
+      </div>
+      <div class="nintendo">
+        <a href="https://www.nintendo.com/store/products/overwatch-2-switch/" target="_blank">
+          <img src="./images/닌텐도.png" alt="닌텐도">
+        </a>
+      </div>
+      <div class="steam">
+        <a href="javascript:void(0)">
+          <img src="./images/스팀.png" alt="스팀">
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+  
+  <!-- 새로운 모험 + 유튜브 영상 플레이 -->
+  <section class="youtube-player">
+    <div class="box">
+      <div class="box-text">
+        <div class="box-text__title">
+          새로운 모험이 <br>기다립니다
+        </div>
+        <div class="box-text__description">
+          8월 11일, 오버워치 2의 새로운 장이 열립니다. 흥미진진한 오버워치 2 경험과 새로운 모험, 사상 최대 규모의 콘텐츠와 새로운 플레이 방식에 빠져들어 보세요.
+        </div>
+      </div>
+
+      <div class="box-link">
+        <div id="player2"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 둠피 루피스킨 -->
+  <section class="doom-scroll">
+    <div class="inner">
+
+      <div class="doom-photo">
+        <img src="./images/루피둠피.png" alt="루피둠피">
+      </div>
+
+      <div class="text-group">
+        
+        <div class="text-title">
+          신규 모드 및 보상과<br> 함께 뜨거운 태양<br> 아래에서 즐기세요!
+        </div>
+        <div class="text-description">
+          하계 스포츠 대회 시즌 이벤트에서 뜨거운 태양 아래 즐거움을 만끽하세요! 로그인하여 최신 모드, 윈스턴의 비치 발리볼 또는 이번에 돌아온 루시우볼 모드를 플레이하세요. 둠피스트 특급 스킨을 비롯한 신규 꾸미기 보상과 함께 큰 승리를 거두세요.
+        </div>
+
+        <div class="btn-group">
+          <div>
+            <a href="https://kr.shop.battle.net/ko-kr/product/overwatch-battle-pass?blzcmp=ow_gamesite" class="btn" target="_blank">배틀 패스 구매</a>
+          </div>
+          <div class="btn--white">
+            <a href="https://overwatch.blizzard.com/ko-kr/season/" class="btn" target="_blank">자세히 보기</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 새 소식 -->
+  <section class="new-event">
+    <div class="inner">
+
+      <div class="new-event__title">
+        새 소식
+      </div>
+
+      <div class="new-event__body">
+
+        <div class="box">
+          <a href="https://news.blizzard.com/ko-kr/blizzard/23982127/%EC%98%A4%EB%B2%84%EC%9B%8C%EC%B9%98-2%EA%B0%80-8%EC%9B%94-11%EC%9D%BC-steam%EC%97%90-%EC%B6%9C%EC%8B%9C%EB%90%A9%EB%8B%88%EB%8B%A4" target="_blank">
+            <div class="box-img">
+              <img src="./images/새소식_블리자드.png" alt="#">
+            </div>
+            <div class="box-text">
+              <div class="box-text__title">
+                오버워치 2가 8월 11일 STEAM에 출시됩니다!
+              </div>
+              <div class="box-text__date">
+                7월 20일
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="https://overwatch.blizzard.com/ko-kr/news/23977044/" target="_blank">
+            <div class="box-img">
+              <img src="./images/새소식_소전.png" alt="#">
+            </div>
+            <div class="box-text">
+              <div class="box-text__title">
+                디렉터의 관점 - 이야기의 다음 장
+              </div>
+              <div class="box-text__date">
+                7월 15일
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="https://overwatch.blizzard.com/ko-kr/news/23976338/" target="_blank">
+            <div class="box-img">
+              <img src="./images/새소식_둠피.png" alt="#">
+            </div>
+            <div class="box-text">
+              <div class="box-text__title">
+                뜨거운 태양 아래 돌아온 오버워치 2 하계 스포츠 대회
+              </div>
+              <div class="box-text__date">
+                7월 12일
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="https://overwatch.blizzard.com/ko-kr/news/23968777/" target="_blank">
+            <div class="box-img">
+              <img src="./images/새소식_파라이수.png" alt="#">
+            </div>
+            <div class="box-text">
+              <div class="box-text__title">
+                디렉터의 관점 - 플래시포인트, 시네마틱 영상과 새로운 영웅의 여명
+              </div>
+              <div class="box-text__date">
+                7월 1일
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="new-event__btn">
+        <a href="https://overwatch.blizzard.com/ko-kr/news/" target="_blank">
+          <div class="btn blue--btn">
+            모두 보기
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 동료 영웅들과 함께 싸우세요 -->
+  <section class="fight">
+    <div class="inner">
+
+      <div class="fight-title">
+        <div class="top">
+          지금 플레이 가능
+        </div>
+        <div class="middle">
+          동료 영웅들과 함께 싸우세요
+        </div>
+        <div class="bottom">
+          친구들을 불러모으고, 팀을 만들어 오버워치 2의 세계로 빠져보세요.
+        </div>
+      </div>
+
+      <div class="fight-middle">
+        <div class="box">
+          <div class="box__img">
+            <img src="./images/싸우는-소전.png" alt="싸우는 소전">
+          </div>
+          <div class="box__text">
+            <div class="title">
+              무료 플레이
+            </div>
+            <div class="description">
+              오버워치 2는 언제든지 열려 있어 무료로 플레이할 수 있으며, 끊임없이 진화하는 라이브 게임입니다. 플랫폼에 관계없이 친구들과 팀을 이루고 일신된 PvP 경험에 뛰어드세요.
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box__img">
+            <img src="./images/정커퀸키리코소전.png" alt="정커퀸키리코소전">
+          </div>
+          <div class="box__text">
+            <div class="title">
+              새로운 영웅들
+            </div>
+            <div class="description">
+              놀라운 영웅들이 현 영웅 목록에 추가됩니다. 돌격을 진두지휘하는 것을 좋아하는 플레이어, 적을 기습하거나 아군을 지원하는 것을 좋아하는 플레이어 등 모두를 위한 새로운 영웅이 준비되어 있습니다.
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box__img">
+            <img src="./images/둠피맞다이.png" alt="둠피맞다이">
+          </div>
+          <div class="box__text">
+            <div class="title">
+              평단의 극찬을 받은 액션
+            </div>
+            <div class="description">
+              새로운 영웅들, 탐험할 수 있는 더 많은 전장, 모든 플레이어에게 경기의 판도를 바꿀 힘이 주어지는 5대5 전투에서 역동적인 경쟁을 즐기세요.
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box__img">
+            <img src="./images/크레딧.png" alt="크레딧">
+          </div>
+          <div class="box__text">
+            <div class="title">
+              크로스플레이 및 진행 데이터 동기화
+            </div>
+            <div class="description">
+              다양한 플랫폼과 기기에서 플레이하고 언제 어디서나 게임 진행 현황, 수집품, 업적을 확인하세요.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hr">
+        <img src="./images/구분선.png" alt="구분선">
+      </div>
+
+
+      <!-- 영웅 탱딜힐 스와이프 -->
+      <div class="hero">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+              
+              <div class="img-group">
+                <img src="./images/스와이프-둠피스트.png" alt="둠피">
+                <img src="./images/스와이프-자리야.png" alt="자리야">
+                <img src="./images/스와이프-정커퀸.png" alt="정커퀸">
+              </div>
+              
+              <div class="text-group">
+                <div class="title">
+                  영웅
+                </div>
+                <div class="swiper-pagination"></div> 
+                <div class="hero-title">돌격</div>
+                <div class="hero-description">돌격 영웅은 피해를 흡수하고, 뭉쳐 있는 적들이나 비좁은 요충지 등 요새화된 지점을 부숴버립니다. 돌격 영웅은 아군의 선두 자리에 서게 됩니다.</div>
+                
+                <a href="#" class="btn btn--white">모든 영웅 보기</a>
+              </div>
+            </div>
+
+              <div class="swiper-slide">
+              
+                <div class="img-group">
+                  <img src="./images/스와이프-리퍼.png" alt="리퍼" class="down">
+                  <img src="./images/스와이프-소전.png" alt="소전">
+                  <img src="./images/스와이프-시메트라.png" alt="시메트라">
+                </div>
+                
+                <div class="text-group">
+                  <div class="title">
+                    영웅
+                  </div>
+                  <div class="swiper-pagination"></div> 
+                  <div class="hero-title">공격</div>
+                  <div class="hero-description">공격 영웅은 다양한 장비와 능력, 플레이 스타일로 적을 찾아내 교전을 벌이고 제거합니다. 두려움이 없지만 동시에 처치당하기도 쉬운 공격 영웅이 생존하려면 지원이 필요합니다.</div>
+                  
+                  <a href="#" class="btn btn--white">모든 영웅 보기</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+              
+                <div class="img-group">
+                  <img src="./images/스와이프-브리기테.png" alt="브리기테">
+                  <img src="./images/스와이프-루시우.png" alt="루시우">
+                  <img src="./images/스와이프-키리코.png" alt="키리코">
+                </div>
+                
+                <div class="text-group">
+                  <div class="title">
+                    영웅
+                  </div>
+                  <div class="swiper-pagination"></div> 
+                  <div class="hero-title">지원</div>
+                  <div class="hero-description">지원 영웅은 치유, 방어막 부여, 공격력 증가, 적 비활성화 등의 효과로 아군을 보조합니다. 지원 영웅은 팀 생존의 중추 역할을 합니다.</div>
+                  
+                  <a href="#" class="btn btn--white">모든 영웅 보기</a>
+                </div>
+              </div>
+  
+            
+          </div>
+        </div>
+        <div class="swiper-pagination"></div> 
+    
+    </div>
+
+    </div>
+  </section>
+
+  <div class="classhr">
+    <div class="hr"></div>
+  </div>
+
+  <!-- 전장 -->
+  <section class="battle-field">
+    <div class="inner">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          
+          <!-- 신규:밀기 -->
+          <div class="swiper-slide push">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+  
+                <div class="battle-middle">
+                  <img src="./images/전장사진-밀기.png" alt="밀기">
+                </div>
+  
+                <div class="battle-end">
+                  <div class="title">신규: 밀기</div>
+                  <div class="description">양 팀이 로봇을 탈취한 후 적 기지를 향해 전진시키기 위해 전투를 벌입니다.</div>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+          <!-- 쟁탈 -->
+          <div class="swiper-slide scramble">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="battle-middle">
+                  <img src="./images/전장사진-쟁탈.png" alt="쟁탈">
+                </div>
+
+                <div class="battle-end">
+                  <div class="title">쟁탈</div>
+                  <div class="description">양 팀이 하나의 거점을 지키기 위해 싸웁니다. 2개의 라운드에서 먼저 이기는 팀이 전장에서 승리합니다.</div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+          <!-- 호위 -->
+          <div class="swiper-slide guard">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="battle-middle">
+                  <img src="./images/전장사진-호위.png" alt="호위">
+                </div>
+
+                <div class="battle-end">
+                  <div class="title">호위</div>
+                  <div class="description">한 팀이 화물을 목적지까지 호위하고, 상대 팀은 그에 맞서 이들을 막아야 합니다.</div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+          <!-- 혼합 -->
+          <div class="swiper-slide mix">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="battle-middle">
+                  <img src="./images/전장사진-혼합.png" alt="혼합">
+                </div>
+
+                <div class="battle-end">
+                  <div class="title">혼합</div>
+                  <div class="description">공격팀은 화물을 탈취한 후 목적지까지 호위하고, 수비팀은 이들을 막아야 합니다.</div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+          <!-- 깃발뺏기 -->
+          <div class="swiper-slide flag">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="battle-middle">
+                  <img src="./images/전장사진-깃발뺏기.png" alt="깃발뺏기">
+                </div>
+
+                <div class="battle-end">
+                  <div class="title">깃발 뺏기</div>
+                  <div class="description">상대 팀의 깃발을 빼앗으려고 경합을 벌이면서 자기 팀의 깃발을 지켜야 합니다.</div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+          <!-- 섬멸전 -->
+          <div class="swiper-slide battle">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="battle-middle">
+                  <img src="./images/전장사진-섬멸전.png" alt="섬멸전">
+                </div>
+
+                <div class="battle-end">
+                  <div class="title">섬멸전</div>
+                  <div class="description">적을 모두 처치하면 라운드에서 이깁니다. 3개 라운드에서 이기면 승리를 거머쥘 수 있습니다. 1인, 3인, 6인 팀으로 진행할 수 있습니다.</div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+          <!-- 데스매치 -->
+          <div class="swiper-slide death">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="battle-middle">
+                  <img src="./images/전장사진-데스매치.png" alt="데스매치">
+                </div>
+
+                <div class="battle-end">
+                  <div class="title">데스매치</div>
+                  <div class="description">개인전 형식으로 싸우며 처치 기록을 올려 제일 먼저 20점을 획득해야 합니다.</div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+          <!-- 팀데스매치 -->
+          <div class="swiper-slide team-death">
+            <div class="background">
+              <div class="back-inner">
+
+                <div class="battle-top">
+                  <div class="title">전장</div>
+                  <div class="description">지구를 누비며 세계 각지의 다양한 지역에서 미래를 위해 싸우세요. 신기한 첨단 기술의 도시 부산에서 눈 덮인 토론토의 거리까지, 모든 전장에는 달성할 목표, 밝혀낼 비밀, 연구할 전략이 숨겨져 있습니다.</div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="battle-middle">
+                  <img src="./images/전장사진-팀데스매치.png" alt="팀데스매치.png">
+                </div>
+
+                <div class="battle-end">
+                  <div class="title">팀 데스매치</div>
+                  <div class="description">팀을 꾸려 가장 많은 처치 기록을 올려 적에게 승리해야 합니다.</div>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 페이지 이동 버튼
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
+      </div>   -->
+
+    </div>
+  </section>
+
+
+  <!-- 겐지 스파이더맨 섹션 -->
+  <section class="release">
+    <div class="text-group">
+      <div class="text-top">
+        8월 11일 출시 예정
+      </div>
+      <div class="text-middle">
+        오버워치 2: 침공에서 전 세계에 새로운 위협이 들이닥칩니다
+      </div>
+      <div class="text-description">
+        출시일이 다가올수록 새로운 소식과 스릴 넘치는 발표가 계속 공개될 예정입니다. 향상된 게임플레이, 몰입감 넘치는 스토리, 마음을 사로잡는 모험에 대한 모든 정보를 놓치지 말고 확인하세요.
+      </div>
+    </div>
+    <div class="img-group">
+      <img src="./images/겐지스파이더맨.png" alt="겐지스파이더맨">
+    </div>
+  </section>
+
+  <section class="last-hero">
+    <div class="inner">
+      <img src="./images/막-영웅들.png" alt="">
+      </div>
+    </div>
+    <div class="text-group">
+      <div class="text">
+        미래는 쟁취할 가치가 있습니다. 함께하세요!
+      </div>
+      <div class="btn">
+        지금 플레이
+      </div>
+    </div>
+  </section>
+
+  <div class="classedhr">
+    <div class="hred"></div>
+  </div>
+
+  <footer>
+    <div class="social">
+      <div class="title">
+        소셜 서비스
+      </div>
+      <div class="icons">
+        <a href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-info">
+
+      <div class="logo">
+        <img src="./images/블리자드로고.png" alt="블리자드로고">
+      </div>
+
+      <div class="info">
+        <div class="info-hr">인재 채용</div>
+        <div class="info-hr">회사 소개</div>
+        <div class="info-hr">고객지원</div>
+        <div class="info-hr">문의 등록</div>
+        <div class="info-hr">보도 자료</div>
+        <div class="info-hr">API</div>
+        <div class="info-hr">BATTLE>NET PC방</div>
+      </div>
+
+      <div class="battle-net">
+        한 곳에서 모든 게임을 플레이할 수 있는 <a href="#">
+          <img src="./images/배틀넷로고.png" alt="배틀넷 로고">
+          Battle.net 앱
+        </a>
+      </div>
+
+      <div class="license">
+        <div class="license-top">
+          ©2023 Blizzard Entertainment, Inc.<br>
+          여기서 언급된 다른 모든 상표 는 각 소유권자들의 자산입니다.
+        </div>
+        <div class="license-end">
+          <div class="license-end__child">개인정보 처리방침</div>
+          <div class="license-end__child">법률 관련 문서</div>
+          <div class="license-end__child">이용 약관</div>
+          <div class="license-end__child">쿠키정보 처리방침</div>
+          <div class="license-end__child">쿠키 설정</div>
+        </div>
+      </div>
+
+      <div class="company">
+        블리자드 엔터테인먼트 유한 회사<br>
+        주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층<br>
+        대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: websupport@blizzard.co.kr<br>
+        사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | 사업자정보확인<br>
+        대표이사: 다니엘 알레그레 | 개인정보 보호책임자: 이강호
+      </div>
+
+      <div class="yellow tag">
+        <div class="small">
+          <img src="./images/노랑15.png" alt="노랑">
+          <img src="./images/노랑폭력성.png" alt="노랑">
+        </div>
+        <img src="./images/노랑표지.png" alt="노랑">
+      </div>
+
+      <div class="blue tag">
+        <div class="small">
+          <img src="./images/파랑12.png" alt="파랑">
+          <img src="./images/파랑폭력성.png" alt="파랑">
+        </div>
+        <img src="./images/파랑표지.png" alt="파랑">
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+
+</body>
+</html>

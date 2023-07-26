@@ -9,6 +9,9 @@ const mainNext = document.querySelector('.main-next');
 const resignItems = document.querySelector('.sub-items');
 const resignPrev = document.querySelector('.sub-prev');
 const resignNext = document.querySelector('.sub-next');
+const lastItems = document.querySelector('.last-items');
+const lastPrev = document.querySelector('.last-prev');
+const lastNext = document.querySelector('.last-next');
 // let loopInterval = setInterval(() => {
 //   translateContainer(-1); // 다음 슬라이드를 보여주는 함수
 // }, 3000);
@@ -44,6 +47,27 @@ function reorganizeMainItems(selectedBtn) {
     : mainItems.appendChild(mainItems.firstElementChild);
 }
 
+function translateLastWrapper(direction) {
+  const selectedBtn = direction === 1 ? 'prev' : 'next';
+  lastItems.style.transitionDuration = '300ms';
+  if (direction === -1) {
+    lastItems.style.transform = `translateX(-1060px)`;
+  } else {
+    lastItems.style.transform = `translateX(1060px)`;
+  }
+  lastItems.ontransitionend = () => reorganizeLastItems(selectedBtn);
+}
+
+function reorganizeLastItems(selectedBtn) {
+  lastItems.removeAttribute('style');
+  selectedBtn === 'prev'
+    ? lastItems.insertBefore(
+        lastItems.lastElementChild,
+        lastItems.firstElementChild
+      )
+    : lastItems.appendChild(lastItems.firstElementChild);
+}
+
 function translateResignWrapper(direction) {
   console.log('first');
   const selectedBtn = direction === 1 ? 'prev' : 'next';
@@ -63,16 +87,6 @@ function reorganizeResignWrapper(selectedBtn) {
         resignItems.firstElementChild
       )
     : resignItems.appendChild(resignItems.firstElementChild);
-}
-
-function reorganizeMainItems(selectedBtn) {
-  mainItems.removeAttribute('style');
-  selectedBtn === 'prev'
-    ? mainItems.insertBefore(
-        mainItems.lastElementChild,
-        mainItems.firstElementChild
-      )
-    : mainItems.appendChild(mainItems.firstElementChild);
 }
 
 function translateContainer(direction) {
@@ -117,4 +131,6 @@ function reorganizeEl(selectedBtn) {
   mainNext.addEventListener('click', translateMainWrapper.bind(this, -1));
   resignPrev.addEventListener('click', translateResignWrapper.bind(this, 1));
   resignNext.addEventListener('click', translateResignWrapper.bind(this, -1));
+  lastPrev.addEventListener('click', translateLastWrapper.bind(this, 1));
+  lastNext.addEventListener('click', translateLastWrapper.bind(this, -1));
 })();

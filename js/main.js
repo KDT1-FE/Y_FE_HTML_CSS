@@ -1,3 +1,22 @@
+// Header intro menu box
+const introEL = document.querySelector('header .mainmenu__intro');
+const intro__basketEl = document.querySelector('header .mainmenu__intro__basket')
+
+introEL.addEventListener('mouseover', function () {
+    if (intro__basketEl.classList.contains('show')) {
+        intro__basketEl.classList.remove('show');
+    } else {
+        intro__basketEl.classList.add('show')
+    }
+})
+
+window.addEventListener('mouseout', function (event) {
+    const from = event.relatedTarget;
+    if (!introEL.contains(from) && !intro__basketEl.contains(from)) {
+        intro__basketEl.classList.remove('show');
+    }
+});
+
 // Header language box
 const languageEL = document.querySelector('header .mainmenu__language');
 const language__basketEL = languageEL.querySelector('.mainmenu__language__basket');

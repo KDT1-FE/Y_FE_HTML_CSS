@@ -38,9 +38,17 @@ nav {
     padding: 30px 0 30px;
     top: 90px;
     width: 100%;
-    
     background-color: rgba(235,235,235,0.85);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.4s ease;
 }
+
+.mainmenu__intro__basket.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .mainmenu__intro__basket > ul > a {
     display: block;
@@ -154,6 +162,7 @@ header nav .mainmenu__forthbox > li > a::after {
     padding: 5px;
     box-sizing: border-box;
     opacity: 0;
+    z-index: 100;
 }
 
 .mainmenu__language__basket.show {
@@ -342,6 +351,10 @@ footer {
     color: #111111;
 }
 
+.attachment__leftitem > table a  {
+    color: #111111;
+}
+
 
 .attachment__rightitem {
     flex: 1;
@@ -393,9 +406,16 @@ footer {
 
 
 .familysite_basket > a {
+    color: #777;
     padding: 5px 0;
     font-size: 0.95rem;
 }
+
+.familysite_basket > a:first-child::after{
+    content: "^";
+    margin-left: 120px;
+}
+
 
 .familysite_basket > a:hover {
     color: #06c755;

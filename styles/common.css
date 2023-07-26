@@ -5,6 +5,7 @@
 
 body{
   height: 700vh;
+  overflow-x: hidden;
 }
 
 video{
@@ -14,11 +15,29 @@ video{
   object-fit: cover;
   
   inline-size: 100%;
-  overflow: visible;
+
+  overflow: clip;
+  overflow-clip-margin: content-box;
 
   outline: none;
   border: none;
 
   position: relative;
   z-index: -1;
+}
+
+.hidden{
+  display: none;
+}
+
+button{
+  border: none;
+  
+  background-color: transparent;
+  color: #181A1F;
+}
+
+a, a:visited, a:active{
+  text-decoration: none;
+  color: #181A1F;
 }

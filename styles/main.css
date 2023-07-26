@@ -81,7 +81,7 @@
 }
 
 .page span {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .page span:nth-child(1) {
@@ -364,7 +364,7 @@
 
 .song_name span:nth-child(2) {
     font-size: 12px;
-    color: #999999;
+    color: #777777;
 }
 
 .hot_issue_melontv {
@@ -405,8 +405,144 @@
     width: 20px;
 }
 
-.chart span {
+.chart_top_time {
     font-size: 13px;
     font-weight: normal;
     color: #999999;
+}
+
+.chart_top2_li {
+    display: flex;
+    margin-top: 4px;
+}
+
+.chart_top2_li a {
+    width: 90px;
+    height: 22px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #d2d2d2;
+    text-align: center;
+    padding-top: 5px;
+    color: #999999;
+}
+
+.chart_top2_li a:nth-child(1) {
+    height: 21px;
+    color: #add269;
+    border-top: 2px solid #add269;
+    border-right: none;
+}
+
+.chart_top2_li a:nth-child(2) {
+    border-right: none;
+}
+
+
+
+.chart_rank_section_active {
+    width: 272px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+}
+
+.chart_rank_active_number {
+    font-size: 27px;
+    font-style: italic;
+    margin-left: 12px;
+    color: #add269;
+}
+
+.chart_rank_updown {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chart_rank_updown span {
+    color: #999999;
+}
+
+.chart_rank_updown span:nth-child(2) {
+    font-size: 11px;
+    margin: 2px 0 0 2px;
+}
+
+.chart_rank_section_active img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.chart_rank_singer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.chart_rank_singer a:nth-child(1) {
+    font-size: 12px;
+    color: #1b1b1b;
+    font-weight: bold;
+}
+
+.chart_rank_singer a:nth-child(2) {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #777777;
+    margin-top: 1px;
+}
+
+
+.chart_rank_section_color {
+    width: 272px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+    background-color: #f8f8f8;
+}
+
+.chart_rank_small_number {
+    font-size: 17px;
+    font-style: italic;
+    margin-left: 14px;
+    color: #add269;
+    font-weight: bold;
+}
+
+.chart_rank_updown_small {
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.chart_rank_updown_small span {
+    color: #999999;
+}
+
+.chart_rank_updown_small span:nth-child(2) {
+    font-size: 11px;
+    margin: 2px 0 0 2px;
+}
+
+.chart_rank_section_color_a {
+    width: 100px;
+    height: 15px;
+    font-size: 12px;
+    color: #1b1b1b;
+    margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chart_rank_section_color_singer {
+    margin-left: 30px;
+    font-size: 12px;
+    color: #777777;
 }

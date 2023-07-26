@@ -1,0 +1,82 @@
+header {
+  height: 60px;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+}
+
+.site-logo{
+  padding: 0px 0px 0px 32px;
+}
+
+.site-logo-tesla{
+  width: 148px;
+  height: 48px;
+
+  padding: 0px 16px;
+
+  color:#171A20;
+}
+
+.site-nav-products{
+  width: 620px;
+  padding: 0px 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav-items{
+  width: 220px;
+  line-height: 27px;
+
+  padding: 0px 32px 0px 0px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ol span {
+  color: #181A1F;
+}
+
+header ol a{
+  padding: 4px 8px;
+
+  text-decoration: none;
+}
+
+header ol a:visited, header ol a:active{
+  text-decoration: none;
+  
+}
+
+header ol span{
+  margin: 0px 8px;
+  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+.site-nav-items-menu{
+  padding: 4px 8px;
+
+  border: none;
+  box-sizing: content-box;
+
+  font-size: 14px;
+  background-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .site-nav-products, .site-nav-items li:nth-of-type(1), .site-nav-items li:nth-of-type(2) {
+    display: none;
+  }
+}

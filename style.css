@@ -601,7 +601,12 @@ a{
 }
 
 .home4_textwrap{
+  opacity: 0;
   margin-bottom: 100px;
+}
+
+.home4_content_textwrap{
+  opacity:0;
 }
 
 .home4_grid_container{
@@ -612,6 +617,7 @@ a{
 
 .home4_content img{
   height: 120px;
+  opacity: 0;
 }
 
 .home4_textwrap h1{
@@ -677,6 +683,10 @@ a{
   margin: 0 auto;
 }
 
+.home5_textwrap{
+  opacity:0;
+}
+
 .home5_textwrap h1{
   font-size: 28px;
   font-weight: 700;
@@ -711,6 +721,10 @@ a{
   width: 100%;
   display:flex;
   justify-content: center;
+}
+
+.home5_content_text_inner p{
+  opacity:0;
 }
 
 .home5_content_text p{
@@ -756,6 +770,7 @@ a{
 .home5_textwrap2{
   width: 100%;
   margin: 0 auto;
+  opacity: 0;
 }
 
 .home5_textwrap2 h4{

@@ -1,0 +1,172 @@
+@use 'abstracts' as *;
+@use 'base' as *;
+
+.a11yHidden {
+  @include a11y-hidden();
+}
+
+.downArrow {
+  @include exchange-arrow(down);
+}
+
+header {
+  // 환율 정보 섹션
+  .exchange__wrap {
+    color: $white;
+    background-color: $main-blue;
+    height: 6rem;
+    width: 100%;
+
+    .exchange {
+      max-width: 120rem;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__target {
+        // padding: 0 1.5rem;
+        line-height: 3rem;
+        &.usd {
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+          padding-right: 1.5rem;
+        }
+        &.eur {
+          padding-left: 1.5rem;
+        }
+        &__usd,
+        &__eur {
+          padding-right: 1rem;
+          font-weight: $font-bold;
+        }
+      }
+    }
+  }
+
+  // 네비게이션 영역
+  nav {
+    width: 100%;
+
+    .navigation {
+      @include flex-center();
+      max-width: 120rem;
+      height: 10rem;
+      flex-wrap: wrap;
+      margin: 0 auto;
+
+      &__logo {
+        flex-basis: 0;
+        flex-grow: 1;
+        padding: 0 1.5rem;
+        display: block;
+        width: 100%;
+        img {
+          max-width: 100%;
+        }
+      }
+      &__container {
+        @include font(montserrat);
+        color: $main-black;
+        font-size: $font-base;
+        padding: 0 1.5rem;
+        line-height: 10rem;
+        margin: 0;
+        position: relative;
+
+        .nav-list {
+          display: inline-block;
+
+          .nav-btn {
+            display: block;
+            line-height: 1;
+            padding: 4.1rem 8rem 2.9rem 0;
+          }
+          .nav-btn::after {
+            content: '';
+            display: block;
+            width: 100%;
+            position: relative;
+            height: 2px;
+            margin-top: 1rem;
+            background-color: $main-blue;
+            transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+            transform: scale3d(0, 1, 1);
+            transform-origin: 100% 50%;
+          }
+          a:hover::after {
+            transform: scale3d(1, 1, 1);
+            transform-origin: 0% 50%;
+          }
+        }
+        .nav-list.ignoreSpacing {
+          a {
+            padding-right: 0px;
+          }
+        }
+
+        &__product {
+          &--hover {
+            display: none;
+          }
+          &:hover {
+            .product-hover {
+              display: block;
+              position: absolute;
+              font-size: $font-sm;
+              color: $grey;
+              background-color: $white;
+              min-width: 155px;
+              opacity: 0.9;
+              border-radius: 3px;
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+              padding: 1rem 0;
+
+              &__list {
+                display: block;
+                line-height: normal;
+                padding: 0 1rem;
+                line-height: 1.6rem;
+
+                .hover-menu {
+                  // padding: 1.1rem 3.5rem 1rem;
+                  display: inline-block;
+                  width: 100%;
+                  padding: 1.1rem 3.5rem 1.1rem 1rem;
+                }
+                .hover-menu:hover {
+                  @include button-hover();
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .section1 {
+    height: 80rem;
+    background-color: skyblue;
+  }
+  .section2 {
+    height: 97rem;
+    background-color: pink;
+  }
+  .section3 {
+    height: 62rem;
+    background-color: greenyellow;
+  }
+  .section4 {
+    height: 30rem;
+    background-color: salmon;
+  }
+}
+
+footer {
+  height: 30rem;
+  background-color: burlywood;
+}

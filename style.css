@@ -1,3 +1,7 @@
+@font-face {
+  font-family: TossFaceFont;
+  src: url('./static/font/TossFaceFontMac.ttf');
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,8 +23,11 @@ time, mark, audio, video {
 }
 body {
 	line-height: 1;
+  font-family: TossFaceFont;
+  font-style: normal;
+  font-weight: 500;
 }
-ol, ul {
+ol, ul {  
 	list-style: none;
 }
 blockquote, q {
@@ -71,10 +78,23 @@ a{
 .navbar_menu{
   display:flex;
   margin-right: 80px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #4e5968;
+
+}
+
+.navbar_menu a{
+  border-radius: 7px;
+  padding: 12px 8px
+}
+
+.navbar_menu a:hover{
+  background-color:#eeeeee;
 }
 
 .navbar_menu .navbar_item{
-  padding-left: 35px;
+  padding-left: 25px;
   white-space: nowrap;
 }
 
@@ -122,6 +142,7 @@ a{
 
 .intro_textwrap{
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .intro_textwrap h1{
@@ -141,8 +162,9 @@ a{
   border-radius:10px;
   background-color: rgba(0, 12, 30, 0.8);
   text-align: center;
-  margin: 10px;
+  margin: 5px;
   padding: 5px 20px;
+  font-size: 17px;
 }
 
 .store_button a{
@@ -160,6 +182,7 @@ a{
 
 .store_button img{
   height: 30px;
+  margin-right: 10px;
 }
 /* intro2 section*/
 

@@ -4,8 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header">
+      <div class="header_logo">
+          <span class="logo_naver">naver</span>
+          <span class="logo_vibe">vibe</span>
+        </div>
+      </div>
+      <div class="header_submenu">
+        <hr />
+        <div class="header_signin_area">
+            <img class="user_icon" src="./assets/user.png" />
+          <span class="login_txt">로그인</span>
+        </div>
+        <hr />
+        <div class="header_member">
+          <p class="member_p">로그인하고 할인 멤버십 확인하기</p>
+          <div class="member_button_area">
+            <img class="member_icon" src="./assets/love.png" />
+            <span class="member_text">멤버십 구독</span>
+          </div>
+        </div>
+        <div class="header_search">
+          <input class="search_input" placeholder="VIBE 검색"/>
+        </div>
+        <div class="header_menu">
+          <ul>
+          <li><img src="./assets/music.png" alt="" /><span>투데이</span></li>
+          <li><img src="./assets/trophy.png" alt="" /><span>차트</span></li>
+          <li><img src="./assets/sparkles.png" alt="" /><span>최신앨범</span></li>
+          <li><img src="./assets/vinyl.png" alt="" /><span>dj스테이션</span></li>
+          <li><img src="./assets/magazine.png" alt="" /><span>vibe mag</span></li>
+          <li><img src="./assets/add-to-playlist.png" alt="" /><span>이달의 노래</span></li>
+            
+        <hr/>
+          <li><img src="./assets/heart.png" alt="" /><span>서비스 소개</span></li>
+          <li><img src="./assets/money.png" alt="" /><span>내돈내듣</span></li>
+          <li><img src="./assets/stage.png" alt="" /><span>onstage</span></li>
+          <li><img src="./assets/mic.png" alt="" /><span>vibe 오디오</span></li>
+        </ul>
+        </div>
+      </div>
+      <div class="header_install">데스크톱앱 설치</div>
+    </header>
+    <main class="main">
+      <section class="section"></section>
+      <footer class="footer"></footer>
+      <div class="player"></div>
+    </main>
+  </body>
 </html>

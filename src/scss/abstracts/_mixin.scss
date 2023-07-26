@@ -1,0 +1,81 @@
+@use './variables' as *;
+
+// montserrat, Roboto has 3 weight (300,400,700)
+@mixin font($name, $weight: noraml, $style: normal) {
+  font-family: $name, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin a11y-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin exchange-arrow($direction) {
+  display: inline-block;
+  line-height: 2.5rem;
+  @if ($direction == 'down') {
+    &::before {
+      content: '▼';
+      padding-left: 0.4rem;
+      padding-right: 0.5rem;
+      width: 100%;
+      height: 100%;
+      color: $yellow;
+      position: relative;
+      top: -0.5rem;
+    }
+  }
+
+  @if ($direction == 'up') {
+    &::before {
+      content: '▲';
+      padding-left: 0.4rem;
+      padding-right: 0.5rem;
+      width: 100%;
+      height: 100%;
+      color: $yellow;
+      position: relative;
+      top: -0.5rem;
+    }
+  }
+}
+
+@mixin sprite-icon($class, $type) {
+  // sprite has 2 type (carousel-icon / icon)
+  @if ($type == 'carousel-icon') {
+    @include flex-center();
+    width: 80px;
+    height: 80px;
+    background-color: $main-blue;
+    border-radius: 50%;
+  }
+
+  @if ($class == 'icon-fnb') {
+    &::after {
+      content: '';
+      display: block;
+      background-image: url(../images/icon-sprite.png);
+      background-repeat: no-repeat;
+      width: 55px;
+      height: 55px;
+      background-position: -188px -5px;
+    }
+  }
+}
+
+@mixin button-hover() {
+  background-color: $main-blue;
+  color: $white;
+}

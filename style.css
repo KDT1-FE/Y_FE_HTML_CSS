@@ -19,7 +19,7 @@ h1 {
 }
 
 p {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
     line-height: 1.5;
     letter-spacing: -0.3px;
     color : #212529;
@@ -337,3 +337,89 @@ header{
     font-weight: bold;
 }
 
+/* main--hot */
+
+.main--hot {
+    background-color: #F8F9FA;
+    padding: 6rem 0;
+}
+
+.main__home--hot {
+    margin: 6rem auto 12rem auto;
+}
+
+.home__title--hot {
+    font-size: 4rem;
+    margin-bottom: 8rem;
+    color: #212529;
+    text-align: center;
+}
+
+.content__item__img--hot {
+    width: 21rem;
+    height: 21rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    margin-bottom: 1.2rem;
+}
+
+.home--content__list--hot {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+.content__item--hot {
+    width: 21rem;
+    height: 32rem;
+    margin-bottom: 5.6rem;
+    margin-right: 4.4rem;
+}
+
+.content__item__title--hot{
+    font-size: 16px;
+    letter-spacing: -0.02px;
+    color: #212529;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.content__item__price--hot {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    color: #212529;
+}
+
+.content__item__adress--hot {
+    font-size: 13px;
+    color: #212529;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+.content__item__card--hot {
+    color: #868e96;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.content__link--hot {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #212529;
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+    text-decoration: underline;
+}

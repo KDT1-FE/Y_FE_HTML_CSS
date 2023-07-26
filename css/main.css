@@ -848,3 +848,113 @@
 .Up span {
   color: white;
 }
+
+.Categories {
+  box-sizing: border-box;
+  margin: 40px 0 0;
+}
+
+.CategoriesUL {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-left: 0;
+  width: 100%;
+}
+
+.CategoriesLI {
+  margin-top: 0px;
+  margin: 0 28px 0 0;
+  padding: 0px;
+  width: 15%;
+}
+
+.Category > span:hover{
+  color:#b3b3b3;
+}
+
+.Category {
+  margin-bottom: 28px;
+}
+
+.Category > span {
+  color: white;
+  cursor: pointer;
+}
+
+.Items {
+  box-sizing: border-box;
+}
+
+.Items ul {
+  padding: 0px;
+}
+
+.Items ul li {
+  padding: 0 0 12px;
+  box-sizing: border-box;
+}
+
+.Items ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.Items ul li a:hover {
+  color:#b3b3b3
+}
+
+.Media {
+  display: flex;
+  margin: 0 0 12px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.Media ul {
+  box-sizing: border-box;
+}
+
+.Media li {
+  display: inline-block;
+}
+
+.Media li img {
+  position: relative;
+  color: white;
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
+.Copyright {
+  border-top: 1px solid #666;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Legal ul {
+  display: inline-flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.Legal ul li {
+  padding-right: 24px;
+  color: white;
+  font-size: 12px;
+}
+
+.Last {
+  margin-top: 24px;
+}
+
+.Last span {
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+}

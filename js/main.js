@@ -17,6 +17,7 @@ const ADEl=document.querySelectorAll('.AD')
 const ServiceEl=document.querySelector('.Service')
 const SpaceEls=document.querySelectorAll('.Space')
 const SnsEl=document.querySelector('.SNS')
+const FooterEl=document.querySelector('.Footer')
 HeadMenuEls.addEventListener('click', function(e) {
   i++;
   if(i%2!=0){
@@ -37,6 +38,7 @@ HeadMenuEls.addEventListener('click', function(e) {
     SpaceEls.forEach(element => {
       element.style.display='none';
     });
+    FooterEl.style.display='none';
     HeadLines1.style.animation='420ms ease 0s 1 normal forwards running disappear';
     HeadLines2.style.animation='240ms ease 180ms 1 normal forwards running leftX';
     HeadLines3.style.animation='240ms ease 180ms 1 normal forwards running rightX';
@@ -59,6 +61,7 @@ HeadMenuEls.addEventListener('click', function(e) {
     SpaceEls.forEach(element => {
       element.style.display='block';
     });
+    FooterEl.style.display='block';
     if(ModelTypeEl.getAttribute('aria-selected')=='true'){
       CarTypeEl.style.display='block';
     }
@@ -138,6 +141,7 @@ RightEl.addEventListener('click',function(e){
 })
 
 const UpEl = document.querySelector('.Up')
+
 UpEl.addEventListener('click', function(e){
   window.scrollTo(0,0);
 })

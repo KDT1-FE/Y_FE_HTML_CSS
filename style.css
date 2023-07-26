@@ -3,6 +3,64 @@
   src: url('./static/font/TossFaceFontMac.ttf');
 }
 
+@font-face{
+  font-family: Noto Sans;
+  src: url('./static/font/Noto_Sans_KR/NotoSansKR-Black.otf');
+  font-weight: 900;
+}
+
+@font-face{
+  font-family: Noto Sans;
+  src: url('./static/font/Noto_Sans_KR/NotoSansKR-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: Noto Sans;
+  src: url('./static/font/Noto_Sans_KR/NotoSansKR-Light.otf');
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: Noto Sans;
+  src: url('./static/font/Noto_Sans_KR/NotoSansKR-Medium.otf');
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: Noto Sans;
+  src: url('./static/font/Noto_Sans_KR/NotoSansKR-Regular.otf');
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: Noto Sans;
+  src: url('./static/font/Noto_Sans_KR/NotoSansKR-Thin.otf');
+  font-weight: 100;
+}
+
+@keyframes appear{
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes appear_from_bottom{
+  0%{
+    transform: translateY(150px);
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +81,7 @@ time, mark, audio, video {
 }
 body {
 	line-height: 1;
-  font-family: TossFaceFont;
+  font-family: TossFaceFont, Noto Sans;
   font-style: normal;
   font-weight: 500;
 }
@@ -147,15 +205,6 @@ a{
   display:none;
 }
 
-@keyframes appear{
-  from {
-    opacity: 0;
-  }
-
-  to{
-    opacity: 1;
-  }
-}
 
 
 .intro_textwrap{
@@ -224,17 +273,7 @@ a{
 
 
 /* home section */
-@keyframes appear_from_bottom{
-  0%{
-    transform: translateY(100px);
-    opacity: 0;
-  }
 
-  100%{
-    /* transition: translateY(+100px); */
-    opacity: 1;
-  }
-}
 .home_wrap{
   position: relative;
   overflow: hidden;
@@ -360,6 +399,11 @@ a{
   overflow: hidden;
 }
 
+.home2_textwrap{
+  opacity:0;
+  
+}
+
 .home2_container{
   width: 100%;
   background-color: white;
@@ -395,10 +439,14 @@ a{
 
 .home2_content{
   margin-left: 40px;
+  opacity:0;
+  
 }
 
 .home2_image_container{
   margin-right: 40px;
+  opacity:0;
+  
 }
 
 .home2_image_container img{
@@ -469,10 +517,17 @@ a{
   position: relative;
 }
 
-.home3_image_conatiner{
+.home3_textwrap{
+  opacity:0;
+}
+.home3_image_container{
   position: absolute;
   top: -10%;
   right:50%;
+}
+
+.home3_image_container .iphone_wrap{
+  opacity: 0;
 }
 
 .home3_container h1{
@@ -488,13 +543,16 @@ a{
   font-weight: 700;
   line-height: 1.4;
   color: #191f28;
+  font-family: Noto Sans;
 }
 
-.home3_container span{
-  display:inline;
+.home3_container h3{
   font-size: 48px;
   font-weight: 700;
   line-height: 1.5;
+  opacity: 0;
+}
+.home3_container span{
   color: rgb(51, 61, 75);
 }
 
@@ -511,6 +569,7 @@ a{
   font-weight: 600;
   line-height: 1.5;
   color: rgb(51, 61, 75);
+  opacity: 0;
 }
 
 .home3_textwrap2{
@@ -1008,6 +1067,10 @@ a{
   align-items: baseline;
 }
 
+.home8_content_item{
+  margin: 0 20px;
+}
+
 .button{
   padding: 10px;
   background-color: #3182f6;
@@ -1039,6 +1102,7 @@ a{
 
 .footer_content{
   margin-right: 50px;
+  font-family: Noto Sans;
 }
 
 .footer_content li:first-of-type{
@@ -1064,6 +1128,7 @@ a{
   padding-bottom: 16px;
   color: #8b95a1;
   font-size: 13px;
+  font-family: Noto Sans;
 }
 
 .footer_information h5{

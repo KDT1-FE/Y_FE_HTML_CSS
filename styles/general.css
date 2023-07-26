@@ -1,14 +1,18 @@
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 body {
   font-family: Seol-Sans, sans-serif;
   margin: 0;
   background-color: #040714;
-  color: white;
+
+  color: silver;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   letter-spacing: 0.2px;
+  line-height: 26px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 a {
@@ -19,24 +23,81 @@ a {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0;
 }
 
 section {
   padding: 5.6vw;
 }
 
-.center {
-  text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
 h1,
+h2,
+h3,
+h4 {
+  color: #f9f9f9;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3 {
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.h2,
 h2 {
-  margin: 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.h3,
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 32px;
+}
+
+.h4,
+h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.h2,
+.h3,
+.h4,
+h2,
+h3,
+h4 {
+  margin-bottom: 16px;
+}
+img {
+  height: auto;
+  width: 100%;
 }
 
 .middle {
   justify-content: center;
+}
+
+.center {
+  text-align: center;
 }
 
 .grid-list {
@@ -44,4 +105,100 @@ h2 {
   flex-wrap: wrap;
   gap: 24px;
   padding-left: 0;
+}
+
+.text-medium {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h2,
+  .h3,
+  .h4,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .h2,
+  .h3,
+  .h4,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 16px;
+  }
+  .h2,
+  h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .h3,
+  h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .h4,
+  h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .medium,
+  .text-medium {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .h2,
+  .h3,
+  .h4,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 24px;
+  }
+  .h2,
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .h3,
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .h4,
+  h4 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .medium,
+  .text-medium {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.mobile-two-column .grid-item {
+  width: calc(50% - 12px);
+}
+
+@media only screen and (min-width: 769px) {
+  .three-column .grid-item {
+    width: calc(33.3% - 16px);
+  }
 }

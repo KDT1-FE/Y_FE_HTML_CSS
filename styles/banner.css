@@ -9,21 +9,6 @@
   max-width: 50%;
 }
 
-.banner-box h2 {
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 700;
-  letter-spacing: normal;
-  margin-bottom: 24px;
-}
-
 .banner-box div {
   padding: 0 2vw;
-}
-
-.banner-box p {
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 20px;
-  color: silver;
 }

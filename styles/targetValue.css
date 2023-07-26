@@ -10,21 +10,6 @@
   position: relative;
 }
 
-.target-value-banner p {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: silver;
-}
-
-.target-value-banner span {
-  font-size: 28px;
-  line-height: 38px;
-  font-weight: 700;
-  color: #f9f9f9;
-}
-
 .line-divided p {
   padding: 0 10px;
 }

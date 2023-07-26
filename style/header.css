@@ -10,6 +10,7 @@
     align-items: center; /* 로고와 리스트를 수직 정렬하기 위해 설정 */
     display: flex;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /* ul 점 없애기 */

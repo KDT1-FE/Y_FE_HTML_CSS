@@ -113,9 +113,20 @@ header {
 
 .right-section {
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
     padding-right: 32px;
+}
+
+.search{
+    padding: 10px 0;
+}
+
+.search > img {
+    width: 22px;
+    height: 27px;
+    color: #f9f9f9;
 }
 
 .playnow_btn {
@@ -124,6 +135,3 @@ header {
 }
 
 
-.search {
-    background-color: aqua;
-}

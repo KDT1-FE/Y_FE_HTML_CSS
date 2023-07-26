@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -165,13 +169,10 @@
                 </div>
             </div>
         </div>
+        <!-- 검색, 플레이버튼 섹션 -->
         <div class="right-section">
             <div class="search">
-                <input type="text" name="q" />
-                <img src="reading_glass.svg" alt="검색">
-            </div>
-            <div class="game-alert">
-
+                <i class="fa-solid fa-magnifying-glass" style="color: #f9f9f9;"></i>
             </div>
             <div class="lang">
 
@@ -179,25 +180,27 @@
             <div class="playnow_btn">
                 <a href="#" class="nav-right-a">지금 플레이하기</a>
             </div>
-
         </div>
     </header>
     <!-- 1. '동영상' 섹션 -->
     <section class="first_section">
-
         <div class="triangle"></div>
         <video muted autoplay loop>
             <source src="./assets/video/Valorant_Deadlock.mp4" type="video/mp4">
         </video>
         <div class="valorant-info">
+            <div class="center-line"></div>
             <p>5대5 캐릭터 기반 전술 슈팅 게임</p>
             <div class="valorant-logo">
                 <img src="./assets/img/valorant_logo.png" alt="발로란트 로고">
             </div>
-            <button class="freeplay-button">
-                <span class="blackbutton"></span>
-                <span class="redbutton"></span>
-            </button>
+            <div class="valorant-button">
+                <button class="red-button">
+                    <span class="button-squre"></span>
+                    <span class="button-hover"></span>
+                    <span class="title">무료로 플레이하기</span>
+                </button>
+            </div>
         </div>
     </section>
     <!-- 2. '최신 소식' 섹션 -->
@@ -234,7 +237,8 @@
                         </a>
                     </div>
                     <div class="video-thumbnail">
-                        <a href="#" class="video-2" target="_blank">
+                        <a href="https://playvalorant.com/ko-kr/news/game-updates/defy-definition-episode-7-act-1/"
+                            class="video-2" target="_blank">
                             <img src="./assets/img/Banner_-_VAL23_Ep7a1_Modal_1920x1080_No-text_article.webp" alt="">
                         </a>
                         <div class="update-date">
@@ -259,22 +263,27 @@
             </div>
         </div>
     </section>
-
     <!-- 3. '에볼루션' 섹션 -->
     <section class="third_section">
         <div class="third-back">
             <img src="assets/img/third_section_background.jpg" alt="에볼루션 백그라운드 배경">
         </div>
         <div class="third-bigwrap">
-            <div class="third-container">
+            <div class="third-container1">
                 <div class="third-content">
                     <h5 class="third-h5">에피소드_07 &nbsp; // &nbsp;액트 &nbsp;I &nbsp;/ &nbsp; YR &nbsp;3</h5>
                     <h2>
                         <span>에볼루션</span>
                     </h2>
-                </div>
-                <div class="act-button">
-                    <button></button>
+                    <div class="valorant-button">
+                        <button class="red-button">
+                            <a href="#">
+                                <span class="button-squre"></span>
+                                <span class="button-hover"></span>
+                                <span class="title">액트I 개요</span>
+                            </a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,63 +292,146 @@
     <!-- 4. '우리는 발로란트다' 섹션 -->
     <section class="fourth_section">
         <div class="fourth-container">
-            <div class="fourth-header">
-                <h2 class="we">우리는</h2>
-                <h2 class="are-val">발로란트다</h2>
-            </div>
+            <div class="video-tag">게임플레이</div>
+            <video muted autoplay loop>
+                <source src="./assets/video/Valorant_GamePlay.mp4" type="video/mp4">
+            </video>
             <div>
-                <div>
-                    <h5>
+                <div class="fourth-header">
+                    <h2 class="we">우리는</h2>
+                    <h2 class="are-val">발로란트다</h2>
+                </div>
+                <div class="fourth-text">
+                    <h5 class="crash-limit">
                         <span>한계를 돌파하라</span>
                     </h5>
                     <div class="game-info">
-                        <span>
-                            전 세계의 경쟁 무대에서 여러분의 스타일과 실력을 보여 주세요. 정밀한 사격과 전략 스킬을 사용해 13라운드 동안 공격과 방어를 번갈아 진행하게 됩니다. 라운드당
+                        <span class="game-inroduce">
+                            전 세계의 경쟁 무대에서 여러분의 스타일과 실력을 보여 주세요. 정밀한 사격과 전략 스킬을 사용해 13라운드 동안 공격과 방어를 번갈아 진행하게 됩니다.
+                            라운드당
                             목숨은
                             하나이며,
                             생존하려면 상대보다 더 빠르게 판단해야 합니다. 데스매치와 스파이크 돌격, 경쟁전과 일반전에서 적과 싸워 이기세요.
                         </span>
                     </div>
-                </div>
-                <div>
-                    <button></button>
+                    <div class="valorant-button">
+                        <button class="red-button">
+                            <span class="button-squre"></span>
+                            <span class="button-hover"></span>
+                            <span class="title">게임 배우기</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
-
     <!-- 5. '요원' 섹션 -->
     <section class="fifth_section">
+        <div class="agent-img">
+            <img id="reyna" src="./assets/img/reyna.webp" alt="레이나 이미지">
+            <img id="raze" src="./assets/img/raze.webp" alt="레이즈 이미지">
+        </div>
         <div class="fifth-container">
-            <div>
-                <img src="" alt="레이나, 레이즈 이미지">
-            </div>
-            <div>
-                <div>
+            <div class="left-line"></div>
+            <div class="agent-contents">
+                <div class="agent-title">
                     <h2 class="fifth-h2">요원</h2>
                 </div>
-                <div>
+                <div class="agent-info">
                     <h4 class="fifth-h4">승부를 가르는 전략</h4>
                     <p><span>무기가 전부가 아닙니다. 상황에 맞춰 사격을 보조하는 빠르고 치명적인 스킬을 갖춘 요원을 선택하세요. 요원들은 저마다 독특한 전투 스타일을 자랑합니다.</span>
                     </p>
                 </div>
+                <div class="agent-showbtn">
+                    <div class="valorant-button">
+                        <button class="white-button">
+                            <span class="button-squre"></span>
+                            <span class="button-hover"></span>
+                            <span class="title">모든 요원 보기</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
     </section>
-
     <!-- 6. '맵' 섹션 -->
     <section class="sixth_section">
-
+        <div class="sixth-container1">
+            <img id="split-map" src="./assets/img/map_image.png" alt="스플릿 맵 이미지">
+        </div>
+        <div class="background-word1">PLACE</div>
+        <div class="map-contents">
+            <div class="map-info">
+                <h2><span>맵</span></h2>
+                <h5>전 세계에서 싸우세요</h5>
+                <p><span>팀 전략, 환상적인 플레이, 클러치 상황에 맞게 기획된 각 맵에서 창의적인 판단력을 뽐내고 오랫동안 다른 플레이어들이 따라 할 플레이를 선보이세요.</span></p>
+                <button class="red-button">
+                    <span class="button-squre"></span>
+                    <span class="button-hover"></span>
+                    <span class="title">게임 배우기</span>
+                </button>
+            </div>
+        </div>
     </section>
-
     <!-- footer 영역 -->
     <footer class="footer">
-
-        <ul>
-
-        </ul>
+        <div class="footer-container">
+            <div class="game-download">
+                <ul>
+                    <li><a href="#">게임 다운로드</a></li>
+                    <li><a href="#">라이엇 모바일 컴패니언 앱 다운로드</a></li>
+                </ul>
+            </div>
+            <div class="contact-sns">
+                <ul>
+                    <li><a href="https://www.facebook.com/VALORANTKR/"><i class="fa-brands fa-facebook"
+                                style="color: #f9f9f9;"></i></a></li>
+                    <li><a href="https://twitter.com/valorant"><i class="fa-brands fa-twitter"
+                                style="color: #f9f9f9;"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC9M8GGVwPqc9ubNruArCNPg"><i
+                                class="fa-brands fa-youtube" style="color: #f9f9f9;"></i></a></li>
+                    <li><a href="https://www.instagram.com/valorantkr/"><i class="fa-brands fa-instagram"
+                                style="color: #f9f9f9;"></i></a></li>
+                </ul>
+            </div>
+            <div class="game-logo">
+                <div class="riot-logo">
+                    <a href="https://www.riotgames.com/ko"><img src="assets/img/riotgames_white.svg" alt="라이엇 로고" /></a>
+                </div>
+                <div class="val-logo">
+                    <img src="./assets/img/val-logo-small.png" alt="발로란트 로고">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Riot Games, Inc. Riot Games, VALORANT, and any associated logos are trademarks, service marks,
+                    and/or registered trademarks of Riot Games, Inc.</p>
+                <div class="markup">
+                    <br />
+                    라이엇게임즈코리아 유한회사 서울특별시 강남구 테헤란로 521 30층 (삼성동, 파르나스타워)<br />
+                    대표자 : 조혁진 | 대표전화 : 02-3454-1560 | FAX : 02-3454-1565<br />
+                    사업자등록번호 : 120-87-68488 |사업자등록번호 : 120-87-68488 |
+                </div>
+            </div>
+            <div class="legal-link">
+                <ul>
+                    <li><a href="#">사용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">게임시간 선택제</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">쿠키 설정</a></li>
+                </ul>
+            </div>
+            <div class="game-ratings">
+                <div><a href="https://www.grac.or.kr/default.aspx"><img src="./assets/img/Korea-15.png"
+                            alt="15세이용가"></a></div>
+                <div><a href="https://www.grac.or.kr/default.aspx"><img
+                            src="./assets/img/Korea-violence_descriptor-1.png" alt="폭력성"></a></div>
+                <div><a href="https://www.grac.or.kr/default.aspx"><img src="./assets/img/kr-ratings-footer.png"
+                            alt="게임등급표"></a></div>
+            </div>
+        </div>
     </footer>
+    <script></script>
 </body>
 
 </html>

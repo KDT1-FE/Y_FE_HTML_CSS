@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.body {
+  width: 1920px;
+  height: 100%;
+  background-color: pink;
+  display: flex;
+}

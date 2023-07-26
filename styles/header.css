@@ -27,10 +27,11 @@ hr {
   margin: 0 auto;
 }
 .header_logo {
+  display: block;
   color: white;
   text-transform: uppercase;
   font-family: "Cabin", sans-serif;
-  padding: 2.3rem 2rem;
+  padding: 2rem 2rem;
   cursor: pointer;
 }
 .header_logo * {
@@ -49,6 +50,7 @@ hr {
   height: 65%;
 }
 .header_signin_area {
+  display: block;
   color: white;
   font-size: larger;
   display: flex;
@@ -73,6 +75,7 @@ hr {
   font-size: 15px;
 }
 .member_button_area {
+  display: block;
   cursor: pointer;
   width: 80%;
   height: 3rem;
@@ -112,7 +115,7 @@ hr {
   height: 3rem;
   box-sizing: border-box;
   background: #1d1d1d;
-  background-image: url(./assets/loupe.png);
+  background-image: url("../assets/loupe.png");
   background-size: 1.2rem 1.2rem;
   background-position: 10px center;
   background-repeat: no-repeat;
@@ -129,18 +132,18 @@ hr {
   width: 80%;
   font-size: 1.2rem;
 }
-.header_menu li {
+.header_menu li > a {
   padding: 0.6rem 0;
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   align-items: center;
   cursor: pointer;
 }
-.header_menu li > span {
+.header_menu li > a > span {
   margin-left: 0.5rem;
   color: gray;
 }
-.header_menu li > span:hover {
+.header_menu li > a > span:hover {
   color: white;
 }
 .header_menu ul > hr {
@@ -156,6 +159,7 @@ hr {
 }
 .header_install {
   border: 1px solid gray;
+  display: block;
   width: 80%;
   margin: 1rem auto;
   padding: 1.1rem;
@@ -163,6 +167,7 @@ hr {
   font-size: large;
   border-radius: 0.5rem;
   cursor: pointer;
+  background-color: transparent;
 }
 .header_install:hover {
   width: 80%;

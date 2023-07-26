@@ -651,8 +651,6 @@
   margin-bottom: 0;
   margin-right: 4px;
   text-decoration: none;
-
-
 }
 
 .CompoImg1 {
@@ -667,7 +665,6 @@
   margin-bottom: 0;
   margin-right: 4px;
   text-decoration: none;
-
 }
 
 .CompoImg2 {
@@ -681,8 +678,6 @@
   margin-bottom: 0;
   width: calc(33.33333%);
   text-decoration: none;
-
-
 }
 
 .CompoImg3 {
@@ -706,4 +701,115 @@
 .CompoLook > .material-symbols-outlined {
   color: black;
   margin-left: 10px;
+}
+
+.SNS {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 75px 60px;
+}
+
+.YoutubeContainer {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.YoutubeContainer > .material-symbols-outlined {
+  position: absolute;
+  fill: #fff;
+  height: 48px;
+  margin-left: calc(50% - 24px);
+  margin-top: calc(28.125% - 24px);
+  width: 48px;
+  z-index: 1;
+  color: white;
+}
+
+.ServiceComponent1_2 {
+  position: relative;
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+  background-color:#d9d9d9;
+}
+
+.ServiceComponent2_2 {
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+  background-color:#d9d9d9;
+}
+
+.ServiceComponent3_2 {
+  margin-bottom: 0;
+  width: calc(33.33333%);
+  text-decoration: none;
+  background-color:#d9d9d9;
+}
+
+.SocialText1 {
+  margin: 12px 24px 0;
+  color: black;
+  width: calc(100% - 35px);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 2rem;
+}
+
+.SocialText1 p{
+  margin: 5px;
+}
+
+.SocialText2 {
+  margin: 12px 24px 0;
+  color: black;
+  width: calc(100% - 30px);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 2rem;
+}
+
+.SocialText2 p{
+  margin: 5px;
+}
+
+.SocialText3 {
+  margin: 12px 24px 0;
+  color: black;
+  width: calc(100% - 40px);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 2rem;
+}
+
+.SocialText3 p{
+  margin: 5px;
+}
+
+.SocialDes {
+  margin: 12px 50px 24px 30px;
+  color: black;
+}
+
+.SocialLogo {
+  color: black;
+  margin: 0 24px 18px;
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+}
+
+.LogoImg {
+  fill: #000;
+  height: 24px;
+  width: 24px;
+}
+
+.Space {
+  padding: 42px 4%;
 }

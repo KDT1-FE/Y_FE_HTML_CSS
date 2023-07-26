@@ -1,53 +1,4 @@
-body {
-  font-family: 'NotoSans', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #333;
-  height: 3000px;
-}
-.inner {
-  width: 1280px;
-  margin: 0 auto;
-  position: relative;
-}
-a {
-  text-decoration: none;
-}
-img {
-  display: block;
-  object-fit: cover;
-}
-.btn{
-  display: block;
-  border-radius: 0;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0 64px;
-  margin-top: 48px;
-  height: 60px;
-  line-height: 58px;
-  font-size: 18px;
-  font-weight: 400;
-}
-.btn_white {
-  position: relative;
-  color: #fff;
-  border: 1px solid #fff;
-}
-.btn_white:hover {
-  color : #333;
-  background-color: #fff;
-}
-.btn_black {
-  position: relative;
-  color: #333;
-  border: 1px solid #333;
-}
-.btn_black:hover {
-  color: #fff;
-  background-color: #333;
-}
-
+@import "general.css"; 
 
 /* HEADER */
 header {
@@ -90,6 +41,14 @@ header > .inner {
   font-weight:700;
   cursor: pointer;
 }
+.down {
+  background-color:#fff;
+  color: #222;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
 
 /* VISUAL */
 .visual {
@@ -118,7 +77,7 @@ header > .inner {
   height: 100%;
 }
 .visual_text {
-  z-index:5;
+  z-index:2;
   padding-left: 104px;
   position: absolute;
   left: 50%;
@@ -129,17 +88,17 @@ header > .inner {
   font-size: 56px;
 }
 .visual_txt .title {
+  z-index: 6;
   font-weight: 700;
-}
-.visual_txt .title span {
-  display: block;
   line-height: 72px;
 }
 .visual_txt .description {
+  z-index: 10;
   margin-top: 32px;
   font-size: 18px;
   line-height: 24px;
 }
+
 
 
 /* MAIN */
@@ -161,7 +120,7 @@ header > .inner {
   margin-bottom: 24px;
 }
 .title_area p {
-  font-size: 42px;
+  font-size: 32px;
   line-height: 42px;
   letter-spacing: -2px;
 }
@@ -184,4 +143,214 @@ header > .inner {
 .app_service .explain {
   margin-top: 8px;
   line-height: 23px;
+}
+
+
+/* 설문조사 - simple-parallax */
+.survey {
+  position: relative;
+  margin: 176px auto 0 auto;
+  width: 100%;
+  min-width: 1224px;
+  max-width: 1432px;
+  height: 362px;
+  overflow: hidden;
+}
+.survey::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, .4);
+}
+.survey .survey-thumbnail {
+  object-fit: cover;
+  height: 362px;
+}
+.survey .title_area {
+  z-index: 5;
+  position: absolute;
+  color: #FFF;
+  top: 50% ;
+  left: 14.6% ;
+  transform: translateY(-50%);
+}
+.survey .tit {
+  font-size: 18px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.survey .description {
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -2px;
+}
+.survey .btn_white {
+}
+
+
+/* 러쉬소개 - SWIPER */
+.lush_info {  
+  margin-top:176px;
+  position: relative;
+  overflow: hidden;
+}
+.lush_info .inner {  
+  clip-path:inset( 0 -100vw 0 0 ); 
+  overflow: hidden;
+}
+.lush_info__title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.lush_info .swiper {
+  width: 100%;
+  height: 100%;
+  
+  overflow: inherit;
+  align-items: center;
+}
+.lush_info .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  align-items: center;
+  gap:130px;
+}
+.lush_info .swiper-slide {
+  width:auto;
+  
+}
+.lush_info .swiper-slide figure {
+  overflow: hidden;
+  position: relative;  
+  
+}
+.lush_info .swiper-slide figure img {
+  transition: all ease-in-out .3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.lush_info .txt {
+    display: flex;
+    z-index: 9;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    text-indent: -15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    opacity: 0;
+}
+
+
+.lush_info .info figure {
+  width:392px;
+  height:560px;
+}
+.lush_info .his figure {
+  width:288px;
+  height:320px;
+  margin-right: -104px;
+}
+.lush_info .val figure {
+  width:392px; 
+  height:436px;
+}
+.lush_info .bran figure {
+  width:392px;
+  height:560px;
+}
+
+
+
+.lush_info .swiper-slide > a {
+  color: #222;
+}
+.lush_info .swiper-slide h3 {
+  margin-top:32px; font-weight:700;
+} 
+.lush_info .swiper-slide .explain {
+  margin-top:8px; line-height:24px; letter-spacing: -0.5008px;
+} 
+
+
+/* 기부와 나눔 */
+.lush_share {
+  margin-top: 155px;
+}
+.lush_share .inner {
+ display: flex;
+ gap : 64px;
+ justify-content: center;
+ 
+}
+.share-thumbnail {
+  object-fit: cover;
+  width: 600px;
+  height: 408px;
+  
+}
+.lush_share .title {
+  font-weight: 700;
+}
+.lush_share .title h2 {
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+.lush_share .title p {
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -2px;
+}
+.lush_share .btn {
+  margin-top: 48px;
+}
+
+
+/* 카테고리 */
+
+
+
+/* 매장 찾기 */
+.shop {
+  margin-top: 155px;
+}
+.shop .inner {
+  display: flex;
+ gap : 64px;
+ justify-content: center;
+}
+.shop-thumbnail {
+  object-fit: cover;
+  width: 807px;
+  height: 560px;
+}
+.shop .title {
+  font-weight: 700;
+}
+.shop .title h2 {
+   margin-bottom: 32px;
+  font-size: 18px;
+}
+.shop .title p {
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -2px;
+}
+.shop .title .btn {
+  margin-top: 48px;
 }

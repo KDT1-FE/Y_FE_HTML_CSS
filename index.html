@@ -14,6 +14,8 @@
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/common.css">
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/menu.css">
+  <script defer src="./js/menu.js"></script>
 </head>
 <body>
   <header>
@@ -68,13 +70,13 @@
         </a>
       </li>
       <li>
-        <button type="button" title="메뉴" action="secondaryNavigationItems" class="site-nav-items-menu">
+        <button title="메뉴" class="site-nav-items-menu">
           <span class="site-nav-items-menu-text">메뉴</span>
         </button>
       </li>
     </ol>
   </header>
-  <dialog class="menu" open>
+  <dialog>
     <div class="menu-header">
       <button class="menu-close-btn" type="button">
         <svg class="menu-close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -84,28 +86,28 @@
     </div>
     <section class="menu-content">
       <ol class="menu-items">
-        <li><a title="Model S" href="/ko_kr/models" class="menu-item"><span class="menu-item-text">Model S</span></a></li>
-        <li><a title="Model 3" href="/ko_kr/model3" class="menu-item"><span class="menu-item-text">Model 3</span></a></li>
-        <li><a title="Model X" href="/ko_kr/modelx" class="menu-item"><span class="menu-item-text">Model X</span></a></li>
-        <li><a title="Model Y" href="/ko_kr/modely" class="menu-item"><span class="menu-item-text">Model Y</span></a></li>
+        <li><a title="Model S" href="/ko_kr/models" class="menu-item"><span class="menu-product-text">Model S</span></a></li>
+        <li><a title="Model 3" href="/ko_kr/model3" class="menu-item"><span class="menu-product-text">Model 3</span></a></li>
+        <li><a title="Model X" href="/ko_kr/modelx" class="menu-item"><span class="menu-product-text">Model X</span></a></li>
+        <li><a title="Model Y" href="/ko_kr/modely" class="menu-item"><span class="menu-product-text">Model Y</span></a></li>
         <li><a title="신규 인벤토리" href="/ko_kr/inventory/new/m3" class="menu-item"><span class="menu-item-text">신규 인벤토리</span></a></li>
         <li><a title="인증중고 인벤토리" href="/ko_kr/inventory/used/ms" class="menu-item"><span class="menu-item-text">인증중고 인벤토리</span></a></li>
         <li><a title="트레이드인" href="/ko_kr/tradein" class="menu-item"><span class="menu-item-text">트레이드인</span></a></li>
         <li><a title="시승 신청" href="/ko_kr/drive" class="menu-item"><span class="menu-item-text">시승 신청</span></a></li>
         <li><a title="법인 판매" href="/ko_kr/fleet-company-car" class="menu-item"><span class="menu-item-text">법인 판매</span></a></li>
-        <li><a title="Powerwall" href="/ko_kr/powerwall" class="menu-item"><span class="menu-item-text">Powerwall</span></a></li>
+        <li><a title="Powerwall" href="/ko_kr/powerwall" class="menu-item"><span class="menu-product-text">Powerwall</span></a></li>
         <li><a title="에너지" href="/ko_kr/energy" class="menu-item"><span class="menu-item-text">에너지</span></a></li>
         <li><a title="상업용 에너지" href="/ko_kr/commercial" class="menu-item"><span class="menu-item-text">상업용 에너지</span></a></li>
         <li><a title="전력사업용 에너지" href="/ko_kr/utilities" class="menu-item"><span class="menu-item-text">전력사업용 에너지</span></a></li>
         <li><a title="충전" href="/ko_kr/charging" class="menu-item"><span class="menu-item-text">충전</span></a></li>
         <li><a title="채용정보" href="/ko_kr/careers" class="menu-item"><span class="menu-item-text">채용정보</span></a></li>
-        <li><a title="Tesla 찾기" href="/ko_kr/findus" class="menu-item -hideon-phone-only"><span class="menu-item-text">Tesla 찾기</span></a></li>
+        <li><a title="Tesla 찾기" href="/ko_kr/findus" class="menu-item -hideon-phone-only"><span class="menu-product-text">Tesla 찾기</span></a></li>
         <li><a title="지원" href="/ko_kr/support" class="menu-item"><span class="menu-item-text">지원</span></a></li>
         <li><a title="투자자 정보" href="https://ir.tesla.com" class="menu-item"><span class="menu-item-text">투자자 정보</span></a></li>
-        <li><a title="Shop" href="https://shop.tesla.com/ko_kr?tesref=true" class="menu-item"><span class="menu-item-text">Shop</span></a></li>
+        <li><a title="Shop" href="https://shop.tesla.com/ko_kr?tesref=true" class="menu-item"><span class="menu-product-text">Shop</span></a></li>
         <li><a title="계정" href="/ko_kr/teslaaccount" class="menu-item"><span class="menu-item-text">계정</span></a></li>
-        <li><button type="button" title="더 보기" action="secondaryMobileNavigationItems" class="menu-item"><span class="menu-item-text">더 보기</span><svg class="" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4.975 2.75a.748.748 0 0 1 1.281-.53l5.25 5.264a.75.75 0 0 1 0 1.06L6.283 13.78a.75.75 0 1 1-1.062-1.06l4.695-4.706L5.194 3.28a.748.748 0 0 1-.219-.53z" fill="currentColor"></path></svg></button></li>
-        <li><div class="" role="button" tabindex="0"><svg class="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10ZM9.254 20.047a8.147 8.147 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.526 8.526 0 0 0 5.003 4.547Zm.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501.308 0 .658-.137 1.04-.5.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12c0 .691.036 1.36.103 2h6.294c.067-.64.103-1.309.103-2 0-.691-.036-1.36-.103-2H8.853c-.067.64-.103 1.309-.103 2Zm-1.405-2H3.737a8.522 8.522 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a20.75 20.75 0 0 1 0-4Zm1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5-.308 0-.658.137-1.04.5-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56Zm7.577 1.5a20.728 20.728 0 0 1 0 4h3.61a8.52 8.52 0 0 0 .236-2 8.52 8.52 0 0 0-.237-2h-3.609Zm3.094-1.5a8.526 8.526 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.526 8.526 0 0 0 4.252 8.5h3.3Zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.526 8.526 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169Z" fill="currentColor"></path></svg><div class=""><div><strong>대한민국</strong></div><a class="">한국어</a></div></div></li>
+        <li><button type="button" title="더 보기" action="secondaryMobileNavigationItems" class="menu-item menu-item-more"><span class="menu-item-text">더 보기</span><svg class="" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4.975 2.75a.748.748 0 0 1 1.281-.53l5.25 5.264a.75.75 0 0 1 0 1.06L6.283 13.78a.75.75 0 1 1-1.062-1.06l4.695-4.706L5.194 3.28a.748.748 0 0 1-.219-.53z" fill="currentColor"></path></svg></button></li>
+        <li><div class="menu-item-word" role="button" tabindex="0"><svg class="" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10ZM9.254 20.047a8.147 8.147 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.526 8.526 0 0 0 5.003 4.547Zm.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501.308 0 .658-.137 1.04-.5.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12c0 .691.036 1.36.103 2h6.294c.067-.64.103-1.309.103-2 0-.691-.036-1.36-.103-2H8.853c-.067.64-.103 1.309-.103 2Zm-1.405-2H3.737a8.522 8.522 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a20.75 20.75 0 0 1 0-4Zm1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5-.308 0-.658.137-1.04.5-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56Zm7.577 1.5a20.728 20.728 0 0 1 0 4h3.61a8.52 8.52 0 0 0 .236-2 8.52 8.52 0 0 0-.237-2h-3.609Zm3.094-1.5a8.526 8.526 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.526 8.526 0 0 0 4.252 8.5h3.3Zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.526 8.526 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169Z" fill="currentColor"></path></svg><div class="menu-item-word-text"><div><strong>대한민국</strong></div><a class="menu-item-word-text-ko">한국어</a></div></div></li>
       </ol>
     </section>
   </dialog>

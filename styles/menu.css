@@ -1,0 +1,113 @@
+dialog{
+  width: 0px;
+  min-height: 100vh;
+
+  margin: 0 0 0 auto;
+  padding: 0;
+  border:none;
+  
+  display: flex;
+  flex-direction: column;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: all 800ms cubic-bezier(0.375, 0.035, 0.055, 0.965);
+}
+
+dialog[open] {
+  width: 310px;
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(5px);
+}
+
+.menu-header{
+  width: 290px;
+  height: 80px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: end;
+
+  position: fixed;
+  
+  background-color: #FFFFFF;
+}
+
+.menu-close-btn{
+  padding: 8px;
+}
+
+.menu-close-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.menu-content{
+  padding: 5px 30px 80px;
+}
+
+.menu-items li{
+  height: 45px;
+  min-width: 230px;
+
+  padding: 4px 8px;
+}
+
+.menu-item-text, .menu-product-text{
+  margin: 0 4px;
+
+  font-size: 14px;
+}
+
+.menu-product-text{
+  font-weight: 600;
+}
+
+.menu-item-more{
+  width: 230px;
+
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item-more svg{
+  width: 16px;
+  height: 16px;
+}
+
+.menu-items li:last-child{
+  padding: 0;
+}
+
+.menu-item-word{
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-item-word svg{
+  margin: 8px 0px 24px 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.menu-item-word-text{
+  padding: 8px 12px 8px 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.menu-item-word-text-ko{
+  font-size: 12px;
+  color: #5C5E62;
+}

@@ -1,0 +1,20 @@
+.footer {
+    position : absolute;
+    bottom : 0;
+
+}
+.info_container {
+    display : flex;
+    justify-content : space-between;
+    position : relative;
+    
+}
+.info_list {
+    display : flex;
+    width : 400px;
+    justify-content : space-between;
+    position : relative;
+    flex-direction : row;
+    justify-center : center;
+    padding : 40px 0;
+}

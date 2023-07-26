@@ -1,0 +1,292 @@
+body, button, input, main, table, textarea,p {
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; }
+
+.main {
+    position : relative;
+    padding-top : 130px;
+    max_width : 1280px;
+    width :100%;
+    padding : 130px 0 40px;
+    margin : 0 auto;
+    
+}
+.banner_section {
+    position : relative;
+    width : 100%; //이건 다시 해결해야함
+    margin : 0 ;
+    max-height: 480px;
+    
+}
+.img_box {
+    position : relative;
+    width : 100%;
+    max-height: 480px;
+    display : flex;
+    flex-wrap :nowrap;
+    animation : bannermove 2s linear infinite;
+    justify-content : center;
+}
+.img_box div {
+    white-space: nowrap;
+    font-size:0; /*빈공간을 없애기 위함*/
+    overflow: hidden; /*초과해서 이미지가 나올 경우 나오지 않게 함*/
+}
+.img_box div img {
+    position : relative;
+    object-fit: cover;
+    max-width : 100%;
+    overflow : hidden;
+}
+.grid_container {
+    display : grid;
+    position : relative;
+    max-width : 1280px;
+    padding : 0 40px;
+    margin : 40px auto 56px auto ;
+    grid-template-columns : repeat(5,minmax(0,1fr));
+    grid-column-gap : 8px;
+    grid-row-gap : 8px;
+    text-align : center;
+    justify-content : center;
+
+}
+.grid_container div {
+    text-align : center;
+    justify-content : center;
+}
+.grid_container > div > img {
+    text-align : center;
+    justify-content : center;
+    box-sizing: border-box;
+    border-radius : 10px;
+    overflow : hidden;
+    display : flex;
+    border : none;
+    height : 100px;
+    width : 100%;
+}
+.grid_container div p {
+    text-align : center;
+    justify-content : center;
+    font-size: 15px;
+    letter-spacing: -.15px;
+    color: #333;
+    margin : 8px 0px 0px 0px;
+}
+.home_product, .popular_product, .icream_challenge, .prada_product {
+    display: flex;
+    position: relative;
+    flex-direction : column;
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 40px auto 56px auto;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.product_container {
+    display : grid;
+    position : relative;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    width : 100%;
+    max-width : 1280px;
+    margin : 0 auto;
+
+}
+.container_title {
+    text-align : start;
+    
+
+}
+#title {
+    margin : 0px;
+}
+#sub_title {
+    color : #909090;
+    margin-top : 2px;
+}
+.product_container  div{
+    max-width : 291px;
+    text-align : start;
+}
+.product_1 img{
+    width : 291px;
+    height : 291px;
+    background-color : #ebf0f5;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.product_2 img{
+    width : 291px;
+    height : 291px;
+    background-color : #f5f5f5;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+    
+}
+.product_3 img{
+    width : 291px;
+    height : 291px;
+    background-color : #f6eeed;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.product_4 img{
+    width : 291px;
+    height : 291px;
+    background-color : #ebf0f5;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.product_name {
+    font-size : 13px;
+    font-weight : 700;
+    color : #222;
+    margin : 0;
+}
+.product_content {
+    margin : 0px 0px 2px 0px;
+    color : #222;
+    font-size : 13px;
+}
+.product_price {
+    font-size : 14px;
+    padding-top : 12px;
+    margin : 0;
+
+}
+.price_feat {
+    font-size : 11px;
+    color : #22222280;
+    margin : 0;
+
+}
+hr {
+    max_width : 1280px;
+    border: 0;
+    background: #dee2e6;
+    height : 0.6px;
+    
+}
+.more_btn button {
+    padding : 0px 30px;
+    margin-top : 20px;
+    color: rgba(34,34,34,.8);
+    border-radius : 12px;
+    font-size: 14px;
+    letter-spacing: -.14px;
+    border: 1px solid #d3d3d3;
+    height : 40px;
+    background-color : white;
+}
+.brand_grid {
+    display : flex;
+    position : relative;
+    flex-direction : column;
+    width : 100%;
+    max-width : 1280px;
+    text-align : center;
+    justify-center : center;
+    margin : auto;
+    padding : 0 40px;
+}
+.brand_grid_container {
+    display : grid;
+    position : relative;
+    max-width : 1280px;
+    grid-template-columns : repeat(5,minmax(0,1fr));
+    grid-column-gap : 8px;
+    grid-row-gap : 16px;
+    text-align : center;
+    justify-content : center;
+    margin : 16px 0;
+
+
+}
+.brand_icon {
+
+}
+.brand_img {
+    width : 231px;
+    height : 100px;
+    border-radius: 10px;
+}
+.brand_name {
+    font-size : 15px;
+    color : #333;
+    margin : 3px 0 0 0;
+
+}
+.banner_section_not_move > .banner >img {
+    position : relative;
+    width : 100%;
+    height : 480px;
+    padding : 0;
+    margin : 0;
+
+}
+.user_container {
+    display : flex;
+    position : relative;
+    flex-direction : row;
+    width : 100%;
+    max-width : 1280px;
+    text-align : center;
+    justify-content : space-between;
+
+}
+.user_div {
+    position : relative;
+}
+.user_profile_img {
+    width : 36px;
+    height : 36px;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.user_content_img {
+    border-radius: 10px;
+    width : 193px;
+    height : 257px;
+}
+.user_id{
+    position : absolute;
+    font-size: 13px;
+    color: #fff;
+    left: 8px;
+    bottom: 8px;
+    margin : 0;
+    text-overflow: ellipsis;
+    
+
+
+}
+
+@keyframe bannermove {
+    0% {
+        transform : translate(0,0);
+    }
+    100% [
+        transform : translate(-100%,0);
+
+    ]
+}

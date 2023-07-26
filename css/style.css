@@ -1,19 +1,95 @@
-/* 메인 슬라이드 베너 */
-.swiper {
+/* MAIN TOP BANNER */
+.main.swiper {
   position: relative;
   margin-bottom: 40px;
 }
-.swiper .swiper-wrapper {
+.main.swiper .swiper-wrapper {
   margin: 0;
   padding: 60px 0;
 }
 
-.swiper .swiper-wrapper .swiper-slide > a > img {
+.main.swiper .swiper-wrapper .swiper-slide > a > img {
   width: 100%;
 }
 
-.swiper .swiper-pagination .swiper-pagination-bullet {
+.main.swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
   width: 10px;
   height: 10px;
+}
+
+/* BEST MENU */
+.menu .inner {
+  margin: 50px 0 100px;
+  position: relative;
+  align-items: center;
+}
+
+.menu .menu-description {
+  display: inline-block;
+  width: 400px;
+  height: 100%;
+}
+
+.menu .menu-description .description-group.show {
+  opacity: 1;
+  transform: translate(0);
+  transition: opacity 1s, transform 0.4s ease;
+}
+
+.menu .menu-description .description-group {
+  opacity: 0;
+  position: absolute;
+  transform: translateX(120px);
+}
+
+.menu .menu-description .name-en {
+  font-size: 38px;
+  font-weight: 100;
+  margin-bottom: 3px;
+}
+
+.menu .menu-description .name-ko {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.menu .menu-description .price {
+  font-size: 30px;
+  font-weight: 100;
+  color: #c3c3c3;
+}
+
+.menu .menu-image.swiper {
+  position: static;
+  display: inline-block;
+
+  max-width: calc(100% - 370px);
+}
+
+.menu .menu-image.swiper .swiper-button-prev {
+  top: 90%;
+  left: 3%;
+}
+
+.menu .menu-image.swiper .swiper-button-next {
+  top: 90%;
+  left: 7%;
+}
+
+.menu .menu-image .swiper-wrapper .swiper-slide > a > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.menu .menu-image .swiper-wrapper .swiper-slide > a > img:hover {
+  opacity: 0.5;
+}
+
+/* BEST GOODS */
+.goods .inner {
+  align-items: start;
 }

@@ -1,0 +1,110 @@
+.snappin-box-text{
+  max-width: 400px;
+  height: auto;
+
+  margin: 0 auto;
+  position: absolute;
+  top: 14%;
+  
+  text-align: center;
+}
+
+.snappin-box-text h1{
+  font-size: 42px;
+
+  letter-spacing: 3px;
+  font-weight:600;
+  color: #171A20;
+}
+
+.snappin-box-text p{
+  padding: 7px 0;
+  
+  font-size: 14px;
+  color: #171A20;
+}
+
+.snappin-box-text a{  
+  text-decoration : underline;
+  text-underline-position : under;
+}
+
+.test-drive h1{
+  padding: 5px;
+
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight:400;
+  color: #fff;
+}
+
+.test-drive p{
+  color: #fff;
+}
+
+.snappin-box-btn{
+  width: auto;
+  height: 40px;
+
+  position: absolute;
+  bottom: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.snappin-box-btn a{
+  width: 250px;
+  height: 100%;
+
+  margin: 0 10px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  
+  line-height: 40px;
+
+  opacity: .9;
+  text-align: center;
+  font-size: 14px;
+}
+
+.snappin-box-btn a:first-child{
+  color: #FFF;
+  background-color: #0e1410cc;
+}
+
+.snappin-box-btn a:last-child{
+  color: #0e1410cc;
+  background-color: #E7E6E5;
+}
+
+.test-drive .snappin-box-btn a{
+  border: 3px solid #FFF;
+  margin: 0 10px;
+  margin-bottom: 16px;
+  
+  line-height: 35px;
+
+  color: #FFF;
+  background-color: transparent;
+}
+
+.modelY-chevron{
+  position: absolute;
+  bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modelY-chevron{
+  position: absolute;
+  bottom: 20px;
+}
+
+.powerwall .snappin-box-btn a{
+  color: #FFF;
+  background-color: #0e1410cc;
+}

@@ -99,6 +99,7 @@ body, button, input, main, table, textarea,p {
 .container_title {
     text-align : start;
     padding : 0 40px;
+    margin : 30px 0;
     
 
 }

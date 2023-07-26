@@ -88,6 +88,19 @@ h3,
 h4 {
   margin-bottom: 16px;
 }
+
+.h4,
+.h5,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+.grid-item h3,
+.grid-item h4 {
+  margin-top: 20px;
+}
+
 img {
   height: auto;
   width: 100%;

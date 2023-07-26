@@ -30,6 +30,33 @@ nav {
     left: 0;
     top: 0;
 }
+
+.mainmenu__intro__basket {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px;
+    top: 90px;
+    width: 100%;
+    
+    background-color: rgba(235,235,235,0.85);
+}
+
+.mainmenu__intro__basket > ul > a {
+    display: block;
+    color: #111111;
+    padding-bottom: 15px;
+}
+
+.mainmenu__intro__basket > ul > li > a {
+    color: #777777;
+}
+
+.mainmenu__intro__basket > ul  a:hover {
+    color: #06c755;
+}
+
+
 header nav ul.mainmenu__list {
     display: flex;
     flex-direction: row;
@@ -50,6 +77,7 @@ header nav .mainmenu__firstbox {
 }
 
 header nav .mainmenu__secondbox {
+    position: relative;
     width: 360.609px;
     height: 90px;
     display: flex;
@@ -75,7 +103,6 @@ header nav .mainmenu__secondbox > li > a {
 header nav .mainmenu__secondbox > li > a:hover {
     color: #06c755;
 }
-
 
 header nav .mainmenu__thirdbox {
     width: 70.891px;

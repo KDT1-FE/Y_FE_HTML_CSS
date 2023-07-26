@@ -73,6 +73,8 @@ ul {
     flex: 1; /* 남은 공간을 모두 차지하도록 설정 */
 }
 
+input:focus {outline:none;}
+
 
 .chat-button {
     border-style: solid;

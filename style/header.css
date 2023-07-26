@@ -59,7 +59,7 @@ ul {
     display: flex; /* 검색바와 채팅하기 버튼을 수평으로 정렬하기 위해 설정 */
     align-items: center; /* 세로 중앙 정렬 */
     margin-left: auto; /* 검색바와 채팅하기 버튼을 오른쪽으로 이동하기 위해 설정 */
-    margin-right: 115px; /* 오른쪽 여백을 설정하여 왼쪽과 동일하게 맞춥니다. */
+    margin-right: 150px; /* 오른쪽 여백을 설정하여 왼쪽과 동일하게 맞춥니다. */
 }
 
 .search-bar {

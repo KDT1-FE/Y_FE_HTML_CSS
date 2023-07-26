@@ -66,6 +66,7 @@ body {
 .text-m2 {
     color: #212529;
 }
+
 .popularItem-button {
     margin-top: 10px;
     border: none;
@@ -174,10 +175,51 @@ body {
     color:#212529;
 }
 
-
 .home-main-image-top3 {
     flex: 1;
     width: 546px;
     height: 740px;
     margin-right: 180px;
+}
+
+
+
+#home-main-section-middle3 {
+    display: flex; /* Flexbox를 사용하여 요소들을 옆으로 정렬 */
+    align-items: center;/* 요소들을 수직 가운데 정렬 */
+    padding-top: 24px;
+    background-color: #ffffff;
+    margin: 0px 200px;
+}
+
+.home-main-image-top3 {
+    flex: 1;
+    width: 526px;
+    height: 735px;
+}
+
+.home-main-middle3 {
+    flex: 1;
+}
+
+.home-main-title3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.text-m3 {
+    color: #212529;
+}
+
+.gotofind-button {
+    margin-top: 10px;
+    border: none;
+    padding: 18px 25px; /* 채팅하기 버튼의 패딩 설정 */
+    color: black; /* 버튼 텍스트 색상 설정 */
+    background-color: #F1F3F5;
+    border-radius: 6px; /* 버튼 테두리 둥글게 설정 */
+    cursor: pointer; /* 커서 스타일 변경 */
+    font-size: 17px;
+    font-weight: 550;
 }

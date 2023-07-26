@@ -1,4 +1,17 @@
 @import "reset.css";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* global */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.43;
+    letter-spacing: -.5px;
+    font-feature-settings: "tnum","ss01","ss07";
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
 
 /* nav */
 nav {
@@ -44,7 +57,6 @@ nav {
 
 /* slide show */
 .slide-show {
-    background-color: sandybrown;
     position: relative;
     z-index: 0;
     margin-top: 85px;
@@ -71,8 +83,12 @@ nav {
 }
 
 /* #lowest-loan-rates-banner, #app, #curation, #card */
-#app, #curation, #card {
+#lowest-loan-rates-banner, #app, #curation {
     display: none;
+}
+
+#lowest-loan-rates-banner {
+    background: #eff5ff;
 }
 
 .lowest-loan-rates-banner-section {
@@ -86,21 +102,72 @@ nav {
     padding: 122px 0;
     white-space: pre-wrap;
     word-break: break-word;
+    letter-spacing: -.5px;
+    vertical-align: baseline;
 }
 
 .lowest-loan-rates-banner-info {
     display: block;
-    white-space: pre-wrap;
+    white-space: nowrap;
     word-break: break-word;
+}
+
+.lowest-loan-rates-banner-info > h2 {
+    display: block;
+    color: #111;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: .5px;
+    margin-bottom: 12px;
+}
+
+.lowest-loan-rates-banner-info > h2 > small {
+    font-weight: 500;
+}
+
+.lowest-loan-rates-banner-info > h3 {
+    display: block;
+    color: #111;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: .5px;
+    margin-bottom: 25px;
 }
 
 .lowest-loan-rates-banner-button {
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 162px;
     padding: 12px 19px;
     align-items: center;
     gap: 6px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    background-color: #fff;
+    color: #09a56f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.625;
+}
+
+.lowest-loan-rates-banner-button > strong {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    letter-spacing: -.5px;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+.lowest-loan-rates-banner-image {
+    width: 434px;
+    height: 278px;
+    vertical-align: middle;
+    overflow: clip;
 }
 
 .app-container, .curation-container, .card-container {
@@ -108,7 +175,7 @@ nav {
     z-index: 999;
     display: block;
     width: 100%;
-    max-width: 946px;
+    max-width: 906px;
     height: 100%;
     margin: 0 auto;
     padding: 130px 20px 0;
@@ -130,6 +197,161 @@ nav {
 .curation-description, .card-description {
     position: relative;
     margin: 8px 0 0;
+    padding: 0;
+    border: 0;
+}
+
+#app {
+    background: #eafaf3;
+}
+
+#app::before {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: auto;
+    left: auto;
+    transform: translate(66%,-50%);
+    display: block;
+    width: 1858px;
+    height: 1855px;
+    background: url("../public/assets/app-background-image.svg") no-repeat;
+    content: ""; 
+}
+
+.app-title, .curation-title {
+    color: #0b0c0c;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.app-buttons {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 0;
+}
+
+.green-button {
+    color: #fff;
+    background: #13bd7e;
+    max-width: fit-content;
+    padding: 10px 20px;
+    border-radius: 41px;
+    box-shadow: 0 4px 9px rgba(0,0,0,.15);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.white-button {
+    color: #13bd7e;
+    border: 1px solid #13bd7e;
+    margin: 14px 0 0;
+    background: #fff;
+    max-width: fit-content;
+    padding: 10px 20px;
+    border-radius: 41px;
+    box-shadow: 0 4px 9px rgba(0,0,0,.15);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+#curation {
+    background-color: #cbf8e7;
+}
+
+#curation::before {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: auto;
+    left: auto;
+    transform: translate(84%,-47%);
+    display: block;
+    width: 740px;
+    height: 444px;
+    background: url("../public/assets/curation-image.svg") no-repeat;
+    content: "";
+}
+
+.curation-title > small {
+    font-weight: 500;
+}
+
+.curation-description {
+    font-size: 22px;
+    line-height: 25px;
+    color: #111;
+}
+
+.curation-button {
+    color: #fff;
+    background: #877af5;
+    max-width: fit-content;
+    padding: 10px 20px;
+    border-radius: 41px;
+    box-shadow: 0 4px 9px rgba(0,0,0,.15);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+#card {
+    background: linear-gradient(91deg,#09f,#ff8a84 90%);
+}
+
+#card::before {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: auto;
+    left: auto;
+    transform: translate(100%,-50%);
+    display: block;
+    width: 538px;
+    height: 480px;
+    background: url("../public/assets/card-background-image.png") no-repeat;
+    background-size: 538px 480px;
+    content: "";
+}
+
+.card-title {
+    color: #fafafa;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.card-description {
+    color: #ededee;
+    position: relative;
+    margin: 8px 0 0;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.card-button {
+    color: #111;
+    background: #ffbe4c;
+    max-width: fit-content;
+    padding: 10px 20px;
+    border-radius: 41px;
+    box-shadow: 0 4px 9px rgba(0,0,0,.15);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.lowest-loan-rates-banner-button:hover
+.green-button:hover, 
+.white-button:hover, 
+.curation-button:hover, 
+.card-button:hover {
+    cursor: pointer;
 }
 
 .navagation-button-wrap {
@@ -142,11 +364,27 @@ nav {
     width: 100%;
     white-space: nowrap;
     text-align: center;
+    list-style: none;
 }
 
 .navagation-button-wrap > li {
     display: inline-block;
     vertical-align: top;
+    margin: 0 0 0 12px;
+}
+
+.navagation-button {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    color: transparent;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 0;
+    transition: all .3s ease;
 }
 
 

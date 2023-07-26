@@ -50,3 +50,21 @@ new Swiper('.main-introduction .swiper-container', {
     clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
   }
 })
+
+new Swiper('.products-container .swiper-container', {
+  direction: 'horizontal',
+  autoplay:{
+    delay:3000
+  },
+  loop:false,
+  slidesPerView:3
+})
+
+new Swiper('.select-shop-container .swiper-container', {
+  direction: 'horizontal',
+  autoplay:{
+    delay:3000
+  },
+  loop:false,
+  slidesPerView:3
+})

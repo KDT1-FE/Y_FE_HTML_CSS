@@ -24,7 +24,7 @@ a {
   color: #000;
   text-decoration: none;
 }
-a:hover,a:focus {
+a:hover, a:focus {
   color: #000;
   text-decoration: underline;
 }
@@ -161,7 +161,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 }
 .main-introduction .swiper-pagination{
   position: absolute;
-  bottom:120px;
+  bottom:80px;
   left:50%;
   margin-left:-150px;
   z-index:10;
@@ -181,4 +181,158 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 	border: 1px solid transparent; 
 }
 
-/* Products */
+/* Products & Select# & Stories */
+/* 상단 타이틀 및 메뉴 */
+.has-swiper{
+  width: 100%;
+  margin-bottom:100px;
+}
+.text-container{
+  width:100%;
+  box-sizing: border-box;
+  height:100px;
+  padding-left:70px;
+  margin:40px 0px;
+}
+.text-container .title{
+  font-size:30px;
+  font-weight:700;
+}
+.text-container .menu{
+  display: flex;
+  cursor:pointer;
+}
+.text-container .menu .text{
+  margin-right:20px;
+  cursor:pointer;
+}
+
+/* Products & Select#*/
+/* 슬라이드되는 박스 */
+
+.product-swiper .swiper-slide{
+  display: flex;  
+}
+.has-swiper .product-swiper .box1, .box2 {
+  border:1px solid black;
+  border-right-color: transparent;
+}
+.has-swiper .product-swiper img{
+  width:100%;
+}
+/* .products-container .product-swiper .box1 .hoverImg{
+  position: relative;
+  width:100%;
+  top:10px;
+} */
+
+.has-swiper .product-swiper .product-description{
+  padding: 45px 35px;
+  box-sizing: border-box;
+}
+.product-description .info h4{
+  font-size:13px;
+  font-weight: 700;
+}
+.product-description .meta {
+  font-size:12px;
+  padding-top:10px;
+  position:relative;
+}
+.product-description .meta .text {
+  padding-right: 12px;
+}
+.product-description .meta .lastPrice{
+  color:lightgray;
+  text-decoration:line-through;
+}
+.product-description .meta .currentPrice{
+  font-size: 14px;
+}
+.product-description .meta .right{
+  position:absolute;
+  right:0;
+}  
+.product-description .meta .right .discount{
+  color:red;
+}
+
+/* half-banner */
+.half-banner-container{
+  display: flex;
+  position: relative;
+}
+.half-banner-container img{
+  width:100%;
+  opacity: 0.5;
+  position: relative;
+  background-color: black;
+}
+.half-banner-container .text-area{
+  line-height: 1.8;
+  position:absolute;
+  bottom: 180px;
+  z-index: 9;
+  text-align: center;
+  width:50%;
+  margin: 0 auto;
+}
+.half-banner-container .text-area .sub-title{
+  font-size:40px;
+  font-weight:700;
+}
+.half-banner-container .btn-shopnow {
+  transform: translateY(-100px);
+  bottom:70px;
+  border: 1px solid;
+  width: 200px;
+  font-size: 15px;
+  padding: 11px;
+  text-align: center;
+  margin:0 auto;
+}
+
+/* Stories */
+.stories-container{
+  width:100%;
+  margin-top: 100px;
+  padding:30px 0px 60px;
+  background-color: rgb(250, 245, 233);
+}
+.stories-container .text-container{
+  padding-top:20px;
+}
+.stories-container .boxes{
+  display: flex;
+}
+.stories-container .box{
+  width:calc(100%/4);
+  border:1px solid black;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size:13px;
+}
+.stories-container img{
+  width:100%;
+  margin-bottom:20px;
+}
+
+/* Business solution */
+.business-solution-container{
+  padding:50px 0px;
+  margin-bottom: 20px;;
+}
+.business-solution-container .title{
+  margin-bottom:20px;
+}
+.btn-request{
+  border: 1px solid;
+  width: 170px;
+  height:50px;
+  font-size: 15px;
+  padding: 11px;
+  text-align: center;
+  margin-left:70px;
+  margin-top:30px;
+  background-color: white;
+}

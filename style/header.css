@@ -35,16 +35,19 @@ ul {
   }
 
 
-.middle-list li {
+.middle-list li a{
+    text-decoration: none;
     margin-left: 30px; 
     font-size: 17.5px;
     color: #4d5159;
-  }
+}
 
 
-.first-list a {
+.middle-list .first-list .first-name{
     color: #ff6f0f;
 }
+
+
   
 
 .middle-list li:last-child {

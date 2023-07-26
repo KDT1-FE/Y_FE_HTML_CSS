@@ -61,6 +61,6 @@ button {
     margin-left:12px;
     background-color: #fff;
 }
-button:hover {
+nav button:hover {
     background-color: #eee;
 }

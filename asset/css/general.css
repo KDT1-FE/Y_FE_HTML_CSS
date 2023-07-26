@@ -17,3 +17,22 @@ a {
 li {
     list-style: none;
 }
+
+.list {
+    display: flex;
+    margin: 12px -24px 0;
+    text-align: center;
+    justify-content: center;
+}
+.list li{
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 42px;
+    color: #666;
+    background-color: #f4f4f4;
+}
+.list li + li {
+    margin-left: 10px;
+}

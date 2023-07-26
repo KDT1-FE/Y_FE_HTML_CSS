@@ -4,11 +4,9 @@ const menuCloseBtn = document.querySelector(".menu-close-btn");
 
 menuBtn.addEventListener("click", () => {
   menuDialog.showModal();
-  document.body.style.overflow = "clip";
-
 });
 
 menuCloseBtn.addEventListener("click", () => {
+  const backdrop = document.querySelector("backdrop");
   menuDialog.close();
-  document.body.style.overflow = "";
 });

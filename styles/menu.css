@@ -4,20 +4,23 @@ dialog{
 
   margin: 0 0 0 auto;
   padding: 0;
-  border:none;
+  border: none;
   
   display: flex;
   flex-direction: column;
 
-  pointer-events: none;
   opacity: 0;
-  transition: all 800ms cubic-bezier(0.375, 0.035, 0.055, 0.965);
+  transition: .8s cubic-bezier(0.375, 0.035, 0.055, 0.965);
+  
+  /* header의 flex 레이아웃인 align-items: center에
+  영향을 받으므로 item 따로 배열 */
+  align-self: flex-start;
 }
 
 dialog[open] {
   width: 310px;
   opacity: 1;
-  pointer-events: inherit;
+  pointer-events: auto;
 }
 
 dialog::backdrop {
@@ -87,7 +90,6 @@ dialog::backdrop {
 }
 
 .menu-item-word{
-
   display: flex;
   justify-content: flex-start;
 }

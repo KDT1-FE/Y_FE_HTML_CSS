@@ -93,3 +93,33 @@
 .goods .inner {
   align-items: start;
 }
+
+/* EVENT */
+.event {
+  padding: 60px 0;
+  background-color: #eee;
+}
+.event .inner {
+  flex-direction: column;
+  height: 400px;
+}
+
+.event .inner .title {
+  margin: 0 auto 40px;
+}
+
+.event .inner .event-image {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.event .inner .event-image > li {
+  width: 100%;
+}
+
+.event .inner .event-image > li > a > img {
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 10px;
+}

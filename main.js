@@ -219,3 +219,52 @@ const home5EventHandler = ()=>{
 }
 window.addEventListener('scroll',home5EventHandler)
 
+/* home5 아이콘 등장 이벤트 - 이건 이벤트를 지우진 않음 */ 
+
+const home5Iphone = document.querySelector('.home5_icon_wrap')
+const home5Images = document.querySelectorAll('.home5_icon_wrap img')
+const home5AppearHandler = () => {
+    if(home5Iphone.getBoundingClientRect().bottom -100 < windowHeight){
+        home5Images[3].style.animation = 'appear ease-out 2.5'
+        home5Images[3].style.opacity=1
+    }else{
+        home5Images[3].style.animation = ''
+        home5Images[3].style.opacity=0
+    }
+    if(home5Iphone.getBoundingClientRect().bottom < windowHeight){
+        home5Images[2].style.animation = 'appear ease-out 2.5'
+        home5Images[2].style.opacity=1
+        home5Images[4].style.animation = 'appear ease-out 2.5'
+        home5Images[4].style.opacity=1
+    }else{
+        home5Images[2].style.animation = ''
+        home5Images[2].style.opacity=0        
+        home5Images[4].style.animation = ''
+        home5Images[4].style.opacity=0
+    }
+    if(home5Iphone.getBoundingClientRect().bottom + 100 < windowHeight){
+        home5Images[1].style.animation = 'appear ease-out 2.5'
+        home5Images[1].style.opacity=1
+        home5Images[5].style.animation = 'appear ease-out 2.5'
+        home5Images[5].style.opacity=1
+    }else{
+        home5Images[1].style.animation = ''
+        home5Images[1].style.opacity=0
+        home5Images[5].style.animation = ''
+        home5Images[5].style.opacity=0
+    }
+    if(home5Iphone.getBoundingClientRect().bottom + 200 < windowHeight){
+        home5Images[0].style.animation = 'appear ease-out 2.5'
+        home5Images[0].style.opacity=1
+        home5Images[6].style.animation = 'appear ease-out 2.5'
+        home5Images[6].style.opacity=1
+    }else{
+        home5Images[0].style.animation = ''
+        home5Images[0].style.opacity=0
+        home5Images[6].style.animation = ''
+        home5Images[6].style.opacity=0
+    }
+}
+
+
+window.addEventListener('scroll', home5AppearHandler)

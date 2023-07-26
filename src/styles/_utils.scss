@@ -4,7 +4,9 @@ $red: #fa5252;
 /*반응형 화면 크기*/
 $mobile: 767px;
 $tablet: 1023px;
-$desktop: 1024px;
+$laptop: 1024px;
+$laptopXL: 1399px;
+$desktop: 1400px;
 
 /*반응형, 브라우저 크기가 767px 이하일때*/
 @mixin mobile {
@@ -20,7 +22,14 @@ $desktop: 1024px;
   }
 }
 
-/*반응형, 브라우저 크기가 1024px 이상일때*/
+/*반응형, 브라우저 크기가 1024px 이상, 1399px 이하 일때*/
+@mixin laptop {
+  @media (min-width: $laptop) and (max-width: $laptopXL) {
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1400px 이상일때*/
 @mixin desktop {
   @media (min-width: $desktop) {
     @content;

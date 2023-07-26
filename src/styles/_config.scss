@@ -185,6 +185,13 @@ body {
   position: relative;
   margin: 0 auto;
   padding: 0 50px;
+  box-sizing: border-box;
+  @include mobile {
+    padding: 0 15px;
+  }
+  @include tablet {
+    padding: 0 25px;
+  }
 }
 .grid-container {
   display: grid;
@@ -203,26 +210,41 @@ body {
 }
 .heading-1 {
   font-size: 180px;
-  font-family: "Mango", "Helvetica Neue";
+  font-family: $mango;
+  @include mobile {
+    font-size: 52px;
+  }
 }
 
 .heading-2 {
   font-size: 140px;
-  font-family: "Mango", "Helvetica Neue";
+  font-family: $mango;
+  @include mobile {
+    font-size: 42px;
+  }
 }
 .heading-3 {
   font-size: 120px;
-  font-family: "Mango", "Helvetica Neue";
+  font-family: $mango;
+  @include mobile {
+    font-size: 52px;
+  }
 }
 .heading-4 {
   font-size: 100px;
-  font-family: "Mango", "Helvetica Neue";
+  font-family: $mango;
+  @include mobile {
+    font-size: 32px;
+  }
 }
 .heading-5 {
   font-size: 20px;
   font-family: "VentiCF", sans-serif;
   font-weight: 400;
   letter-spacing: 0.04em;
+  @include mobile {
+    font-size: 15px;
+  }
 }
 .pc-show {
   @include mobile {
@@ -235,6 +257,9 @@ body {
   font-weight: 400;
   letter-spacing: 0.16em;
   color: $font-color;
+  @include mobile {
+    font-size: 11px;
+  }
 }
 .link-text + .link-arrow {
   margin-top: 20px;

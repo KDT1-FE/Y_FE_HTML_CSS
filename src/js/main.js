@@ -24,7 +24,7 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
     const navItems = Array.from(d.querySelectorAll(".menu-item"));
     const hamberger = d.getElementById("hamberger-btn");
     let isOpen = false;
-
+    // 상단 고정 헤더 높이 조절하기 위해 클래스 토글하기
     ScrollTrigger.create({
       trigger: "#kv",
       start: "top bottom",
@@ -34,13 +34,13 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
         targets: "#header",
       },
     });
-
+    // 메뉴 클래스 지우기
     function removeClass(elements) {
       elements.forEach((element) => {
         element.classList.remove("menu-item--hovered");
       });
     }
-
+    // 메뉴 호버 시 클래스 추가해서 이미지 보여주기
     navItems.forEach((item, index) => {
       item.addEventListener("mouseenter", () => {
         removeClass(navImgs);
@@ -63,6 +63,7 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
     const conceptSwiper = new Swiper(".swiper.the-concept__img-swiper", {
       loop: true,
       effect: "fade",
+      height: 400,
       // Navigation arrows
       navigation: {
         nextEl: ".the-concept__next-btn",
@@ -101,7 +102,7 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
       },
       breakpoints: {
         //반응형 조건 속성
-        1200: {
+        1024: {
           slidesPerView: "auto", //레이아웃 2열
         },
       },
@@ -123,5 +124,19 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
       header.classList.toggle("header--open");
     });
+
+    // 스크롤 효과
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".the-concept__bottom-content",
+          start: "center bottom",
+          end: "bottom bottom",
+          scrub: true,
+        },
+      })
+      .to(".the-concept__bottom-content figcaption .heading-2", {
+        x: "-50%",
+      });
   });
 })(window, document);

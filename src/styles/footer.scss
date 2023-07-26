@@ -5,16 +5,28 @@
   padding: 50px 0 45px;
   grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto 24px;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
   .footer__logo-wrap {
     text-align: center;
+    @include mobile {
+      width: 100px;
+      margin: 0 auto;
+    }
     img {
       vertical-align: top;
+      max-width: 100%;
     }
   }
   .footer__info-wrap {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    @include mobile {
+      text-align: center;
+    }
     .info a {
       font-size: 20px;
       font-weight: 300;
@@ -26,10 +38,16 @@
       font-weight: 300;
       line-height: 2.4;
       color: white;
+      @include mobile {
+        font-size: 13px;
+      }
     }
   }
   .footer__menu-wrap {
     margin-top: 10px;
+    @include mobile {
+      display: none;
+    }
     .footer__menu-list {
       li {
         font-size: 14px;
@@ -43,11 +61,19 @@
   .footer__admin {
     text-align: center;
     color: #fff;
+    @include mobile {
+      order: 2;
+      margin-bottom: 15px;
+    }
     a {
       font-size: 14px;
       display: inline-block;
       padding: 0 5px 10px;
       border-bottom: 1px solid #fff;
+      @include mobile {
+        font-size: 12px;
+        padding: 0 2px 10px;
+      }
     }
   }
   .copyright {
@@ -55,9 +81,23 @@
     font-family: "Open Sans";
     color: white;
     text-align: center;
+    @include mobile {
+      order: 2;
+      p > span {
+        margin-top: 8px;
+        display: block;
+      }
+    }
   }
   .footer__sns-list {
     display: flex;
+    @include mobile {
+      margin: 15px 0;
+      justify-content: center;
+      li {
+        margin: 0 15px;
+      }
+    }
     li {
       margin-right: 15px;
       &:last-child {

@@ -284,3 +284,43 @@ button {
     line-height: 1.5;
 
 }
+
+/* home--fourth */
+
+.main__home--fourth {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+}
+
+.home__img--fourth {
+    width: 52rem;
+    height: 73rem;
+}
+
+.home__content--fourth {
+    padding-top: 27rem;
+}
+
+.home__title--fourth {
+    margin-bottom: 2.4rem;
+}
+
+.home__desc--fourth{
+    margin-bottom: 3.2rem;
+}
+
+.btn--feat3 {
+    background-color: #F1F3F5;
+    color: #212529;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 1.45rem 2.6rem;
+    display: inline-block;
+    font-size: 1.8rem !important;
+    line-height: 1.47;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+}
+

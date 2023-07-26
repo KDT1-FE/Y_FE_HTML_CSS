@@ -7,6 +7,7 @@
 body {
     font-family: -apple-system;
     font-size: 10px;
+    position: relative;
 }
 
 h1 {
@@ -50,14 +51,25 @@ button {
 
 /* header */
 
+header{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 64px;
+
+}
+
 .header {
     display: flex;
     height: 6.4rem;
+    
+    
 }
 
 .header.container {
     max-width: 1200px;
         margin: 0 auto;
+
 }
 
 .header--left {
@@ -145,6 +157,7 @@ button {
 .main__home--first.container {
     max-width: 1200px;
         margin: 0 auto;
+        padding-top : 8.8rem;
 }
 
 .home--first {

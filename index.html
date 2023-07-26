@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <title>NAVER</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <!-- <style></style> -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="wrap-center">
+        <div id="header">
+          <button id="header-hamburger">
+            <div></div>
+            <span class="blind">확장 영역</span>
+          </button>
+          <button id="header-naverpay">
+            <div></div>
+            <span class="blind">네이버 페이</span>
+          </button>
+          <button id="header-notice">
+            <div></div>
+            <span class="blind">알림</span>
+          </button>
+        </div>
+        <div id="search">
+          <form action="">
+            <!-- 한번 쓰일 속성은 id, 여러번 쓰일 속성은 class, blind는 그래서 class -->
+            <a id="search-svg" href="#">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"
+                /></svg
+            ></a>
+            <label for="search-input" class="blind">검색어 입력</label>
+            <input
+              id="search-input"
+              type="text"
+              placeholder="검색어를 입력해 주세요."
+            />
+            <div id="search-right">
+              <button href="#" id="search-keyboard">
+                <span class="blind">입력도구</span>
+              </button>
+              <button href="#" id="search-recent">
+                <span class="blind">자동완성/최근검색어펼치기</span>
+              </button>
+              <button id="search-button">
+                <div>
+                  <span class="blind">검색</span>
+                </div>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="nav"></div>
+        <div id="main"></div>
+      </div>
+    </div>
+  </body>
+</html>

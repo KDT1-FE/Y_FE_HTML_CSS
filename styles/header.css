@@ -1,0 +1,275 @@
+:root {
+  --color_title: #080808;
+  --color_title_rgb: 8, 8, 8;
+  --color_body: #101010;
+  --color_body_rgb: 16, 16, 16;
+  --color_caption1: #404040;
+  --color_caption1_rgb: 64, 64, 64;
+  --color_caption2: #606060;
+  --color_caption2_rgb: 96, 96, 96;
+  --color_search: #000;
+  --color_search_rgb: 0, 0, 0;
+  --color_border_out: #e3e5e8;
+  --color_border_out_rgb: 227, 229, 232;
+  --color_border_in: #ebebeb;
+  --color_border_in_rgb: 235, 235, 235;
+  --color_border_in_divider: #ebebeb;
+  --color_border_in_divider_rgb: 235, 235, 235;
+  --color_border_in_exception: #ebebeb;
+  --color_border_in_exception_rgb: 235, 235, 235;
+  --color_button_border: #dadcdf;
+  --color_button_border_rgb: 218, 220, 223;
+  --color_dot_divider: #d3d5d7;
+  --color_dot_divider_rgb: 211, 213, 215;
+  --color_block_bg: #fff;
+  --color_block_bg_rgb: 255, 255, 255;
+  --color_board_bg: #f4f6fa;
+  --color_board_bg_rgb: 244, 246, 250;
+  --color_option_bg: #f5f7f8;
+  --color_option_bg_rgb: 245, 247, 248;
+  --color_login_bg: #fafbfb;
+  --color_login_bg_rgb: 250, 251, 251;
+  --color_menu_widget_bg: #fff;
+  --color_menu_widget_bg_rgb: 255, 255, 255;
+  --color_setting_bg: #fff;
+  --color_setting_bg_rgb: 255, 255, 255;
+  --color_button1_bg: #fff;
+  --color_button1_bg_rgb: 255, 255, 255;
+  --color_button2_bg: #fff;
+  --color_button2_bg_rgb: 255, 255, 255;
+  --color_news: #3a67ea;
+  --color_news_rgb: 58, 103, 234;
+  --color_news_econ_stay: #909aab;
+  --color_news_econ_stay_rgb: 144, 154, 171;
+  --color_news_econ_down: #4f67d6;
+  --color_news_econ_down_rgb: 79, 103, 214;
+  --color_live_news_price: #f4361e;
+  --color_live_news_price_rgb: 244, 54, 30;
+  --color_enter: #e538e2;
+  --color_enter_rgb: 229, 56, 226;
+  --color_enter_bg: #f2f1fb;
+  --color_enter_bg_rgb: 242, 241, 251;
+  --color_sports: #1f65ef;
+  --color_sports_rgb: 31, 101, 239;
+  --color_sports_bg: #f4f7fe;
+  --color_sports_bg_rgb: 244, 247, 254;
+  --color_econ: #008f76;
+  --color_econ_rgb: 0, 143, 118;
+  --color_calendar: #eb5b5b;
+  --color_calendar_rgb: 235, 91, 91;
+  --color_dic: #031f5f;
+  --color_dic_rgb: 3, 31, 95;
+}
+* {
+  box-sizing: border-box;
+  /* width가 padding, border 포함한 전체 길이 */
+}
+body,
+html,
+form {
+  margin: 0px;
+  padding: 0px;
+}
+#wrap {
+  text-align: center;
+}
+#wrap-center {
+  width: 1280px;
+  display: inline-block;
+}
+#header {
+  text-align: left;
+  position: relative;
+  height: 64px;
+}
+#header-hamburger,
+#header-naverpay,
+#header-notice {
+  position: absolute;
+  top: 18px;
+  padding: 10px;
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#header-hamburger:hover::before,
+#header-naverpay:hover::before,
+#header-notice:hover::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  left: 1px;
+  top: 1px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color_option_bg);
+  border-radius: 50%;
+}
+#header-hamburger > div,
+#header-naverpay > div,
+#header-notice > div {
+  background-image: url(./assets/sp_main.png);
+  width: 26px;
+  height: 26px;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 422px 405px;
+}
+#header-hamburger {
+  left: -10px;
+}
+
+#header-hamburger > div {
+  background-position: -335px -284px;
+}
+
+#header-naverpay {
+  right: 42px;
+  padding: 10px 8px;
+}
+
+#header-naverpay > div {
+  width: 30px;
+  background-position: -31px -316px;
+}
+
+#header-notice {
+  right: -10px;
+}
+
+#header-notice > div {
+  background-position: -364px -27px;
+}
+#main {
+  height: 2000px;
+}
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+#search > form {
+  display: inline-flex;
+  height: 60px;
+  width: 708px;
+  border: 1px solid #03c75a;
+  border-radius: 33px;
+  text-align: left;
+}
+
+#search > form:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+#search > form > input {
+  height: 100%;
+  width: 480px;
+  padding: 17px 0;
+  border: none;
+  outline: none;
+}
+
+#search-svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  margin-right: 12px;
+  padding-left: 10px;
+  height: 100%;
+  position: relative;
+}
+
+/* #search > form a {
+    height: 100%;
+    width: 68px;
+    padding: 17px;
+    margin-right: 12px;
+  }
+  #search > form svg {
+    height: 24px;
+    width: 24px;
+  } */
+
+#search-svg::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #e4e4e4;
+  right: 0;
+  top: 20px;
+}
+
+#search-svg svg {
+  width: 24px;
+  height: 24px;
+  fill: #03c75a;
+}
+#search-input {
+  width: 480px;
+  padding: 17px 0;
+  font-size: 1.2rem;
+  line-height: 24px;
+  /* font-weight: bold; */
+  border: none;
+  outline: none;
+}
+#search-input::placeholder {
+  color: white;
+}
+#search-input:focus::placeholder {
+  color: #e4e4e4;
+}
+#search-right {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+#search-button {
+  padding: 17px 27px 16px 10px;
+}
+
+#search-button,
+#search-recent,
+#search-keyboard {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+#search-button::before,
+#search-recent::before,
+#search-keyboard:before {
+  content: "";
+  display: block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+  background-size: 422px 405px;
+  background-repeat: no-repeat;
+}
+#search-keyboard:before {
+  background-position: -270px -234px;
+  width: 24px;
+  height: 16px;
+}
+#search-keyboard:hover::before {
+  filter: brightness(0.7);
+}
+#search-recent::before {
+  background-position: -412px -352px;
+  width: 10px;
+  height: 6px;
+}
+
+#search-button::before {
+  background-position: -364px -132px;
+  width: 25px;
+  height: 25px;
+}

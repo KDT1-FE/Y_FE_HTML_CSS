@@ -3,10 +3,7 @@
 }
 
 .target-value-banner li {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  width: calc(25% - 18px);
   position: relative;
 }
 
@@ -28,4 +25,15 @@
 
 .line-divided:first-of-type::after {
   width: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .line-divided:after {
+    align-self: center;
+    height: 1px;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    width: 150px;
+  }
 }

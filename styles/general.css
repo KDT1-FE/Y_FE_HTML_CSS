@@ -12,6 +12,7 @@ body {
 }
 
 p {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -107,6 +108,11 @@ img {
   padding-left: 0;
 }
 
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .text-medium {
   font-size: 15px;
   line-height: 25px;
@@ -197,7 +203,14 @@ img {
   width: calc(50% - 12px);
 }
 
+.mobile-one-column .grid-item {
+  width: 100%;
+}
+
 @media only screen and (min-width: 769px) {
+  .four-column .grid-item {
+    width: calc(25% - 18px);
+  }
   .three-column .grid-item {
     width: calc(33.3% - 16px);
   }

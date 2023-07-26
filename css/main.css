@@ -641,6 +641,7 @@
 
 .Compos {
   display: flex;
+  height: 550px;
   flex-wrap: wrap;
   padding-left: 0px;
 }
@@ -727,6 +728,7 @@
 }
 
 .ServiceComponent1_2 {
+  display: block;
   position: relative;
   margin-bottom: 0;
   width: calc(33.33333% - 4px);
@@ -737,6 +739,8 @@
 }
 
 .ServiceComponent2_2 {
+  display: block;
+  position: relative;
   margin-bottom: 0;
   width: calc(33.33333% - 4px);
   margin-bottom: 0;
@@ -746,6 +750,8 @@
 }
 
 .ServiceComponent3_2 {
+  display: block;
+  position: relative;
   margin-bottom: 0;
   width: calc(33.33333%);
   text-decoration: none;
@@ -797,6 +803,8 @@
 }
 
 .SocialLogo {
+  position: absolute;
+  bottom: 0;
   color: black;
   margin: 0 24px 18px;
   align-items: center;
@@ -808,6 +816,10 @@
   fill: #000;
   height: 24px;
   width: 24px;
+}
+
+.LogoText{
+  margin-left: 15px;
 }
 
 .Space {

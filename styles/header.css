@@ -27,7 +27,7 @@
 
 .header_content span {
     color: #999999;
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: bold;
 }
 
@@ -52,11 +52,12 @@
 }
 
 .top_right a {
-    margin-right: 20px;
+    margin-right: 22px;
 }
 
 .top_right a:first-child {
     display: flex;
+    margin-top: 0.5px;
 }
 
 .top_right a:first-child img {

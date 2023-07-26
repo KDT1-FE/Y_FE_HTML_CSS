@@ -15,6 +15,8 @@ const CarListEl=document.querySelector('.CarListModels')
 const CarList=document.querySelector('.CarList')
 const ADEl=document.querySelectorAll('.AD')
 const ServiceEl=document.querySelector('.Service')
+const SpaceEls=document.querySelectorAll('.Space')
+const SnsEl=document.querySelector('.SNS')
 HeadMenuEls.addEventListener('click', function(e) {
   i++;
   if(i%2!=0){
@@ -28,8 +30,12 @@ HeadMenuEls.addEventListener('click', function(e) {
     CarList.style.display='none';
     CarTypeEl.style.display='none';
     ServiceEl.style.display='none';
+    SnsEl.style.display='none';
     ADEl.forEach(element => {
       element.style.display = 'none';
+    });
+    SpaceEls.forEach(element => {
+      element.style.display='none';
     });
     HeadLines1.style.animation='420ms ease 0s 1 normal forwards running disappear';
     HeadLines2.style.animation='240ms ease 180ms 1 normal forwards running leftX';
@@ -46,8 +52,12 @@ HeadMenuEls.addEventListener('click', function(e) {
     CarListEl.style.display='flex';
     CarList.style.display='block';
     ServiceEl.style.display='block';
+    SnsEl.style.display='block';
     ADEl.forEach(element => {
       element.style.display = 'flex';
+    });
+    SpaceEls.forEach(element => {
+      element.style.display='block';
     });
     if(ModelTypeEl.getAttribute('aria-selected')=='true'){
       CarTypeEl.style.display='block';

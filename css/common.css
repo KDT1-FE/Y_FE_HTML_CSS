@@ -1,0 +1,23 @@
+:root {
+  --color--text: #282828;
+  --color-accent: #ffa0c5;
+}
+
+* {
+  /* font-family: Pretendard; */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fdfaf7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color--text);
+}
+
+ul {
+  list-style: none;
+}

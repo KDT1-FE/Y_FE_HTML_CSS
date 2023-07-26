@@ -1,0 +1,80 @@
+/* 헤더 */
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  height: 60px;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  background: rgba(253, 250, 247, 0.8);
+}
+
+header .inner {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .inner .logo > a {
+  width: 80px;
+  height: 36px;
+  background: url('../images/logo.png') 0 0 no-repeat;
+  background-size: 80px auto;
+  display: inline-block;
+  margin: 12px 100px 12px 0;
+  font-weight: 500;
+}
+
+.navbar-box {
+  display: flex;
+  line-height: 60px;
+}
+
+.navbar-box .navbar-box__tap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-box .navbar-box__tap > li {
+  margin-right: 60px;
+  font-weight: 600;
+}
+
+.navbar-box .navbar-box__tap > li > a {
+  transition: 0.3s;
+}
+
+.navbar-box .navbar-box__tap > li > a:hover {
+  color: var(--color-accent);
+}
+
+.navbar-box .navbar-box__icons {
+  margin: 0;
+  margin-left: 200px;
+  display: flex;
+  font-size: 11px;
+}
+
+.navbar-box .navbar-box__icons > li {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  cursor: pointer;
+  height: 100%;
+  padding-top: 30px;
+  margin: 0 10px;
+}
+
+.navbar-box .navbar-box__icons > li:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-box .navbar-box__icons > li .icon {
+  margin: auto;
+  height: 25px;
+  margin-bottom: -20px;
+}

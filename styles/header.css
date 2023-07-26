@@ -48,13 +48,6 @@ header ol span {
 
 header ol a{
   padding: 4px 8px;
-
-  text-decoration: none;
-}
-
-header ol a:visited, header ol a:active{
-  text-decoration: none;
-  
 }
 
 header ol span{
@@ -68,11 +61,9 @@ header ol span{
 .site-nav-items-menu{
   padding: 4px 8px;
 
-  border: none;
   box-sizing: content-box;
 
   font-size: 14px;
-  background-color: transparent;
 }
 
 @media (max-width: 1200px) {

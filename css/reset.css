@@ -38,13 +38,13 @@ a {
  vertical-align:baseline;
  background:transparent;
 }
-/* change colours to suit your needs */
+/* change colors to suit your needs */
 ins {
  background-color:#ff9;
  color:#000;
  text-decoration:none;
 }
-/* change colours to suit your needs */
+/* change colors to suit your needs */
 mark {
  background-color:#ff9;
  color:#000; 
@@ -62,7 +62,7 @@ table {
  border-collapse:collapse;
  border-spacing:0;
 }
-/* change border colour to suit your needs */
+/* change border color to suit your needs */
 hr {
  display:block;
  height:1px;
@@ -74,3 +74,4 @@ hr {
 input, select {
  vertical-align:middle;
 }
+

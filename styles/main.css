@@ -16,6 +16,8 @@ main{
   align-items: center;
   justify-content: center;
 
+  position: relative;
+
   background-position: center;
   background-size : cover;
   background-repeat : no-repeat;

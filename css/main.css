@@ -869,10 +869,9 @@ ul.gnb li a {
   left: 95vw;
   z-index: 5;
   width: 40px;
+  margin-bottom: 4vw;
 }
 .top_btn {
-  position: sticky;
-  display: block;
   left: 95%;
   font-size: 1.6rem;
   font-weight: 400;

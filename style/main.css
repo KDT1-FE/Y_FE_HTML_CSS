@@ -323,3 +323,43 @@ body {
 .text-m4 {
     color: #212529;
 }
+
+
+.home-keywords-content {
+    width: 1024px;
+    display: flex;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.home-keyword-title-text {
+    color: #212529;
+}
+
+.keyword-link {
+    text-decoration: none;
+    color: #212529;
+}
+
+.keyword-link:hover {
+    text-decoration: underline;
+}
+
+.top-keywords-list {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    margin-left: 4rem;
+    
+}
+
+.keyword-item-text {
+    vertical-align: middle;
+    color: #212529;
+    margin-right: 38px;
+}
+
+
+
+

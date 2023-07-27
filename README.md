@@ -91,17 +91,17 @@ HTML과 CSS를 이론 공부에서 끝내지 않고 체화하기 위함입니다
 <br/>
 
 ## [ 주요 구현 화면 미리보기 🦔 ]
-Welcome page
+Welcome page<br/>
 ![welcome page](https://github.com/JitHoon/Jithoon/assets/101972330/5f8b35a7-1288-4f34-b45c-a396dc9ad1d2)
 
 <br/>
 
-dialog 태그를 활용한 메뉴바 구현
+dialog 태그를 활용한 메뉴바 구현<br/>
 ![ezgif com-video-to-gif](https://github.com/JitHoon/Jithoon/assets/101972330/30529d67-d837-46f3-936c-dc5b47513d70)
 
 <br/>
 
-CSS scroll-snap 구현
+CSS scroll-snap 구현<br/>
 ![scroll-snap](https://github.com/JitHoon/Jithoon/assets/101972330/c620fe9a-7d1b-42fd-868f-e86ca0f4d9f8)
 
 <br/>

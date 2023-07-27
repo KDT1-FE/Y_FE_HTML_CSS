@@ -133,6 +133,22 @@
     margin-right: 8px;
 }
 
+.stock {
+    width: 36px;
+    height: 36px;
+    background-image: url("https://www.kakaocorp.com/page/ico_stock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+.number {
+    width: 36px;
+    height: 36px;
+    background-image: url("https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/475e83bd018900001.png?type=thumb&opt=C72x72.fwebp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
 .chat {
     position: relative;
     height: 34px;
@@ -177,9 +193,10 @@
     height: 92px;
     font-size: 32px;
     letter-spacing: -1px;
+}
+.title-container > a {
     color: #000;
 }
-
 .tag-container {
     margin-top: 24px;
 }
@@ -231,17 +248,19 @@
 }
 
 .title-container-small {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 28px;
     margin-top: 13px;
-    height: 52px;
+    height: 54px;
     /* 2줄까지 표시 및 넘칠경우 ... */
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
-
+.title-container-small > a {
+    color: #000;
+}
 .tag-container-small {
     margin-top: 21px;
 }
@@ -254,7 +273,7 @@
     position: relative;
 }
 .item-small-box img {
-    margin-top: 24px;
+    margin-top: 32px;
     width: 297px;
     height: 160px;
     margin-left: -24px;
@@ -369,6 +388,7 @@
     border-radius: 14px;
     box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
     background-color: #fae100;
+    cursor: pointer;
 }
 .shortcut-wrap-2 {
     padding:36px 36px 0px;
@@ -376,6 +396,7 @@
     border-radius: 14px;
     box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, .09);
     background-color: #3c64ff;
+    cursor: pointer;
 }
 .shortcut-title {
     font-size: 32px;

@@ -1,3 +1,14 @@
+## 실제 페이지 
+https://cotieshop.co.kr/
+## 레이아웃 클론 코딩 
+http://yyjjyy.dothome.co.kr/clone_cotie/
+
+
+
+---
+
+
+
 [참고 내용]
 
 👀 자신이 원하는 사이트 레이아웃 클론

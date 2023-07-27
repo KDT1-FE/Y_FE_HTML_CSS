@@ -230,10 +230,11 @@
     margin-top: 4px;
 }
 
-.event_img img {
+.event_img img:nth-child(1) {
     width: 235px;
     height: 320px;
 }
+
 
 /* login_banner */
 

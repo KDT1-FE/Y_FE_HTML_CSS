@@ -65,6 +65,9 @@ function hideDropdown() {
   dropdownEl.classList.remove('show')
 }
 
+
+
+
 //시즌정보 드롭다운
 const basketStarterEl2 = document.querySelector('header .dropdown2')
 const dropdownEl2 = document.querySelector('header .dropdown2 .dd-basket')

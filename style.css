@@ -208,7 +208,6 @@ header {
 
 .card1-more-button:hover {
   filter: brightness(500%);
-  cursor: pointer;
 }
 
 .down-button-color2-wrap {
@@ -326,11 +325,6 @@ header {
 
 .card2-more-button:hover {
   filter: brightness(500%);
-  cursor: pointer;
-}
-
-.card2-down-button-wrap {
-  cursor: pointer;
 }
 
 .card2-down-button {
@@ -349,6 +343,10 @@ header {
   line-height: 24px;
   height: 92px;
   transform: translateX(-50%);
+}
+
+.card2-down-button-wrap {
+  cursor: pointer;
 }
 
 .line-line2 {
@@ -370,4 +368,104 @@ header {
   top: 200px;
   left: 125px;
   z-index: 1;
+}
+
+.card3-wrap {
+  background-color: #f5f5f7;
+  position: relative;
+}
+
+.card3-inner {
+  min-height: 1000px;
+  position: relative;
+  width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.card3-text-wrap {
+  position: absolute;
+  top: 135px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.card3-first-text {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+.card3-second-text {
+  font-size: 47px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.28;
+}
+
+.card3-img-wrap {
+  position: relative;
+  width: 1240px;
+  min-height: 1000px;
+  margin: 0 auto;
+}
+
+.card3-img-app-display1 {
+  top: 500px;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+}
+
+.card3-img-app-display2 {
+  position: absolute;
+  top: 500px;
+  left: 49%;
+  transform: translateX(-50%);
+}
+
+.card3-img-app-display3 {
+  top: 500px;
+  right: 20px;
+  position: absolute;
+}
+
+.card3-more-button {
+  position: absolute;
+  top: 140px;
+  right: 50px;
+  box-sizing: border-box;
+  z-index: 2;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.card3-more-button:hover {
+  filter: brightness(500%);
+  cursor: pointer;
+}
+
+.card3-down-button-wrap {
+  cursor: pointer;
+}
+
+.card3-down-button {
+  color: #ffffff;
+  background-image: url(./assets/images/bottom-direction.e1410d78.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  position: absolute;
+  bottom: 41px;
+  left: 50%;
+  box-sizing: border-box;
+  z-index: 2;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+  height: 92px;
+  transform: translateX(-50%);
 }

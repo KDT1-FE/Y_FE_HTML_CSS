@@ -32,14 +32,15 @@
   line-height: 20px;
   padding: 15px;
 }
-.header .inner .menu .menu__logo img {
+.header .inner .menu .menu__logo img,
+.header .inner .menu .menu__logo svg {
   margin: 7px;
 }
 .header .inner .menu .menu__category:hover {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .header .inner .menu .menu__item::before {
-  margin: auto 10px;
+  margin: auto 10px auto 0;
   display: block;
   width: 1px;
   height: 10px;
@@ -161,6 +162,10 @@
   right: calc((100% - 1250px) / 2);
 }
 
+.main-article svg {
+  width: 1.4em;
+  height: 1.4em;
+}
 .main-article .main-slider {
   position: relative;
   margin-bottom: 5.325vw;
@@ -276,6 +281,10 @@
   position: relative;
   margin-bottom: 5.325vw;
 }
+.main-article .sub-slider svg {
+  width: 1.4em;
+  height: 1.4em;
+}
 .main-article .sub-slider .sub-wrapper {
   position: relative;
   overflow: hidden;
@@ -381,6 +390,9 @@
 .recruit-bar {
   max-width: 1060px;
   margin: 70px auto;
+}
+.recruit-bar svg {
+  margin-right: 15px;
 }
 .recruit-bar section {
   display: flex;
@@ -520,12 +532,18 @@ nav ul .match {
   background-color: #f2fbf5;
   text-align: center;
 }
-nav img {
+nav svg {
+  width: 1em;
+  height: 1em;
   margin-right: 7px;
 }
 
 .sub-article {
   padding: 75px 0;
+}
+.sub-article svg {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 .sub-article .last-slider {
   position: relative;

@@ -30,7 +30,8 @@
         }
       }
       .menu__logo {
-        img {
+        img,
+        svg {
           margin: 7px;
         }
       }
@@ -39,7 +40,7 @@
         box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
       }
       .menu__item::before {
-        margin: auto 10px;
+        margin: auto 10px auto 0;
         display: block;
         width: 1px;
         height: 10px;

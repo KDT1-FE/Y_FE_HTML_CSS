@@ -1,4 +1,8 @@
 .main-article {
+  svg {
+    width: 1.4em;
+    height: 1.4em;
+  }
   .main-slider {
     position: relative;
     margin-bottom: 5.325vw;
@@ -114,6 +118,10 @@
   }
 
   .sub-slider {
+    svg {
+      width: 1.4em;
+      height: 1.4em;
+    }
     position: relative;
     margin-bottom: 5.325vw;
     .sub-wrapper {

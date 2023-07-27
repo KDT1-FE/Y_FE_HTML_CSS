@@ -1,7 +1,9 @@
 .recruit-bar {
   max-width: 1060px;
   margin: 70px auto;
-
+  svg {
+    margin-right: 15px;
+  }
   section {
     display: flex;
     height: 70px;
@@ -145,7 +147,9 @@ nav {
       text-align: center;
     }
   }
-  img {
+  svg {
+    width: 1em;
+    height: 1em;
     margin-right: 7px;
   }
 }

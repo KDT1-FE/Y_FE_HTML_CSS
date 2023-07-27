@@ -84,6 +84,11 @@ body {
   font-family: TossFaceFont, Noto Sans;
   font-style: normal;
   font-weight: 500;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 ol, ul {  
 	list-style: none;

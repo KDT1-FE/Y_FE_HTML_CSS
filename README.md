@@ -4,7 +4,7 @@
   <a href="https://www.tesla.com/ko_kr" target="_blank">
     <img src="https://img.shields.io/badge/Tesla Korea 공홈-212125?style=for-the-badge&logo=tesla&logoColor=white" alt="example"/>
   </a>
-  <a href="" target="_blank">
+  <a href="https://jithoon.github.io/teslaClone-FE/" target="_blank">
     <img src="https://img.shields.io/badge/Tesla Korea 클론-DD1836?style=for-the-badge&logo=tesla&logoColor=white" alt="example"/>
   </a>
   <div align="end">개발자: 최지훈(Jit Hoon)</div>

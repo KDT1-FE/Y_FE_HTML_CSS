@@ -19,9 +19,11 @@ HTML/CSS 사용법을 익히고자 하는 취지에서 시작했기 때문에 JS
 
 ### 주요 기능  
 #### 드롭다운
+![오버워치_2_-_Chrome_2023-07-27_22-27-52_AdobeExpress (1)](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/93272421/b80bd8e2-0944-4ceb-9310-dcc47616f45e)
 
-    
+  
 #### 스와이프
+![오버워치_2_-_Chrome_2023-07-27_22-28-05_AdobeExpress (1)](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/93272421/5c776eaf-3f2d-4439-900c-f175e95b3b14)
 
 
 

@@ -11,6 +11,8 @@
 body {
   position: relative;
   color: #1d1d1f;
+  font-weight: 400;
+  line-height: 1.4;
   -ms-overflow-style: none;
 }
 body::-webkit-scrollbar {
@@ -312,9 +314,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-.grid-item .ipad-pro-text .m2-image {
-  padding-top: 100px;
-}
 .grid-item:nth-child(4) {
   background: url('../images/product_grid4.jpg');
   background-size: cover;
@@ -339,7 +338,6 @@ header {
   max-width: 256rem;
   max-height: 70.525rem;
   overflow: hidden; /* 양쪽 2560rem 이상의 이미지는 잘려서 보이도록 설정 */
-  position: relative;
   margin: auto;
   cursor: pointer;
 }
@@ -358,13 +356,111 @@ header {
   height: 100%;
   object-fit: cover; /* 이미지가 비율 유지하며 채워지도록 설정 */
 }
+.swiper-slide .cta-link-apple-tv-plus {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  font-size: 1.7rem;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  min-width: 28px;
+  padding-top: 10.5px;
+  padding-bottom: 7.5px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #ffffff;
+  color: #000;
+}
 .swiper-slide-active {
   opacity: 1; /* 가운데 아이템은 active 상태로 opacity를 1로 설정 */
 }
 .swiper-pagination {
-  bottom: 400px;
-  /* left: 0;
-  right: 0; */
+  align-items: center;
+  height: 3.8rem;
+  display: flex; /* Pagination bullet들이 겹치지 않도록 flex container로 설정 */
+  justify-content: center; /* Bullet들을 가운데 정렬 */
+  gap: 0.8rem; /* Pagination bullet 간의 간격 조정 */
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 0.8rem; /* pagination bullet 크기 조정 */
+  height: 0.8rem;
+  background-color: #000; /* pagination bullet 색상을 검정색으로 설정 */
+  opacity: 0.5; /* 비활성화된 pagination bullet의 투명도 조정 */
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1; /* 활성화된 pagination bullet의 투명도 조정 */
 }
 
 /* FOOTER */
+footer {
+  background-color: #f5f5f7;
+  color: #6e6e73;
+}
+footer .inner {
+  width: 102.4rem;
+  height: 100%;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 22px;
+}
+footer .inner .ref-link-text {
+  justify-content: center;
+  margin: auto;
+  border-bottom: 1px solid #d2d2d7;
+}
+footer .inner .footer-cta-column-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+footer .inner .footer-cta-column-group .title {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+footer .inner .footer-cta-column-group .list {
+  font-weight: 400;
+  list-style-type: none;
+}
+footer .inner .footer-cta-column-group .list title,
+footer .inner .footer-cta-column-group .list a {
+  color: #424245;
+  margin: 0.8em 0;
+}
+footer .inner .footer-cta-column-group .list a:hover {
+  text-decoration: underline;
+}
+footer .footer-cta-end-comment {
+  display: flex;
+}
+footer .footer-cta-end-comment {
+  display: flex;
+  font-weight: 400;
+}
+footer .footer-cta-end-comment a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+footer .copyright {
+  margin-top: 12px;
+  display: flex;
+}
+footer .country {
+  margin-top: 12px;
+}
+footer .footer-info-link {
+  display: flex;
+}
+footer .footer-info-link a {
+  color: #424245;
+}
+footer .footer-info-link a:hover {
+  text-decoration: underline;
+}
+footer .footer-summary {
+  border-top: 1px solid #d2d2d7;
+  display: flex;
+  justify-content: space-between;
+}

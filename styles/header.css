@@ -1,9 +1,10 @@
 .header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: #040714;
   z-index: 100;
+  transition: all 0.2s ease 0s;
 }
 
 .navigation {
@@ -31,6 +32,7 @@
   font-size: 18px;
   display: flex;
   align-items: center;
+  transition: all 0.2s ease 0s;
 }
 
 .sign-up {
@@ -47,9 +49,18 @@
   padding: 8px 16px;
   height: 32px;
   border: 1px solid #f9f9f9;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .sign-in:hover {
   background-color: #f9f9f9;
   color: #040714;
+}
+
+.hidden-header {
+  background-color: transparent;
+}
+
+.hidden-item {
+  opacity: 0;
 }

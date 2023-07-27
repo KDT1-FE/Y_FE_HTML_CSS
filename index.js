@@ -1,3 +1,20 @@
+// 스크롤에 따라 헤더 숨기기
+let header = document.getElementById("header");
+let logo = document.getElementById("header-logo");
+let signup = document.getElementById("header-signup");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY < 330) {
+    header.classList.add("hidden-header");
+    logo.classList.add("hidden-item");
+    signup.classList.add("hidden-item");
+  } else {
+    header.classList.remove("hidden-header");
+    logo.classList.remove("hidden-item");
+    signup.classList.remove("hidden-item");
+  }
+});
+
 // 질문 아코디언 기능
 
 let question1 = document.getElementById("question1");

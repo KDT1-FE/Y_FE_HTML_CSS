@@ -15,7 +15,7 @@
 }
 
 .mainbanner01{
-    background-image:url(/Y_FE_HTML_CSS/assets/mainbanner01.jpeg);
+    background-image:url(../assets/mainbanner01.jpeg);
     background-size: cover;
     width: 625px;
     height: 100%;
@@ -25,7 +25,7 @@
 }
 
 .mainbanner02{
-    background-image:url(/Y_FE_HTML_CSS/assets/mainbanner02.jpeg);
+    background-image:url(../assets/mainbanner02.jpeg);
     background-size:cover;
     width: 625px;
     height: 100%;
@@ -46,7 +46,7 @@
 }
 
 .btnPrev{
-    background-image:url(/Y_FE_HTML_CSS/assets/btn_Next.svg);
+    background-image:url(../assets/btn_Next.svg);
     background-size:18px 18px;
     transform: scaleX(-1);
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@
 }
 
 .btnNext{
-    background-image:url(/Y_FE_HTML_CSS/assets/btn_Next.svg);
+    background-image:url(../assets/btn_Next.svg);
     background-size:18px 18px;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -176,15 +176,15 @@
 }
 
 .productImg01{
-    background-image: url(/Y_FE_HTML_CSS/assets/TPproduct01.jpg);
+    background-image: url(../assets/TPproduct01.jpg);
 }
 
 .productImg02{
-    background-image: url(/Y_FE_HTML_CSS/assets/TPproduct02.jpeg);
+    background-image: url(../assets/TPproduct02.jpeg);
 }
 
 .productImg03{
-    background-image: url(/Y_FE_HTML_CSS/assets/TPproduct03.jpeg);
+    background-image: url(../assets/TPproduct03.jpeg);
 }
 
 .productText{
@@ -268,42 +268,42 @@
 }
 
 .subArrow{
-    background-image: url(/Y_FE_HTML_CSS/assets/icon_right.svg);
+    background-image: url(../assets/icon_right.svg);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
 }
 
 .subIcon01{
-    background-image: url(/Y_FE_HTML_CSS/assets/btn_gold.png);
+    background-image: url(../assets/btn_gold.png);
     background-size: cover;
     width: 44px;
     height: 44px;
 }
 
 .subIcon02{
-    background-image: url(/Y_FE_HTML_CSS/assets/btn_coupon.png);
+    background-image: url(../assets/btn_coupon.png);
     background-size: cover;
     width: 44px;
     height: 44px;
 }
 
 .subIcon03{
-    background-image: url(/Y_FE_HTML_CSS/assets/btn_air.png);
+    background-image: url(../assets/btn_air.png);
     background-size: cover;
     width: 44px;
     height: 44px;
 }
 
 .subIcon04{
-    background-image: url(/Y_FE_HTML_CSS/assets/btn_nol.png);
+    background-image: url(../assets/btn_nol.png);
     background-size: cover;
     width: 44px;
     height: 44px;
 }
 
 .subIcon05{
-    background-image: url(/Y_FE_HTML_CSS/assets/btn_hot.png);
+    background-image: url(../assets/btn_hot.png);
     background-size: cover;
     width: 44px;
     height: 44px;
@@ -386,15 +386,15 @@ li.SEproductItem:nth-child(3){
 }
 
 .SEproductImg01{
-    background-image: url(/Y_FE_HTML_CSS/assets/SEproduct01.jpeg);
+    background-image: url(../assets/SEproduct01.jpeg);
 }
 
 .SEproductImg02{
-    background-image: url(/Y_FE_HTML_CSS/assets/SEproduct02.jpeg);
+    background-image: url(../assets/SEproduct02.jpeg);
 }
 
 .SEproductImg03{
-    background-image: url(/Y_FE_HTML_CSS/assets/SEproduct03.jpeg);
+    background-image: url(../assets/SEproduct03.jpeg);
 }
 
 .SEproductText{
@@ -462,7 +462,7 @@ li.SEproductItem:nth-child(3){
 }
 
 .SEmoreIcon{
-    background-image: url(/Y_FE_HTML_CSS/assets/icon_right.svg);
+    background-image: url(../assets/icon_right.svg);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
@@ -483,7 +483,7 @@ li.SEproductItem:nth-child(3){
 }
 
 .subBanner01{
-    background-image:url(/Y_FE_HTML_CSS/assets/subBanner01.jpeg);
+    background-image:url(../assets/subBanner01.jpeg);
     background-size: cover;
     width: 413px;
     height: 100%;
@@ -493,7 +493,7 @@ li.SEproductItem:nth-child(3){
 }
 
 .subBanner02{
-    background-image:url(/Y_FE_HTML_CSS/assets/subBanner02.jpeg);
+    background-image:url(../assets/subBanner02.jpeg);
     background-size:cover;
     width: 413px;
     height: 100%;
@@ -503,7 +503,7 @@ li.SEproductItem:nth-child(3){
 }
 
 .subBanner03{
-    background-image:url(/Y_FE_HTML_CSS/assets/subBanner03.jpeg);
+    background-image:url(../assets/subBanner03.jpeg);
     background-size:cover;
     width: 413px;
     height: 100%;
@@ -524,7 +524,7 @@ li.SEproductItem:nth-child(3){
 }
 
 .subbtnPrev{
-    background-image:url(/Y_FE_HTML_CSS/assets/btn_Next.svg);
+    background-image:url(../assets/btn_Next.svg);
     background-size:18px 18px;
     transform: scaleX(-1);
     background-repeat: no-repeat;
@@ -535,7 +535,7 @@ li.SEproductItem:nth-child(3){
 }
 
 .subbtnNext{
-    background-image:url(/Y_FE_HTML_CSS/assets/btn_Next.svg);
+    background-image:url(../assets/btn_Next.svg);
     background-size:18px 18px;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -602,19 +602,19 @@ li:nth-child(3) .disitemText{
 }
 
 .disitemImg01{
-    background-image:url(/Y_FE_HTML_CSS/assets/disitemImg01.jpeg);
+    background-image:url(../assets/disitemImg01.jpeg);
 }
 
 .disitemImg02{
-    background-image:url(/Y_FE_HTML_CSS/assets/disitemImg02.png);
+    background-image:url(../assets/disitemImg02.png);
 }
 
 .disitemImg03{
-    background-image:url(/Y_FE_HTML_CSS/assets/disitemImg03.png);
+    background-image:url(../assets/disitemImg03.png);
 }
 
 .disitemImg04{
-    background-image:url(/Y_FE_HTML_CSS/assets/disitemImg04.png);
+    background-image:url(../assets/disitemImg04.png);
 }
 
 .travelLive{
@@ -674,19 +674,19 @@ li:nth-child(3) .disitemText{
 }
 
 .liveImg01{
-    background-image:url(/Y_FE_HTML_CSS/assets/liveImg01.jpeg);
+    background-image:url(../assets/liveImg01.jpeg);
 }
 
 .liveImg02{
-    background-image:url(/Y_FE_HTML_CSS/assets/liveImg02.png);
+    background-image:url(../assets/liveImg02.png);
 }
 
 .liveImg03{
-    background-image:url(/Y_FE_HTML_CSS/assets/liveImg03.png);
+    background-image:url(../assets/liveImg03.png);
 }
 
 .playIcon{
-    background-image: url(/Y_FE_HTML_CSS/assets/icon_play.svg);
+    background-image: url(../assets/icon_play.svg);
     background-size: 100%;
     width: 80px;
     height: 80px;
@@ -775,19 +775,19 @@ li:nth-child(3) .disitemText{
 }
 
 .UIitemImg01{
-    background-image:url(/Y_FE_HTML_CSS/assets/info_01.svg);
+    background-image:url(../assets/info_01.svg);
 }
 
 .UIitemImg02{
-    background-image:url(/Y_FE_HTML_CSS/assets/info_02.png);
+    background-image:url(../assets/info_02.png);
 }
 
 .UIitemImg03{
-    background-image:url(/Y_FE_HTML_CSS/assets/info_03.png);
+    background-image:url(../assets/info_03.png);
 }
 
 .UIitemImg04{
-    background-image:url(/Y_FE_HTML_CSS/assets/info_04.png);
+    background-image:url(../assets/info_04.png);
 }
 
 .bottomBanner{
@@ -809,7 +809,7 @@ li:nth-child(3) .disitemText{
 }
 
 .bannerFront{
-    background-image:url(/Y_FE_HTML_CSS/assets/bottom_banner.jpeg);
+    background-image:url(../assets/bottom_banner.jpeg);
     width: 980px;
     height: 164px;
     position: absolute;
@@ -902,7 +902,7 @@ li:nth-child(3) .disitemText{
 }
 
 .centerDown, .languageDown{
-    background-image: url(/Y_FE_HTML_CSS/assets/icon_right.svg);
+    background-image: url(../assets/icon_right.svg);
     background-size: 5px;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -978,7 +978,7 @@ li:nth-child(3) .disitemText{
     bottom: 15px;
     width: 52px;
     height: 52px;
-    background-image: url(/Y_FE_HTML_CSS/assets/btn_top.svg);
+    background-image: url(../assets/btn_top.svg);
     background-repeat: no-repeat;
     background-size:100%;
     border:none;

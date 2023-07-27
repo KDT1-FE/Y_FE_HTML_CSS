@@ -20,7 +20,7 @@
 }
 
 .logoImg{
-    background-image: url(/Y_FE_HTML_CSS/assets/logo_tour.png);
+    background-image: url(../assets/logo_tour.png);
     background-size: 195px auto;
     background-repeat: no-repeat;
     position: relative;
@@ -31,7 +31,7 @@
 }
 
 .logoBtn{
-    background-image: url(/Y_FE_HTML_CSS/assets/ico_arrow_down.svg);
+    background-image: url(../assets/ico_arrow_down.svg);
     background-repeat: no-repeat;
     background-size: 8px auto;
     background-position: center center;
@@ -94,7 +94,7 @@
 
 
 .mainLogoBtn{
-    background-image: url(/Y_FE_HTML_CSS/assets/logo_tour.png);
+    background-image: url(../assets/logo_tour.png);
     background-size: 195px auto;
     background-repeat: no-repeat;
     position: relative;
@@ -131,7 +131,7 @@
 }
 
 .searchBtn{
-    background-image: url(/Y_FE_HTML_CSS/assets/btn_search_new.svg);
+    background-image: url(../assets/btn_search_new.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -239,7 +239,7 @@
 }
 
 .navBanner {
-    background-image: url(/Y_FE_HTML_CSS/assets/01.png);
+    background-image: url(../assets/01.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -248,7 +248,7 @@
 }
 
 .headerMarketing{
-    background-image: url(/Y_FE_HTML_CSS/assets/headerMarketing01.png);
+    background-image: url(../assets/headerMarketing01.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;

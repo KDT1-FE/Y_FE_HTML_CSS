@@ -56,28 +56,58 @@
                             </button>
                         </fieldset>
                     </form>
-                    <section class="realtime_keyword">
-                        <span>급상승</span>
+                    <div class="realtime_keyword">
+                        <span class="soar">급상승</span>
                         <div class="keyword_overlay" id="keyword_overlay">
-                            <!-- <ul>
+                            <section class="keyword_overlay_main">
+                                <span>1.</span>
+                                <a href="https://www.melon.com/artist/timeline.htm?artistId=261143" title="아이유">아이유</a>
+                                <span class="dash">-</span>
+                            </section>
+                            <!-- <ul class="keyword_overlay_hover">
                                 <li>
-                                    <a href="" title="1. NewJeans">1. NewJeans</a>
+                                    <span>1</span>
+                                    <a href="" title="NewJeans">NewJeans</a>
                                 </li>
                                 <li>
-                                    <a href="" title="1. NewJeans">1. NewJeans</a>
+                                    <span>2</span>
+                                    <a href="" title="세븐틴 (SEVENTEEN)">세븐틴 (SEVENTEEN)</a>
                                 </li>
                                 <li>
-                                    <a href="" title="1. NewJeans">1. NewJeans</a>
+                                    <span>3</span>
+                                    <a href="" title="아이유">아이유</a>
                                 </li>
                                 <li>
-                                    <a href="" title="1. NewJeans">1. NewJeans</a>
+                                    <span>4</span>
+                                    <a href="" title="방탄소년단">방탄소년단</a>
                                 </li>
                                 <li>
-                                    <a href="" title="1. NewJeans">1. NewJeans</a>
+                                    <span>5</span>
+                                    <a href="" title="NMIXX">NMIXX</a>
+                                </li>
+                                <li>
+                                    <span>6</span>
+                                    <a href="" title="폴킴">폴킴</a>
+                                </li>
+                                <li>
+                                    <span>7</span>
+                                    <a href="" title="Bruno Mars">Bruno Mars</a>
+                                </li>
+                                <li>
+                                    <span>8</span>
+                                    <a href="" title="Charlie Puth">Charlie Puth</a>
+                                </li>
+                                <li>
+                                    <span>9</span>
+                                    <a href="" title="IVE (아이브)">IVE (아이브)</a>
+                                </li>
+                                <li>
+                                    <span>10</span>
+                                    <a href="" title="aespa">aespa</a>
                                 </li>
                             </ul> -->
                         </div>
-                    </section>
+                    </div>
                     <section class="header_banner">
                         <a href="https://musicwave.melon.com/musicwave/main.htm" title="뮤직웨이브">
                             <img src="/assets/images/banner/musicwave.png" alt="뮤직웨이브 이동">
@@ -311,23 +341,23 @@
                 <article class="event">
                     <section class="event_top">
                         <div class="move">
-                            <a class="circle" href="#" title="1번째 이벤트"></a>
-                            <a class="circle" href="#" title="2번째 이벤트"></a>
-                            <a class="circle" href="#" title="3번째 이벤트"></a>
-                            <a class="circle" href="#" title="4번째 이벤트"></a>
-                            <a class="circle" href="#" title="5번째 이벤트"></a>
-                            <a class="circle" href="#" title="6번째 이벤트"></a>
-                            <a class="circle" href="#" title="7번째 이벤트"></a>
+                            <a id="circle1" class="circle" href="#" title="1번째 이벤트"></a>
+                            <a id="circle2" class="circle" href="#" title="2번째 이벤트"></a>
+                            <a id="circle3" class="circle" href="#" title="3번째 이벤트"></a>
+                            <a id="circle4" class="circle" href="#" title="4번째 이벤트"></a>
+                            <a id="circle5" class="circle" href="#" title="5번째 이벤트"></a>
+                            <a id="circle6" class="circle" href="#" title="6번째 이벤트"></a>
+                            <a id="circle7" class="circle" href="#" title="7번째 이벤트"></a>
                         </div>
                         <div class="playbutton">
-                            <a href="#">
+                            <a id="playbutton" href="#">
                                 <img src="/assets/icons/play-button.png" alt="재생버튼">
                             </a>
                         </div>
                     </section>
                     <section class="event_img">
-                        <a href="https://www.melon.com/album/detail.htm?albumId=11291311" title="첫번째 이벤트">
-                            <img src="/assets/images/event/event2.png" alt="">
+                        <a id="eventImgA" href="https://www.melon.com/album/detail.htm?albumId=11294520" title="첫번째 이벤트">
+                            <img id="eventImg" src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230727030134.jpg/melon/quality/80" alt="첫번째 이벤트">
                         </a>
                     </section>
                 </article>
@@ -733,9 +763,10 @@
     </div>
 
     <!-- JavaScript -->
-    <script type="module" src="./assets/javascripts/main.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/8d5fe92c5f.js" crossorigin="anonymous"></script>
+    <!-- eventButton -->
+    <script type="module" src="./assets/javascripts/eventButton.js"></script>
 
   </body>
 </html>

@@ -74,19 +74,16 @@ HeadMenuEls.addEventListener('click', function(e) {
 
 const SectEl=document.querySelector('.SectionDropdown')
 const DownEl=document.querySelector('.SectionDropdown > .material-symbols-outlined')
-const ListEl=document.querySelector('.SectionCarList')
 
 SectEl.addEventListener('click',function(e){
   j++;
   if(j%2!=0){
     //리스트 열기
     DownEl.style.transform='rotate(180deg)';
-    ListEl.style.maxHeight='288px';
   }
   else{
     //리스트 접고 애니메이션 효과
     DownEl.style.transform='none';
-    ListEl.style.maxHeight='none';
   }
 })
 

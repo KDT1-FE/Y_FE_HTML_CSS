@@ -343,13 +343,6 @@
   height: 24px;
 }
 
-.SectionCarList {
-  display: block;
-  max-height: 288px;
-  position: absolute;
-  z-index: 1;
-}
-
 .SectionCarNums {
   display: flex;
   width: 500px;
@@ -483,6 +476,10 @@
   text-decoration: underline;
   font-weight: bold;
   color: #4c4c4c;
+}
+
+.CarImg:hover .CarImage {
+  transform: scale(1.1);
 }
 
 .CarImage {
@@ -862,6 +859,15 @@
   width: 100%;
 }
 
+.CategoriesUL1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+  flex-flow: row wrap;
+  padding-left: 0;
+  width: 100%;
+}
+
 .CategoriesLI {
   margin-top: 0px;
   margin: 0 28px 0 0;
@@ -934,13 +940,15 @@
   border-top: 1px solid #666;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .Legal ul {
   display: inline-flex;
   flex-flow: row wrap;
   list-style: none;
+  position: relative;
+  bottom: 3px;
+  left: 20px;
 }
 
 .Legal ul li {
@@ -957,4 +965,113 @@
   color: white;
   font-size: 12px;
   line-height: 20px;
+}
+
+.Quickmenu {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  z-index: 15;
+  transition: transform .45s;
+  background: #000;
+}
+
+.Quickmenu ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.Quickmenu ul li {
+  position: relative;
+}
+
+.Quickmenu ul li a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+}
+
+i.icon1 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  transition: background-color .3s;
+}
+
+i.icon1:hover {
+  background-color: gray;
+}
+
+i.icon2 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  transition: background-color .3s;
+}
+
+i.icon3 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  transition: background-color .3s;
+}
+
+i.icon4 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  transition: background-color .3s;
+}
+
+i.icon5 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  transition: background-color .3s;
+}
+
+.icon {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+}
+
+.Textmenu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 120px;
+  height: 100%;
+  padding: 0 20px;
+  background: #000;
+  font-size: 13px;
+  letter-spacing: -1px;
+  transition: .3s;
 }

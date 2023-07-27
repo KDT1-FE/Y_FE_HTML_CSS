@@ -32,6 +32,24 @@ header .inner .logo > a {
   line-height: 60px;
 }
 
+header label {
+  background-image: url('../images/hambuger.png');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 20px auto;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+}
+
 .navbar-box .navbar-box__tap {
   margin: 0;
   padding: 0;
@@ -77,4 +95,52 @@ header .inner .logo > a {
   margin: auto;
   height: 25px;
   margin-bottom: -20px;
+}
+
+@media (max-width: 1460px) {
+  header .inner {
+    margin: 0;
+    width: 100vw;
+  }
+  header .inner .logo > a {
+    margin: 0 auto;
+  }
+
+  .navbar-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    width: 250px;
+    min-width: 150px;
+    height: 100%;
+  }
+
+  header label {
+    display: block;
+  }
+
+  .navbar-box .navbar-box__icons {
+    position: absolute;
+    top: 50px;
+    right: 20%;
+  }
+
+  .navbar-box .navbar-box__tap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 20%;
+    left: 15%;
+  }
+
+  .navbar-box .navbar-box__tap > li {
+    margin: -7px 0;
+  }
+
+  .hide {
+    display: none;
+  }
 }

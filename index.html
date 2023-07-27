@@ -12,9 +12,10 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" defer src="./js/slide.js"></script>
-
     <!-- description -->
     <script type="module" src="./js/description.js"></script>
+    <!-- responsive header toggle -->
+    <script type="module" src="./js/app.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="./css/common.css" />
@@ -28,7 +29,8 @@
     <header>
       <div class="inner">
         <div class="logo"><a href="/"></a></div>
-        <nav class="navbar-box">
+        <label for="toggle"></label>
+        <nav class="navbar-box hide">
           <ul class="navbar-box__tap">
             <li><a href="javascript:void(0)">RESERVATION</a></li>
             <li><a href="javascript:void(0)">MENU</a></li>
@@ -44,7 +46,7 @@
             </li>
             <li>
               <img class="icon" src="./images/icon_mypage.png" alt="MY PAGE" />
-              <a href="javascript:void(0)">MY PAGE</a>
+              <a href="javascript:void(0)">MY&nbsp;PAGE</a>
             </li>
             <li>
               <img class="icon" src="./images/icon_cart.png" alt="CART" />

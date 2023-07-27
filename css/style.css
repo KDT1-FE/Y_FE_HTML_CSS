@@ -100,7 +100,7 @@
 
 .wrap .homepage-image-box img {
   width: 100%;
-  margin: -38.75rem 0px 0px 0px;
+  margin: -620px 0px 0px 0px;
 }
 
 .wrap .header {
@@ -283,6 +283,12 @@
           flex-direction: column;
   gap: 1.5rem;
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrap .introduce-car-box {
+    gap: 5rem;
+  }
 }
 
 .wrap .introduce-car-box .introduce-car {

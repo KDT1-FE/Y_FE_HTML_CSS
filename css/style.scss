@@ -19,6 +19,7 @@
       height: 50px;
       margin-bottom: 5rem;
       padding: 0 6rem;
+
       .img_content_box_message {
         display: flex;
         flex-direction: column;
@@ -78,7 +79,7 @@
     }
     img {
       width: 100%;
-      margin: -38.75rem 0px 0px 0px;
+      margin: -620px 0px 0px 0px;
     }
   }
   .header {
@@ -204,6 +205,9 @@
   .introduce-car-box {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1440px) {
+      gap: 5rem;
+    }
     gap: 1.5rem;
     margin-top: 1rem;
     .introduce-car {

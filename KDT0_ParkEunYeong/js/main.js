@@ -50,14 +50,17 @@ new Swiper(swiper__info, {
 
 // 카테고리
 const swiper__category = document.querySelector('.swiper__category');
-new Swiper('swiper__category', {
+new Swiper(swiper__category, {
   slidesPerView: 1,
   //centeredSlides: true,
   spaceBetween: 50,
   grabCursor: true,
-  autoplay: true,
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
-  delay: 5000,
+  crossfade : true,
+  loopAdditionalSlides : 1,
   pagination: { 
   el: ".swiper-pagination", 
   clickable: true,
@@ -69,11 +72,13 @@ new Swiper('swiper__category', {
 // 카테고리__원형이미지
 const swiper__circle = document.querySelector(".swiper__circle");
 new Swiper(swiper__circle, {
- // slidesPerView: 4,
+  slidesPerView: 4,
  // centeredSlides: true,
- // spaceBetween: 50,
+  spaceBetween: 5,
   grabCursor: true,
-  autoplay: true,
+  autoplay: {
+    delay:1050,
+  },
   loop: true,
-//  loopAdditionalSlides : 1,
+  loopAdditionalSlides : 1,
 });

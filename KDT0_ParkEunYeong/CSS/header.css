@@ -322,6 +322,140 @@ header > .inner {
 
 /* 카테고리 */
 
+.lush_category {
+  margin-top: 176px;
+  
+  justify-content: center;
+}
+.lush_category .inner {
+  overflow: hidden;
+  
+}
+.swiper__category {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.wrapper__category {
+}
+.slide__category {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.cate_img {
+  position: relative;
+  width: 475px;
+  height: 560px;
+}
+.cate_img img {
+  width: 100%;
+  height: 100%; 
+}
+/* QR - 뒷면 */
+.cate_explain_back {
+  z-index:6;
+  position:absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  color:#fff;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  opacity:0;
+  background-color: rgba(0,0,0,.5);
+  transition: all ease-in-out .5s;
+}
+.cate_img:hover .cate_explain_back {  
+  opacity:1;
+}
+
+.cate_explain_back img {
+  width: 180px;
+  height: 180px;
+}
+.cate_explain_back .tit {
+  margin-top: 48px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.cate_explain_back .detail {
+  margin-top: 32px;
+  line-height:24px;
+}
+/* 타이틀 + 원형 */
+.circle {
+  padding-left: 64px;
+  overflow: hidden;
+  width: calc(100% - 475px);
+}
+.circle__title {
+  width: 100%;
+  padding-bottom: 64px;
+  font-weight: 700;
+}
+.circle__title .tit {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+.circle__title .explain {
+ font-size: 32px;
+}
+.swiper__circle {
+}
+.slide__circle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: 66px;
+  width: 288px;
+  height: 288px;
+  border-radius: 50%;
+  position: relative;
+}
+.slide__circle img {
+  width: 100%;
+  height: 100%;
+}
+.slide__circle figure {
+  position: relative;
+}
+/* 원형 뒷면 */
+
+.slide__circle .txt {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  transition: all ease-in-out .5s;
+}
+.slide__circle figure:hover .txt {
+  z-index: 2;
+   content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all ease-in-out .5s; 
+}
+
+
+
 
 
 /* 매장 찾기 */

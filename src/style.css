@@ -616,11 +616,66 @@ nav {
 
 /* alliance */
 .alliance {  
-    background-color: blue;
     position: relative;
     overflow: hidden;
     padding: 72px 20px;
     text-align: center;
+    font-weight: 300;
+}
+
+.Shinhan-image {
+    position: absolute;
+    top: 74px;
+    left: calc(45% - 350px);
+    width: 156px;
+    height: 37px;
+    background: url("../public/assets/Shinhan-image.png");
+    background-size: cover;
+    opacity: .12;
+}
+
+.Samsung-image {
+    position: absolute;
+    top: 159px;
+    left: calc(30% - 250px);
+    width: 118px;
+    height: 15px;
+    background: url("../public/assets/Samsung-image.png");
+    background-size: cover;
+    opacity: .12;
+}
+
+.NH-image {
+    position: absolute;
+    top: 64px;
+    left: calc(55% + 200px);
+    width: 111px;
+    height: 24px;
+    background: url("../public/assets/NH-image.png");
+    background-size: cover;
+    opacity: .12;
+}
+
+.Lotte-image {
+    position: absolute;
+    top: 112px;
+    left: calc(70% + 200px);
+    width: 140px;
+    height: 14px;
+    background: url("../public/assets/Lotte-image.png");
+    background-size: cover;
+    opacity: .12;
+}
+
+.Hyundai-image {
+    position: absolute;
+    top: 160px;
+    left: calc(65% + 150px);
+    width: 184px;
+    height: 37px;
+    background: url("../public/assets/Hyundai-image.png");
+    background-size: cover;
+    opacity: .12;
 }
 
 

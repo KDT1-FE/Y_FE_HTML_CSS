@@ -13,6 +13,10 @@ body {
     font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
 }
 
+a:hover, button:hover {
+    cursor: pointer;
+}
+
 
 /* nav */
 nav {
@@ -40,7 +44,6 @@ nav {
 
 .navigation-logo {
     display: block;
-    cursor: pointer;
     margin-left: 32px;
     margin-right: 42px;
 }
@@ -51,7 +54,6 @@ nav {
 }
 
 .navigation-item:hover {
-    cursor: pointer;
     color: #19cd8c;
 }
 
@@ -345,14 +347,6 @@ nav {
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
-}
-
-.lowest-loan-rates-banner-button:hover
-.green-button:hover, 
-.white-button:hover, 
-.curation-button:hover, 
-.card-button:hover {
-    cursor: pointer;
 }
 
 .navagation-button-wrap {

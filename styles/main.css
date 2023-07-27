@@ -134,6 +134,7 @@ body, button, input, main, table, textarea, p {
     border : none;
     width : 100%;
     height : 100px;
+    cursor: pointer;
 
     
 }
@@ -186,6 +187,7 @@ body, button, input, main, table, textarea, p {
     right: 3px;
     z-index: 1;
     padding: 5px;
+    cursor: pointer;
     
 }
 .release_day_container {
@@ -315,6 +317,7 @@ hr {
     border: 1px solid #d3d3d3;
     height : 40px;
     background-color : white;
+    cursor: pointer;
 }
 .brand_grid {
     display : flex;

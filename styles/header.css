@@ -48,7 +48,7 @@ body, button, input, select, table, textarea {
     color: #222222CC;
     padding-left : 20px;
     font-size : 12px;
-    
+    cursor: pointer;
     
 }
 
@@ -89,6 +89,7 @@ body, button, input, select, table, textarea {
     font-weight : 700;
     text-align : center;
     padding: 0px;
+    cursor: pointer;
 
 }
 .style_btn,
@@ -98,6 +99,7 @@ body, button, input, select, table, textarea {
     color : #222222;
     font-size : 18px;
     padding: 0px;
+    cursor: pointer;
 
 }
 
@@ -106,6 +108,7 @@ body, button, input, select, table, textarea {
     border: 0;
     color : #222222;
     padding: 0px;
+    cursor: pointer;
 
 }
 #search_img {
@@ -141,6 +144,7 @@ body, button, input, select, table, textarea {
     font-size : 16px;
     padding : 0px  27px 6px 0px;
     margin-bottom: 2px;
+    cursor: pointer;
     
 }
 #selected ::after {

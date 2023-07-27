@@ -15,6 +15,11 @@
   letter-spacing: 3px;
   font-weight:600;
   color: #171A20;
+
+  animation-name: fadeInUp;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 .snappin-box-text p{
@@ -22,6 +27,11 @@
   
   font-size: 14px;
   color: #171A20;
+
+  animation-name: fadeInUp;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 .snappin-box-text a{  
@@ -53,6 +63,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  animation-name: fadeInUp;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 .snappin-box-btn a{
@@ -93,15 +108,17 @@
 
 .modelY-chevron{
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
 
   display: flex;
   flex-direction: column;
-}
 
-.modelY-chevron{
-  position: absolute;
-  bottom: 20px;
+  cursor: pointer;
+
+  animation-name: upDown;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .powerwall .snappin-box-btn a{
@@ -111,4 +128,27 @@
 
 .accessories .snappin-box-btn{
   margin-bottom: 70px;
+}
+
+@keyframes fadeInUp{
+  from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+  to {
+      opacity: 1;
+      transform: translateZ(0);
+  }
+}
+
+@keyframes upDown{
+  0% {
+      transform: translate3d(0, 0%, 0);
+  }
+  50% {
+    transform: translate3d(0, 25%, 0);
+  }
+  70% {
+    transform: translate3d(0, 0%, 0);
+  }
 }

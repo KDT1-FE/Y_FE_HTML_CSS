@@ -13,8 +13,13 @@
   <!--Swiper-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-  
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/imageHover.css">
   <script defer src="./main.js"></script>
 </head>
 
@@ -234,7 +239,16 @@
     </div>
   </header>
 
-  <div class="main-introduction">
+  <section class="updown-btn-container">
+    <div class="go-top-btn">
+      <img src="./assets/icons/arrow_top.png" alt="위로버튼">
+    </div>
+    <div class="go-bottom-btn">
+      <img src="./assets/icons/arrow_bottom.png" alt="아래로버튼">
+    </div>
+  </section>
+
+  <section class="main-introduction">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -255,9 +269,9 @@
       </div>
     </div>
     <div class="swiper-pagination"></div>
-  </div>
+  </section>
 
-  <div class="products-container has-swiper">
+  <section class="products-container has-swiper appear1">
     <div class="text-container">
       <h2 class="title">Products</h2>
       <ul class="menu">
@@ -274,10 +288,9 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="box">
-              <div class="images">
-                <img src="assets/slide2-1_hover.jpg" class="normalImg" alt="슬라이드2-1">
-              <!-- <img src="assets/slide2-1_hover.jpg" class="hoverImg" alt="슬라이드2-1호버"> -->
-              </div>
+              <div class="images one">
+                <img class="originImg" src="assets/slide2-1.jpg" alt="슬라이드2-1">
+              </div>       
               <div class="product-description">
                 <div class="info">
                   <h4>Mass Sofa - Limited</h4>
@@ -295,10 +308,9 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <!-- <div class="images"> -->
-                <img src="assets/slide2-2_hover.jpg" class="normalImg" alt="슬라이드2-1">
-              <!-- <img src="assets/slide2-1_hover.jpg" class="hoverImg" alt="슬라이드2-1호버"> -->
-              <!-- </div> -->
+              <div class="images two">
+                <img src="assets/slide2-2.jpg" class="originImg" alt="슬라이드2-2">
+              </div>
               <div class="product-description">
                 <div class="info">
                   <h4>Pebble Cushion - Limited</h4>
@@ -316,10 +328,9 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <!-- <div class="images"> -->
-                <img src="assets/slide2-3_hover.jpg" class="normalImg" alt="슬라이드2-1">
-              <!-- <img src="assets/slide2-1_hover.jpg" class="hoverImg" alt="슬라이드2-1호버"> -->
-              <!-- </div> -->
+              <div class="images three">
+                <img src="assets/slide2-3.jpg" class="originImg" alt="슬라이드2-3">
+              </div>
               <div class="product-description">
                 <div class="info">
                   <h4>Leve Module - Limited</h4>
@@ -335,13 +346,107 @@
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images four">
+                <img src="assets/slide2-4.jpg" class="originImg" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Leve Sofa - Limited</h4>
+                </div>
+                <div class="meta">
+                  <span class="lastPrice text">2,695,000원</span>
+                  <span class="currentPrice text">1,886,500원~</span>
+                  <span class="right">
+                    <span class="discount text">30%</span>
+                    <span class="feature text">Limited Edition</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images five">
+                <img src="assets/slide2-5.jpg" class="originImg" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Leve Cushion - Limited</h4>
+                </div>
+                <div class="meta">
+                  <span class="lastPrice text">132,000원-</span>
+                  <span class="currentPrice text">92,400원</span>
+                  <span class="right">
+                    <span class="discount text">30%</span>
+                    <span class="feature text">Limited Edition</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images six">
+                <img src="assets/slide2-6.jpg" class="originImg" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Tartan Module</h4>
+                </div>
+                <div class="meta">
+                  <span class="currentPrice text">2,860,000원 -</span>
+                  <span class="right">
+                    <span class="feature text">New Collection</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images seven">
+                <img src="assets/slide2-7.jpg" class="originImg" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Tartan Sofa</h4>
+                </div>
+                <div class="meta">
+                  <span class="currentPrice text">5,720,000원 -</span>
+                  <span class="right">
+                    <span class="feature text">New Collection</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images eight">
+                <img src="assets/slide2-8.jpg" class="originImg" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Tartan Cushion</h4>
+                </div>
+                <div class="meta">
+                  <span class="currentPrice text">231,000원 -</span>
+                  <span class="right">
+                    <span class="feature text">New Collection</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
+  </section>
 
-  <div class="half-banner-container">
+  <section class="half-banner-container appear2">
     <div class="first half-banner">
       <a href="/">
         <img src="./assets/row_half_banner.jpg" alt="halfbanner1번째이미지">
@@ -362,9 +467,9 @@
         <div class="btn-shopnow">SHOP</div>
       </a>
     </div>
-  </div>
+  </section>
 
-  <div class="select-shop-container has-swiper">
+  <section class="select-shop-container has-swiper appear3">
     <div class="text-container">
       <h2 class="title">Select#</h2>
       <ul class="menu">
@@ -378,9 +483,8 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="box">
-              <div class="images">
-                <img src="assets/slide3-1.jpg" class="normalImg" alt="슬라이드3-1">
-              <!-- <img src="assets/slide2-1_hover.jpg" class="hoverImg" alt="슬라이드2-1호버"> -->
+              <div class="images secondOne">
+                <img src="assets/slide3-1.jpg" class="originImg" alt="슬라이드3-1">
               </div>
               <div class="product-description">
                 <div class="info">
@@ -394,10 +498,9 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <!-- <div class="images"> -->
-                <img src="assets/slide3-2.jpg" class="normalImg" alt="슬라이드3-2">
-              <!-- <img src="assets/slide2-1_hover.jpg" class="hoverImg" alt="슬라이드2-1호버"> -->
-              <!-- </div> -->
+              <div class="images secondTwo">
+                <img src="assets/slide3-2.jpg" class="originImg" alt="슬라이드3-2">
+              </div>
               <div class="product-description">
                 <div class="info">
                   <h4>Scoop Table Lamp</h4>
@@ -410,10 +513,9 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <!-- <div class="images"> -->
-                <img src="assets/slide3-3.jpg" class="normalImg" alt="슬라이드3-3">
-              <!-- <img src="assets/slide2-1_hover.jpg" class="hoverImg" alt="슬라이드2-1호버"> -->
-              <!-- </div> -->
+              <div class="images secondThree">
+                <img src="assets/slide3-3.jpg" class="originImg" alt="슬라이드3-3">
+              </div>
               <div class="product-description">
                 <div class="info">
                   <h4>Pin Table Lamp</h4>
@@ -424,13 +526,58 @@
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images secondFour">
+                <img src="assets/slide3-4.jpg" class="originImg" alt="슬라이드3-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Cone Floor Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="currentPrice text">550,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images secondFive">
+                <img src="assets/slide3-5.jpg" class="originImg" alt="슬라이드3-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Scoop Floor Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="currentPrice text">429,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images secondSix">
+                <img src="assets/slide3-6.jpg" class="originImg" alt="슬라이드3-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Pin Floor Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="currentPrice text">616,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
+  </section>
 
-  <div class="stories-container">
+  <section class="stories-container appear4">
     <div class="text-container">
       <h2 class="title">Stories</h2>
     </div>
@@ -452,9 +599,9 @@
         <span>3월의 먼슬리 아이템</span>
       </div>
     </div>
-  </div>
+  </section>
   
-  <div class="business-solution-container">
+  <section class="business-solution-container appear5">
     <div class="business-wrap">
       
       <div class="text-container">
@@ -486,9 +633,9 @@
         <span class="thirdPlace">캉코 키친</span>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="review-container">
+  <section class="review-container">
     <div class="text-container">
       <h2 class="title">Review</h2>
     </div>
@@ -506,7 +653,7 @@
       <img src="./assets/review11.jpg" alt="리뷰이미지11">
       <img src="./assets/review12.jpg" alt="리뷰이미지12">
     </div>
-  </div>
+  </section>
 
   <footer>
     <div class="grid-wrapper">
@@ -555,6 +702,7 @@
       </div>
     </div>
   </footer>
+
   <div class="final-message">
     <span>MAKE NEW HARMONY JACKSON CHAMELEON</span>
   </div>

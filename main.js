@@ -1,9 +1,14 @@
+//헤더 호버 관련 선언
 const hovermenus = document.getElementsByClassName("has-submenu")
 let arr = []
 for(i=0;i<hovermenus.length;i++){
   arr.push(hovermenus[i])
 }
+//이미지 호버 관련 선언
+//let selectedImg = document.querySelectorAll(".box .images")
 
+
+//헤더 호버 관련 코드
 arr.forEach(item => {
   const headerBg = document.querySelector("header")
   const whiteLogo = document.querySelector(".header-inner-wrapper .white")
@@ -34,6 +39,48 @@ arr.forEach(item => {
   })
 })
 
+//슬라이더 내 이미지 호버 시 전환
+/*selectedImg.forEach((img)=>{
+  img.addEventListener("mouseover",()=>{
+    img.classList.add("currentSelected")
+
+    let originImg = document.querySelector(".currentSelected .originImg")
+    let hoveredImg = document.querySelector(".currentSelected .hoverImg") 
+
+    // originImg.style.display="none"
+    // hoveredImg.style.display="inline"
+
+    gsap.to(originImg, .5, {
+      opacity:0,
+      display:'none'
+    })
+    gsap.to(hoveredImg, .5, {
+      opacity:1,
+      display:'inline'
+    })
+  })
+
+  img.addEventListener("mouseout",()=>{
+    img.classList.remove("currentSelected")
+    let originImages=document.querySelectorAll(".originImg")
+    let hoveredImages=document.querySelectorAll(".hoverImg")
+    originImages.forEach((item)=>{
+      gsap.to(item, .5, {
+        opacity:1,
+        display:'inline'
+      })
+    })
+    hoveredImages.forEach((item)=>{
+      gsap.to(item,.5, {
+        opacity:0,
+        display:'none'
+      })
+    })
+  })
+})*/
+
+
+//슬라이더
 function getType(data){
   return Object.prototype.toString.call(data).slice(8,-1)
 }
@@ -81,3 +128,6 @@ new Swiper('.business-solution-slider .swiper-container', {
     clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
   }
 })
+
+
+// 스크롤관련

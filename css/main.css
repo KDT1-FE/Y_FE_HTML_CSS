@@ -32,7 +32,16 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-
+/* updown-btn-container */
+.updown-btn-container{
+  position:fixed;
+  z-index: 99;
+  right:30px;
+  bottom:10px;
+}
+.go-top-btn, .go-bottom-btn{
+  cursor:pointer;
+}
 /* header */
 header{
   position: fixed;
@@ -246,22 +255,17 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   border-left:1px solid black;
   border-bottom:1px solid black;
   border-right-color: transparent;
+  overflow: hidden;
 }
-/* .has-swiper .box:last-child{
-  border-right: 1px solid black;
-} */
 .has-swiper .product-swiper img{
   width:100%;
+  margin-bottom: -10px;
 }
-/* .products-container .product-swiper .box1 .hoverImg{
-  position: relative;
-  width:100%;
-  top:10px;
-} */
-
+/* 박스 하단 글자들 */
 .has-swiper .product-swiper .product-description{
   padding: 45px 35px;
   box-sizing: border-box;
+  margin:0;
 }
 .product-description .info h4{
   font-size:13px;
@@ -363,7 +367,6 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   background-color: white;
   color:#2e2b2b;
 }
-
 
 
 /* Stories */
@@ -582,3 +585,6 @@ hr{
   margin-left:200px;
   font-size:12px;
 }
+
+/* 나타남제어 */
+.appear1{}

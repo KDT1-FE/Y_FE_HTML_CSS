@@ -811,7 +811,7 @@ a{
   height: 700px;
   overflow: hidden;
   background-image: url('./static/asset/newtossim/section2_4_big.jpg');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 
@@ -838,6 +838,7 @@ a{
   overflow:hidden;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .home6_wall{
@@ -861,6 +862,7 @@ a{
 
 .home6_content1 img{
   display: block;
+  opacity: 0;
   width: 100%;
   max-width: 740px;
   margin: 0 auto;
@@ -883,17 +885,23 @@ a{
   line-height: 1.5;
   color: #333d4b;
 }
+.home6_content1_textwrap{
+  opacity: 0;
+}
 
 .home6_content2{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .home6_content2 > img{
+  opacity: 0;
   width: 100%;
   max-width: 660px;
   margin-right: 40px;
 }
-
+.home6_content2_item{
+  opacity: 0;
+}
 .home6_content2_item > img{
   max-width: 380px;
   width: 100%;
@@ -908,10 +916,12 @@ a{
   width: 100%;
 }
 .home6_textwrap{
+
   margin-top: 30px;
   margin-bottom: 280px;
 }
 .home6_textwrap h2{
+  opacity: 0;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
@@ -922,12 +932,15 @@ a{
   color: #b0b8c1
 }
 
+
 .home6_content3 img{
+  opacity: 0;
   width: 100%;
   margin-bottom: 60px;
 }
 
 .home6_textwrap2{
+  opacity: 0;
   display: flex;
 }
 

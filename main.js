@@ -23,19 +23,20 @@ toss.im 홈페이지에서 특정 위치에 도달했을 경우,
 
 /* load나 resize, reset 시에 초기화 부분 */
 
-// addEventListener('load',()=>{
-//     initalize()
-// })
-// addEventListener('resize',()=>{
-//     initalize()
-// })
-// addEventListener('reset',()=>{
-//     initalize()
-// })
+addEventListener('load',()=>{
+    initalize()
+})
+addEventListener('resize',()=>{
+    initalize()
+})
+addEventListener('reset',()=>{
+    initalize()
+})
 
-// const initalize = ()=>{
-//     const windowHeight = window.outerHeight
-// }
+const initalize = ()=>{
+    let windowHeight = window.outerHeight
+    //console.log('initialize', windowHeight)
+}
 
 /* intro 애니메이션 */
 
@@ -48,14 +49,11 @@ window.onload = ()=>{
     setTimeout(()=>{
         const introContainer = document.querySelector('.intro_container')
         introContainer.style.display="block"
-    },1000)
+    },800)
 }
 
-
-/* home 스크롤 애니메이션 */
-
 /* home 스크롤 이벤트 */
-const windowHeight = window.outerHeight
+let windowHeight = window.outerHeight
 
 const homeEventHandler = ()=>{
     // 추후 removeHandler를 통하여 변수들을 제거함으로서 메모리 반환 ~ 메모리 최적화
@@ -88,8 +86,6 @@ const homeEventHandler = ()=>{
 window.addEventListener('scroll',homeEventHandler)
 
 
-/* home2 애니메이션 */
-
 /* home2 스크롤 이벤트 */
 const home2EventHandler = ()=>{
     const home2Text = document.querySelector('.home2_textwrap')
@@ -119,8 +115,6 @@ const home2EventHandler = ()=>{
     }
 }
 window.addEventListener('scroll',home2EventHandler)
-
-/* home3 */
 
 /* home3 스크롤 이벤트 */
 const home3EventHandler = ()=>{
@@ -161,8 +155,6 @@ const home3EventHandler = ()=>{
 window.addEventListener('scroll',home3EventHandler)
 
 
-/* home4 animation */
-
 /* home4 스크롤 이벤트 */
 const home4EventHandler = ()=>{
     const home4Text = document.querySelector('.home4_textwrap')
@@ -192,8 +184,6 @@ const home4EventHandler = ()=>{
     }
 }
 window.addEventListener('scroll',home4EventHandler)
-
-/* home5 animation */
 
 /* home5 스크롤 이벤트 */
 const home5EventHandler = ()=>{
@@ -276,20 +266,16 @@ window.addEventListener('scroll', home5AppearHandler)
 
 
 /* home6 스크롤 width 조절 이벤트 */
+
 const walls = document.querySelectorAll('.home6_wall')
 const home6Wall = document.querySelector('.home6_wallpaper')
-console.log(walls)
 let difference
 const home6WidthControlHandler = ()=>{
     difference = windowHeight - home6Wall.getBoundingClientRect().top
-    console.log(difference)
     
     if(difference<=150){
-        walls.forEach(item=>{
-            item.style.width = `200px`
-            console.log('왜안돼?')
-        }
-            )
+        walls.forEach(item=>
+            item.style.width = `200px` )
     }
     else if(difference>150 && difference<700){
 
@@ -302,7 +288,6 @@ const home6WidthControlHandler = ()=>{
             item.style.width = '0px')
     }
 
-    // console.log(home6Wall.getBoundingClientRect().top, windowHeight)
     // 150 이하면 width 200 그대로, 700 이상이면 width 0
     // windowHeight - home6Wall.getBoundingClientRect().top  == 150 : 200px
     // windowHeight - home6Wall.getBoundingClientRect().top  == 700 : 0px
@@ -310,3 +295,59 @@ const home6WidthControlHandler = ()=>{
 }
 
 window.addEventListener('scroll', home6WidthControlHandler)
+
+/* Home6 스크롤 이벤트 */
+
+/* 
+1. 스크롤 위치에 맞게 home6_content1 img의 opacity 변경
+2. home6_content1_textwrap opacity 변경
+3. home6_content2 > img opacity 변경
+4. home6_textwrap opacity 변경
+5. home6_content2_item opacity와 위치 변경
+6. home6_content3 img opacity 변경
+7. home6_textwrap2 opacity 변경
+*/
+
+const home6Content1Img = document.querySelector('.home6_content1 img')
+const home6Content1Text = document.querySelector('.home6_content1_textwrap')
+const home6Content2Img = document.querySelector('.home6_content2 > img')
+const home6Text = document.querySelector('.home6_textwrap h2')
+const home6Content2Item = document.querySelector('.home6_content2_item')
+const home6Content3Img = document.querySelector('.home6_content3 img')
+const home6Text2 = document.querySelector('.home6_textwrap2')
+
+const home6OpacityEvent = (item)=>{
+    let difference = windowHeight - item.getBoundingClientRect().top
+    if(difference > 150 && difference < item.offsetHeight+200){
+        item.style.opacity = (difference-150)/(item.offsetHeight+50)
+    }else if(difference>item.offsetHeight+200){
+        item.style.opacity = 1
+    }else{
+        item.style.opacity = 0
+    }
+}
+
+const home6OpacityTransitionEvent = (item)=>{
+    let difference = windowHeight - item.getBoundingClientRect().top
+    if(difference > 150 && difference < item.offsetHeight+200){
+        item.style.opacity = (difference-150)/(item.offsetHeight+50)
+        item.style.transform = `translateY(${-100*(difference-150)/(item.offsetHeight+50)}px)`
+    }else if(difference>item.offsetHeight+200){
+        item.style.opacity = 1
+    }else{
+        item.style.opacity = 0
+    }
+}
+
+
+const home6ScrollHandler = ()=>{
+    home6OpacityEvent(home6Content1Img)
+    home6OpacityEvent(home6Content1Text)
+    home6OpacityEvent(home6Content2Img)
+    home6OpacityEvent(home6Text)
+    home6OpacityEvent(home6Content3Img)
+    home6OpacityEvent(home6Text2)
+    home6OpacityTransitionEvent(home6Content2Item)
+}
+
+window.addEventListener('scroll', home6ScrollHandler)

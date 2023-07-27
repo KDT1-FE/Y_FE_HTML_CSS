@@ -48,7 +48,6 @@ li {
 }
 
 #red-circle {
-  /* display: none; */
   z-index: 1000;
   position: fixed;
   width: 20px;
@@ -324,6 +323,12 @@ header .side-bar {
   transition: all 0.5s;
   display: none;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+header .side-bar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 header .side-bar .side-bar__top {
@@ -446,6 +451,10 @@ header .side-bar .dropdown-link::after {
   border-bottom: 0;
   border-left: 0.3em solid transparent;
   transition: all 0.3s;
+}
+
+header .side-bar .side-bar__bot {
+  padding-bottom: 20px;
 }
 
 header .side-bar .side-bar__bot div {
@@ -590,13 +599,12 @@ header .side-bar .side-bar__bot div:last-child a {
   position: absolute;
   max-width: 1100px;
   width: 90vw;
-  bottom: -10%;
+  top: 570px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   opacity: 1;
-  transition: all 0.3s;
 }
 
 .section-2 .section-2__ocean .section-2__ocean--bubble img {
@@ -714,7 +722,6 @@ header .side-bar .side-bar__bot div:last-child a {
   width: 100%;
   max-width: 2000px;
   height: 500px;
-  /* height: 10px; */
   position: absolute;
   top: 1180px;
   left: 50%;
@@ -725,7 +732,6 @@ header .side-bar .side-bar__bot div:last-child a {
   position: absolute;
   margin-top: 1200px;
   width: 100vw;
-  /* height: 200vh; */
   /* border: 2px solid green; */
 }
 
@@ -739,7 +745,6 @@ header .side-bar .side-bar__bot div:last-child a {
 
 .section-2 .section-2__business .section-2__business--card {
   /* border: 1px solid red; */
-  /* height: 100%; */
   max-width: 1200px;
   width: 85vw;
   margin: auto;
@@ -753,8 +758,6 @@ header .side-bar .side-bar__bot div:last-child a {
   margin: 10px 20px;
   overflow: hidden;
   opacity: 0;
-  transition: opacity 2s;
-  /* padding: 10px; */
 }
 
 .section-2 .section-2__business .section-2__business--card > div div {
@@ -852,7 +855,6 @@ header .side-bar .side-bar__bot div:last-child a {
 
 .section-2 .section-2__footer {
   width: 100%;
-  /* height: 400px; */
   padding-top: 55px;
   background-color: #333;
   display: flex;
@@ -974,7 +976,6 @@ header .side-bar .side-bar__bot div:last-child a {
 
 @media screen and (max-width: 908px) {
   .section-2 .section-2__business {
-    /* top: 370vw; */
     margin-top: 1150px;
   }
 }
@@ -1011,7 +1012,6 @@ header .side-bar .side-bar__bot div:last-child a {
 
   .main__bg {
     background-image: url("https://www.pinkfong.com/assets/img/new/main/main_mobile.jpg");
-    /* width: 100vw; */
   }
 
   .section-2 .section-2__title {

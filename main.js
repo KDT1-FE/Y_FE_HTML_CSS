@@ -1,4 +1,5 @@
 // header link click animation
+
 const leftleftLinkEls = document.querySelectorAll(".header-nav__left li");
 leftleftLinkEls.forEach((leftLinkEl, i) => {
   leftleftLinkEls[i].addEventListener("click", () => {
@@ -10,6 +11,7 @@ leftleftLinkEls.forEach((leftLinkEl, i) => {
 });
 
 // header toggle modal
+
 const dropdownEls = document.querySelectorAll(
   "header .header-nav .dropdown-link"
 );
@@ -76,6 +78,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 // scroll
+
 const header = document.querySelector("header");
 const headerListEls = document.querySelectorAll(
   "header .header-nav .header-nav__left li > a"
@@ -124,35 +127,49 @@ window.addEventListener("scroll", () => {
       hideTitle.style.opacity = "1";
     });
   }
-
-  if (scrollYPosition >= 1670) {
-    const opacity = (scrollYPosition - 1670) / (1850 - 1670);
-    award.style.opacity = opacity.toFixed(2);
-  } else {
-    award.style.opacity = "0";
-  }
-
-  const bubble = document.querySelector(".section-2__ocean--bubble");
-
-  if (scrollYPosition >= 1785) {
-    const opacity = 1 - (scrollYPosition - 1785) / (2480 - 1785);
-    const bottom = ((scrollYPosition - 1785) / (2480 - 1785)) * 100;
-    bubble.style.opacity = opacity.toFixed(2);
-    bubble.style.bottom = `${bottom}%`;
-  } else {
-    bubble.style.opacity = "1";
-    bubble.style.bottom = `-10%`;
-  }
-  // console.log(scrollYPosition);
 });
 
-// card observer
+// observer
+
+const opacityHandle = (x, y) => {
+  return (window.scrollY - x) / y;
+};
+
+const bubbleHandle = (x, y) => {
+  return ((window.scrollY - x) / y) * 300;
+};
+
 const observer = new IntersectionObserver((e) => {
   e.forEach((v, i) => {
     if (v.isIntersecting) {
-      v.target.style.opacity = 1;
+      const currentY = window.scrollY;
+      const currentH = v.target.offsetHeight;
+      window.addEventListener("scroll", () => {
+        const opacity = opacityHandle(currentY, currentH);
+        // console.log(opacity);
+        if (opacity >= 0) {
+          v.target.style.opacity = opacity;
+        } else {
+          v.target.style.opacity = 1 - opacity;
+        }
+      });
+    }
+  });
+});
+
+const observer2 = new IntersectionObserver((e) => {
+  e.forEach((v, i) => {
+    const currentY = window.scrollY;
+    const currentH = v.target.offsetHeight;
+    if (v.isIntersecting) {
+      window.addEventListener("scroll", () => {
+        const top = bubbleHandle(currentY, currentH);
+        v.target.style.top = 580 - top + "px";
+      });
     } else {
-      v.target.style.opacity = 0;
+      window.addEventListener("scroll", () => {
+        v.target.style.top = "570px";
+      });
     }
   });
 });
@@ -162,3 +179,8 @@ const cardEls = document.querySelectorAll(".section-2__business--card > div");
 cardEls.forEach((cardEl, i) => {
   observer.observe(cardEl);
 });
+observer.observe(award);
+
+const bubble = document.querySelector(".section-2__ocean--bubble");
+const react = bubble.getBoundingClientRect();
+observer2.observe(bubble);

@@ -209,6 +209,10 @@
   background-size: 100%;
 }
 
+.desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 769px) {
   .slide-nav {
     bottom: 60px;
@@ -230,5 +234,13 @@
     bottom: 53px;
     right: 15vw;
     top: auto;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
   }
 }

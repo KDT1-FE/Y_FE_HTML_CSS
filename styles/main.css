@@ -242,6 +242,8 @@ input[id="select_box4"]:checked ~ .slide-nav .label4 {
 
 .select_img {
   opacity: 0;
+  transition-duration: 3s;
+  animation-duration: 3s;
 }
 
 /* label 클릭시 이미지 나타내기 */

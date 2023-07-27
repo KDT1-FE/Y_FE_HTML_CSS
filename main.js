@@ -40,22 +40,26 @@ const initalize = ()=>{
 
 // delay를 주기 위하여 설정, css 단독으로는 animation delay를 줄 수 없음
 
-// netify로 배포를 하였는데, background image 최적화가 덜 되서 그런지 
-// 이미지를 다 불러오기 전에 애니메이션이 실행되는 경우가 있었다. 해결하기위해 window.onload도입
+// netify로 배포를 하였는데, 배경 이미지를 다 불러오기 전에 애니메이션이 실행되는 경우가 있었다. 해결하기위해 window.onload 도입하였으나,
+// window 자체를 다 불러오는데도 로컬환경고 다르게 배포 환경은 매우 느려서, window가 준비되는데 10초이상이 소요돼서 빼버림
 
-window.onload = ()=>{
-    setTimeout(()=>{
-        const introContainer = document.querySelector('.intro_container')
-        introContainer.style.display="block"
-    },800)
-}
+// window.onload = ()=>{
+//     setTimeout(()=>{
+//         const introContainer = document.querySelector('.intro_container')
+//         introContainer.style.display="block"
+//     },400)
+// }
+
+setTimeout(()=>{
+    const introContainer = document.querySelector('.intro_container')
+    introContainer.style.display="block"
+},400)
 
 let windowHeight = window.outerHeight
 
 /* home 스크롤 이벤트 */
 const homeEventHandler = ()=>{
-    // 추후 removeHandler를 통하여 변수들을 제거함으로서 메모리 반환 ~ 메모리 최적화
-    
+    // 추후 removeEventHandler를 통하여 이벤트를 제거함으로 변수에 할당된 메모리 반환
     const homeText = document.querySelector('.home_text')
     const homeIphone1 = document.querySelector('.home_image_container .iphone_wrap:first-of-type')
     const homeIphone2 = document.querySelector('.home_image_container .iphone_wrap:last-of-type')

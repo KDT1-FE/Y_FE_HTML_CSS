@@ -213,6 +213,18 @@
   display: none;
 }
 
+.slide-text-box {
+  height: auto;
+  left: 16px;
+  position: absolute;
+  right: 80px;
+  top: 16px;
+  width: auto;
+  z-index: 1;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 @media only screen and (min-width: 769px) {
   .slide-nav {
     bottom: 60px;
@@ -242,5 +254,14 @@
 
   .desktop {
     display: block;
+  }
+
+  .slide-text-box {
+    bottom: 16px;
+    left: 50%;
+    text-align: center;
+    top: auto;
+    transform: translateX(-50%);
+    width: 60vw;
   }
 }

@@ -1,26 +1,39 @@
-main h1 {
-  font-size: 48px;
-}
-
-main p {
-  font-size: 16px;
-}
-
-.home-main-section-01 {
-  /* padding-top: 30px; */
+.home-main-section-top {
+  padding-top: 24px;
   background-color: #FBF7F2;
 }
 
-.main-section-wrapper {
-  margin: 0 auto;
+.home-main-top {
   width: 1024px;
   height: 760px;
-  display: flex;
+  margin: 0 auto; /*좌우정렬*/
+  position: relative;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
-.main-section-desc {
+.home-main-desc .home-main-title {
+  font-size: 4.8rem;
+  line-height: 1.3;
+  padding-top: 27rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.4px;
+}
+
+.home-main-desc .home-main-text {
+  font-size: 1.6rem !important;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.home-main-image {
+  
+}
+
+/* 
+
+.home-main-desc {
   color: #212529;
   white-space: nowrap;
   position: relative;
@@ -28,17 +41,17 @@ main p {
   left: 4.5rem;
 }
 
-.main-section-desc h1 {
+.home-main1-desc h1 {
   margin-top: 0;
   margin-bottom: 3rem;
 }
 
-.main-sesction-image-top {
+.home-main1-image {
   right: -120px;
   position: relative;
 }
 
-.main-sesction-image-top img {
+.home-main1-image img {
   width: 804px;
   height: 685px;
-}
+} */

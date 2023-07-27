@@ -55,7 +55,7 @@ setTimeout(()=>{
     introContainer.style.display="block"
 },400)
 
-let windowHeight = window.outerHeight
+let windowHeight = window.innerHeight
 
 /* home 스크롤 이벤트 */
 const homeEventHandler = ()=>{

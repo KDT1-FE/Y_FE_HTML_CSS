@@ -136,7 +136,7 @@ const opacityHandle = (x, y) => {
 };
 
 const bubbleHandle = (x, y) => {
-  return ((window.scrollY - x) / y) * 300;
+  return ((window.scrollY - x) / y) * 450;
 };
 
 const observer = new IntersectionObserver((e) => {

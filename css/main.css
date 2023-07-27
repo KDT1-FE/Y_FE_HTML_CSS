@@ -601,7 +601,7 @@ strong {
 
 .message h2::before {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: 0;
   content: "";
   width: 0;

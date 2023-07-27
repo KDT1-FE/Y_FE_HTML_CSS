@@ -6,20 +6,22 @@ sliderItems.forEach((item, itemIndex) => {
     sliderImages.forEach((image, imageIndex) => {
       if (itemIndex === imageIndex) {
         image.classList.add("currentImage");
-      }
-    });
-  });
-});
-
-sliderItems.forEach((item, itemIndex) => {
-  item.addEventListener("mouseout", () => {
-    sliderImages.forEach((image, imageIndex) => {
-      if (itemIndex === imageIndex) {
+      } else {
         image.classList.remove("currentImage");
       }
     });
   });
 });
+
+// sliderItems.forEach((item, itemIndex) => {
+//   item.addEventListener("mouseout", () => {
+//     sliderImages.forEach((image, imageIndex) => {
+//       if (itemIndex === imageIndex) {
+//         image.classList.remove("currentImage");
+//       }
+//     });
+//   });
+// });
 
 const photos = document.querySelectorAll(".airplane-photo");
 const leftBtn = document.querySelector(".left-btn");

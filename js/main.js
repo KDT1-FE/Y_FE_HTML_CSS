@@ -6,6 +6,7 @@ new Swiper('.swiper', {
   loop: true,
   autoplay: {
     delay: 4000, // 4초
+    disableOnInteraction: false, // bullet 클릭시 loop 멈춤 방지
   },
   pagination: {
     el: '.swiper-pagination', // 페이지 번호 요소 선택자

@@ -335,28 +335,26 @@ header {
 
 /* APPLE TV PLUS */
 .apple-tv-plus {
-  max-width: 256rem;
-  max-height: 70.525rem;
-  overflow: hidden; /* 양쪽 2560rem 이상의 이미지는 잘려서 보이도록 설정 */
   margin: auto;
   cursor: pointer;
+  border-bottom: 3.8rem solid #fff;
 }
-.swiper-wrapper {
+.apple-tv-plus .swiper .swiper-wrapper {
   max-height: 66.725rem;
   display: flex;
   transition: transform 0.3s ease; /* 슬라이드 애니메이션을 위한 transition 추가 */
 }
-.swiper-slide {
+.apple-tv-plus .swiper-slide {
   max-width: 125rem;
   max-height: 66.725rem;
-  opacity: 0.5;
+  opacity: 0.3;
 }
-.swiper-slide img {
+.apple-tv-plus .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* 이미지가 비율 유지하며 채워지도록 설정 */
 }
-.swiper-slide .cta-link-apple-tv-plus {
+.apple-tv-plus .swiper-slide .cta-link-apple-tv-plus {
   cursor: pointer;
   display: inline-block;
   text-align: center;
@@ -374,23 +372,25 @@ header {
   background-color: #ffffff;
   color: #000;
 }
-.swiper-slide-active {
+.apple-tv-plus .swiper-slide-active {
   opacity: 1; /* 가운데 아이템은 active 상태로 opacity를 1로 설정 */
 }
-.swiper-pagination {
+.apple-tv-plus .swiper .swiper-pagination {
+  left: 0;
+  right: 0;
   align-items: center;
   height: 3.8rem;
   display: flex; /* Pagination bullet들이 겹치지 않도록 flex container로 설정 */
   justify-content: center; /* Bullet들을 가운데 정렬 */
   gap: 0.8rem; /* Pagination bullet 간의 간격 조정 */
 }
-.swiper-pagination .swiper-pagination-bullet {
+.apple-tv-plus .swiper .swiper-pagination .swiper-pagination-bullet {
   width: 0.8rem; /* pagination bullet 크기 조정 */
   height: 0.8rem;
   background-color: #000; /* pagination bullet 색상을 검정색으로 설정 */
   opacity: 0.5; /* 비활성화된 pagination bullet의 투명도 조정 */
 }
-.swiper-pagination .swiper-pagination-bullet-active {
+.apple-tv-plus .swiper .swiper-pagination .swiper-pagination-bullet-active {
   opacity: 1; /* 활성화된 pagination bullet의 투명도 조정 */
 }
 

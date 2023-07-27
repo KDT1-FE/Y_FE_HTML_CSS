@@ -19,8 +19,6 @@ toss.im 홈페이지에서 특정 위치에 도달했을 경우,
 
 */
 
-
-
 /* load나 resize, reset 시에 초기화 부분 */
 
 addEventListener('load',()=>{
@@ -52,9 +50,9 @@ window.onload = ()=>{
     },800)
 }
 
-/* home 스크롤 이벤트 */
 let windowHeight = window.outerHeight
 
+/* home 스크롤 이벤트 */
 const homeEventHandler = ()=>{
     // 추후 removeHandler를 통하여 변수들을 제거함으로서 메모리 반환 ~ 메모리 최적화
     

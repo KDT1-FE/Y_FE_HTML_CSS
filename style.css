@@ -199,13 +199,11 @@ a{
 
 .intro_container{
   position: relative;
-  top: 150px;
+  top: 30%;
   opacity: 1;
   animation: appear ease-out 2.5s;
   display:none;
 }
-
-
 
 .intro_textwrap{
   text-align: center;
@@ -228,9 +226,10 @@ a{
   height: 40px;
   border-radius:10px;
   background-color: rgba(0, 12, 30, 0.8);
+  font-weight: 600;
   text-align: center;
   margin: 5px;
-  padding: 5px 20px;
+  padding: 5px 10px;
   font-size: 17px;
 }
 
@@ -330,8 +329,8 @@ a{
 
 .iphone_wrap .image_item1{
   position:absolute;
-  top: 10%;
-  left: 22.5%;
+  top: 9.5%;
+  left: 21.25%;
   width: 57%;
   height: auto;
 }

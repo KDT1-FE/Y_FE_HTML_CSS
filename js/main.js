@@ -142,3 +142,19 @@ const UpEl = document.querySelector('.Up')
 UpEl.addEventListener('click', function(e){
   window.scrollTo(0,0);
 })
+
+const menuEls=document.querySelectorAll('.menucontainer')
+const textEls=document.querySelectorAll('.Textmenu')
+
+menuEls.forEach(element => {
+  element.addEventListener('mouseover',function(e){
+    textEls.forEach(element => {
+      element.style.display='flex'
+    })
+  })
+  element.addEventListener('mouseout',function(e){
+    textEls.forEach(element => {
+      element.style.display='none'
+    })
+  })
+});

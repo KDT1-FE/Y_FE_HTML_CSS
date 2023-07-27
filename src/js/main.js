@@ -49,7 +49,7 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
     });
 
     // init Swiper:
-    const swiper = new Swiper(".swiper.main-visual--swiper", {
+    const swiper = new Swiper(".swiper.key-visual__swiper", {
       loop: true,
       effect: "fade",
       // Navigation arrows

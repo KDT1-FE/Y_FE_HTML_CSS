@@ -4,9 +4,9 @@
   "description": "[참고 내용]",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
+    "start": "parcel index.html sub.html",
     "prebuild": "rm -rf dist",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html sub.html"
   },
   "keywords": [],
   "author": "",

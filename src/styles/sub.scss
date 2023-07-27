@@ -1,0 +1,302 @@
+@import "./utils";
+/* -------------------------- 서브 페이지 스타일 -------------------------- */
+.key-visual.sub1 {
+  .key-visual__swiper {
+    .swiper-slide {
+      .slide-bg.slide01 {
+        background-image: url("../../static/images/main-visual-02.jpg");
+      }
+      .slide-bg.slide02 {
+        background-image: url("../../static/images/main-visual-01.jpg");
+      }
+      .slide-bg.slide04 {
+        background-image: url("../../static/images/prologue/sub-visual-04.jpg");
+      }
+      .slide-bg.slide05 {
+        background-image: url("../../static/images/main-visual-08.jpg");
+      }
+      .slide-bg.slide06 {
+        background-image: url("../../static/images/prologue/sub-visual-06.jpg");
+      }
+      .slide-bg.slide07 {
+        background-image: url("../../static/images/prologue/sub-visual-07.jpg");
+      }
+      .slide-bg.slide08 {
+        background-image: url("../../static/images/prologue/sub-visual-08.jpg");
+      }
+      .slide-bg.slide09 {
+        background-image: url("../../static/images/main-visual-10.jpg");
+      }
+      .slide-bg.slide10 {
+        background-image: url("../../static/images/main-visual-11.jpg");
+      }
+      .slide-bg.slide11 {
+        background-image: url("../../static/images/main-visual-03.jpg");
+      }
+      .slide-bg.slide12 {
+        background-image: url("../../static/images/main-visual-04.jpg");
+      }
+      .slide-bg.slide13 {
+        background-image: url("../../static/images/prologue/sub-visual-13.jpg");
+      }
+      .slide-bg.slide14 {
+        background-image: url("../../static/images/prologue/sub-visual-14.jpg");
+      }
+      .slide-bg.slide15 {
+        background-image: url("../../static/images/main-visual-07.jpg");
+      }
+      .slide-bg.slide16 {
+        background-image: url("../../static/images/main-visual-05.jpg");
+      }
+      .slide-bg.slide17 {
+        background-image: url("../../static/images/prologue/sub-visual-17.jpg");
+      }
+      .slide-bg.slide18 {
+        background-image: url("../../static/images/prologue/sub-visual-18.jpg");
+      }
+      .slide-bg.slide19 {
+        background-image: url("../../static/images/prologue/sub-visual-19.jpg");
+      }
+      .slide-bg.slide20 {
+        background-image: url("../../static/images/prologue/sub-visual-20.jpg");
+      }
+      .slide-bg.slide21 {
+        background-image: url("../../static/images/main-visual-15.jpg");
+      }
+      .slide-bg.slide22 {
+        background-image: url("../../static/images/prologue/sub-visual-22.jpg");
+      }
+      .slide-bg.slide23 {
+        background-image: url("../../static/images/prologue/sub-visual-23.jpg");
+      }
+      .slide-bg.slide24 {
+        background-image: url("../../static/images/prologue/sub-visual-24.jpg");
+      }
+    }
+  }
+
+  .key-visual__fixed h2 {
+    letter-spacing: 0.06em;
+  }
+}
+
+/* -------------------------- 프롤로그 01 -------------------------- */
+.prologue-sect01 {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  @include mobile {
+    padding-top: 30px;
+  }
+  &__round-txt {
+    width: 120px;
+    height: 120px;
+    fill: #d3ceb9;
+    font-size: 63px;
+    font-family: $venti;
+    font-weight: 100;
+    letter-spacing: 0.06em;
+    @include mobile {
+      width: 80px;
+      height: 80px;
+    }
+    svg {
+      animation: rotateCircle 30s infinite linear;
+    }
+  }
+  &__center-line {
+    flex: auto;
+    height: 1px;
+    background-color: $font-color;
+    margin: 0 25px 0 15px;
+  }
+  &__small-title {
+    flex: 0 auto;
+    font-size: 15px;
+    font-family: $venti;
+    font-weight: 300;
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+  &__infos {
+    position: relative;
+    z-index: 1;
+    h2 {
+      position: relative;
+      z-index: 1;
+    }
+    img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+  }
+
+  &__center-img {
+    position: relative;
+    z-index: 0;
+    top: -30px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    @include mobile {
+      top: -15px;
+    }
+  }
+  &__left-img,
+  &__right-img {
+    flex: 50%;
+  }
+  &__left-img {
+    margin-top: 125px;
+    text-align: center;
+  }
+  &__right-img {
+    margin-left: 35px;
+    margin-top: 60px;
+  }
+  &__flex-imgs {
+    position: relative;
+    z-index: 0;
+  }
+
+  &__bg-txt1,
+  &__bg-txt2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.07;
+    z-index: 0;
+    font-family: $mango;
+    font-size: 210px;
+    font-weight: 400;
+    white-space: nowrap;
+    z-index: -1;
+    @include mobile {
+      font-size: 20vw;
+    }
+    @include tablet {
+      font-size: 20vw;
+    }
+  }
+  &__bg-txt1 {
+    top: 50%;
+    left: 50%;
+    span {
+      display: inline-block;
+    }
+    span + span {
+      margin-left: 1.6em;
+    }
+  }
+  &__bg-txt2 {
+    top: 20%;
+    left: 50%;
+  }
+
+  &__desc {
+    margin-top: 75px;
+    flex-direction: column;
+    h3 {
+      font-size: 28px;
+      line-height: 1.3;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 25px;
+      line-height: 1.8;
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+}
+/*animation*/
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------------- 프롤로그 02 -------------------------- */
+.prologue-sect02 {
+  padding-bottom: 260px;
+  @include mobile {
+    padding-bottom: 80px;
+  }
+  &__fixed-bg {
+    height: 765px;
+    background: fixed url("../../static/images/prologue/sub1_view_bg.jpg") 50% /
+      cover no-repeat;
+    margin-bottom: 170px;
+    @include mobile {
+      height: 250px;
+      margin-bottom: 80px;
+      background-attachment: scroll;
+    }
+  }
+  &__figure {
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__img,
+  &__figc {
+    flex: 50%;
+    box-sizing: border-box;
+  }
+  &__img {
+    padding-right: 100px;
+    @include tablet {
+      padding-right: 30px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &__figc-txt {
+    padding-top: 200px;
+    flex-direction: column;
+    @include mobile {
+      padding-top: 15px;
+    }
+    @include tablet {
+      padding-top: 15px;
+    }
+    h5 {
+      font-size: 15px;
+      font-weight: 400;
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      @include mobile {
+        font-size: 13px;
+        transform: rotate(0);
+      }
+      @include tablet {
+        transform: rotate(0);
+      }
+    }
+    h3 {
+      margin-bottom: 45px;
+      @include mobile {
+        font-size: 52px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+      }
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.8;
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -181,7 +181,7 @@ body {
 
 .inner-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
   position: relative;
   margin: 0 auto;
   padding: 0 50px;
@@ -206,6 +206,9 @@ body {
   }
   &.align-center {
     align-items: center;
+  }
+  &.justify-center {
+    justify-content: center;
   }
 }
 .heading-1 {
@@ -238,6 +241,14 @@ body {
   }
 }
 .heading-5 {
+  font-size: 60px;
+  font-family: $mango;
+  font-weight: 400;
+  @include mobile {
+    font-size: 32px;
+  }
+}
+.heading-6 {
   font-size: 20px;
   font-family: "VentiCF", sans-serif;
   font-weight: 400;
@@ -249,6 +260,12 @@ body {
 .pc-show {
   @include mobile {
     display: none;
+  }
+}
+.m-show {
+  display: none;
+  @include mobile {
+    display: block;
   }
 }
 .link-text {

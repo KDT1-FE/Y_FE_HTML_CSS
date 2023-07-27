@@ -1,6 +1,6 @@
 @import "./utils";
 /* -------------------------- 메인 비주얼 영역 -------------------------- */
-.main-visual {
+.key-visual {
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -8,7 +8,7 @@
   @include mobile {
     height: 500px;
   }
-  .main-visual--swiper {
+  &__swiper {
     height: 100%;
     .swiper-slide {
       /* 동영상 배경 스타일 */
@@ -155,7 +155,7 @@
     }
   }
 }
-.main-visual__fixed {
+.key-visual__fixed {
   position: absolute;
   width: 100%;
   bottom: 80px;

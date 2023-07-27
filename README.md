@@ -1,6 +1,6 @@
 # KDT0_KimSeongKyeom
 
-### 프로젝트 개요
+### 🎯 프로젝트 개요
 
 실제 사이트 : [http://www.areunpoolvilla.kr/html/index.html](http://www.areunpoolvilla.kr/html/index.html)
 

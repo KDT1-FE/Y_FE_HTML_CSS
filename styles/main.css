@@ -194,8 +194,8 @@ input[id="select_box4"]:checked ~ .slide-nav .label4 {
 .slide-btn {
   position: absolute;
   top: 26vh;
-  background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/pause-button-marketing.e65891baec28b63b14d9ea9fa159b06e.svg);
-  /* background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/play-button-marketing.4bb6b792c1ef11092c43de1ead55dea0.svg); */
+  /* background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/pause-button-marketing.e65891baec28b63b14d9ea9fa159b06e.svg); */
+  background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/play-button-marketing.4bb6b792c1ef11092c43de1ead55dea0.svg);
   background-color: transparent;
   background-position: 50%;
   background-repeat: no-repeat;

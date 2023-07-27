@@ -8,7 +8,8 @@
   text-decoration: none;
 }
 .body {
-  height: 100vw;
+  background-color: black;
+  height: 100vh;
   display: flex;
   flex-direction: row;
 }

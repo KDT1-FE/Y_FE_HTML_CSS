@@ -134,7 +134,6 @@ header .nav-list .nav-item {
   padding: 0 2rem;
   cursor: pointer;
   opacity: 0.7;
-  transition: opacity 0.8s ease-in-out;
 }
 header .nav-list .nav-item:hover {
   opacity: 1;
@@ -151,29 +150,41 @@ header .nav-list .nav-item:hover .item__contents {
 }
 header .nav-list .nav-item .item__contents .contents__menu {
   background-color: rgba(22, 22, 23, 1);
-  padding-top: 40px;
-  padding-bottom: 84px;
+  padding: 40px 22px 84px;
 }
 header .nav-list .nav-item .item__contents .contents__menu > ul {
   display: flex;
   padding: 20px 0;
+  list-style: none;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
 }
 header .nav-list .nav-item .item__contents .contents__menu > ul > li {
-  width: 220px;
+  padding-right: 44px;
+  margin: 0 0 -4px;
 }
 header .nav-list .nav-item .item__contents .contents__menu > ul > li h4 {
+  cursor: default;
   padding: 3px 0 12px 0;
-  font-size: 14px;
-  color: #fff;
+  font-size: 12px;
+  color: #86868b;
+  list-style: none;
 }
 header .nav-list .nav-item .item__contents .contents__menu > ul > li ul li {
   padding: 5px 0;
   font-size: 12px;
-  color: #999;
+  color: #e8e8ed;
+
   cursor: pointer;
+  list-style: none;
+}
+header .nav-list .nav-item .item__contents .contents__menu > ul > li .big-font li {
+  font-size: 24px;
+  padding-right: 44px;
 }
 header .nav-list .nav-item .item__contents .contents__menu > ul > li ul li:hover {
-  color: #669900;
+  color: #fff;
 }
 
 /* TRADE IN */

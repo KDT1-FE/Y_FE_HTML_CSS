@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrap {
@@ -272,31 +273,42 @@
   padding: 0.96rem 1.29rem;
 }
 
-.wrap .introduce-car {
+.wrap .introduce-car-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.wrap .introduce-car-box .introduce-car {
   width: 100%;
   height: 31rem;
-  margin-top: 2rem;
   position: relative;
 }
 
-.wrap .introduce-car img {
+.wrap .introduce-car-box .introduce-car img {
   width: 100%;
 }
 
-.wrap .introduce-car .introduce-car-img-box {
+.wrap .introduce-car-box .introduce-car .introduce-car-img-box {
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 31rem;
 }
 
-.wrap .introduce-car .introduce-car-img-box .di23 {
+.wrap .introduce-car-box .introduce-car .introduce-car-img-box .di23 {
   position: absolute;
   width: 100%;
   margin: -50% 0;
 }
 
-.wrap .introduce-car .introduce-car-desc-box {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -306,7 +318,7 @@
   cursor: pointer;
 }
 
-.wrap .introduce-car .introduce-car-desc-box .introduce-car-desc {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .introduce-car-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +328,7 @@
           flex-direction: column;
 }
 
-.wrap .introduce-car .introduce-car-desc-box .desc-button-box {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +341,7 @@
   margin-top: 1rem;
 }
 
-.wrap .introduce-car .introduce-car-desc-box .desc-button-box button {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box button {
   padding: 1rem 2rem;
   border-radius: 4px;
   cursor: pointer;
@@ -337,46 +349,46 @@
   font-weight: 700;
 }
 
-.wrap .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(1) {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(1) {
   background-color: #176bd9;
   color: white;
   border: none;
 }
 
-.wrap .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(1):hover {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(1):hover {
   background-color: #0652b6d8;
 }
 
-.wrap .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(2) {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(2) {
   background: none;
   color: white;
   border: 1px solid white;
 }
 
-.wrap .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(2):hover {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(2):hover {
   border: 2px solid white;
   padding: 0.9rem 2.436rem;
 }
 
-.wrap .introduce-car .introduce-car-desc-box img {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box img {
   width: 150px;
   height: 50px;
 }
 
-.wrap .introduce-car .introduce-car-desc-box span {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box span {
   color: #fff;
   font-size: 3.5rem;
   margin-left: 1rem;
   font-weight: 200;
 }
 
-.wrap .introduce-car .introduce-car-desc-box h2 {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box h2 {
   font-size: 3rem;
   color: #fff;
   font-weight: 200;
 }
 
-.wrap .introduce-car .introduce-car-desc-box h4 {
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box h4 {
   font-size: 2rem;
   color: #fff;
   font-weight: 200;
@@ -429,5 +441,124 @@
 .wrap .car-buy-info button:hover {
   border: 2px solid black;
   padding: 0.95rem 1.95rem;
+}
+
+.wrap .footer .footer-top {
+  height: 35rem;
+  background-color: #f6f6f6;
+  padding: 5rem 6rem 0 6rem;
+}
+
+.wrap .footer .footer-top p {
+  font-size: 0.625rem;
+  color: #4d4d4d;
+  margin-bottom: 1rem;
+}
+
+.wrap .footer .footer-top li {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #4d4d4d;
+  list-style-type: none;
+  margin-bottom: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.wrap .footer .footer-top li:hover {
+  color: black;
+}
+
+.wrap .footer .footer-top li span {
+  font-size: 1.2rem;
+}
+
+.wrap .footer .footer-top .footer-list-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .footer .footer-top .footer-list-box .list-title {
+  padding: 0 0.75rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.wrap .footer .footer-top .privacy {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.wrap .footer .footer-top .privacy div {
+  margin: 0 0.5rem;
+}
+
+.wrap .footer .footer-top .privacy span {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.wrap .footer .footer-top .privacy span:hover {
+  color: #1c69d4;
+  border-color: #1c69d4;
+}
+
+.wrap .footer .footer-top .SNS-box {
+  padding: 2rem 0.75rem 1rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.25rem;
+  gap: 1rem;
+}
+
+.wrap .footer .footer-top .SNS-box img {
+  width: 1.75rem;
+  cursor: pointer;
+}
+
+.wrap .footer .footer-bottom {
+  padding: 0 6rem;
+  height: 7.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .footer .footer-bottom p {
+  padding-left: 1rem;
+  font-size: 0.75rem;
+}
+
+.wrap .footer .footer-bottom .footer-bottom-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+.wrap .footer .footer-bottom .footer-bottom-right :hover {
+  color: #1c69d4;
 }
 /*# sourceMappingURL=style.css.map */

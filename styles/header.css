@@ -49,7 +49,7 @@ ul {
   top: 1px;
   width: 44px;
   height: 44px;
-  background-color: var(--color_option_bg);
+  background-color: #e4e4e4;
   border-radius: 50%;
 }
 #header-hamburger > div,
@@ -89,7 +89,7 @@ ul {
   background-position: -364px -27px;
 }
 #main {
-  height: 2000px;
+  height: 1200px;
 }
 .blind {
   position: absolute;

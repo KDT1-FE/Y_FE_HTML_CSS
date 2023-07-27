@@ -1,0 +1,74 @@
+#main {
+  display: flex;
+  margin-top: 71px;
+}
+#main-left {
+  width: 830px;
+  margin-right: 30px;
+}
+
+#main-right {
+  width: 420px;
+}
+
+#main-left-ad,
+#main-right-ad {
+}
+
+aside,
+#main-login,
+#main-left-ad,
+#main-right-ad,
+#main-news,
+#main-shopping,
+#main-weather,
+#main-stock {
+  border-radius: 8px;
+}
+
+#main-login,
+#main-left-ad,
+#main-right-ad,
+#main-news,
+#main-shopping,
+#main-weather,
+#main-stock {
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+}
+
+#main-left-ad {
+  height: 130px;
+  margin-bottom: 16px;
+}
+#main-news {
+  height: 426px;
+  margin-bottom: 16px;
+}
+#main-login {
+  height: 164px;
+  margin-bottom: 16px;
+}
+#main-right-ad {
+  height: 240px;
+  margin-bottom: 16px;
+}
+
+#main-shopping {
+  height: 560px;
+  margin-bottom: 16px;
+}
+#main-weather,
+#main-stock {
+  height: 236px;
+  margin-bottom: 16px;
+  padding: 0 18px;
+}
+#main-weather > div,
+#main-stock > div {
+  border-top: 1px solid grey;
+}
+#main-weather > header,
+#main-stock > header {
+  height: 52px;
+  padding: 6px 0;
+}

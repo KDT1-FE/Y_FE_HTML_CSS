@@ -560,9 +560,29 @@ strong {
   position: relative;
 }
 
-.photo-grid img {
+.photo-grid {
+  position: relative;
+  height: 51.7vw;
+}
+
+.photo-grid .slide-btns {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  right: 20px;
+  gap: 10px;
+}
+
+.airplane-photo {
+  position: absolute;
   width: 100%;
   margin-top: 2rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.airplane-photo.show {
+  opacity: 1;
 }
 
 .message {

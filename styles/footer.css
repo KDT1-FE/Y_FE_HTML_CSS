@@ -1,0 +1,43 @@
+footer{
+  width: 100%;
+  height: 110px;
+
+  position: absolute;
+  bottom: 15px;
+}
+
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.footer-nav-items{
+  height: 50px;
+  display: flex;
+}
+
+.footer-nav-item{
+  margin-right: 14px;
+  letter-spacing: .5px;
+}
+
+.footer-nav-item-a{
+  font-size: 12px;
+  color: #c6ccd4;
+}
+
+.footer-nav-banner{
+  max-width: 560px;
+
+  text-align: center;
+  letter-spacing: .5px;
+  line-height: 20px;
+
+  font-size: 10px;
+  color: #c6ccd4;
+}
+
+.footer-nav-banner a{
+  color: #c6ccd4;
+}

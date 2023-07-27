@@ -1,0 +1,118 @@
+#nav > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 20px;
+  padding-top: 10px;
+
+  margin: 0;
+}
+
+#nav a:visited {
+  color: black;
+}
+
+#nav li {
+  display: flex;
+  width: 64px;
+  margin-left: 14px;
+  margin-right: 0;
+  margin-top: 2px;
+}
+
+/* #nav li span {
+  display: flex;
+  text-align: center;
+  margin-left: 6px;
+  margin-top: 4px;
+} */
+
+#nav li:nth-of-type(1) {
+  margin-left: 0;
+}
+
+#nav a {
+  text-decoration: none;
+  text-align: center;
+}
+
+#nav li {
+  content: "";
+  display: inline-block;
+  top: -2px;
+  left: -3px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+  background-size: 422px 405px;
+  background-repeat: no-repeat;
+  background-position: 0px -128px;
+  width: 54px;
+  height: 54px;
+}
+
+#nav li:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+#nav a div {
+  content: "";
+  display: inline-block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+  background-size: 422px 405px;
+  background-position: -250px -90px;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+  margin: 0 3;
+}
+
+#nav a span {
+  padding-top: 10px;
+  /* 적용 안되는 이유 찾기 */
+}
+
+#nav li:nth-of-type(1) ::after {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#nav li:nth-of-type(1) a div {
+  padding-left: 0;
+  background-position: -250px -90px;
+}
+
+#nav li:nth-of-type(2) a div {
+  background-position: -250px 0px;
+}
+
+#nav li:nth-of-type(3) a div {
+  background-position: -201px -98px;
+}
+
+#nav li:nth-of-type(4) a div {
+  background-position: -90px -209px;
+}
+
+#nav li:nth-of-type(5) a div {
+  background-position: 0px -209px;
+}
+
+#nav li:nth-of-type(6) a div {
+  background-position: -180px -209px;
+}
+
+#nav li:nth-of-type(7) a div {
+  background-position: -45px -209px;
+}
+
+#nav li:nth-of-type(8) a div {
+  background-position: -201px 0px;
+}
+
+#nav li:nth-of-type(9) a div {
+  background-position: -225px -209px;
+}
+
+#nav li:nth-of-type(10) a div {
+  background-position: -250px -135px;
+}

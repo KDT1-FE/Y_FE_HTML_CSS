@@ -1,23 +1,22 @@
 const sliderItems = document.querySelectorAll(".block-slider-item");
-const sliderImage = document.querySelector(".block-slider-image");
+const sliderImages = document.querySelectorAll(".block-slider-image");
 
-sliderItems.forEach((item, index) => {
+sliderItems.forEach((item, itemIndex) => {
   item.addEventListener("mouseover", () => {
-    switch (index) {
-      case 0:
-        sliderImage.style.backgroundImage = `url('../assets/images/barcelona.avif')`;
-        break;
-      case 1:
-        sliderImage.style.backgroundImage = `url('../assets/images/ibiza.avif')`;
-        break;
-      case 2:
-        sliderImage.style.backgroundImage = `url('../assets/images/cannes.avif')`;
-        break;
-      case 3:
-        sliderImage.style.backgroundImage = `url('../assets/images/paris.avif')`;
-        break;
-      default:
-        break;
-    }
+    sliderImages.forEach((image, imageIndex) => {
+      if (itemIndex === imageIndex) {
+        image.classList.add("currentImage");
+      }
+    });
+  });
+});
+
+sliderItems.forEach((item, itemIndex) => {
+  item.addEventListener("mouseout", () => {
+    sliderImages.forEach((image, imageIndex) => {
+      if (itemIndex === imageIndex) {
+        image.classList.remove("currentImage");
+      }
+    });
   });
 });

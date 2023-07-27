@@ -4,7 +4,8 @@
 
 실제 사이트 : [http://www.areunpoolvilla.kr/html/index.html](http://www.areunpoolvilla.kr/html/index.html)
 
-완성 사이트 : [https://areun-poolvilla.netlify.app](https://areun-poolvilla.netlify.app)
+완성 사이트 : [https://areun-poolvilla.netlify.app](https://areun-poolvilla.netlify.app)  
+서브 페이지 : [https://areun-poolvilla.netlify.app/sub.html](https://areun-poolvilla.netlify.app/sub.html)
 
 > **HTML/CSS 과제를 위한 클론 프로젝트 입니다.**  
 > 저작권 등의 이유로 영상 및 이미지가 다른 미디어 파일로 대체될 수 있습니다.  
@@ -71,12 +72,14 @@ netlify로 배포 시 `https`로 배포되지만
 규칙이 있기 때문에 네이밍을 짓는데 시간이 덜 소요된것같았습니다.  
 또한 겹치는 class 명이 생기기가 어려운 방식이라  
 더 편리하다고 생각이 들어서 사용 하였습니다.  
+![bem](static/images/bem.png)  
 <br/>
 
 **브라우저 리렌더링 최소화**
 
 `width`나 `position` 등등 이 변경되면 **Reflow, Repaint**가 일어나게 되기 때문에  
 되도록 이면, 가상으로 요소의 크기나 위치를 변경하는 `transform` 을 사용하였습니다.  
+![translate](static/images/translate.gif)
 <br/>
 
 **빠른 개발을 위한 번들러 사용**
@@ -84,6 +87,7 @@ netlify로 배포 시 `https`로 배포되지만
 세세한 설정을 하지 않아도 간단히 사용 가능한 [Parcel 번들러](https://parceljs.org/)를 이용하였습니다.  
 css 작성 시간을 줄이고 유지보수가 용이한 코드 작성을 위해서  
 SCSS(SASS)를 사용하여 CSS를 작성했습니다.  
+![translate](static/images/bundler.png)
 <br/>
 
 **사용한 라이브러리**
@@ -94,8 +98,64 @@ SCSS(SASS)를 사용하여 CSS를 작성했습니다.
 
 **즉시실행함수(IIFE) 사용**
 
-아래와 같은 이유로 인해 즉시 실행 함수를 사용하여 JS 코드를 작성 하였습니다.
+```javascript
+// 즉시 초기화 함수를 실행합니다.
+(function (w, d) {
+  // 윈도우의 컨텐츠가 로드 되면 아래 스크립트들을 실행합니다.
+  w.addEventListener("DOMContentLoaded", (event) => {
+    const header = d.getElementById("header");
+    const navImgs = Array.from(
+      d.querySelectorAll(".main-navigation__img-list > li")
+    );
+    const navItems = Array.from(d.querySelectorAll(".menu-item"));
+    const hamberger = d.getElementById("hamberger-btn");
+    let isOpen = false;
 
-1. 라이브러리 전역 변수 충돌 방지
-1. 캡슐화를 위해
-1. window, docuemnt 객체를 더 짧게 사용하기 위함
+    // ...
+  });
+})(window, document);
+```
+
+---
+
+## 😊 과제를 통해 배운 점
+
+### 번들러 사용 + scss사용
+
+`parcel` 번들러를 사용하여 css, js 파일들을 한 번에 번들링해서 최적화 할 수 있었던 점이 재미있었습니다. 덕분에 css로 작성했으면 오래 걸리고 지루했을 작업을 scss(sass) 방식으로 작성하였습니다. 장점이 많은 scss를 사용하니 더 효율적이고 기분 좋은 개발 경험을 했던것같습니다.
+
+`webpack`으로 하면 더 세세한 설정이 가능하겠지만 그만큼 배워야할것도 많아서 boilerplate를 찾아 다녔어야 했는데, `parcel`로 간단하게 시작해보는것도 괜찮을것같다고 생각이 들었습니다.
+
+scss를 한 줄로 정리하자면 **효율성,시간 단축**이 키워드 인것같습니다.
+
+### CSS Grid 레이아웃 사용
+
+Flex 레이아웃을 익혔다면 생각보다 매우 이해하기 쉽고 간단했는데, 왜 이제까지 잘 안 써보았는지 후회될정도로 너무 편하고 좋은 기능이라는점을 깨달았습니다.
+
+특히 `grid-area`이름을 지정하고 `grid-template-areas`를 사용하는 경험은 정말 신기하면서도 실용적인 기능이라서 많은 분들이 도전해보았으면 하는 생각이 들었습니다.
+
+### 즉시실행(IIFE) 함수 사용
+
+처음에는 왜 굳이 이렇게 사용하는것일까.. 하는 생각만 하고 공부해보려는 생각은 못했었습니다..
+
+물론 즉시실행함수를 쓰지 않아도 충분히 좋은 코드를 쓸수있겠지만, 여러 가지 장점이 있다는 것이 알게 되어서 전역변수들을 초기화할 일 이 있다면 꼭 써보자는 생각도 하게 되었습니다.
+
+주로, 한 번만 실행되는 초기화 함수를 실행할때 많이 사용되기 때문에 꼭 익혀놓아야 겠습니다.
+
+**즉시실행 함수의 장점**
+
+- 한 번만 실행되는 초기화 함수
+- 전역 스코프에 불필요한 변수를 추가해서 오염시키는 것을 방지
+- 코드의 캡슐화가 가능
+- 코드의 난독화를 할 수 있습니다.
+
+## 😢 아쉬운 점
+
+**번들러 사용법 숙지가 아쉽.**  
+parcel 번들러의 경우 제대로 공식문서를 다 보지 않고, 블로그 글을 보고 따라해서 하다보니 자세하게 번들파일의 이름 규칙을 바꿔본다던지.. 여러가지 시도를 해보지 못한것이 아쉬웠습니다.
+
+**제대로된 scss는 아직 더 배울필요가 있다.**  
+css를 작성할때는 최대한 중복되는 코드나 이름을 줄여야 할텐데 아직 scss가 익숙치 않아서 효율적으로 작성했다기 보다는 변수를 사용해서 복붙을 좀 줄였다는 것, 중첩기능을 사용해서 코드가 조금 줄었다는것에 의미를 둬야 했던점이 아쉽다고 생각했습니다.
+
+**미숙한 javascript 실력**  
+아직 제대로 javascript 코드를 짜본건 아니고 강의 들은것이 전부이기 때문에, 즉시실행함수(IIFE)도 제대로 썼다고 보기 어렵고, 맛보기로만 실행만 되는지 확인한 수준이였던것같아 아쉬웠습니다.

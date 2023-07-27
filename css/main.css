@@ -11,6 +11,14 @@
 body {
   position: relative;
   color: #1d1d1f;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+img {
+  /* img를 block으로 처리하여 기존 inline의 baseline으로 인한 불필요한 margin 제거 */
+  display: block;
 }
 html {
   font-size: 10px;
@@ -24,6 +32,64 @@ a {
   max-width: 98rem;
   margin: 0 auto;
   padding: 0 2.2rem;
+}
+.title {
+  color: #fff;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+.title-dark {
+  color: #1d1d1f;
+}
+.title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+.title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: -0.008rem;
+  font-weight: 400;
+}
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.cta-link:hover {
+  text-decoration: underline;
+}
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+.cta .cta-link {
+  color: #2997ff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+.cta .cta-link.cta-link-darker {
+  color: #0066cc;
+}
+.cta .cta-link.cta-link-btn-white {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  font-size: 1.7rem;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  min-width: 28px;
+  padding-top: 10.5px;
+  padding-bottom: 7.5px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #ffffff;
+  color: #000;
+}
+.cta-link.cta-link-btn-white:hover {
+  opacity: 0.8;
 }
 
 /* HEADER */
@@ -73,7 +139,7 @@ header {
 
 /* TRADE IN */
 .trade-in {
-  position: absolute;
+  margin-top: 4.4rem;
   width: 100%;
   height: 4.4rem;
   background-color: #fff;
@@ -83,6 +149,7 @@ header {
   display: flex;
   padding: 15px 0;
   justify-content: center;
+  align-items: center;
 }
 .trade-in .container .ref-link-1 {
   font-size: x-small;
@@ -99,68 +166,95 @@ header {
 
 /* YOUTUBE VIDEO */
 .youtube {
-  height: 739px;
-  margin-top: 4.4rem;
+  position: relative;
+  width: 100%;
+  max-width: 256rem;
+  height: 69.2rem;
+  margin: auto;
   background-color: #333;
   border-bottom: 1.2rem solid #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.youtube .youtube__area {
+  width: 256rem;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(256rem / -2);
+  top: 50%;
+  margin-top: calc(256rem * 9 / 16 / -2);
+}
+.youtube .youtube__area::before {
+  content: '';
+  display: block;
+  /* 16:9 비율의 요소를 만드는 방법 56.25% */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.youtube .container {
+  position: relative;
+  padding-bottom: 5.5rem;
+}
+.youtube .container .title {
+  color: #fff;
+  text-align: center;
+}
+.youtube .container .title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+.youtube .container .title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: -0.008rem;
+  font-weight: 400;
+}
+.youtube .container .cta {
+  text-align: center;
+}
+.youtube .container .cta-link {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.youtube .cta-link:hover {
+  text-decoration: none;
+}
+.youtube .cta-link:nth-child(2) {
+  margin-left: 2.6rem;
 }
 
 /* HERO IPHONE SECTION */
 .iphone-14-pro {
   background: url('../images/hero_iphone-14-pro.jpg');
 }
-.title {
-  color: #fff;
-  text-align: center;
-  padding-top: 5.5rem;
-}
-.title-heading {
-  font-size: 5.6rem;
-  line-height: 1.07143;
-  letter-spacing: -0.005rem;
-}
-.title-sub-heading {
-  font-size: 2.65rem;
-  margin-top: 0.6rem;
-  letter-spacing: -0.008rem;
-  font-weight: 400;
-}
-.cta {
-  text-align: center;
-  margin-top: 1.8rem;
-}
-.cta-link {
-  color: #2997ff;
-  font-size: 2.1rem;
-  display: inline-block;
-}
-.cta-link:hover {
-  text-decoration: underline;
-}
-.cta-link:nth-child(2) {
-  margin-left: 2.6rem;
-}
 
 /* HERO MACBOOK SECTION */
 .macbook-air-15 {
   background: url('../images/hero-macbook-air-15.jpg');
 }
-.title-dark {
-  color: #1d1d1f;
-}
-.cta-link-darker {
-  color: #0066cc;
-}
 
 /* OVERRIDE HERO IMAGES */
 /* Moved to the bottom of all section styles to keep consistent styles */
 .hero {
+  display: flex;
   height: 69.2rem;
+  max-width: 256rem;
+  margin: auto;
   background-size: auto 73.6rem;
   background-position: center;
   background-repeat: no-repeat;
-  /* border-top: 0.6rem solid red; */
-  border-bottom: 1.2rem solid red;
+  border-bottom: 1.2rem solid #fff;
 }
 
 /* PRODUCTS GRID */

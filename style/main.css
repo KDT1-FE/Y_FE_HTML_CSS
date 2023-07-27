@@ -33,6 +33,7 @@ body {
     padding-bottom: 40px;
     width: 804px;
     height: 685px;
+    margin-right: 45px;
 }
 
 
@@ -117,6 +118,11 @@ body {
     padding-left: 0;
 }
 
+.home-story-list > li {
+    width: 136px;
+    height: 39px;
+}
+
 .home-story-list-item {
     margin-right: 50px;
 }
@@ -179,7 +185,7 @@ body {
     flex: 1;
     width: 546px;
     height: 740px;
-    margin-right: 180px;
+    margin-right: 300px;
 }
 
 
@@ -192,7 +198,7 @@ body {
     margin: 0px 200px;
 }
 
-.home-main-image-top3 {
+.home-main-image-top4 {
     flex: 1;
     width: 526px;
     height: 735px;

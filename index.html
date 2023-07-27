@@ -23,6 +23,22 @@
     </script>
     <script src="/index.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        function toggleDropdown() {
+            // 드롭다운을 열고 닫는 로직을 구현합니다.
+            // 예를 들어, 드롭다운이 보이지 않는 상태라면 보이게 하고,
+            // 보이는 상태라면 숨기도록 처리합니다.
+          
+            var dropdownContent = document.getElementById("dropdownContent"); // 드롭다운 컨텐츠의 ID를 얻어옵니다.
+          
+            // 드롭다운 컨텐츠가 보이는지 여부를 확인합니다.
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block"; // 보이도록 설정합니다.
+            } else {
+                dropdownContent.style.display = "none"; // 숨기도록 설정합니다.
+            }
+          }
+    </script>
 </head>
 
 <body>
@@ -40,9 +56,23 @@
                         <div>
                             <a href="https://namu.wiki/RecentDiscuss" title="최근 토론"><iconify-icon icon="ph:chat-text-bold"></iconify-icon> <span >최근 토론</span></a>
                         </div>
-                        <div>
-                            <iconify-icon icon="ph:cube-bold"></iconify-icon> <span  data-v-b3baf8e0="">특수 기능<span style="font-size:.1rem; margin-left:5px;">▼</span></span>
+                        <div class="dropdown" onclick="toggleDropdown()" style="cursor: pointer;">
+                            <iconify-icon icon="ph:cube-bold"></iconify-icon> <span >특수 기능<span style="font-size:.1rem; margin-left:5px;">▼</span></span>
                         </div>
+                    </div>
+
+                    <div id="dropdownContent">
+                        <div style="border-bottom: 1px solid #ccc;"><a href="//board.namu.wiki/" title="게시판" ><iconify-icon icon="clarity:clipboard-solid"></iconify-icon> <span >게시판</span></a></div>  
+                        <div><a href="/NeededPages" title="작성이 필요한 문서" ><iconify-icon icon="fluent-mdl2:alert-solid"></iconify-icon> <span >작성이 필요한 문서</span></a></div> 
+                        <div><a href="/OrphanedPages" title="고립된 문서" ><iconify-icon icon="ph:link-bold"></iconify-icon><span >고립된 문서</span></a></div> 
+                        <div><a href="/UncategorizedPages" title="분류가 되지 않은 문서" ><iconify-icon icon="mdi:help"></iconify-icon><span >분류가 되지 않은 문서</span></a></div> 
+                        <div><a href="/OldPages" title="편집된 지 오래된 문서" ><iconify-icon icon="ic:outline-pause"></iconify-icon> <span >편집된 지 오래된 문서</span></a></div> 
+                        <div><a href="/ShortestPages" title="내용이 짧은 문서" ><iconify-icon icon="ic:sharp-create"></iconify-icon><span >내용이 짧은 문서</span></a></div> 
+                        <div><a href="/LongestPages" title="내용이 긴 문서" ><iconify-icon icon="zondicons:heart"></iconify-icon><span >내용이 긴 문서</span></a></div>
+                        <div><a href="/BlockHistory" title="차단 내역" ><iconify-icon icon="ri:dislike-fill"></iconify-icon> <span >차단 내역</span></a></div> 
+                        <div><a href="/RandomPage" title="RandomPage" ><iconify-icon icon="ph:shuffle"></iconify-icon> <span >RandomPage</span></a></div> 
+                        <div><a href="/Upload" title="파일 올리기" ><iconify-icon icon="bi:cloud-upload-fill"></iconify-icon><span >파일 올리기</span></a></div> 
+                        <div><a href="/License" title="라이선스" ><iconify-icon icon="ion:pricetag-sharp"></iconify-icon><span >라이선스</span></a></div> <!---->
                     </div>
                     
                     <div id="search-div">

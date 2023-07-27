@@ -447,3 +447,22 @@ cursor: pointer;
     list-style-type: disc;
     line-height:30px;
 }
+
+#dropdownContent{
+    width: 200px;
+    height: 332px;
+
+    display: none; 
+    position:absolute; 
+    top: 45px;
+    left: 560px;
+    color: #373A3C;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: .9rem;
+    line-height: 30px;
+}
+
+#dropdownContent iconify-icon{
+    margin: 0 10px;
+}

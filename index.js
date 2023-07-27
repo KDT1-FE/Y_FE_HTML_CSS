@@ -26,3 +26,19 @@ window.addEventListener("click", (event) => {
     hideModal();
   }
 });
+
+//드롭다운
+function toggleDropdown() {
+  // 드롭다운을 열고 닫는 로직을 구현합니다.
+  // 예를 들어, 드롭다운이 보이지 않는 상태라면 보이게 하고,
+  // 보이는 상태라면 숨기도록 처리합니다.
+
+  var dropdownContent = document.getElementById("dropdownContent"); // 드롭다운 컨텐츠의 ID를 얻어옵니다.
+
+  // 드롭다운 컨텐츠가 보이는지 여부를 확인합니다.
+  if (dropdownContent.style.display === "none") {
+      dropdownContent.style.display = "block"; // 보이도록 설정합니다.
+  } else {
+      dropdownContent.style.display = "none"; // 숨기도록 설정합니다.
+  }
+}

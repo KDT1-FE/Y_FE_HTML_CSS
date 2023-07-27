@@ -2,7 +2,7 @@ header {
     width: 100%;
 }
 .header-container {
-    max-width: 1296px;
+    width: 1296px;
     height: 72px;
     margin: 0 auto;
     display: flex;
@@ -61,6 +61,40 @@ button {
     margin-left:12px;
     background-color: #fff;
 }
+.header-container-right {
+    display: flex;
+}
 .header-container-right button:hover {
     background-color: #eee;
+}
+.hidden-menu {
+    display: none;
+
+}
+@media (max-width: 1440px) {
+    .header-container {
+        width: 952px;
+    }
+}
+@media (max-width: 1024px) {
+    .header-container {
+        width: 630px;
+    }
+    .header-container-center {
+        display: none;
+    }
+    .header-container-right > button:nth-child(2) {
+        display: none;
+    }
+    .header-container-right > button:nth-child(3) {
+        display: none;
+    }
+    .hidden-menu {
+        display: block;
+    }
+}
+@media (max-width: 766px) {
+    .header-container {
+        width: 412px;
+    }
 }

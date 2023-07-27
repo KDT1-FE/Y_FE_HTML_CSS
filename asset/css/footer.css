@@ -19,13 +19,13 @@
     cursor: pointer;
 }
 .service-title > span:hover::before{
-    background-color: yellow;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    background-color: #FFCD00;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
     position:absolute;
     top: 6px;
-    left: -20px;
+    left: -15px;
     content: "";
 }
 .service-item {
@@ -48,13 +48,13 @@
     cursor: pointer;
 }
 .custom-service-title span:hover::before {
-    background-color: yellow;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    background-color: #FFCD00;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
     position:absolute;
     top: 6px;
-    left: -20px;
+    left: -15px;
     content: "";
 }
 .termsOfUse-section {

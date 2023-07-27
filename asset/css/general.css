@@ -8,7 +8,9 @@ body, div, ul, li {
     font-weight: 400;
     color: #333;
 }
-
+h3 {
+    margin: 0;
+}
 a {
     text-decoration: none;
     color: rgb(51,51,51);

@@ -1,0 +1,51 @@
+footer {
+  padding: 20px 0 30px;
+  margin-top: 100px;
+  border-top: 1px solid #ccc;
+}
+
+footer .inner {
+  flex-direction: column;
+}
+
+footer ul {
+  margin: 0 0 10px;
+  padding: 0;
+  letter-spacing: -1px;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer .inner .board li > a {
+  font-size: 14px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+footer .inner .board li > a:hover {
+  color: var(--color-accent);
+}
+
+footer .inner .info li {
+  color: #999;
+  font-size: 12px;
+}
+
+footer .inner .info li::after {
+  content: '|';
+  margin: 0 6px;
+  color: #ccc;
+}
+
+footer .inner .info li:last-child::after {
+  display: none;
+}
+
+footer .inner p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+  font-weight: 400;
+}

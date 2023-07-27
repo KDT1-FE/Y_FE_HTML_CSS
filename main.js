@@ -40,10 +40,16 @@ toss.im 홈페이지에서 특정 위치에 도달했을 경우,
 /* intro 애니메이션 */
 
 // delay를 주기 위하여 설정, css 단독으로는 animation delay를 줄 수 없음
-setTimeout(()=>{
-    const introContainer = document.querySelector('.intro_container')
-    introContainer.style.display="block"
-},1000)
+
+// netify로 배포를 하였는데, background image 최적화가 덜 되서 그런지 
+// 이미지를 다 불러오기 전에 애니메이션이 실행되는 경우가 있었다. 해결하기위해 window.onload도입
+
+window.onload = ()=>{
+    setTimeout(()=>{
+        const introContainer = document.querySelector('.intro_container')
+        introContainer.style.display="block"
+    },1000)
+}
 
 
 /* home 스크롤 애니메이션 */

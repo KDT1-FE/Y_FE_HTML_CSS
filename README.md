@@ -43,3 +43,8 @@
 3. 다운로드 원하는 이미지 선택
 4. 서브 폴더 이름(Save to subfolder) 명시
 5. 다운로드!
+
+
+Netify를 이용한 배포 : https://kdt0-choiwuhyeok--silver-beijinho-ba5d8e.netlify.app/
+
+Service : https://toss.im

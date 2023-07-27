@@ -8,9 +8,69 @@ body, button, input, main, table, textarea,p {
     margin : 0 auto;
     
 }
-.banner_section {
+.banner_section input[id*="slide"] {
+    display : none;
     
 }
+.banner_section .slide_wrap {
+    margin : 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 480px;
+
+
+}
+.banner_section .slide_list {
+    white-space : nowrap;
+    font-size : 0;
+    padding: 0;
+    max-height: 480px;
+    
+}
+.banner_section .slide_list > li {
+    display : inline-block;
+    vertical-align : middle;
+    width: 100%;
+    transition: all .5s;
+    max-height: 480px;
+    justify-content: center;
+    text-align: center;
+}
+.banner_section .slide_list > li > a {
+    display: block;
+    position: relative;
+}
+.banner_section .slide_list > li > a img {
+    object-fit: contain;
+    width: min-content;
+    max-height: 480px;
+
+}
+.banner_section .slide_list label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.banner_section .slide_list .left{
+    left: 30px;
+    background: url('../assets/arrow_left.svg') center center / 100% no-repeat;
+
+}
+.banner_section .slide_list .right{
+    right: 30px;
+    background: url('../assets/arrow_right.svg') center center / 100% no-repeat;
+
+}
+.banner_section [id="slide01"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(0%); background-color: #f3f9e2;}
+.banner_section [id="slide02"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-100%);background-color: #e0e3e9;}
+.banner_section [id="slide03"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-200%); background-color: #EEF2F5;}
+.banner_section [id="slide04"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-300%);background-color: #faff03;}
+.banner_section [id="slide05"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-400%);background-color: #E1EAF9;}
+
+
 .img_box {
 
 }

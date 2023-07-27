@@ -8,8 +8,7 @@
   text-decoration: none;
 }
 .body {
-  width: 1920px;
-  height: 100%;
-  background-color: pink;
+  height: 100vw;
   display: flex;
+  flex-direction: row;
 }

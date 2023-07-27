@@ -1,0 +1,152 @@
+@media (max-width: 1023px) {
+  .main-brand .main-section__title {
+    margin-bottom: 64rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .aside_top,
+  ul.gnb,
+  .snb a.buy {
+    display: none;
+  }
+  .search-open_btn:hover .search_btn_effect {
+    opacity: 0;
+  }
+  .snb {
+    width: 18%;
+  }
+  .snb a {
+    display: block;
+  }
+  .header a:hover:before {
+    width: 0;
+    height: 0;
+  }
+  .search-open_btn:after {
+    font-size: 5.3vw;
+  }
+  .m_toggle {
+    display: block;
+    width: 6vw;
+    height: 10vw;
+    position: absolute;
+    top: 3vw;
+    right: 5vw;
+    z-index: 550;
+    cursor: pointer;
+  }
+  .m_toggle_btn_line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: #000;
+  }
+
+  .m_toggle_btn_line.line_01 {
+    top: 3vw;
+  }
+
+  @media (max-width: 540px) {
+    .sec,
+    .wd60,
+    .main p {
+      width: 100%;
+    }
+    .more_btn {
+      width: 39vw;
+      height: 12vw;
+      line-height: 12vw;
+      margin: 4vw auto;
+      z-index: 1;
+    }
+
+    .logo_tit {
+      width: 100%;
+    }
+
+    .more_btn span:after {
+      width: 39vw;
+      height: 12.7vw;
+    }
+    .row,
+    .row .txt_box,
+    .row .img_box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .row .txt_box {
+      padding: 4vw;
+    }
+    .max_bone .row {
+      flex-direction: column-reverse;
+    }
+    .main_new .inner {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .main_new .inner .slide {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .main_new .inner .slide figure {
+      width: 47%;
+      box-sizing: border-box;
+      margin-bottom: 5vw;
+    }
+    .main_new .slide figure a {
+      width: 100%;
+    }
+    .main_new .inner figcaption {
+      line-height: 1rem;
+    }
+
+    .insta {
+      flex-wrap: wrap;
+    }
+    .insta ul {
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+      height: 100vw;
+      flex-wrap: wrap;
+    }
+    .insta ul li {
+      width: 47%;
+    }
+    .insta ul li:first-child,
+    .insta ul li:nth-child(2) {
+      margin-bottom: 3vw;
+    }
+    .insta ul li:first-child,
+    .insta ul li:nth-child(3) {
+      margin-left: 3vw;
+    }
+
+    .footer .row {
+      flex-direction: row;
+    }
+    .footer .sns_nav li:last-child > a:after {
+      font-size: 1.3rem;
+    }
+    .footer .bottom .shop_toggle::after {
+      right: -5vw;
+    }
+
+    p,
+    figcaption,
+    .main p {
+      line-height: 1rem;
+    }
+    .aside_top,
+    .main_new .sd_bottom {
+      display: none;
+    }
+  }
+}

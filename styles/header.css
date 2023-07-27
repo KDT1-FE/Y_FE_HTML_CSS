@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'RacingSansOne-Regular.ttf';
-    src: url('../assets/fonts/RacingSansOne-Regular.ttf') format('truetype');
-}
-
 .header {
     width: 100%;
     min-width: 1048px;

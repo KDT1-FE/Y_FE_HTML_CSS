@@ -128,8 +128,7 @@ strong {
   content: "";
   position: absolute;
   width: 0;
-  /* height: 1px; */
-  height: 100%;
+  height: 1px;
   bottom: 0;
   left: 0;
   background-color: black;
@@ -139,9 +138,7 @@ strong {
 
 .nav-list .top a:hover::before {
   width: 100%;
-  /* height: 1px; */
-  height: 100%;
-  background-color: white;
+  height: 1px;
 }
 
 .nav-list .bottom {
@@ -260,6 +257,36 @@ strong {
   height: 56vw;
   padding: 3rem;
   color: white;
+  cursor: pointer;
+}
+
+.card.on-demand:hover > p,
+.card.shared-flights:hover > p {
+  opacity: 1;
+}
+
+.card.on-demand > p,
+.card.shared-flights > p {
+  position: absolute;
+  font-size: 1.3vw;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.card.on-demand > h3 {
+  transition: all 0.3s ease;
+}
+
+.card.on-demand:hover > h3 {
+  transform: translateY(-56px);
+}
+
+.card.shared-flights > h3 {
+  transition: all 0.3s ease;
+}
+
+.card.shared-flights:hover > h3 {
+  transform: translateY(-56px);
 }
 
 .all-solutions {

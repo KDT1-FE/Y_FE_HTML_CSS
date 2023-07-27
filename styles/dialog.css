@@ -53,8 +53,12 @@ dialog::backdrop {
   padding: 5px 30px 80px;
 }
 
+.menu-items{
+  margin-top: 90px;
+}
+
 .menu-items li{
-  height: 45px;
+  height: 40px;
   min-width: 230px;
 
   padding: 4px 8px;
@@ -67,22 +71,9 @@ dialog::backdrop {
 }
 
 .menu-product-text{
+  font-size: 16px;
   font-weight: 600;
-}
-
-.menu-item-more{
-  width: 230px;
-
-  padding: 0;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-item-more svg{
-  width: 16px;
-  height: 16px;
+  letter-spacing: .5px;
 }
 
 .menu-items li:last-child{

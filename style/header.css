@@ -32,6 +32,7 @@ ul {
   .middle-list {
     display: flex; /* 리스트들을 수평으로 나열하기 위해 설정 */
     font-weight: 550;
+    flex-wrap: wrap;
   }
 
 

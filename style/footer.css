@@ -1,0 +1,133 @@
+
+.footer {
+    border-top: 1px solid #eaebee;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center; /* 내부 요소들을 가운데로 정렬 */
+    margin-bottom: 100px;
+    
+}
+
+.footer-main-gotopage-list {
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.footer-main-gotopage {
+    display: flex;
+    margin-top: 70px;
+}
+
+.footer-list {
+    margin-bottom: 30px;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: #212124;
+}
+
+.footer-list a:hover {
+    text-decoration: underline;
+}
+
+.footer-app-down {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.footer-app-down-title-text {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #212124;
+}
+
+
+
+.footer-app-down-gotostore {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-app-down-background {
+    width: 147px;
+    height: 44px;
+    background-color: #f2f3f6;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+
+}
+
+.footer-app-down-ios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-app-down-ios img {
+    width: 27px;
+    height: 25px;
+    margin-left: 10px;
+
+}
+
+.footer-app-down-ios span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 20px; /* 이미지와 텍스트 간격을 5px로 설정 (필요에 따라 조정 가능) */
+}
+
+.footer-app-down-ios-btn {
+    width: 147px;
+    height: 44px;
+    background-color: #f2f3f6;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+}
+
+.footer-app-down-ios-btn:hover {
+    cursor: pointer;
+}
+
+.footer-app-down-ios:hover {
+    opacity: 0.5;
+}
+
+.footer-app-down-android {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-app-down-android img {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+}
+
+.footer-app-down-android span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px; /* 이미지와 텍스트 간격을 5px로 설정 (필요에 따라 조정 가능) */
+}
+
+.footer-app-down-android-btn {
+    width: 147px;
+    height: 44px;
+    background-color: #f2f3f6;
+    border-radius: 6px;
+    border: none;
+}
+
+.footer-app-down-android-btn:hover {
+    cursor: pointer;
+}
+
+.footer-app-down-android:hover {
+    opacity: 0.5;
+}

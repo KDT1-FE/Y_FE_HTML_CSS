@@ -180,9 +180,9 @@ a{
   color: rgb(78, 89, 104);
 }
 
-/* .navbar_lan li:last-of-type{
+.navbar_lan li:last-of-type a{
   color: #b0b8c1;
-} */
+}
 
 
 /* main Start*/

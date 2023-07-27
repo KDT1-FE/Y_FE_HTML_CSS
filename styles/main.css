@@ -2,7 +2,6 @@
   flex-shrink: 1;
   margin-left: 250px;
   width: 100%;
-  background-color: black;
   border-left: 1px solid #1a1a1a;
 }
 .section_music_container {
@@ -50,57 +49,52 @@
   font-size: 1rem;
   color: #cbccce;
 }
-.section_playlist_area {
-  display: grid;
-  grid-template-rows: repeat(4, 300px);
-}
-.section_magazine {
-  height: 10vh;
-}
-.magazine_text_area {
+/* 
+
+
+
+
+ */
+
+.text_container_magazine,
+.text_container_news,
+.text_container_vibe,
+.text_container_pick {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 3rem 0 1rem;
 }
-.slide_image_area1 {
-  display: grid;
-  grid-template-columns: repeat(4, 16rem);
-  grid-template-rows: repeat(4, 16rem);
-  grid-column-gap: 1rem;
+.text_container_magazine h2,
+.text_container_news h2,
+.text_container_vibe h2,
+.text_container_pick h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
-
-.slide_image_area1 img {
+.img_container_magazine ul,
+.img_container_news ul,
+.img_container_vibe ul,
+.img_container_pick ul {
+  display: flex;
+  gap: 1rem;
+}
+.magazine_contents img,
+.vibe_contents img,
+.pick_contents img {
   width: 16rem;
   height: 16rem;
-  background-position: center;
-  background-size: contain;
 }
-.slide_image_area1 h4 {
-  margin: 0.5rem 0;
-  display: block;
+.news_contents img {
+  width: 16rem;
+  height: 10rem;
 }
-.slide_image_area1 h4:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-.slide_image_area1 p {
-  color: #414141;
-  font-weight: 600;
-}
-/* .slide_image_area1 h4:hover {
-  width: 100%;
-  text-decoration: underline;
-  cursor: pointer;
-} */
-.section_news {
-  height: 10vh;
-  /* background-color: green; */
-}
-.section_vibepick_playlist {
-  height: 10vh;
-  background-color: blue;
-}
+
+/* 
+
+
+ */
+
 .section_event {
   height: 10vh;
   background-color: gray;

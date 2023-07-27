@@ -133,3 +133,15 @@
     @content;
   }
 }
+
+@mixin media-small {
+  @media (max-width: 856px) {
+    @content;
+  }
+}
+
+@mixin media-regular {
+  @media (min-width: 857px) {
+    @content;
+  }
+}

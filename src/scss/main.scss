@@ -12,6 +12,9 @@
 header {
   // 환율 정보 섹션
   .exchange__wrap {
+    @include media-small {
+      display: none;
+    }
     color: $white;
     background-color: $main-blue;
     height: 6rem;
@@ -47,105 +50,151 @@ header {
 
   // 네비게이션 영역
   nav {
-    width: 100%;
+    @include media-small {
+      height: 5rem;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: $white;
+      z-index: 50;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
-    .navigation {
-      @include flex-center-row();
-      max-width: 120rem;
-      height: 10rem;
-      flex-wrap: wrap;
-      margin: 0 auto;
+      .navigation {
+        @include flex-center-row();
+        height: 5rem;
 
-      &__logo {
-        flex-basis: 0;
-        flex-grow: 1;
-        padding: 0 1.5rem;
-        display: block;
-        width: 100%;
-        img {
-          max-width: 100%;
+        &__logo {
+          height: 3.2rem;
+
+          img {
+            height: 3.2rem;
+          }
+        }
+        .nav-list {
+          display: none;
+        }
+        .nav-list--small {
+          display: block;
+          position: absolute;
+          left: 0;
+          padding: 1.2rem;
+          cursor: pointer;
+
+          img {
+            width: 2.4rem;
+            height: 2.4rem;
+          }
         }
       }
-      &__container {
-        @include font(montserrat);
-        color: $main-black;
-        font-size: $font-base;
-        padding: 0 1.5rem;
-        line-height: 10rem;
-        margin: 0;
-        position: relative;
+    }
 
-        .nav-list {
-          display: inline-block;
+    @include media-regular {
+      width: 100%;
 
-          &-btn {
-            display: block;
-            line-height: 1;
-            padding: 4.1rem 8rem 2.9rem 0;
-            font-weight: $font-sub;
+      .navigation {
+        @include flex-center-row();
+        max-width: 120rem;
+        height: 10rem;
+        flex-wrap: wrap;
+        margin: 0 auto;
 
-            &:hover {
-              span {
-                color: $main-blue;
-              }
-            }
-            &::after {
-              content: '';
-              display: block;
-              width: 100%;
-              position: relative;
-              height: 2px;
-              margin-top: 1rem;
-              background-color: $main-blue;
-              transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
-              transform: scale3d(0, 1, 1);
-              transform-origin: 100% 50%;
-            }
-            &:hover::after {
-              transform: scale3d(1, 1, 1);
-              transform-origin: 0% 50%;
-            }
-          }
-
-          &.ignoreSpacing {
-            a {
-              padding-right: 0px;
-            }
-          }
+        .nav-list--small {
+          display: none;
         }
 
-        &__product {
-          &--hover {
-            display: none;
+        &__logo {
+          flex-basis: 0;
+          flex-grow: 1;
+          padding: 0 1.5rem;
+          display: block;
+          width: 100%;
+          img {
+            max-width: 100%;
           }
-          &:hover {
-            .product-hover {
+        }
+        &__container {
+          @include font(montserrat);
+          color: $main-black;
+          font-size: $font-base;
+          padding: 0 1.5rem;
+          line-height: 10rem;
+          margin: 0;
+          position: relative;
+
+          .nav-list {
+            display: inline-block;
+
+            &-btn {
               display: block;
-              position: absolute;
-              z-index: 20;
-              font-size: $font-sm;
-              color: $grey700;
-              background-color: $white;
-              min-width: 155px;
-              opacity: 0.9;
-              border-radius: 3px;
-              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-              padding: 1rem 0;
+              line-height: 1;
+              padding: 4.1rem 8rem 2.9rem 0;
+              font-weight: $font-sub;
 
-              &__list {
-                display: block;
-                line-height: normal;
-                padding: 0 1rem;
-                line-height: 1.6rem;
-
-                .hover-menu {
-                  // padding: 1.1rem 3.5rem 1rem;
-                  display: inline-block;
-                  width: 100%;
-                  padding: 1.1rem 3.5rem 1.1rem 1rem;
+              &:hover {
+                span {
+                  color: $main-blue;
                 }
-                .hover-menu:hover {
-                  @include button-hover();
+              }
+              &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                position: relative;
+                height: 2px;
+                margin-top: 1rem;
+                background-color: $main-blue;
+                transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+                transform: scale3d(0, 1, 1);
+                transform-origin: 100% 50%;
+              }
+              &:hover::after {
+                transform: scale3d(1, 1, 1);
+                transform-origin: 0% 50%;
+              }
+            }
+
+            &.ignoreSpacing {
+              a {
+                padding-right: 0px;
+              }
+            }
+          }
+
+          &__product {
+            &--hover {
+              display: none;
+            }
+            &:hover {
+              .product-hover {
+                display: block;
+                position: absolute;
+                z-index: 20;
+                font-size: $font-sm;
+                color: $grey700;
+                background-color: $white;
+                min-width: 155px;
+                opacity: 0.9;
+                border-radius: 3px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+                padding: 1rem 0;
+
+                &__list {
+                  display: block;
+                  line-height: normal;
+                  padding: 0 1rem;
+                  line-height: 1.6rem;
+
+                  .hover-menu {
+                    // padding: 1.1rem 3.5rem 1rem;
+                    display: inline-block;
+                    width: 100%;
+                    padding: 1.1rem 3.5rem 1.1rem 1rem;
+                  }
+                  .hover-menu:hover {
+                    @include button-hover();
+                  }
                 }
               }
             }

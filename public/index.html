@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
@@ -33,7 +33,7 @@
       <h2 class="a11yHidden">네비게이션 영역</h2>
       <nav>
         <section class="navigation">
-          <a href="/" class="navigation__logo"><img src="./assets/images/logo.png" /></a>
+          <a href="/" class="navigation__logo"><img src="./assets/images/logo.png" aria-hidden="true" /></a>
 
           <ul class="navigation__container">
             <li class="navigation__container__company nav-list">
@@ -73,7 +73,24 @@
       <section class="section2"></section>
 
       <!-- company detail 영역 -->
-      <section class="section3"></section>
+      <h2 class="a11yHidden"></h2>
+      <section class="section3">
+        <div class="section3__container">
+          <div class="section3__content">
+            <h3 class="section3__content__name">ArmorBearer</h3>
+            <p class="section3__content__sentence">
+              고객의 가치를 높일 수 있도록 생각하고 실행하고 다양한 이해관계자에게 믿을 수 있는
+            </p>
+            <p class="section3__content__sentence">
+              파트너가 되어 새로운 미래를 창조함으로써 창의적 사고와 끝없는 도전은 계속됩니다.
+            </p>
+            <p class="section3__content__sentence">
+              더불어, 경쟁의 승리가 아니라 함께 나누고 베풀 수 있는 사회적 기업으로도 정진할 것을 약속합니다.
+            </p>
+          </div>
+          <img class="design" src="./assets/images/logo_bg.png" aria-hidden="true" />
+        </div>
+      </section>
 
       <!-- company partners 영역 -->
       <section class="section4"></section>

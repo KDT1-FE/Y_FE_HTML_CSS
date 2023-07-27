@@ -39,7 +39,7 @@ header {
         &__usd,
         &__eur {
           padding-right: 1rem;
-          font-weight: $font-bold;
+          font-weight: $font-bold700;
         }
       }
     }
@@ -50,7 +50,7 @@ header {
     width: 100%;
 
     .navigation {
-      @include flex-center();
+      @include flex-center-row();
       max-width: 120rem;
       height: 10rem;
       flex-wrap: wrap;
@@ -165,12 +165,41 @@ main {
     background-color: pink;
   }
   .section3 {
-    height: 62rem;
-    background-color: greenyellow;
+    &__container {
+      background-image: url(../images/sec3_bg.png);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      color: $white;
+      position: relative;
+      overflow: hidden;
+
+      .section3__content {
+        padding: 21.7rem 0;
+        text-align: center;
+
+        &__name {
+          @include font(montserrat);
+          font-size: $font-xl;
+          margin: 0 0 3rem 0;
+        }
+        &__sentence {
+          margin: 1rem 0;
+          font-size: 17.5px;
+          font-weight: $font-bold500;
+        }
+      }
+      .design {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
   }
   .section4 {
-    height: 30rem;
-    background-color: salmon;
+    height: 29rem;
+    background-color: beige;
   }
 }
 

@@ -215,7 +215,7 @@ const home5EventHandler = ()=>{
 }
 window.addEventListener('scroll',home5EventHandler)
 
-/* home5 아이콘 등장 이벤트 - 이건 이벤트를 지우진 않음 */ 
+/* home5 스크롤에 따른 아이콘 등장 이벤트 - 이건 이벤트를 지우진 않음 */ 
 
 const home5Iphone = document.querySelector('.home5_icon_wrap')
 const home5Images = document.querySelectorAll('.home5_icon_wrap img')
@@ -351,3 +351,56 @@ const home6ScrollHandler = ()=>{
 }
 
 window.addEventListener('scroll', home6ScrollHandler)
+
+/* Home7 스크롤 등장 애니메이션 */
+
+const home7EventHandler = ()=>{
+    const home7Text = document.querySelector('.home7_textwrap')
+    const home7Contents = document.querySelectorAll('.home7_content')
+
+    if(home7Text.getBoundingClientRect().top < windowHeight-200){
+        setTimeout(()=>{
+            home7Text.style.animation = 'appear_from_bottom ease 1.5s'
+            home7Text.style.opacity = 1
+            
+            setTimeout(()=>{
+                home7Contents.forEach(item=>{
+                    item.style.animation = 'appear_from_bottom ease 1.5s'
+                    item.style.opacity = 1
+                })
+                
+            },600)     
+        },200)
+        window.removeEventListener('scroll',home7EventHandler)
+    }
+}
+window.addEventListener('scroll',home7EventHandler)
+
+
+/* Home8 스크롤 등장 애니메이션 */
+
+const home8EventHandler = ()=>{
+    const home8Img = document.querySelector('.home8_container img')
+    const home8Text = document.querySelector('.home8_textwrap')
+    const home8Content = document.querySelector('.home8_content')
+
+    if(home8Img.getBoundingClientRect().top < windowHeight-200){
+        setTimeout(()=>{
+            home8Img.style.animation = 'appear_from_bottom ease 1.5s'
+            home8Img.style.opacity = 1
+            
+            setTimeout(()=>{
+                home8Text.style.animation = 'appear_from_bottom ease 1.5s'
+                home8Text.style.opacity = 1
+
+                setTimeout(()=>{
+                    home8Content.style.animation = 'appear_from_bottom ease 1.5s'
+                    home8Content.style.opacity = 1
+                },600)
+            },600)
+    
+        },200)
+        window.removeEventListener('scroll',home8EventHandler)
+    }
+}
+window.addEventListener('scroll',home8EventHandler)

@@ -989,6 +989,7 @@ a{
 }
 
 .home7_textwrap{
+  opacity: 0;
   margin-bottom: 100px;
 }
 
@@ -1014,6 +1015,7 @@ a{
 }
 
 .home7_content{
+  opacity: 0;
   margin-right: 100px;
   margin-bottom: 100px;
 }
@@ -1073,7 +1075,12 @@ a{
 }
 
 .home8_container img{
+  opacity: 0;
   width: 100%;
+}
+
+.home8_textwrap{
+  opacity: 0;
 }
 
 .home8_textwrap h1{
@@ -1112,6 +1119,7 @@ a{
 }
 
 .home8_content{
+  opacity: 0;
   display:flex;
   justify-content: center;
   align-items: baseline;

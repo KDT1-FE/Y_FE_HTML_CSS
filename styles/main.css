@@ -156,6 +156,7 @@ body, button, input, main, table, textarea,p {
     font-weight : 700;
     color : #222;
     margin : 0;
+    padding-top : 9px;
 }
 .product_content {
     margin : 0px 0px 2px 0px;

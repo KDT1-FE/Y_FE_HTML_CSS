@@ -578,26 +578,39 @@ nav {
 
 /* download */
 .download {
-    background-color: skyblue;
     position: relative;
-    display: block;
     height: 320px;
-    text-align: left;
+    color: #fff;
     padding-top: 80px;
+    text-align: left;
+    background: url("../public/assets/download-backround-image.png") no-repeat 40% 0/cover;;
 }
 
 .download-container {
     position: relative;
     display: block;
     width: 100%;
-    max-width: 946px;
+    max-width: 882px;
     margin: 0 auto;
     padding: 0 32px;
+    font-weight: 300;
 }
 
 .download-buttons {
     display: block;
     text-align: left;
+    height: 55px;
+    font-size: 0;
+}
+
+.download-buttons a+a {
+    margin: 0 0 0 12px;
+}
+
+.download-button {
+    display: inline-block;
+    width: 145px;
+    height: 48px;
 }
 
 

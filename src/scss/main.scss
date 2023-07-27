@@ -122,6 +122,7 @@ header {
             .product-hover {
               display: block;
               position: absolute;
+              z-index: 20;
               font-size: $font-sm;
               color: $grey700;
               background-color: $white;
@@ -157,13 +158,271 @@ header {
 
 main {
   .section1 {
-    height: 80rem;
-    background-color: skyblue;
+    overflow: hidden;
+    position: relative;
+
+    &__container {
+      display: flex;
+      width: 300vw;
+      height: 80rem;
+      margin: 0 auto;
+      transform: translate(0);
+      transition: all 0.5s;
+
+      &__item {
+        height: 100%;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        &.carousel1 {
+          &-item1 {
+            background-image: url(../images/carousel_1/c1.png);
+          }
+          &-item2 {
+            background-image: url(../images/carousel_1/c2.jpg);
+          }
+          &-item3 {
+            background-image: url(../images/carousel_1/c3.jpg);
+          }
+        }
+
+        .carousel__contents {
+          height: 100%;
+          @include flex-center-col();
+          align-items: start;
+          padding: 0 6rem 5rem;
+          margin: 0 3rem;
+
+          .content-box {
+            color: $white;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 2.5rem 0;
+
+            &__title {
+              @include font(montserrat, 700);
+              font-size: 6.4rem;
+              font-weight: 700;
+              line-height: 1.4;
+              margin: 0 0 2.5rem 0;
+            }
+            &__line {
+              height: 0.7rem;
+              width: 13.3rem;
+              margin-bottom: 2.5rem;
+              background-color: $white;
+            }
+            &__txt {
+              font-weight: $font-normal;
+              font-size: $font-sub;
+              margin-bottom: 5rem;
+            }
+
+            .view-box {
+              @include transition-view();
+              font-weight: $font-bold400;
+              top: 5rem;
+            }
+          }
+        }
+      }
+
+      // carousel button
+    }
+
+    .carousel-btns {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      text-align: center;
+      bottom: 2rem;
+
+      &-item {
+        padding: 0;
+        margin: 0 0.2rem;
+        background-color: $c-btn;
+        width: 1rem;
+        height: 1rem;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &.active {
+          width: 4.3rem;
+          background-color: $main-blue;
+          opacity: 1;
+          border-radius: 50px;
+          transition: all 0.3s;
+        }
+      }
+    }
   }
 
   .section2 {
-    height: 97rem;
-    background-color: pink;
+    padding-bottom: 10rem;
+
+    &__container {
+      overflow: hidden;
+      position: relative;
+      padding: 10rem 0 13rem 2rem;
+      margin-left: 7rem;
+
+      &__title {
+        @include font(montserrat, $font-bold700);
+        font-size: $font-lg;
+        margin-bottom: 5rem;
+
+        .section2__title__sentence {
+          margin: 0;
+          line-height: 1.4;
+
+          &:first-child {
+            color: $main-black;
+          }
+          s &:nth-child(2) {
+            color: $main-blue;
+          }
+        }
+      }
+
+      .section2__container__flex {
+        display: flex;
+        width: 900vw;
+        height: 50rem;
+        margin: 0 auto;
+
+        &__item {
+          height: 100%;
+          width: 117rem;
+          margin-right: 3rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+
+          &.carousel2 {
+            &-item1 {
+              background-image: url(../images/carousel_2/trading_bg.png);
+            }
+            &-item2 {
+              background-image: url(../images/carousel_2/construction_bg.png);
+            }
+            &-item3 {
+              background-image: url(../images/carousel_2/tool_bg.png);
+            }
+            &-item4 {
+              background-image: url(../images/carousel_2/interior_bg.png);
+            }
+            &-item5 {
+              background-image: url(../images/carousel_2/fnb_bg.png);
+            }
+            &-item6 {
+              background-image: url(../images/carousel_2/dutyfree_bg.png);
+            }
+            &-item7 {
+              background-image: url(../images/carousel_2/consulting_bg.png);
+            }
+          }
+
+          .carousel-contents {
+            position: relative;
+            height: 100%;
+
+            .content-box {
+              position: absolute;
+              z-index: 20;
+              width: 52rem;
+              height: 21.5rem;
+              padding: 2.4rem;
+              background-color: $white;
+              bottom: -11rem;
+              right: 6.5rem;
+              box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+
+              .icon-box {
+                position: relative;
+                background-color: $main-blue;
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+
+                .carousel-icon {
+                  width: 5.1rem;
+                  height: 5.1rem;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                }
+              }
+
+              p {
+                margin: 0;
+                &:nth-child(2) {
+                  @include font(montserrat, $font-bold700);
+                  font-size: $font-sub;
+                  color: $main-black;
+                  margin-bottom: 1rem;
+                }
+                &:nth-child(3) {
+                  font-size: $font-base;
+                  color: $main-black;
+                }
+              }
+
+              &-arrow {
+                position: absolute;
+                right: 2.4rem;
+                bottom: 7rem;
+                font-size: $font-sub;
+                color: $main-black;
+              }
+
+              &:hover .content-box-arrow {
+                @include keyframes(move2) {
+                  0% {
+                    right: 2.4rem;
+                  }
+                  50% {
+                    right: 2.9rem;
+                  }
+                  100% {
+                    right: 2.4rem;
+                  }
+                }
+                @include animate(move2, 0.7s, linear, infinite);
+              }
+            }
+          }
+        }
+      }
+
+      .section2-move {
+        @include flex-center-row();
+        font-size: $font-base;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: $main-black;
+        border: solid 2px $grey300;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+      .prev {
+        position: absolute;
+        bottom: 38%;
+        left: 0;
+      }
+      .next {
+        position: absolute;
+        bottom: 38%;
+        left: 116rem;
+      }
+    }
   }
 
   .section3 {
@@ -210,8 +469,8 @@ main {
       &__name {
         @include font(montserrat, $font-bold700);
         line-height: 1.4;
-        font-size: $font-lg;
         margin-bottom: 5rem;
+        font-size: $font-lg;
 
         .section4__sentence {
           margin: 0 0;
@@ -292,39 +551,7 @@ main {
             align-items: center;
 
             .view-box {
-              position: relative;
-              font-size: $font-base;
-              padding: 1.8rem 9.5rem 1.8rem 1.9rem;
-              background-color: $white;
-              color: $main-blue;
-
-              &:hover {
-                border: 1px solid $white;
-                background-color: transparent;
-                color: $white;
-                transition: all 0.5s;
-
-                i {
-                  @include keyframes(move) {
-                    0% {
-                      right: 1.9rem;
-                    }
-                    50% {
-                      right: 1.5rem;
-                    }
-                    100% {
-                      right: 1.9rem;
-                    }
-                  }
-                  @include animate(move, 0.7s, linear, infinite);
-                }
-              }
-
-              i {
-                font-size: $font-sub;
-                position: absolute;
-                right: 1.9rem;
-              }
+              @include transition-view();
             }
           }
         }

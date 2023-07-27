@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet" /> -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script defer src="./assets/js/app.js"></script>
   </head>
 
   <body>
@@ -68,13 +69,171 @@
 
     <main>
       <!-- main carousel 영역 -->
-      <section class="section1"></section>
+      <h2 class="a11yHidden">회사 업무 소개 캐러셀</h2>
+      <section class="section1">
+        <div class="section1__container">
+          <div class="section1__container__item carousel1-item1">
+            <div class="carousel__contents">
+              <div class="content-box">
+                <h2 class="content-box__title">TRADING<br />무역대행 업무</h2>
+                <div class="content-box__line"></div>
+                <p class="content-box__txt">수 · 출입 대행서비스 / 구매 대행 서비스</p>
+                <a href="/" class="view-box">VIEW MORE <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section1__container__item carousel1-item2">
+            <div class="carousel__contents">
+              <div class="content-box">
+                <h2 class="content-box__title">Construction Material<br />건설유통 업무</h2>
+                <div class="content-box__line"></div>
+                <p class="content-box__txt">기초 건자재 / 건설 구조재 / 건축 마감재</p>
+                <a href="/" class="view-box">VIEW MORE <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section1__container__item carousel1-item3">
+            <div class="carousel__contents">
+              <div class="content-box">
+                <h2 class="content-box__title">F&B<br />식품류 수출업무</h2>
+                <div class="content-box__line"></div>
+                <p class="content-box__txt">제주도 및 국내산 식료품 수출 / 내수유통 국내 온라인·오프라인</p>
+                <a href="/" class="view-box">VIEW MORE <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-btns">
+          <button type="button" class="carousel-btns-item active" data-num="1"></button>
+          <button type="button" class="carousel-btns-item" data-num="2"></button>
+          <button type="button" class="carousel-btns-item" data-num="3"></button>
+        </div>
+      </section>
 
       <!-- sub carousel 영역 -->
-      <section class="section2"></section>
+      <h2 class="a11yHidden">회사 프로덕트 라인업 소개</h2>
+      <section class="section2">
+        <div class="section2__container">
+          <div class="section2__container__title">
+            <p class="section2__title__sentence">OUR COMPANY</p>
+            <p class="section2__title__sentence">PARTNERS</p>
+          </div>
+          <div class="flex-wrap">
+            <div class="section2__container__flex">
+              <div class="section2__container__flex__item carousel2-item1">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <div class="icon-box">
+                      <img class="carousel-icon" src="./assets/images/icons/trading.png" aria-hidden="true" />
+                    </div>
+                    <p>Trading</p>
+                    <p>무역대행업무</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item2">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <img class="carousel-icon" src="./assets/images/icons/construction.png" aria-hidden="true" />
+                    <p>Construction Material</p>
+                    <p>건설 / 건축자재 유통</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item3">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <img class="carousel-icon" src="./assets/images/icons/tool.png" aria-hidden="true" />
+                  </div>
+                  <p>Tools & Techniques</p>
+                  <p>공구류 유통</p>
+                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item4">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <img class="carousel-icon" src="./assets/images/icons/interior.png" aria-hidden="true" />
+                  </div>
+                  <p>Interior</p>
+                  <p>공간 설계 및 시공</p>
+                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item5">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <img class="carousel-icon" src="./assets/images/icons/fnb.png" aria-hidden="true" />
+                  </div>
+                  <p>F&B</p>
+                  <p>식품류 수출업무</p>
+                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item6">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <img class="carousel-icon" src="./assets/images/icons/dutyfree.png" aria-hidden="true" />
+                  </div>
+                  <p>Duty Free Product</p>
+                  <p>면세물품 공급</p>
+                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item7">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <img class="carousel-icon" src="./assets/images/icons/consulting.png" aria-hidden="true" />
+                  </div>
+                  <p>Consulting</p>
+                  <p>경영컨설팅 및 시장조사</p>
+                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item1">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <div class="icon-box">
+                      <img class="carousel-icon" src="./assets/images/icons/trading.png" aria-hidden="true" />
+                    </div>
+                    <p>Trading</p>
+                    <p>무역대행업무</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section2__container__flex__item carousel2-item2">
+                <div class="carousel-contents">
+                  <div class="content-box">
+                    <img class="carousel-icon" src="./assets/images/icons/construction.png" aria-hidden="true" />
+                    <p>Construction Material</p>
+                    <p>건설 / 건축자재 유통</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section2-move prev"><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="section2-move next"><i class="fa-sharp fa-solid fa-chevron-right"></i></div>
+        </div>
+      </section>
 
       <!-- company detail 영역 -->
-      <h2 class="a11yHidden"></h2>
+      <h2 class="a11yHidden">회사 가치관 소개</h2>
       <section class="section3">
         <div class="section3__container">
           <div class="section3__content">
@@ -94,6 +253,7 @@
       </section>
 
       <!-- company partners 영역 -->
+      <h2 class="a11yHidden">회사 파트너 소개</h2>
       <section class="section4">
         <div class="section4__container">
           <div class="section4__container__name">
@@ -110,6 +270,7 @@
       </section>
 
       <!-- recruit 영역 -->
+      <h2 class="a11yHidden">채용 정보</h2>
       <section class="section5">
         <div class="section5__container">
           <div class="section5__container__wrap">

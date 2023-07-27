@@ -145,7 +145,11 @@
   z-index: 2;
 }
 
-.slide-nav button {
+input[type="radio"] {
+  display: none;
+}
+
+.slide-nav label {
   background-color: silver;
   border: none;
   flex-grow: 1;
@@ -159,7 +163,7 @@
   cursor: pointer;
 }
 
-.slide-nav button :after {
+.slide-nav label :after {
   background: 0 0;
   content: "";
   cursor: pointer;
@@ -170,7 +174,19 @@
   width: 20px;
 }
 
-.slide-nav button:hover {
+input[id="select_box1"]:checked ~ .slide-nav .label1 {
+  background-color: #f9f9f9;
+  opacity: 0.5;
+}
+input[id="select_box2"]:checked ~ .slide-nav .label2 {
+  background-color: #f9f9f9;
+  opacity: 0.5;
+}
+input[id="select_box3"]:checked ~ .slide-nav .label3 {
+  background-color: #f9f9f9;
+  opacity: 0.5;
+}
+input[id="select_box4"]:checked ~ .slide-nav .label4 {
   background-color: #f9f9f9;
   opacity: 0.5;
 }
@@ -199,7 +215,6 @@
 .background {
   background-repeat: no-repeat;
   bottom: 0;
-  /* display: none; */
   left: 0;
   pointer-events: none;
   position: absolute;
@@ -225,6 +240,24 @@
   line-height: 16px;
 }
 
+.select_img {
+  opacity: 0;
+}
+
+/* label 클릭시 이미지 나타내기 */
+input[id="select_box1"]:checked ~ div #imgbox .select1 {
+  opacity: 1;
+}
+input[id="select_box2"]:checked ~ div #imgbox .select2 {
+  opacity: 1;
+}
+input[id="select_box3"]:checked ~ div #imgbox .select3 {
+  opacity: 1;
+}
+input[id="select_box4"]:checked ~ div #imgbox .select4 {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 769px) {
   .slide-nav {
     bottom: 60px;
@@ -236,9 +269,8 @@
     width: 60vw;
   }
 
-  .slide-nav button {
-    height: 2px;
-    justify-content: space-evenly;
+  .slide-nav label {
+    height: 3px;
     width: auto;
   }
 

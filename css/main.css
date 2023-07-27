@@ -1,0 +1,337 @@
+.pr-stage {
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  margin-top: -112px;
+  background: #000;
+}
+
+.visual-area {
+  position: relative;
+  width: 1440px;
+  height: 880px;
+  margin: 0 auto;
+}
+
+.visual-bg-area {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1920px;
+  min-height: 1440px;
+}
+
+.visual-content {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.visual-content .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.visual-content .description {
+  margin-bottom: 48px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.visual-content .btn-group {
+  justify-content: flex-start;
+}
+
+.btn-group a {
+  min-width: 140px;
+  margin-left: 12px;
+  padding: 0 30px;
+}
+
+.btn-group .btn {
+  min-width: 140px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 0 40px;
+  white-space: nowrap;
+}
+
+[class*='btn'] {
+  color: #fff;
+  background-color: #e6007e;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.promotion {
+  position: relative;
+  background: #000;
+}
+.pr-container {
+  width: 100%;
+  height: 880px;
+}
+.visual-bg-area img {
+  position: relative;
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  margin: 0 auto;
+}
+.swiper-button-prev {
+  left: calc(50% - 805px);
+}
+.swiper-button-next {
+  right: calc(50% - 805px);
+}
+.pr-area-control {
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  left: calc(50% - 655px);
+  z-index: 2;
+  transform: translateX(-50%);
+}
+.pr-control__play {
+  display: block;
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  background: url('https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20221019-012553-570-95PaNadE.png')
+    no-repeat 0 0;
+  background-size: 36px;
+}
+.bo-1108-controls__play.is-pause {
+  background: url('https://image.lguplus.com/static/pc-contents/images/fcmm/cnts/imge/20221019-012537-266-ZwCXcITs.png')
+    no-repeat 0 0;
+  background-size: 36px;
+} /* [D] 일시정지 상태 클래스 is-pause */
+
+.swiper-pagination-bullet {
+  vertical-align: bottom;
+  opacity: 0.4;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.swiper-pagination-bullet {
+  border: 0 !important;
+}
+
+.title > a {
+  position: absolute;
+  width: 111px;
+  height: 37px;
+  left: 0;
+  bottom: 29px;
+}
+.swiper-container {
+  padding: 0;
+}
+.swiper-container--empty {
+  display: none;
+} /* [D] 슬라이드 갯수가 0개 일때, .swiper-container가 swiper-container--empty 클래스를 갖음 */
+.swiper-container--alone {
+} /* [D] 슬라이드 갯수가 1개 일때, .swiper-container가 swiper-container--alone 클래스를 갖음 */
+.visual-bg-area {
+  position: absolute;
+  /* width: 100vw; */
+  left: 50%;
+  transform: translate(-50%);
+}
+.p-indv-main .visual-section .visual-area {
+  width: 100%;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.bo-1108 .cl-blue {
+  color: #0090ff;
+  margin-right: 10px;
+}
+.p-indv-main .visual-section .visual-content .title {
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+.visual-content .title > p {
+  font-size: 20px;
+  color: #e6007e;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 54px;
+  width: 24px;
+  height: 93px;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 10;
+  bottom: 150px;
+}
+
+/* EVENT */
+.event {
+  padding: 40px 0 120px;
+  /* background-color: #000; */
+  z-index: -222;
+}
+.event-area {
+}
+
+.event-title {
+}
+.item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-container .item-box {
+  width: 345px !important;
+  height: 564px !important;
+  position: relative;
+  border-radius: 14px;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  border-radius: 14px;
+  /* margin-bottom: 20px; */
+}
+
+.item-container .item-box > a {
+  padding: 32px 36px;
+}
+
+.item-container .item-box a h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.item-container .item-box a .description {
+  font-size: 18px;
+  color: #333;
+}
+
+.item-container .item-box a .thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* PAYMENT */
+.payment {
+  margin-top: 120px;
+}
+
+.payment-title {
+  margin-bottom: 56px;
+  /* opacity: 0; */
+  transform: translate3d(0, 20%, 0);
+  transition: 1s ease-in-out;
+  text-align: center;
+}
+.payment-title h3 {
+  /* line-height: 60px; */
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.payment-container {
+  display: flex;
+}
+
+.payment-container .item-box {
+  position: relative;
+  width: 272px;
+  height: 600px;
+  border-radius: 14px;
+  transition: all 0.5s ease-in-out;
+  margin-right: 20px;
+}
+
+.payment-container .is-scale {
+  width: 564px !important;
+}
+
+.payment-container > .item-box .item-el {
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 3px 30px 1px rgba(0, 0, 0, 0.16);
+}
+
+.payment-container > .item-box .item-el .item-thumb {
+}
+
+.payment-container > .item-box .item-el .item-thumb img {
+}
+
+.item-txt {
+  padding: 24px 32px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.item-txt .title {
+  font-weight: 900;
+  margin-bottom: 12px;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: -2px;
+}
+
+.item-txt .description {
+  margin-top: 4px;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -1.3px;
+}
+
+.youdoc {
+  position: relative;
+  height: 750px;
+  margin-top: 180px;
+  overflow: hidden;
+}
+.youdoc-area {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1440px;
+  height: 750px;
+}
+
+.youdoc-area .title {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.youdoc-area .title h1 {
+}
+
+.youdoc-area .title > a.more {
+}
+
+.youdoc-area .detail-img {
+}
+
+.youdoc-area .detail-img img {
+}

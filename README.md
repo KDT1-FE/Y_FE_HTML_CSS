@@ -11,3 +11,9 @@ https://tourmaline-horse-3cf1e4.netlify.app
 http://kr.battle.net/fourms/static/fonts/koverwatch/koverwatch.ttf    
 다운 후 폰트 변환 사이트에서 eot, woff로 변환 후 사용
 기본 글씨체 : "Poppins",Helvetica,Arial,sans-serif
+
+
+## 사용한 기능
+
+- reset.css, font awesome, JS Swiper, youtube API (스벅 클론코딩 강의 참고)
+JS를 최소한으로 사용해서 구현했습니다.

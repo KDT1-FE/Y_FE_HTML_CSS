@@ -7,12 +7,18 @@
 /* COMMON */
 body {
   font-family: "Poppins",Helvetica,Arial,sans-serif;
+  word-break: keep-all;
+}
+
+a {
+  text-decoration: none;
+  color: #16181f;
 }
 
 .btn {
   display: inline-block;
-  width: 160px;
-  height: 55px;
+  width: 170px;
+  height: 60px;
   padding: 5px;
   border: none;
   background-color: #f06414;
@@ -42,7 +48,7 @@ header {
   border-radius: 10px;
   right: 0;
   left: 0;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 header .inner {
@@ -77,59 +83,104 @@ header .middle .middle__logo > img {
 }
 
 /* 드롭다운 */
-.dropdown {
-  padding: 10px;
-}
-
-.dropdown .dropdown-title {
+header .menu {
   display: flex;
-  justify-content: center;
+}
+
+header .menu > .dropdown {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  font-size: 20px;
+  font-weight: 900;
+  color: #080808;
 }
 
-.dropdown .dropdown-title > li {
-  color: #1d253a;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 16px 20px;
-}
-
-.dropdown .dropdown-title i {
-  font-size: 13px;
-  padding-left: 3px;
-}
-
-.dropdown .dropdown-bar {
-  opacity: 0;
-  display: none;
-  font-weight: 500;
-  margin-top: 20px;
-  position: absolute;
-  z-index: 10;
-  list-style: none;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+header .menu > .dropdown > a {
+  padding: 15px 15px;
+  margin-right: 10px;
   border-radius: 5px;
-  width: 8em;
-}
-
-.dropdown .dropdown-bar > li {
-  padding: 10px;
-}
-
-.dropdown .dropdown-bar > li:hover {
-  background-color: #e7e7e7;
-  border-radius: 5px;
-  font-weight: 600;
   transition: .3s;
 }
 
-.dropdown .title:hover .dropdown-bar{
-  opacity: 1;
-  display: block;
+header .menu > .dropdown > a:hover {
+  background-color: #c7c7c7
 }
+
+header .menu > .dropdown > a i {
+  font-size: 14px;
+}
+
+header .dd-basket {
+  visibility: hidden;
+  opacity: 0;
+  width: 290px;
+  padding: 10px 20px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: calc(100% + 4px);
+  transition: .4s;
+}
+
+header .dd-basket.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+header .dd-basket .dd-arrow {
+  width: 20px;
+  height: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: 135px;
+}
+
+header .dd-basket .dd-arrow::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d2d2d2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+
+header .dd-basket .dd-message {
+  font-size: 13px;
+  color: #626262;
+  text-align: center;
+}
+
+header .dd-basket ul {
+  margin-top: 10px;
+}
+
+header .dd-basket ul li {
+  border-radius: 5px;
+}
+
+header .dd-basket ul li:hover {
+  background-color: #e6e6e6
+}
+
+
+header .dd-basket ul li a {
+  display: block;
+  padding: 12px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+
 
 /* hover */
 .mouseover {
@@ -138,9 +189,6 @@ header .middle .middle__logo > img {
   border-radius: 5px;
   transition: .2s;
 }
-
-
-
 
 
 /* 상단바 오른쪽 부분 */
@@ -192,6 +240,71 @@ header .end .play-now:hover {
   cursor: pointer;
 }
 
+header .end .search > .basket {
+  visibility: hidden;
+  opacity: 0;
+  width: 290px;
+  padding: 20px 30px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: calc(100% + 15px);
+  left: -120px;
+  transition: .3s;
+}
+
+header .end .search .basket.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+header .basket .arrow {
+  width: 20px;
+  height: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: 125px;
+}
+
+header .basket .arrow::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d2d2d2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+
+header .basket .message .search-icon {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  color: #c5c5c5;
+  font-size: 15px;
+}
+
+header .basket .message input {
+  border: 2px solid #d2d2d2;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+  padding: 16px 32px;
+  box-sizing: border-box;
+}
+
+header .basket .message input:focus {
+  outline: none;
+  border-color: #f06414;
+}
+
 
 
 
@@ -205,7 +318,7 @@ header .end .play-now:hover {
 
 .youtube .youtube__area {
   width: 1920px;
-  background-color: orange;
+  background-color: rgb(59, 48, 28);
   position: absolute;
   left: 50%;
   margin-left: calc(1920px / -2);
@@ -263,9 +376,17 @@ header .end .play-now:hover {
 .youtube .inner .title .title__text {
   font-family: Koverwatch, sans-serif;
   font-style: italic;
-  font-size: 40px;
+  font-size: 55px;
   color: #fff;
   margin: 30px 0;
+}
+
+.youtube .inner .title .btn {
+  width: 180px;
+  height: 65px;
+  font-size: 23px;
+  letter-spacing: -1px;
+  word-spacing: 2px;
 }
 
 

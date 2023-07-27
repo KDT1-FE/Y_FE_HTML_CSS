@@ -17,6 +17,10 @@ a:hover, button:hover {
     cursor: pointer;
 }
 
+button {
+    border: none;
+}
+
 
 /* nav */
 nav {
@@ -38,10 +42,29 @@ nav {
     color: #111;
     font-size: 16px;
     font-weight: 700;
-    line-height: 56px;
+    line-height: 85px;
     letter-spacing: -.08px;
+    white-space: nowrap;
 }
-
+ 
+.gnb-dim {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none; 
+    top: 85px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+  }
+  
+.navigation-item:hover ~ .gnb-dim {
+    visibility: visible;
+    opacity: 0.6;
+}
+  
 .navigation-logo {
     display: block;
     margin-left: 32px;
@@ -57,6 +80,152 @@ nav {
     color: #19cd8c;
 }
 
+/* hover 시 나타나는 menu */
+
+.lnb-container { 
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    padding: 16px 16px 32px;
+    background: #fff; 
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+}
+
+.navigation-item:hover + .lnb-container {
+    display: flex;
+}
+
+.lnb-container:hover {
+    display: flex;
+}
+
+.gnb-feature-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 218px;
+    padding: 0 16px;
+}
+
+.feature-item-title {
+    width: 100%;
+    color: #111;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -.6px;
+}
+
+.green-text {
+    color: #18cd8c;
+}
+
+.card-feature-item-image-container {
+    margin: 16px 0;
+    display: block;
+    padding: 0;
+}
+
+.gnb-feature-item-button {
+    width: 100%;
+    height: 50px;
+    padding: 12px 23px;
+    color: #fff;
+    border-radius: 10px;
+    background: #18cd8c;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -.005em;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+.vertical-divider {
+    display: block;
+    width: 1px;
+    margin: 0 16px;
+    background: #ededee;
+}
+
+.lnb-category-list {
+    display: flex;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.lnb-category {
+    display: block;
+    width: 210px;
+    margin-right: 40px;
+}
+
+.card-lnb-category-feature-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    white-space: pre;
+    background-color: #f7f7f7;
+    align-items: center;
+}
+
+.card-lnb-category-feature-item-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-weight: 700;
+    row-gap: 4px;
+}
+
+.card-lnb-category-feature-item-title-green {
+    color: #18cd8c;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -.005em;
+    font-weight: 500;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+.card-lnb-category-feature-item-title {
+    color: #333a44;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -.005em;
+    text-align: left;
+    font-weight: 600;
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Droid Sans,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+.card-lnb-category-feature-item-icon {
+    flex: none;
+}
+
+.lnb-category-title {
+    padding: 9px 0;
+    color: #888e99;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -.005em;
+}
+
+.lnb-category-item {
+    padding: 9px 0;
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    word-break: keep-all;
+}
+
+.lnb-category-item:hover {
+    font-weight: 700;
+}
 
 /* slide show */
 .slide-show {

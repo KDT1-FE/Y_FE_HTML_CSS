@@ -23,6 +23,7 @@
   margin: 50px 0 100px;
   position: relative;
   align-items: center;
+  height: 300px;
 }
 
 .menu .menu-description {
@@ -92,6 +93,8 @@
 /* BEST GOODS */
 .goods .inner {
   align-items: start;
+  height: 300px;
+  margin: 50px 0 100px;
 }
 
 /* EVENT */
@@ -119,7 +122,48 @@
 
 .event .inner .event-image > li > a > img {
   width: 100%;
-
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* INSTAGRAM */
+.insta {
+  padding: 60px 0 0;
+}
+
+.insta .inner {
+  position: relative;
+  flex-direction: column;
+  margin: auto;
+}
+
+.insta .inner .title {
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.insta .inner .insta-image {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.insta .inner .insta-image > li {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.insta .inner .insta-image > li > a > img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

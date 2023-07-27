@@ -26,7 +26,7 @@ a {
 }
 a:hover, a:focus {
   color: #000;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
@@ -84,12 +84,6 @@ header .navi-list{
   height:90px;
   line-height: 65px;
 }
-/* .sub-menu {
-  display:flex;
-}
-.sub-menu li {
-  padding-right:60px;
-} */
 header .navi-list .navi-text {
   vertical-align: middle;
   margin: 0;
@@ -105,6 +99,19 @@ header .navi-list .navi-text > a span {
   position: relative;
   color:white;
 }
+header .navi-list .navi-text > a span::before{
+  content: "";
+  position:absolute;
+  bottom:0;
+  width:0%;
+  height:1px;
+  background-color: #2e2b2b;
+  transition: all 0.3s;
+}
+header .navi-list .navi-text > a span:hover:before{
+  width:100%;
+}
+
 header .navi-list .navi-text .sub-menu {
   position: fixed;
   z-index: 9;
@@ -206,6 +213,27 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   margin-right:20px;
   cursor:pointer;
 }
+.text-container .menu li{
+  position:relative;
+}
+.text-container .menu li:first-child .text{
+  font-weight: 700;
+  font-size: 17px;
+  transform: translateY(-3px);
+}
+.text-container .menu li:first-child~li .text::before{
+  content: "";
+  position:absolute;
+  display: inline;
+  bottom:0;
+  width:0%;
+  height:1px;
+  transition:all .3s;
+}
+.text-container .menu li:first-child~li:hover .text::before{
+  background-color: #2e2b2b;
+  width:80%;
+}
 
 /* Products & Select#*/
 /* 슬라이드되는 박스 */
@@ -213,10 +241,15 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 .product-swiper .swiper-slide{
   display: flex;  
 }
-.has-swiper .product-swiper .box1, .box2 {
-  border:1px solid black;
+.has-swiper .box {
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-bottom:1px solid black;
   border-right-color: transparent;
 }
+/* .has-swiper .box:last-child{
+  border-right: 1px solid black;
+} */
 .has-swiper .product-swiper img{
   width:100%;
 }
@@ -261,36 +294,77 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 .half-banner-container{
   display: flex;
   position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+.half-banner-container .half-banner{
+  overflow: hidden;
+  position:relative;
 }
 .half-banner-container img{
   width:100%;
-  opacity: 0.5;
-  position: relative;
-  background-color: black;
+  height:100%;
+  opacity: 0.6;
+  transition: transform .5s;
+}
+.half-banner-container .first:hover img,
+.half-banner-container .second:hover img{
+  transform: scale(1.15, 1.15);
 }
 .half-banner-container .text-area{
   line-height: 1.8;
   position:absolute;
+  left:0;
+  right:0;
+  margin:0px auto;
   bottom: 180px;
   z-index: 9;
   text-align: center;
-  width:50%;
-  margin: 0 auto;
+  color:white;
 }
 .half-banner-container .text-area .sub-title{
   font-size:40px;
   font-weight:700;
 }
 .half-banner-container .btn-shopnow {
-  transform: translateY(-100px);
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+  text-align: center;
   bottom:70px;
+  padding:11px;
   border: 1px solid;
   width: 200px;
   font-size: 15px;
-  padding: 11px;
-  text-align: center;
-  margin:0 auto;
+  color:white;
+  z-index:1;
 }
+.half-banner-container .btn-shopnow:hover{
+  color:black;
+  font-weight: 700;
+  border-color:white;
+  transition: all 0.3s;
+}
+.btn-shopnow::before{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  width:0px;
+  height:100%;
+  content:"";
+  transition: all 0.35s linear;
+  box-sizing: border-box;
+  z-index: -1;
+}
+.btn-shopnow:hover:before{
+  width:100%;
+  background-color: white;
+  color:#2e2b2b;
+}
+
+
 
 /* Stories */
 .stories-container{
@@ -335,8 +409,32 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   margin-left:70px;
   margin-top:30px;
   background-color: white;
+  position:relative;
+  transition: all 0.2s linaer;
+  z-index: 1;
+  cursor: pointer;
 }
-
+.btn-request:hover{
+  color:white;
+  transition: all 0.3s;
+  border-color:black;
+}
+.btn-request::before{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  width:0px;
+  height:100%;
+  content: "";
+  transition: all 0.3s linear;
+  box-sizing: border-box;
+  z-index: -1;
+}
+.btn-request:hover:before{
+  width:100%;
+  background-color: #2e2b2b;
+}
 /* business-solution */
 .business-solution-slider{
   width:100%;
@@ -438,6 +536,7 @@ footer .grid-wrapper{
   position:absolute;
   right:0px;
   top:10px;
+  cursor: pointer;
 }
 .explain-text .icons{
   display: flex;
@@ -447,6 +546,7 @@ footer .grid-wrapper{
 .explain-text .icons img{
   width:20px;
   margin:0px 10px 10px 10px;
+  cursor: pointer;
 }
 .shop-information{
   width:200px;

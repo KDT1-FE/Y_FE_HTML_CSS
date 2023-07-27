@@ -179,7 +179,6 @@ subgrEls.forEach(element => {
   if(element.getAttribute('aria-selected')==='true'){
     previousElement=element;
     element.style.backgroundColor='gray';
-    console.log(element)
   }
   else{
     element.style.backgroundColor='#d9d9d9';
@@ -361,7 +360,48 @@ subgrEls.forEach(element => {
   });
 });
 
+const specific = document.querySelector('.specific_cartype')
+const carimg = document.querySelectorAll('.CarImg')
+const xbtn = document.querySelector('.xbtn')
+const first = document.querySelector('.first')
+const third = document.querySelector('.third')
+const fourth = document.querySelector('.fourth')
 
 
+function stripSpaces(text) {
+  const verticalRegex = /[\r\n\t\v\f ]/g;
+  const noVerticalSpaces = text.replace(verticalRegex, "");
+
+  const horizontalRegex = /[ \t]/g;
+  const noHorizontalSpaces = noVerticalSpaces.replace(horizontalRegex, "");
+
+  return noHorizontalSpaces;
+}
+
+xbtn.addEventListener('click',function(e){
+  specific.style.display='none';
+})
 
 
+const listEl=document.querySelectorAll('.list')
+carimg.forEach(element => {
+    element.addEventListener('click', function(e){
+    specific.style.display='block';
+    first.innerHTML = element.textContent;
+    if (stripSpaces(first.innerHTML)=='Audie-tronGT'){
+      third.setAttribute('src','./image/e1.png')
+      fourth.innerHTML = 'e-tron GT quattro'
+      const newLI = document.createElement('li');
+      newLI.setAttribute('class', 'second');
+
+      newLI.innerHTML = 
+      `
+        <img src="./image/e2.png" alt="" class="third">
+        <span class="fourth">RS e-tron GT</span>
+      `;
+      listEl.forEach(container => {
+        container.appendChild(newLI);
+      });
+    }
+  })
+});

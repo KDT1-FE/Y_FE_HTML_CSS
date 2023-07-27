@@ -1073,3 +1073,64 @@ i.icons {
   transition: .3s;
 }
 
+.specific_cartype {
+  display: none;
+  border-top: 1px solid black;
+  height: auto;
+  width: auto;
+  padding-top: 0!important;
+}
+
+.btnspancontainer {
+  min-height: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.btnspancontainer .xbtn {
+  cursor: pointer;
+}
+
+.first {
+  display: block;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+}
+
+.list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4%;
+  width: 100%;
+  list-style: none;
+}
+
+.second {
+  cursor: pointer;
+}
+
+.third {
+  display: block;
+  height: auto;
+}
+
+.fourth {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.second:hover {
+  transform: scale(1.1);
+  color: gray;
+  text-decoration: underline;
+}

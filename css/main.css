@@ -59,6 +59,7 @@ figcaption::before,
   text-transform: capitalize;
   font-weight: bold;
 }
+.sub_menu a,
 .txt_box,
 p figure,
 .main p,
@@ -178,8 +179,6 @@ figcaption {
 
 .nav {
   width: 62vw;
-  /* background: #ff0; */
-  /* margin-left: 24vw; */
 }
 ul.gnb {
   list-style: none;
@@ -191,13 +190,24 @@ ul.gnb {
   position: relative;
   margin: 0 1.4vw;
 }
-ul.gnb li a {
-  font-size: 1.5vw;
+ul.gnb .gnb_menu {
+  font-size: 1.6vw;
   font-weight: 700;
+  line-height: 4vw;
 }
 .sub_menu {
   display: none;
+  position:absolute;
+  top: 4vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:#000;
+  padding: .5vw;
+  border-radius: 4px;
+  /* width:8vw; */
+
 }
+.sub_menu a{color:#fff; font-size:.9rem;white-space: nowrap;font-weight:500;}
 
 .snb {
   display: flex;
@@ -205,7 +215,8 @@ ul.gnb li a {
   align-items: center;
   font-size: 1.5vw;
 }
-.search-open_btn:after {
+.search_open_btn{position:relative;}
+.search_open_btn:after {
   font-family: "jt-font";
   content: "\e932";
   font-weight: 400;
@@ -214,19 +225,19 @@ ul.gnb li a {
   margin-right: 1.5vw;
   font-size: 2.3vw;
 }
-.search-open_btn:hover .search_btn_effect{ opacity: 1;}
 
 .search_btn_effect{
   display: block;
   width: 1vw;
   position: absolute;
-  top: 52%;
-  left: 84.23%;
-  -webkit-transform: translate(-65%,-100%);
-  -ms-transform: translate(-65%,-100%);
-  transform: translate(-65%,-100%);
+  top: 55%;
+  left: 29%;
+  -webkit-transform: translate(-50%,-100%);
+  -ms-transform: translate(-50%,-100%);
+  transform: translate(-50%,-100%);
   opacity: 0;
 }
+.search_open_btn:hover .search_btn_effect{ opacity: 1;}
 
 .buy::after {
   position: relative;
@@ -239,8 +250,8 @@ ul.gnb li a {
   text-align: center;
   color: #000;
 }
-/* .header a:before{text-align: center;} */
-.header a:hover:before {
+
+.header .gnb_menu:hover:before {
   content: "";
   display: inline-block;
   width: 5px;
@@ -248,11 +259,12 @@ ul.gnb li a {
   background: #000;
   border-radius: 50px;
   position: absolute;
-  top: -1vw;
+  top: 1/42vw;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.5rem;
 }
+
 .header a.buy:before {
   content: "";
   position: absolute;
@@ -265,8 +277,6 @@ ul.gnb li a {
   transition: all 0.3s ease-in-out;
   top: 6.5vw;
 }
-
-
 
 .header a.buy:hover::before {
   visibility: visible;

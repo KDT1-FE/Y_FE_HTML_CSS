@@ -61,7 +61,7 @@ a {
 }
 
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /* HOME SECTION */
@@ -111,7 +111,7 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px 3rem;
+  padding: 40px 0 3rem 40px;
 }
 
 .nav-list .top {
@@ -156,6 +156,7 @@ strong {
 
 .nav-btn {
   display: flex;
+  margin-left: 2rem;
 }
 
 .nav-btn button {
@@ -170,6 +171,12 @@ strong {
   border: none;
   border-radius: 50%;
   font-size: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn button:hover {
+  background-color: #545454;
 }
 
 /* 1024px colums */
@@ -235,10 +242,11 @@ strong {
 .keyword .title {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .keyword .detail {
-  color: #b5b5b5;
+  color: #8c8c8c;
   font-weight: 300;
 }
 
@@ -570,7 +578,23 @@ strong {
   display: flex;
   bottom: 20px;
   right: 20px;
-  gap: 10px;
+}
+
+.slide-btns span {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+}
+
+.left-btn,
+.right-btn {
+  border: none;
+  background-color: transparent;
+  padding: 20px;
+  font-size: 5vw;
+  cursor: pointer;
 }
 
 .airplane-photo {
@@ -644,6 +668,23 @@ strong {
 
 .footer__sections .socials {
   width: 30%;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 10px 10px 0 0;
+  width: 3.5vw;
+  height: 3.5vw;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
 }
 
 .footer__sections .sections {

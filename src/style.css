@@ -681,12 +681,30 @@ nav {
 
 /* contact */
 .contact {  
-    background-color: purple;
     height: 100%;
     padding: 32px 10px;
-    height: 100%;
-    padding: 32px 10px;
+    color: #5c818a;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: -1px;
+    background-color: #f0f6f8;
     text-align: center;
+}
+
+.contact > p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    letter-spacing: -.5px;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+.contact > p > a {
+    text-decoration: underline;
 }
 
 

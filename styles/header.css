@@ -145,13 +145,13 @@
 
 .realtime_keyword {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     margin-left: 15px;
+    align-items: center;
 }
 
 .realtime_keyword span {
     width: 40px;
+    height: 17px;
     text-align: center;
     border: 1px solid #00cd3c;
     border-radius: 10px;
@@ -167,8 +167,10 @@
 
 .keyword_overlay {
     width: 150px;
+    height: 240px;
     border: none;
     margin-left: 7px;
+    margin-top: 195px;
 }
 
 

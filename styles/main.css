@@ -7,6 +7,7 @@
 .main-box {
   max-width: 500px;
   text-align: center;
+  z-index: 1;
 }
 
 .main img {
@@ -121,5 +122,113 @@
   .email-form button {
     border-radius: 0 4px 4px 0;
     margin-top: 0;
+  }
+}
+
+.slide {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.slide-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 18vh;
+  position: absolute;
+  right: 10px;
+  top: 8vh;
+  width: 20px;
+  z-index: 2;
+}
+
+.slide-nav button {
+  background-color: silver;
+  border: none;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  margin: 1px;
+  opacity: 0.2;
+  padding: 0;
+  position: relative;
+  width: 2px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slide-nav button :after {
+  background: 0 0;
+  content: "";
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: -7px;
+  width: 20px;
+}
+
+.slide-nav button:hover {
+  background-color: #f9f9f9;
+  opacity: 0.5;
+}
+
+.slide-btn {
+  position: absolute;
+  top: 26vh;
+  background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/pause-button-marketing.e65891baec28b63b14d9ea9fa159b06e.svg);
+  /* background-image: url(https://static-assets.bamgrid.com/product/disneyplus/images/play-button-marketing.4bb6b792c1ef11092c43de1ead55dea0.svg); */
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  padding-top: 2px;
+  padding-right: 6px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+}
+
+.background {
+  background-repeat: no-repeat;
+  bottom: 0;
+  /* display: none; */
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  background-size: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  .slide-nav {
+    bottom: 60px;
+    flex-direction: row;
+    height: 20px;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+    width: 60vw;
+  }
+
+  .slide-nav button {
+    height: 2px;
+    justify-content: space-evenly;
+    width: auto;
+  }
+
+  .slide-btn {
+    bottom: 53px;
+    right: 15vw;
+    top: auto;
   }
 }

@@ -466,3 +466,19 @@ cursor: pointer;
 #dropdownContent iconify-icon{
     margin: 0 10px;
 }
+
+#dropdownContent > div{
+    transition: background-color 0.3s; 
+}
+
+#dropdownContent > div:hover{
+    background-color: #d0d0d0;
+}
+
+.help > div{
+    transition: background-color 0.3s; 
+}
+
+.help > div:hover{
+    background-color: #d0d0d0;
+}

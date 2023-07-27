@@ -89,6 +89,15 @@
   padding-left: 20px;
 }
 
+@keyframes header_circle_ani {
+  from {
+    transform: translate(50px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
 #header_img {
   display: flex;
   flex-direction: row;
@@ -99,6 +108,16 @@
   width: 510px;
   margin-top: 100px;
   margin-left: 170px;
+  animation: header_circle_ani 1s linear forwards;
+}
+
+@keyframes header_phone_ani {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
 }
 
 #header_phone {
@@ -106,6 +125,7 @@
   width: 520px;
   margin-top: 30px;
   margin-left: 250px;
+  animation: header_phone_ani 1s linear forwards;
 }
 
 #second_info {
@@ -171,12 +191,31 @@
   margin-left: 120px;
 }
 
+@keyframes left_to_right {
+  from {
+    transform: translate(-30px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes right_to_left {
+  from {
+    transform: translate(30px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
 #right_phone {
   width: 190px;
   position: absolute;
   z-index: 2;
   margin-top: 120px;
   margin-left: 370px;
+  animation: right_to_left 1s linear;
 }
 
 #front_phone {
@@ -186,6 +225,7 @@
   z-index: 2;
   margin-top: 80px;
   margin-left: 200px;
+  animation: left_to_right 1s linear;
 }
 
 #connect1 {
@@ -218,6 +258,7 @@
   z-index: 2;
   margin-top: 30px;
   margin-left: 295px;
+  animation: right_to_left 1s linear;
 }
 
 #front_phone2 {
@@ -227,6 +268,7 @@
   z-index: 2;
   margin-left: 140px;
   height: 600px;
+  animation: left_to_right 1s linear;
 }
 
 #third_info_text {
@@ -479,6 +521,15 @@
   margin-right: 15px;
 }
 
+@keyframes last_phone_ani {
+  from {
+    transform: translate(-50%, -40%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
 #last_info_img4 {
   width: 400px;
   position: relative;
@@ -486,6 +537,7 @@
   top: 130px;
   left: 340px;
   transform: translate(-50%, -50%);
+  animation: last_phone_ani 1s linear;
 }
 
 #divider2 {

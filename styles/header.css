@@ -1,23 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: inherit;
-  color: white;
-  list-style: none;
-}
-.body {
-  width: 1920px;
-  height: 100%;
-  background-color: pink;
-  display: flex;
-}
 .header {
-  width: 310px;
+  width: 250px;
   height: 100vh;
   background-color: black;
   position: fixed;
   overflow: none;
+  flex-shrink: 0;
 }
 hr {
   background: #1a1a1a;
@@ -72,7 +59,7 @@ hr {
 }
 .member_p {
   margin: 1.2rem 2.5rem;
-  font-size: 15px;
+  font-size: 13px;
 }
 .member_button_area {
   display: block;

@@ -8,6 +8,9 @@ header {
 
   position: fixed;
   z-index: 1;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 .site-logo{
@@ -78,5 +81,14 @@ header ol a:hover, .site-nav-items-menu:hover, .menu-items li:last-child:hover,
 @media (max-width: 1200px) {
   .site-nav-products, .site-nav-items li:nth-of-type(1), .site-nav-items li:nth-of-type(2) {
     display: none;
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }

@@ -1,8 +1,6 @@
 main{
   min-width: 100vw;
   height: 100vh;
-  
-  scroll-snap-type: y mandatory;
 
   overflow: auto;
   scroll-snap-type: y mandatory;

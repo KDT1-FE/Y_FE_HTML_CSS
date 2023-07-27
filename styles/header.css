@@ -123,6 +123,7 @@ body, button, input, select, table, textarea {
     width : 100%;
     max-width : 1280px;
     height : 44px;
+    min-width: 580px;
 }
 
 .sidebar_link {

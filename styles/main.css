@@ -90,10 +90,6 @@ body, button, input, main, table, textarea, p {
 .banner_section [id="slide04"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-300%);background-color: #faff03;}
 .banner_section [id="slide05"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-400%);background-color: #E1EAF9;}
 */
-
-.img_box {
-
-}
 .img_box div {
     position : relative;
     width : 100%;
@@ -127,9 +123,6 @@ body, button, input, main, table, textarea, p {
     text-align : center;
     justify-content : center;
 
-}
-.grid_section_container div {
-    
 }
 .grid_section_container > div > img {
     text-align : center;
@@ -166,10 +159,8 @@ body, button, input, main, table, textarea, p {
     justify-content: space-between;
 
 }
-.product {
-    position: relative;
-}
 .product_container {
+    min-width: 1129px;
     display : grid;
     position : relative;
     grid-template-columns: repeat(4,minmax(0,1fr));
@@ -194,7 +185,42 @@ body, button, input, main, table, textarea, p {
     bottom: 3px;
     right: 3px;
     z-index: 1;
+    padding: 5px;
     
+}
+.release_day_container {
+    min-width: 30px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    height: 49px;
+    
+}
+.release_month {
+    line-height: 19px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    letter-spacing: -.05px;
+    border-bottom: 2px solid #222;
+    text-align: center;
+    padding-bottom: 2px;
+    margin: 0;
+
+}
+.release_day {
+    padding-top: 2px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    text-align: center;
+    padding: 2px 0;
+    margin: 0;
+
 }
 #title {
     margin : 0px;
@@ -207,7 +233,11 @@ body, button, input, main, table, textarea, p {
     max-width : 291px;
     text-align : start;
 }
-.product img{
+.product_img_container {
+    position: relative;
+
+}
+.product_1 img{ 
     width : 291px;
     height : 291px;
     background-color : #ebf0f5;
@@ -269,7 +299,7 @@ body, button, input, main, table, textarea, p {
 
 }
 hr {
-    max_width : 1280px;
+    max-width : 1280px;
     border: 0;
     background: #dee2e6;
     height : 0.6px;

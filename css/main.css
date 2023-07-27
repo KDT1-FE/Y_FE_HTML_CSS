@@ -445,7 +445,7 @@ ul.gnb .gnb_menu {
   width: 50%;
   margin: 0 auto;
 }
-.main_new .sd_bottom .sd_nav .sd_nav_btn.on {
+.main_new .sd_bottom .sd_nav_btn.on {
   color: #000;
 }
 
@@ -604,6 +604,7 @@ ul.gnb .gnb_menu {
   padding: 12vw 0 0;
   animation: footer-up 1s steps(2) infinite;
   background-size: cover;
+  margin-top: -0.1vw;
 }
 
 @keyframes footer-up {

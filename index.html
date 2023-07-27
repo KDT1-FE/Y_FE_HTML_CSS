@@ -11,7 +11,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    <!-- Swiper JS -->
+
     <script src="./js/main.js"></script>
 </head>
 <body>
@@ -259,10 +263,10 @@
                     </figure>                    
                 </div>       
                 <div class="sd_bottom">
-                    <span class="pager">01/03</span>
+                    <span class="pager"><span id="num">1</span>/5</span>
                     <div class="sd_nav">
-                        <button class="sd_nav_btn pre" onclick=" moveLeft()"></button>        
-                        <button class="sd_nav_btn next on"></button>        
+                        <button class="sd_nav_btn pre" onclick ="count('minus')"></button>                                
+                        <button class="sd_nav_btn next" onclick ="count('plus')"></button>                                
                     </div>
                 </div>
 

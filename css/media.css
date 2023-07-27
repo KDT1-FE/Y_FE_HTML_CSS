@@ -10,7 +10,7 @@
   .snb a.buy {
     display: none;
   }
-  .search-open_btn:hover .search_btn_effect {
+  .search_open_btn:hover .search_btn_effect {
     opacity: 0;
   }
   .snb {
@@ -23,7 +23,7 @@
     width: 0;
     height: 0;
   }
-  .search-open_btn:after {
+  .search_open_btn:after {
     font-size: 5.3vw;
   }
   .m_toggle {

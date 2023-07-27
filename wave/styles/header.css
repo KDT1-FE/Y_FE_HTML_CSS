@@ -13,8 +13,6 @@
   height: 34px;
   padding: 0;
   margin: 0;
-  float: right;
-  margin-right : 70px
   }
 
 .wrap {
@@ -59,32 +57,20 @@ a:active, a:hover {
 
 .header-nav li {
   display: list-item;
-  text-align: -webkit-match-parent;
   float: left;
   
 }
 
-dd, dl, dt, ol, pre, ul {
-  list-style: none;
-}
-
-body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, table, td, textarea, th, ul {
-  margin: 0;
-  padding: 0;
-}
 
 button, input, textarea {
   margin: 0;
   background: transparent;
 }
 
-button, input, select {
-  font-family: NotoSans,sans-serif;
-}
-
 .header-nav ul.nav li.over-parent-1depth {
   position: relative;
 }
+
 .header-nav .header-over-1depth {
   position: absolute;
   top: 30px;
@@ -116,9 +102,8 @@ button, input, select {
   font-size: 12px;
   line-height: 34px;
   color: #a5a5a5;
-  border-right: none;
+  border: none;
 }
-
 
 .dropdown-coupon {
   display: none;
@@ -233,7 +218,6 @@ button, input, select {
   font-weight: 700;
 }
 
-/* search */
 .search {
   position: absolute;
   margin-left: 720px;

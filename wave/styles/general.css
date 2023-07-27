@@ -8,6 +8,10 @@ body, html {
     font-family: NotoSans,sans-serif;
 }
 
+button, input, select {
+    font-family: NotoSans,sans-serif;
+}
+
 body {
     color: #a5a5a5;
 }
@@ -26,3 +30,8 @@ body {
 ui, li {
     list-style: none;
 }
+
+body, button,  li, ol, p, pre, select, textarea,  ul {
+    margin: 0;
+    padding: 0;
+} 

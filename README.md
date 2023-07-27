@@ -9,3 +9,10 @@
 - 우측 하단의 설정(톱니바퀴) 클릭 시 모달을 show 및 hide 하기 위해 JS와 CSS를 적절히 사용하였습니다.
 - 네비게이션 바의 특수 기능을 JS dropdown으로 구현하였습니다.
 - 각 버튼 또는 링크마다 실제 나무위키의 하위 사이트로 이동할 수 있도록 구현하였습니다.
+---
+### 메인페이지
+![1](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/39702832/4793bdae-7641-44b4-8862-def18e48594b)
+### Modal
+![2](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/39702832/e8cdbd7c-d217-4cef-9f61-7d164e20dbc6)
+### Dropdown
+![3](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/39702832/2644dada-056a-4073-a50d-3259c3866665)

@@ -45,6 +45,13 @@ header {
 
 header ol a{
   padding: 4px 8px;
+  transition: .4s;
+}
+
+header ol a:hover, .site-nav-items-menu:hover, .menu-items li:last-child:hover, 
+.menu-close-icon:hover{
+  border-radius: 3px;
+  background-color: #b3b9bc4b;
 }
 
 .site-nav li span{
@@ -63,6 +70,9 @@ header ol a{
   box-sizing: content-box;
 
   font-size: 14px;
+  cursor: pointer;
+
+  transition: .4s;
 }
 
 @media (max-width: 1200px) {

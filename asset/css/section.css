@@ -190,9 +190,12 @@
 
 .title-container {
     margin-top: 13px;
-    height: 92px;
     font-size: 32px;
     letter-spacing: -1px;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 .title-container > a {
     color: #000;
@@ -441,6 +444,11 @@
     color: #000;
     cursor: pointer;
 }
+.stock-span {
+    display:block;
+    font-size:40px;
+    margin-top: 15px;
+}
 .stt {
     width: 50px;
     height: 50px;
@@ -455,4 +463,267 @@
     bottom: 80px;
     float: right;
     cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .text {
+        padding-top: 96px;
+        font-size: 36px;
+        padding-left: 120px;
+        color: #000;
+    }
+    .calendar {
+        background-size: 108px;
+    }
+    .section-container {
+        width: 952px;
+        height: auto;
+    }
+    .article-container {
+        height: 1674px;
+        height: auto;
+    }
+    .item-big-container {
+        width: 67%;
+        height: 1193px;
+        position: sticky;
+        top: 100px;
+    }
+    .item-small-container {
+        width: 33%;
+        display:block;
+    }
+    .item-small-box:nth-child(n+2) {
+        margin-top: 36px;
+    }
+    .culture-img-wrap {
+        width: 100%;
+        height: auto;
+        margin: 50px auto 0;
+    }
+    
+    .item-2 .item-small-box {
+        position: static !important;
+    }
+    strong br {
+        display: none;
+    }
+    .shortcut-wrap-1 .shortcut-img {
+        width: 130px;
+        height: 130px;
+    }
+    .shortcut-wrap-2 .shortcut-img {
+        width: 251px;
+        height: 130px;
+    }
+}
+@media (max-width: 1024px) {
+    .text {
+        padding-top: 96px;
+        font-size: 30px;
+        padding-left: 96px;
+        color: #000;
+    }
+    .calendar {
+        background-size: 84px;
+    }
+    .section-container {
+        width: 630px;
+        height: auto;
+    }
+    .article-container {
+        display: block;
+        height: auto;
+    }
+    .item-big-container {
+        width: 100%;
+        position: static;
+    }
+    .item-small-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+    .item-small-box {
+        margin-top: 36px;
+    }
+    .culture-container {
+        height: auto;
+        padding-bottom: 38px;
+    }
+    .culture-img-wrap {
+        width: 420px;
+        height: 420px;
+        background-image: url("../img/item/culture-2.png");
+        background-size: 420px 420px;
+    }
+    .culture-img-wrap img {
+        display: none;
+    }
+    .subscribe-container {
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+    .subscribe-list {
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .item-2 .article-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .item-2 .item-small-container {
+        position: relative;
+        height: 1788px;
+    }
+    .item-2 .item-small-box {
+        position: absolute !important;
+        margin-top: 0;
+    }
+    .item-2 .item-small-box:nth-child(n+3) {
+        margin-top: 36px;
+    }
+    .item-2 .item-big-container {
+        height: auto !important;
+        margin-bottom: 36px;
+    }
+    .sticky {
+        position: static;
+    }
+    .shortcut-container {
+        display: block;
+        height: auto;
+    }
+    .half-box {
+        width: 100%;
+        margin-bottom: 36px;
+    }
+    .shortcut-wrap-1 .shortcut-img {
+        width: 130px;
+        height: 130px;
+    }
+    .shortcut-wrap-2 .shortcut-img {
+        width: 251px;
+        height: 130px;
+    }
+    strong br {
+        display: inline;
+    }
+    .notice-container {
+        margin-bottom: 152px;
+    }
+    .stt {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 766px) {
+    .header-container {
+        padding: 0px 24px;
+    }
+    .text {
+        padding-top: 96px;
+        font-size: 28px;
+        padding-left: 92px;
+        color: #000;
+    }
+    .calendar {
+        background-size: 80px;
+    }
+    .item {
+        padding-top: 50px;
+    }
+    .section-container {
+        width: 412px;
+        padding: 0px 24px;
+    }
+    .title-container {
+        font-size: 26px;
+    }
+    .item-big-container {
+        height: auto;
+    }
+    .item-big-box {
+        height: auto;
+    }
+    .item-big-box img {
+        position: relative;
+        top:5px;
+        border-radius: 0px 0px 14px 14px;
+        max-width: 364px; /* 부모 요소의 너비를 넘지 않도록 최대 너비 제한 */
+    }
+    .item-small-box {
+        width: 100%;
+    }
+    .title-container-small{
+        height: auto;
+        font-size: 26px;
+    }
+    .item-small-box img {
+        margin-top: 32px;
+        width: 364px; /* 부모 요소의 너비를 넘지 않도록 최대 너비 제한 */
+        height: 160px;
+        margin-left: -24px;
+        border-radius: 0px 0px 14px 14px;
+    }
+    .culture-text {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .culture-img-wrap {
+        width: 260px;
+        height: 260px;
+        background-image: url("../img/item/culture-2.png");
+        background-size: 260px 260px;
+    }
+    .subscribe-text {
+        display: block;
+        font-size: 26px;
+    }
+    .item-2 .item-btn {
+        display: none;
+    }
+    .item-2 .item-small-box {
+        position: static !important;
+    }
+    .item-2 .item-small-box:nth-child(n+2) {
+        margin-top: 36px;
+    }
+    
+    .item-2 .item-small-container {
+        height: auto;
+    }
+    .stock-span {
+        display: inline-block;
+    }
+    .shortcut-wrap-1 .shortcut-img {
+        width: 140px;
+        height: 140px;
+    }
+    .shortcut-wrap-2 .shortcut-img {
+        width: 270px;
+        height: 140px;
+    }
+    .half-box {
+        height: 484px;
+    }
+    body {
+        overflow-x: hidden;
+    }
 }

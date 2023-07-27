@@ -123,7 +123,7 @@ header {
               display: block;
               position: absolute;
               font-size: $font-sm;
-              color: $grey;
+              color: $grey700;
               background-color: $white;
               min-width: 155px;
               opacity: 0.9;
@@ -198,8 +198,56 @@ main {
     }
   }
   .section4 {
-    height: 29rem;
-    background-color: beige;
+    padding: 10rem 0 7rem 0;
+
+    &__container {
+      max-width: 120rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+
+      &__name {
+        @include font(montserrat, $font-bold700);
+        line-height: 1.4;
+        font-size: $font-lg;
+        margin-bottom: 5rem;
+
+        .section4__sentence {
+          margin: 0 0;
+        }
+        .section4__sentence:first-child {
+          color: $main-black;
+        }
+        .section4__sentence:nth-child(2) {
+          color: $main-blue;
+        }
+      }
+
+      &__content {
+        margin-bottom: 3rem;
+        display: flex;
+
+        .section4__box {
+          position: relative;
+          transition:
+            transform 650ms ease-in-out,
+            filter 650ms ease-in-out;
+
+          &__img {
+            border: 1px solid $grey300;
+          }
+          &__link {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+          &:hover {
+            transform: scale3d(1.1, 1.1, 1);
+          }
+        }
+      }
+    }
   }
 }
 

@@ -14,7 +14,6 @@ const headerText = document.querySelectorAll(".site-nav li span");
 const BLACK = "#171A20"
 const WHITE = "#F9F8F8"
 
-// main의 scroll event를 listen하여,
 // 실시간 사용자 스크롤의 위치가 첫 페이지에 있다면 header 로고와 글자 색을 WHITE, 아니면 BLACK으로 변경
 main.addEventListener("scroll", (event) => {
   let userScroll = main.scrollTop;

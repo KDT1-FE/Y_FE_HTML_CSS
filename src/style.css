@@ -710,16 +710,10 @@ nav {
 
 /* footer */
 footer {
-    background-color: pink;
     display: block;
     width: 100%;
     padding: 71px 0 88px;
-}
-
-.footer-container {
-    display: flex;
-    max-width: 946px;
-    margin: 0 auto;
+    background: #fff;
 }
 
 .footer-services-container {
@@ -734,9 +728,46 @@ footer {
     flex: 1;
 }
 
+.footer-logo {
+    display: block;
+    width: 207px;
+    height: 33.23px;
+    background: url("../public/assets/footer-logo.svg");
+    font-size: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .footer-download {
     display: flex;
     flex-direction: column;
+    text-align: left;
+}
+
+.footer-download > a {
+    display: inline-block;
+    color: transparent;
+    font-size: 0;
+}
+
+.apple-download {
+    display: block;
+    width: 120px;
+    height: 40px;
+    background: url("../public/assets/app-store-icon.svg") no-repeat;
+    margin-top: 32px;
+    background-size: 100%;
+    background-position: 0;
+}
+
+.google-download {
+    display: block;
+    width: 135.51px;
+    height: 45px;
+    background: url("../public/assets/google-play-icon.svg") no-repeat;
+    margin-top: 7px;
+    background-size: 100%;
+    background-position: 0;
 }
 
 .footer-links {
@@ -745,12 +776,44 @@ footer {
 }
 
 .footer-best, .footer-banksalad {
-    display: flex;
-    flex-direction: column;
+    float: left;
+    display: block;
 }
 
 .footer-best {
     margin-right: 128px;
+}
+
+.menu-title {
+    display: block;
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.site-list {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0;
+}
+
+.link {
+    display: block;
+    color: #555b66;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.list-label {
+    color: #18cd8c;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+.footer-services-container + .footer-information-container {
+    margin: 92px auto 0;
+    padding: 24px 0;
 }
 
 .footer-information-container {
@@ -759,15 +822,58 @@ footer {
     margin: 0 auto;
 }
 
-.footer-guide {
+.legal {
+    display: block;
+    width: 100%;
+}
+
+.policies {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-company {
-    display: inline;
+.policies > li {
+    line-height: 0;
+}
+
+.policies > li > a {
+    color: #555b66;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.copyright {
+    display: block;
+    margin: 25px 0 0;
+    color: #888e99;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.copyright > span { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    letter-spacing: -.5px;
+    vertical-align: baseline;
+    text-decoration: none;
+    word-break: keep-all;
 }
 
 .email-address {
     display: inline;
+    text-decoration: underline;
+}
+
+.pre-wrap {
+    white-space: pre-wrap;
 }

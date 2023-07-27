@@ -575,7 +575,23 @@ strong {
 }
 
 .message h2 {
+  position: relative;
   font-size: 9vw;
+}
+
+.message h2::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.message h2:hover::before {
+  width: 100%;
 }
 
 .message p {

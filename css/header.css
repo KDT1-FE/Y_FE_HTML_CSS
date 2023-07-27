@@ -22,6 +22,43 @@ h1 {
     border-radius: 8px;
 }
 
+.nav-item ul {
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item ul div {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    background-color: #ff4656;
+    border-radius: 2px;
+}
+
+.nav-item ul li {
+    width: 168px;
+    height: 35px;
+    /* margin: auto; */
+}
+
+
+.nav-item ul li a {
+    display: grid;
+    padding: 8px 16px;
+    width: 82%;
+    height: 45%;
+    font-weight: 500;
+    color: #c7c7c7;
+    background-color: #44444400;
+    border-radius: 2px;
+    text-transform: capitalize;
+}
+
+.nav-item ul li a:hover {
+    background-color: #444444;
+}
+
 .nav-a:hover .underline {
     background-color: #ff4656;
 }
@@ -52,6 +89,129 @@ header {
     position: relative;
     height: 80px;
 }
+
+
+.game-infomation {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 0 0 2px 2px;
+    width: 200px;
+    height: 150px;
+    top: 70px;
+    opacity: 0;
+    /* 초기에는 숨김 처리 */
+    visibility: hidden;
+    /* 초기에는 숨김 처리 */
+}
+
+.nav-item:hover .game-infomation {
+    opacity: 1;
+    /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+    visibility: visible;
+    /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
+.nav-item:hover .nav-a .p {
+    background-color: #8080804D;
+    /* 게임 정보 p 태그에 hover 효과를 부여 */
+}
+
+.game-news {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 0 0 2px 2px;
+    width: 200px;
+    height: 330px;
+    top: 70px;
+    opacity: 0;
+    /* 초기에는 숨김 처리 */
+    visibility: hidden;
+    /* 초기에는 숨김 처리 */
+}
+
+.nav-item:hover .game-news {
+    opacity: 1;
+    /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+    visibility: visible;
+    /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
+.game-support {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 0 0 2px 2px;
+    width: 200px;
+    height: 150px;
+    top: 70px;
+    opacity: 0;
+    /* 초기에는 숨김 처리 */
+    visibility: hidden;
+    /* 초기에는 숨김 처리 */
+}
+
+
+.nav-item .game-event li a {
+    height: 70%;
+}
+
+
+.nav-item:hover .game-support {
+    opacity: 1;
+    /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+    visibility: visible;
+    /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
+.game-event{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 0 0 2px 2px;
+    width: 200px;
+    height: 199px;
+    top: 70px;
+    opacity: 0;
+    /* 초기에는 숨김 처리 */
+    visibility: hidden;
+    /* 초기에는 숨김 처리 */
+}
+
+.nav-item:hover .game-event {
+    opacity: 1;
+    /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+    visibility: visible;
+    /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
+.game-sns {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #292929;
+    border-radius: 0 0 2px 2px;
+    width: 200px;
+    height: 231px;
+    top: 70px;
+    opacity: 0;
+    /* 초기에는 숨김 처리 */
+    visibility: hidden;
+    /* 초기에는 숨김 처리 */
+}
+
+.nav-item:hover .game-sns {
+    opacity: 1;
+    /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+    visibility: visible;
+    /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
 
 .nav-a {
     height: 100%;
@@ -146,6 +306,7 @@ header {
 .right-section {
     display: flex;
     height: 100%;
+    width: 256px;
     align-items: center;
     justify-content: center;
     padding-right: 32px;
@@ -159,6 +320,15 @@ header {
     width: 22px;
     height: 27px;
     color: #f9f9f9;
+}
+
+
+.lang > a > i{
+    align-items: center;
+    justify-content: center;
+    /* width: 32px;
+    height: 32px;
+    background-color: #c7c7c7; */
 }
 
 .playnow_btn {

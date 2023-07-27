@@ -255,10 +255,116 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   border-bottom: 1.2rem solid #fff;
+  cursor: pointer;
 }
 
 /* PRODUCTS GRID */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: calc((126.2rem * 2) + 12px);
+  margin: auto;
+}
+.grid-item {
+  background-color: #333;
+  /* 가운데 gap이 두꺼워지는 것을 줄이기위해 */
+  flex-basis: calc(50% - 6px); /* 12px 간격을 반으로 나누어 양쪽 아이템에 적용 */
+  height: 58rem;
+  max-width: 126.2rem;
+  margin-bottom: 12px; /* 세로 간격은 12px 유지 */
+  cursor: pointer;
+}
+.grid-item .title .title-heading {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.grid-item .title .title-sub-heading {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+.grid-item .cta .cta-link {
+  font-size: 1.7rem;
+}
+.grid-item:nth-child(1) {
+  background: url('../images/product_grid1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item:nth-child(2) {
+  background: url('../images/product_grid2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item .watch-text {
+  margin: auto;
+}
+.grid-item:nth-child(3) {
+  background: url('../images/product_grid3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item .ipad-pro-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item .ipad-pro-text .m2-image {
+  padding-top: 100px;
+}
+.grid-item:nth-child(4) {
+  background: url('../images/product_grid4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item:nth-child(5) {
+  background: url('../images/product_grid5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item:nth-child(6) {
+  background: url('../images/product_grid6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* APPLE TV PLUS */
+.apple-tv-plus {
+  max-width: 256rem;
+  max-height: 70.525rem;
+  overflow: hidden; /* 양쪽 2560rem 이상의 이미지는 잘려서 보이도록 설정 */
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+}
+.swiper-wrapper {
+  max-height: 66.725rem;
+  display: flex;
+  transition: transform 0.3s ease; /* 슬라이드 애니메이션을 위한 transition 추가 */
+}
+.swiper-slide {
+  max-width: 125rem;
+  max-height: 66.725rem;
+  opacity: 0.5;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 비율 유지하며 채워지도록 설정 */
+}
+.swiper-slide-active {
+  opacity: 1; /* 가운데 아이템은 active 상태로 opacity를 1로 설정 */
+}
+.swiper-pagination {
+  bottom: 400px;
+  /* left: 0;
+  right: 0; */
+}
 
 /* FOOTER */

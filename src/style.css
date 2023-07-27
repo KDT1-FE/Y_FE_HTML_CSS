@@ -85,22 +85,17 @@ nav {
     vertical-align: top;
 }
 
-/* #lowest-loan-rates-banner, #app, #curation, #card */
-#lowest-loan-rates-banner, #app, #curation {
-    display: none;
-}
-
 #lowest-loan-rates-banner {
     background: #eff5ff;
 }
 
 .lowest-loan-rates-banner-section {
     position: relative;
-    z-index: 999;
+    /* z-index: 999; */
     display: flex;
     width: 100%;
+    height: 236px;
     max-width: 946px;
-    height: 100%;
     margin: 0 auto;
     padding: 122px 0;
     white-space: pre-wrap;
@@ -179,7 +174,6 @@ nav {
     display: block;
     width: 100%;
     max-width: 906px;
-    height: 100%;
     margin: 0 auto;
     padding: 130px 20px 0;
 }
@@ -349,7 +343,7 @@ nav {
     line-height: 21px;
 }
 
-.navagation-button-wrap {
+.navigation-button-wrap {
     position: absolute;
     top: auto;
     right: auto;
@@ -362,13 +356,13 @@ nav {
     list-style: none;
 }
 
-.navagation-button-wrap > li {
+.navigation-button-wrap > li {
     display: inline-block;
     vertical-align: top;
     margin: 0 0 0 12px;
 }
 
-.navagation-button {
+.navigation-button {
     margin: 0;
     padding: 0;
     display: block;
@@ -380,6 +374,19 @@ nav {
     background: #fff;
     font-size: 0;
     transition: all .3s ease;
+}
+
+.active-navigation-button {
+    display: block;
+    width: 8px;
+    height: 8px;
+    color: transparent;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 0;
+    transition: all .3s ease;
+    width: 36px;
+    opacity: 1;
 }
 
 

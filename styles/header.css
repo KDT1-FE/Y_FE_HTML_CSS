@@ -121,10 +121,8 @@ body, button, input, select, table, textarea {
 .nav {
     position : relative;
     width : 100%;
-    height : 44px;
     max-width : 1280px;
-    
-
+    height : 44px;
 }
 
 .sidebar_link {
@@ -132,16 +130,25 @@ body, button, input, select, table, textarea {
     padding : 0px 40px;
     
 }
-#rapbeat {
-    color : #0E80FF;
+#event_link {
+    color : #0000EF;
 
 }
 .sidebar_link li {
     float: left;
     color: #222222;
     font-size : 16px;
-    padding : 0px  20px 6px 0px;
+    padding : 0px  27px 6px 0px;
+    margin-bottom: 2px;
     
 }
+#selected ::after {
+    content: "";
+    display: block;
+    width: 32px;
+    border-bottom: 2px solid #000000;
+    margin: 7px 0px;
+}
+
 
 

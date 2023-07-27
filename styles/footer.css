@@ -138,11 +138,13 @@ body, button, input, select, table, textarea {
     font-size: 12px;
     letter-spacing: -.06px;
     font-weight: 700;
+    margin: 0;
 }
 .notice_content {
     color: #22222280;
     font-size : 12px;
     max-width: 750px;;
+    margin: 4px 0 8px 0 ;
 
 
 }

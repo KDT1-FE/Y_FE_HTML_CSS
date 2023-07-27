@@ -12,8 +12,6 @@
 
 <body>
     <div>
-
-
         <div class="container">
             <header class="header">
                 <div class="top_section">
@@ -59,10 +57,9 @@
             <nav class="nav">
                 <div class="nav_container">
                     <ul class="sidebar_link">
-                        <li><a id="rapbeat">RAPBEAT</a></li>
-                        <li><a>추천</a></li>
-                        <li><a>명품</a></li>
-                        <li><a>랭킹</a></li>
+                        <li><a id="event_link">썸머바캉스</a></li>
+                        <li><a id="selected"><strong>추천</strong></a></li>
+                        <li><a id="ranking">랭킹</a></li>
                         <li><a>럭셔리</a></li>
                         <li><a>남성</a></li>
                         <li><a>여성</a></li>
@@ -165,12 +162,13 @@
                         <p id="sub_title">발매 상품</p>
                 </div>
                 <div class="product_container">
-                    <div class="product_1">
+                    <div class="product">
                         <img id="product_img" src="assets/home_product_1.png">
                         <h6 class="product_name">Nike</h6>
                         <p class="product_content">Nike Air Force 1 '07 Mid Light Bone and Phantom</p>
                         <p class="product_price"><strong>185,000원</strong></p>
                         <p class="price_feat">즉시 구매가</p>
+                        <svg class="bookmark_icon" xmlns="http://www.w3.org/2000/svg" id="i-ico-wish-off" viewBox="0 0 22 20" fill="none"><path d="M3 1.5a.5.5 0 01.5-.5h16a.5.5 0 01.5.5v17.541a.5.5 0 01-.786.41l-7.428-5.186a.5.5 0 00-.572 0L3.786 19.45a.5.5 0 01-.786-.41V1.5z"></path><path d="M3.6 18.85V1.6h15.8v17.25l-7.27-5.077a1.1 1.1 0 00-1.26 0L3.6 18.849zm-.157.109s0 0 0 0h0z" stroke="#222" stroke-opacity=".8" stroke-width="1.2"></path></svg>
                     </div>
                     <div class="product_2">
                         <img id="product_img" src="assets/home_product_2.webp">
@@ -358,13 +356,58 @@
             </section>
             <section class="banner_section_not_move">
                 <div class="banner">
+                    <img src="assets/banner_10.webp">
+                </div>
+            </section>
+            <section class="new_in_section">
+                <div class="container_title">
+                    <h3 id="title">New In</h1>
+                        <p id="sub_title">신규 등록 상품</p>
+                </div>
+                <div class="product_container">
+                    <div class="product_1">
+                        <img id="product_img" src="assets/new_in_1.png">
+                        <h6 class="product_name">Marine Serre</h6>
+                        <p class="product_content">Marine Serre Moonwalk Sneaker Black</p>
+                        <p class="product_price"><strong>499,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_2">
+                        <img id="product_img" src="assets/new_in_2.jpg">
+                        <h6 class="product_name">Golden Dew</h6>
+                        <p class="product_content">Golden Dew Timeless 1P D Ring White Gold</p>
+                        <p class="product_price"><strong>1,329,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_3">
+                        <img id="product_img" src="assets/new_in_3.jpg">
+                        <h6 class="product_name">Korean Air</h6>
+                        <p class="product_content">Korean Air Teddy Bear Keyring Cabin Crew</p>
+                        <p class="product_price"><strong>85,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_4">
+                        <img id="product_img" src="assets/new_in_4.jpg">
+                        <h6 class="product_name">Dior</h6>
+                        <p class="product_content">Dior Rounge Blush 212 Tutu (Korean Ver.)</p>
+                        <p class="product_price"><strong>-</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                </div>
+
+                <div class="more_btn">
+                    <button>더보기</button>
+                </div>
+            </section>
+            <section class="banner_section_not_move">
+                <div class="banner">
                     <img src="assets/banner_prada.webp">
                 </div>
             </section>
 
             <section class="prada_product">
                 <div class="container_title">
-                    <h3 id="title">Mpdern Luxury</h1>
+                    <h3 id="title">Modern Luxury</h1>
                         <p id="sub_title">인기 프라다 컬렉션</p>
                 </div>
                 <div class="product_container">
@@ -398,6 +441,175 @@
                     </div>
                 </div>
 
+                <div class="more_btn">
+                    <button>더보기</button>
+                </div>
+
+            </section>
+            <section class="banner_section_not_move">
+                <div class="banner">
+                    <img src="assets/banner_12.webp">
+                </div>
+            </section>
+            <section class="identity_section">
+                <div class="container_title">
+                    <h3 id="title">Unique Identity</h1>
+                        <p id="sub_title">일본 브랜드만의 독보적 감성</p>
+                </div>
+                <div class="product_container">
+                    <div class="product_1">
+                        <img id="product_img" src="assets/identity_1.jpg">
+                        <h6 class="product_name">Hysteric Glamour</h6>
+                        <p class="product_content">Hysteric Glamour x P.A.M PAM Eyes T-Shirt White</p>
+                        <p class="product_price"><strong>159,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_2">
+                        <img id="product_img" src="assets/identity_2.jpg">
+                        <h6 class="product_name">Comme des Garcons</h6>
+                        <p class="product_content">Comme des Garcons Round No.2 Aoyama Bag Black</p>
+                        <p class="product_price"><strong>790,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_3">
+                        <img id="product_img" src="assets/identity_3.png">
+                        <h6 class="product_name">Auralee</h6>
+                        <p class="product_content">Auralee Washed Finx Twill Shirts White - 22SS</p>
+                        <p class="product_price"><strong>450,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_4">
+                        <img id="product_img" src="assets/identity_4.jpg">
+                        <h6 class="product_name">Needles</h6>
+                        <p class="product_content">Needles Straight Track Pants Poly Smooth Black</p>
+                        <p class="product_price"><strong>435,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                </div>
+
+                <div class="more_btn">
+                    <button>더보기</button>
+                </div>
+
+            </section>
+            <section class="banner_section_not_move">
+                <div class="banner">
+                    <img src="assets/banner_13.webp">
+                </div>
+            </section>
+            <section class="luxury_section">
+                <div class="container_title">
+                    <h3 id="title">My First Luxury Bags</h1>
+                        <p id="sub_title">나의 첫 럭셔리 입문백</p>
+                </div>
+                <div class="product_container">
+                    <div class="product_1">
+                        <img id="product_img" src="assets/luxury_1.jpg">
+                        <h6 class="product_name">Maison Margiela</h6>
+                        <p class="product_content">Maison Margiela 5AC Bucket Bag Black</p>
+                        <p class="product_price"><strong>1,022,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_2">
+                        <img id="product_img" src="assets/luxury_2.jpg">
+                        <h6 class="product_name">Marni</h6>
+                        <p class="product_content">Marni Saffiano Medium Trunk Bag Cigar</p>
+                        <p class="product_price"><strong>1,157,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_3">
+                        <img id="product_img" src="assets/luxury_3.jpg">
+                        <h6 class="product_name">Lemaire</h6>
+                        <p class="product_content">Lemaire Small Croissant Bag Soft Nappa Leather Dark Chocolate</p>
+                        <p class="product_price"><strong>1,174,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                    <div class="product_4">
+                        <img id="product_img" src="assets/luxury_4.jpg">
+                        <h6 class="product_name">Miu Miu</h6>
+                        <p class="product_content">Miu Miu Matelasse Nappa Leather Shoulder Bag Black</p>
+                        <p class="product_price"><strong>1,679,000원</strong></p>
+                        <p class="price_feat">즉시 구매가</p>
+                    </div>
+                </div>
+
+                <div class="more_btn">
+                    <button>더보기</button>
+                </div>
+
+            </section>
+            <section class="today_user">
+                <hr>
+                <div class="container_title">
+                    <h3 id="title">오늘의 인기유저</h1>
+                </div>
+                <div class="user_container">
+                    <div class="user_div">
+                        <img class="user_profile_img" src="assets/user_profile_1.jpeg">
+                        <img class="user_content_img" src="assets/user_content_7.webp">
+                        <p class="user_id">@minanee_</p>
+                    </div>
+                    <div class="user_div">
+                        <img class="user_profile_img" src="assets/user_profile_2.jpg">
+                        <img class="user_content_img" src="assets/user_content_8.webp">
+                        <p class="user_id">@o4.13m</p>
+                    </div>
+                    <div class="user_div">
+                        <img class="user_profile_img" src="assets/user_profile_3.jpeg">
+                        <img class="user_content_img" src="assets/user_content_9.webp">
+                        <p class="user_id">@wakeup_min</p>
+                    </div>
+                    <div class="user_div">
+                        <img class="user_profile_img" src="assets/user_profile_4.jpeg">
+                        <img class="user_content_img" src="assets/user_content_10.webp">
+                        <p class="user_id">@montes.type</p>
+                    </div>
+                    <div class="user_div">
+                        <img class="user_profile_img" src="assets/user_profile_5.jpeg">
+                        <img class="user_content_img" src="assets/user_content_11.webp">
+                        <p class="user_id">@cresecnt_so</p>
+                    </div>
+                    <div class="user_div">
+                        <img class="user_profile_img" src="assets/user_profile_6.jpeg">
+                        <img class="user_content_img" src="assets/user_content_12.webp">
+                        <p class="user_id">@p3._.min</p>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="banner_section_not_move">
+                <div class="banner">
+                    <img src="assets/banner_14.webp">
+                </div>
+            </section>
+            <section class="upcoming_release">
+                <div class="container_title">
+                    <h3 id="title">Upcoming Release</h1>
+                        <p id="sub_title">발매 예졍</p>
+                </div>
+                <div class="product_container">
+                    <div class="product_1">
+                        <img id="product_img" src="assets/upcoming_1.png">
+                        <h6 class="product_name">Converse</h6>
+                        <p class="product_content">Converse x Ader Error Chuck 70 Ox Imperial Blue</p>
+                    </div>
+                    <div class="product_2">
+                        <img id="product_img" src="assets/upcoming_2.jpg">
+                        <h6 class="product_name">Nike</h6>
+                        <p class="product_content">Nike x Drake Nocta Tech Fleece Crew Black (FD8457-010)</p>
+                    </div>
+                    <div class="product_3">
+                        <img id="product_img" src="assets/upcoming_3.jpg">
+                        <h6 class="product_name">Ader Error</h6>
+                        <p class="product_content">Ader Error x Converse Baseball Cap Black</p>
+                    </div>
+                    <div class="product_4">
+                        <img id="product_img" src="assets/upcoming_4.png">
+                        <h6 class="product_name">Adidas</h6>
+                        <p class="product_content">Adidas Tobacco Gruen Mesa Brown Desert</p>
+                    </div>
+                </div>
                 <div class="more_btn">
                     <button>더보기</button>
                 </div>

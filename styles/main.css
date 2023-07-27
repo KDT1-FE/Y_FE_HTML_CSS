@@ -1,6 +1,8 @@
-body, button, input, main, table, textarea,p {
+body, button, input, main, table, textarea, p {
     font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; }
-
+.body { 
+    margin: 0;
+}
 .main {
     position : relative;
     padding-top : 130px;
@@ -35,6 +37,24 @@ body, button, input, main, table, textarea,p {
     max-height: 480px;
     justify-content: center;
     text-align: center;
+    animation: slideAnimation 25s infinite;
+    opacity: 0;
+    
+}
+
+@keyframes slideAnimation {
+    0%, 20% { transform: translateX(0%); opacity: 1; background-color: #f3f9e2;} 
+    25%, 45% { transform: translateX(-100%); opacity: 1; background-color: #e0e3e9; } 
+    50%, 70% { transform: translateX(-200%); opacity: 1; background-color: #EEF2F5; } 
+    75%, 95% { transform: translateX(-300%); opacity: 1; background-color: #faff03; } 
+    100%, 120% { transform: translateX(-400%); opacity: 1; background-color: #E1EAF9;}
+}
+.banner_section .slide_list > li:first-child {
+    opacity: 1;
+}
+
+.banner_section:hover .slide_list > li {
+    animation-play-state: paused;
 }
 .banner_section .slide_list > li > a {
     display: block;
@@ -54,7 +74,7 @@ body, button, input, main, table, textarea,p {
     padding: 50px;
     cursor: pointer;
 }
-.banner_section .slide_list .left{
+/*.banner_section .slide_list .left{
     left: 30px;
     background: url('../assets/arrow_left.svg') center center / 100% no-repeat;
 
@@ -69,7 +89,7 @@ body, button, input, main, table, textarea,p {
 .banner_section [id="slide03"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-200%); background-color: #EEF2F5;}
 .banner_section [id="slide04"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-300%);background-color: #faff03;}
 .banner_section [id="slide05"]:checked ~ .slide_wrap .slide_list > li {transform : translateX(-400%);background-color: #E1EAF9;}
-
+*/
 
 .img_box {
 
@@ -131,8 +151,9 @@ body, button, input, main, table, textarea,p {
     letter-spacing: -.15px;
     color: #333;
     margin : 8px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.home_product, .popular_product, .icream_challenge, .prada_product {
+.home_product, .popular_product, .icream_challenge, .prada_product, .new_in_section , .identity_section, .luxury_section, .today_user, .upcoming_release{
     display: flex;
     position: relative;
     flex-direction : column;
@@ -144,6 +165,9 @@ body, button, input, main, table, textarea,p {
     text-align: center;
     justify-content: space-between;
 
+}
+.product {
+    position: relative;
 }
 .product_container {
     display : grid;
@@ -159,9 +183,18 @@ body, button, input, main, table, textarea,p {
 .container_title {
     text-align : start;
     padding : 0 40px;
-    margin : 30px 0;
-    
+    margin : 30px 0 0 0;
 
+}
+.bookmark_icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    z-index: 1;
+    
 }
 #title {
     margin : 0px;
@@ -174,7 +207,7 @@ body, button, input, main, table, textarea,p {
     max-width : 291px;
     text-align : start;
 }
-.product_1 img{
+.product img{
     width : 291px;
     height : 291px;
     background-color : #ebf0f5;
@@ -260,8 +293,7 @@ hr {
     width : 100%;
     max-width : 1280px;
     text-align : center;
-    justify-center : center;
-    margin : auto;
+    margin : 40px auto 56px auto;
     padding : 0 40px;
 }
 .brand_grid_container {
@@ -276,9 +308,6 @@ hr {
     margin : 16px 0;
     padding : 0 40px;
 
-
-}
-.brand_icon {
 
 }
 .brand_img {
@@ -341,14 +370,4 @@ hr {
     
 
 
-}
-
-@keyframe bannermove {
-    0% {
-        transform : translate(0,0);
-    }
-    100% [
-        transform : translate(-100%,0);
-
-    ]
 }

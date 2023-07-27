@@ -4,6 +4,26 @@ h1 {
 
 .p {
     font-weight: bold;
+    background-color: #80808000;
+    border-radius: 8px;
+}
+
+.nav-a:hover .p {
+    background-color: #8080804D;
+}
+
+.underline {
+    z-index: 200001;
+    position: absolute;
+    bottom: 6px;
+    height: 4px;
+    width: 100%;
+    background-color: #ff465600;
+    border-radius: 8px;
+}
+
+.nav-a:hover .underline {
+    background-color: #ff4656;
 }
 
 header {
@@ -28,50 +48,62 @@ header {
     width: 85px;
 }
 
-.header>.center-section>.info>.dropdown>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-
-.header>.center-section>.media>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-
-.header>.center-section>.news>.dropdown>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-
-.header>.center-section>.scoreboard>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-
-.header>.center-section>.service>.dropdown>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-
-.header>.center-section>.event>.dropdown>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-
-.header>.center-section>.socialmedia>.dropdown>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
-}
-
-.header>.center-section>.esports>.arrow>a>p {
-    padding: 7.5px 16px;
-    margin: 0 4px 0 0;
+.nav-item {
+    position: relative;
+    height: 80px;
 }
 
 .nav-a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    letter-spacing: .01em;
+    font-size: 13px;
     color: white;
 }
-.playnow_btn{
+
+.header>.center-section>.nav-item>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.nav-item>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.nav-item>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.nav-item>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.nav-item>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.nav-item>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.nav-item>.dropdown>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.header>.center-section>.nav-item>.arrow>a>p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+}
+
+.playnow_btn {
     padding: 8px 16px;
 }
 
@@ -79,7 +111,7 @@ header {
     width: 125px;
     height: 22px;
     padding: 5px;
-    border-radius: 10px ;
+    border-radius: 10px;
     background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
     color: #111;
     font-size: 13px;
@@ -98,9 +130,9 @@ header {
 }
 
 .center-section {
-    margin-left: 18px;
-    display: inline-block;
+    margin-left: 35px;
     width: 100%;
+    height: 100%;
 }
 
 .center-section>div {
@@ -119,11 +151,11 @@ header {
     padding-right: 32px;
 }
 
-.search{
+.search {
     padding: 10px 0;
 }
 
-.search > img {
+.search>img {
     width: 22px;
     height: 27px;
     color: #f9f9f9;
@@ -133,5 +165,3 @@ header {
     width: 100px;
     /* background: (135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%) */
 }
-
-

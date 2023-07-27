@@ -277,10 +277,13 @@ main {
             &__name {
               @include font(montserrat, $font-bold700);
               font-size: $font-lg;
+              line-height: 1.6;
               margin: 0;
             }
             &__descript {
               font-size: $font-base;
+              line-height: 1.6;
+              margin: 1rem 0;
             }
           }
 
@@ -331,6 +334,39 @@ main {
 }
 
 footer {
-  height: 30rem;
-  background-color: burlywood;
+  padding: 4.75rem 0;
+
+  .footer__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+
+    .footer__flex {
+      display: flex;
+
+      &__logo {
+        padding-right: 5rem;
+        margin-right: 1.5rem;
+        &__img {
+          background-image: url(../images/logo_mark.png);
+          width: 17.2rem;
+          height: 10.6rem;
+        }
+      }
+
+      &__details {
+        flex-grow: 1;
+        line-height: 1.6;
+
+        .details__sentence {
+          margin: 1.5rem 0;
+          color: $main-black;
+          font-size: $font-sm;
+          font-weight: $font-bold400;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
 }

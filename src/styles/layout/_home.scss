@@ -1,0 +1,96 @@
+.home {
+    .container {
+        padding: 25rem 0 16.5rem;
+        @include bp640 {
+            padding: 10rem 0;
+        }
+        .inner {
+            position: relative;
+            width: 92%;
+            margin: auto;
+            height: 127.4rem;
+            @include bp640 {
+                height: 100%;
+            }
+            .title-wrap {
+                opacity: 0;
+                @include showTopAni(1);
+            }
+            .content-wrap {
+                @include bp640 {
+                    display: flex;
+                    height: 100%;
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+                    margin-left: -2.4rem;
+                }
+                .content {
+                    position: absolute;
+                    width: 60rem;
+                    height: 93.6rem;
+                    opacity: 0;
+                    @include bp640 {
+                        position: static;
+                        flex-shrink: 0;
+                        height: 100%;
+                    }
+                    .img-inner {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 57%;
+                        height: auto;
+                        transform: translate(-50%, -50%);
+                    }
+                    .img-cover {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .cnt1 {
+                    top: 0;
+                    right: -10.4rem;
+                    @include bp640 {
+                        max-width: 37.5rem;
+                    }
+                }
+                .cnt2 {
+                    bottom: 0;
+                    left: -10.4rem;
+                    @include bp640 {
+                        max-width: 37.5rem;
+                        margin-left: -10rem;
+                    }
+                }
+            }
+            .text-wrap {
+                position: absolute;
+                right: 3rem;
+                bottom: 16.6rem;
+                opacity: 0;
+                @include bp640 {
+                    position: static;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &.on {
+        .container {
+            .inner {
+                .content-wrap {
+                    .cnt1 {
+                        @include showTopAni(2)
+                    }
+                    .cnt2 {
+                        @include showTopAni(3)
+                    }
+                }
+                .text-wrap {
+                    @include showTopAni(4)
+                }
+            }
+        }
+    }
+}

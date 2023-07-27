@@ -1,0 +1,78 @@
+.remittance {
+    background-color: $greyFB;
+    .container {
+        padding: 25rem 0;
+        @include bp640 {
+            padding: 10rem 0;
+        }
+        .inner {
+            .title-wrap {
+                margin-bottom: 8rem;
+                opacity: 0;                
+            }
+            .content-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 15rem;
+                @include bp640 {
+                    gap: 6rem
+                }
+                .content {
+                    display: flex;
+                    justify-content: space-between;
+                    opacity: 0;
+                    @include bp640 {
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        padding-left: 3.8rem;
+                    }
+                    .text {
+                        flex-basis: calc(50% - 3rem);
+                        max-width: calc(50% - 3rem);
+                        @include bp640 {
+                            flex-basis: calc(100% - 2rem);
+                            max-width: calc(100% - 2rem);
+                        }
+                    }
+                    .img {
+                        flex-basis: calc(50% - 3rem);
+                        max-width: calc(50% - 3rem);
+                        img {
+                            width: 100%;
+                        }
+                        @include bp640 {
+                            flex-basis: calc(100% - 2rem);
+                            max-width: calc(100% - 2rem);
+                        }
+                    }
+                }
+                .cnt2 {
+                    flex-direction: row-reverse;
+                    @include bp640 {
+                        flex-direction: column
+                    }
+                }
+            }
+        }
+    }
+    &.on {
+        .container {
+            .inner {
+                .title-wrap {
+                    @include showTopAni(0);
+                }
+                .content-wrap {
+                    .cnt1 {
+                        @include showTopAni(1);
+                    }
+                    .cnt2 {
+                        @include showTopAni(2);
+                    }
+                    .cnt3 {
+                        @include showTopAni(3);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// IR
+.blind {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+img {
+    object-fit: cover;
+    user-select: none;
+}
+
+.container {
+    max-width: 114rem;
+    margin: auto;
+}
+
+.inner {
+    width: 92%;
+    margin: auto;
+}
+
+html,body {
+    overflow-x: hidden;
+}
+
+br {
+    &.pc {
+        display: inline;
+        @include bp640 {
+            display: none;
+        }
+    }
+    &.mb {
+        display: none;
+        @include bp640 {
+            display: inline;
+        }
+    }
+    &.both {
+        display: inline;
+    }
+}

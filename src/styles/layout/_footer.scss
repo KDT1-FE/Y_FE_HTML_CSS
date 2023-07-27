@@ -1,0 +1,111 @@
+#footer {
+    background-color: $black28;
+    .container {
+        padding: 5rem 0 10rem;
+        @include bp640 {
+            padding: 6rem 4rem 8rem;
+        }
+        .inner {
+            max-width: 106.4rem;
+            padding: 0 6.7rem;
+            width: 100%;
+            @include bp640 {
+                padding: 0;
+            }
+            .footer-nav {
+                display: flex;
+                padding-bottom: 5rem;
+                @include bp640 {
+                    flex-direction: column;
+                    padding-bottom: 0;
+                }
+                ul {
+                    width: 17rem;
+                    @include bp640 {
+                        width: 100%;
+                        padding-bottom: 4rem;
+                    }
+                    li {
+                        font-size: 1.5rem;
+                        color: $grey84;  
+                        a {
+                            display: flex;
+                            line-height: 3rem;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }                      
+                    }
+                    .title {
+                        color: $greyC1;
+                        font-weight: 700;
+                        padding-bottom: .5rem;
+                        margin-bottom: 0;
+                    }
+                }
+                .ft-customer {
+                    flex: 1;
+                }
+                
+            }
+            .ft-address {
+                .company-name {
+                    color: $greyC1;
+                    padding-bottom: 1.6rem;
+                    font-size: 1.5rem;
+                    display: block;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                    color: $greyA1;
+                    a {
+                        color: $grey84;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .ft-notice {
+                padding: 2.4rem 0 3rem;
+                display: inline-grid;
+                grid-template-columns: repeat(4, auto);
+                column-gap: 3.4rem;
+                row-gap: .3rem;
+                @include bp640 {
+                    grid-template-columns: auto;
+                    row-gap: .6rem;
+                }
+                li {
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    color: $grey84;
+                    a {
+                        strong {
+                            color: $greyC1;
+                            font-weight: 500;
+                        }
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .ft-social {
+                display: flex;
+                gap: .8rem;
+                li {
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    opacity: .7;
+                    transition: opacity .2s ease;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}   

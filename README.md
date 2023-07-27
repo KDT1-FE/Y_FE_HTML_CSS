@@ -1,45 +1,58 @@
-[참고 내용]
-
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
-
-과제 수행 및 제출 방법
-
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+# 토스 클론코딩 프로젝트
+이 프로젝트는 `패스트캠퍼스X야놀자 프론트엔드 부트캠프
+첫번째 과제 HTML CSS 과제`입니다.  
+토스 **메인 페이지를 카피하여** `HTML,SCSS,Javascript`을 사용하여 반응형으로 제작하였습니다.
 
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+## 프로젝트 사이트 주소
+원본 사이트 URL: <a href="https://toss.im/">https://toss.im/</a>  
+클론 사이트 URL: <a href="https://tkyoun0421.github.io/KDT_FE_Toss_Clone_release/">https://tkyoun0421.github.io/KDT_FE_Toss_Clone_release/</a>
 
-필수 요구사항
+## 프로젝트 설명
+토스 메인페이지를 HTML CSS Javascript를 사용하여 제작한 클론 코딩 프로젝트입니다.
+<br/>
+<br/>
+![main](./assets/toss_main.png)
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+### HTML 
+![meta](./assets/meta.png)  
+<br/>
+메타 태그를 작성하여 SEO 검색엔진 최적화를 통해 사이트의 검색 엔진에 상위에 노출될 수 있게끔 하였고, 시맨틱 태그를 사용하여 해당 요소가 어떤 역할을 하는지 알 수 있게 웹 표준을 지켜서 마크업하였습니다.
 
-선택 요구사항
+### CSS(SCSS)
+![scss](./assets/scss.png)
+<br/>
+<br/>
+CSS의 전처리기인 SCSS를 사용하여 CSS의 사용 용도별로 폴더를 구조화 하여 설계 했습니다.  
+<strong>abstracts</strong>폴더는 프로젝트 전체에서 사용하는 기능인 믹스인, 변수 기능들과 애니메이션 키프레임을 모아두었습니다.  
+<strong>base</strong>폴더는 공통적으로 CSS가 필요한 부분이나 reset과 글꼴 같은 HTML 요소의 표준 스타일들을 모아두었습니다.
+<strong>components</strong>폴더는 프로젝트 전체에 작은 구성요소로 재사용이 가능한 컴포넌트들의 css를 모아두었습니다.  
+<strong>layout</strong>폴더는 HTML section 별로 나누어서 모아두었습니다.
 
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+![scss](./assets/mixin.png)
+### JS
+![js](./assets/toss_clone.gif)
+<br/>
+<br/>
+바닐라 자바스크립트를 사용하여 DOM 탐색을 통해 요소를 선택하고 클래스를 탈부착하는 형식으로 CSS로 구현이 가능한 동적 요소들은 최대한 CSS를 활용하여 작성하였습니다. intersection observer api를 사용하여 해당 요소에 도착할 때 마다 클래스를 붙여서 요소가 나타나는 애니메이션을 만들었습니다.
 
-손쉬운 이미지 추출 방법
+## 프로젝트 기간
+2023.07.24 ~ 2023.07.26
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
+## Developer
+Name | Github URL | Blog URL |
+-- | -- | -- |
+**윤태관(Front-end)** | https://github.com/tkyoun0421 | https://dev-taegwan.tistory.com/ 
 
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+## 기술 스택
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
+)
+![WEBPACK](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white)
+
+
+

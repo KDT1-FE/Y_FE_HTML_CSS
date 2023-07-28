@@ -125,7 +125,7 @@
   align-items: center;
   justify-content: center;
 }
-.top-banner .btn__prev {
+.top-banner .top-prev {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +142,7 @@
   left: calc((100% - 1200px) / 2);
   color: black;
 }
-.top-banner .btn__next {
+.top-banner .top-next {
   display: flex;
   align-items: center;
   justify-content: center;

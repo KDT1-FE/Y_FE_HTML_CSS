@@ -80,12 +80,12 @@
     align-items: center;
     justify-content: center;
   }
-  .btn__prev {
+  .top-prev {
     @include arrow-button;
     left: calc((100% - 1200px) / 2);
     color: black;
   }
-  .btn__next {
+  .top-next {
     @include arrow-button;
     right: calc((100% - 1250px) / 2);
   }

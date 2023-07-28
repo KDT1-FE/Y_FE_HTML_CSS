@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* width가 padding, border 포함한 전체 길이 */
 }
 body,
 html {
@@ -91,14 +90,6 @@ ul {
 #main {
   height: 1200px;
 }
-.blind {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-}
 
 #search > form {
   display: inline-flex;
@@ -131,9 +122,6 @@ ul {
   height: 100%;
   position: relative;
 }
-/* #search > form:focus-within #search-svg ::after {
-  display: none;
-} */
 
 #search-svg::after {
   content: "";
@@ -156,7 +144,6 @@ ul {
   padding: 17px 0;
   font-size: 2rem;
   line-height: 24px;
-  /* font-weight: bold; */
   border: none;
   outline: none;
 }

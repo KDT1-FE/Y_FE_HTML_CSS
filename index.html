@@ -16,15 +16,12 @@
         <div id="header">
           <button id="header-hamburger">
             <div></div>
-            <span class="blind">확장 영역</span>
           </button>
           <button id="header-naverpay">
             <div></div>
-            <span class="blind">네이버 페이</span>
           </button>
           <button id="header-notice">
             <div></div>
-            <span class="blind">알림</span>
           </button>
         </div>
         <div id="search">
@@ -38,7 +35,6 @@
                 <path
                   d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"
                 /></svg></a>
-            <label for="search-input" class="blind">검색어 입력</label>
             <input
               id="search-input"
               type="text"
@@ -46,20 +42,14 @@
             />
             <div id="search-right">
               <button href="#" id="search-keyboard">
-                <span class="blind">입력도구</span>
               </button>
               <button href="#" id="search-recent">
-                <span class="blind">자동완성/최근검색어펼치기</span>
               </button>
               <button id="search-button">
-                <div>
-                  <span class="blind">검색</span>
-                </div>
               </button>
             </div>
           </form>
         </div>
-
 
         <nav id="nav">
           <ul>
@@ -119,7 +109,6 @@
             <li>
               <a href="">
                 <div></div>
-              <span class="blind">더보기</span>
             </a>
             </li>
           </ul>
@@ -132,9 +121,8 @@
             
             <section id="main-news">
               <div id="main-news-top">
-
-              <header id="main-news-grey">
-                <a href=""><strong>뉴스스탠드&nbsp; </strong></a>
+              <header>
+                <a href="" ><strong>뉴스스탠드&nbsp; </strong></a>
                 <a href="" > <strong>•  언론사편집 /</strong></a>
                 <a href="" ><strong>&nbsp; 엔터 /</strong></a>
                 <a href="" ><strong>&nbsp; 스포츠 /</strong></a>
@@ -182,16 +170,59 @@
 
             </div>
 
-              <footer>
-                <img id="main-before" src="./assets/before.png"><span class=blind>이전</span></img>
-               <strong id="main-news-page">언론사 더보기 1/4</strong>
-                <img id="main-before" src="./assets/after.png"><span class=blind>다음</span></button>
+              <footer id="main-news-footer">
+                <img id="main-before" src="./assets/before.png"></img>
+               <strong id="main-news-page"><span>언론사</span> 더보기 1/4</strong>
+                <img id="main-before" src="./assets/after.png"></button>
               </footer>
             </section>
 
-            <section id="main-shopping"></section>
+            <section id="main-shopping">
+                <div id="main-shopping-top">
+                <header>
+                  <a href="" > <strong></strong>쇼핑 /</strong></a>
+                  <a href="" ><strong>&nbsp; 맨즈 /</strong></a>
+                  <a href="" ><strong>&nbsp; 원쁠딜 /</strong></a>
+                  <a href="" ><strong>&nbsp; 쇼핑라이브</strong></a>
+                </header>
+  
+                <div id="main-shopping-stand">
+                  <span>
+                  <a href=""> <strong>오늘의 혜택</strong></a>
+                  <a href=""> <img src="./assets/we.png"  id="main-shopping-sm-image"></a>
+                  <a href=""> 매일 00시, 슈퍼투데이특가 놓치면 후회할 <span>역대급할인!</span></a>
+                  </span>
+                  </div>
+                  <div id="main-shopping-grid">
+                    <div><img src="./assets/shopping/1.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">만원대~여름코디<br/><br/>심플하고착한가격</div></div>
+                    <div><img src="./assets/shopping/2.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">상반기 결산SALE<br/><br/>BEST 최대71%↓</div></div>
+                    <div><img src="./assets/shopping/3.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">단정한핏~인기!<br/><br/>최대80%SALE시작</div></div>
+                    <div><img src="./assets/shopping/4.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">TIME SALE<br/><br/>바스락~ 롱원피스</div></div>
+                    <div><img src="./assets/shopping/5.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">아침에 광이나요<br/><br/>
+                      붙이고 자버려요</div></div>
+                    <div><img src="./assets/shopping/6.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">1일1포 챙겨먹어<br/><br/> 1+1일때 쟁여</div></div>
+                    <div><img src="./assets/shopping/7.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">우유베개 1&1<br/><br/> 1만원 쿠폰!</div></div>
+                    <div><img src="./assets/shopping/8.jpg" id="main-shopping-image">
+                      <div class="main-shopping-text">역대급 50%특가<br/><br/> 인형키링 곰빵이!</div></div>
+                  </div>
+
+                  <footer id="main-shopping-footer">
+                    <img id="main-before" src="./assets/before.png"></img>
+                   <strong id="main-news-page"><span>쇼핑아이템</span> 더보기 1/18</strong>
+                    <img id="main-before" src="./assets/after.png"></button>
+                  </footer>
+            </section>
           </div>
+
           <div id="main-right">
+
             <section id="main-login">
               <div>네이버를 더 안전하고 편리하게 이용하세요.</div>
               <a href="" id="main-login-button"><img/>로그인</a>
@@ -199,13 +230,48 @@
               <a href="">비밀번호 찾기</a>
               <a href="">회원가입</a></div>
             </section>
+
             <img id="main-right-ad" src="./assets/right-ad.png" />
             <img id="main-weather" src="./assets/weather.png"/>
             <img id="main-stock" src="./assets/stock.png"/>
           </div>
         </main>
 
-        <footer id="footer-list"> 
+        <footer id="footer-main" > 
+          <div id="footer-ad">
+           
+            <div>
+          <span><img id='footer-ad-image' src="./assets/footer/1.png"></span>
+          <div>
+            <div>네이버 커넥트 재단</div>
+            <div>유치원 여름방학, 뭐하세요?</div>
+            <div>무료교육앱 쥬니버스쿨과 놀면서 수학, 코딩 공부해요!</div>
+        </div>
+      </div>
+
+
+      <div>
+        <span><img id='footer-ad-image' src="./assets/footer/2.png"></span>
+        <div>
+          <div>쥬니버</div>
+        <div>차징탑스피너 채널 오픈 이벤트</div>
+        <div>피젯스피너와 팽이가 하나로!<br/>최애 영상 댓글 달면 선물로!</div>
+      </div>
+    </div> 
+    
+    
+    <div>
+      <span><img id='footer-ad-image' src="./assets/footer/3.png"></span>
+      <div>
+        <div>네이버 개인정보 보호</div>
+      <div>정보보호의 달 릴레이 특강</div>
+      <div>7월 매주 수요일 11시<br/> 프라이버시TV에서 만나요!</div>
+    </div>
+
+  </div>
+</div>
+
+          <div id="footer-list">
           <ul>
           <li>
             <a>회사소개&nbsp;&nbsp;</a>
@@ -234,12 +300,11 @@
           <li>
             <strong> ⓒ NAVER Corp.</strong>
           </li>
-         
         </ul>
           </footer> 
-          <br/> <br/> <br/>
-          <br/> <br/> <br/>
-      </div>
+      </div></div>
+
+
     </div>
   </body>
 </html>

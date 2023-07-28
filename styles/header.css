@@ -318,10 +318,13 @@
 .topic {
     margin: 20px;
 }
-.strong2 {
+.QuickMenu {
+    display: block;
     font-family: 'Noto Light', sans-serif;
     font-size: 30px;
     color: #444;
+    text-align: center;
+
 }
 .plus_img2 {
     float: right;
@@ -340,9 +343,69 @@
     margin: 10px;
     border-bottom: 1px solid #ede9e8 ;
 }
+.strong2 {
+    font-size: 30px;
+    font-family: 'Noto Light', sans-serif;
+    color: #444;
+}
+
 .section-6-p {
     font-size: 15px;
     font-family: 'Noto Light', sans-serif;
     color: #333;
     padding: 24px;
+}
+
+.article {
+    background-color: #3c3c64;
+    height: 340px;
+}
+.QuickMenu {
+    font-family: 'Noto Light', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+}
+
+.article-div-moim {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    
+}
+.QuickMenu-1,
+.QuickMenu-2,
+.QuickMenu-3,
+.QuickMenu-4,
+.QuickMenu-5,
+.QuickMenu-6,
+.QuickMenu-7,
+.QuickMenu-8,
+.QuickMenu-9,
+.QuickMenu-10,
+.QuickMenu-11 {
+    margin: 20px;
+}
+
+
+
+.article-p1,
+.article-p2,
+.article-p3,
+.article-p4,
+.article-p5,
+.article-p6,
+.article-p7,
+.article-p8,
+.article-p9,
+.article-p10,
+.article-p11{
+    font-family: 'Noto Light', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+.footer1 {
+    height: 117px;
+    background-color: #333333;
 }

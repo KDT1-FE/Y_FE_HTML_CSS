@@ -66,6 +66,7 @@ strong {
 
 /* HOME SECTION */
 .home {
+  position: relative;
   width: 100%;
   height: 100dvh;
   border-bottom: 1px solid #505050;
@@ -209,6 +210,72 @@ strong {
   font-size: 1.125rem;
   border-radius: 30px;
   white-space: nowrap;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 13, 16, 0.5);
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: #fff;
+  padding: 0 100px;
+  height: 100%;
+  padding-top: 32px;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.menu.open {
+  right: 0;
+}
+
+.menu-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  grid-template-rows: 180px auto;
+}
+
+.menu-header button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  outline: none;
+  background-color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-header .close-btn {
+  position: absolute;
+  right: -70px;
+}
+
+.menu-item {
+  margin-bottom: 100px;
+}
+
+.menu-item h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.menu-item p {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* INTRODUCE SECTION */

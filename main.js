@@ -13,16 +13,6 @@ sliderItems.forEach((item, itemIndex) => {
   });
 });
 
-// sliderItems.forEach((item, itemIndex) => {
-//   item.addEventListener("mouseout", () => {
-//     sliderImages.forEach((image, imageIndex) => {
-//       if (itemIndex === imageIndex) {
-//         image.classList.remove("currentImage");
-//       }
-//     });
-//   });
-// });
-
 const photos = document.querySelectorAll(".airplane-photo");
 const leftBtn = document.querySelector(".left-btn");
 const rightBtn = document.querySelector(".right-btn");
@@ -54,6 +44,17 @@ rightBtn.addEventListener("click", () => {
   });
 });
 
-// 왼쪽 버튼을 클릭하면
-// [0, 1 ,2 ,3 ,4 ,5]의 사진 중
-// 현재 사진의 이전 사진의 opacity를 1로 바꾼다
+const menuBtn = document.querySelector(".menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+const menu = document.querySelector(".menu");
+const overlay = document.querySelector(".overlay");
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.add("open");
+  overlay.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  menu.classList.remove("open");
+  overlay.style.display = "none";
+});

@@ -143,7 +143,7 @@ menuCloseBtn.addEventListener("click", () => {
 <br/>
 
 CSS scroll-snap 구현<br/>
-![scroll-snap](https://github.com/JitHoon/Jithoon/assets/101972330/c620fe9a-7d1b-42fd-868f-e86ca0f4d9f8)
+![scroll-snap](https://github.com/JitHoon/cnuai/assets/101972330/5d9eb57c-2e13-4d43-8e7d-922681492ef1)
 
 ```css
 main{

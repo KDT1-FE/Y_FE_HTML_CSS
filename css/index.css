@@ -1,15 +1,10 @@
 header {
   position: relative;
   position: sticky;
-  top: 0;
-  width: 100%;
   top: -44px;
+  width: 100%;
   z-index: 99;
   transition: top 0.2s ease-in-out;
-}
-
-.nav-up {
-  top: -80px;
 }
 
 .banner {
@@ -32,7 +27,6 @@ header {
 
 
 .nav-wrap {
-
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -219,13 +213,11 @@ header {
 
 /* best item */
 .best-item .swiper {
-  margin-bottom: 80px;
-  width: 100%;
+  margin: 0 80px 40px;
+  overflow-x: unset;
 }
 
 .best-item .swiper-wrapper {
-  padding-left: 48px;
-  padding-right: 48px;
   position: relative;
 }
 
@@ -265,7 +257,6 @@ header {
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-  margin-left:80px;
   height: 2px;
   width: 100%;
 }
@@ -288,10 +279,10 @@ header {
 }
 
 .swiper-btn-prev {
-  left: -80px;
+  left: -160px;
 }
 .swiper-btn-next {
-  right: -80px;
+  right: -160px;
 }
 
 .swiper:hover .swiper-btn-prev{
@@ -340,6 +331,11 @@ width: fit-content;
   color: #666;
 }
 
+.grid-skin-type .material-symbols-outlined {
+  position: absolute;
+  margin-left: 5px;
+}
+
 .grid-skin-type .item-name::after {
   content: "";
   display: block;
@@ -354,8 +350,6 @@ width: fit-content;
 .grid-skin-type .grid-item:hover .item-name:after {
   transform: scaleX(1);
 }
-
-
 
 .find-skin-type {
   color: #fffef2;
@@ -372,9 +366,6 @@ width: fit-content;
   transform: translateY(-50%);
   left: 8%;
 }
-
-
-
 
 .find-skin-type .section-sub-title {
   font-size: 30px;
@@ -567,6 +558,8 @@ width: fit-content;
   margin: 15px 0;
   font-weight: 700;
 }
+
+/* footer */
 
 footer {
   color: #fffef2;

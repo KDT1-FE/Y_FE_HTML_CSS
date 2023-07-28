@@ -10,37 +10,37 @@ new Swiper('.best-item .swiper', {
   },
 });
 
+let lastScrollTop = 0;
 
-let delta = 0;
-const header = document.querySelector('.nav-wrap');
-const navbarHeight = header.outerHeight();
+window.addEventListener('scroll', function (event) {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const header = document.querySelector('header');
 
-$(window).scroll(function(event) {
-  let didScroll = true;
+    if (scrollTop > lastScrollTop) {
+        header.style.top = '-124px';
+    } else {
+        header.style.top = '-44px';
+    }
+
+    lastScrollTop = scrollTop;
+
+    // 스크롤 위치가 0일 때 헤더를 화면 상단에 고정
+    if (scrollTop === 0) {
+        header.style.top = '0';
+    }
+});
+
+
+const observer = new IntersectionObserver((e) => {
+  e.forEach((v, i) => {
+    if (v.isIntersecting) {
+      v.target.style.opacity = "1";
+    }
+  })
 })
 
-setInterval(function() {
-  if(didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-},250);
+const fadeEls = document.querySelectorAll(".fade")
 
-function hasScrolled() {
-  let st = $(this).scrollTop();
-  if(Math.abs(lastScrollTop - st) <= delta) {
-    return;
-  }
-}
-
-if((st > lastScrollTop) && (st > navbarHeight)) {
-  // scroll down
-  header.removeClass('nav-down').addClass('nav-up');
-} else {
-  //scroll up
-  if (st + $(window).height() < $(document).height()) {
-    header.removeClass('nav-up').addClass('nav-down');
-  }
-}
-
-lastScrollTop = st;
+fadeEls.forEach((fadeEl, i) => {
+  observer.observe(fadeEl);
+})

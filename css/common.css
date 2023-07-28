@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+.fade{
+  opacity: 0;
+  transition: .4s;
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 24
 }

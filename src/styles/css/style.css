@@ -39,7 +39,7 @@
 .header .inner .menu .menu__category:hover {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
 }
-.header .inner .menu .menu__item::before {
+.header .inner .menu .menu__service::before {
   margin: auto 10px auto 0;
   display: block;
   width: 1px;
@@ -48,7 +48,7 @@
   background-color: #e1e2e3;
   padding: 0;
 }
-.header .inner .menu .menu__item--button {
+.header .inner .menu .menu__service--button {
   font-size: 14px;
   color: #666;
   line-height: 30px;
@@ -57,29 +57,29 @@
   border-radius: 15px;
   padding: 0 10px;
 }
-.header .inner .menu .menu__item {
+.header .inner .menu .menu__service {
   padding: 0 0 0 15px;
 }
 
-.slider-section {
+.top-banner {
   margin-top: 25px;
   position: relative;
 }
-.slider-section .items {
+.top-banner .items {
   display: flex;
   position: absolute;
   transform: translate(-530px);
   gap: 30px;
   top: 0;
 }
-.slider-section .items.active {
+.top-banner .items.active {
   transition: 0.3s;
 }
-.slider-section .items .items__item {
+.top-banner .items .items__item {
   position: relative;
   width: 1060px;
 }
-.slider-section .items .information {
+.top-banner .items .information {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -92,20 +92,20 @@
   left: 2%;
   border-radius: 6px;
 }
-.slider-section .items .information .information__bold-text {
+.top-banner .items .information .information__title {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
 }
-.slider-section .items .information .information__text {
+.top-banner .items .information .information__content {
   font-size: 14px;
   font-weight: 500;
   padding: 0 20px 30px 0;
 }
-.slider-section .items .information hr {
+.top-banner .items .information hr {
   color: #e1e2e4;
 }
-.slider-section .items .information button {
+.top-banner .items .information button {
   margin-top: 10px;
   color: #3366ff;
   font-size: 14px;
@@ -114,7 +114,7 @@
   background-color: white;
   font-family: Pretendard Variable;
 }
-.slider-section .wrapper {
+.top-banner .wrapper {
   overflow: hidden;
   height: 300px;
   position: relative;
@@ -123,11 +123,7 @@
   align-items: center;
   justify-content: center;
 }
-.slider-section button:hover {
-  cursor: pointer;
-}
-
-.btn__prev {
+.top-banner .btn__prev {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,8 +140,7 @@
   left: calc((100% - 1200px) / 2);
   color: black;
 }
-
-.btn__next {
+.top-banner .btn__next {
   display: flex;
   align-items: center;
   justify-content: center;

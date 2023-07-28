@@ -14,13 +14,12 @@
   border: 0;
 }
 
-.slider-section {
+.top-banner {
   margin-top: 25px;
   position: relative;
   .items {
     display: flex;
     position: absolute;
-
     transform: translate(-530px);
     gap: 30px;
     top: 0;
@@ -43,12 +42,12 @@
       top: 35%;
       left: 2%;
       border-radius: 6px;
-      .information__bold-text {
+      .information__title {
         font-size: 20px;
         font-weight: 700;
         line-height: 30px;
       }
-      .information__text {
+      .information__content {
         font-size: 14px;
         font-weight: 500;
         padding: 0 20px 30px 0;
@@ -78,17 +77,14 @@
     align-items: center;
     justify-content: center;
   }
-  button:hover {
-    cursor: pointer;
+  .btn__prev {
+    @include arrow-button;
+    left: calc((100% - 1200px) / 2);
+    color: black;
+  }
+  .btn__next {
+    @include arrow-button;
+    right: calc((100% - 1250px) / 2);
   }
 }
 //   나중에 marin 해서 prev와 next에 넣어놓는 게 나을ㄷ스
-.btn__prev {
-  @include arrow-button;
-  left: calc((100% - 1200px) / 2);
-  color: black;
-}
-.btn__next {
-  @include arrow-button;
-  right: calc((100% - 1250px) / 2);
-}

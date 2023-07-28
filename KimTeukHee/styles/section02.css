@@ -1,0 +1,22 @@
+.section02 {
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+
+.section02__main-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb;
+  width: 100%;
+  height: 600px;
+}
+
+.section02__main-text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}

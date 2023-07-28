@@ -106,7 +106,7 @@ HTML과 CSS를 이론 공부에서 끝내지 않고 체화하기 위함입니다
 
 <br/>
 
-## [ 주요 구현 화면 미리보기 🦔 ]
+## [ 주요 구현 화면 🦔 ]
 Welcome page<br/>
 ![welcome page](https://github.com/JitHoon/Jithoon/assets/101972330/5f8b35a7-1288-4f34-b45c-a396dc9ad1d2)
 
@@ -115,10 +115,114 @@ Welcome page<br/>
 dialog 태그를 활용한 메뉴바 구현<br/>
 ![ezgif com-video-to-gif](https://github.com/JitHoon/Jithoon/assets/101972330/30529d67-d837-46f3-936c-dc5b47513d70)
 
+```js
+/*
+  header 메뉴바를 열고 닫기 위한 JS 소스코드
+  
+  (dialog 태그를 여닫는 El.showModal() El.close()가 필요하여 JS를 사용)
+*/
+
+// 메뉴바 구현용 dialog 요소 불러오기
+const menuDialog = document.querySelector("dialog");
+
+// 메뉴바 여닫는용 button 요소들 불러오기
+const menuBtn = document.querySelector(".site-nav-items-menu");
+const menuCloseBtn = document.querySelector(".menu-close-btn");
+
+// 메뉴 button을 누르면 메뉴바가 열림
+menuBtn.addEventListener("click", () => {
+  menuDialog.showModal();
+});
+
+// X button을 누르면 메뉴바가 닫힘
+menuCloseBtn.addEventListener("click", () => {
+  menuDialog.close();
+});
+```
+
 <br/>
 
 CSS scroll-snap 구현<br/>
 ![scroll-snap](https://github.com/JitHoon/Jithoon/assets/101972330/c620fe9a-7d1b-42fd-868f-e86ca0f4d9f8)
+
+```css
+main{
+  min-width: 100vw;
+  height: 100vh;
+
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.snappin-box {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  background-position: center;
+  background-size : cover;
+  background-repeat : no-repeat;
+
+  scroll-snap-align: center;
+}
+```
+
+```js
+/*
+  실시간 사용자 스크롤 위치에 맞는 header 글자 색 변경용 JS 소스코드
+  
+  (실시간 사용자 스크롤 위치가 필요하여 JS를 사용)
+*/
+
+// 실시간 사용자 스크롤 위치 감지용 main 요소 불러오기
+const main = document.querySelector("main");
+// header 로고와 글자 색 변경용 모든 header 요소 불러오기
+const headerLogo = document.querySelector(".site-logo-tesla");
+const headerText = document.querySelectorAll(".site-nav li span");
+
+// 변경 색상 정의
+const BLACK = "#171A20"
+const WHITE = "#F9F8F8"
+
+// 실시간 사용자 스크롤의 위치가 첫 페이지에 있다면 header 로고와 글자 색을 WHITE, 아니면 BLACK으로 변경
+main.addEventListener("scroll", (event) => {
+  let userScroll = main.scrollTop;
+
+  if (userScrollInFirstPage(userScroll)){
+    changeColorToWhite();
+  }else {
+    changeColorToBlack();
+  };
+});
+
+// 실시간 사용자 스크롤이 첫 페이지에 있다면 참을 반환
+function userScrollInFirstPage(userScroll) {
+  return userScroll < main.offsetHeight
+};
+
+// header 로고와 글자 색을 흰 색으로 변경
+function changeColorToWhite(){
+  headerLogo.style.color = WHITE;
+  
+  headerText.forEach((span) => {
+    span.style.color = WHITE;
+  });
+}
+
+// header 로고와 글자 색을 검은 색으로 변경
+function changeColorToBlack(){
+  headerLogo.style.color = BLACK;
+  
+  headerText.forEach((span) => {
+    span.style.color = BLACK;
+  });
+}
+```
 
 <br/>
 

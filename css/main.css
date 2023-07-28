@@ -1,0 +1,1130 @@
+
+
+
+
+/* visual */
+#visual{
+    position: relative; 
+    width: 100%; 
+    height: 110vh;
+}	
+#visual .visual_in {
+    position:absolute; 
+    width:100%; 
+    height:100vh; 
+    top:0; 
+    left:0; 
+    overflow:hidden; 
+    z-index:0; 
+    background:#000; 
+    height: -webkit-fill-available;
+}
+#visual .visual_in .video-js {
+    width:100% !important; 
+}
+#visual .visual_in .video-js video{
+    position: relative; 
+    width: auto; 
+    height:110vh; 
+    left:50%; 
+    transform: translateX(-50%);
+    opacity: 0.9;
+}
+
+#visual .visual_in .control-bar{
+    position:absolute; 
+    left: 25px;
+    margin-top:650px;
+    z-index:99;
+}
+#visual .visual_in .control-bar .play {
+    display:none;
+}
+button.play_button {
+    cursor: pointer;
+    border:0;
+    font-size:0;
+    width:40px;
+    height:40px; 
+    border-radius: 100%;
+    box-sizing: border-box;
+    background-color:rgba(93,113,152,.4);
+    background-size: 25px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+button.play_button.puase {
+    background-image: url(../asset/img/visual_pause.svg);
+}
+ button.play_button.play {
+    background-image: url(../asset/img/visual_play.svg);
+}
+button.play_button:hover {
+    background-color:rgba(93,113,152,.6);
+}
+
+
+
+#visual .visual-content {
+    position:absolute; 
+    z-index: 1; 
+    width:100%; 
+    height:95%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items : center; 
+    justify-content: center; 
+    gap:40px 0;
+    min-height:900px;
+}
+
+#visual .visual-content > img {
+    width:480px;
+}
+#visual .visual-content .visual-content-text {
+    text-align:center
+}
+h3.title{ 
+    font-size: 43px; 
+    font-family: "Kenris"; 
+    font-weight:400; 
+    line-height: 1.05; 
+    text-transform: uppercase; 
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5); 
+    color: #D2C8AE;
+    word-break: keep-all;
+}
+p.normal-text {
+    margin-top:10px; 
+    font-family: "Yoon Myungjo", sans-serif; 
+    font-size:22px; 
+    font-weight: 500; 
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5); 
+    color: #878582;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+.visual-content-logo ul{
+    display:flex; 
+    flex-direction: row; 
+    width:100%; 
+    gap: 0 60px;
+    margin-top:4%;
+}
+.visual-content-logo li.first img {width:196px;}
+.visual-content-logo li.second img {width:252px;}
+.visual-content-logo li.third img {width:166px;}
+.visual-content-logo li.fourth img {width:273px;}
+
+button.red_button {
+    height:93px;     
+    filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.66));font-weight: 400;
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #E5E0C8;
+    font-size:27px; 
+    background-color: transparent;
+    transition: color 350ms;
+    padding: 0 40px;
+    border:0;
+    font-family: "Kodia";
+    cursor: pointer;
+}
+button.red_button::before, button.red_button::after { 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: opacity 350ms, color 350ms;
+    background-repeat: no-repeat; 
+    background-position: left center, right center, center center, 10px center, calc(100% - 10px) center, center center;
+    background-size: auto 100%, auto 100%, auto 100%, auto calc(100% - 20px), auto calc(100% - 20px), 82% calc(100% - 20px);
+}
+button.red_button::before {
+    background-image: 
+        url(../asset/img/d4-button-filigree-left.webp), 
+        url(../asset/img/d4-button-filigree-right.webp), 
+        url(../asset/img/d4-button-filigree-center.webp), 
+        url(../asset/img/d4-button-primary-left-base.webp), 
+        url(../asset/img/d4-button-primary-right-base.webp), 
+        url(../asset/img/d4-button-primary-tile-base.webp);
+}
+
+button.red_button::after {
+    opacity: 0;
+    background-image: 
+        url(../asset/img/d4-button-filigree-left.webp), 
+        url(../asset/img/d4-button-filigree-right.webp), 
+        url(../asset/img/d4-button-filigree-center.webp), 
+        url(../asset/img/d4-button-primary-left-hover.webp), 
+        url(../asset/img/d4-button-primary-right-hover.webp), 
+        url(../asset/img/d4-button-primary-tile-hover.webp);
+}
+
+button.red_button:hover::after {
+    opacity: 1;
+}
+
+#overview {display: flex; justify-content: center; position:relative; top:-11.5vh;}
+.overview-wrap {display:flex; justify-content: center; width:calc(100% - 80px);}
+#overview .overview-inner {
+    width:100%;
+    max-width:1400px;
+    box-sizing: border-box;
+}
+
+#overview .overview-inner .overview-inner-cont {
+    display:none;
+}
+#overview .overview-inner .overview-inner-cont.on {
+    display:flex;
+}
+
+#overview .overview-inner > div{
+    display: flex;
+    justify-content: space-between;
+    gap:80px;
+}
+
+#overview .overview-inner-left {
+    width:60%; max-width:792px; position: relative;
+}
+
+.youtube-overlay .overlay{
+    position:absolute; 
+    padding-bottom:52.25%; 
+    padding-top:30px; 
+    height:0; 
+    overflow:hidden; 
+    background-color: #000;
+    z-index: 999;
+    width:100%; 
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-sizing: border-box;
+}
+
+.youtube-overlay .overlay-inner {
+    position:absolute; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+#overview .overview-inner-first .overview-inner-left .overlay-inner {
+    background-image: url(../asset/img/D4_Gampeplay-Launch-Trailer_Thumb_global.webp);
+}
+#overview .overview-inner-second .overview-inner-left .overlay-inner {
+    background-image: url(../asset/img/D4_Story-Launch-Trailer_Thumb_global.jpg);
+}
+
+.youtube-overlay .overlay:hover .overlay-inner {
+    filter: brightness(1.3);
+    -webkit-filter: brightness(1.3); 
+    -moz-filter: brightness(1.3)
+}
+
+
+.youtube-overlay .overlay button{
+    border:0; 
+    width:100%;
+    height:100%;
+    position:absolute;
+    background: transparent;
+    cursor: pointer;
+    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+    background-image: url(../asset/img/circle-frame.webp);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: center center;
+    top:0;
+}
+.youtube-overlay .overlay button img {
+    margin-left:5px;
+}
+
+.youtube-overlay .overlay:hover button {
+    filter: 
+    drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 10px) 
+    drop-shadow(#6f1906 0px 0px 10px) 
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 10px) 
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 15px) 
+    brightness(2)
+    contrast(1.2);
+}
+
+.youtube-overlay .youtube {position:relative; padding-bottom:52.25%; padding-top:30px; height:0; overflow:hidden;}
+.youtube-overlay .youtube iframe,
+.youtube-overlay .youtube object,
+.youtube-overlay .youtube embed {position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.overview-inner-right {
+    width:38%;
+}
+
+
+.overview-tap {
+    position:relative; 
+    margin-bottom:70px;
+}
+
+.overview-tap ul {
+    display: flex;
+}
+
+.overview-tap ul li button{
+    font-family:"Kenris";
+    color:#878582;
+    font-size: 22px;
+    min-width:120px;
+    text-align: center;
+    border:0;
+    background: transparent;
+    padding: 15px 30px;
+    position: relative;
+    cursor: pointer;
+}
+.overview-tap ul li button.on, .overview-tap ul li button:hover {
+    filter: brightness(1.6);
+    text-shadow: 0px 0px 10px rgb(224 165 115 / 66%), 0px 0px 10px #c85541, 0px 4px 15px #000000;
+    color:#fff;
+}
+.overview-tap ul li button.on::after {
+    display: block;
+}
+.overview-tap ul li button::after {
+    content: "";
+    display:none;
+    width:100%;
+    height:100%;
+    background-image: url(../asset/img/d4-tab-underline-2.webp);
+    background-size: 120px auto;
+    background-repeat: no-repeat;
+    background-position: center 8px;
+    position: absolute;
+    left:0;
+    opacity: 0.6;
+}
+
+
+
+button.brown_button {
+    display:block;
+    margin-top:40px;
+}
+
+
+button.brown_button {
+    height:72px;     
+    filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.66));font-weight: 400;
+    line-height: 0;
+    text-transform: uppercase;
+    color: #E5E0C8;
+    font-size:27px; 
+    background-color: transparent;
+    transition: color 350ms;
+    padding: 0 40px;
+    border:0;
+    font-family: "Kodia";
+    cursor: pointer;
+}
+
+
+button.brown_button::before, button.brown_button::after { 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: opacity 350ms, color 350ms;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: left center, right center, center center;
+    background-size: auto 100%;
+}
+
+button.brown_button::before{
+    background-image: url(../asset/img/d4-button-secondary-left-base.webp),
+    url(../asset/img/d4-button-secondary-right-base.webp),
+    url(../asset/img/d4-button-secondary-tile-base.webp);
+}
+
+button.brown_button::after{
+    opacity: 0;
+    background-image: url(../asset/img/d4-button-secondary-left-hover.webp),
+    url(../asset/img/d4-button-secondary-right-hover.webp),
+    url(../asset/img/d4-button-secondary-tile-hover.webp);
+}
+
+button.brown_button:hover::after {
+    opacity: 1;
+}
+
+button.brown_button i {
+    font-size: 0;
+    width:24px;
+    height:35px;
+    display: inline-block;
+    position:relative;
+    top:5px;
+}
+
+button.brown_button svg {color:#E5E0C8}
+
+#spotlight {
+    background-image: linear-gradient(0deg, rgba(111, 25, 6, 0.82), rgba(111, 25, 6, 0.82)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../asset/img/leather-texture_800.webp);
+    background-blend-mode: color, normal, normal, normal, normal;
+    box-shadow:  inset 0px 1px 0px rgba(0, 0, 0, 0.24), inset 0px 2px 0px rgba(255, 255, 255, 0.06), inset 0px -1px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 0px rgba(255, 255, 255, 0.06);
+    background-repeat: repeat;
+    display: flex;
+    padding:80px 40px;
+    justify-content: center;
+}
+
+#spotlight .spotlight-wrap {
+    max-width:1400px;
+    display: flex;
+    gap: 80px;
+}
+
+#spotlight .spotlight-wrap .spotlight-left{
+    width: 38%;
+}
+
+#spotlight .spotlight-wrap .spotlight-left h3.title{
+    margin-top: 20px;
+}
+
+#spotlight .spotlight-wrap .spotlight-left p.normal-text{
+    margin-top: 15px;
+}
+
+
+#spotlight .spotlight-wrap .spotlight-right {
+    width: 60%;
+    max-width: 792px;
+    position: relative;
+}
+
+#spotlight .spotlight-wrap .spotlight-right .season-img
+{
+    position: absolute;
+    padding-bottom: 52.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    background-image: url(../asset/img/d4-season-1-emblem-logo-kokr-2.png);
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 999;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-sizing: border-box;
+    font-size:0;
+}
+
+#spotlight .spotlight-wrap .spotlight-right .season-bg
+{
+    position: relative;
+    padding-bottom: 52.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    background-image: url(../asset/img/d4_season1_narrative_trailer_thumbnail_agnostic.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-sizing: border-box;
+    filter:brightness(0.7);
+}
+
+#news {
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../asset/img/leather-texture_800.webp);
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.24), inset 0px 2px 0px rgba(255, 255, 255, 0.06), inset 0px -1px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 0px rgba(255, 255, 255, 0.06);
+    background-repeat: repeat;
+    padding:80px 40px;
+    justify-content: center;
+    display: flex;
+}
+
+#news .news-wrap {
+    width:100%;
+    max-width: 1400px;
+    overflow: hidden;
+}
+
+#news .news-wrap h3.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#news .news-wrap .swiper-wrapper {
+    display:flex;
+}
+
+#news .news-wrap .swiper-wrapper .swiper-slide {
+    overflow: hidden;
+    position: relative;
+    transition: filter 350ms;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.66), inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#news .news-wrap .swiper-wrapper .swiper-slide:hover {
+    filter: brightness(1.2);
+}
+
+#news .news-wrap .swiper-wrapper .swiper-slide .img-cont {
+    width:100%;
+    padding-bottom:52.25%;
+    position: relative;
+}
+
+#news .news-wrap .swiper-wrapper .swiper-slide .img-cont img {
+    height:100%; position: absolute;
+    left:50%; transform: translateX(-50%);
+}
+
+#news .news-wrap .swiper-wrapper .swiper-slide .txt-cont{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.66), inset 0 0 10px rgba(255, 255, 255, 0.1);
+    margin: 0;
+    padding: 30px 35px;
+    background: rgba(10, 10, 10, 0.8) linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+    box-sizing: border-box;
+    height: 200px;
+}
+
+#news .news-wrap .swiper-wrapper .swiper-slide .txt-cont strong {
+    display: block;
+    font-family:"Kodia";
+    font-weight: 400;
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #B0AFAC;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+#news .news-wrap .swiper-wrapper .swiper-slide .txt-cont span {
+    display: block;
+    color:#878582;
+    font-family: "Yoon Myungjo", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    bottom:20px;
+}
+
+#news .news-wrap .swiper-wrapper .swiper-slide a {
+    display:block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    z-index: 999999;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+#news .news-wrap button.brown_button {
+    margin: 40px auto 0 auto;
+}
+
+#classes {
+    padding:80px 40px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+#classes .classes-wrap {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    width:100%;
+    max-width: 1400px;
+    overflow: hidden;
+}
+
+#classes .classes-wrap .classes-top {
+    text-align: center;
+}
+
+span.text-sub {
+    font-family: "Yoon Myungjo", sans-serif;
+    font-weight: 500;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #AA9480;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+#classes .classes-wrap .classes-text p {
+    margin-top:15px;
+    max-width: 800px;
+    margin: 15px auto 0 auto;
+}
+
+#classes .classes-wrap .classes-list {
+    padding-top:60px;
+    width: 100%;
+}
+
+.text-list {
+    width:100%;
+    display: flex;
+    gap:50px;
+}
+
+.text-list li {width:25%;}
+.text-list li img {width:100%}
+.text-list li .list-txt strong {
+    display: block;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #D2C8AE;
+    line-height: 0.9;
+    font-family: "Kodia";
+    font-weight: 400;
+    font-size: 27px;
+    margin:20px 0 15px 0; 
+}
+.text-list li .list-txt p {
+    font-family: "Yoon Myungjo", sans-serif;
+    font-weight: 500;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #878582;
+    font-size:18px;
+    line-height: 1.4;
+    word-break: keep-all;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#classes .classes-bottom {
+    padding-top:180px;
+    width:calc(50% - 25px);
+    overflow: hidden;
+    position: relative;
+}
+
+#classes .classes-bottom h3.title {
+    text-align: center;
+    max-width:630px;
+}
+
+#classes .swiper-slide p.normal-text {
+    word-break: keep-all;
+    margin-bottom: 70px;
+}
+
+#classes .youtube-overlay {
+    position: relative;
+    width: 100%;
+}
+
+#classes .youtube-overlay.first .overlay-inner {
+    background-image: url(../asset/img/D4_Story-Class-Trailer-Barbarian_Thumb_global.webp);
+}
+#classes .youtube-overlay.second .overlay-inner {
+    background-image: url(../asset/img/D4_Story-Class-Trailer-Druid_Thumb_global.webp);
+}
+#classes .youtube-overlay.third .overlay-inner {
+    background-image: url(../asset/img/D4_Story-Class-Trailer-Necromancer_Thumb_global.webp);
+}
+#classes .youtube-overlay.fourth .overlay-inner {
+    background-image: url(../asset/img/D4_Story-Class-Trailer-Rogue_Thumb_global.webp);
+}
+#classes .youtube-overlay.fifth .overlay-inner {
+    background-image: url(../asset/img/D4_Story-Class-Trailer-Sorcerer_Thumb_global.webp);
+}
+
+#classes .classes-bg{
+    box-shadow: inset 0px 0px 40px #000000;
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index: 0;
+    top:0;
+    overflow: hidden;
+
+}
+
+#classes .classes-bg .classes-character {
+    background-image: url(../asset/img/D4-Launch_Class-Section-Barbarian_001.webp);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    bottom: 0px;
+    position: absolute;
+    background-position: center;
+    background-size: auto 100%;
+    max-width: 1920px;
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    transition:all 0.5s cubic-bezier(0.215,0.61,0.355,1);
+}
+#classes .classes-bg .classes-character.on {
+    animation-duration: 0.5s;
+    animation-name: fadein;
+}
+@keyframes fadein {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+#classes .classes-bg .classes-bgimg {
+    width: 100%;
+    height:100%;
+    background-image: url(../asset/img/D4-Launch_Class-Section-BG_001.webp);
+    background-position: center 81%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    max-width: 1920px;
+}
+
+.classes-swiper {margin-top:210px;}
+
+.swiper-pagination{
+    position:absolute; 
+    top:280px;
+    z-index: 999;
+    height:100px;
+    width:100% !important;
+    max-width: 630px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.world-pagination {
+    position:absolute; 
+    top:70px;
+    z-index: 999;
+    height:100px;
+    width:100% !important;
+    max-width: 630px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    left:50% !important;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination .swiper-pagination-bullet, .world-pagination .swiper-pagination-bullet {
+    width:87px;
+    height:72px;
+    background: transparent;
+    border-radius: 0;
+    position: relative;
+    opacity: 1;
+    transition: filter 350ms;
+}
+
+.swiper-pagination .swiper-pagination-bullet span, .world-pagination .swiper-pagination-bullet span{
+    transition: filter 350ms;
+    text-transform: uppercase;
+    font-family: "Kenris";
+    font-size: 14px;
+    font-weight: 500;
+    color: #878582;
+    margin-top: 10px;
+    display: inline-block;
+    transition: filter 350ms;
+}
+
+.swiper-pagination .swiper-pagination-bullet::before, .swiper-pagination .swiper-pagination-bullet::after,
+.world-pagination .swiper-pagination-bullet::before, .world-pagination .swiper-pagination-bullet::after{
+    content: "";
+    display:block;
+    width:100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: filter 350ms;
+}
+
+.swiper-pagination .swiper-pagination-bullet::after, .world-pagination .swiper-pagination-bullet::after {
+    position: absolute;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+.swiper-pagination .swiper-pagination-bullet-active::after, .swiper-pagination .swiper-pagination-bullet:hover:after,
+.world-pagination .swiper-pagination-bullet-active::after, .world-pagination .swiper-pagination-bullet:hover:after {
+    filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+    opacity: 1;
+    visibility: visible;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active span, .swiper-pagination-bullet:hover span,
+.world-pagination .swiper-pagination-bullet-active span{
+    font-weight: 500;
+    color: #fff;
+    filter: brightness(1.6);
+    text-shadow: 0px 0px 10px rgba(224, 165, 115, 0.66), 0px 0px 10px #C85541, 0px 4px 15px #000000;
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(1)::before {
+    background-image: url(../asset/img/d4-classes-icon-barbarian-base.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(1)::after {
+    background-image: url(../asset/img/d4-classes-icon-barbarian-hover.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(2)::before {
+    background-image: url(../asset/img/d4-classes-icon-druid-base.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(2)::after {
+    background-image: url(../asset/img/d4-classes-icon-druid-hover.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(3)::before {
+    background-image: url(../asset/img/d4-classes-icon-necromancer-base.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(3)::after {
+    background-image: url(../asset/img/d4-classes-icon-necromancer-hover.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(4)::before {
+    background-image: url(../asset/img/d4-classes-icon-rogue-base.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(4)::after {
+    background-image: url(../asset/img/d4-classes-icon-rogue-hover.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(5)::before {
+    background-image: url(../asset/img/d4-classes-icon-sorcerer-base.webp);
+}
+
+.swiper-pagination .swiper-pagination-bullet:nth-child(5)::after {
+    background-image: url(../asset/img/d4-classes-icon-sorcerer-hover.webp);
+}
+
+
+#world {
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../asset/img/leather-texture_800.webp);
+    box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.24), inset 0px 2px 0px rgba(255, 255, 255, 0.06), inset 0px -1px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 0px rgba(255, 255, 255, 0.06);
+    background-repeat: repeat;
+    padding:80px 40px;
+    justify-content: center;
+    display: flex;
+}
+
+#world .world-wrap {
+    width:100%;
+    max-width: 1600px;
+    overflow: hidden;
+}
+
+#world .world-wrap h3.title{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#world .world-wrap p.normal-text {
+    text-align: center;
+    width:720px;
+    margin:20px auto 0 auto;
+}
+
+#world .world-wrap .world-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top:220px;
+}
+#world .world-wrap .world-bottom .world-swiper{
+    width:calc(100% - 260px); 
+}
+#world .world-wrap .swiper-wrapper {
+    display:flex;
+    width:100%; 
+}
+
+#world .world-wrap .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#world .world-wrap .swiper-wrapper .swiper-slide img {
+    width:100%;
+}
+
+
+
+
+.world-pagination .swiper-pagination-bullet:nth-child(1)::before {
+    background-image: url(../asset/img/d4-classes-icon-worldbosses-base.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(1)::after {
+    background-image: url(../asset/img/d4-classes-icon-worldbosses-hover.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(2)::before {
+    background-image: url(../asset/img/d4-classes-icon-dungeons-base.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(2)::after {
+    background-image: url(../asset/img/d4-classes-icon-dungeons-hover.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(3)::before {
+    background-image: url(../asset/img/d4-classes-icon-strongholds-base.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(3)::after {
+    background-image: url(../asset/img/d4-classes-icon-strongholds-hover.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(4)::before {
+    background-image: url(../asset/img/d4-classes-icon-pvp-base.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(4)::after {
+    background-image: url(../asset/img/d4-classes-icon-pvp-hover.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(5)::before {
+    background-image: url(../asset/img/d4-classes-icon-mounts-base.webp);
+}
+
+.world-pagination .swiper-pagination-bullet:nth-child(5)::after {
+    background-image: url(../asset/img/d4-classes-icon-mounts-hover.webp);
+}
+
+.slide-inner .txt-cont strong{
+    display: block;
+    font-weight: 400;
+    line-height: 1.05;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: "Kenris";
+    font-size:33px;
+    text-align: center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    padding: 30px;
+    transition: filter 350ms;
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background: url(../asset/img/circle-frame.webp), radial-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 16%, rgba(0, 0, 0, 0) 20%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 52px 52px, 200px 200px;
+    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    filter: 
+    drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) 
+    drop-shadow(#6f1906 0px 0px 10px) 
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 6px) 
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 6px) 
+    brightness(1.5)
+    contrast(1.2);
+    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev img{
+    transform: rotateZ(90deg);
+    left:10%;
+    position: absolute;
+    top: 25%;
+    
+}
+
+.swiper-button-next img{
+    transform: rotateZ(-90deg);
+    right:10%;
+    position: absolute;
+    top: 25%;
+    filter: brightness(0.7);
+}
+
+.slide-inner .txt-cont {
+    padding-top:25px;
+}
+
+#bullets{
+    position:absolute; 
+    top:0;
+}
+#bullets .swiper-pagination-bullet{
+    filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+    background-image: url(../asset/img/Chicklet.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    padding: 2px;
+    transition: filter 350ms;
+    border-radius: 0;
+    opacity: 1;
+}
+
+
+#outro {
+    padding:80px 40px;
+    justify-content: center;
+    display: flex;
+    background: url(../asset/img/d4-lilith-bg-light.webp);
+    background-size: 2600px auto !important;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+#outro .outro-wrap {padding-top:500px;
+max-width: 1400px;}
+.desktop-comparison-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-container th, .table-container td {
+    padding:16px 24px;
+}
+
+.table-container .product-thumbnail-cell {
+    padding: 12px 12px 0 12px;
+}
+.table-container .product-thumbnail-cell img{
+    box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.66), 0px 4px 15px rgba(0, 0, 0, 0.66);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width:100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.table-container th.product-option-header {
+    padding: 16px;
+}
+
+.product-header-text {
+    color:#dec8ae;
+    font-family: "Kenris";
+    font-size:18px;
+}
+
+.product-subheading {
+    font-size: 15.4px;
+    color: #e0a573;
+    font-family: "Yoon Myungjo", sans-serif;
+    font-weight: 500;
+}
+
+.table-container .comparison-button-cell  {
+    padding:0 8px 8px 8px;
+}
+.comparison-button-cell button {
+    background:#850000;
+    width:100%;
+    font-family: "Poppins", sans-serif;
+    transition: 350ms background-color;
+    box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.66), 0px 4px 15px rgba(0, 0, 0, 0.66);
+    text-transform: none;
+    color: #fff;
+    line-height: 24.3px;
+    font-size: 0.9em;
+    border: 0;
+    border-radius: 4px;
+    padding:8px 0;
+    cursor: pointer;
+}
+.comparison-button-cell button:hover{
+    background-color: #B60000;
+}
+
+.feature-label-table-cell {
+    font-family: "Yoon Myungjo", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    word-break: keep-all;
+}
+td.odd {text-align: center; vertical-align: middle;}
+td.odd img {width:24px; height:24px;}
+
+.table-container table tr:nth-child(2n-1) td{
+    background:rgba(255, 255, 255, 0.05);
+}
+.table-container table tr:nth-child(2n-1) td:first-child{
+    border-radius: 8px 0 0 8px;
+}
+.table-container table tr:nth-child(2n-1) td:last-child{
+    border-radius: 0 8px 8px 0;
+}
+
+.table-container table tr:nth-child(1) td, .table-container table tr:nth-child(3) td{
+    background: transparent;
+}
+
+.text-cont {
+    text-align: center;
+}
+
+#outro h3.title {
+    font-size:52px;
+}
+
+#outro p.normal-text {
+    padding:30px 0 60px 0;
+}
+
+#outro .legalese-wrapper {display: flex; justify-content: center;}
+#outro .legalese-block {width: 700px; padding:70px 0;}
+#outro .legalese-block p {
+    color:rgba(255, 255, 255, 0.3);
+    font-size: 15px;
+    font-family: "Yoon Myungjo", sans-serif;
+    font-weight: 500;
+    line-height: 2;
+}
+
+#social {text-align: center;}
+#social h3.title {font-size:32px}
+#social ul {padding-top:20px; display: flex; justify-content: center; gap: 10px;}
+#social ul li svg {width:48px; height:48px; color:rgba(255,255,255,0.8); transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);}
+#social ul li a:hover svg {color:#fff; }
+
+
+

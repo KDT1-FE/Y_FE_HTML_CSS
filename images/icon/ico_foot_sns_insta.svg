@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="btn_32_instagram" transform="translate(-225 -696)">
+        <g id="ico_insta" opacity="0.56" transform="translate(225 696)">
+            <g id="타원_29" fill="none" stroke="#fff">
+                <circle cx="16" cy="16" r="16" stroke="none"/>
+                <circle cx="16" cy="16" r="15.5"/>
+            </g>
+            <g id="그룹_350" transform="translate(8 8)">
+                <path id="패스_2446" d="M66.4 34.068h-6.147A4.933 4.933 0 0 0 55.324 39v6.142a4.933 4.933 0 0 0 4.929 4.929H66.4a4.933 4.933 0 0 0 4.929-4.929V39a4.928 4.928 0 0 0-4.929-4.932zm3.392 10.484a3.985 3.985 0 0 1-3.979 3.986h-4.96a3.986 3.986 0 0 1-3.986-3.986v-4.96a3.986 3.986 0 0 1 3.986-3.986h4.96a3.98 3.98 0 0 1 3.979 3.986z" class="cls-3" transform="translate(-55.324 -34.068)"/>
+                <path id="패스_2447" d="M68.456 42.7a3.942 3.942 0 1 0 4.06 3.94 4 4 0 0 0-4.06-3.94zm0 6.312a2.373 2.373 0 1 1 2.444-2.368 2.41 2.41 0 0 1-2.444 2.372z" class="cls-3" transform="translate(-60.456 -38.644)"/>
+                <circle id="타원_30" cx="1.015" cy="1.015" r="1.015" class="cls-3" transform="translate(10.914 2.495)"/>
+            </g>
+        </g>
+    </g>
+</svg>

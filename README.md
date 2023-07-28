@@ -7,7 +7,7 @@
 ### 링크
 
 - 토스메인페이지 : https://tkyoun0421.github.io/KDT_FE_Toss_Clone_release/
-- 클론페이지 :
+- 클론페이지 : https://cosmic-trifle-e5bb7a.netlify.app/
 
 ### 기간
 

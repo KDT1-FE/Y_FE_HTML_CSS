@@ -1,17 +1,17 @@
-dialog{
+dialog {
   width: 0px;
   min-height: 100vh;
 
   margin: 0 0 0 auto;
   padding: 0;
   border: none;
-  
+
   display: flex;
   flex-direction: column;
 
   opacity: 0;
-  transition: .8s cubic-bezier(0.375, 0.035, 0.055, 0.965);
-  
+  transition: 0.8s cubic-bezier(0.375, 0.035, 0.055, 0.965);
+
   /* header의 flex 레이아웃인 align-items: center에
   영향을 받으므로 item 따로 배열 */
   align-self: flex-start;
@@ -27,36 +27,36 @@ dialog::backdrop {
   backdrop-filter: blur(5px);
 }
 
-.menu-header{
+.menu-header {
   width: 290px;
   height: 80px;
-  
+
   padding: 20px 0;
 
   display: flex;
   justify-content: end;
 
   position: fixed;
-  
-  background-color: #FFFFFF;
+
+  background-color: #ffffff;
 }
 
-.menu-close-icon{
+.menu-close-icon {
   width: 24px;
   height: 24px;
 
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.menu-content{
+.menu-content {
   padding: 5px 30px 80px;
 }
 
-.menu-items{
+.menu-items {
   margin-top: 90px;
 }
 
-.menu-items li{
+.menu-items li {
   height: 40px;
   min-width: 230px;
 
@@ -66,25 +66,26 @@ dialog::backdrop {
   align-items: center;
 }
 
-.menu-item{
+.menu-item {
   height: 40px;
   min-width: 230px;
 }
 
-.menu-item-text, .menu-product-text{
+.menu-item-text,
+.menu-product-text {
   margin: 0 4px;
 
   line-height: 35px;
   font-size: 14px;
 }
 
-.menu-product-text{
+.menu-product-text {
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
-.menu-items li:last-child{
+.menu-items li:last-child {
   height: 55px;
   min-width: 230px;
 
@@ -92,21 +93,21 @@ dialog::backdrop {
   padding: 0;
 
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.menu-item-word{
+.menu-item-word {
   display: flex;
   justify-content: flex-start;
 }
 
-.menu-item-word svg{
+.menu-item-word svg {
   margin: 8px 0px 24px 8px;
   width: 24px;
   height: 24px;
 }
 
-.menu-item-word-text{
+.menu-item-word-text {
   padding: 8px 12px 8px 8px;
 
   display: flex;
@@ -115,7 +116,7 @@ dialog::backdrop {
   justify-content: space-evenly;
 }
 
-.menu-item-word-text-ko{
+.menu-item-word-text-ko {
   font-size: 12px;
-  color: #5C5E62;
+  color: #5c5e62;
 }

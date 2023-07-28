@@ -3,7 +3,7 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -11,12 +11,12 @@ body{
   display: none;
 }
 
-video{
+video {
   display: block;
-  
+
   height: 100vh;
   object-fit: cover;
-  
+
   inline-size: 100%;
 
   overflow: clip;
@@ -29,18 +29,20 @@ video{
   z-index: -1;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-button{
+button {
   border: none;
-  
+
   background-color: transparent;
-  color: #181A1F;
+  color: #181a1f;
 }
 
-a, a:visited, a:active{
+a,
+a:visited,
+a:active {
   text-decoration: none;
-  color: #181A1F;
+  color: #181a1f;
 }

@@ -1,4 +1,4 @@
-main{
+main {
   min-width: 100vw;
   height: 100vh;
 
@@ -17,27 +17,27 @@ main{
   position: relative;
 
   background-position: center;
-  background-size : cover;
-  background-repeat : no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   scroll-snap-align: center;
 }
 
-.modelY{
+.modelY {
   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop");
 }
-.model3{
+.model3 {
   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD");
 }
-.modelX{
+.modelX {
   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD");
 }
-.modelS{
+.modelS {
   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop");
 }
-.powerwall{
+.powerwall {
   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels");
 }
-.accessories{
+.accessories {
   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-NA-APAC.jpg");
 }

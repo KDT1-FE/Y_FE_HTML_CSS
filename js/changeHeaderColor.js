@@ -11,38 +11,38 @@ const headerLogo = document.querySelector(".site-logo-tesla");
 const headerText = document.querySelectorAll(".site-nav li span");
 
 // 변경 색상 정의
-const BLACK = "#171A20"
-const WHITE = "#F9F8F8"
+const BLACK = "#171A20";
+const WHITE = "#F9F8F8";
 
 // 실시간 사용자 스크롤의 위치가 첫 페이지에 있다면 header 로고와 글자 색을 WHITE, 아니면 BLACK으로 변경
 main.addEventListener("scroll", (event) => {
   let userScroll = main.scrollTop;
 
-  if (userScrollInFirstPage(userScroll)){
+  if (userScrollInFirstPage(userScroll)) {
     changeColorToWhite();
-  }else {
+  } else {
     changeColorToBlack();
-  };
+  }
 });
 
 // 실시간 사용자 스크롤이 첫 페이지에 있다면 참을 반환
 function userScrollInFirstPage(userScroll) {
-  return userScroll < main.offsetHeight
-};
+  return userScroll < main.offsetHeight;
+}
 
 // header 로고와 글자 색을 흰 색으로 변경
-function changeColorToWhite(){
+function changeColorToWhite() {
   headerLogo.style.color = WHITE;
-  
+
   headerText.forEach((span) => {
     span.style.color = WHITE;
   });
 }
 
 // header 로고와 글자 색을 검은 색으로 변경
-function changeColorToBlack(){
+function changeColorToBlack() {
   headerLogo.style.color = BLACK;
-  
+
   headerText.forEach((span) => {
     span.style.color = BLACK;
   });

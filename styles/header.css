@@ -13,20 +13,20 @@ header {
   animation-duration: 1s;
 }
 
-.site-logo{
+.site-logo {
   padding: 0px 0px 0px 32px;
 }
 
-.site-logo-tesla{
+.site-logo-tesla {
   width: 148px;
   height: 48px;
 
   padding: 0px 16px;
 
-  color: #F9F8F8;
+  color: #f9f8f8;
 }
 
-.site-nav-products{
+.site-nav-products {
   width: 620px;
   padding: 0px 8px;
 
@@ -35,7 +35,7 @@ header {
   align-items: center;
 }
 
-.site-nav-items{
+.site-nav-items {
   width: 220px;
   line-height: 27px;
 
@@ -46,28 +46,30 @@ header {
   align-items: center;
 }
 
-header ol a{
+header ol a {
   padding: 4px 8px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-header ol a:hover, .site-nav-items-menu:hover, .menu-items li:last-child:hover, 
-.menu-close-icon:hover{
+header ol a:hover,
+.site-nav-items-menu:hover,
+.menu-items li:last-child:hover,
+.menu-close-icon:hover {
   border-radius: 3px;
   background-color: #b3b9bc4b;
 }
 
-.site-nav li span{
+.site-nav li span {
   margin: 0px 8px;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 450;
-  letter-spacing: .5px;
-  color: #F9F8F8;
+  letter-spacing: 0.5px;
+  color: #f9f8f8;
 }
 
-.site-nav-items-menu{
+.site-nav-items-menu {
   padding: 4px 8px;
 
   box-sizing: content-box;
@@ -75,20 +77,22 @@ header ol a:hover, .site-nav-items-menu:hover, .menu-items li:last-child:hover,
   font-size: 14px;
   cursor: pointer;
 
-  transition: .4s;
+  transition: 0.4s;
 }
 
 @media (max-width: 1200px) {
-  .site-nav-products, .site-nav-items li:nth-of-type(1), .site-nav-items li:nth-of-type(2) {
+  .site-nav-products,
+  .site-nav-items li:nth-of-type(1),
+  .site-nav-items li:nth-of-type(2) {
     display: none;
   }
 }
 
-@keyframes fadeIn{
-  from{
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }

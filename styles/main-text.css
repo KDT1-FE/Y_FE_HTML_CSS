@@ -1,20 +1,20 @@
-.snappin-box-text{
+.snappin-box-text {
   max-width: 400px;
   height: auto;
 
   margin: 0 auto;
   position: absolute;
   top: 14%;
-  
+
   text-align: center;
 }
 
-.snappin-box-text h1{
+.snappin-box-text h1 {
   font-size: 42px;
 
   letter-spacing: 3px;
-  font-weight:600;
-  color: #171A20;
+  font-weight: 600;
+  color: #171a20;
 
   animation-name: fadeInUp;
   animation-delay: 1s;
@@ -22,11 +22,11 @@
   animation-fill-mode: both;
 }
 
-.snappin-box-text p{
+.snappin-box-text p {
   padding: 7px 0;
-  
+
   font-size: 14px;
-  color: #171A20;
+  color: #171a20;
 
   animation-name: fadeInUp;
   animation-delay: 2s;
@@ -34,25 +34,25 @@
   animation-fill-mode: both;
 }
 
-.snappin-box-text a{  
-  text-decoration : underline;
-  text-underline-position : under;
+.snappin-box-text a {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
-.test-drive h1{
+.test-drive h1 {
   padding: 5px;
 
   font-size: 40px;
   letter-spacing: 1px;
-  font-weight:400;
+  font-weight: 400;
   color: #fff;
 }
 
-.test-drive p{
+.test-drive p {
   color: #fff;
 }
 
-.snappin-box-btn{
+.snappin-box-btn {
   width: auto;
   height: 40px;
 
@@ -70,43 +70,43 @@
   animation-fill-mode: both;
 }
 
-.snappin-box-btn a{
+.snappin-box-btn a {
   width: 250px;
   height: 100%;
 
   margin: 0 10px;
   margin-bottom: 16px;
   border-radius: 3px;
-  
+
   line-height: 40px;
 
-  opacity: .9;
+  opacity: 0.9;
   text-align: center;
   font-size: 14px;
 }
 
-.snappin-box-btn a:first-child{
-  color: #FFF;
+.snappin-box-btn a:first-child {
+  color: #fff;
   background-color: #0e1410cc;
 }
 
-.snappin-box-btn a:last-child{
+.snappin-box-btn a:last-child {
   color: #0e1410cc;
-  background-color: #E7E6E5;
+  background-color: #e7e6e5;
 }
 
-.test-drive .snappin-box-btn a{
-  border: 3px solid #FFF;
+.test-drive .snappin-box-btn a {
+  border: 3px solid #fff;
   margin: 0 10px;
   margin-bottom: 16px;
-  
+
   line-height: 35px;
 
-  color: #FFF;
+  color: #fff;
   background-color: transparent;
 }
 
-.modelY-chevron{
+.modelY-chevron {
   position: absolute;
   bottom: 20px;
 
@@ -121,29 +121,29 @@
   animation-iteration-count: infinite;
 }
 
-.powerwall .snappin-box-btn a{
-  color: #FFF;
+.powerwall .snappin-box-btn a {
+  color: #fff;
   background-color: #0e1410cc;
 }
 
-.accessories .snappin-box-btn{
+.accessories .snappin-box-btn {
   margin-bottom: 70px;
 }
 
-@keyframes fadeInUp{
+@keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
   to {
-      opacity: 1;
-      transform: translateZ(0);
+    opacity: 1;
+    transform: translateZ(0);
   }
 }
 
-@keyframes upDown{
+@keyframes upDown {
   0% {
-      transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 0%, 0);
   }
   50% {
     transform: translate3d(0, 25%, 0);

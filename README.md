@@ -8,9 +8,19 @@
 클론 코딩 프로젝트 사이트 URL : https://aquamarine-mousse-e4a8fd.netlify.app/
 
 ## 제작 기간: 2023/07/25~2023/07/28
-## 사용 기술
-1. HTML
-2. CSS
+## 개발환경
+<div>
+  <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio&logoColor=white">
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+</div>
+  
+## 사용기술
+<div>
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  </div>
+<br>
 
 ## 개발 사항
 1. PC 레이아웃 적용

@@ -30,6 +30,8 @@
   font-weight: 700;
   line-height: 1.4;
   width: 100%;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .section09__desc-container-01 {

@@ -21,6 +21,8 @@
   width: 100%;
   height: auto;
   margin-bottom: 100px;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .section10__title {

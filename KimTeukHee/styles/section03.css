@@ -18,13 +18,13 @@
   flex-direction: column;
   width: 1000px;
   height: 100%;
-  animation-name: section03-fadeIn;
-  animation-duration: 1s;
 }
 
-.section03__main-text-container {
+.section03__title-container {
   z-index: 5;
   width: 100%;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .section03__title {
@@ -49,6 +49,9 @@
   height: 936px;
   top: 5%;
   align-self: flex-end;
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 0.1s;
 }
 
 .section03__iPhone01 {
@@ -74,6 +77,9 @@
   height: 936px;
   top: 30%;
   align-self: flex-start;
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 0.3s;
 }
 
 .section03__iPhone02 {
@@ -99,15 +105,7 @@
   font-weight: 500;
   color: rgb(51, 61, 75);
   line-height: 1.5;
-}
-
-@keyframes section03-fadeIn {
-  from {
-    opacity: 0;
-    top: 5%;
-  }
-  to {
-    opacity: 1;
-    top: 0%;
-  }
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 0.25s;
 }

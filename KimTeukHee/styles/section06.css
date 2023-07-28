@@ -16,10 +16,12 @@
   width: 1140px;
 }
 
-.seciton06__title-container {
+.section06__title-container {
   width: 100%;
   height: auto;
   margin-bottom: 80px;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .section06__title {
@@ -59,6 +61,7 @@
   width: 120px;
   height: 120px;
   margin-bottom: 30px;
+  transition: all 1s;
 }
 
 .section06__desc-title {

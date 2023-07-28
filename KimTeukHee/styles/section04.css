@@ -23,6 +23,10 @@
   height: 1800px;
 }
 
+.section04__title-container {
+  opacity: 0;
+  transition: all 3s;
+}
 .section04__title {
   font-size: 28px;
   font-weight: 700;
@@ -54,6 +58,8 @@
   align-items: flex-start;
   justify-content: center;
   width: 47%;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .section04__sub-text-container > p {
@@ -85,6 +91,9 @@
   align-items: center;
   justify-content: center;
   width: 47%;
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 0.2s;
 }
 
 .section04__sub-image {

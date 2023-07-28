@@ -131,6 +131,7 @@ button.red_button {
     border:0;
     font-family: "Kodia";
     cursor: pointer;
+    position:relative;
 }
 button.red_button::before, button.red_button::after { 
     top: 0;
@@ -335,6 +336,7 @@ button.brown_button {
     border:0;
     font-family: "Kodia";
     cursor: pointer;
+    position: relative;
 }
 
 

@@ -135,3 +135,13 @@ vibe_prev_btn.addEventListener("click", () => {
 pick_prev_btn.addEventListener("click", () => {
   showSlidePick("prev");
 });
+
+document.querySelector(".range").addEventListener("input", (event) => {
+  let gradient_value = 100 / event.target.attributes.max.value;
+  event.target.style.background =
+    "linear-gradient(to right, gray 0%, gray " +
+    gradient_value * event.target.value +
+    "%, #4b4b4b " +
+    gradient_value * event.target.value +
+    "%, #4b4b4b";
+});

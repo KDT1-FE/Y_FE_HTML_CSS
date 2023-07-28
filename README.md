@@ -19,6 +19,8 @@ scss는 미사용했으며, 몇가지 library와 함께 html, css, js를 이용�
 
 ## 2. 배포 링크
 
+https://kdt0-parkeunyeong-lush.netlify.app/ <br>
+
 ## 3. 사용한 library
 
 <img src="https://swiperjs.com/images/swiper-logo.svg" width=16px> [Swiper](https://swiperjs.com/) <br>

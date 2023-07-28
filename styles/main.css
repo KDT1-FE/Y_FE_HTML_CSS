@@ -64,6 +64,7 @@ main section {
     color: #ef3e43;
 }
 .commonWon {
+    color: #333;
     font-size: 1.8rem;
     font-weight: 400;
 }
@@ -648,6 +649,7 @@ button.tabButton-selected {
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    color: #111;
 }
 
 .content-ticket_ticketPlace {
@@ -658,6 +660,7 @@ button.tabButton-selected {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #666;
 }
 
 .content-ticket_ticketDate {
@@ -667,6 +670,8 @@ button.tabButton-selected {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #999;
+
 }
 
 .content-ticket_ticketBadge {
@@ -1000,6 +1005,7 @@ button.tabButton-selected {
     -webkit-box-orient: vertical;
     font-size: 1.5rem;
     line-height: 1.8rem;
+    color: #111;
 }
 .bookPrice {
     margin-top: 0.4rem;
@@ -1101,6 +1107,10 @@ button.tabButton-selected {
 .content-book_swiperBtn {
     bottom: 210px;
     right: 0;
+}
+
+.commonPrice em {
+    color: #111;
 }
 
 @keyframes autoSwiper {

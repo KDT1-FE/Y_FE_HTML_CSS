@@ -22,12 +22,12 @@ header {
   width: 100%;
   min-width: 1240px;
   height: 80px;
-  position: sticky;
+  position: fixed;
   top: 0px;
   transition: top 0.3s, opacity 0.3s linear 0s;
   z-index: 10;
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
 }
 
@@ -35,6 +35,7 @@ header {
   margin: 0 30px;
   width: 70%;
   display: flex;
+  text-align: center;
   justify-content: space-between;
 }
 
@@ -56,9 +57,38 @@ header {
   margin-left: 50px;
 }
 
-.nav-list li:hover {
+.nav-list-li:hover {
   color: #4c9cff;
   cursor: pointer;
+}
+
+.sub-menu-wrap {
+  opacity: 0;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  height: 0;
+  transition: height 0.2s;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-menu-wrap li {
+  color: black;
+}
+
+.sub-menu-wrap > li:hover {
+  color: #3c93ff;
+}
+
+.nav-list > li:hover .sub-menu-wrap {
+  opacity: 1;
+  height: 80px;
+  position: absolute;
+  top: 80px;
+  left: 0;
 }
 
 .lang-list {
@@ -76,20 +106,11 @@ header {
   font-weight: 700;
 }
 
-/*.sub-menu-wrap {
-  opacity: 0;
-  background-color: white;
-}
-
-.nav-list li:hover .sub-menu-wrap {
-  opacity: 1;
-}*/
-
 .video {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 650px;
+  height: 750px;
   z-index: 2;
 }
 
@@ -186,8 +207,8 @@ header {
   position: relative;
 }
 
-.card1-inner {
-  min-height: 1000px px;
+.card-inner {
+  min-height: 1000px;
   position: relative;
   width: 1240px;
   padding: 0 20px;
@@ -281,9 +302,6 @@ header {
 
 .card2-inner {
   min-height: 1000px;
-}
-
-.card2-inner {
   position: relative;
   width: 1240px;
   padding: 0 20px;
@@ -383,10 +401,6 @@ header {
   line-height: 24px;
   height: 92px;
   transform: translateX(-50%);
-}
-
-.card2-down-button-wrap {
-  cursor: pointer;
 }
 
 .line-line2 {
@@ -492,10 +506,6 @@ header {
   cursor: pointer;
 }
 
-.card3-down-button-wrap {
-  cursor: pointer;
-}
-
 .card3-down-button {
   color: #ffffff;
   background-image: url(./assets/images/bottom-direction.e1410d78.svg);
@@ -572,10 +582,6 @@ header {
 .card4-more-button:hover {
   transition: background-image 0.5s;
   background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
-  cursor: pointer;
-}
-
-.card4-down-button-wrap {
   cursor: pointer;
 }
 

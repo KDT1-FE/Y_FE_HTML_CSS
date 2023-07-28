@@ -10,10 +10,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
-  <!--script-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
-
 </head>
 <body>
   <header>
@@ -33,6 +29,20 @@
             <button>
               <img src="./img/btn_search.png" alt="검색">
             </button>
+          </div>
+          <div class="nav__mini hidden">
+            <i class="ico__nav">
+              <img src="./img/icon_tour.png" alt="투어">
+            </i>
+            <i class="ico__nav">
+              <img src="./img/icon_ticket.png" alt="티켓">
+            </i>
+            <i class="ico__nav">
+              <img src="./img/icon_shopping.png" alt="쇼핑">
+            </i>
+            <i class="ico__nav">
+              <img src="./img/icon_book.png" alt="도서">
+            </i>
           </div>
         </div>
         <div class="header__top--right">
@@ -109,192 +119,1453 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./img/eventBanner_1.png" alt="역대급 콜라보 인트쇼">
+                <img src="./img/eventBanner/eventBanner_1.png" alt="역대급 콜라보 인트쇼">
               </div>
               <div class="swiper-slide">
-                <img src="./img/eventBanner_2.png" alt="휴가철 빈 방 찾기 프로젝트">
+                <img src="./img/eventBanner/eventBanner_2.png" alt="휴가철 빈 방 찾기 프로젝트">
               </div>
               <div class="swiper-slide">
-                <img src="./img/eventBanner_3.png" alt="이토록 NOL 라운지">
+                <img src="./img/eventBanner/eventBanner_3.png" alt="이토록 NOL 라운지">
               </div>
               <div class="swiper-slide">
-                <img src="./img/eventBanner_4.png" alt="인터파크 7월 쿠폰팩">
+                <img src="./img/eventBanner/eventBanner_4.png" alt="인터파크 7월 쿠폰팩">
               </div>
               <div class="swiper-slide">
-                <img src="./img/eventBanner_5.png" alt="여름 성수기 부산 여행 특집">
+                <img src="./img/eventBanner/eventBanner_5.png" alt="여름 성수기 부산 여행 특집">
               </div>
             </div>
           </div>
-          <div class="swiper-prev navBtn">
-            <i class="material-icons">arrow_back</i>
-          </div>
-          <div class="swiper-next navBtn">
-            <i class="material-icons">arrow_forward</i>
-          </div>
+          <button class="swiper-prev">이전</button>
+          <button class="swiper-next">다음</button>
         </div>
       </div>
     </section>
     <section class="shoppingWrap">
       <div class="inner sectionInner">
+        <div class="section__title">
+          <h2>쇼핑 추천</h2>
+          <p>할인이 쎄다! 지금, 특가 상품을 확인하세요.</p>
+        </div>
         <div class="shopping__swiperBox">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+          <div class="tabWrap">
+            <div class="active">쎈딜</div>
+            <div>베스트</div>
+            <div>프레시지초특가</div>
+            <div>인팍전자</div>
+            <div>소담상회</div>
+          </div>
+          <div class="shopping__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_1.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>33,000</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        *7/27~28 다운쿠폰* 짱죽 이유식 골고루 10팩/ 20팩/ 30팩 20일이내 예약배송!
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_2.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>38</em>%
+                        </span>
+                        <span>
+                          <em>10,790</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [프레시지] 블랙라벨 스테이크 2인분(냉장)
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_3.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>20</em>%
+                        </span>
+                        <span>
+                          <em>9,880</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [우리미단] 밀가루0% 글루텐프리 쌀로만든 시원하고 쫄깃한 쌀냉면 물냉면 비빔냉면 4개입 (4인분)
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_4.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>17</em>%
+                        </span>
+                        <span>
+                          <em>57,880</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [일본발매 정품] 템퍼 오리지널 베개 S/M / 걱정없는 수면/ 인체공학적 이상적인 디자인
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_5.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>51</em>%
+                        </span>
+                        <span>
+                          <em>6,210</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [프레시지] 야심작 양념쭈꾸미 300g
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_6.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>13</em>%
+                        </span>
+                        <span>
+                          <em>8,550</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [단독진행] 10단계 정제수 엠보싱 프리미엄 화이트 물티슈 80매 10팩 캡형
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_7.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>31</em>%
+                        </span>
+                        <span>
+                          <em>14,400</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [Iprime] 카스제로 0.0 무알콜 논알콜 맥주맛 음료 330mlx24캔 아이프라임 
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_8.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>12</em>%
+                        </span>
+                        <span>
+                          <em>8,800</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        일본 과자 / 디저트 모음전 / 오리히로 / 푸딩 / 쿠키 등
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_9.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>32</em>%
+                        </span>
+                        <span>
+                          <em>16,480</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [1+1세트] NEW 우르오스 스킨 로션 밀크 바디워시 세트 ULOS
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_10.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>9</em>%
+                        </span>
+                        <span>
+                          <em>17,930</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        QCY T13 ANC 노이즈캔슬링 무선 블루투스 이어폰 / BH22DT10A
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="shopping__img">
-                  <img src="" alt="">
-                </div>
-                <div class="shopping__info">
-                  <div class="shopping__info--price">
-                    <span class="highlight">13%</span><em>8,550</em>원
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/shoppingImg/shopping_11.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--price">
+                        <span class="percentage">
+                          <em>43</em>%
+                        </span>
+                        <span>
+                          <em>7,790</em><span class="currency">원</span>
+                        </span>
+                      </div>
+                      <div class="card__info__text--disc">
+                        [최종가 5,740원 20%+5%쿠폰] 포슬포슬 고소한 국내산 햇 수미감자 3kg (대)
+                      </div>
+                    </div>
                   </div>
-                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <i></i>
-                전체보기
+                <div class="swiper-slide">
+                  <div class="card__more">
+                    <i></i>
+                    전체보기
+                  </div>
+                </div>
               </div>
             </div>
+            <button class="swiper-prev">이전</button>
+            <button class="swiper-next">다음</button>
           </div>
+        </div>
+        <div class="section__bottom">
+          <button class="btn__go">
+            쇼핑 홈 바로가기
+            <i class="ico__goLink"></i>
+          </button>
         </div>
       </div>
     </section>
     <section class="tourWrap">
       <div class="inner sectionInner">
-
+        <div class="section__title">
+          <h2>투어 특가</h2>
+          <p>해외여행은 인터파크다</p>
+        </div>
+        <div class="tour__swiperBox">
+          <div class="tabWrap">
+            <div class="active">망설이면 품절</div>
+            <div>패키지</div>
+            <div>국내숙소</div>
+            <div>해외숙소</div>
+          </div>
+          <div class="tour__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_1.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">키즈특전</div>
+                      <div class="card__info__text--benefit">
+                        편안한 국적기+전신마사지1시간까지!
+                      </div>
+                      <div class="card__info__text--disc">
+                        [아시아나항공/하노이/하롱베이 5일] 4성호텔+하롱야간투어
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>539,000</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_2.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">인기호텔</div>
+                      <div class="card__info__text--benefit">
+                        샹그릴라 호텔 방콕
+                      </div>
+                      <div class="card__info__text--disc">
+                        [아시아나항공/하노이/하롱베이 5일] 4성호텔+하롱야간투어
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>231,500</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_3.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">인기리조트</div>
+                      <div class="card__info__text--benefit">
+                        다낭 5성급 인기 리조트
+                      </div>
+                      <div class="card__info__text--disc">
+                        하얏트 리젠시 다낭 리조트 앤 스파
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>264,700</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_4.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">갓성비호텔</div>
+                      <div class="card__info__text--benefit">
+                        하카타 3성급 갓성비 호텔
+                      </div>
+                      <div class="card__info__text--disc">
+                        서튼 호텔 하카타 시티
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>94,800</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_5.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">룸온리특가</div>
+                      <div class="card__info__text--benefit">
+                        디럭스 트윈+55인치 스마트TV (Room Only)
+                      </div>
+                      <div class="card__info__text--disc">
+                        오라카이 송도파크 호텔
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>99,000</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_6.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">온천수영장</div>
+                      <div class="card__info__text--benefit">
+                        편안한 국적기+전신마사지1시간까지!
+                      </div>
+                      <div class="card__info__text--disc">
+                        체스터톤스 속초
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>96,900</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_7.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">출발확정</div>
+                      <div class="card__info__text--benefit">
+                        온천호텔 2박 포함!
+                      </div>
+                      <div class="card__info__text--disc">
+                        [북해도 4일]여름향기+온천2박+도야유람선/후라노
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>949,000</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_8.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">국내패키지</div>
+                      <div class="card__info__text--benefit">
+                        추석연휴 좌석확보!
+                      </div>
+                      <div class="card__info__text--disc">
+                        [연휴/청주출발]에어카3일,제주왕복항공권,렌터카 포함
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>355,400</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__info">
+                    <div class="card__info__img">
+                      <img src="./img/tour/tour_9.jpg" alt="">
+                    </div>
+                    <div class="card__info__text">
+                      <div class="card__info__text--tourBadge">키즈특전</div>
+                      <div class="card__info__text--benefit">
+                        오션월드2인+레전드히어로즈2인+키즈특전까지!
+                      </div>
+                      <div class="card__info__text--disc">
+                        소노벨 비발디파크 B , C
+                      </div>
+                      <div class="card__info__text--price">
+                        <span>
+                          <em>258,000</em><span class="currency">원~</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-prev">이전</button>
+            <button class="swiper-next">다음</button>
+          </div>
+        </div>
+        <div class="section__bottom">
+          <button class="btn__go">
+            투어 홈 바로가기
+            <i class="ico__goLink"></i>
+          </button>
+        </div>
       </div>
     </section>
     <section class="ticketWrap">
       <div class="inner sectionInner">
-
+        <div class="section__title">
+          <h2>티켓 랭킹</h2>
+          <p>오늘 뭐볼까? 지금 HOT한 공연</p>
+        </div>
+        <div class="ticket__swiperBox">
+          <div class="tabWrap">
+            <div class="active">뮤지컬</div>
+            <div>콘서트</div>
+            <div>연극</div>
+            <div>클래식/무용</div>
+            <div>스포츠</div>
+            <div>레저/캠핑</div>
+            <div>전시/행사</div>
+            <div>아동/가족</div>
+          </div>
+          <div class="ticket__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/ticket/ticket_1.gif" alt="">
+                      <div class="card__img--num">1</div>
+                    </div>
+                    <div class="card__img__text">
+                      <div class="card__img__text--tit">
+                        뮤지컬 &lt;멤피스&gt;
+                      </div>
+                      <div class="card__img__text--place">
+                        충무아트센터 대극장
+                      </div>
+                      <div class="card__img__text--date">
+                        2023.07.20 - 2023.10.22
+                      </div>
+                      <span class="badge__ticket badge__ticket--seat">
+                        좌석우위
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/ticket/ticket_2.gif" alt="">
+                      <div class="card__img--num">2</div>
+                    </div>
+                    <div class="card__img__text">
+                      <div class="card__img__text--tit">
+                        뮤지컬 &lt;더 테일 에이프릴 풀스&gt;
+                      </div>
+                      <div class="card__img__text--place">
+                        서경대학교 공연예술센터 스콘2관
+                      </div>
+                      <div class="card__img__text--date">
+                        2023.06.07 - 2023.08.27
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/ticket/ticket_3.gif" alt="">
+                      <div class="card__img--num">3</div>
+                    </div>
+                    <div class="card__img__text">
+                      <div class="card__img__text--tit">
+                        뮤지컬 &lt;그날들&gt; 10주년 기념 공연
+                      </div>
+                      <div class="card__img__text--place">
+                        예술의전당 오페라극장
+                      </div>
+                      <div class="card__img__text--date">
+                        2023.07.12 - 2023.09.03
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/ticket/ticket_4.gif" alt="">
+                      <div class="card__img--num">4</div>
+                    </div>
+                    <div class="card__img__text">
+                      <div class="card__img__text--tit">
+                        뮤지컬 &lt;다시, 동물원&gt;
+                      </div>
+                      <div class="card__img__text--place">
+                        동덕여대 공연예술센터 코튼홀
+                      </div>
+                      <div class="card__img__text--date">
+                        2023.06.24 - 2023.09.17
+                      </div>
+                      <span class="badge__ticket badge__ticket--only">
+                        단독판매
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/ticket/ticket_5.gif" alt="">
+                      <div class="card__img--num">5</div>
+                    </div>
+                    <div class="card__img__text">
+                      <div class="card__img__text--tit">
+                        뮤지컬 &lt;스웨그에이지 외쳐,조선!&gt;
+                      </div>
+                      <div class="card__img__text--place">
+                        홍익대 대학로 아트센터 대극장
+                      </div>
+                      <div class="card__img__text--date">
+                        2023.06.09 - 2023.08.20
+                      </div>
+                      <span class="badge__ticket badge__ticket--only">
+                        단독 판매
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/ticket/ticket_6.gif" alt="">
+                      <div class="card__img--num">6</div>
+                    </div>
+                    <div class="card__img__text">
+                      <div class="card__img__text--tit">
+                        뮤지컬 &lt;오페라의 유령&gt; - 서울
+                      </div>
+                      <div class="card__img__text--place">
+                        샤롯데씨어터
+                      </div>
+                      <div class="card__img__text--date">
+                        2023.07.21 - 2023.11.17
+                      </div>
+                      <span class="badge__ticket badge__ticket--seat">
+                        좌석우위
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/ticket/ticket_7.gif" alt="">
+                      <div class="card__img--num">7</div>
+                    </div>
+                    <div class="card__img__text">
+                      <div class="card__img__text--tit">
+                        뮤지컬 &lt;모차르트!&gt;
+                      </div>
+                      <div class="card__img__text--place">
+                        세종문화회관 대극장
+                      </div>
+                      <div class="card__img__text--date">
+                        2023.06.15 - 2023.08.22
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="card__more">
+                      <i></i>
+                      전체보기
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-prev">이전</button>
+            <button class="swiper-next">다음</button>
+          </div>
+        </div>
+        <div class="section__bottom">
+          <button class="btn__go">
+            티켓 홈 바로가기
+            <i class="ico__goLink"></i>
+          </button>
+        </div>
       </div>
     </section>
     <section class="liveTvWrap">
       <div class="inner sectionInner">
-
+        <div class="section__title">
+          <h2>
+            <img src="./img/live/title_live.png" alt="인터파크 LIVE">
+          </h2>
+        </div>
+        <div class="live__swiperBox">
+          <div class="live__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img soon">
+                      <img src="./img/live/live_1.png" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">방송예정</span>
+                        <div class="live__tit">
+                          피식쇼 용주와 함께😎 진에어 선착순 타임딜 + 소노 호텔앤리조트 룸온리 특가!
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_1.jpg" alt="">
+                        </div>
+                        <div class="textBox titOnly">
+                          <div class="product__tit">[기획전] 인트SHOW!</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__img__info--update">
+                      <div class="date">08월 01일 (화)</div>
+                      <div class="time">11:00 </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img soon">
+                      <img src="./img/live/live_2.jpg" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">방송예정</span>
+                        <div class="live__tit">
+                          롯데리조트 속초&부여 최대 77%할인!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__img__info--update">
+                      <div class="date">08월 01일 (화)</div>
+                      <div class="time">11:00 </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_3.png" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          [부산] 여름 성수기 여행 특가! 최대 77% 할인!
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_3.png" alt="">
+                        </div>
+                        <div class="textBox">
+                          <div class="product__tit">해운대 썬클라우드 호텔</div>
+                          <div class="product__disc">
+                            <span class="percentage">
+                              <em>77</em><span>%</span>
+                            </span>
+                            <span class="price">
+                              <em>68,400</em><span>원</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_4.jpg" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          소담상회 x 올리쉐
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_4.png" alt="">
+                        </div>
+                        <div class="textBox">
+                          <div class="product__tit">올리쉐 넥 앤 페이스 밸런싱밤</div>
+                          <div class="product__disc">
+                            <span class="percentage">
+                              <em>30</em><span>%</span>
+                            </span>
+                            <span class="price">
+                              <em>26,600</em><span>원</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_5.jpeg" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          힐튼가든인 서울강남 방송 당일 / 일주일 특가!
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_5.jpg" alt="">
+                        </div>
+                        <div class="textBox">
+                          <div class="product__tit">힐튼 가든인 서울 강남</div>
+                          <div class="product__disc">
+                            <span class="percentage">
+                              <em>64</em><span>%</span>
+                            </span>
+                            <span class="price">
+                              <em>158,400</em><span>원</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_6.jpg" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          [보홀] 에어텔 최대 60% 라이브 특가! 39만원대~
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_6.jpg" alt="">
+                        </div>
+                        <div class="textBox">
+                          <div class="product__tit">[카카오쇼핑X인터파크LIVE] 보홀 자유여행 6일_아시아나항공</div>
+                          <div class="product__disc">
+                            <span class="price">
+                              <em>399,000</em><span>원</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_7.jpg" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          엔조이커플 라라와 함께하는 제주항공 동계 운임 최초 할인 오픈 !
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_7.png" alt="">
+                        </div>
+                        <div class="textBox titOnly">
+                          <div class="product__tit">[기획전] 제주항공은 크-다✈️인터파크-다!</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_8.jpg" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          [일본 북해도 3박4일] 온천호텔 2박 + 라벤더 밭 관광까지❤
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_8.jpg" alt="">
+                        </div>
+                        <div class="textBox">
+                          <div class="product__tit">[북해도 3박 4일] 온천2박+후라노/비에이+청의호수</div>
+                          <div class="product__disc">
+                            <span class="percentage">
+                              <em>26</em><span>%</span>
+                            </span>
+                            <span class="price">
+                              <em>949,000</em><span>원</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_9.jpg" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          [강원] 해수욕장 특집! 룸온리&패키지 최대 83% 할인 특가!
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_9.jpg" alt="">
+                        </div>
+                        <div class="textBox">
+                          <div class="product__tit">라마다 속초 호텔</div>
+                          <div class="product__disc">
+                            <span class="percentage">
+                              <em>75</em><span>%</span>
+                            </span>
+                            <span class="price">
+                              <em>94,500</em><span>원</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img vod">
+                      <img src="./img/live/live_10.png" alt="">
+                    </div>
+                    <div class="card__img__infoBox">
+                      <div class="card__img__info--top">
+                        <span class="badge__live">VOD</span>
+                        <div class="live__tit">
+                          [수요아트살롱] 순천만 국제 정원 박람회
+                        </div>
+                      </div>
+                      <div class="card__img__info--bottom">
+                        <div class="thumb">
+                          <img src="./img/live/live_inner_10.png" alt="">
+                        </div>
+                        <div class="textBox">
+                          <div class="product__tit">순천만 국제 정원 박람회</div>
+                          <div class="product__disc">
+                            <span class="percentage">
+                              <em>20</em><span>%</span>
+                            </span>
+                            <span class="price">
+                              <em>12,000</em><span>원</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/live/live_soon_bg.jpg" alt="">
+                    </div>
+                    <div class="card__img__soonBox">
+                      <h3 class="liveLogo">
+                        <img src="./img/live/live_logo.png" alt="인터파크LIVE">
+                      </h3>
+                      <p class="liveMent">방송준비중입니다.</p>
+                      <button class="liveBtnLink">편성표 바로가기</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__img">
+                    <div class="card__img__img">
+                      <img src="./img/live/live_soon_bg.jpg" alt="">
+                    </div>
+                    <div class="card__img__soonBox">
+                      <h3 class="liveLogo">
+                        <img src="./img/live/live_logo.png" alt="인터파크LIVE">
+                      </h3>
+                      <p class="liveMent">방송준비중입니다.</p>
+                      <button class="liveBtnLink">편성표 바로가기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-prev">이전</button>
+            <button class="swiper-next">다음</button>
+          </div>
+        </div>
+        <div class="section__bottom">
+          <button class="btn__go">
+            인터파크 라이브 바로가기
+            <i class="ico__goLink"></i>
+          </button>
+        </div>
       </div>
     </section>
     <section class="bookWrap">
       <div class="inner sectionInner">
-
+        <div class="section__title">
+          <h2>
+            <img src="./img/live/title_live.png" alt="인터파크 LIVE">
+          </h2>
+        </div>
+        <div class="book__swiperBox">
+          <div class="tabWrap">
+            <div class="active">MD's Pick</div>
+            <div>베스트셀러</div>
+            <div>신간추천</div>
+            <div>특가할인</div>
+          </div>
+          <div class="book__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_1.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">이토록 공부가 재미있어지는 순간</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_2.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">맑은 날이 아니어서 오히려 좋아</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_3.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">동주의 소포(초판본 미니북+크라프트 노트+종이책갈피볼펜세트+별헤는밤 연필6p+육필엽서세트大,小+윤동주 연보 미니엽서)</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_4.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">수상한 놀이공원 천옥원</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_5.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">눈에 갇힌 외딴 산장에서</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_6.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">이상한 나라의 앨리스 북퍼퓸 30ml</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_7.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">미래엔 중학교 역사 1 평가문제집 (김태웅) 2023년</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_8.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">일이란 무엇인가</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_9.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">비욘드 더 스토리(BEYOND THE STORY)</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__book">
+                    <div class="card__book__img">
+                      <img src="./img/book/book_10.jpg" alt="">
+                    </div>
+                    <div class="card__book__text">
+                      <div class="title">아기 판다 푸바오</div>
+                      <div class="price">
+                        <em>16,200</em><span>원</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-prev">이전</button>
+            <button class="swiper-next">다음</button>
+          </div>
+        </div>
+        <div class="section__bottom">
+          <button class="btn__go">
+            도서 홈 바로가기
+            <i class="ico__goLink"></i>
+          </button>
+        </div>
       </div>
     </section>
     <section class="eventWrap">
       <div class="inner sectionInner">
-
+        <div class="section__title">
+          <h2>이벤트</h2>
+          <p>인터파크에서 할인혜택을 꼭 챙기세요.</p>
+        </div>
+        <div class="event__swiperBox">
+          <div class="event__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_1.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_4.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_5.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_6.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_7.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_8.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_9.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_10.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_11.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_12.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_13.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_14.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_15.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_16.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card__event">
+                    <img src="./img/event/event_17.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-prev">이전</button>
+            <button class="swiper-next">다음</button>
+        </div>
+        </div>
       </div>
     </section>
   </div>
-  <footer></footer>
+  <footer>
+    <div class="footer__policy">
+      <ul class="footer__policyList">
+        <li>
+          회사소개
+          <div class="footer__policy--sub">
+            <ul>
+              <li>인터파크트리플</li>
+              <li>인터파크커머스</li>
+            </ul>
+          </div>
+        </li>
+        <li>이용약관</li>
+        <li class="bold">개인정보 처리 방침</li>
+        <li>위치기반서비스 이용약관</li>
+        <li>여행약관</li>
+        <li>여행자 보험 가입안내</li>
+        <li>티켓판매안내</li>
+        <li>공지사항
+          <div class="footer__policy--sub">
+            <ul>
+              <li>인터파크트리플</li>
+              <li>인터파크커머스</li>
+            </ul>
+          </div>
+        </li>
+        <li>고객센터
+          <div class="footer__policy--sub">
+            <ul>
+              <li>투어 고객센터</li>
+              <li>티켓 고객센터</li>
+              <li>쇼핑 고객센터</li>
+              <li>도서 고객센터</li>
+            </ul>
+          </div>
+        </li>
+        <li>Language
+          <div class="footer__policy--sub">
+            <ul>
+              <li>Korean</li>
+              <li>English</li>
+              <li>Japanese</li>
+              <li>Chinese</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__content">
+      <div class="footer__content--inner">
+        <h2>(주)인터파크트리플</h2>
+        <div>
+          <div class="place">
+            <p>
+              <span>서울시 강남구 삼성로 512 삼성동빌딩 10층</span>
+              <span>호스팅서비스제공자 (주)인터파크트리플</span>
+            </p>
+            <p>
+              <span>사업자등록번호 824-81-02515 사업자정보확인</span>
+              <span>통신판매업신고 2022-서울강남-02179</span>
+            </p>
+            <p>
+              <span>관광사업증 등록번호 : 제2014-42호</span>
+              <span>대표이사 최휘영</span>
+            </p>
+          </div>
+          <div class="phone__cs">
+            <div class="name">
+              <h3>고객센터</h3>
+              <span>투어1:1문의</span>
+              <span>티켓1:1문의</span>
+            </div>
+            <div>
+              <span>투어 1588-3443</span>
+              <span>티켓 1544-1555</span>
+              <span>해외항공 02-3479-4399</span>
+              <span>국내항공 02-3479-4340</span>
+            </div>
+            <div>
+              <span>팩스 02-830-7807</span>
+              <span>이메일 helpdesk@interparktriple.com</span>
+            </div>
+          </div>
+          <div class="phone__argue">
+            <div class="name"><h3>전자금융거래 분쟁처리 담당</h3></div>
+            <div>
+              <span>투어 1588-3443</span>
+              <span>티켓 1544-1555</span>
+              <span>팩스 02-830-8295</span>
+            </div>
+            <div>
+              <span>이메일 intersolution@interparktriple.com</span>
+              <span>개인정보보호책임자 cpo@interparktriple.com</span>
+            </div>
+          </div>
+          <div class="notice">
+            <p>
+              (주)인터파크트리플은 인터파크티켓, 인터파크투어의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 (주)인터파크트리플은 일체 책임을 지지 않습니다.
+              <br>Copyright ⓒ InterparkTriple Corp. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content--inner">
+        <h2>(주)인터파크커머스</h2>
+        <div>
+          <div class="place">
+            <p>
+              <span>서울시 서초구 강남대로 447(서초동, 남서울빌딩)</span>
+            </p>
+            <p>
+              <span>대표이사 김동식</span>
+            </p>
+            <p>
+              <span>사업자등록번호 422-81-03185 사업자정보확인</span>
+              <span>통신판매업신고 2023-서울서초-0823</span>
+            </p>
+          </div>
+          <div class="phone__cs">
+            <div class="name">
+              <h3>고객센터</h3>
+              <span>투어1:1문의</span>
+              <span>티켓1:1문의</span>
+            </div>
+            <div>
+              <span>쇼핑 1588-1555</span>
+              <span>도서 1577-2555</span>
+            </div>
+            <div>
+              <span>팩스 02-6924-9050</span>
+              <span>이메일 helpshop@interparkshop.com</span>
+            </div>
+          </div>
+          <div class="phone__argue">
+            <div class="name"><h3>전자금융거래 분쟁처리 담당</h3></div>
+            <div>
+              <span>쇼핑 1588-1555</span>
+              <span>도서 1577-2555</span>
+              <span>팩스 02-6924-9050</span>
+            </div>
+            <div>
+              <span>이메일 helpshop@interparkshop.com</span>
+              <span>개인정보보호책임자 cposhopping@interparkshop.com</span>
+            </div>
+          </div>
+          <div class="notice">
+            <p>
+              (주)인터파크커머스는 인터파크쇼핑, 인터파크도서의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 주식회사 인터파크커머스는 일체 책임을 지지 않습니다.
+              <br/>Copyright ⓒ Interpark Commerce Corp. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="btn__toTop">
+    <div class="adBanner">
+      <img src="./img/toTop_adBanner.png" alt="">
+    </div>
+    <div class="ico__arrow--up"></div>
+  </div>
+  <!--script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

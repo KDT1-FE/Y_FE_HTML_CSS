@@ -79,13 +79,14 @@ body {
 
 /* 네브바 부분 */
 .nav {
-  height: 96px;
-  overflow: hidden;
+  position: relative;
+  /* height: 80px; */
+  /* overflow: hidden; */
   transition: 0.5s;
 }
 
 .nav:hover {
-  height: 260px;
+  /* height: 260px; */
 }
 
 .top-logo {
@@ -98,12 +99,21 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.dropdown > li {
+  display: block;
+  flex: 1 1 0;
+  text-align: center;
 }
 
 .dropdown li a {
   color: black;
   text-decoration: none;
-  margin: 8px 48px;
+  text-align: center;
   font-size: 15px;
 }
 
@@ -112,7 +122,32 @@ body {
   text-decoration-thickness: 4px;
 }
 
+.dropdown_wrap {
+  position: absolute;
+  top: 104px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease-in-out;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(36, 60, 132);
+}
+
+.dropdown__menu {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.dropdown-container:hover .dropdown_wrap {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .dropmenu {
+  flex: 1 1 0;
   margin-top: 10px;
   height: 260px;
   background-color: #fff;
@@ -124,6 +159,7 @@ body {
   color: gray;
   cursor: pointer;
   font-size: 14px;
+  justify-content: space-evenly;
 }
 
 .dropmenu span:hover {
@@ -212,7 +248,6 @@ body {
 
 /* 두번째 섹션 */
 .second_wrap {
-  height: 500px;
   background-color: rgb(252, 225, 167);
   margin-top: -4px;
 }
@@ -221,7 +256,6 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 36%;
 }
 
 .wrap_first h1 {
@@ -259,6 +293,13 @@ body {
 
 .mySlide {
   display: none;
+}
+
+.mySlide img {
+  object-fit: contain;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .dot2-wrap {
@@ -299,19 +340,14 @@ body {
 
 /* 드림 팩토리 */
 .dream_factory {
-  position: relative;
   width: 100%;
   background-color: rgb(5, 48, 109);
-  height: 460px;
-  margin-top: 158px;
+  position: relative;
   overflow: hidden;
 }
 
 .dream_content {
-  position: absolute;
-  top: 20%;
-  left: 44%;
-  transform: translateX(-50%);
+  padding: 120px 140px;
 }
 
 .dream_content img {
@@ -660,4 +696,10 @@ body {
 
 .copy {
   margin-top: 20px;
+}
+
+@media all and (max-width: 200px) {
+  .header {
+    flex-direction: column;
+  }
 }

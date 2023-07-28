@@ -14,7 +14,7 @@
 이디야 메인페이지를 HTML CSS Javascript를 사용하여 제작한 클론 코딩 프로젝트입니다.
 <br/>
 <br/>
-(./img/etc/top.png)
+(/img/etc/top.png)
 
 - 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
 

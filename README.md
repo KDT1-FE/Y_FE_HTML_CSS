@@ -49,7 +49,7 @@
 
 #### 전체 화면
 
-<img src="wavve/assets/wavve_screen.gif">
+![wavve_screen](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/92326949/255f2626-b0f0-4bf0-98a3-75a33e3469da)
 
 <br>
 

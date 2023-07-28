@@ -35,14 +35,12 @@
 <br>
 
 ## ☕ **기술 스택**
----
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
 
 
 ## ☕ **아쉬운 점**
----
 > - #### 스크롤 다루기
 >>- 13인치 노트북에서 스크롤을 할 때 페이지가 두 칸씩 넘어가는 문제를 발견
 >>- footer 부분이 다른 페이지와 크기가 달라서 스크롤을 다 내렸을 경우, 흰색 공간이 생김 (footer 위치를 내려서 임시로 해결)

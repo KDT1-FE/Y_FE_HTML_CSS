@@ -491,3 +491,58 @@ body {
     line-height: 19px;
     white-space: nowrap;
 }
+
+
+
+/* instagram section */
+.insta-section {
+    margin: 60px auto 0px;
+    background-color: #f0f0f0;
+    height: 490px;
+    display: block;
+}
+.insta__title {
+    padding: 50px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.insta__title > img:first-of-type {
+    width: 360px;
+    margin: 0 auto;
+}
+.insta__title > img:last-of-type {
+    width: 375px;
+    margin: 0 auto;
+}
+.insta__box {
+    height: 282px;
+    width: auto;
+    margin: 0px auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0px;
+}
+.insta__card {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 282px;
+    height: 282px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.insta__card > a {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.insta__card > a > img {
+    width: 282px;
+    height: 282px;
+    object-fit: cover;
+    object-position: top;
+}

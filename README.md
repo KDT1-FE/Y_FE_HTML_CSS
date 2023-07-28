@@ -21,14 +21,32 @@
 - [x] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
 </details>
 
+
 ## 프로젝트 기간 📆
 
 2023.07.24 ~ 2023.07.28
+
+
+## 기술 스택 ⛏️
+
+### 개발 환경
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
+
+### 사용 언어
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
+
 
 ## 사이트 주소 🔗
 
 - 디즈니 플러스 URL: https://www.disneyplus.com/ko-kr
 - 클론 코딩 프로젝트 URL: https://bucolic-cocada-f470a1.netlify.app/
+
+---
 
 ## 화면 구성 🖥️
 
@@ -119,7 +137,7 @@ input[id="select_box1"]:checked ~ div #imgbox .select1 {
 ```
 위 코드와 같이 `input` 태그와 `div` 태그 안에 있는 `select1`클래스를 `slide` 클래스를 가진 `div` 태그안에 넣어주어 문제를 해결했다.
 
-## 느낀점
+## 느낀점 🧐
 
 클론 코딩을 시작하기 전에는 쉽게 완료할 수 있을 줄 알았는데 생각보다 오랜 시간이 걸렸다.
 

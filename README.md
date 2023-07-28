@@ -1,11 +1,12 @@
 # 인터파크 홈페이지 클론코딩
 
-## 사이즈 주소
+## 사이트 주소
 
 `클론한 사이트`  
 https://www.interpark.com/
 
-`데모링크`
+`데모링크`  
+https://sparkly-croquembouche-364d33.netlify.app/
 
 ## 기술 스택
 

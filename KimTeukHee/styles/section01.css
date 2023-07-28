@@ -1,0 +1,79 @@
+.section01 {
+  display: flex;
+  justify-content: center;
+  background: url("../assets/images/new_main.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.section01__main-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(
+    to bottom,
+    white 10%,
+    white 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.main-board__container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 40px;
+  align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.button-container > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 12, 30, 0.8);
+  color: white;
+  font-size: 17px;
+  width: 150px;
+  height: 46px;
+  border-radius: 10px;
+  border: none;
+  background-image: url(../assets/icons/main-icon.png);
+  cursor: pointer;
+}
+
+.button-container > button:hover {
+  background: #4e5968;
+}
+
+.section01__button-image {
+  width: 24px;
+  height: 24px;
+  margin-right: 3px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

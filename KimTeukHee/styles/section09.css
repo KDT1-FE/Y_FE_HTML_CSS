@@ -1,0 +1,144 @@
+.section09 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  padding: 250px 0;
+}
+
+.section09__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1140px;
+  height: auto;
+}
+
+.section09__inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 92%;
+  height: auto;
+}
+
+.section09__title {
+  margin-bottom: 140px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.4;
+  width: 100%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.section09__desc-container-01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 210px;
+}
+
+#section09__image-01 {
+  width: 100%;
+  max-width: 740px;
+  margin-bottom: 60px;
+}
+
+.section09__desc-01 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section09__desc-01 > span {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #191f28;
+  margin-right: 12px;
+}
+
+.section09__desc-01 > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333d4b;
+}
+
+.section09__desc-container-02 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 210px;
+}
+
+.section09__desc-02-left {
+  width: 64%;
+}
+
+#section09__image-02 {
+  width: 100%;
+}
+
+.section09__desc-02-left > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.section09__desc-02-right {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  margin-top: 150px;
+}
+
+#section09__image-03 {
+  width: 100%;
+}
+
+.section09__desc-02-right > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333d4b;
+  width: 100%;
+}
+
+.section09_desc-container-03 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#section09__image-04 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.section09_desc-03-title {
+  flex: 1;
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #191f28;
+}
+
+.section09_desc-03-detail {
+  flex: 1;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #333d4b;
+}

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.large-text {
+  font-size: 20px;
+}
+
+.thick {
+  font-weight: bold;
+}
+
+.white-text {
+  color: white;
+}

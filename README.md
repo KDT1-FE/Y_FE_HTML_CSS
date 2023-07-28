@@ -1,45 +1,77 @@
-[참고 내용]
+# Aesop 웹사이트 클론코딩
+<img width="100%" src="https://github.com/joanShim/clone-easop/assets/35457850/4db62678-1edf-4761-9ce7-8a0508eadc53" >
+Aesop 대한민국의 스킨케어 페이지를 HTML, css, JS를 이용해 클론한 프로젝트      
+   
+원본 링크 : https://www.aesop.com/kr/c/skin/      
+클론 데모 : https://aesop-clone-yfe.netlify.app/ 
+***
+</br>
+</br>
 
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
-
-과제 수행 및 제출 방법
-
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+## 📅  프로젝트 기간
+2023.07.24 ~ 2023.07.28   
+</br>
 
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+## 프로젝트 소개 
+- `header`, `nav`, `section`, `footer` 등 시멘틱 태그 활용
+- `flex`, `grid` 를 이용한 레이아웃 구조
+- `swiper.js`를 이용한 슬라이더 구현
+- `hover` 시 css 애니메이션 동작
 
-필수 요구사항
+  </br>
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+## 🖥 구현 내용
 
-선택 요구사항
+| 헤더 + 메인  | 제품 카테고리 |
+| :--: | :--: |
+| <img width="500" src="https://github.com/joanShim/clone-easop/assets/35457850/36d12203-f3c7-42b3-b9fc-47690ef1bf96">|  <img width="500" src="https://github.com/joanShim/clone-easop/assets/35457850/d41a0899-15e6-4e12-a9f0-0771ae2d84d9"> |
+| 제품 슬라이더 | 피부 타입 |
+|<img width="500"  src="https://github.com/joanShim/clone-easop/assets/35457850/471afce9-cf37-4e6b-b9b0-9d96a7c66651"> | <img width="500" src="https://github.com/joanShim/clone-easop/assets/35457850/e23ec87a-e123-45a8-b542-b699eabae58e"> |
+| 블렌딩 추천 | 아티클 |
+| <img width="500" src="https://github.com/joanShim/clone-easop/assets/35457850/3d7141af-ef4c-44b5-a9b8-c6efeb596b99">| <img width="500" src="https://github.com/joanShim/clone-easop/assets/35457850/36f75aca-319c-499d-b5ec-dbf830c875d4"> |
+ | 푸터 |  |
+ | <img width="500" src="https://github.com/joanShim/clone-easop/assets/35457850/c3e24298-9d3b-461c-bbf3-113297955aa4">|  |
 
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
 
-손쉬운 이미지 추출 방법
+   
+## 🕹 주요 기능
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
+![Jul-28-2023 19-42-15](https://github.com/joanShim/clone-easop/assets/35457850/4db62678-1edf-4761-9ce7-8a0508eadc53)   
+1. 스크롤 내릴때 나타나는 요쇼들 fade in 효과
+</br>
+</br>   
 
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+![Jul-28-2023 19-42-15](https://github.com/joanShim/clone-easop/assets/35457850/516cd7f3-baa0-46cd-905a-12de43d97c74)   
+2. 스크롤에 따라 사라지고 나타나는 헤더
+</br>  
+</br>   
+
+![Jul-28-2023 19-43-14](https://github.com/joanShim/clone-easop/assets/35457850/61becdf4-2ba4-437c-bd07-65fda071102f)   
+3. swiper.js 라이브러리를 이용한 제품 슬라이더
+</br>
+</br>   
+
+![Jul-28-2023 20-05-43](https://github.com/joanShim/clone-easop/assets/35457850/dbc60eac-cf21-43a6-9563-946c1ba93e44)   
+4. 그리드 디스플레이와 hover시 이미지가 어두워지는 효과   
+</br>
+</br>   
+
+***
+    
+
+      
+## JS를 사용한 부분
+
+1. 슬라이더 구현 (Swiper.js 라이브러리)
+2. 스크롤 이벤트에 따라 사라지고 나타나는 헤더 구현
+3. 최초 스크롤 시 지정 요소들 fade in 되는 효과 구현
+
+
+                  
+## 보완하고 싶은 부분
+- 반응형 레이아웃 추가
+-  `::after` `::before`등을 이용한 장식적으로 사용된 요소들(화살표 등) 치환. 더 간결한 마크업 
+- 반복적으로 사용되는 css 요소들 클래스화 
+
+

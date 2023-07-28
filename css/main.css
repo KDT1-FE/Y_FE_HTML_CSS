@@ -45,7 +45,7 @@ body {
   cursor: url(../img/cursor-pointer.png), auto;
 }
 #main_wrap{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .main_tit,
 .sub_tit,

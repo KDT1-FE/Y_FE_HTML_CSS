@@ -82,3 +82,49 @@
 
    이미지가 시간이 지남에 따라 자동으로 전환되고 재생 / 일시정지 버튼을 클릭하면 이미지 자동 전환이 멈추거나 재생되어야 한다.
    이미지가 좌우로 정렬되어 있다면 CSS만으로 구현할 수 있겠지만 투명화로 전환해야하기 때문에 자바스크립트가 필요하다고 판단되어 구현하지 않았다.
+
+## 오류 해결 법 ❗️
+
+```css
+input[id="select_box1"]:checked ~ div #imgbox .select1 {
+  opacity: 1;
+}
+```
+버튼 클릭을 이용한 이미지 전환 기능을 구현하는 과정에서 `~`(형제 선택자)를 사용하려는 태그끼리 한 태그 안에 있는 형제 태그여야(같은 부모에 속해있어야) 작동하는데 사용법을 정확히 공부하지 않아 다른 태크에 속해있어 원하는대로 동작하지 않는 것을 모르고 많은 시간이 걸렸다.
+
+```html
+<div class="slide">
+ <input type="radio" name="img_select" id="select_box1" checked />
+   ~생략~
+ <div class="slide-nav">
+   <label class="label1" for="select_box1"></label>
+   ~생략~
+ </div>
+ <button class="slide-btn"></button>
+ <div>
+   <ul id="imgbox">
+     <li class="select_img select1">
+       <div
+         class="background mobile"
+         style="
+           background-image: url(/assets/images/main/revenant_m.jpeg);
+         "
+       ></div>
+       ~생략~
+     </li>
+     ~생략~
+   </ul>
+ </div>
+</div>
+```
+위 코드와 같이 `input` 태그와 `div` 태그 안에 있는 `select1`클래스를 `slide` 클래스를 가진 `div` 태그안에 넣어주어 문제를 해결했다.
+
+## 느낀점
+
+클론 코딩을 시작하기 전에는 쉽게 완료할 수 있을 줄 알았는데 생각보다 오랜 시간이 걸렸다.
+
+JS 없이 CSS만으로 구현할 수 있는 기능이 생각보다 많다는 것을 알게되었다.
+
+그와 동시에 CSS는 그때그때 필요한 것을 검색해서 사용하면 된다고 생각했으나 CSS 내장 기능의 존재 자체를 알고있는 것과 모르는 것의 차이는 크다는 것을 알게되었다.
+
+형제 선택자, 인접 선택자 등의 존재와 사용법을 알게되어서 좋았고 다음 프로젝트에서도 유용하게 사용할 수 있을 것 같다. 

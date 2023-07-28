@@ -37,6 +37,7 @@
   ```js
     - position 속성의 relation, absolute 이해하기
     - 네비게이션 바, 버튼 등 hover시 동작하는 부분 구현하기
+    - CSS Flex를 활용하여 각 요소들 구성하기
   ```
   ### 3. README.md
   ```js

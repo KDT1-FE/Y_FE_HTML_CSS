@@ -364,8 +364,37 @@ const specific = document.querySelector('.specific_cartype')
 const carimg = document.querySelectorAll('.CarImg')
 const xbtn = document.querySelector('.xbtn')
 const first = document.querySelector('.first')
-const third = document.querySelector('.third')
-const fourth = document.querySelector('.fourth')
+const second = document.querySelector('.second')
+const third1 = document.querySelector('.third1')
+const fourth1 = document.querySelector('.fourth1')
+const third2 = document.querySelector('.third2')
+const fourth2 = document.querySelector('.fourth2')
+const third3 = document.querySelector('.third3')
+const fourth3 = document.querySelector('.fourth3')
+const third4 = document.querySelector('.third4')
+const fourth4 = document.querySelector('.fourth4')
+const third5 = document.querySelector('.third5')
+const fourth5 = document.querySelector('.fourth5')
+const third6 = document.querySelector('.third6')
+const fourth6 = document.querySelector('.fourth6')
+const third7 = document.querySelector('.third7')
+const fourth7 = document.querySelector('.fourth7')
+const third8 = document.querySelector('.third8')
+const fourth8 = document.querySelector('.fourth8')
+const third9 = document.querySelector('.third9')
+const fourth9 = document.querySelector('.fourth9')
+const third10 = document.querySelector('.third10')
+const fourth10 = document.querySelector('.fourth10')
+const third11 = document.querySelector('.third11')
+const fourth11 = document.querySelector('.fourth11')
+const third12 = document.querySelector('.third12')
+const fourth12 = document.querySelector('.fourth12')
+const third13 = document.querySelector('.third13')
+const fourth13 = document.querySelector('.fourth13')
+const third14 = document.querySelector('.third14')
+const fourth14 = document.querySelector('.fourth14')
+const third15 = document.querySelector('.third15')
+const fourth15 = document.querySelector('.fourth15')
 
 
 function stripSpaces(text) {
@@ -381,27 +410,618 @@ function stripSpaces(text) {
 xbtn.addEventListener('click',function(e){
   specific.style.display='none';
 })
-
-
-const listEl=document.querySelectorAll('.list')
+const listEl=document.querySelector('.list')
 carimg.forEach(element => {
     element.addEventListener('click', function(e){
     specific.style.display='block';
     first.innerHTML = element.textContent;
     if (stripSpaces(first.innerHTML)=='Audie-tronGT'){
-      third.setAttribute('src','./image/e1.png')
-      fourth.innerHTML = 'e-tron GT quattro'
-      const newLI = document.createElement('li');
-      newLI.setAttribute('class', 'second');
-
-      newLI.innerHTML = 
-      `
-        <img src="./image/e2.png" alt="" class="third">
-        <span class="fourth">RS e-tron GT</span>
-      `;
-      listEl.forEach(container => {
-        container.appendChild(newLI);
-      });
+        third1.setAttribute('src','./image/e1.png')
+        fourth1.innerHTML = 'e-tron GT quattro'
+        third2.setAttribute('src','./image/e2.png')
+        fourth2.innerHTML = 'RS e-tron GT'
+        third3.setAttribute('src','')
+        fourth3.innerHTML = ''
+        third4.setAttribute('src','')
+        fourth4.innerHTML = ''
+        third5.setAttribute('src','')
+        fourth5.innerHTML = ''
+        third6.setAttribute('src','')
+        fourth6.innerHTML = ''
+        third7.setAttribute('src','')
+        fourth7.innerHTML = ''
+        third8.setAttribute('src','')
+        fourth8.innerHTML = ''
+        third9.setAttribute('src','')
+        fourth9.innerHTML = ''
+        third10.setAttribute('src','')
+        fourth10.innerHTML = ''
+        third11.setAttribute('src','')
+        fourth11.innerHTML = ''
+        third12.setAttribute('src','')
+        fourth12.innerHTML = ''
+        third13.setAttribute('src','')
+        fourth13.innerHTML = ''
+        third14.setAttribute('src','')
+        fourth14.innerHTML = ''
+        third15.setAttribute('src','')
+        fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='Audie-tron'){
+      third1.setAttribute('src','./image/etron_1.png')
+      fourth1.innerHTML = 'e-tron'
+      third2.setAttribute('src','./image/e_tron2.png')
+      fourth2.innerHTML = 'e-tron Sportback'
+      third3.setAttribute('src','./image/e_tron3.png')
+      fourth3.innerHTML = 'e-tron S'
+      third4.setAttribute('src','./image/e_tron4.png')
+      fourth4.innerHTML = 'e-tron S Sportback'
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiA3'){
+      third1.setAttribute('src','./image/a31.png')
+      fourth1.innerHTML = 'A3'
+      third2.setAttribute('src','./image/s32.png')
+      fourth2.innerHTML = 'S3'
+      third3.setAttribute('src','./image/rs33.png')
+      fourth3.innerHTML = 'RS 3'
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiA4'){
+      third1.setAttribute('src','./image/A41.png')
+      fourth1.innerHTML = 'A4'
+      third2.setAttribute('src','./image/S42.png')
+      fourth2.innerHTML = 'S4'
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiA5'){
+      third1.setAttribute('src','./image/a51.png')
+      fourth1.innerHTML = 'A5 Coupe'
+      third2.setAttribute('src','./image/a52.png')
+      fourth2.innerHTML = 'A5 Sportback'
+      third3.setAttribute('src','./image/a53.png')
+      fourth3.innerHTML = 'A5 Cabriolet'
+      third4.setAttribute('src','./image/a54.png')
+      fourth4.innerHTML = 'S5 Coupe'
+      third5.setAttribute('src','./image/a55.png')
+      fourth5.innerHTML = 'S5 Sportback'
+      third6.setAttribute('src','./image/a56.png')
+      fourth6.innerHTML = 'RS 5 Sportback'
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiA6'){
+      third1.setAttribute('src','./image/a61.png')
+      fourth1.innerHTML = 'A6'
+      third2.setAttribute('src','./image/s62.png')
+      fourth2.innerHTML = 'S6'
+      third3.setAttribute('src','./image/rs63.png')
+      fourth3.innerHTML = 'RS 6'
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiA7'){
+      third1.setAttribute('src','./image/a71.png')
+      fourth1.innerHTML = 'A7 Sportback'
+      third2.setAttribute('src','./image/a72.png')
+      fourth2.innerHTML = 'A7 Sportback TFSI e'
+      third3.setAttribute('src','./image/a73.png')
+      fourth3.innerHTML = 'S7'
+      third4.setAttribute('src','./image/a7.png')
+      fourth4.innerHTML = 'RS 7 Sportback'
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiA8'){
+      third1.setAttribute('src','./image/a81.png')
+      fourth1.innerHTML = 'A68 L'
+      third2.setAttribute('src','./image/a82.png')
+      fourth2.innerHTML = 'S8 L'
+      third3.setAttribute('src','./image/a83.png')
+      fourth3.innerHTML = 'A8'
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiQ2'){
+      third1.setAttribute('src','./image/q21.png')
+      fourth1.innerHTML = 'Q2'
+      third2.setAttribute('src','')
+      fourth2.innerHTML = ''
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiQ3'){
+      third1.setAttribute('src','./image/q31.png')
+      fourth1.innerHTML = 'Q3'
+      third2.setAttribute('src','./image/q32.png')
+      fourth2.innerHTML = 'Q3 Sportback'
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiQ4'){
+      third1.setAttribute('src','./image/q41.png')
+      fourth1.innerHTML = 'Q4 e-tron'
+      third2.setAttribute('src','./image/q42.png')
+      fourth2.innerHTML = 'Q4 Sportback e-tron'
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiQ5'){
+      third1.setAttribute('src','./image/q51.png')
+      fourth1.innerHTML = 'Q5'
+      third2.setAttribute('src','./image/q52.png')
+      fourth2.innerHTML = 'SQ5'
+      third3.setAttribute('src','./image/q53.png')
+      fourth3.innerHTML = 'Q5 Sportback'
+      third4.setAttribute('src','./image/q54.png')
+      fourth4.innerHTML = 'SQ5 Sportback'
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiQ7'){
+      third1.setAttribute('src','./image/q71.png')
+      fourth1.innerHTML = 'Q7'
+      third2.setAttribute('src','')
+      fourth2.innerHTML = ''
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='AudiQ8'){
+      third1.setAttribute('src','./image/q81.png')
+      fourth1.innerHTML = 'Q8'
+      third2.setAttribute('src','./image/q82.png')
+      fourth2.innerHTML = 'RS Q8'
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='스포트백'){
+      third1.setAttribute('src','./image/S1.png')
+      fourth1.innerHTML = 'e-tron GT quattro'
+      third2.setAttribute('src','./image/S2.png')
+      fourth2.innerHTML = 'RS e-tron GT'
+      third3.setAttribute('src','./image/S3.png')
+      fourth3.innerHTML = 'e-tron Sportback'
+      third4.setAttribute('src','./image/S4.png')
+      fourth4.innerHTML = 'e-tron S Sportback'
+      third5.setAttribute('src','./image/S5.png')
+      fourth5.innerHTML = 'A5 Sportback'
+      third6.setAttribute('src','./image/S6.png')
+      fourth6.innerHTML = 'S5 Sportback'
+      third7.setAttribute('src','./image/S7.png')
+      fourth7.innerHTML = 'RS 5 Sportback'
+      third8.setAttribute('src','./image/S8.png')
+      fourth8.innerHTML = 'A7 Sportback'
+      third9.setAttribute('src','./image/S9.png')
+      fourth9.innerHTML = 'A7 Sportback TFSI e'
+      third10.setAttribute('src','./image/S10.png')
+      fourth10.innerHTML = 'S7'
+      third11.setAttribute('src','./image/S11.png')
+      fourth11.innerHTML = 'RS 7 Sportback'
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='SUV'){
+      third1.setAttribute('src','./image/suv1.png')
+      fourth1.innerHTML = 'e-tron'
+      third2.setAttribute('src','./image/suv2.png')
+      fourth2.innerHTML = 'e-tron S'
+      third3.setAttribute('src','./image/suv3.png')
+      fourth3.innerHTML = 'RS 6'
+      third4.setAttribute('src','./image/suv4.png')
+      fourth4.innerHTML = 'Q2'
+      third5.setAttribute('src','./image/suv5.png')
+      fourth5.innerHTML = 'Q3'
+      third6.setAttribute('src','./image/suv6.png')
+      fourth6.innerHTML = 'Q3 Sportback'
+      third7.setAttribute('src','./image/suv7.png')
+      fourth7.innerHTML = 'Q4 e-tron'
+      third8.setAttribute('src','./image/suv8.png')
+      fourth8.innerHTML = 'Q4 Sportback e-tron'
+      third9.setAttribute('src','./image/suv9.png')
+      fourth9.innerHTML = 'Q5'
+      third10.setAttribute('src','./image/suv10.png')
+      fourth10.innerHTML = 'SQ5'
+      third11.setAttribute('src','./image/suv11.png')
+      fourth11.innerHTML = 'Q5 Sportback'
+      third12.setAttribute('src','./image/suv12.png')
+      fourth12.innerHTML = 'SQ5 Sportback'
+      third13.setAttribute('src','./image/suv13.png')
+      fourth13.innerHTML = 'Q7'
+      third14.setAttribute('src','./image/suv14.png')
+      fourth14.innerHTML = 'Q8'
+      third15.setAttribute('src','./image/suv16.png')
+      fourth15.innerHTML = 'RS Q8'
+    }
+    else if(stripSpaces(first.innerHTML)==='세단'){
+      third1.setAttribute('src','./image/sedan1.png')
+      fourth1.innerHTML = 'A3'
+      third2.setAttribute('src','./image/sedan2.png')
+      fourth2.innerHTML = 'S3'
+      third3.setAttribute('src','./image/sedan3.png')
+      fourth3.innerHTML = 'RS 3'
+      third4.setAttribute('src','./image/sedan4.png')
+      fourth4.innerHTML = 'A4'
+      third5.setAttribute('src','./image/sedan5.png')
+      fourth5.innerHTML = 'S4'
+      third6.setAttribute('src','./image/sedan6.png')
+      fourth6.innerHTML = 'A6'
+      third7.setAttribute('src','./image/sedan7.png')
+      fourth7.innerHTML = 'S6'
+      third8.setAttribute('src','./image/sedan8.png')
+      fourth8.innerHTML = 'A8 L'
+      third9.setAttribute('src','./image/sedan9.png')
+      fourth9.innerHTML = 'S8 L'
+      third10.setAttribute('src','./image/sedan10.png')
+      fourth10.innerHTML = 'A8'
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='쿠페'){
+      third1.setAttribute('src','./image/coupe1.png')
+      fourth1.innerHTML = 'A5 Coupe'
+      third2.setAttribute('src','./image/coupe2.png')
+      fourth2.innerHTML = 'S5 Coupe'
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
+    }
+    else if(stripSpaces(first.innerHTML)==='카브리올레'){
+      third1.setAttribute('src','./image/Cabriolet1.png')
+      fourth1.innerHTML = 'A5 Cabriolet'
+      third2.setAttribute('src','')
+      fourth2.innerHTML = ''
+      third3.setAttribute('src','')
+      fourth3.innerHTML = ''
+      third4.setAttribute('src','')
+      fourth4.innerHTML = ''
+      third5.setAttribute('src','')
+      fourth5.innerHTML = ''
+      third6.setAttribute('src','')
+      fourth6.innerHTML = ''
+      third7.setAttribute('src','')
+      fourth7.innerHTML = ''
+      third8.setAttribute('src','')
+      fourth8.innerHTML = ''
+      third9.setAttribute('src','')
+      fourth9.innerHTML = ''
+      third10.setAttribute('src','')
+      fourth10.innerHTML = ''
+      third11.setAttribute('src','')
+      fourth11.innerHTML = ''
+      third12.setAttribute('src','')
+      fourth12.innerHTML = ''
+      third13.setAttribute('src','')
+      fourth13.innerHTML = ''
+      third14.setAttribute('src','')
+      fourth14.innerHTML = ''
+      third15.setAttribute('src','')
+      fourth15.innerHTML = ''
     }
   })
 });

@@ -1118,17 +1118,174 @@ i.icons {
   cursor: pointer;
 }
 
-.third {
+.third1 {
   display: block;
   height: auto;
 }
 
-.fourth {
-  display: block;
+.fourth1 {
+  display: flex;
   text-align: center;
   width: 100%;
+  justify-content: center;
 }
 
+.third2 {
+  display: block;
+  height: auto;
+}
+
+.fourth2 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.third3 {
+  display: block;
+  height: auto;
+}
+
+.fourth3 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.third4 {
+  display: block;
+  height: auto;
+}
+
+.fourth4 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third5 {
+  display: block;
+  height: auto;
+}
+
+.fourth5 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third6 {
+  display: block;
+  height: auto;
+}
+
+.fourth6 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third7 {
+  display: block;
+  height: auto;
+}
+
+.fourth7 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third8 {
+  display: block;
+  height: auto;
+}
+
+.fourth8 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third9 {
+  display: block;
+  height: auto;
+}
+
+.fourth9 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third10 {
+  display: block;
+  height: auto;
+}
+
+.fourth10 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third11 {
+  display: block;
+  height: auto;
+}
+
+.fourth11 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third12 {
+  display: block;
+  height: auto;
+}
+
+.fourth12 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third13 {
+  display: block;
+  height: auto;
+}
+
+.fourth13 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third14 {
+  display: block;
+  height: auto;
+}
+
+.fourth14 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third15 {
+  display: block;
+  height: auto;
+}
+
+.fourth15 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
 .second:hover {
   transform: scale(1.1);
   color: gray;

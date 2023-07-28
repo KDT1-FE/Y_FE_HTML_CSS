@@ -44,7 +44,7 @@
   width: 22px;
   height: 22px;
   overflow: hidden;
-  background: url('../image/sprites-common.svg') no-repeat -300px -170px;
+  background: url('../asset/sprites-common.svg') no-repeat -300px -170px;
   width: 22px;
   height: 22px;
   top: 50%;
@@ -104,7 +104,7 @@
 }
 
 .header-logo {
-  background: url('../image/sprites-common.svg') no-repeat -1px -61px;
+  background: url('../asset/sprites-common.svg') no-repeat -1px -61px;
   width: 81px;
   height: 22px;
   display: inline-block;
@@ -328,7 +328,7 @@ ul.header-sub-menu li {
   width: 22px;
   height: 22px;
   overflow: hidden;
-  background: url('../image/sprites-common.svg') no-repeat -300px -170px;
+  background: url('../asset/sprites-common.svg') no-repeat -300px -170px;
   width: 22px;
   height: 22px;
   top: 50%;
@@ -390,7 +390,7 @@ ul.header-sub-menu li {
 }
 
 .header-logo {
-  background: url('../image/sprites-common.svg') no-repeat -1px -61px;
+  background: url('../asset/sprites-common.svg') no-repeat -1px -61px;
   width: 81px;
   height: 22px;
   display: inline-block;

@@ -252,29 +252,29 @@ footer {
 }
 
 .footer-sns .facebook {
-  background-image: url('../image/footer-sns-facebook.svg');
+  background-image: url('../asset/footer-sns-facebook.svg');
 }
 
 .footer-sns .youtube {
-  background-image: url('../image/footer-sns-youtube.svg');
+  background-image: url('../asset/footer-sns-youtube.svg');
 }
 
 .footer-sns .twitter {
-  background-image: url('../image/footer-sns-twitter.svg');
+  background-image: url('../asset/footer-sns-twitter.svg');
 }
 
 .footer-sns .lgblog {
-  background-image: url('../image/footer-sns-lgblog.svg');
+  background-image: url('../asset/footer-sns-lgblog.svg');
 }
 
 .footer-sns .insta {
-  background-image: url('../image/footer-sns-instagram.svg');
+  background-image: url('../asset/footer-sns-instagram.svg');
 }
 
 .footer-sns .kakaostory {
-  background-image: url('../image/footer-sns-kakao.svg');
+  background-image: url('../asset/footer-sns-kakao.svg');
 }
 
 .footer-sns .naverblog {
-  background-image: url('../image/footer-sns-naverblog.svg');
+  background-image: url('../asset/footer-sns-naverblog.svg');
 }

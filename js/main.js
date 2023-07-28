@@ -1,25 +1,23 @@
+// 스크롤 시
 const itemWrap = document.querySelector('.item__wrap')
-const banner = document.querySelector('.header-banner')
 const headerWrap = document.querySelector('.header-wrap')
 
-function adjustItemWrapPosition() {
-  const scrollTop = window.scrollY || window.pageYOffset
-  const bannerHeight = banner.clientHeight // banner 요소의 높이
-  const headerWrapHeight = headerWrap.clientHeight // header-wrap 요소의 높이
+function itemWrapPosition() {
+  const scrollTop = window.scrollY
+  const bannerHeight = banner.clientHeight
+  const headerWrapHeight = headerWrap.clientHeight
 
   if (scrollTop === 0) {
-    // 스크롤이 0일 때, top 속성을 banner의 높이 + header-wrap의 높이로 설정합니다.
     itemWrap.style.top = `${bannerHeight + headerWrapHeight}px`
   } else {
-    // 스크롤이 0이 아닐 때, top 속성을 0으로 설정하여 원래 위치로 돌아가도록 합니다.
-    itemWrap.style.top = '114px'
+    itemWrap.style.top = `${headerWrapHeight}px`
   }
 }
 
-window.addEventListener('scroll', adjustItemWrapPosition)
+window.addEventListener('scroll', itemWrapPosition)
 
 /**
- *  close banner
+ *  배너 닫기
  */
 function closeBn() {
   const bnEl = document.querySelector('.header-banner')

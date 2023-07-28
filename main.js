@@ -5,15 +5,16 @@ for(i=0;i<hovermenus.length;i++){
   arr.push(hovermenus[i])
 }
 
-//헤더 호버&스크롤 관련 코드
+//헤더 호버&스크롤 관련 선언
 const headerBg = document.querySelector("header")
 const whiteLogo = document.querySelector(".header-inner-wrapper .white")
 const blackLogo = document.querySelector(".header-inner-wrapper .black")
 const headerTextColor = document.querySelectorAll("header .navi-list .navi-text > a span")
 const headerRightTextColor = document.querySelector(".header-right-area .right-element")
 const headerBorderColor = document.querySelector(".header-inner-wrapper")
-
 let isMouseOver = false;
+
+
 arr.forEach(item => {
   //마우스 올렸을 때 헤더 변화 
   item.addEventListener('mouseover',function(){
@@ -32,6 +33,7 @@ arr.forEach(item => {
     isMouseOver = false;
   })
 })
+
 //헤더 스크롤 이벤트
 window.addEventListener('scroll',_.throttle(function(){
     if(window.scrollY>=200){
@@ -57,56 +59,38 @@ window.addEventListener('scroll',_.throttle(function(){
       gsap.to(headerRightTextColor, .1, {color:'white'})
       gsap.to(headerBorderColor, .1, {borderBottomColor:'transparent'})
     }
-},300))
+},200))
 
-//이미지 호버 관련 선언
-//let selectedImg = document.querySelectorAll(".box .images")
+//스크롤 내리면 섹션이 떠오르며 나타나는 효과
+window.addEventListener('scroll', _.throttle(function() {
+  const elements = [
+    { selector: ".appear1", offset: 200},
+    { selector: ".appear2", offset: 1000},
+    { selector: ".appear3", offset: 1800},
+    { selector: ".appear4", offset: 2700},
+    { selector: ".appear5", offset: 3400},
+  ];
+  console.log()
 
-//슬라이더 내 이미지 호버 시 전환
-/*selectedImg.forEach((img)=>{
-  img.addEventListener("mouseover",()=>{
-    img.classList.add("currentSelected")
+  elements.forEach(({selector, offset}) => {
+    const element = document.querySelector(selector);
+    if (window.scrollY < offset) {
+      element.style.opacity = 0;
+      element.style.transform = "translateY(100px)";
+      element.style.transition = "opacity 0.3s, transform 0.3s";
+    } else {
+      element.style.opacity = 1;
+      element.style.transform = "translateY(0px)";
+      element.style.transition = "opacity 2.5s, transform 2.5s";
+    }
+  });
+}, 200));
 
-    let originImg = document.querySelector(".currentSelected .originImg")
-    let hoveredImg = document.querySelector(".currentSelected .hoverImg") 
-
-    // originImg.style.display="none"
-    // hoveredImg.style.display="inline"
-
-    gsap.to(originImg, .5, {
-      opacity:0,
-      display:'none'
-    })
-    gsap.to(hoveredImg, .5, {
-      opacity:1,
-      display:'inline'
-    })
-  })
-
-  img.addEventListener("mouseout",()=>{
-    img.classList.remove("currentSelected")
-    let originImages=document.querySelectorAll(".originImg")
-    let hoveredImages=document.querySelectorAll(".hoverImg")
-    originImages.forEach((item)=>{
-      gsap.to(item, .5, {
-        opacity:1,
-        display:'inline'
-      })
-    })
-    hoveredImages.forEach((item)=>{
-      gsap.to(item,.5, {
-        opacity:0,
-        display:'none'
-      })
-    })
-  })
-})*/
 function getType(data){
   return Object.prototype.toString.call(data).slice(8,-1)
 }
 
 //슬라이더
-
 new Swiper('.main-introduction .swiper-container', {
   autoplay: { // 자동 재생 여부
   delay: 4000 // 5초마다 슬라이드 바뀜
@@ -119,7 +103,6 @@ new Swiper('.main-introduction .swiper-container', {
     clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
   }
 })
-
 new Swiper('.products-container .swiper-container', {
   direction: 'horizontal',
   autoplay:{
@@ -132,7 +115,6 @@ new Swiper('.products-container .swiper-container', {
     nextEl: '.products-container .swiper-next' // 다음 버튼 선택자
   }
 })
-
 new Swiper('.select-shop-container .swiper-container', {
   direction: 'horizontal',
   autoplay:{
@@ -145,7 +127,6 @@ new Swiper('.select-shop-container .swiper-container', {
     nextEl: '.select-shop-container .swiper-next' // 다음 버튼 선택자
   }
 })
-
 new Swiper('.business-solution-slider .swiper-container', {
   direction: 'horizontal',
   autoplay:{

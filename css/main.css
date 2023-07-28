@@ -631,4 +631,8 @@ hr{
 }
 
 /* 나타남제어 */
-.appear1{}
+.appear1,.appear2,.appear3,.appear4,.appear5{
+  transition:all 0.4s;
+  opacity:0;
+  transform: translateY(100px);
+}

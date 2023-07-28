@@ -77,6 +77,21 @@
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+
+.sub_text_magazine > span:hover,
+.sub_text_news > span:hover,
+.sub_text_vibe > span:hover,
+.sub_text_pick > span:hover {
+  text-decoration: underline;
+}
+.sub_text_magazine > p,
+.sub_text_news > p,
+.sub_text_vibe > p,
+.sub_text_pick > p {
+  font-size: 0.9rem;
+  color: gray;
+}
+
 .img_container_magazine,
 .img_container_news,
 .img_container_vibe,
@@ -149,6 +164,11 @@
   visibility: hidden;
 }
 
+.magazine_next,
+.news_next,
+.vibe_next,
+.pick_next {
+}
 .news_contents img {
   width: 16rem;
   height: 10rem;

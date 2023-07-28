@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Audi Type';
+  src: local('Audi Type Normal'), local('Audi-Type-Normal'),
+      url('AudiTypeScreen-Normal.woff2') format('woff2'),
+      url('AudiTypeScreen-Normal.woff') format('woff'),
+      url('AudiTypeScreen-Normal.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: 'Audi Type Normal';
+}
+
 /* header */
 .HeadContainer {
   position: relative;

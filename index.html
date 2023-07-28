@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe24 Store</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;400&family=Mukta:wght@800&family=Nanum+Gothic:wght@400;700&family=Prompt:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+   
+    <!-- lodash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/gsap.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav-container">
+            <div class="tap">
+                <div class="desktop-icon">
+                    <button>
+                        <img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_desktop.png" alt="desktop-icon">
+                    </button>
+                </div>
+                <div class="mobile-icon">
+                    <button>
+                        <img src="http://img.echosting.cafe24.com/api/store/images/ico_frame_mobile.png" alt="mobile-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo-box">
+                    <a href="/" class="logo">
+                        <img src="https://mwpdemo12020.mycafe24.com/wp-content/uploads/2023/02/1-1.png" alt="logo">
+                    </a>
+                </div>
+                <div class="main-menu-wrapper">
+                    <ul>
+                        <div class="menu-wrapper">
+                            <li class="menu-title">
+                                회사소개
+                                <span class="material-symbols-outlined">expand_more</span>
+                                <ul class="sub-menu">
+                                    <li>회사소개</li>
+                                    <li>대표인사말</li>
+                                    <li>협력사</li>
+                                </ul>
+                            </li> 
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="menu-wrapper">
+                            <li class="menu-title">
+                                사업안내
+                                <span class="material-symbols-outlined">expand_more</span>
+                                <ul class="sub-menu">
+                                    <li>회사소개</li>
+                                    <li>대표인사말</li>
+                                    <li>협력사</li>
+                                </ul>
+                            </li> 
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="menu-wrapper">
+                            <li class="menu-title">
+                                제품소개
+                                <span class="material-symbols-outlined">expand_more</span>
+                                <ul class="sub-menu">
+                                    <li>회사소개</li>
+                                    <li>대표인사말</li>
+                                    <li>협력사</li>
+                                </ul>
+                            </li> 
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="menu-wrapper">
+                            <li class="menu-title">
+                                고객센터
+                                <span class="material-symbols-outlined">expand_more</span>
+                                <ul class="sub-menu">
+                                    <li>회사소개</li>
+                                    <li>대표인사말</li>
+                                </ul>
+                            </li> 
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <div class="main-text-container">
+                <div class="text-container">
+                    <h2 class="wmper-company">WMPER<br \>COMPANY</h2>
+                </div>
+                <div class="text-container">
+                    <h2 class="desc">기본에 충실한 디자인 회사입니다.</h2>
+                </div>
+                <div class="text-container">
+                    <h2 class="wmper">웹맵퍼</h2>
+                </div>
+            </div>
+            <div class="kakao-badge">
+                <img src="https://mwpdemo12020.mycafe24.com/wp-content/plugins/cosmosfarm-floating-menu/assets/images/button-plusfriend.png" alt="kakao-badge">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="feature">
+        <div class="feature-title">
+            <h2>WMPER</h2>
+            <span></span>                
+            <p>고객만족 극대화로 최고의 기업이 되겠습니다.</p>
+        </div>
+        <div class="feature-section">
+            <div class="feature-container">
+                <div class="introduction"></div>
+                <div class="feature-text">회사소개</div>
+            </div>
+            <div class="feature-container">
+                <div class="sample"></div>
+                <div class="feature-text">사업소개</div>
+            </div>
+            <div class="feature-container">
+                <div class="production"></div>
+                <div class="feature-text">제품소개</div>
+            </div>
+            <div class="feature-container">
+                <div class="customer-service"></div>
+                <div class="feature-text">고객센터</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="middle-text-wrapper">
+            <h2 class="text-wmper">WMPER</h2>
+            <h2 class="text-best">최고의 파트너가 되어 드리겠습니다.</h2>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <div class="product-title">
+            <h2>제품소개</h2>
+            <span></span>
+        </div>
+
+        <div class="first-product">
+            <div class="title">
+                <span></span>
+                <h2>제품소개1</h2>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        <div class="second-product">
+            <div class="title">
+                <span></span>
+                <h2>제품소개2</h2>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        <div class="third-product">
+            <div class="title">
+                <span></span>
+                <h2>제품소개3</h2>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="customer-service">
+        <div class="customer-service-text">
+            <h2>고객센터</h2>
+            <span></span>
+        </div>
+        <div class="notice-wrapper">
+            <div class="notice">
+                <div class="latest-title">
+                    <div class="notice-text">공지사항</div>
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div>공지사항 입니다.</div>
+                <div>공지사항 입니다.</div>
+                <div>공지사항 입니다.</div>
+            </div>
+            <div class="QandA">
+                <div class="latest-title">
+                    <div class="QandA-text">Q&A</div>   
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div>Q&A 입니다.</div>
+                <div>Q&A 입니다.</div>
+                <div>Q&A 입니다.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="form-content">
+            <div class="input-wrapper">
+                <input type="text" placeholder="이름">
+                <input type="text" placeholder="이메일">
+                <input type="text" placeholder="핸드폰">
+                <input type="text" placeholder="회사명">
+                <input class="content" type="text" placeholder="내용">
+            </div>
+            
+            <div class="form-submit">
+                <button type="submit">보내기</button>
+            </div>
+        </div>
+        
+        <div class="form-info">
+            <span>031.992.3552</span>
+            <p>업무시간 10:00 - 19:00</p>
+            <p>대표자 : 김송희</p>
+            <p>경기도 김포시 태장로 741 B동 522호<br \>
+            (경동미르웰시티)</p>
+            <p>사업자등록번호: 000-000-0000</p>
+            <p><strong>Email wmper@wmper.com</strong></p>
+
+        </div>
+    </div>
+
+    <footer>
+       <p>&copy; WMPER All Rights Reserved.</p> 
+    </footer>
+
+</body>
+</html>

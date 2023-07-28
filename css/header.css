@@ -1,14 +1,3 @@
-/* COMMON */
-.inner {
-  width: 1440px;
-  margin: auto;
-  position: relative;
-}
-
-#wrap {
-  min-width: 1440px;
-}
-
 /* BANNER */
 .header-banner {
   width: 100%;
@@ -488,9 +477,10 @@ ul.header-sub-menu li {
   margin-top: -19px;
 }
 
-.item .item__wrap {
+.item__wrap {
   width: 100%;
   position: fixed;
+  top: 114px;
   left: 0;
   display: none;
   border-top: 1px solid #ddd;

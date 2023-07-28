@@ -1,0 +1,280 @@
+footer {
+  background-color: #2d2926;
+}
+.footer-area {
+  display: flex;
+  padding-top: 75px;
+  height: 360px;
+  justify-content: space-between;
+}
+.footer-left {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.footer-menu {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 26px;
+  overflow: hidden;
+}
+
+.footer-menu li {
+  color: #eee;
+  position: relative;
+  margin-left: 33px;
+}
+.footer-menu li:first-child {
+  margin-left: 0;
+}
+
+.footer-menu li::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -17px;
+  width: 1px;
+  height: 14px;
+  background-color: #666;
+}
+
+.footer-menu li a {
+}
+
+.footer-address {
+  color: #a7a7a7;
+  font-size: 12px;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  line-height: 24px;
+}
+
+.footer-address .link-btn {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #a7a7a7;
+  vertical-align: baseline;
+}
+
+.footer-address .link-btn::after {
+  content: '';
+  display: inline-block;
+  margin-left: 4px;
+  border: 2px solid #a7a7a7;
+  border-left: transparent;
+  border-top: transparent;
+  width: 6px;
+  height: 6px;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -2px;
+}
+
+.footer-info {
+  display: flex;
+  color: #a7a7a7;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.footer-info li {
+  margin-right: 14px;
+  position: relative;
+}
+
+.footer-info li::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #666;
+  top: 4px;
+  left: -7px;
+}
+
+.footer-copyright {
+  margin-bottom: 30px;
+  color: #aaa;
+  font-size: 12px;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  line-height: 24px;
+}
+
+.footer-symbol {
+}
+
+.footer-symbol ul {
+  position: relative;
+  left: 5px;
+  top: 3px;
+  display: flex;
+}
+
+.footer-symbol ul li {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.footer-symbol ul li ~ li {
+  margin-left: 20px;
+}
+
+.footer-symbol ul li a {
+  height: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-symbol ul li a img {
+  margin-right: 8px;
+  width: auto;
+  height: 100%;
+}
+
+.footer-right {
+  max-width: 280px;
+}
+
+.footer-right .btn-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.footer-right .btn-group a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 16px;
+  padding: 0 24px;
+  white-space: nowrap;
+  border: 1px solid #bbb;
+  color: #fff;
+}
+
+.site {
+  display: inline-flex;
+  width: 273px;
+  position: relative;
+}
+
+.site button {
+  flex: 1 1 auto;
+  text-align: left;
+  padding: 25px 30px 8px 0;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.site button::after {
+  position: absolute;
+  top: 31px;
+  right: 1px;
+  content: '';
+  display: inline-block;
+  border: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+}
+
+.site .dropdown-menu {
+  position: absolute;
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 0.125rem;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.site .dropdown-menu .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.site .dropdown-menu .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #e9ecef;
+}
+
+.footer-sns {
+  margin-top: 26px;
+}
+
+.footer-sns ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-sns ul li {
+}
+
+.footer-sns ul li a {
+  overflow: hidden;
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+}
+
+.footer-sns .facebook {
+  background-image: url('../image/footer-sns-facebook.svg');
+}
+
+.footer-sns .youtube {
+  background-image: url('../image/footer-sns-youtube.svg');
+}
+
+.footer-sns .twitter {
+  background-image: url('../image/footer-sns-twitter.svg');
+}
+
+.footer-sns .lgblog {
+  background-image: url('../image/footer-sns-lgblog.svg');
+}
+
+.footer-sns .insta {
+  background-image: url('../image/footer-sns-instagram.svg');
+}
+
+.footer-sns .kakaostory {
+  background-image: url('../image/footer-sns-kakao.svg');
+}
+
+.footer-sns .naverblog {
+  background-image: url('../image/footer-sns-naverblog.svg');
+}

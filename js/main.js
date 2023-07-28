@@ -1,51 +1,80 @@
+const itemWrap = document.querySelector('.item__wrap')
+const banner = document.querySelector('.header-banner')
+const headerWrap = document.querySelector('.header-wrap')
+
+function adjustItemWrapPosition() {
+  const scrollTop = window.scrollY || window.pageYOffset
+  const bannerHeight = banner.clientHeight // banner 요소의 높이
+  const headerWrapHeight = headerWrap.clientHeight // header-wrap 요소의 높이
+
+  if (scrollTop === 0) {
+    // 스크롤이 0일 때, top 속성을 banner의 높이 + header-wrap의 높이로 설정합니다.
+    itemWrap.style.top = `${bannerHeight + headerWrapHeight}px`
+  } else {
+    // 스크롤이 0이 아닐 때, top 속성을 0으로 설정하여 원래 위치로 돌아가도록 합니다.
+    itemWrap.style.top = '114px'
+  }
+}
+
+window.addEventListener('scroll', adjustItemWrapPosition)
+
 /**
  *  close banner
  */
 function closeBn() {
-  const bnEl = document.querySelector('.header-banner');
-  const clsBtn = document.getElementById('closeBtn');
-  const onTodayCls = document.getElementById('text-chkbox');
+  const bnEl = document.querySelector('.header-banner')
+  const clsBtn = document.getElementById('closeBtn')
+  const onTodayCls = document.getElementById('text-chkbox')
 
   if (!bnEl || !clsBtn || !onTodayCls) {
-    return; // 요소가 존재하지 않으면 함수 종료
+    return // 요소가 존재하지 않으면 함수 종료
   }
 
   clsBtn.addEventListener('click', () => {
-    bnEl.remove();
-  });
+    bnEl.remove()
+  })
 
   onTodayCls.addEventListener('click', () => {
-    bnEl.remove();
-  });
+    bnEl.remove()
+  })
 }
-closeBn();
+closeBn()
 
 /**
  * 슬라이드 요소 관리
  */
-// new Swiper('.notice-line .swiper-container', {
-//   direction: 'vertical', // 수직 슬라이드
-//   autoplay: true, // 자동 재생 여부
-//   loop: true, // 반복 재생 여부
-// });
-new Swiper('.promotion .swiper-container', {
-  // direction: 'horizontal', // 수평 슬라이드
+const swiper = new Swiper('.visual .swiper-container', {
   autoplay: {
-    // 자동 재생 여부
     delay: 5000, // 5초마다 슬라이드 바뀜
   },
-  loop: true, // 반복 재생 여부
-  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
-  spaceBetween: 0, // 슬라이드 사이 여백
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
   allowSlideNext: true,
   pagination: {
     // 페이지 번호 사용 여부
-    el: '.promotion .swiper-pagination', // 페이지 번호 요소 선택자
-    clickable: true, // 사용자의 페이지 번호 요소 제어 가능 여부
+    el: '.visual .swiper-pagination',
+    clickable: true,
   },
   navigation: {
-    // 슬라이드 이전/다음 버튼 사용 여부
-    prevEl: '.promotion .swiper-button-prev', // 이전 버튼 선택자
-    nextEl: '.promotion .swiper-button-next', // 다음 버튼 선택자
+    prevEl: '.visual .swiper-button-prev',
+    nextEl: '.visual .swiper-button-next',
   },
-});
+})
+
+const setSwiperStart = (swiper) => {
+  const tab = document.querySelector('.visual-control__play')
+  let isPause = false
+
+  tab.addEventListener('click', function () {
+    isPause = !isPause
+    if (isPause) {
+      tab.classList.add('is-pause')
+      swiper.autoplay.stop() // 일시 정지
+    } else {
+      tab.classList.remove('is-pause')
+      swiper.autoplay.start() // 자동 재생 시작
+    }
+  })
+}
+setSwiperStart(swiper)

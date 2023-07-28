@@ -75,6 +75,10 @@ ul li {
   display: inline-block;
 }
 
+.home-button:hover {
+  background-color: #E9ECEF;
+}
+
 .button-text {
   font-size: 1.8rem !important;
   font-weight: bold;

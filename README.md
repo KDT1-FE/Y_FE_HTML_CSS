@@ -19,7 +19,9 @@
 - 슬라이더 ( 캐러셀 )
 - 푸터
   <br/>
-  <img width="800" alt="image" src="https://velog.velcdn.com/images/pgh123166/post/b6c4c320-d1c2-4e73-ae19-de05b5adc10c/image.gif">
+  <br/>
+  ![header](https://github.com/gahyuun/clone_coding/assets/81469686/4ff1183b-ea14-49ab-9743-dea4357fefb8)
+  ![slider2](https://github.com/gahyuun/clone_coding/assets/81469686/7637d55a-96f2-41fe-8558-3c388ce3c6fa)
 
 <br/>
 

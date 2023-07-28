@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>EDIYA Clone Coding</title>
+  </head>
+  <body>
+    <!--상단바-->
+    <header class="header">
+      <div class="left-section">
+        <ul class="vtline">
+          <li><a href="#">브랜드 사이트</a></li>
+          <li><a href="#">기업 사이트</a></li>
+          <li><a href="#">창업안내</a></li>
+          <li><a href="#">채용안내</a></li>
+        </ul>
+      </div>
+      <div class="right-section">
+        <ul class="vtline">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">매장찾기</a></li>
+          <li><a href="#">고객의 소리</a></li>
+          <li><a href="#">이디야 스토어</a></li>
+          <li><a href="#">모바일상품권 스토어</a></li>
+        </ul>
+        <!--sns logo-->
+        <img class="sns-logo" src="./img/etc/sns_logo.png" />
+        <div class="search">
+          <input class="search-bar" type="text" />
+          <button class="search-button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!--탑로고 + 네브바-->
+    <nav class="nav">
+      <div class="top-logo"><img src="./img/etc/top_logo.png" /></div>
+      <div class="dropdown-container">
+        <ul class="dropdown">
+          <li>
+            <a href="#">원두</a>
+          </li>
+          <li>
+            <a href="#">메뉴</a>
+          </li>
+          <li>
+            <a href="#">유통제품</a>
+          </li>
+          <li>
+            <a href="#">이디야멤버스</a>
+          </li>
+          <li>
+            <a href="#">상품권·제휴카드</a>
+          </li>
+          <li>
+            <a href="#">브랜드 소식</a>
+          </li>
+          <li>
+            <a href="#">고객 지원</a>
+          </li>
+        </ul>
+        <div class="dropdown_wrap">
+          <ul class="dropdown__menu">
+            <div class="dropmenu"><span>이디야 블렌드</span></div>
+            <div class="dropmenu">
+              <span>음료</span><br /><span>푸드</span><br />
+              <span>MD</span>
+            </div>
+            <div class="dropmenu">
+              <span>스틱커피(비니스트)</span><br /><span>커피믹스</span><br />
+              <span>캡슐커피</span><br /><span>컵커피</span><br />
+              <span>수출입거래</span><br /><span>B2B/특판/대리점거래</span>
+            </div>
+            <div class="dropmenu">
+              <span>멤버십안내</span><br /><span>서비스안내</span>
+            </div>
+            <div class="dropmenu">
+              <span>제휴카드(하나·신한)</span><br /><span>기프트카드</span
+              ><br />
+              <span>모바일상품권</span><br /><span>단체기업 구매</span>
+            </div>
+            <div class="dropmenu">
+              <span>공지사항</span><br /><span>이벤트 안내</span><br />
+              <span>사회공헌 활동</span>
+            </div>
+            <div class="dropmenu">
+              <span>고객의 소리</span><br /><span>소비자중심경영(BCM)</span
+              ><br />
+              <span>제휴·제안</span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--첫번째 슬라이드 쇼-->
+    <div class="slide_wrap" style="position: relative">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya1.png" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya3.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya4.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya5.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya6.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya7.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya8.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya9.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/top_img/ediya10.png" style="width: 100%" />
+        </div>
+
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+
+      <div class="dot-wrap" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+      </div>
+    </div>
+
+    <!--하단 wrap-->
+    <section class="second_wrap">
+      <div class="wrap_first">
+        <h1><strong>BEANIST</strong>&nbsp;INFORMATION CARD</h1>
+        <hr style="border-width: 1px 0 0 0; border-color: #000; width: 100px" />
+        <h2>
+          비니스트는 <b>BEAN+Specialist</b>의 합성어로<b>
+            오직 커피만을 생각해온 커피 전문가</b
+          >를 의미합니다.
+        </h2>
+      </div>
+
+      <!--두번째 슬라이드쇼-->
+      <div class="slide2_wrap" style="position: relative">
+        <div class="slideshow-containe">
+          <div class="mySlide fad">
+            <img src="./img/bottom_img/cong1.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlide fad">
+            <img src="./img/bottom_img/cong2.png" style="width: 100%" />
+          </div>
+
+          <div class="mySlide fad">
+            <img src="./img/bottom_img/cong3.png" style="width: 100%" />
+          </div>
+        </div>
+
+        <div class="dot2-wrap" style="text-align: center">
+          <span class="do" onclick="currentSlide(1)"></span>
+          <span class="do" onclick="currentSlide(2)"></span>
+          <span class="do" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!--드림 팩토리-->
+    <section class="dream_factory">
+      <div class="dream_content">
+        <img src="./img/etc/dream-factory.png" />
+        <h2>EDIYA COFFEE</h2>
+        <p>
+          최첨단 시설에서 탄생하는 고품질의 원두로<br />최고의 커피맛을
+          고객들에게 제공합니다.
+        </p>
+        <button class="btn_1">드림 팩토리</button>
+        <button class="btn_2">드림 물류센터</button>
+      </div>
+      <div class="dream_img">
+        <img src="./img/bottom_img/dream_factory.png" />
+      </div>
+    </section>
+
+    <!--다양한 메뉴 컵사진-->
+    <section class="always_beside">
+      <div class="always_inner">
+        <h2>ALWAYS BESIDE YOU, <strong>EDIYA COFFEE</strong></h2>
+        <h3>늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요</h3>
+        <button>메뉴보기</button>
+      </div>
+    </section>
+
+    <!--이디야 회사 사진-->
+    <section class="ediya_company">
+      <div class="company_inner">
+        <h2>고객과 가맹점주, 협력사의<br />상생의 가치를 실천합니다.</h2>
+        <h4>
+          해외에 로열티를 내지 않는 순수한 국내브랜드로<br />품질좋고 맛있는
+          정직한 커피를 제공합니다.
+        </h4>
+        <button>창업안내</button>
+        <button>창업설명회 안내</button>
+        <button>브랜드소개</button>
+      </div>
+    </section>
+
+    <section class="last_menu">
+      <div class="menu_wrap">
+        <div class="menu_1">
+          <div class="menu_11">
+            <p>가맹점 개설 안내</p>
+            <p>성공 창업을 위한 선택</p>
+          </div>
+        </div>
+        <div class="menu_2">
+          <div class="menu_22">
+            <p>매장찾기</p>
+            <p>가까운 이디야 매장을<br />확인해보세요.</p>
+            <div class="wrap_input">
+              <input type="text" placeholder="FIND A STORE" />
+              <button class="search_button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="menu_inner">
+          <div class="menu_3">
+            <h3>이디야 소식</h3>
+            <div class="more_btn">
+              <a href="#"><img src="./img/etc/main_news_more.png" /></a>
+            </div>
+            <ul class="news_list">
+              <li>
+                <a href="#">2023 메이트 희망기금 지급 일자 안내</a
+                ><span>2023.07.10</span>
+              </li>
+              <li>
+                <a href="#">2023 메이트 희망기금 발표 안내</a
+                ><span>2023.06.27</span>
+              </li>
+              <li>
+                <a href="#">(이디야멤버스) 이디야 딜리버리 OPEN</a
+                ><span>2023.06.26</span>
+              </li>
+            </ul>
+          </div>
+          <div class="menu_4"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="last_list">
+        <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+        <li><a href="#" style="color: #fff">개인정보처리방침</a></li>
+        <li><a href="#">멤버스 이용약관</a></li>
+        <li><a href="#">가맹 안내</a></li>
+        <li><a href="#">sitemap</a></li>
+        <li><a href="#">점주의방</a></li>
+        <li>
+          <select name="lang" class="language">
+            <option value="#" selected="selected">Korean</option>
+            <option value="#">English</option>
+            <option value="#">Chinese</option>
+          </select>
+        </li>
+      </ul>
+      <div class="center_img">
+        <img src="./img/etc/bottom_logo.png" />
+      </div>
+      <div class="ccm"><img src="./img/etc/footer_ccm.png" /></div>
+      <div class="foot_wrap">
+        <ul class="footer_p1">
+          <li>
+            서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동
+            221-17)
+          </li>
+          <li>TEL : 02-543-6467</li>
+          <li>FAX : 02-543-7191</li>
+        </ul>
+        <ul class="footer_p2">
+          <li>사업자등록번호 : 107-86-16302</li>
+          <li>통신판매업 신고 : 강남 제 002519호</li>
+          <li>대표이사 : 문창기, 권익범</li>
+        </ul>
+        <p class="copy">
+          &copy;2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/slide.js"></script>
+    <script src="./js/slide2.js"></script>
+    <script src="./js/topmenu.js"></script>
+  </body>
+</html>

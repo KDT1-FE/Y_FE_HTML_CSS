@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0px;
@@ -6,7 +5,9 @@ body {
     letter-spacing: -1.5px;
     color: #333;
 }
-
+* {
+    font-family: inherit;
+}
 
 .section {
     min-width: 1200px;
@@ -95,7 +96,7 @@ body {
 
 
 /* recommend sectio */
-#main-recommend {
+.main-recommend {
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -120,6 +121,7 @@ body {
     justify-content: space-between;
 }
 .recommend__lists figure {
+    width: 0 auto;
     display: inline-block;
     padding: 32px 16px;
     margin: 0;
@@ -174,6 +176,10 @@ body {
     font-size: 0px;
     display: flex;
 }
+.main__card__list:first-of-type {
+    padding-left: 45px;
+}
+
 .main__card__list > a {
     margin-bottom: 25px;
 }
@@ -630,4 +636,59 @@ body {
     padding-top: 24px;
     display: inline-block;
     font-size: 17px;
+}
+
+
+
+/* notice section */
+.notice-section {
+    display: block;
+    width: 800px;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+.notice__list {
+    margin-top: 50px;
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.notice__list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -1.44px;
+}
+.notice__list li a {
+    display: inline-block;
+    width: 600px;
+    color: #333333;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notice__list li span {
+    color: #aaaaaa;
+}
+.more-button {
+    width: 240px;
+    height: 50px;
+    border: 1px solid #aaa;
+    margin-top: 60px;
+    color: #333333;
+    background-color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.more-button:hover {
+    border: 1px solid #63666a;
+    background-color: #63666a;
+    color: #fff;
 }

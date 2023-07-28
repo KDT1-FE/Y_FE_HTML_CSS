@@ -38,9 +38,6 @@ footer {
   background-color: #666;
 }
 
-.footer-menu li a {
-}
-
 .footer-address {
   color: #a7a7a7;
   font-size: 12px;
@@ -99,9 +96,6 @@ footer {
   letter-spacing: -0.04em;
   white-space: nowrap;
   line-height: 24px;
-}
-
-.footer-symbol {
 }
 
 .footer-symbol ul {
@@ -190,18 +184,14 @@ footer {
 }
 
 .site .dropdown-menu {
+  display: none;
   position: absolute;
+  width: 100%;
   top: auto;
   bottom: 100%;
-  margin-top: 0;
-  margin-bottom: 0.125rem;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
+  z-index: 99;
   min-width: 10rem;
   padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
@@ -240,15 +230,12 @@ footer {
   justify-content: space-between;
 }
 
-.footer-sns ul li {
-}
-
 .footer-sns ul li a {
   overflow: hidden;
   display: block;
   width: 32px;
   height: 32px;
-  text-indent: -9999px;
+  font-size: 0;
 }
 
 .footer-sns .facebook {

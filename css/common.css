@@ -1,9 +1,10 @@
-/**
- * Minified by jsDelivr using clean-css v5.3.2.
- * Original file: /npm/reset-css@5.0.2/reset.css
- *
- * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
- */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 a,
 abbr,
 acronym,
@@ -112,6 +113,7 @@ section {
 }
 body {
   line-height: 1.5;
+  font-family: 'Pretendard-Regular';
 }
 menu,
 ol,
@@ -133,7 +135,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*# sourceMappingURL=/sm/04f4d35563f7cf9516264fcbb6e11a85def2ae5616df66563711867fe05befec.map */
 
 button {
   background-color: transparent;
@@ -160,6 +161,10 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 .inner {
   width: 1440px;
   margin: auto;
@@ -170,7 +175,6 @@ button:not(:disabled) {
   min-width: 1440px;
 }
 
-/* COMMON */
 .white {
   color: #fff !important;
 }

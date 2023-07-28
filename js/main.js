@@ -1,21 +1,3 @@
-// 스크롤 시
-const itemWrap = document.querySelector('.item__wrap')
-const headerWrap = document.querySelector('.header-wrap')
-
-function itemWrapPosition() {
-  const scrollTop = window.scrollY
-  const bannerHeight = banner.clientHeight
-  const headerWrapHeight = headerWrap.clientHeight
-
-  if (scrollTop === 0) {
-    itemWrap.style.top = `${bannerHeight + headerWrapHeight}px`
-  } else {
-    itemWrap.style.top = `${headerWrapHeight}px`
-  }
-}
-
-window.addEventListener('scroll', itemWrapPosition)
-
 /**
  *  배너 닫기
  */
@@ -76,3 +58,67 @@ const setSwiperStart = (swiper) => {
   })
 }
 setSwiperStart(swiper)
+
+/**
+ * 챗봇 토글
+ */
+const chatbotEl = document.querySelector('.chatbot--btn')
+const subMenu = document.querySelector('.sub-menu')
+let onToggle = false
+chatbotEl.addEventListener('click', () => {
+  onToggle = !onToggle
+  if (onToggle) {
+    subMenu.classList.add('show')
+    chatbotEl.classList.add('show')
+  } else {
+    subMenu.classList.remove('show')
+    chatbotEl.classList.remove('show')
+  }
+})
+
+/**
+ * 드롭다운 메뉴
+ */
+const dropBtnEl = document.getElementById('dropdown')
+const dropMenuEl = document.querySelector('.dropdown-menu')
+dropBtnEl.addEventListener('click', () => {
+  if (dropMenuEl.style.display === 'none') {
+    dropMenuEl.style.display = 'block' // 드롭다운 메뉴 보이기
+  } else {
+    dropMenuEl.style.display = 'none' // 드롭다운 메뉴 숨기기
+  }
+})
+
+/**
+ * Scroll Magic
+ */
+const spyEls = document.querySelectorAll('section.scroll-spy')
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic.Scene({
+    triggerElement: spyEl,
+    triggerHook: 0.8,
+  })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller())
+})
+
+/**
+ * 순서대로 나타나는 기능
+ */
+function floatUpAnimation(selector) {
+  const elements = document.querySelectorAll(selector)
+
+  gsap.set(elements, { opacity: 0, y: 100 })
+
+  elements.forEach(function (element, index) {
+    gsap.to(element, {
+      duration: 1,
+      delay: index * 0.3,
+      opacity: 1,
+      y: 0,
+      ease: 'power3.out',
+    })
+  })
+}
+
+floatUpAnimation('.event .fade-in')

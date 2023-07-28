@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"></script>
+    <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script defer src="./js/main.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
@@ -44,510 +56,531 @@
             </ul>
           </div>
         </div>
-        <div class="inner">
-          <div class="header-navi">
-            <nav class="header-navi-menu">
-              <ul class="header-nav-lst">
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">모바일 기기</a>
-                  <div class="item__wrap">
-                    <ul class="inner">
-                      <li>
-                        <h4 class="title"><a href="javascript:void(0)">5G휴대폰</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                          <li><a href="javascript:void(0)">삼성</a></li>
-                          <li><a href="javascript:void(0)">Apple</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">유심/eSIM 가입</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">유심가입</a></li>
-                          <li><a href="javascript:void(0)">eSIM 가입</a></li>
-                          <li><a href="javascript:void(0)">친구 추천</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">중고/리퍼/자급제폰</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">중고폰</a></li>
-                          <li><a href="javascript:void(0)">리퍼폰</a></li>
-                          <li><a href="javascript:void(0)">자급제폰</a></li>
-                          <li><a href="javascript:void(0)">자급제폰 요금제 가입</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">태블릿</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                          <li><a href="javascript:void(0)">삼성</a></li>
-                          <li><a href="javascript:void(0)">Apple</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">스마트워치</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                          <li><a href="javascript:void(0)">삼성</a></li>
-                          <li><a href="javascript:void(0)">Apple</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">노트북</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">악세서리</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                          <li><a href="javascript:void(0)">U⁺굿즈</a></li>
-                          <li><a href="javascript:void(0)">스마트기기/기타</a></li>
-                          <li><a href="javascript:void(0)">음향/영상기기</a></li>
-                          <li><a href="javascript:void(0)">충전기기</a></li>
-                          <li><a href="javascript:void(0)">케이스/필름</a></li>
-                          <li><a href="javascript:void(0)">주변기기</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul class="sub__shortcut">
-                      <li>
-                        <span class="thumb"><img src="./asset/Model.svg" loading="lazy" /></span>모델별지원금
-                      </li>
-                      <li>
-                        <span class="thumb"><img src="./asset/Payment-phone.svg" loading="lazy" /></span>자급제폰요금제가입
-                      </li>
-                    </ul>
-                  </div>
+        <div class="header-wrap__container">
+          <div class="inner">
+            <div class="header-navi">
+              <nav class="header-navi-menu">
+                <ul class="header-nav-lst">
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">모바일 기기</a>
+                    <div class="item__wrap">
+                      <ul class="inner">
+                        <li>
+                          <h4 class="title"><a href="javascript:void(0)">5G휴대폰</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                            <li><a href="javascript:void(0)">삼성</a></li>
+                            <li><a href="javascript:void(0)">Apple</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">유심/eSIM 가입</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">유심가입</a></li>
+                            <li><a href="javascript:void(0)">eSIM 가입</a></li>
+                            <li><a href="javascript:void(0)">친구 추천</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">중고/리퍼/자급제폰</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">중고폰</a></li>
+                            <li><a href="javascript:void(0)">리퍼폰</a></li>
+                            <li><a href="javascript:void(0)">자급제폰</a></li>
+                            <li><a href="javascript:void(0)">자급제폰 요금제 가입</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">태블릿</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                            <li><a href="javascript:void(0)">삼성</a></li>
+                            <li><a href="javascript:void(0)">Apple</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">스마트워치</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                            <li><a href="javascript:void(0)">삼성</a></li>
+                            <li><a href="javascript:void(0)">Apple</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">노트북</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">악세서리</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                            <li><a href="javascript:void(0)">U⁺굿즈</a></li>
+                            <li><a href="javascript:void(0)">스마트기기/기타</a></li>
+                            <li><a href="javascript:void(0)">음향/영상기기</a></li>
+                            <li><a href="javascript:void(0)">충전기기</a></li>
+                            <li><a href="javascript:void(0)">케이스/필름</a></li>
+                            <li><a href="javascript:void(0)">주변기기</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <ul class="sub__shortcut">
+                        <li>
+                          <span class="thumb"><img src="./asset/Model.svg" loading="lazy" /></span>모델별지원금
+                        </li>
+                        <li>
+                          <span class="thumb"><img src="./asset/Payment-phone.svg" loading="lazy" /></span>자급제폰요금제가입
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">모바일 요금제</a>
+                    <div class="item__wrap">
+                      <ul class="inner">
+                        <li>
+                          <h4 class="title"><a href="javascript:void(0)">다이렉트</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">5G</a></li>
+                            <li><a href="javascript:void(0)">LTE</a></li>
+                            <li><a href="javascript:void(0)">다이렉트 플러스 결합</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">요금제</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">5G</a></li>
+                            <li><a href="javascript:void(0)">LTE</a></li>
+                            <li><a href="javascript:void(0)">태블릿 및 스마트기기</a></li>
+                            <li><a href="javascript:void(0)">듀얼넘버 플러스</a></li>
+                            <li><a href="javascript:void(0)">U⁺투게더 결합</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">카테고리팩</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">5G</a></li>
+                            <li><a href="javascript:void(0)">LTE</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">유심/eSIM 가입</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">유심 가입</a></li>
+                            <li><a href="javascript:void(0)">eSIM 가입</a></li>
+                            <li><a href="javascript:void(0)">친구 추천</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">부가서비스</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                            <li><a href="javascript:void(0)">데이터</a></li>
+                            <li><a href="javascript:void(0)">영상/음악</a></li>
+                            <li><a href="javascript:void(0)">통화/문자메시지</a></li>
+                            <li><a href="javascript:void(0)">할인/편의</a></li>
+                            <li><a href="javascript:void(0)">금융/보안</a></li>
+                            <li><a href="javascript:void(0)">안심/보험</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">해외로밍</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">맞춤 로밍 추천 받기</a></li>
+                            <li><a href="javascript:void(0)">로밍요금제 신청</a></li>
+                            <li><a href="javascript:void(0)">부가서비스 신청</a></li>
+                            <li><a href="javascript:void(0)">마이 로밍 이용 조회</a></li>
+                            <li><a href="javascript:void(0)">이용 가이드</a></li>
+                            <li><a href="javascript:void(0)">로밍센터 위치 안내</a></li>
+                            <li><a href="javascript:void(0)">해외로밍 이벤트</a></li>
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <ul class="sub__shortcut">
+                        <li>
+                          <span class="thumb"><img src="./asset/esim.png" loading="lazy" /></span>유심 가입
+                        </li>
+                        <li>
+                          <span class="thumb"><img src="./asset/Friend-recommendation.png" loading="lazy" /></span>친구 추천
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">인터넷/IPTV</a>
+                    <div class="item__wrap">
+                      <ul class="inner">
+                        <li>
+                          <h4 class="title"><a href="javascript:void(0)">인터넷/IPTV 가입</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">나에게 맞는 상품 찾기</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">인터넷</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">요금제</a></li>
+                            <li><a href="javascript:void(0)">부가서비스</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">IPTV</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">요금제</a></li>
+                            <li><a href="javascript:void(0)">채널안내</a></li>
+                            <li><a href="javascript:void(0)">주요 서비스</a></li>
+                            <li><a href="javascript:void(0)">부가 서비스</a></li>
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">스마트홈</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">요금제</a></li>
+                            <li><a href="javascript:void(0)">스마트홈 기기</a></li>
+                            <li><a href="javascript:void(0)">스마트홈 소개</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">전화서비스</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">요금제</a></li>
+                            <li><a href="javascript:void(0)">인터넷전화 부가서비스</a></li>
+                            <li><a href="javascript:void(0)">인터넷전화 기기</a></li>
+                            <li><a href="javascript:void(0)">수신자 부담전화</a></li>
+                            <li><a href="javascript:void(0)">국제전화 002</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">가입사은품</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                            <li><a href="javascript:void(0)">상품권</a></li>
+                            <li><a href="javascript:void(0)">TV</a></li>
+                            <li><a href="javascript:void(0)">컴퓨터/주변기기</a></li>
+                            <li><a href="javascript:void(0)">주방/생활가전</a></li>
+                            <li><a href="javascript:void(0)">에어케어/에어컨</a></li>
+                            <li><a href="javascript:void(0)">키즈/펫용품</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">소상공인상품</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">매장/사무실 인터넷</a></li>
+                            <li><a href="javascript:void(0)">매장/사무실 인터넷전화</a></li>
+                            <li><a href="javascript:void(0)">매장/사무실 지능형 CCTV</a></li>
+                            <li><a href="javascript:void(0)">매장/사무실 IPTV</a></li>
+                            <li><a href="javascript:void(0)">매장/사무실 패키지 상품</a></li>
+                            <li><a href="javascript:void(0)">소상공인상품 혜택</a></li>
+                            <li><a href="javascript:void(0)">이벤트</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <ul class="sub__shortcut">
+                        <li>
+                          <span class="thumb"><img src="./asset/netflix.png" loading="lazy" /></span>넷플릭스
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">마이페이지</a>
+                    <div class="item__wrap">
+                      <ul class="inner">
+                        <li>
+                          <h4 class="title"><a href="javascript:void(0)">청구요금 및 납부</a></h4>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">가입정보 관리</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">내 가입정보 조회/변경</a></li>
+                            <li><a href="javascript:void(0)">요금제 조회/변경</a></li>
+                            <li><a href="javascript:void(0)">부가서비스 조회/변경/해지</a></li>
+                            <li><a href="javascript:void(0)">서비스 일시정지/해제</a></li>
+                            <li><a href="javascript:void(0)">서비스 해지</a></li>
+                            <li><a href="javascript:void(0)">회원정보</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">주문관리</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">가입신청 내역</a></li>
+                            <li><a href="javascript:void(0)">액세서리 주문내역</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">사용현황</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">사용내역 조회</a></li>
+                            <li><a href="javascript:void(0)">휴대폰결제</a></li>
+                            <li><a href="javascript:void(0)">해외로밍 사용량/요금조회</a></li>
+                            <li><a href="javascript:void(0)">자녀 요금조회</a></li>
+                            <li><a href="javascript:void(0)">시외전화 및 부가전화</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">데이터관리</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">참 쉬운 가족 데이터</a></li>
+                            <li><a href="javascript:void(0)">데이터 주고받기</a></li>
+                            <li><a href="javascript:void(0)">데이터 2배 쿠폰</a></li>
+                            <li><a href="javascript:void(0)">데이터 2GB 쿠폰</a></li>
+                            <li><a href="javascript:void(0)">가족사랑 데이터</a></li>
+                            <li><a href="javascript:void(0)">링(홀) 요금제</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">활동관리</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">1:1 문의내역</a></li>
+                            <li><a href="javascript:void(0)">최근 본 상품</a></li>
+                            <li><a href="javascript:void(0)">상품 문의내역</a></li>
+                            <li><a href="javascript:void(0)">구매후기</a></li>
+                            <li><a href="javascript:void(0)">입고알림</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">멤버십</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">멤버십 이용내역</a></li>
+                            <li><a href="javascript:void(0)">멤버십 변경내역</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">ez포인트</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">ez포인트 안내</a></li>
+                            <li><a href="javascript:void(0)">ez포인트 조회</a></li>
+                            <li><a href="javascript:void(0)">ez포인트 사용</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <ul class="sub__shortcut">
+                        <li>
+                          <span class="thumb"><img src="./asset/Information-inquiry.png" loading="lazy" /></span>내 가입정보 조회
+                        </li>
+                        <li>
+                          <span class="thumb"><img src="./asset/roaming.png" loading="lazy" /></span>로밍 데이터 사용량
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">혜택</a>
+                    <div class="item__wrap">
+                      <ul class="inner">
+                        <li>
+                          <h4 class="title"><a href="javascript:void(0)">이벤트</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">진행중 이벤트</a></li>
+                            <li><a href="javascript:void(0)">지난 이벤트</a></li>
+                            <li><a href="javascript:void(0)">선호번호 신청 이벤트</a></li>
+                            <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">멤버십</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">멤버십 안내</a></li>
+                            <li><a href="javascript:void(0)">멤버십 혜택</a></li>
+                            <li><a href="javascript:void(0)">영화예매</a></li>
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">U⁺혜택</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">온라인 구매 혜택</a></li>
+                            <li><a href="javascript:void(0)">장기고객 혜택</a></li>
+                            <li><a href="javascript:void(0)">중고폰 가격 보장</a></li>
+                            <li><a href="javascript:void(0)">중고폰 보상 신청</a></li>
+                            <li><a href="javascript:void(0)">요금 할인 혜택</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">결합할인 혜택</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">결합할인 상품</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">제휴혜택</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">제휴카드 할인</a></li>
+                            <li><a href="javascript:void(0)">포인트 할인</a></li>
+                            <li><a href="javascript:void(0)">제휴사 혜택</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">by U</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">유플러스 LIVE</a></li>
+                            <li><a href="javascript:void(0)">유플일상</a></li>
+                            <li><a href="javascript:void(0)">Why Not?</a></li>
+                            <li><a href="javascript:void(0)">아이들나라</a></li>
+                            <li><a href="javascript:void(0)">일상비일상의틈</a></li>
+                            <li><a href="javascript:void(0)">무너소개</a></li>
+                            <li><a href="javascript:void(0)">포동</a></li>
+                            <li><a href="javascript:void(0)">장기고객 혜택</a></li>
+                            <li><a href="javascript:void(0)">선택약정할인</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">악세서리</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">전체</a></li>
+                            <li><a href="javascript:void(0)">U+굿즈</a></li>
+                            <li><a href="javascript:void(0)">스마트기기/기타</a></li>
+                            <li><a href="javascript:void(0)">음향/영상기기</a></li>
+                            <li><a href="javascript:void(0)">충전기기</a></li>
+                            <li><a href="javascript:void(0)">케이스/필름</a></li>
+                            <li><a href="javascript:void(0)">주변기기</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <ul class="sub__shortcut">
+                        <li>
+                          <span class="thumb"><img src="./asset/Customer-benefits.png" loading="lazy" /></span>장기고객 혜택
+                        </li>
+                        <li>
+                          <span class="thumb"><img src="./asset/optional-discount.png" loading="lazy" /></span>선택약정할인
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">고객지원</a>
+                    <div class="item__wrap">
+                      <ul class="inner">
+                        <li>
+                          <h4 class="title"><a href="javascript:void(0)">공지사항</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">새 소식</a></li>
+                            <li><a href="javascript:void(0)">서비스 장애 안내</a></li>
+                            <li><a href="javascript:void(0)">이용약관 안내</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">매장 안내</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">매장 찾기</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">간편 해결</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">자주하는 질문</a></li>
+                            <li><a href="javascript:void(0)">스스로 해결 가이드</a></li>
+                            <li><a href="javascript:void(0)">인터넷/IPTV 간편진단</a></li>
+                            <li><a href="javascript:void(0)">홈서비스가능지역찾기</a></li>
+                            <li><a href="javascript:void(0)">인터넷 속도 측정</a></li>
+                            <li><a href="javascript:void(0)">넷플릭스 서비스 조회</a></li>
+                            <li><a href="javascript:void(0)">위치정보제공 열람신청</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">전문 상담</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">통화 품질 개선 신청</a></li>
+                            <li><a href="javascript:void(0)">홈서비스설치변경신청</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">서비스 이용안내</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">가입/변경 방법</a></li>
+                            <li><a href="javascript:void(0)">필요 서류 안내</a></li>
+                            <li><a href="javascript:void(0)">안전한 이용 가이드</a></li>
+                            <li><a href="javascript:void(0)">고객센터 안내</a></li>
+                            <li><a href="javascript:void(0)">국번이용 안내</a></li>
+                            <li><a href="javascript:void(0)">서비스 커버리지</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">휴대폰 분실/파손</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">분실 접수/취소</a></li>
+                            <li><a href="javascript:void(0)">분실폰 위치 찾기</a></li>
+                            <li><a href="javascript:void(0)">파손접수 및 수리</a></li>
+                            <li><a href="javascript:void(0)">임대폰 대여</a></li>
+                            <li><a href="javascript:void(0)">보험 보상받기</a></li>
+                            <li><a href="javascript:void(0)">기기 변경하기</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <h4><a href="javascript:void(0)">고객의 소리</a></h4>
+                          <ul>
+                            <li><a href="javascript:void(0)">칭찬할래요</a></li>
+                            <li><a href="javascript:void(0)">제안할래요</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">
+                      <span>
+                        <i class="tooltip"><img src="./asset/img_tooltip_direct.png" loading="lazy" alt="여기서만 31% 추가할인" /></i>다이렉트샵<i class="new"
+                          ><img src="./asset/red-dot.png" loading="lazy" alt="신규"
+                        /></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name"
+                      ><span
+                        >유쓰<i class="new"><img src="./asset/red-dot.png" loading="lazy" alt="신규" /></i></span
+                    ></a>
+                  </li>
+                  <li class="item">
+                    <a href="javascript:void(0)" class="item__name">유독</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="header-sub-menu">
+                <li>
+                  <a href="javascript:void(0)"><img src="./asset/sub-hamburger.png" loading="lazy" alt="전체메뉴" /></a>
                 </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">모바일 요금제</a>
-                  <div class="item__wrap">
-                    <ul class="inner">
-                      <li>
-                        <h4 class="title"><a href="javascript:void(0)">다이렉트</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">5G</a></li>
-                          <li><a href="javascript:void(0)">LTE</a></li>
-                          <li><a href="javascript:void(0)">다이렉트 플러스 결합</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">요금제</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">5G</a></li>
-                          <li><a href="javascript:void(0)">LTE</a></li>
-                          <li><a href="javascript:void(0)">태블릿 및 스마트기기</a></li>
-                          <li><a href="javascript:void(0)">듀얼넘버 플러스</a></li>
-                          <li><a href="javascript:void(0)">U⁺투게더 결합</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">카테고리팩</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">5G</a></li>
-                          <li><a href="javascript:void(0)">LTE</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">유심/eSIM 가입</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">유심 가입</a></li>
-                          <li><a href="javascript:void(0)">eSIM 가입</a></li>
-                          <li><a href="javascript:void(0)">친구 추천</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">부가서비스</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                          <li><a href="javascript:void(0)">데이터</a></li>
-                          <li><a href="javascript:void(0)">영상/음악</a></li>
-                          <li><a href="javascript:void(0)">통화/문자메시지</a></li>
-                          <li><a href="javascript:void(0)">할인/편의</a></li>
-                          <li><a href="javascript:void(0)">금융/보안</a></li>
-                          <li><a href="javascript:void(0)">안심/보험</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">해외로밍</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">맞춤 로밍 추천 받기</a></li>
-                          <li><a href="javascript:void(0)">로밍요금제 신청</a></li>
-                          <li><a href="javascript:void(0)">부가서비스 신청</a></li>
-                          <li><a href="javascript:void(0)">마이 로밍 이용 조회</a></li>
-                          <li><a href="javascript:void(0)">이용 가이드</a></li>
-                          <li><a href="javascript:void(0)">로밍센터 위치 안내</a></li>
-                          <li><a href="javascript:void(0)">해외로밍 이벤트</a></li>
-                          <li><a href="javascript:void(0)">공지사항</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul class="sub__shortcut">
-                      <li>
-                        <span class="thumb"><img src="./asset/esim.png" loading="lazy" /></span>유심 가입
-                      </li>
-                      <li>
-                        <span class="thumb"><img src="./asset/Friend-recommendation.png" loading="lazy" /></span>친구 추천
-                      </li>
-                    </ul>
-                  </div>
+                <li>
+                  <a href="javascript:void(0)"><img src="./asset/sub-market.png" loading="lazy" alt="가까운 매장안내" /></a>
                 </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">인터넷/IPTV</a>
-                  <div class="item__wrap">
-                    <ul class="inner">
-                      <li>
-                        <h4 class="title"><a href="javascript:void(0)">인터넷/IPTV 가입</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">나에게 맞는 상품 찾기</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">인터넷</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">요금제</a></li>
-                          <li><a href="javascript:void(0)">부가서비스</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">IPTV</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">요금제</a></li>
-                          <li><a href="javascript:void(0)">채널안내</a></li>
-                          <li><a href="javascript:void(0)">주요 서비스</a></li>
-                          <li><a href="javascript:void(0)">부가 서비스</a></li>
-                          <li><a href="javascript:void(0)">공지사항</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">스마트홈</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">요금제</a></li>
-                          <li><a href="javascript:void(0)">스마트홈 기기</a></li>
-                          <li><a href="javascript:void(0)">스마트홈 소개</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">전화서비스</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">요금제</a></li>
-                          <li><a href="javascript:void(0)">인터넷전화 부가서비스</a></li>
-                          <li><a href="javascript:void(0)">인터넷전화 기기</a></li>
-                          <li><a href="javascript:void(0)">수신자 부담전화</a></li>
-                          <li><a href="javascript:void(0)">국제전화 002</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">가입사은품</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                          <li><a href="javascript:void(0)">상품권</a></li>
-                          <li><a href="javascript:void(0)">TV</a></li>
-                          <li><a href="javascript:void(0)">컴퓨터/주변기기</a></li>
-                          <li><a href="javascript:void(0)">주방/생활가전</a></li>
-                          <li><a href="javascript:void(0)">에어케어/에어컨</a></li>
-                          <li><a href="javascript:void(0)">키즈/펫용품</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">소상공인상품</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">매장/사무실 인터넷</a></li>
-                          <li><a href="javascript:void(0)">매장/사무실 인터넷전화</a></li>
-                          <li><a href="javascript:void(0)">매장/사무실 지능형 CCTV</a></li>
-                          <li><a href="javascript:void(0)">매장/사무실 IPTV</a></li>
-                          <li><a href="javascript:void(0)">매장/사무실 패키지 상품</a></li>
-                          <li><a href="javascript:void(0)">소상공인상품 혜택</a></li>
-                          <li><a href="javascript:void(0)">이벤트</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul class="sub__shortcut">
-                      <li>
-                        <span class="thumb"><img src="./asset/netflix.png" loading="lazy" /></span>넷플릭스
-                      </li>
-                    </ul>
-                  </div>
+                <li>
+                  <a href="javascript:void(0)"><img src="./asset/sub-search.png" loading="lazy" alt="검색" /></a>
                 </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">마이페이지</a>
-                  <div class="item__wrap">
-                    <ul class="inner">
-                      <li>
-                        <h4 class="title"><a href="javascript:void(0)">청구요금 및 납부</a></h4>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">가입정보 관리</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">내 가입정보 조회/변경</a></li>
-                          <li><a href="javascript:void(0)">요금제 조회/변경</a></li>
-                          <li><a href="javascript:void(0)">부가서비스 조회/변경/해지</a></li>
-                          <li><a href="javascript:void(0)">서비스 일시정지/해제</a></li>
-                          <li><a href="javascript:void(0)">서비스 해지</a></li>
-                          <li><a href="javascript:void(0)">회원정보</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">주문관리</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">가입신청 내역</a></li>
-                          <li><a href="javascript:void(0)">액세서리 주문내역</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">사용현황</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">사용내역 조회</a></li>
-                          <li><a href="javascript:void(0)">휴대폰결제</a></li>
-                          <li><a href="javascript:void(0)">해외로밍 사용량/요금조회</a></li>
-                          <li><a href="javascript:void(0)">자녀 요금조회</a></li>
-                          <li><a href="javascript:void(0)">시외전화 및 부가전화</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">데이터관리</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">참 쉬운 가족 데이터</a></li>
-                          <li><a href="javascript:void(0)">데이터 주고받기</a></li>
-                          <li><a href="javascript:void(0)">데이터 2배 쿠폰</a></li>
-                          <li><a href="javascript:void(0)">데이터 2GB 쿠폰</a></li>
-                          <li><a href="javascript:void(0)">가족사랑 데이터</a></li>
-                          <li><a href="javascript:void(0)">링(홀) 요금제</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">활동관리</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">1:1 문의내역</a></li>
-                          <li><a href="javascript:void(0)">최근 본 상품</a></li>
-                          <li><a href="javascript:void(0)">상품 문의내역</a></li>
-                          <li><a href="javascript:void(0)">구매후기</a></li>
-                          <li><a href="javascript:void(0)">입고알림</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">멤버십</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">멤버십 이용내역</a></li>
-                          <li><a href="javascript:void(0)">멤버십 변경내역</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">ez포인트</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">ez포인트 안내</a></li>
-                          <li><a href="javascript:void(0)">ez포인트 조회</a></li>
-                          <li><a href="javascript:void(0)">ez포인트 사용</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul class="sub__shortcut">
-                      <li>
-                        <span class="thumb"><img src="./asset/Information-inquiry.png" loading="lazy" /></span>내 가입정보 조회
-                      </li>
-                      <li>
-                        <span class="thumb"><img src="./asset/roaming.png" loading="lazy" /></span>로밍 데이터 사용량
-                      </li>
-                    </ul>
-                  </div>
+                <li>
+                  <a href="javascript:void(0)"><img src="./asset/sub-shopping.png" loading="lazy" alt="장바구니" /></a>
                 </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">혜택</a>
-                  <div class="item__wrap">
-                    <ul class="inner">
-                      <li>
-                        <h4 class="title"><a href="javascript:void(0)">이벤트</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">진행중 이벤트</a></li>
-                          <li><a href="javascript:void(0)">지난 이벤트</a></li>
-                          <li><a href="javascript:void(0)">선호번호 신청 이벤트</a></li>
-                          <li><a href="javascript:void(0)">당첨자 발표</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">멤버십</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">멤버십 안내</a></li>
-                          <li><a href="javascript:void(0)">멤버십 혜택</a></li>
-                          <li><a href="javascript:void(0)">영화예매</a></li>
-                          <li><a href="javascript:void(0)">공지사항</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">U⁺혜택</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">온라인 구매 혜택</a></li>
-                          <li><a href="javascript:void(0)">장기고객 혜택</a></li>
-                          <li><a href="javascript:void(0)">중고폰 가격 보장</a></li>
-                          <li><a href="javascript:void(0)">중고폰 보상 신청</a></li>
-                          <li><a href="javascript:void(0)">요금 할인 혜택</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">결합할인 혜택</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">결합할인 상품</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">제휴혜택</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">제휴카드 할인</a></li>
-                          <li><a href="javascript:void(0)">포인트 할인</a></li>
-                          <li><a href="javascript:void(0)">제휴사 혜택</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">by U</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">유플러스 LIVE</a></li>
-                          <li><a href="javascript:void(0)">유플일상</a></li>
-                          <li><a href="javascript:void(0)">Why Not?</a></li>
-                          <li><a href="javascript:void(0)">아이들나라</a></li>
-                          <li><a href="javascript:void(0)">일상비일상의틈</a></li>
-                          <li><a href="javascript:void(0)">무너소개</a></li>
-                          <li><a href="javascript:void(0)">포동</a></li>
-                          <li><a href="javascript:void(0)">장기고객 혜택</a></li>
-                          <li><a href="javascript:void(0)">선택약정할인</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">악세서리</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">전체</a></li>
-                          <li><a href="javascript:void(0)">U+굿즈</a></li>
-                          <li><a href="javascript:void(0)">스마트기기/기타</a></li>
-                          <li><a href="javascript:void(0)">음향/영상기기</a></li>
-                          <li><a href="javascript:void(0)">충전기기</a></li>
-                          <li><a href="javascript:void(0)">케이스/필름</a></li>
-                          <li><a href="javascript:void(0)">주변기기</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <ul class="sub__shortcut">
-                      <li>
-                        <span class="thumb"><img src="./asset/Customer-benefits.png" loading="lazy" /></span>장기고객 혜택
-                      </li>
-                      <li>
-                        <span class="thumb"><img src="./asset/optional-discount.png" loading="lazy" /></span>선택약정할인
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">고객지원</a>
-                  <div class="item__wrap">
-                    <ul class="inner">
-                      <li>
-                        <h4 class="title"><a href="javascript:void(0)">공지사항</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">새 소식</a></li>
-                          <li><a href="javascript:void(0)">서비스 장애 안내</a></li>
-                          <li><a href="javascript:void(0)">이용약관 안내</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">매장 안내</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">매장 찾기</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">간편 해결</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">자주하는 질문</a></li>
-                          <li><a href="javascript:void(0)">스스로 해결 가이드</a></li>
-                          <li><a href="javascript:void(0)">인터넷/IPTV 간편진단</a></li>
-                          <li><a href="javascript:void(0)">홈서비스가능지역찾기</a></li>
-                          <li><a href="javascript:void(0)">인터넷 속도 측정</a></li>
-                          <li><a href="javascript:void(0)">넷플릭스 서비스 조회</a></li>
-                          <li><a href="javascript:void(0)">위치정보제공 열람신청</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">전문 상담</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">통화 품질 개선 신청</a></li>
-                          <li><a href="javascript:void(0)">홈서비스설치변경신청</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">서비스 이용안내</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">가입/변경 방법</a></li>
-                          <li><a href="javascript:void(0)">필요 서류 안내</a></li>
-                          <li><a href="javascript:void(0)">안전한 이용 가이드</a></li>
-                          <li><a href="javascript:void(0)">고객센터 안내</a></li>
-                          <li><a href="javascript:void(0)">국번이용 안내</a></li>
-                          <li><a href="javascript:void(0)">서비스 커버리지</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">휴대폰 분실/파손</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">분실 접수/취소</a></li>
-                          <li><a href="javascript:void(0)">분실폰 위치 찾기</a></li>
-                          <li><a href="javascript:void(0)">파손접수 및 수리</a></li>
-                          <li><a href="javascript:void(0)">임대폰 대여</a></li>
-                          <li><a href="javascript:void(0)">보험 보상받기</a></li>
-                          <li><a href="javascript:void(0)">기기 변경하기</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h4><a href="javascript:void(0)">고객의 소리</a></h4>
-                        <ul>
-                          <li><a href="javascript:void(0)">칭찬할래요</a></li>
-                          <li><a href="javascript:void(0)">제안할래요</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">
-                    <span>
-                      <i class="tooltip"><img src="./asset/img_tooltip_direct.png" loading="lazy" alt="여기서만 31% 추가할인" /></i>다이렉트샵<i class="new"
-                        ><img src="./asset/red-dot.png" loading="lazy" alt="신규"
-                      /></i>
-                    </span>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name"
-                    ><span
-                      >유쓰<i class="new"><img src="./asset/red-dot.png" loading="lazy" alt="신규" /></i></span
-                  ></a>
-                </li>
-                <li class="item">
-                  <a href="javascript:void(0)" class="item__name">유독</a>
+                <li>
+                  <a href="javascript:void(0)"><img src="./asset/sub-usercheck.png" loading="lazy" alt="내정보" /></a>
                 </li>
               </ul>
-            </nav>
-            <ul class="header-sub-menu">
-              <li>
-                <a href="javascript:void(0)"><img src="./asset/sub-hamburger.png" loading="lazy" alt="전체메뉴" /></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"><img src="./asset/sub-market.png" loading="lazy" alt="가까운 매장안내" /></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"><img src="./asset/sub-search.png" loading="lazy" alt="검색" /></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"><img src="./asset/sub-shopping.png" loading="lazy" alt="장바구니" /></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"><img src="./asset/sub-usercheck.png" loading="lazy" alt="내정보" /></a>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </header>
 
-      <!-- visual -->
+      <!--CHATBOT-->
+      <div class="chatbot">
+        <div class="chatbot--btn"></div>
+        <div class="sub-menu">
+          <div class="quick-chatbot">
+            <div class="txt">빠른가입 챗봇</div>
+            <div class="chatbot--btn">
+              <img src="./asset/20220415-041637-163-63FvteTP.png" loading="lazy" />
+            </div>
+          </div>
+          <div class="center-chatbot">
+            <div class="txt">고객센터 챗봇</div>
+            <div class="chatbot--btn">
+              <img src="./asset/20220415-041646-894-1zfKj1Je.png" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VISUAL -->
       <section class="visual">
         <div class="swiper-container visual-container">
           <div class="swiper-wrapper">
@@ -626,35 +659,35 @@
       </section>
 
       <!-- EVENT -->
-      <section class="event">
+      <section class="event scroll-spy">
         <div class="event-area">
           <div class="inner">
-            <div class="section-title white">
+            <div class="section-title white back-to-position to-up delay-2">
               <h1>유플러스 이벤트를 만나보세요</h1>
             </div>
             <div class="item-container">
-              <div class="item-box">
+              <div class="item-box fade-in">
                 <a href="javascript:void(0)">
                   <h3>새로운 Galaxy, 명품 이벤트</h3>
-                  <div class="description">출시 전 미리 받고, 샤넬백도!</div>
+                  <div class="desc">출시 전 미리 받고, 샤넬백도!</div>
                 </a>
               </div>
-              <div class="item-box">
+              <div class="item-box fade-in">
                 <a href="javascript:void(0)">
                   <h3>유독 - 7월 할인 혜택</h3>
-                  <div class="description">1주년 기념 OTT 무료</div>
+                  <div class="desc">1주년 기념 OTT 무료</div>
                 </a>
               </div>
-              <div class="item-box">
+              <div class="item-box fade-in">
                 <a href="javascript:void(0)">
                   <h3>누구나 다 드려요!</h3>
-                  <div class="description">취향 선택하면<br />총 500명께 선물 드려요</div>
+                  <div class="desc">취향 선택하면<br />총 500명께 선물 드려요</div>
                 </a>
               </div>
-              <div class="item-box">
+              <div class="item-box fade-in">
                 <a href="javascript:void(0)">
                   <h3 class="white">인터넷+IPTV 신규가입 혜택</h3>
-                  <div class="description white">최대 238만원 혜택,<br />닷컴 단독 추가 요금할인!</div>
+                  <div class="desc white">최대 238만원 혜택,<br />닷컴 단독 추가 요금할인!</div>
                 </a>
               </div>
             </div>
@@ -663,21 +696,21 @@
       </section>
 
       <!-- PAYMENT -->
-      <section class="payment">
+      <section class="payment scroll-spy">
         <div class="inner">
-          <div class="section-title">
+          <div class="section-title back-to-position to-up delay-0">
             <h1>함께하면 더 특별한<br />5G 요금제와 혜택을 누리세요</h1>
           </div>
           <div class="payment-area">
             <div class="payment-container">
-              <div class="item-box is-scale">
+              <div class="item-box is-scale fade-in back-to-position to-right delay-2">
                 <div class="item-el">
                   <a href="javascript:void(0)" class="item-thumb">
                     <img src="./asset/20230707-124241-425-hv4eQJmW.jpg" alt="유쓰 5G 청년다이렉트 넘치는 5G 데이터 증정 사은품과 혜택까지!" />
                   </a>
                   <div class="item-txt">
                     <div class="title">유쓰 5G 청년다이렉트</div>
-                    <div class="description">넘치는 5G 데이터 증정<br />사은품과 혜택까지!</div>
+                    <div class="desc">넘치는 5G 데이터 증정<br />사은품과 혜택까지!</div>
                     <div class="item-btn-area">
                       <a href="javascript:void(0)" class="btn">자세히 보기</a>
                     </div>
@@ -685,31 +718,31 @@
                 </div>
               </div>
 
-              <div class="item-box">
+              <div class="item-box fade-in back-to-position to-right delay-2">
                 <div class="item-el">
                   <a href="javascript:void(0)" class="item-thumb">
                     <img src="./asset/20230412-015433-797-yKNSineZ.png" alt="주토피아 포스터" />
                   </a>
                   <div class="item-txt">
                     <div class="title">티빙 팩</div>
-                    <div class="description">티빙 팩과 재미를<br />플레이하세요</div>
+                    <div class="desc">티빙 팩과 재미를<br />플레이하세요</div>
                   </div>
                 </div>
               </div>
 
-              <div class="item-box">
+              <div class="item-box fade-in back-to-position to-right delay-2">
                 <div class="item-el">
                   <a href="javascript:void(0)" class="item-thumb">
                     <img src=" ./asset/20221216-011102-627-uvRLhMIn.png" alt="주토피아 포스터" />
                   </a>
                   <div class="item-txt">
                     <div class="title">디즈니+ 팩</div>
-                    <div class="description">시대를 초월하는 명작을<br />먼저 만나보세요</div>
+                    <div class="desc">시대를 초월하는 명작을<br />먼저 만나보세요</div>
                   </div>
                 </div>
               </div>
 
-              <div class="item-box">
+              <div class="item-box fade-in back-to-position back-to-position to-right delay-2">
                 <div class="item-el">
                   <a href="javascript:void(0)" class="item-thumb">
                     <img src="./asset/20230609-125010-382-15OPlUeP.jpg" alt="넷플릭스 컨텐츠: 사냥개들" />
@@ -717,7 +750,7 @@
                   <div class="item-el">
                     <div class="item-txt">
                       <div class="title">넷플릭스 팩</div>
-                      <div class="description">전 세계 다양한 콘텐츠를<br />여러 언어로 즐기세요</div>
+                      <div class="desc">전 세계 다양한 콘텐츠를<br />여러 언어로 즐기세요</div>
                     </div>
                   </div>
                 </div>
@@ -727,21 +760,21 @@
         </div>
       </section>
 
-      <!-- YOUDOC -->
-      <section class="youdoc">
-        <div class="youdoc-area">
-          <div class="title">
+      <!-- PROMOTION -->
+      <section class="promotion scroll-spy">
+        <div class="pr-area inner">
+          <div class="section-title back-to-position to-up delay-0">
             <h1 class="white">
               내 마음대로 고르고<br />
               할인까지 받는 구독 생활
             </h1>
             <a href="javascript:void(0)" class="more white">더 알아보기</a>
           </div>
-          <div class="detail-img">
+          <div class="promotion-img back-to-position back-to-position to-down delay-1">
             <img src="./asset/20220722-024704-052-K6x7cOz1.png" alt="유독 앱 메인화면, 디즈니,TIVING,윌라,요기요,유투브 프리미엄 구독상품 등" />
           </div>
         </div>
-        <div class="youdoc-bg">
+        <div class="promotion-bg">
           <img src="./asset/20220722-024646-955-t7dDBlC4.jpg" alt="유독 배경화면 이미지" />
         </div>
       </section>
@@ -789,8 +822,8 @@
           <div class="navi-item active">추천</div>
           <div class="navi-item">Apple</div>
         </div>
-        <div class="swiper-device">
-          <div class="inner">
+        <div class="device-container">
+          <div class="device-contents inner">
             <div class="device-wrap">
               <div class="device-container-single">
                 <div class="device-warpper">
@@ -799,9 +832,7 @@
                     <div class="price">월 40,500원</div>
                   </div>
                   <div class="device-img">
-                    <a href="javascript:void(0)">
-                      <img src="./asset/20230621-043018-655-KgASBACq.jpg" alt="갤럭시 A24" />
-                    </a>
+                    <img src="./asset/20230621-043018-655-KgASBACq.jpg" alt="갤럭시 A24" />
                   </div>
                 </div>
               </div>
@@ -814,9 +845,7 @@
                     <div class="price">월 55,000원</div>
                   </div>
                   <div class="device-img">
-                    <a href="javascript:void(0)">
-                      <img src="./asset/20230621-043902-523-2cjDtWeI.jpg" alt="Galaxy Buddy 2" />
-                    </a>
+                    <img src="./asset/20230621-043902-523-2cjDtWeI.jpg" alt="Galaxy Buddy 2" />
                   </div>
                 </div>
               </div>
@@ -827,9 +856,7 @@
                     <div class="price">월 130,270원</div>
                   </div>
                   <div class="device-img">
-                    <a href="javascript:void(0)">
-                      <img src="./asset/20230620-045516-601-TuRvmDu9.jpg" alt="iPhone14 Pro_128" />
-                    </a>
+                    <img src="./asset/20230620-045516-601-TuRvmDu9.jpg" alt="iPhone14 Pro_128" />
                   </div>
                 </div>
               </div>
@@ -840,9 +867,7 @@
                     <div class="price">월 110,680원</div>
                   </div>
                   <div class="device-img">
-                    <a href="javascript:void(0)">
-                      <img src="./asset/20230329-034803-458-6E7IlQEW.jpg" alt="갤럭시 S23 256GB" />
-                    </a>
+                    <img src="./asset/20230329-034803-458-6E7IlQEW.jpg" alt="갤럭시 S23 256GB" />
                   </div>
                 </div>
               </div>
@@ -853,9 +878,7 @@
                     <div class="price">월 145,850원</div>
                   </div>
                   <div class="device-img">
-                    <a href="javascript:void(0)">
-                      <img src="./asset/20230620-045516-601-TuRvmDu9.jpg" alt="iPhone14 Pro_128" />
-                    </a>
+                    <img src="./asset/20230620-045516-601-TuRvmDu9.jpg" alt="iPhone14 Pro_128" />
                   </div>
                 </div>
               </div>
@@ -864,6 +887,7 @@
         </div>
         <a href="javascript:void(0)" class="link">5G 휴대폰 전체보기</a>
       </section>
+      <!-- SUPPORT -->
       <section class="support">
         <div class="section-title">
           <h1>도움이 필요하신가요?</h1>

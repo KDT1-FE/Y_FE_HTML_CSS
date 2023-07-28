@@ -208,7 +208,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   box-sizing: border-box;
   height:100px;
   padding-left:70px;
-  margin:40px 0px;
+  margin:70px 0px;
 }
 .text-container .title{
   font-size:30px;
@@ -264,6 +264,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   border-bottom:1px solid black;
   border-right-color: transparent;
   overflow: hidden;
+  cursor: pointer;
 }
 .has-swiper .product-swiper img{
   width:100%;
@@ -281,6 +282,9 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   top:0;
   right:70px;
   transform: translateY(-70px);
+}
+.prev-next-buttons img{
+  cursor: pointer;
 }
 /* .swiper-prev,
 .swiper-next{
@@ -403,12 +407,15 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 /* Stories */
 .stories-container{
   width:100%;
-  margin-top: 100px;
-  padding:30px 0px 60px;
   background-color: rgb(250, 245, 233);
 }
 .stories-container .text-container{
-  padding-top:20px;
+  position:relative;
+  height:150px;
+}
+.stories-container .title{
+  position: absolute;
+  bottom:0;
 }
 .stories-container .boxes{
   display: flex;
@@ -416,9 +423,11 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 .stories-container .box{
   width:calc(100%/4);
   border:1px solid black;
+  border-right:none;
   text-align: center;
   padding-bottom: 25px;
   font-size:13px;
+  cursor: pointer;
 }
 .stories-container img{
   width:100%;
@@ -428,7 +437,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 /* Business solution */
 .business-solution-container{
   padding:50px 0px;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
 }
 .business-solution-container .title{
   margin-bottom:20px;
@@ -469,7 +478,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   width:100%;
   background-color: #2e2b2b;
 }
-/* business-solution */
+
 .business-solution-slider{
   width:100%;
   margin-top:30px;
@@ -484,7 +493,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 	background: lightgray; 
 	opacity: 0.4;
   margin-top:40px;
-	;}
+	}
 .business-solution-slider .swiper-pagination-bullet-active {  
 	opacity:1;
 	transition: opacity .6s; 
@@ -492,19 +501,16 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 	background: rgb(124, 124, 124); 
 	border: 1px solid transparent; 
 }
+.business-solution-container .swiper-wrapper{
+  position:relative;
+  padding-bottom: 20px;
+}
 .whereText{
-  margin-top: 60px;
-  margin-right:20px;
-  text-align:end;
-}
-.whereText .firstPlace {
-  display:block;
-}
-.whereText .secondPlace {
-  display:none;
-}
-.whereText .thirdPlace {
-  display:none;
+  position:absolute;
+  bottom:0;
+  right:40px;
+  font-size: 12px;
+  transform:translateY(20px);
 }
 
 /* review  */
@@ -515,9 +521,16 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 }
 .review-container .text-container {
   display: block;
+  position: relative;
+  height:170px;
+}
+.review-container .text-container .title{
+  position:absolute;
+  bottom:0;
 }
 .grid-container img{
   width:100%;
+  cursor: pointer;
 }
 
 /* footer */

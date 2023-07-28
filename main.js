@@ -4,9 +4,8 @@ let arr = []
 for(i=0;i<hovermenus.length;i++){
   arr.push(hovermenus[i])
 }
-let isMouseOver = false;
 
-//헤더 호버 관련 코드
+//헤더 호버&스크롤 관련 코드
 const headerBg = document.querySelector("header")
 const whiteLogo = document.querySelector(".header-inner-wrapper .white")
 const blackLogo = document.querySelector(".header-inner-wrapper .black")
@@ -14,6 +13,7 @@ const headerTextColor = document.querySelectorAll("header .navi-list .navi-text 
 const headerRightTextColor = document.querySelector(".header-right-area .right-element")
 const headerBorderColor = document.querySelector(".header-inner-wrapper")
 
+let isMouseOver = false;
 arr.forEach(item => {
   //마우스 올렸을 때 헤더 변화 
   item.addEventListener('mouseover',function(){
@@ -25,7 +25,6 @@ arr.forEach(item => {
       gsap.to(headerTextColor, .1, {color:'black'})
       gsap.to(headerRightTextColor, .1, {color:'black'})
       gsap.to(headerBorderColor, .1, {borderBottomColor:'black'})
-      console.log('test')
     }
   })
   //마우스 뗐을 때 헤더 변화
@@ -33,7 +32,7 @@ arr.forEach(item => {
     isMouseOver = false;
   })
 })
-//헤더 스크롤 관련 코드
+//헤더 스크롤 이벤트
 window.addEventListener('scroll',_.throttle(function(){
     if(window.scrollY>=200){
       gsap.to(whiteLogo, 0, {display:'none'})

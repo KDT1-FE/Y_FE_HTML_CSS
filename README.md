@@ -1,6 +1,10 @@
 # ☕ **투썸플레이스 클론코딩**🍮✨
+
 - [투썸플레이스 공식 홈페이지](https://www.twosome.co.kr/main.do)
 - [클론코딩 홈페이지](https://64c3a5c4c0ad766d12b18d55--snazzy-crisp-cfab80.netlify.app/)
+
+## ☕ **프로젝트 기간**
+> 2023년 07월 24일 ~ 2023년 07월 28일
 
 ## ☕ **요구 사항 체크**
 ✔️ 과제에 대한 설명을 포함한 README.md 파일 <br>
@@ -11,36 +15,31 @@
 ✔️ 부분적으로 BEM 방법론을 도입<br>
 ✔️ JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현
 
-<br>
-
 ## ☕ **주요 내용 설명**
 #### 1. 전체 페이지
 ![all](https://github.com/moonyah/moonyah.github.io/assets/51106050/99b54601-1076-43b2-9cc2-9e1847a0a5b0)
 > - 총 6개의 페이지
 >- 스크롤 기능 추가해 화면 전환
-<br>
 
 #### **2. header**
 ![header](https://github.com/moonyah/moonyah.github.io/assets/51106050/19c3e89c-0f14-40f3-995d-7318c13de623)
 > - header를 hover하면 로고와 메뉴와 언어 설정 아이콘, 전체 메뉴 아이콘 색이 어둡게 변경됨
 > - header 상단 고정
-<br>
 
 #### **3. swiper와 toggleButton**
 ![menu_story](https://github.com/moonyah/moonyah.github.io/assets/51106050/86369778-b063-455d-8d7f-90c658f357d9)
-<br>
 
 #### **4. footer**
 ![footer](https://github.com/moonyah/moonyah.github.io/assets/51106050/15ef8658-bfe9-43d9-89fd-ebb6935ea948)
 
-<br>
 
 ## ☕ **기술 스택**
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+
 <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
 
-<br>
 
 ## ☕ **아쉬운 점**
 > - #### 스크롤 다루기
@@ -49,8 +48,6 @@
 > - flex는 많이 사용했는데 grid 활용을 안한 점
 > - js에 아직 미숙해서 구현하고 싶은 기능을 못 넣은 게 아쉽다. 
 > - css코드가 정리가 안 된 느낌이라서 아쉽다. 공통적인 부분은 합치고 겹치는 부분은 제거해야 해야 할 필요가 있다.
-
-<br>
 
 ## ☕ **느낀 점**
 > - 전체적으로 웹페이지의 구성과 구조를 꼼꼼히 분석해 보는 기회가 되었다. 

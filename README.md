@@ -44,7 +44,7 @@
   ```
 <br/>
 
-## 구현 화면
+## 📺 구현 화면
 ![image](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/122848687/7779a522-edd2-4edf-a7b1-da28877b02e0)<br/>
 
 ![image](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/122848687/07635b6f-345b-49d7-bd94-5eee8fe05111)<br/>
@@ -54,7 +54,7 @@
 <br/>
 
 
-## 주요기능 및 사용한 것
+## ⚙ 주요기능 및 사용한 것
 
 > ### 1. DropDown navbar 구현
  ![valorant_dropdown](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/122848687/4a7839b0-5149-49a2-8f67-384536e561ca)
@@ -71,7 +71,7 @@
   - [Font Awesome](https://fontawesome.com/)
 
 
- ## 아쉬운점
+ ## 🥈 아쉬운점
 
  > ### 1. 기능의 부족
   `JS`의 사용 미숙으로 인해 일부 기능들(로그인 유도 모달창, 검색, 언어변경)과 <br/>
@@ -89,7 +89,7 @@
 
  <br/>
 
- ## 앞으로 수행해야 할 것들
+ ## 📢 앞으로 수행해야 할 것들
 
   ### 1. 반응형 웹사이트 구현 학습하기
 

@@ -4,11 +4,11 @@
 
 > 링크
 
-원본 페이지:
+원본 페이지: <a href="https://music.youtube.com/">원본 사이트</a>
 
 - 로그인이 되어있어야 될려나요..?
 
-클론 홈페이지 :
+클론 홈페이지 : <a href="https://adorable-pothos-e1ac7f.netlify.app/">클론 사이트</a>
 
 ##### 제작기간: 07-25 日 ~ 07-28 日
 

@@ -1,0 +1,856 @@
+/* 
+
+COMMON
+
+*/
+@font-face {
+  font-family: "LINESeedKR";
+  src: url(./WOFF/LINESeedKR-Bd.woff), format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINESeedKR";
+  src: url(./WOFF/LINESeedKR-Rg.woff), format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LINESeedKR";
+  src: url(./WOFF/LINESeedKR-Th.woff), format("woff");
+  font-weight: 300;
+  font-style: light;
+  font-display: swap;
+}
+
+body {
+  font-family: "LINESeedKR", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #1e1e1e;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+/* 상황에 따라 감춰야 할 부분을 감추는 클래스입니다. */
+.hidden {
+  display: none;
+}
+/* 페이지 로딩 애니메이션 중 스크롤이 안 되게 하는 클래스입니다. */
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.btn__icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+.btn__icon img {
+  width: 24px;
+  height: 24px;
+}
+.btn__icon:hover {
+  background-color: #52b24d;
+}
+.btn__icon .material-symbols-outlined {
+  color: #fff;
+  display: none;
+}
+.btn__icon:hover .material-symbols-outlined {
+  color: #fff;
+  display: block;
+}
+.btn__icon:hover img {
+  color: #fff;
+  display: none;
+}
+
+.btn__icon--gray {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+.btn__icon--gray img {
+  width: 24px;
+  height: 24px;
+}
+.btn__icon--gray:hover {
+  background-color: #52b24d;
+}
+.btn__icon--gray .material-symbols-outlined {
+  color: #fff;
+  display: none;
+}
+.btn__icon--gray:hover .material-symbols-outlined {
+  color: #fff;
+  display: block;
+}
+.btn__icon--gray:hover img {
+  color: #fff;
+  display: none;
+}
+
+.btn__icon-text--gray {
+  width: 145px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+.btn__icon-text--gray:hover {
+  background-color: #52b24d;
+}
+.btn__icon-text--gray .material-symbols-outlined {
+  width: 24px;
+  height: 24px;
+}
+.btn__icon-text--gray:hover .material-symbols-outlined {
+  color: #fff;
+}
+.btn__icon-text--gray > span {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+.btn__icon-text--gray:hover > span {
+  color: #fff;
+}
+/* 
+
+SCREENHIDER
+
+*/
+.screen-hider {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 800px;
+  border: 0px solid #fff;
+}
+.screen-hider__contents {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0;
+}
+.screen-hider__contents h1 {
+  font-family: "SF pro Display", Arial, sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.screen-hider__contents p {
+  font-size: 20px;
+  color: #616161;
+  line-height: 32px;
+}
+/* 
+
+ANIMATION AFTER DOM LOADED
+페이지 로딩 애니메이션용 CSS입니다.
+
+*/
+.dom-loaded__bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  border: 600px solid #fff;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.dom-loaded__logo {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 800px;
+  height: 200px;
+  z-index: 100;
+  display: flex;
+  overflow: hidden;
+}
+.dom-loaded__logo__green {
+  width: 100%;
+  height: 100%;
+  background-color: #52b24d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-shrink: 3;
+}
+.dom-loaded__logo__trans {
+  height: 100%;
+}
+.dom-loaded__logo__green > div {
+  font-family: "SF pro Display", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: #fff;
+  margin: 0 32px 12px 0;
+}
+
+/* 
+
+HEADER
+헤더영역입니다.
+
+*/
+header {
+  height: 75px;
+  display: flex;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  top: -100px;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 5;
+}
+
+header .header__logo img {
+  width: 44px;
+  opacity: 1;
+}
+
+header .header__tab ul {
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
+  margin: 0 auto;
+  display: flex;
+}
+
+header .header__tab ul li {
+  margin-left: 80px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.tab--selected {
+  padding-bottom: 4px;
+  border-bottom: 4px solid #1e1e1e;
+}
+
+header .header__tab ul li:first-child {
+  margin-left: 0px;
+  font-family: "SF pro Display", Arial, sans-serif;
+  font-weight: 700;
+}
+
+header .header__language {
+  position: absolute;
+  right: 30px;
+}
+
+header .header__language a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header__language img {
+  width: 18px;
+}
+header .header__language span {
+  font-family: "SF pro Display", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  margin-left: 8px;
+}
+header .header__language .material-symbols-outlined {
+  font-size: 14px;
+  width: 8px;
+}
+header .header__language .header__language__tooltip {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 69px;
+  background-color: #fff;
+  border: 1px solid rgb(153, 153, 153);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+header .header__language:focus-within .header__language__tooltip {
+  display: block;
+}
+header .header__language .header__language__tooltip li {
+  font-size: 15px;
+  font-family: "SF pro Display", Arial, sans-serif;
+  font-weight: 800;
+  width: inherit;
+  text-align: center;
+  margin: 6px 0;
+  color: rgb(153, 153, 153);
+}
+header .header__language .header__language__tooltip li:first-child {
+  margin-top: 12px;
+}
+header .header__language .header__language__tooltip li:last-child {
+  margin-bottom: 12px;
+}
+header .header__language .header__language__tooltip li:nth-child(3) {
+  color: #1e1e1e;
+}
+/* 
+
+BANNER
+
+*/
+.banner {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.banner > img {
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  scale: 1.2;
+}
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.banner > .inner {
+  height: 800px;
+  width: 1156px;
+}
+.banner .banner__contents .banner__contents__text {
+  position: absolute;
+  top: 274px;
+  font-size: 40px;
+  color: #fff;
+}
+.banner .banner__contents .banner__contents__text h1 {
+  font-family: "SF pro Display", Arial, sans-serif;
+  letter-spacing: 3px;
+  font-size: 140px;
+  font-weight: 800;
+}
+.banner .banner__contents .banner__contents__text span {
+  margin-left: 6px;
+}
+.banner .banner__contents .banner__contents__links {
+  position: absolute;
+  bottom: 128px;
+  margin-left: 8px;
+}
+.banner .banner__contents .banner__contents__links .banner__contents__links__title {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.banner .banner__contents .banner__contents__links .banner__contents__links__title img {
+  width: 24px;
+  margin-right: 8px;
+}
+.banner .banner__contents .banner__contents__links .banner__contents__links__button-group {
+  display: flex;
+}
+.banner .banner__contents .banner__contents__floating {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner .banner__contents .banner__contents__floating > span {
+  display: block;
+  height: 30px;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+}
+.banner .banner__contents .banner__contents__floating > .floating-bar1 {
+  width: 1px;
+  height: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.banner .banner__contents .banner__contents__floating > .floating-bar2 {
+  width: 1px;
+  height: 40px;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* 
+
+BANNER-WRAPPER
+배너가 축소되고 나서 보이는 영역입니다.
+
+*/
+.wrapper {
+  position: relative;
+  height: 1000px;
+  width: auto;
+  background-color: #fff;
+  z-index: -3;
+  /* background-color: orange; */
+}
+
+/* 
+
+MAIN_PRODUCTS
+배너 아래 주요 서비스들의 사진과 설명, 링크가 있는 곳입니다.
+
+*/
+.main-products {
+  position: relative;
+}
+.main-products .inner::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  width: 0px;
+  border: 1px dashed #dedede;
+  height: 3060px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -2;
+}
+.service-icon {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+  background-color: white;
+}
+.main-products .main-products__service::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -140px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 4;
+}
+.main-products .main-products__service {
+  display: flex;
+  height: 560px;
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 85px;
+}
+.main-products .main-products__service.reversed {
+  justify-content: flex-end;
+}
+.main-products .main-products__service article {
+  margin-left: 40px;
+  width: 520px;
+  height: 424px;
+}
+.main-products .main-products__service article h3 {
+  margin-top: 24px;
+  font-size: 48px;
+  font-family: "SF pro Display", Arial, sans-serif;
+  font-weight: 700;
+}
+.main-products .main-products__service article h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #07b53b;
+}
+.main-products .main-products__service article p {
+  margin: 8px 0 60px;
+}
+.main-products__service > img {
+  width: 880px;
+  position: absolute;
+  top: -50px;
+  right: -130px;
+}
+.main-products__service.reversed > img {
+  width: 880px;
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  left: -130px;
+}
+.main-products__service:last-child::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -95px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.main-products__service .button-list {
+  display: flex;
+}
+/* 
+
+COMMUNICATION-APP
+커뮤니케이션 앱을 2행 3열로 보여주는 곳입니다.
+
+*/
+.communication-app {
+  background-color: #f7f8f9;
+  padding-top: 180px;
+}
+.communication-app .inner {
+  height: 1150px;
+}
+.communication-app .communication-app__headline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.communication-app .communication-app__headline h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.communication-app .communication-app__headline p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  color: rbg(97, 97, 97);
+  margin-bottom: 70px;
+  color: rgb(97, 97, 97);
+}
+.communication-app .communication-app__contents-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.communication-app .communication-app__contents-list .contents-list-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 390px;
+  margin: 0 30px 36px 0px;
+}
+.communication-app .communication-app__contents-list .contents-list-content-item img {
+  width: 320px;
+}
+.communication-app .communication-app__contents-list .contents-list-content-item h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 36px;
+}
+.communication-app .communication-app__contents-list .contents-list-content-item p {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 22.4px;
+  color: rgb(97, 97, 97);
+}
+
+/* 
+
+SUPPORT
+기업 지원 부분입니다.
+
+*/
+.support {
+  height: 320px;
+  width: 100%;
+  position: relative;
+  background-image: url("./images/support.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support a {
+  height: 100%;
+  width: 100%;
+  font-size: 46px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 320px;
+}
+
+/* 
+
+SERVICE
+서비스들을 한 번에 볼 수 있는 영역입니다.
+
+*/
+.services {
+  background-color: #f7f8f9;
+  padding-top: 180px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 180px;
+}
+.services .inner {
+  width: 1250px;
+}
+.services__headline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services__headline h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.services__headline p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  color: rbg(97, 97, 97);
+  margin-bottom: 70px;
+  color: rgb(97, 97, 97);
+  font-weight: 500;
+}
+.services__list {
+  display: flex;
+  height: inherit;
+}
+.services__navigator {
+  position: sticky;
+  top: 200px;
+  width: 300px;
+  height: 470px;
+  margin-right: 10px;
+}
+.btn-category {
+  margin-left: 40px;
+  width: 104px;
+  height: 36px;
+  border: 1px solid #dedede;
+  border-radius: 18px;
+  margin-bottom: 16px;
+  color: rgb(97, 97, 97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+.selected {
+  background-color: #07b53b;
+  color: #ffffff;
+}
+.services__list__items-area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+}
+.services__list__items-area .services__item-cell {
+  position: relative;
+  width: 270px;
+  height: 340px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 40px 40px 0;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.overlayed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+.services__item-cell:hover .overlayed {
+  opacity: 1;
+}
+.overlayed .btn__icon-text--gray {
+  border: 0.5px solid #fff;
+  margin-bottom: 16px;
+  height: 48px;
+  display: flex;
+  color: #fff;
+}
+.services__list__items-area .services__item-cell .upper {
+  margin: 30px 0 0 35px;
+}
+.services__list__items-area .services__item-cell .upper img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 16px;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+}
+.services__list__items-area .services__item-cell .upper h3 {
+  font-size: 22px;
+  font-family: "LINESeedKR", sans-serif;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.services__list__items-area .services__item-cell .upper p {
+  width: 160px;
+  word-break: keep-all;
+  font-size: 14px;
+  line-height: 1.429;
+  color: #616161;
+}
+.services__list__items-area .services__item-cell > .material-symbols-outlined {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700;
+  bottom: 16px;
+  left: 30px;
+  color: #dedede;
+}
+/* 
+
+FOOTER
+푸터 영역입니다.
+
+*/
+footer .inner {
+  width: 1100px;
+}
+.footer__products {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+}
+.footer__products img {
+  width: 40px;
+}
+.footer__product-list {
+  margin-left: 24px;
+  display: flex;
+}
+.footer__product-item {
+  display: flex;
+  align-items: center;
+  margin: 0 14px 0 0;
+  height: 20px;
+  font-size: 13px;
+}
+.footer__product-item img {
+  width: 18px;
+  margin-right: 4px;
+  position: relative;
+  bottom: 2px;
+}
+.footer__product-item::after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  margin-left: 8px;
+  background-color: #dedede;
+}
+.footer__product-item:last-child::after {
+  display: none;
+}
+.footer__policies {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  font-size: 13px;
+}
+.footer__policies .footer__policies-option {
+  display: flex;
+  font-weight: 500;
+  margin-left: 16px;
+}
+.footer__policies-option__policy {
+  display: flex;
+  align-items: center;
+}
+.footer__policies-option__policy::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  background-color: #dedede;
+  margin: 0 16px;
+}
+.footer__policies-option__policy:last-child::after {
+  display: none;
+}
+.footer__policies-option__images {
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+.footer__policies-option__images img {
+  height: 24px;
+  margin-left: 12px;
+}

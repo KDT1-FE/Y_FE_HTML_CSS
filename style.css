@@ -121,15 +121,40 @@ header {
 
 .button-wrap {
   margin-top: 70px;
+  display: block;
 }
 
 .google-btn {
+  background-image: url(./assets/images/google-button.949f5984.svg);
+  background-position: 0 0;
+  width: 232px;
+  height: 66px;
   margin-right: 13px;
   cursor: pointer;
+  border: none;
+  background-color: #00ff0000;
+}
+
+.google-btn:hover {
+  transition: background-image 0.5s;
+  background-image: url(./assets/images/google-button-over.4ba29f79.svg);
 }
 
 .apple-btn {
+  background-image: url(./assets/images/apple-button.2ea6bb50.svg);
+  background-position: 0 0;
+  background-color: #00ff0000;
+  width: 232px;
+  height: 66px;
+  margin-right: 13px;
   cursor: pointer;
+  border-radius: 50px;
+  border: none;
+}
+
+.apple-btn:hover {
+  transition: background-image 0.5s;
+  background-image: url(./assets/images/apple-button-over.1224e23f.svg);
 }
 
 .down-button-wrap {
@@ -204,10 +229,15 @@ header {
   display: inline-block;
   width: 55px;
   height: 55px;
+  background-image: url(./assets/images/button-more.62d0e592.svg);
+  border: none;
+  background-color: #00ff0000;
 }
 
 .card1-more-button:hover {
-  filter: brightness(500%);
+  transition: background-image 0.5s;
+  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
+  cursor: pointer;
 }
 
 .down-button-color2-wrap {
@@ -321,10 +351,15 @@ header {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-image: url(./assets/images/button-more.62d0e592.svg);
+  border: none;
+  background-color: #00ff0000;
 }
 
 .card2-more-button:hover {
-  filter: brightness(500%);
+  transition: background-image 0.5s;
+  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
+  cursor: pointer;
 }
 
 .card2-down-button {
@@ -441,10 +476,14 @@ header {
   width: 55px;
   height: 55px;
   border-radius: 50%;
+  background-image: url(./assets/images/button-more.62d0e592.svg);
+  border: none;
+  background-color: #00ff0000;
 }
 
 .card3-more-button:hover {
-  filter: brightness(500%);
+  transition: background-image 0.5s;
+  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
   cursor: pointer;
 }
 
@@ -520,10 +559,14 @@ header {
   width: 55px;
   height: 55px;
   border-radius: 50%;
+  background-image: url(./assets/images/button-more.62d0e592.svg);
+  border: none;
+  background-color: #00ff0000;
 }
 
 .card4-more-button:hover {
-  filter: brightness(500%);
+  transition: background-image 0.5s;
+  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
   cursor: pointer;
 }
 

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Melon</title>
+  </head>
+  <body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <!-- util_menu_line -->
+            <span class="util_menu_line"></span>
+            <div class="header_content">
+                <article class="util_menu">
+                    <section class="top_left">
+                        <a href="https://ticket.melon.com/main/index.htm" title="멜론 티켓">
+                            <span>멜론 티켓</span>
+                        </a>
+                    </section>
+                    <section class="top_right">
+                        <a href="https://www.melon.com/commerce/pamphlet/web/sale_listMainView.htm" title="이용권 구매">
+                            <img src="/assets/icons/ticket.png" alt="이용권">
+                            <span>이용권 구매</span>
+                        </a>
+                        <a href="https://www.melon.com/event/vip/index.htm" title="멜론라운지">
+                            <span>멜론라운지</span>
+                        </a>
+                        <a href="https://www.melon.com/event/index.htm" title="이벤트">
+                            <span>이벤트</span>
+                        </a>
+                        <a href="https://www.melon.com/customer/announce/index.htm" title="공지사항">
+                            <span>공지사항</span>
+                        </a>
+                    </section>
+                </article>
+
+                <article class="util_menu2">
+                    <section class="main_logo">
+                        <h1>
+                            <a href="/index.html" title="메인화면">
+                                <img class="main_logo" src="/assets/icons/melon_logo.svg" alt="main_logo">
+                            </a>
+                        </h1>
+                    </section>
+                    <form class="searchbar"  action="javascript:void(0)">
+                        <fieldset class="searchbar_field">
+                            <legend>통합영역검색</legend>
+                            <input type="text" name="searchbar" id="" placeholder="[멜론티켓] 새로운 공연 소식을 확인하세요!">
+                            <button class="searchbar_button">
+                                <img src="/assets/icons/searchbutton.png" alt="버튼이미지">
+                            </button>
+                        </fieldset>
+                    </form>
+                    <div class="realtime_keyword">
+                        <span class="soar">급상승</span>
+                        <div class="keyword_overlay" id="keyword_overlay">
+                            <section class="keyword_overlay_main">
+                                <span>1.</span>
+                                <a href="https://www.melon.com/artist/timeline.htm?artistId=261143" title="아이유">아이유</a>
+                                <span class="dash">-</span>
+                            </section>
+                            <!-- <ul class="keyword_overlay_hover">
+                                <li>
+                                    <span>1</span>
+                                    <a href="" title="NewJeans">NewJeans</a>
+                                </li>
+                                <li>
+                                    <span>2</span>
+                                    <a href="" title="세븐틴 (SEVENTEEN)">세븐틴 (SEVENTEEN)</a>
+                                </li>
+                                <li>
+                                    <span>3</span>
+                                    <a href="" title="아이유">아이유</a>
+                                </li>
+                                <li>
+                                    <span>4</span>
+                                    <a href="" title="방탄소년단">방탄소년단</a>
+                                </li>
+                                <li>
+                                    <span>5</span>
+                                    <a href="" title="NMIXX">NMIXX</a>
+                                </li>
+                                <li>
+                                    <span>6</span>
+                                    <a href="" title="폴킴">폴킴</a>
+                                </li>
+                                <li>
+                                    <span>7</span>
+                                    <a href="" title="Bruno Mars">Bruno Mars</a>
+                                </li>
+                                <li>
+                                    <span>8</span>
+                                    <a href="" title="Charlie Puth">Charlie Puth</a>
+                                </li>
+                                <li>
+                                    <span>9</span>
+                                    <a href="" title="IVE (아이브)">IVE (아이브)</a>
+                                </li>
+                                <li>
+                                    <span>10</span>
+                                    <a href="" title="aespa">aespa</a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <section class="header_banner">
+                        <a href="https://musicwave.melon.com/musicwave/main.htm" title="뮤직웨이브">
+                            <img src="/assets/images/banner/musicwave.png" alt="뮤직웨이브 이동">
+                        </a>
+                    </section>
+                </article>
+                <article class="util_menu3">
+                    <section class="util_menu3_section">
+                        <ul class="util_menu3_ul">
+                            <li>
+                                <a href="https://www.melon.com/chart/index.htm" title="멜론차트">
+                                    <span>멜론차트</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/new/index.htm" title="최신음악">
+                                    <span>최신음악</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/genre/song_list.htm?gnrCode=GN0100" title="장르음악">
+                                    <span>장르음악</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/dj/today/djtoday_list.htm" title="멜론DJ">
+                                    <span>멜론DJ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/tv/index.htm" title="멜론TV">
+                                    <span>멜론TV</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/artistplus/todayupdate/index.htm" title="스타포스트">
+                                    <span>스타포스트</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/musicstory/today/index.htm" title="매거진">
+                                    <span>매거진</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/melonaward/weekAward.htm" title="뮤직어워드">
+                                    <span>뮤직어워드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.melon.com/edu/index.htm" title="어학">
+                                    <span>어학</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://musicwave.melon.com/" title="뮤직웨이브">
+                                    <span>뮤직웨이브</span>
+                                    <span class="beta">beta</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="util_menu3_section2">
+                        <ul class="util_menu3_ul2">
+                            <li>
+                                <a href="https://member.melon.com/muid/web/login/login_inform.htm" title="마이뮤직">
+                                    <span>마이뮤직</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+            <!-- <span class="header_line"></span> -->
+        </header>
+        <!-- main -->
+        <main class="main">
+            <div class="contents">
+                <article class="new_album">
+                    <section class="new_album_top">
+                        <a class="new_album_a" href="https://www.melon.com/new/album/index.htm" title="최신 앨범">
+                            <h2>최신 앨범</h2>
+                            <img src="/assets/icons/right-chevron.png" alt=">">
+                        </a>
+                        <div class="new_album_top2">
+                            <ul class="new_album_ul">
+                                <li>
+                                    <a href="javascript:void(0);" title="전체">전체</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="국내">국내</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="해외">해외</a>
+                                </li>
+                            </ul>
+                            <div class="page">
+                                <span>1</span>
+                                <span>/</span>
+                                <span>9</span>
+                                <span class="page_btn">
+                                    <a href="javascript:void(0);" title="이전">
+                                        <img class="right" src="/assets/icons/left.png" alt="이전">
+                                    </a>
+                                    <a href="javascript:void(0);" title="다음">
+                                        <img class="left" src="/assets/icons/right.png" alt="다음">
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="new_album_contents">
+                        <ul class="new_album_contents_ul">
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <span class="none">The 6th Single Album 'Find Summer'</span>
+                                    </dt>
+                                    <dd id="img" class="img">
+                                        <span class="none">앨범이미지</span>
+                                        <span class="thum">
+                                            <img src="/assets/images/new_album/img1.jpeg" alt="최신 앨범1">
+                                        </span>
+                                        <section id="singer_section" class="singer_section">
+                                            <dd class="singer">
+                                                <span class="none">가수명</span>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=2204001" title="세러데이 (SATURDAY) - 페이지 이동">
+                                                    <span>세러데이 (SATURDAY)</span>
+                                                </a>
+                                            </dd>
+                                        </section>
+                                    </dd>
+                                    <dd id="img_hover" class="img_hover">
+                                        <section class="img_hover_section">
+                                            <a class="album" href="https://www.melon.com/album/detail.htm?albumId=11291602">The 6th Single Album 'Find Summer'</a>
+                                            <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=2204001" title="세러데이 (SATURDAY) - 페이지 이동">
+                                                <span>세러데이 (SATURDAY)</span>
+                                            </a>
+                                        </section>
+                                    </dd>
+                                </dl>   
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <span class="none">Golden Hourglass</span>
+                                    </dt>
+                                    <dd id="img2" class="img">
+                                        <span class="none">앨범이미지</span>
+                                        <span class="thum">
+                                            <img src="/assets/images/new_album/img2.jpeg" alt="최신 앨범2">
+                                        </span>
+                                        <section id="singer_section2" class="singer_section">
+                                            <dd class="singer">
+                                                <span class="none">가수명</span>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=857994" title="오마이걸 (OH MY GIRL) - 페이지 이동">
+                                                    <span>오마이걸 (OH MY GIRL)</span>
+                                                </a>
+                                            </dd>
+                                        </section>
+                                    </dd>
+                                    <dd id="img_hover2" class="img_hover">
+                                        <section class="img_hover_section">
+                                            <a class="album" href="https://www.melon.com/album/detail.htm?albumId=11290943">Golden Hourglass</a>
+                                            <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=857994" title="오마이걸 (OH MY GIRL) - 페이지 이동">
+                                                <span>오마이걸 (OH MY GIRL)</span>
+                                            </a>
+                                        </section>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <span class="none">THE UNSEEN</span>
+                                    </dt>
+                                    <dd id="img3" class="img">
+                                        <span class="none">앨범이미지</span>
+                                        <span class="thum">
+                                            <img src="/assets/images/new_album/img3.jpeg" alt="최신 앨범3">
+                                        </span>
+                                        <section id="singer_section3" class="singer_section">
+                                            <dd class="singer">
+                                                <span class="none">가수명</span>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=3474356" title="셔누X형원 (몬스타엑스) - 페이지 이동">
+                                                    <span>셔누X형원 (몬스타엑스)</span>
+                                                </a>
+                                            </dd>
+                                        </section>
+                                    </dd>
+                                    <dd id="img_hover3" class="img_hover">
+                                        <section class="img_hover_section">
+                                            <a class="album" href="https://www.melon.com/album/detail.htm?albumId=11291612">THE UNSEEN</a>
+                                            <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=3474356" title="셔누X형원 (몬스타엑스) - 페이지 이동">
+                                                <span>셔누X형원 (몬스타엑스)</span>
+                                            </a>
+                                        </section>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <span class="none">나의 모든 날들은 오직 세 가지뿐일 거야</span>
+                                    </dt>
+                                    <dd id="img4" class="img">
+                                        <span class="none">앨범이미지</span>
+                                        <span class="thum">
+                                            <img src="/assets/images/new_album/img4.jpeg" alt="최신 앨범4">
+                                        </span>
+                                        <section id="singer_section4" class="singer_section">
+                                            <dd class="singer">
+                                                <span class="none">가수명</span>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=2863470" title="경서예지 - 페이지 이동">
+                                                    <span>경서예지</span>
+                                                </a>
+                                            </dd>
+                                        </section>
+                                        <dd id="img_hover4" class="img_hover2">
+                                            <section class="img_hover_section">
+                                                <a class="album" href="https://www.melon.com/album/detail.htm?albumId=11291596">나의 모든 날들은 오직 세 가지뿐일 거야</a>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=2863470" title="경서예지 - 페이지 이동">
+                                                    <span>경서예지</span>
+                                                </a>
+                                            </section>
+                                        </dd>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <span class="none">너에게로 (EUROPA)</span>
+                                    </dt>
+                                    <dd id="img5" class="img">
+                                        <span class="none">앨범이미지</span>
+                                        <span class="thum">
+                                            <img src="/assets/images/new_album/img5.jpeg" alt="최신 앨범5">
+                                        </span>
+                                        <section id="singer_section5" class="singer_section">
+                                            <dd class="singer">
+                                                <span class="none">가수명</span>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=1229685" title="HYNN (박혜원) - 페이지 이동">
+                                                    <span>HYNN (박혜원)</span>
+                                                </a>
+                                            </dd>
+                                        </section>
+                                        <dd id="img_hover5" class="img_hover2">
+                                            <section class="img_hover_section">
+                                                <a class="album" href="https://www.melon.com/album/detail.htm?albumId=11291311">너에게로 (EUROPA)</a>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=1229685" title="HYNN (박혜원) - 페이지 이동">
+                                                    <span>HYNN (박혜원)</span>
+                                                </a>
+                                            </section>
+                                        </dd>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>
+                                        <span class="none">끝</span>
+                                    </dt>
+                                    <dd id="img6" class="img">
+                                        <span class="none">앨범이미지</span>
+                                        <span class="thum">
+                                            <img src="/assets/images/new_album/img6.jpeg" alt="최신 앨범6">
+                                        </span>
+                                        <section id="singer_section6" class="singer_section">
+                                            <dd class="singer">
+                                                <span class="none">가수명</span>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=1758459" title="윤토벤 - 페이지 이동">
+                                                    <span>윤토벤</span>
+                                                </a>
+                                            </dd>
+                                        </section>
+                                        <dd id="img_hover6" class="img_hover2">
+                                            <section class="img_hover_section">
+                                                <a class="album" href="https://www.melon.com/album/detail.htm?albumId=11291804">끝</a>
+                                                <a class="singer_a" href="https://www.melon.com/artist/timeline.htm?artistId=1758459" title="윤토벤 - 페이지 이동">
+                                                    <span>윤토벤</span>
+                                                </a>
+                                            </section>
+                                        </dd>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="event">
+                    <section class="event_top">
+                        <div class="move">
+                            <a id="circle1" class="circle" title="1번째 이벤트" href="#"></a>
+                            <a id="circle2" class="circle" title="2번째 이벤트" href="#"></a>
+                            <a id="circle3" class="circle" title="3번째 이벤트" href="#"></a>
+                            <a id="circle4" class="circle" title="4번째 이벤트" href="#"></a>
+                            <a id="circle5" class="circle" title="5번째 이벤트" href="#"></a>
+                            <a id="circle6" class="circle" title="6번째 이벤트" href="#"></a>
+                            <a id="circle7" class="circle" title="7번째 이벤트" href="#"></a>
+                        </div>
+                        <div class="playbutton">
+                            <a id="playbutton" href="javascript:void(0);">
+                                <img src="/assets/icons/play-button.png" alt="재생버튼">
+                            </a>
+                        </div>
+                    </section>
+                    <section class="event_img">
+                        <div id="imgContainer" class="img_container">
+                            <a id="eventImgA" href="https://www.melon.com/album/detail.htm?albumId=11294520" title="첫번째 이벤트">
+                                <img id="eventImg" src="https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230727030134.jpg/melon/quality/80" alt="첫번째 이벤트">
+                            </a>
+                        </div>
+                    </section>
+                </article>
+                <article class="login_banner">
+                    <section class="login">
+                        <div class="create">
+                            <p>멜론을 더 안전하게 이용하세요.</p>
+                            <a href="https://accounts.melon.com/join/choice" title="회원가입">회원가입</a>
+                        </div>
+                        <button class="login_button">로그인</button>
+                    </section>
+                    <section class="banner">
+                        <a href="https://ticket.melon.com/performance/index.htm?prodId=208512" title="티켓 (슈가볼)">
+                            <img src="/assets/images/banner/banner1.png" alt="슈가볼 배너">
+                        </a>
+                    </section>
+                </article>
+                <div class="main_banner">
+                    <a href="https://musicwave.melon.com/musicwave/main.htm" title="musicwave">
+                        <img src="/assets/images/banner/musicwave2.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="hot_issue">
+                    <section class="hot_issue_top">
+                        <h2>
+                            <span class="hot_issue_title">인기 있어요</span>
+                            <span class="hot_issue_intro">지금 이슈가 되는 아티스트의 인기 컨텐츠입니다.</span>
+                        </h2>
+                        <div class="page">
+                            <span>1</span>
+                            <span>/</span>
+                            <span>2</span>
+                            <span class="page_btn">
+                                <a href="javascript:void(0);" title="이전">
+                                    <img class="right" src="/assets/icons/left.png" alt="이전">
+                                </a>
+                                <a href="javascript:void(0);" title="다음">
+                                    <img class="left" src="/assets/icons/right.png" alt="다음">
+                                </a>
+                            </span>
+                        </div>
+                    </section>
+                    <div class="hot_issue_list">
+                        <ul class="hot_issue_list_ul">
+                            <li class="hot_issue_list_li">
+                                <dl>
+                                    <dd>
+                                        <a href="https://www.melon.com/video/detail2.htm?mvId=50263257&menuId=10010101" title="ETA">
+                                            <img src="/assets/images/hot_issue/hot_issue1.webp" alt="ETA">
+                                        </a>
+                                    </dd>
+                                    <dt>
+                                        <a class="song_name" href="https://www.melon.com/video/detail2.htm?mvId=50263257&menuId=10010101" title="ETA">
+                                            <span>ETA</span>
+                                            <span>NewJeans</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="https://www.melon.com/tv/index.htm" title="멜론TV">
+                                            <span class="hot_issue_melontv">멜론TV</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="hot_issue_list_li">
+                                <dl>
+                                    <dd>
+                                        <a href="https://www.melon.com/video/detail2.htm?mvId=50263238&menuId=27120101" title="FTF (Face To Face)">
+                                            <img src="/assets/images/hot_issue/hot_issue2.jpeg" alt="FTF (Face To Face)">
+                                        </a>
+                                    </dd>
+                                    <dt>
+                                        <a class="song_name" href="https://www.melon.com/video/detail2.htm?mvId=50263238&menuId=27120101" title="FTF (Face To Face)">
+                                            <span>FTF (Face To Face)</span>
+                                            <span>홀리뱅 (HolyBang)</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="https://www.melon.com/tv/index.htm" title="멜론TV">
+                                            <span class="hot_issue_melontv">멜론TV</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="hot_issue_list_li">
+                                <dl>
+                                    <dd>
+                                        <a href="https://www.melon.com/video/detail2.htm?mvId=50263259&menuId=27120101" title="싸움 (Love War)">
+                                            <img src="/assets/images/hot_issue/hot_issue3.jpeg" alt="싸움 (Love War)">
+                                        </a>
+                                    </dd>
+                                    <dt>
+                                        <a class="song_name" href="https://www.melon.com/video/detail2.htm?mvId=50263259&menuId=27120101" title="싸움 (Love War)">
+                                            <span>싸움 (Love War)</span>
+                                            <span>선우정아</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="https://www.melon.com/tv/index.htm" title="멜론TV">
+                                            <span class="hot_issue_melontv">멜론TV</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="hot_issue_list_li">
+                                <dl>
+                                    <dd>
+                                        <a href="https://www.melon.com/video/detail2.htm?mvId=50263177&menuId=10010101" title="지구에 혼자 남게 된다면 (Save Me)">
+                                            <img src="/assets/images/hot_issue/hot_issue4.jpeg" alt="지구에 혼자 남게 된다면 (Save Me)">
+                                        </a>
+                                    </dd>
+                                    <dt>
+                                        <a class="song_name" href="https://www.melon.com/video/detail2.htm?mvId=50263177&menuId=10010101" title="지구에 혼자 남게 된다면 (Save Me)">
+                                            <span>지구에 혼자 남게 된다면 (Save Me)</span>
+                                            <span>마마무+</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="https://www.melon.com/tv/index.htm" title="멜론TV">
+                                            <span class="hot_issue_melontv">멜론TV</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="hot_issue_list_li">
+                                <dl>
+                                    <dd>
+                                        <a href="https://www.melon.com/video/detail2.htm?mvId=50263298&menuId=10010101" title="여름이 들려 (Summer Comes)">
+                                            <img src="/assets/images/hot_issue/hot_issue5.jpeg" alt="여름이 들려 (Summer Comes)">
+                                        </a>
+                                    </dd>
+                                    <dt>
+                                        <a class="song_name" href="https://www.melon.com/video/detail2.htm?mvId=50263298&menuId=10010101" title="여름이 들려 (Summer Comes)">
+                                            <span>여름이 들려 (Summer Comes)</span>
+                                            <span>오마이걸 (OH MY GIRL)</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="https://www.melon.com/tv/index.htm" title="멜론TV">
+                                            <span class="hot_issue_melontv">멜론TV</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="hot_issue_list_li">
+                                <dl>
+                                    <dd>
+                                        <a href="https://www.melon.com/video/detail2.htm?mvId=50263164&menuId=10010101" title="ISTJ">
+                                            <img src="/assets/images/hot_issue/hot_issue6.jpeg" alt="ISTJ">
+                                        </a>
+                                    </dd>
+                                    <dt>
+                                        <a class="song_name" href="https://www.melon.com/video/detail2.htm?mvId=50263164&menuId=10010101" title="ISTJ">
+                                            <span>ISTJ</span>
+                                            <span>NCT DREAM</span>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <a href="https://www.melon.com/tv/index.htm" title="멜론TV">
+                                            <span class="hot_issue_melontv">멜론TV</span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chart">
+                    <h2 class="chart_top">
+                        <section class="chart_section">
+                            <a href="https://www.melon.com/chart/index.htm" title="멜론 차트">멜론 차트</a>
+                            <img src="/assets/icons/right.png" alt="다음">
+                        </section>
+                        <span class="chart_top_time">2023.07.26 <b>03:00</b> 기준</span>
+                    </h2>
+                    <ul class="chart_top2">
+                        <li class="chart_top2_li">
+                            <a href="javascript:void(0);" title="TOP100">TOP100</a>
+                            <a href="javascript:void(0);" title="POP">POP</a>
+                            <a href="javascript:void(0);" title="✩ 아티스트">✩ 아티스트</a>
+                        </li>
+                    </ul>
+                    <ul class="chart_main">
+                        <li>
+                            <section class="chart_rank_section_active">
+                                <span class="chart_rank_active_number">1</span>
+                                <p class="chart_rank_updown">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <img src="/assets/images/chart/chart1.jpeg" alt="Super Shy">
+                                <p class="chart_rank_singer">
+                                    <a href="javascript:void(0);" title="Super Shy">Super Shy</a>
+                                    <a href="https://www.melon.com/artist/timeline.htm?artistId=3114174" title="NewJeans">NewJeans</a>
+                                </p>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_color">
+                                <span class="chart_rank_small_number">2</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="Seven (feat. Latto) - Clean Ver.">Seven (feat. Latto) - Clean Ver.</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=725987" title="정국">정국</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_none_color">
+                                <span class="chart_rank_small_number">3</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="ETA">ETA</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=3114174" title="NewJeans">NewJeans</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_color">
+                                <span class="chart_rank_small_number2">4</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="퀸카 (Queencard)">퀸카 (Queencard)</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=2137482" title="(여자)아이들">(여자)아이들</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_none_color">
+                                <span class="chart_rank_small_number2">5</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="헤어지자 말해요">헤어지자 말해요</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=738480" title="박재정">박재정</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_color">
+                                <span class="chart_rank_small_number2">6</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="I AM">I AM</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=3055146" title="IVE (아이브)">IVE (아이브)</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_none_color">
+                                <span class="chart_rank_small_number2">7</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="이브, 프시케 그리고 푸른 수염의 아내">이브, 프시케 그리고 푸른 수염의 아내</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=3092950" title="LE SSERAFIM (르세라핌)">LE SSERAFIM (르세라핌)</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_color">
+                                <span class="chart_rank_small_number2">8</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="Spicy">Spicy</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=2899555" title="aespa">aespa</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_none_color">
+                                <span class="chart_rank_small_number2">9</span>
+                                <p class="chart_rank_updown_small">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="New Jeans">New Jeans</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=3114174" title="NewJeans">NewJeans</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_color">
+                                <span class="chart_rank_small_number3">10</span>
+                                <p class="chart_rank_updown_small2">
+                                    <span>-</span>
+                                    <span>0</span>
+                                </p>
+                                <a class="chart_rank_section_color_a" href="javascript:void(0);" title="Steal The Show (From "엘리멘탈")">Steal The Show (From "엘리멘탈")</a>
+                                <a class="chart_rank_section_color_singer" href="https://www.melon.com/artist/timeline.htm?artistId=1956543" title="Lauv">Lauv</a>
+                            </section>
+                        </li>
+                        <li>
+                            <section class="chart_rank_section_more">
+                                <button class="shuffle">
+                                    <i class="fa-solid fa-shuffle" style="color: #00cd3c;"></i>
+                                    <span>셔플듣기</span>
+                                </button>
+                                <a class="more" href="https://www.melon.com/chart/index.htm" title="더보기">
+                                    <span>더보기</span>
+                                    <img src="/assets/icons/right.png" alt="더보기">
+                                </a>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- notice -->
+            <section class="notice">
+                <dl class="notice_dl">
+                    <dt>
+                        <a class="notice_a1" href="https://www.melon.com/customer/announce/index.htm" title="공지사항">공지사항</a>
+                    </dt>
+                    <dd>
+                        <a class="notice_a2" href="https://www.melon.com/customer/announce/infomAnnounce.htm?seq=1058&no=639&sIndex=1&titleHeaderCode=&searchKeyword=&maxNo=639" title="[뮤직웨이브 Beta] 오픈 안내">[뮤직웨이브 Beta] 오픈 안내</a>
+                    </dd>
+                    <dd>
+                        <span class="date">2023.07.10</span>
+                    </dd>
+                </dl>
+            </section>
+        </main>
+        <!-- footer line -->
+        <span class="footer_line"></span>
+        <!-- footer -->
+        <footer class="footer">
+            <span class="footer_menu_line"></span>
+            <div class="footer_content">
+                <section class="footer_menu">
+                    <ul class="footer_menu_ul">
+                        <li>
+                            <a href="https://www.melon.com/m6/campaign.htm" title="멜론6.0 둘러보기">멜론6.0 둘러보기</a>
+                        </li>
+                        <li>
+                            <a href="https://studio.melon.com/" title="멜론스튜디오">멜론스튜디오</a>
+                        </li>
+                        <li>
+                            <a href="https://www.melon.com/customer/serviceintro/index.htm" title="Windows 플레이어">Windows 플레이어</a>
+                        </li>
+                        <li>
+                            <a href="https://www.melon.com/customer/serviceintro/multi_pc_web.htm" title="Mac 플레이어">Mac 플레이어</a>
+                        </li>
+                        <li>
+                            <a href="https://www.melon.com/customer/serviceintro/ipad.htm" title="iPad">iPad</a>
+                        </li>
+                        <li>
+                            <a href="https://faqs2.melon.com/customer/index.htm" title="고객센터">고객센터</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer_policy">
+                    <ul class="footer_policy_ul">
+                        <li>
+                            <a href="https://info.melon.com/terms/web/terms1_1.html" title="이용약관">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="https://info.melon.com/terms/web/terms1_3.html" title="위치기반서비스 이용약관">위치기반서비스 이용약관</a>
+                        </li>
+                        <li>
+                            <a href="https://info.melon.com/terms/web/terms3.html" title="개인정보처리방침">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="https://info.melon.com/terms/web/terms5_1.html" title="청소년보호정책">청소년보호정책</a>
+                        </li>
+                        <li>
+                            <a href="https://faqs2.melon.com/customer/faq/informFaq.htm?no=1&faqId=QUES20140616000001&SEARCH_KEY=&SEARCH_PAR_CATEGORY=CATE20130909000006&SEARCH_CATEGORY=CATE20130909000021" title="제휴/프로모션문의">제휴/프로모션문의</a>
+                        </li>
+                        <li>
+                            <a href="https://www.melon.com/emailCollectionReject.html" title="이메일주소무단수집거부">이메일주소무단수집거부</a>
+                        </li>
+                        <li>
+                            <a href="https://partner.melon.com/partrct/login/web/login_loginProcess.htm?t=s" title="파트너센터">파트너센터</a>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="company1">
+                        <span class="company_span">(주)카카오엔터테인먼트</span>
+                        <span>경기도 성남시 분당구 판교역로 221</span>
+                        <span>대표이사 : 이진수, 김성수</span>
+                        <span>사업자등록번호 : 220-88-02594</span>
+                        <span>통신판매업신고번호 : 2018-성남분당B-0004</span>
+                        <a class="company_a" href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208802594" title="사업자정보확인">
+                            <span>사업자정보확인</span>
+                            <img src="/assets/icons/right.png" alt="right">
+                        </a>
+                    </p>
+                    <p class="company2">
+                        <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</span>
+                        <a href="mailto:melon_info@kakaoent.com" title="이메일">이메일 : melon_info@kakaoent.com</a>
+                        <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                        <a href="https://kakaoent.com/" title="카카오엔터테인먼트">© Kakao Entertainment Corp.</a>
+                    </p>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8d5fe92c5f.js" crossorigin="anonymous"></script>
+    <!-- eventButton -->
+    <script src="./assets/javascripts/eventButton.js"></script>
+    <!-- buttonHover -->
+    <script src="./assets/javascripts/buttonHover.js"></script>
+    <!-- albumHover -->
+    <script src="./assets/javascripts/albumHover.js"></script>
+  </body>
+</html>

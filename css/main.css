@@ -313,8 +313,13 @@ ul.gnb .gnb_menu {
 .search_open .search_con input {
   width: 90%;
   height: 3vw;
+  font-size: 2vw;
+  padding-bottom: 1vw;
   border: none;
   background: none;
+}
+.search_open .search_con input:focus {
+  outline: none;
 }
 .search_open .search_con input::placeholder {
   font-size: 2vw;

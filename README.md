@@ -49,7 +49,7 @@
 
 #### 전체 화면
 
-<img src="wavve/assets/wavve_화면.gif">
+<img src="wavve/assets/wavve_screen.gif">
 
 <br>
 

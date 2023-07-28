@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로그래머스</title>
+  <!-- Swiper 라이브러리 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- font / CSS / Favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" type="images/x-icon" href="assets/Favicon/Favicon.ico">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- JS -->
+  <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+
+    <div class="top-section">
+      <div class="left-section">
+        <a class="left-section__logo" href="/">
+          <svg viewBox="0 0 181 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_346)">
+              <path
+                d="M30.748 16.844h3.395v1.575h.05a3.96 3.96 0 01.565-.64 4.59 4.59 0 01.836-.615c.328-.18.681-.328 1.058-.443a4.119 4.119 0 011.206-.172c.885 0 1.689.156 2.41.468a5.047 5.047 0 011.845 1.279 5.482 5.482 0 011.206 1.943c.279.755.418 1.583.418 2.485a7.43 7.43 0 01-.394 2.41 6.294 6.294 0 01-1.082 2.018 5.296 5.296 0 01-1.697 1.427c-.673.344-1.435.516-2.288.516-.771 0-1.493-.115-2.165-.344a3.532 3.532 0 01-1.624-1.23h-.049v6.888h-3.69V16.844zm3.395 5.978c0 .902.254 1.632.763 2.19.524.557 1.254.836 2.189.836s1.656-.279 2.165-.836c.525-.558.787-1.288.787-2.19 0-.902-.262-1.632-.787-2.19-.509-.557-1.23-.836-2.165-.836s-1.665.28-2.19.837c-.508.557-.762 1.287-.762 2.19zM45.358 16.844h3.69v1.92h.05c.393-.739.86-1.288 1.402-1.649.54-.377 1.221-.566 2.041-.566.214 0 .427.008.64.025.213.016.41.049.59.098v3.37a4.512 4.512 0 00-.787-.172 4.011 4.011 0 00-.787-.074c-.705 0-1.263.099-1.673.296-.41.196-.73.475-.96.836-.212.344-.352.763-.417 1.255a12.336 12.336 0 00-.099 1.623V28.8h-3.69V16.844zM53.96 22.822c0-.951.172-1.812.517-2.583a5.896 5.896 0 011.402-1.968 6.303 6.303 0 012.116-1.279 7.64 7.64 0 012.607-.443c.919 0 1.78.148 2.583.443.82.295 1.525.722 2.116 1.28a5.737 5.737 0 011.427 1.967c.344.771.516 1.632.516 2.583 0 .951-.172 1.812-.516 2.583a5.996 5.996 0 01-1.427 1.993c-.59.541-1.296.96-2.116 1.254a7.432 7.432 0 01-2.583.443 7.64 7.64 0 01-2.607-.443 6.521 6.521 0 01-2.116-1.254 6.17 6.17 0 01-1.402-1.993c-.345-.77-.517-1.632-.517-2.583zm3.69 0c0 .902.254 1.632.763 2.19.525.557 1.254.836 2.19.836.934 0 1.655-.279 2.164-.836.525-.558.787-1.288.787-2.19 0-.902-.262-1.632-.787-2.19-.509-.557-1.23-.836-2.165-.836s-1.664.28-2.19.837c-.508.557-.762 1.287-.762 2.19zM81.423 27.791c0 2.264-.574 3.977-1.722 5.142-1.132 1.18-2.862 1.771-5.19 1.771-1.067 0-2.116-.123-3.15-.369a6.993 6.993 0 01-2.853-1.378l2.042-3.05a7.825 7.825 0 001.796 1.132c.64.278 1.336.418 2.09.418 1.132 0 1.96-.279 2.485-.837.541-.54.812-1.238.812-2.09v-1.157h-.05c-.426.574-.959.984-1.598 1.23-.623.23-1.214.345-1.771.345-.886 0-1.69-.148-2.411-.443a5.746 5.746 0 01-1.87-1.28 5.944 5.944 0 01-1.18-1.967c-.28-.755-.419-1.583-.419-2.485 0-.787.123-1.558.37-2.312a6.662 6.662 0 011.081-1.993 5.42 5.42 0 011.722-1.378c.673-.36 1.436-.54 2.288-.54.525 0 1 .057 1.427.171.443.115.837.263 1.18.443.345.18.64.386.886.615.246.213.443.427.59.64h.05v-1.575h3.395v10.947zm-9.299-5.043c0 .394.074.771.222 1.132.147.344.352.656.614.935.28.262.59.475.935.64.361.163.755.245 1.181.245.41 0 .796-.082 1.156-.246.361-.164.673-.377.935-.64a2.97 2.97 0 00.64-.934 2.96 2.96 0 00.221-1.132 2.78 2.78 0 00-.221-1.107 2.64 2.64 0 00-.64-.934 2.94 2.94 0 00-.935-.665 2.761 2.761 0 00-1.156-.246c-.426 0-.82.082-1.18.246a3.356 3.356 0 00-.936.665 2.81 2.81 0 00-.614.934 2.78 2.78 0 00-.222 1.107zM83.831 16.844h3.69v1.92h.05c.393-.739.86-1.288 1.402-1.649.541-.377 1.222-.566 2.042-.566.213 0 .426.008.64.025.212.016.41.049.59.098v3.37a4.512 4.512 0 00-.788-.172 4.01 4.01 0 00-.787-.074c-.705 0-1.263.099-1.673.296-.41.196-.73.475-.959.836-.213.344-.353.763-.418 1.255a12.336 12.336 0 00-.099 1.623V28.8h-3.69V16.844zM100.811 27.3h-.049a3.46 3.46 0 01-1.648 1.377 5.532 5.532 0 01-2.14.418 5.412 5.412 0 01-1.624-.246 3.912 3.912 0 01-1.353-.689 3.386 3.386 0 01-.934-1.156c-.23-.459-.345-.992-.345-1.599 0-.689.123-1.27.37-1.746a3.59 3.59 0 011.032-1.181c.443-.312.943-.55 1.5-.714.558-.18 1.132-.311 1.723-.393a16.91 16.91 0 011.796-.148 62.268 62.268 0 011.672-.024c0-.656-.237-1.173-.713-1.55-.46-.394-1.008-.59-1.648-.59-.607 0-1.165.13-1.673.393-.492.246-.935.59-1.328 1.033l-1.968-2.017a6.627 6.627 0 012.41-1.427 8.422 8.422 0 012.854-.492c1.082 0 1.968.14 2.657.418.705.263 1.263.656 1.673 1.181.426.525.721 1.173.885 1.944.164.754.246 1.631.246 2.632V28.8h-3.395v-1.5zm-.91-3.74c-.278 0-.631.017-1.057.05-.41.016-.812.081-1.206.196a2.82 2.82 0 00-.984.517c-.262.23-.394.55-.394.96 0 .442.19.77.566.983.378.213.771.32 1.181.32.36 0 .705-.05 1.033-.148.345-.098.648-.237.91-.418a1.9 1.9 0 00.615-.689c.164-.278.246-.606.246-.984v-.787h-.91zM105.981 16.844h3.542v1.624h.049c.115-.23.279-.46.492-.689.214-.23.468-.434.763-.615.295-.18.631-.328 1.009-.443a4.205 4.205 0 011.23-.172c.836 0 1.574.172 2.214.517.656.344 1.148.885 1.476 1.623.426-.77.943-1.32 1.549-1.648.607-.328 1.353-.492 2.239-.492.804 0 1.476.14 2.017.418a3.09 3.09 0 011.304 1.107c.328.46.558 1.009.689 1.649.147.623.221 1.295.221 2.017v7.06h-3.69v-6.962c0-.557-.123-1.033-.369-1.427-.229-.41-.648-.615-1.254-.615-.427 0-.788.074-1.083.222-.279.131-.508.32-.689.566a2.734 2.734 0 00-.369.86 5.306 5.306 0 00-.098 1.034V28.8h-3.69v-6.322c0-.213-.008-.476-.025-.787a3.108 3.108 0 00-.172-.886 1.642 1.642 0 00-.492-.713c-.213-.197-.533-.296-.959-.296-.476 0-.861.09-1.156.271a1.735 1.735 0 00-.689.689 2.847 2.847 0 00-.295.96c-.05.36-.074.737-.074 1.13V28.8h-3.69V16.844zM126.845 16.844h3.542v1.624h.05c.114-.23.278-.46.492-.689.213-.23.467-.434.762-.615.295-.18.632-.328 1.009-.443a4.205 4.205 0 011.23-.172c.836 0 1.574.172 2.214.517.656.344 1.148.885 1.476 1.623.426-.77.943-1.32 1.55-1.648.606-.328 1.353-.492 2.238-.492.804 0 1.476.14 2.017.418.558.263.993.632 1.304 1.107.328.46.558 1.009.689 1.649.148.623.221 1.295.221 2.017v7.06h-3.69v-6.962c0-.557-.123-1.033-.369-1.427-.229-.41-.647-.615-1.254-.615-.427 0-.787.074-1.083.222a1.78 1.78 0 00-.688.566 2.734 2.734 0 00-.369.86 5.228 5.228 0 00-.099 1.034V28.8h-3.69v-6.322c0-.213-.008-.476-.024-.787a3.144 3.144 0 00-.173-.886 1.642 1.642 0 00-.492-.713c-.213-.197-.533-.296-.959-.296-.476 0-.861.09-1.156.271a1.741 1.741 0 00-.689.689 2.847 2.847 0 00-.295.96c-.049.36-.074.737-.074 1.13V28.8h-3.69V16.844zM159.025 26.734a5.883 5.883 0 01-2.238 1.746 6.707 6.707 0 01-2.805.615 7.638 7.638 0 01-2.607-.443 6.521 6.521 0 01-2.116-1.254 6.17 6.17 0 01-1.402-1.993c-.345-.77-.517-1.632-.517-2.583 0-.951.172-1.812.517-2.583a5.896 5.896 0 011.402-1.968 6.303 6.303 0 012.116-1.279 7.638 7.638 0 012.607-.443c.853 0 1.624.148 2.313.443a4.652 4.652 0 011.771 1.28c.492.54.869 1.196 1.131 1.967.263.771.394 1.632.394 2.583v1.156h-8.561c.148.706.468 1.271.96 1.698.492.41 1.098.615 1.82.615.607 0 1.115-.131 1.525-.394a4.217 4.217 0 001.107-1.058l2.583 1.895zm-3.124-5.265a2.14 2.14 0 00-.615-1.599c-.426-.443-.976-.664-1.648-.664-.41 0-.771.066-1.083.197a2.742 2.742 0 00-.811.516 2.265 2.265 0 00-.517.714 2.41 2.41 0 00-.197.836h4.871zM161.294 16.844h3.69v1.92h.049c.394-.739.861-1.288 1.403-1.649.541-.377 1.221-.566 2.041-.566.214 0 .427.008.64.025.213.016.41.049.59.098v3.37a4.49 4.49 0 00-.787-.172 4.007 4.007 0 00-.787-.074c-.705 0-1.263.099-1.673.296a2.27 2.27 0 00-.959.836c-.213.344-.353.763-.418 1.255a12.263 12.263 0 00-.099 1.623V28.8h-3.69V16.844zM177.536 20.362c-.541-.672-1.254-1.008-2.14-1.008-.311 0-.615.073-.91.221-.295.148-.443.402-.443.763 0 .295.148.516.443.664.312.131.697.254 1.156.369.476.098.976.213 1.501.344a5.16 5.16 0 011.5.566c.476.262.861.623 1.157 1.082.311.443.467 1.042.467 1.796 0 .771-.172 1.41-.517 1.919a3.915 3.915 0 01-1.279 1.205c-.525.296-1.115.5-1.771.615a9.892 9.892 0 01-1.943.197 9.714 9.714 0 01-2.534-.344 4.826 4.826 0 01-2.165-1.28l2.239-2.484c.344.426.721.754 1.131.984.427.213.919.32 1.476.32.427 0 .812-.058 1.156-.172.345-.132.517-.361.517-.69 0-.31-.156-.54-.467-.688-.296-.164-.681-.295-1.157-.394-.459-.114-.959-.23-1.5-.344a6.901 6.901 0 01-1.501-.566 3.32 3.32 0 01-1.156-1.033c-.295-.46-.443-1.066-.443-1.82 0-.706.14-1.312.418-1.82a3.98 3.98 0 011.132-1.255 4.853 4.853 0 011.624-.714 7.033 7.033 0 011.845-.246c.787 0 1.582.115 2.386.345.803.23 1.484.64 2.042 1.23l-2.264 2.238z"
+                fill="#202B3D"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 12h18a3 3 0 013 3v18a3 3 0 01-3 3H3a3 3 0 01-3-3V15a3 3 0 013-3z" fill="#202B3D">
+              </path>
+              <mask id="a" style="mask-type:alpha;" maskUnits="userSpaceOnUse" x="0" y="12" width="24" height="24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 12h18a3 3 0 013 3v18a3 3 0 01-3 3H3a3 3 0 01-3-3V15a3 3 0 013-3z" fill="#fff">
+                </path>
+              </mask>
+              <g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
+                <path opacity=".56"
+                  d="M14.816 20.598c-.512.067-2.51-1.177-6.34-3.233-3.338-1.794-2.429.754-2.134 1.45.042.099.05.207.025.31-.126.5-.203 2.385 3.687 6.529.155.165.22.331.098.523-.028.044-.042.069-.042.069-.533.854 5.098-5.963 4.706-5.648z">
+                </path>
+                <path opacity=".32"
+                  d="M14.816 20.598c-.492-.106-.639-.218-2.367-4.21-1.292-2.987-2.539-.156-2.51.602a.487.487 0 01-.085.298c-.294.422-1.825 2.766.35 8.021.086.21.07.656-.052.867l-.042.07c-.533.854 5.098-5.963 4.706-5.648z">
+                </path>
+                <path
+                  d="M19.2 20c-.55-.051-.986-.968-1.937-.968-.997 0-2.055 1.25-2.447 1.566-.566.354-3.6.38-8.084.694-3.969.278-2.488 1.344-2.032 1.62.064.038.096.094.088.161-.04.325.487 1.764 5.154 2.715.437.09.168.457.168.457-.533.855-2.307 3.844-2.874 6.485-.115.536.411-.793 2.588-2.642 2.177-1.85 4.355-1.524 6.298-4.054 1.943-2.53.986-4.29 3.078-4.834L24 20s-4.748.005-4.8 0z">
+                </path>
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_1_346">
+                <path fill="#fff" transform="translate(0 12)" d="M0 0h180.6v24H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a class="left-section__a left-section__a--bold" href="#">스쿨</a>
+        <a class="left-section__a left-section__a--bold" href="#">커리어</a>
+        <a class="left-section__a left-section__a--bold" href="#">커뮤니티</a>
+        <a class="left-section__a left-section__a--light" href="#">스킬체크</a>
+        <a class="left-section__a left-section__a--light" href="#">코딩테스트 연습</a>
+        <a class="left-section__a left-section__a--light" href="#">코딩역량인증시험</a>
+      </div>
+
+      <div class="right-section">
+        <span class="right-section__username">이영욱 님</span>
+        <img class="right-section__alarm" src="assets/Alarm/notification.png" alt="alarm">
+        <a href="#" class="right-section__thumbnail">
+          <img src="assets/Thumbnail/Thumbnail.jpeg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="left-section">
+        <a class="left-section__a left-section__a--light left-section__a--bottom" href="#">스킬체크</a>
+        <a class="left-section__a left-section__a--light left-section__a--bottom" href="#">코딩테스트 연습</a>
+        <a class="left-section__a left-section__a--light left-section__a--bottom" href="#">코딩역량인증시험</a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Banner -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide--1">
+        <div class="banner-wrapper">
+          <div class="banner-text">
+            <p class="banner-text__label">데브코스</p>
+            <p class="banner-text__title">서비스 배포까지 배우는</p>
+            <p class="banner-text__title">인공지능 데브코스</p>
+            <p class="banner-text__sub-title">지원서 접수 : ~ 8/2(수) 자정까지</p>
+          </div>
+          <img class="banner-wrapper__img" src="assets/Banner/Banner1.png" alt="">
+          <img class="banner-wrapper__img banner-wrapper__img--small" src="assets/Banner/Banner1-small.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--2">
+        <div class="banner-wrapper">
+          <div class="banner-text">
+            <p class="banner-text__label">데브코스</p>
+            <p class="banner-text__title">수강생이 인정하는 커리큘럼!</p>
+            <p class="banner-text__title">프론트엔드 데브코스</p>
+            <p class="banner-text__sub-title">지원서 접수 : ~ 8/8(화) 자정까지</p>
+          </div>
+          <img class="banner-wrapper__img" src="assets/Banner/Banner2.png" alt="">
+          <img class="banner-wrapper__img banner-wrapper__img--small" src="assets/Banner/Banner2-small.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--3">
+        <div class="banner-wrapper">
+          <div class="banner-text">
+            <p class="banner-text__label">데브코스</p>
+            <p class="banner-text__title">고성능 실습용 차량 자이카를</p>
+            <p class="banner-text__title">직접 제어하며 배우는 자율주행</p>
+            <p class="banner-text__sub-title">지원서 접수 : ~ 8/25(금) 오후 5시까지</p>
+          </div>
+          <img class="banner-wrapper__img" src="assets/Banner/Banner3.png" alt="">
+          <img class="banner-wrapper__img banner-wrapper__img--small" src="assets/Banner/Banner3-small.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--4">
+        <div class="banner-wrapper">
+          <div class="banner-text banner-text--black">
+            <p class="banner-text__label">PCCP.E</p>
+            <p class="banner-text__title">코딩역량인증시험(PCCP, PCCE)</p>
+            <p class="banner-text__title">소지자 우대사항이 있는 채용 포지션</p>
+            <p class="banner-text__sub-title">채용 진행 중인 개발자 포지션을 소개합니다.</p>
+          </div>
+          <img class="banner-wrapper__img" src="assets/Banner/Banner4.png" alt="">
+          <img class="banner-wrapper__img banner-wrapper__img--small" src="assets/Banner/Banner4-small.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--5">
+        <div class="banner-wrapper">
+          <div class="banner-text">
+            <p class="banner-text__label">강의</p>
+            <p class="banner-text__title">마키나락스 개발자가 알려주는 MLOps</p>
+            <p class="banner-text__title">STEP 01 / 02 / 03</p>
+            <p class="banner-text__sub-title">풍부한 실무 경험과 교육 경험을 겸비한 강사와 함께<br />단계별 학습으로 실전 스킬 UP</p>
+          </div>
+          <img class="banner-wrapper__img" src="assets/Banner/Banner5.png" alt="">
+          <img class="banner-wrapper__img banner-wrapper__img--small" src="assets/Banner/Banner5-small.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="prev-next-button">
+      <button class="prev-next-button__prev">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path d="M561-240 320-481l241-241 43 43-198 198 198 198-43 43Z" />
+        </svg>
+      </button>
+      <div class="pagination">
+        <span class="pagination__text pagination__text--curIdx">1</span>
+        <span class="pagination__divide"></span>
+        <span class="pagination__text">5</span>
+      </div>
+      <button class="prev-next-button__next">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navigation">
+    <a class="nav-box">
+      <button class="nav-box__logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+          <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"></path>
+        </svg>
+      </button>
+      <span class="nav-box__title">무료 국비 강의</span>
+    </a>
+    <a class="nav-box">
+      <button class="nav-box__logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5.63 4h20.74c1.637 0 2.963 1.343 2.963 3v18c0 1.657-1.326 3-2.963 3H5.63c-1.637 0-2.963-1.343-2.963-3V7c0-1.657 1.326-3 2.963-3zm0 6v15h20.74V10H5.63zm2.963-3v1.5H5.63V7h2.963zm4.444 0v1.5h-2.963V7h2.963zm-1.078 6.293l1.415 1.414-2.627 2.626 2.627 2.627-1.415 1.414-4.04-4.04 4.04-4.041zm9.293 4.04l-2.626-2.626 1.414-1.414 4.04 4.04-4.04 4.04-1.414-1.413 2.626-2.627zm-4.88-4.941l-2.667 9.333 1.923.55 2.667-9.334-1.923-.55z"
+            fill="#2C323B"></path>
+        </svg>
+      </button>
+      <span class="nav-box__title">코딩테스트 연습</span>
+    </a>
+    <a class="nav-box">
+      <button class="nav-box__logo">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+          <path
+            d="M20 6c1 0 2 1 2 2v12c0 1-1 2-2 2H10c-1 0-2-1-2-2h12V6zm-4-4c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10zM6 4v12h10V4H6zm8 8H8v-2h6v2zm0-4H8V6h6v2z"
+            fill="#000"></path>
+        </svg>
+      </button>
+      <span class="nav-box__title">수강 중인 강의</span>
+    </a>
+    <a class="nav-box">
+      <button class="nav-box__logo">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M9 7V5.961h6V7H9zm8 0V5.961C17 5.634 16.6 4 15 4H9c-.667 0-2 .392-2 1.961V7H5c-.667 0-2 .4-2 2v10c0 .667.4 2 2 2h14c.667 0 2-.4 2-2V9c0-.667-.5-2-2.5-2H17zM5 19V9h14v10H5z"
+            fill="#000"></path>
+          <path fill="#000" d="M9 10h6v2H9z"></path>
+        </svg>
+      </button>
+      <span class="nav-box__title">채용 공고</span>
+    </a>
+    <a class="nav-box">
+      <button class="nav-box__logo">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+          <path d="M14 6l-1-2H5v17h2v-7h5l1 2h7V6h-6zm4 8h-4l-1-2H7V6h5l1 2h5v6z" fill="#000"></path>
+        </svg>
+      </button>
+      <span class="nav-box__title">채용 프로그램</span>
+    </a>
+    <a class="nav-box">
+      <button class="nav-box__logo">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M7 14H4v7h9v-2h6v-3.667L24 12l-5-3.333V5h-7.126A4.005 4.005 0 008 2C5.795 2 4 3.79 4 6a4.005 4.005 0 003 3.874V14zm2 0h4v3h4v-1.667L12 12l5-3.333V7h-5.126A4.012 4.012 0 019 9.874V14zm9-4l3 2-3 2-3-2 3-2zM6 16h5v3H6v-3zM6 6c0-1.105.888-2 2-2 1.105 0 2 .888 2 2 0 1.105-.888 2-2 2-1.105 0-2-.888-2-2z"
+            fill="#000"></path>
+        </svg>
+      </button>
+      <span class="nav-box__title">스킬 체크</span>
+    </a>
+    <a class="nav-box">
+      <button class="nav-box__logo">
+        <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M9.5 17l2.5 2.5 2.5-2.5H16v6l-4-2-4 2v-6h1.5zM12 .515L14.485 3H18v3.515L20.485 9 18 11.485V15h-3.515L12 17.485 9.515 15H6v-3.515L3.515 9 6 6.515V3h3.515L12 .515zM12 5a4 4 0 100 8 4 4 0 000-8zm0 2a2 2 0 110 4 2 2 0 010-4z"
+            fill="#000"></path>
+        </svg>
+      </button>
+      <span class="nav-box__title">코딩역량인증시험</span>
+    </a>
+  </nav>
+
+  <!-- Main  -->
+  <main class="main">
+    <section class="main-section">
+      <hgroup class="main-section-hgroup">
+        <h2 class="main-section-hgroup__title">국비지원으로 개발지 커리어 시작!</h2>
+        <a class="main-section-hgroup__more" href="#">더 보기
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z" />
+          </svg>
+        </a>
+      </hgroup>
+      <div class="main-section-container">
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Career/Career1.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">[6기] K-Digital Training: 프로그래머스 인공지능 데브코스</h3>
+            <div class="main-section-content__category-box">
+              <span class="main-section-content__category main-section-content__category--date">모집중 | D-6</span>
+              <span class="main-section-content__category main-section-content__category--alarm">오픈 알림 신청</span>
+              <span class="main-section-content__category main-section-content__category--support">국비지원</span>
+            </div>
+            <div class="main-section-content__price-box">
+              <span class="main-section-content__price">무료</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Career/Career2.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">[6기] K-Digital Training: 프로그래머스 자율주행 데브코스 (Perception)</h3>
+            <div class="main-section-content__category-box">
+              <span class="main-section-content__category main-section-content__category--date">모집중 | D-29</span>
+              <span class="main-section-content__category main-section-content__category--alarm">오픈 알림 신청</span>
+              <span class="main-section-content__category main-section-content__category--support">국비지원</span>
+            </div>
+            <div class="main-section-content__price-box">
+              <span class="main-section-content__price">무료</span>
+              <div class="main-section-content__rating">
+                <span> ★ </span>
+                <span>5</span>
+              </div>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Career/Career3.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">[5기] K-Digital Training: 빅데이터 플랫폼 프론트엔드 엔지니어링</h3>
+            <div class="main-section-content__category-box">
+              <span class="main-section-content__category main-section-content__category--date">모집중 | D-12</span>
+              <span class="main-section-content__category main-section-content__category--alarm">오픈 알림 신청</span>
+              <span class="main-section-content__category main-section-content__category--support">국비지원</span>
+            </div>
+            <div class="main-section-content__price-box">
+              <span class="main-section-content__price">무료</span>
+              <div class="main-section-content__rating">
+                <span> ★ </span>
+                <span>5</span>
+              </div>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Career/Career4.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">[내일배움코스] 프로그래머스와 함께 새로운 분야의 시작을 위한 파이썬 입문</h3>
+            <div class="main-section-content__category-box">
+              <span class="main-section-content__category main-section-content__category--alarm">오픈 알림 신청</span>
+              <span class="main-section-content__category main-section-content__category--support">국비지원</span>
+            </div>
+            <div class="main-section-content__price-box">
+              <div>
+                <span class="main-section-content__price main-section-content__price--before-discount">₩300,000</span>
+                <span class="main-section-content__price main-section-content__price--discount-percentage">90%</span>
+                <span class="main-section-content__price">₩30,000</span>
+              </div>
+              <div class="main-section-content__rating">
+                <span> ★ </span>
+                <span>5</span>
+              </div>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Career/Career5.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">[내일배움코스] 디지털 기초 양성을 위한 자바 프로그래밍 입문</h3>
+            <div class="main-section-content__category-box">
+              <span class="main-section-content__category main-section-content__category--alarm">오픈 알림 신청</span>
+              <span class="main-section-content__category main-section-content__category--support">국비지원</span>
+            </div>
+            <div class="main-section-content__price-box">
+              <div>
+                <span class="main-section-content__price main-section-content__price--before-discount">₩320,000</span>
+                <span class="main-section-content__price main-section-content__price--discount-percentage">90%</span>
+                <span class="main-section-content__price">₩32,000</span>
+              </div>
+              <div class="main-section-content__rating">
+                <span> ★ </span>
+                <span>4.9</span>
+              </div>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Career/Career6.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">[내일배움코스] 프로그래머스 SQL/DB 기초</h3>
+            <div class="main-section-content__category-box">
+              <span class="main-section-content__category main-section-content__category--alarm">오픈 알림 신청</span>
+              <span class="main-section-content__category main-section-content__category--support">국비지원</span>
+            </div>
+            <div class="main-section-content__price-box">
+              <div>
+                <span class="main-section-content__price main-section-content__price--before-discount">₩320,000</span>
+                <span class="main-section-content__price main-section-content__price--discount-percentage">90%</span>
+                <span class="main-section-content__price">₩32,000</span>
+              </div>
+              <div class="main-section-content__rating">
+                <span> ★ </span>
+                <span>4.9</span>
+              </div>
+            </div>
+          </section>
+        </a>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <hgroup class="main-section-hgroup">
+        <h2 class="main-section-hgroup__title">추천 강의</h2>
+        <a class="main-section-hgroup__more" href="#">더 보기
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z" />
+          </svg>
+        </a>
+      </hgroup>
+      <div class="main-section-container">
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Recommend/Recommend1.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">[도서실습] 내일은 코딩테스트 with 파이썬(자료구조와 알고리즘의 기초부터 실전까지)</h3>
+            <div class="main-section-content__price-box">
+              <span class="main-section-content__price">무료</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Recommend/Recommend2.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">코딩테스트 연습 힌트 모음집</h3>
+            <div class="main-section-content__price-box">
+              <span class="main-section-content__price">무료</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-content">
+          <img class="main-section-content__img" src="assets/Recommend/Recommend3.png" alt="">
+          <section class="main-section-content__info">
+            <h3 class="main-section-content__title">AI서비스와 함께 누구나 만드는 웹 프로젝트! feat. ChatGPT</h3>
+            <div class="main-section-content__price-box">
+              <span class="main-section-content__price">무료</span>
+            </div>
+          </section>
+        </a>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <hgroup class="main-section-hgroup">
+        <h2 class="main-section-hgroup__title">채용 프로그램</h2>
+        <a class="main-section-hgroup__more" href="#">더 보기
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z" />
+          </svg>
+        </a>
+      </hgroup>
+
+      <div class="main-section-container main-section-container--program">
+        <div class="main-section-program">
+          <a class="main-section-program__link" href="#">
+            <img class="main-section-program__img" src="assets/Program/Program1.png" alt="">
+          </a>
+          <section class="main-section-program-info">
+            <hgroup class="main-section-program-info-box">
+              <div class="main-section-program-info-box__end">
+                <span>종료</span>
+              </div>
+              <a class="main-section-program-info-box__link" href="#">
+                <h3>23년 현대모비스 알고리즘 경진대회</h3>
+              </a>
+            </hgroup>
+            <div class="main-section-program-info-date">
+              <p>
+                <span>접수일</span>
+                <span>
+                  <time datetime="2023-05-25T15:00:00Z">23-05-26(금) 00:00</time>
+                  ~
+                  <time datetime="2023-06-23T14:59:00Z">23-06-23(금) 23:59</time>
+                </span>
+              </p>
+              <p>
+                <span>마감일</span>
+                <span>
+                  <time datetime="2023-06-30T05:00:00Z">23-06-30(금) 14:00</time>
+                  ~
+                  <time datetime="2023-07-07T07:00:00Z">23-07-07(금) 16:00</time>
+                </span>
+              </p>
+            </div>
+          </section>
+          <div class="main-section-program__detail">
+            <a href="#">
+              자세히 보기
+            </a>
+          </div>
+        </div>
+        <div class="main-section-program">
+          <a class="main-section-program__link" href="#">
+            <img class="main-section-program__img" src="assets/Program/Program2.jpeg" alt="">
+          </a>
+          <section class="main-section-program-info">
+            <hgroup class="main-section-program-info-box">
+              <div class="main-section-program-info-box__end">
+                <span>종료</span>
+              </div>
+              <a class="main-section-program-info-box__link" href="#">
+                <h3>2023 Dev-Matching : 웹 프론트엔드 개발자(상반기)-2</h3>
+              </a>
+            </hgroup>
+            <div class="main-section-program-info-date">
+              <p>
+                <span>접수일</span>
+                <span>
+                  <time datetime="2023-05-30T02:00:00Z">23-05-30(화) 11:00</time>
+                  ~
+                  <time datetime="2023-06-15T08:00:00Z">23-06-15(목) 17:00</time>
+                </span>
+              </p>
+              <p>
+                <span>마감일</span>
+                <span>
+                  <time datetime="2023-06-17T04:00:00Z">23-06-17(토) 13:00</time>
+                  ~
+                  <time datetime="2023-06-17T07:00:00Z">23-06-17(토) 16:00</time>
+                </span>
+              </p>
+            </div>
+          </section>
+          <div class="main-section-program__detail">
+            <a href="#">
+              자세히 보기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <hgroup class="main-section-hgroup">
+        <h2 class="main-section-hgroup__title">프론트엔드 개발자들이 많이 지원한 포지션</h2>
+        <a class="main-section-hgroup__more" href="#">더 보기
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z" />
+          </svg>
+        </a>
+      </hgroup>
+
+      <div class="main-section-container">
+        <a href="#" class="main-section-position">
+          <img class="main-section-position__logo" src="assets/Position/Position1.png" alt="">
+          <section class="main-section-position-info">
+            <hgroup>
+              <h3 class="main-section-position-info__job">플랫폼 서비스 개발 팀원</h3>
+              <h4 class="main-section-position-info__company">히비스</h4>
+            </hgroup>
+            <div class="main-section-position-info__position">
+              <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+                <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"></path>
+              </svg>
+              <span>신입</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-position">
+          <img class="main-section-position__logo" src="assets/Position/Position2.png" alt="">
+          <section class="main-section-position-info">
+            <hgroup>
+              <h3 class="main-section-position-info__job">이러닝 웹 솔루션 개발자</h3>
+              <h4 class="main-section-position-info__company">Xinics</h4>
+            </hgroup>
+            <div class="main-section-position-info__position">
+              <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+                <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"></path>
+              </svg>
+              <span>신입</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-position">
+          <img class="main-section-position__logo" src="assets/Position/Position3.jpeg" alt="">
+          <section class="main-section-position-info">
+            <hgroup>
+              <h3 class="main-section-position-info__job">서버/백엔드, 프론트엔드, 웹 풀스택 개발자</h3>
+              <h4 class="main-section-position-info__company">태화이노베이션</h4>
+            </hgroup>
+            <div class="main-section-position-info__position">
+              <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+                <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"></path>
+              </svg>
+              <span>신입</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-position">
+          <img class="main-section-position__logo" src="assets/Position/Position4.jpeg" alt="">
+          <section class="main-section-position-info">
+            <hgroup>
+              <h3 class="main-section-position-info__job">[병역특례] 프론트엔드개발 산업기능요원</h3>
+              <h4 class="main-section-position-info__company">넛지헬스케어</h4>
+            </hgroup>
+            <div class="main-section-position-info__position">
+              <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+                <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"></path>
+              </svg>
+              <span>신입</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-position">
+          <img class="main-section-position__logo" src="assets/Position/Position5.png" alt="">
+          <section class="main-section-position-info">
+            <hgroup>
+              <h3 class="main-section-position-info__job">웹 프론트엔드 개발자</h3>
+              <h4 class="main-section-position-info__company">폰비</h4>
+            </hgroup>
+            <div class="main-section-position-info__position">
+              <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+                <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"></path>
+              </svg>
+              <span>신입</span>
+            </div>
+          </section>
+        </a>
+        <a href="#" class="main-section-position">
+          <img class="main-section-position__logo" src="assets/Position/Position6.jpeg" alt="">
+          <section class="main-section-position-info">
+            <hgroup>
+              <h3 class="main-section-position-info__job">웹개발</h3>
+              <h4 class="main-section-position-info__company">아주큐엠에스</h4>
+            </hgroup>
+            <div class="main-section-position-info__position">
+              <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="">
+                <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"></path>
+              </svg>
+              <span>신입</span>
+            </div>
+          </section>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section class="footer-section">
+      <div class="footer-section-content-box">
+        <div class="footer-section-content">
+          <span class="footer-section-content__title">서비스</span>
+          <a href="#" class="footer-section-content__menu">개발자용 프로그래머스</a>
+          <a href="#" class="footer-section-content__menu">기업용 프로그래머스</a>
+        </div>
+        <div class="footer-section-content">
+          <span class="footer-section-content__title">문의</span>
+          <a href="#" class="footer-section-content__menu">FAQ/문의 </a>
+          <a href="#" class="footer-section-content__menu">교육 결제, 환불 관련 문의</a>
+        </div>
+        <div class="footer-section-content">
+          <span class="footer-section-content__title">고객센터</span>
+          <span class="footer-section-content__menu">대표번호: 1533-1886</span>
+          <span class="footer-section-content__menu footer-section-content__menu--time">운영시간: 오전 9시 ~ 오후 6시(주말 및 공휴일 휴무)</span>
+          <span class="footer-section-content__menu footer-section-content__menu--time">점심시간: 오후 12시 ~ 오후 1시</span>
+        </div>
+      </div>
+      <div>
+        <button class="footer-section-family-site">
+          패밀리사이트
+          <svg width="8" height="5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4.866l-4-4h8l-4 4z" fill="#263747"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="footer-section">
+      <div class="footer-section-company-info">
+        <h1 class="footer-section-company-info__title">2023 프로그래머스</h1>
+        <span class="footer-section-company-info__desc">(
+          주)그렙 / 대표 임성수 / 서울특별시 서초구 강남대로 327, 2층 프로그래머스(서초동, 대륭서초타워) / 사업자등록번호 220-88-75699 / 통신판매업신고 제 2014-서울강남-03241호 / 
+          직업정보제공사업 신고번호 J1200020180027 / (주)그렙은 통신판매중개자로서, 통신판매의 당사자가 아니며 중개하는 콘텐츠 및 거래에 대한 책임을 부담하지 않습니다. 단, (주)그렙이 직접 제공하는 콘텐츠에 대해서는 책임을 부담합니다. 
+          프로그래머스 사이트의 모든 콘텐츠, 정보, UI, HTML 소스 등에 대한 무단 복제, 전송, 배포, 크롤링, 스크래핑 등의 행위를 거부하며, 이러한 행위는 관련 법령에 의해 엄격히 금지됩니다.
+        </span>
+      </div>
+    </section>
+    <section class="footer-section">
+      <div class="footer-section-content-box">
+        <a href="#">개인정보 처리방침</a>
+        <a href="#">이용 약관</a>
+        <a href="#">프로그래머스 인재 체용</a>
+      </div>
+      <div class="footer-section-icon-box">
+        <a class="footer-section-icon-box__link" target="_blank" rel="noopener" href="https://www.facebook.com/programmersgrepp/about/">
+          <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.453 10.382c0-5.54-4.464-10.03-9.971-10.03S.51 4.842.51 10.382c0 5.007 3.646 9.156 8.413 9.909v-7.01H6.392v-2.899h2.532v-2.21c0-2.514 1.488-3.902 3.766-3.902 1.09 0 2.232.196 2.232.196v2.468h-1.257c-1.239 0-1.625.773-1.625 1.567v1.881h2.765l-.442 2.9H12.04v7.009c4.766-.753 8.413-4.902 8.413-9.909z" fill="#D2D2D2"></path>
+          </svg>
+        </a>
+        <a class="footer-section-icon-box__link" target="_blank" rel="noopener" href="https://www.youtube.com/c/Programmerschannel">
+          <svg width="21" height="15" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.415.297h.05l.378.002c.634.004 1.832.017 3.095.058l.508.018c1.527.059 3.053.162 3.72.341.858.231 1.534.911 1.763 1.775.361 1.356.41 3.99.416 4.668v.325c-.007.678-.055 3.312-.416 4.668a2.506 2.506 0 01-1.763 1.775c-.63.17-2.026.27-3.466.33l-.508.02c-1.524.054-3.001.066-3.571.068l-.155.001H10.127a122.94 122.94 0 01-3.57-.069l-.51-.02c-1.439-.06-2.835-.16-3.465-.33A2.506 2.506 0 01.82 12.152C.444 10.744.407 7.958.403 7.414v-.186C.407 6.685.444 3.9.819 2.491A2.506 2.506 0 012.582.716C3.878.366 8.425.308 9.905.3l.378-.002h.132zm-2.08 4.06v5.93l5.212-2.965-5.213-2.965z" fill="#D2D2D2"></path>
+          </svg>
+        </a>
+        <a class="footer-section-icon-box__link" target="_blank" rel="noopener" href="https://prgms.tistory.com">
+          <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.245.352c1.102 0 1.994.892 1.994 1.993v15.952a1.994 1.994 0 01-1.994 1.994H2.292a1.994 1.994 0 01-1.994-1.994V2.345c0-1.1.893-1.993 1.994-1.993h15.953zm-7.79 3.987H6.28v11.964h4.175c1.695 0 2.919-.259 3.67-.776.753-.518 1.13-1.35 1.13-2.497 0-.944-.25-1.678-.747-2.2a2.707 2.707 0 00-.92-.62c-.37-.158-.81-.258-1.32-.301.834-.075 1.461-.325 1.884-.752.428-.438.642-1.038.642-1.8 0-1.004-.362-1.759-1.085-2.265-.671-.466-1.655-.715-2.95-.749l-.304-.004zm0 6.538c.787 0 1.35.142 1.692.425.341.282.512.746.512 1.392 0 .635-.162 1.08-.486 1.336-.33.256-.902.384-1.718.384H8.754v-3.537h1.7zm0-4.657c.376 0 .67.032.88.096.212.064.378.144.5.24.15.123.257.272.32.448.064.176.096.382.096.616 0 .267-.034.482-.104.645-.07.162-.17.297-.304.404a1.353 1.353 0 01-.538.248 3.71 3.71 0 01-.85.08H8.754V6.22h1.7z" fill="#D2D2D2"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </footer>
+
+</body>
+</html>

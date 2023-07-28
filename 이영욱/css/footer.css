@@ -1,0 +1,102 @@
+@import url("variable.css");
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.footer-section {
+  display: flex;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.footer-section:nth-child(1) {
+  margin: 42px 0 64px 0;
+}
+.footer-section:nth-child(3) {
+  margin: 30px 0 70px 0;
+}
+.footer-section:nth-child(3) > .footer-section-content-box > a {
+  color: #98a8b9;
+  margin-right: 1rem;
+  font-size: .75rem;
+}
+.footer-section:nth-child(3) a:nth-child(1) {
+  color: #44576C;
+  font-weight: 500;
+}
+
+.footer-section-family-site {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  border: 1px solid #d7e2eb;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.footer-section-family-site > svg {
+  margin: 0 2px 0 5px;
+}
+
+.footer-section-content-box {
+  display: flex;
+}
+
+.footer-section-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+}
+
+.footer-section-content__title {
+  color: #44576C;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  margin-bottom: 1rem;
+}
+
+.footer-section-content__menu {
+  color: #98a8b9;
+  font-size: 14px;
+  margin-bottom: 0.25rem;
+}
+
+.footer-section-content__menu--time {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.footer-section-company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #98a8ba;
+}
+
+.footer-section-company-info__title {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.footer-section-company-info__desc {
+  font-size: 12px;
+  max-width: 56.25rem;
+  letter-spacing: 0.15px;
+}
+
+.footer-section-icon-box {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section-icon-box__link {
+  margin-right: 8px;
+}

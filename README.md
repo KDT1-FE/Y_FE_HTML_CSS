@@ -1,7 +1,7 @@
 ### 실제 사이트 : 꼬띠샵
 https://cotieshop.co.kr/
 ### 꼬띠샵 클론 코딩 
-http://yyjjyy.dothome.co.kr/clone_cotie/
+https://celebrated-entremet-59e693.netlify.app
 <br>
 
 ---

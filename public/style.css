@@ -60,7 +60,7 @@ nav {
     transition: opacity 0.4s ease, visibility 0.4s ease;
   }
   
-.navigation-item:hover ~ .gnb-dim {
+.navigation-item:hover ~ .gnb-dim, .lnb-container:hover ~ .gnb-dim {
     visibility: visible;
     opacity: 0.6;
 }

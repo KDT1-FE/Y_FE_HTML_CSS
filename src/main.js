@@ -1,13 +1,17 @@
+// top banner
 const topBannerItems = document.querySelector('.items');
 const topPrev = document.querySelector('.top-prev');
 const topNext = document.querySelector('.top-next');
 const topBannerWrapper = document.querySelector('.wrapper');
+//main slider
 const mainItems = document.querySelector('.main-items');
 const mainPrev = document.querySelector('.main-prev');
 const mainNext = document.querySelector('.main-next');
+//sub slider
 const subItems = document.querySelector('.sub-items');
 const subPrev = document.querySelector('.sub-prev');
 const subNext = document.querySelector('.sub-next');
+//last slider
 const lastItems = document.querySelector('.last-items');
 const lastPrev = document.querySelector('.last-prev');
 const lastNext = document.querySelector('.last-next');
@@ -23,8 +27,8 @@ topBannerWrapper.addEventListener('mouseout', () => {
 topBannerWrapper.addEventListener('mouseover', () => {
   clearInterval(loopInterval);
 });
-// 자동으로 슬라이드를 움직이게 하는 함수
-// 이 기능으로 인해 js를 사용
+// tob banner을 자동으로 슬라이드를 움직이게 하는 함수
+//css로 슬라이드를 구현할 수 있어도 자동으로 움직이는 슬라이드를 구현하지 못하기에 js를 사용했습니다
 
 //carousel translate 함수
 function translateCarouselWrapper(direction, items) {

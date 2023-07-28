@@ -501,17 +501,17 @@ body {
     height: 490px;
     display: block;
 }
-.insta__title {
+.card__title {
     padding: 50px 0px 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.insta__title > img:first-of-type {
+.card__title > img:first-of-type {
     width: 360px;
     margin: 0 auto;
 }
-.insta__title > img:last-of-type {
+.card__title > img:last-of-type {
     width: 375px;
     margin: 0 auto;
 }
@@ -545,4 +545,89 @@ body {
     height: 282px;
     object-fit: cover;
     object-position: top;
+}
+
+
+/* quick menu section */
+.quick-menu {
+    height: 540px;
+}
+.quick-menu__box {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 50px auto 0px auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0px;
+}
+.quick-menu__card {
+    margin-left: 20px; 
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.quick-menu__card__img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.quick-menu__card__img > span {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.consulting {
+    background-image: url(../assets/icons/quick_menu_consulting.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.quick-menu__card:hover .consulting {
+    background-image: url(../assets/icons/quick_menu_consulting_hover.svg);
+
+}
+.quick-menu__card:hover span {
+    color: #ba0e2f;
+}
+.store {
+    background-image: url(../assets/icons/quick_menu_store.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.quick-menu__card:hover .store{
+    background-image: url(../assets/icons/quick_menu_store_hover.svg);
+
+}
+.refurb {
+    background-image: url(../assets/icons/quick_menu_refurb.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.quick-menu__card:hover .refurb {
+    background-image: url(../assets/icons/quick_menu_refurb_hover.svg);
+
+}
+.quick-menu__card__info {
+    padding: 30px;
+    line-height: 140%;
+    cursor: pointer;
+} 
+.quick-menu__card__info > span {
+    display: block;
+
+}
+.quick-menu__card__title{
+    font-size: 15px;
+}
+.quick-menu__card__desc {
+    padding-top: 24px;
+    display: inline-block;
+    font-size: 17px;
 }

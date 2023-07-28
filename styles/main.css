@@ -18,7 +18,7 @@
 
 .new_album {
     width: 480px;
-    height: 360px;
+    height: 350px;
 }
 
 .new_album_top {
@@ -143,6 +143,48 @@
     border: 1px solid #f2f2f2;
 }
 
+.img_hover {
+    width: 157px;
+    height: 157px;
+    display: none; 
+    position: absolute;
+    top: 248px;
+}
+
+.img_hover2 {
+    width: 157px;
+    height: 157px;
+    display: none; 
+    position: absolute;
+    bottom: 236px;
+}
+
+
+.img_hover_section {
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #22222299;
+}
+
+.album {
+    width: 132px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.album:hover {
+    text-decoration: underline;
+}
+  
+
 .thum {
     width: 156px;
     height: 156px;
@@ -155,11 +197,15 @@
     height: 156px;
 }
 
+.singer_section {
+    display: block;
+}
+
 .singer {
     width: 156px;
     height: 30px;
     left: 1px;
-    bottom: 30px;
+    bottom: 31px;
     display: flex;
     position: relative;
     z-index: 1;
@@ -200,15 +246,13 @@
 
 .move {
     display: flex;
+    align-items: center;
 }
 
 .move a {
     margin-right: 3.5px;
 }
 
-.move a:nth-child(1) {
-    border: 1px solid #1b1b1b;
-}
 
 .circle {
     display: block;
@@ -216,7 +260,18 @@
     height: 8px;
     border: 1px solid #999999;
     border-radius: 50%;
+    transition: border 0.3s ease;
 }
+
+.circle:hover,
+.circle.clicked {
+    border: 1px solid #1b1b1b;
+}
+
+#circle1 {
+    border: 1px solid #1b1b1b;
+}
+
 
 .playbutton {
     margin: 0 5px 0 5px;
@@ -275,6 +330,10 @@
     background-color: #00cd3c;
     border: none;
     font-size: 15px;
+}
+
+.login_button:hover {
+    background-color: #00ad34;
 }
 
 .banner {

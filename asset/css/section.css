@@ -489,6 +489,9 @@
         position: sticky;
         top: 100px;
     }
+    .item-big-container .title-container {
+        height: 96px;
+    }
     .item-small-container {
         width: 33%;
         display:block;
@@ -657,6 +660,9 @@
     .title-container {
         font-size: 26px;
     }
+    .item-big-container .title-container {
+        height: auto;
+    }
     .item-big-container {
         height: auto;
     }
@@ -667,7 +673,7 @@
         position: relative;
         top:5px;
         border-radius: 0px 0px 14px 14px;
-        max-width: 364px; /* 부모 요소의 너비를 넘지 않도록 최대 너비 제한 */
+        max-width: 364px; 
     }
     .item-small-box {
         width: 100%;
@@ -678,7 +684,7 @@
     }
     .item-small-box img {
         margin-top: 32px;
-        width: 364px; /* 부모 요소의 너비를 넘지 않도록 최대 너비 제한 */
+        width: 364px; 
         height: 160px;
         margin-left: -24px;
         border-radius: 0px 0px 14px 14px;

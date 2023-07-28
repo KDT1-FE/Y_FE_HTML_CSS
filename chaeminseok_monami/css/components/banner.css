@@ -1,0 +1,17 @@
+.banner-section {
+    width: 100%;
+    height: 170px;
+}
+.banners {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner img {
+    cursor: pointer;
+    border: 1px solid #bcbcbc;
+}
+.banner img:hover {
+    border: 2px solid #c40f39;
+}

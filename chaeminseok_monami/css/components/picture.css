@@ -1,0 +1,92 @@
+#color-red {
+    font-weight: 900;
+    color: #c44479;
+}
+.picture {
+    width: 100vw;
+    margin-top: 80px;
+}
+.section-picture {
+    margin: 0 auto;
+
+    padding: 0 30px;
+    width: 1200px;
+    height: 800px;
+}
+.section-flex-one {
+    display: flex;
+    justify-content: space-between;
+}
+.section-flex-one-left {
+    height: 360px;
+}
+.section-text-big {
+    font-size: 32px;
+    font-weight: 800;
+}
+.section-text-small {
+    font-size: 13px;
+    font-weight: 600;
+    color: darkgray;
+}
+.section-text-big > div {
+    margin-top: 10px;
+}
+.section-flex-one-left-bottom {
+    margin-top: 16px;
+}
+.section-flex-two {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#color-red {
+    font-weight: 900;
+    color: #c44479;
+}
+.image-container {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 마우스를 올렸을 때의 스타일을 정의합니다. */
+.hover-box {
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 20px solid #f2f2f2;
+
+    background-color: #c4143a;
+    opacity: 0; /* 초기에는 투명하게 설정 */
+    transition: opacity 0.3s ease-in; /* 부드러운 효과를 위해 transition 추가 */
+}
+.hover-box-text {
+    padding-top: 10%;
+    color: white;
+}
+.hover-box-text > div:first-child {
+    font-family: 'Space Mono', monospace;
+    color: #f2f2f2;
+    font-size: 15px;
+    font-weight: 100;
+}
+.hover-box-text > div:nth-child(2) {
+    margin-top: 5px;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 8%;
+}
+.image-container:hover .hover-box {
+    opacity: 1;
+}
+.image-container:hover #spin {
+    transition: 0.8s;
+    -webkit-transform: rotate(-270deg); /* Chrome, Safari, Opera */
+    transform: rotate(-270deg);
+}

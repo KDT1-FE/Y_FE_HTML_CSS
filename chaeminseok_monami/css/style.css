@@ -1,0 +1,41 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Space+Mono&display=swap');
+@import './components/header.css';
+@import './components/main-imgae.css';
+@import './components/popup.css';
+@import './components/picture.css';
+@import './components/best-product.css';
+@import './components/swipper.css';
+@import './components/article.css';
+@import './components/banner.css';
+@import './components/footer.css';
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    overflow-x: hidden;
+    text-align: center;
+    overflow-y: auto;
+    height: 100vh;
+}
+.container2 {
+    padding-left: 30px;
+    max-width: 1405px;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+.container1 {
+    padding-left: 30px;
+    max-width: 1405px;
+    margin: 0 auto;
+}
+video {
+    min-width: 1200px;
+    overflow-x: hidden;
+}

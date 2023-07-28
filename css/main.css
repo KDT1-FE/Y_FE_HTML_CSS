@@ -881,7 +881,7 @@ h2 {
    color: #768079;
 }
 
-.map-info>button>.top-square {
+.map-info>button>a>.top-square {
    position: absolute;
    right: -8px;
    top: -8px;
@@ -891,7 +891,7 @@ h2 {
    border-bottom: none;
 }
 
-.map-info>button>.bottom-square {
+.map-info>button>a>.bottom-square {
    position: absolute;
    right: -8px;
    bottom: -8px;

@@ -4,12 +4,297 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>인터파크</title>
+  <!--font-->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
   <!--css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
   <!--script-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
+
 </head>
 <body>
-  
+  <header>
+    <div class="inner inner__header">
+      <div class="header__top">
+        <div class="header__top--left">
+          <h1 class="logo">
+            <img src="./img/logo.png" alt="interpark">
+          </h1>
+          <div class="search__wrap">
+            <label class="search__box">
+              <input type="search" placeholder="검색어를 입력해주세요.">
+              <span class="search__innerText">
+                인트쇼, 초특가 할인 소식!
+              </span>
+            </label>
+            <button>
+              <img src="./img/btn_search.png" alt="검색">
+            </button>
+          </div>
+        </div>
+        <div class="header__top--right">
+          <div class="myMenu">로그인</div>
+          <div class="myMenu">회원가입</div>
+          <div class="myMenu">
+            마이 페이지
+            <ul class="myMenu__details">
+              <li><span>투어</span> 마이페이지</li>
+              <li><span>티켓</span> 마이페이지</li>
+              <li><span>쇼핑</span> 마이페이지</li>
+              <li><span>도서</span> 마이페이지</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__mainNav">
+          <ul>
+            <li>
+              <i class="ico__nav">
+                <img src="./img/icon_tour.png" alt="투어">
+              </i>
+              <span>투어</span>
+            </li>
+            <li>
+              <i class="ico__nav">
+                <img src="./img/icon_ticket.png" alt="티켓">
+              </i>
+              <span>티켓</span>
+            </li>
+            <li>
+              <i class="ico__nav">
+                <img src="./img/icon_shopping.png" alt="쇼핑">
+              </i>
+              <span>쇼핑</span>
+            </li>
+            <li>
+              <i class="ico__nav">
+                <img src="./img/icon_book.png" alt="도서">
+              </i>
+              <span>도서</span>
+            </li>
+            <li>
+              <i class="ico__nav">
+                <img src="./img/icon_triple.png" alt="트리플">
+              </i>
+              <span>트리플</span>
+            </li>
+            <li>
+              <i class="ico__nav">
+                <img src="./img/icon_special.png" alt="인트쇼">
+              </i>
+              <span>인트쇼</span>
+              <div class="badge__hot">
+                <img src="./img/badge_hot.png" alt="hot">
+              </div>
+            </li>
+          </ul>
+          <div class="header__mainNav--text">
+            <span>
+              선착순NOL굿즈증정
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+  <div id="contentWrap">
+    <section class="eventBannerWrap">
+      <div class="inner sectionInner">
+        <div class="eventBanner__swiperBox">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/eventBanner_1.png" alt="역대급 콜라보 인트쇼">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/eventBanner_2.png" alt="휴가철 빈 방 찾기 프로젝트">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/eventBanner_3.png" alt="이토록 NOL 라운지">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/eventBanner_4.png" alt="인터파크 7월 쿠폰팩">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/eventBanner_5.png" alt="여름 성수기 부산 여행 특집">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-prev navBtn">
+            <i class="material-icons">arrow_back</i>
+          </div>
+          <div class="swiper-next navBtn">
+            <i class="material-icons">arrow_forward</i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shoppingWrap">
+      <div class="inner sectionInner">
+        <div class="shopping__swiperBox">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="shopping__img">
+                  <img src="" alt="">
+                </div>
+                <div class="shopping__info">
+                  <div class="shopping__info--price">
+                    <span class="highlight">13%</span><em>8,550</em>원
+                  </div>
+                  <div class="shopping__info--name">[프레시지] 블랙라벨 스테이크 2인분(냉장)</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <i></i>
+                전체보기
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tourWrap">
+      <div class="inner sectionInner">
+
+      </div>
+    </section>
+    <section class="ticketWrap">
+      <div class="inner sectionInner">
+
+      </div>
+    </section>
+    <section class="liveTvWrap">
+      <div class="inner sectionInner">
+
+      </div>
+    </section>
+    <section class="bookWrap">
+      <div class="inner sectionInner">
+
+      </div>
+    </section>
+    <section class="eventWrap">
+      <div class="inner sectionInner">
+
+      </div>
+    </section>
+  </div>
+  <footer></footer>
 </body>
 </html>

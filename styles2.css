@@ -1,0 +1,506 @@
+
+.main{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    margin-left:60px;
+}
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+}
+.logoSearchContainer{
+    margin-top:20px;
+    margin-left:80px;
+}
+.mainContainer{
+    margin-left:60px;
+
+}
+.logoContainer img{
+    width:162px;
+    height:48px;
+    margin-right:14px;
+}
+.logoSearchContainer{
+    display:flex;
+}
+.searchContainer {
+    position:relative;
+    display:flex;   
+}
+.searchContainer input{
+    width:465px;
+    height:40px;
+    border-radius:20px;
+    border:1px solid #e0e0e0;
+}
+.searchIcon {
+    position: absolute;
+    width:32px;
+    height:24px;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+}
+.signUp .signUpList{
+    display:flex;
+    list-style-type: none;
+    gap:10px;
+    font-size:13px;
+    font-weight:600;
+    margin-top:20px;
+    margin-right:118px;
+}
+.navContainer{
+    border-bottom:1px solid #ebebeb;
+}
+.navList {
+    display:flex;
+    list-style-type: none;
+    gap:12px;
+    margin-left:40px;
+}
+.navList li{
+    display:flex;
+}
+.navList li > img{
+    width:36px;
+    height:36px;
+    padding-right:6px;
+}
+.navList li > p {
+   font-size:13px;
+   color:#000000;
+   line-height: 5px;
+   font-weight:bold;
+}
+.verticalLine{
+    width:1.6px;
+    height:13px;
+    margin-top:10px;
+    border:0.1px thin #ececec;
+    background-color:#ececec;
+}
+.slideButton{
+    display:flex;
+    justify-content: space-between;
+    margin-right:20px;
+}
+.slidePrevButton,.slideNextButton{
+    position:relative;
+    top:150px;
+    width:50px;
+    height:50px;
+    border-color:#ebebeb;
+    border-radius:50px;
+    box-shadow: 1px 1px 1px;
+    background-color:transparent;
+    z-index:2;
+    align-items: center;
+}
+
+.slidePrevButton i{
+    margin-top:16px;
+    margin-left:18px;
+}
+.slideNextButton i{
+    margin-top:16px;
+    margin-left:18px;
+}
+.slideItem{
+    display:flex;
+    gap:40px;
+    justify-content: center;
+   
+}
+.slideItem img{
+    margin-right:30px;
+    width:600px;
+    border-radius:20px;
+    background-color: transparent;
+}
+.DescList{
+    padding-top:40px;
+}
+
+.mainDesc{
+    font-size:28px;
+    font-weight:700;
+    line-height: 2px;
+}
+.subDesc{
+    font-size:18px;
+    line-height:2px;
+    color:#12121280;
+
+}
+.tabContainer{
+    text-align: center;
+}
+.tabButton button{
+    border:1px solid #d9d9d9;
+    border-radius:20px;
+    font-size:12px;
+    padding:1.2rem;
+    line-height:2px;
+    height:40px;
+    background-color: transparent;
+}
+.ItemList{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.Item{
+    width:300px;
+    height:400px;
+    border:1px solid #ebebeb;
+    border-radius:20px;
+}
+.Item img{
+    width:300px;
+    height:300px;
+    border-radius:20px;
+
+}
+.ItemPriceList{
+    display:flex;
+    margin-left:10px;
+}
+.ItemPriceList p:nth-child(1){
+    font-weight:bold;
+    font-size:13px;
+    line-height: 3px;
+    padding-top:10px;
+    padding-right:5px;
+}
+.ItemDesc p{
+    font-size:13px;
+    margin:0 10px;
+    font-weight:400;
+}
+span {
+    font-size:10px;
+    font-weight:normal;
+}
+.goButton{
+    margin-top:20px;
+    text-align: center;
+}
+.goButton button{
+    border:1px solid #d9d9d9;
+    border-radius:20px;
+    width:200px;
+    height:50px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.goButton i{
+    padding-left:5px;
+}
+.tour .Item {
+    width:410px;
+    height:360px;
+}
+.tour .Item img{
+    width:410px;
+    height:250px;
+}
+.ItemDescList{
+    margin-left:20px;
+}
+.tourTabBox{
+    position:relative;
+    z-index:2;
+    top:-20px;
+    left:20px;
+    width:80px;
+    height:26px;
+    border:1px solid #1869ff;
+    border-radius:6px;
+    background-color: #1869ff;
+    text-align: center;
+}
+.tourTabBox p{
+    font-size:13px;
+    font-weight:bold;
+    line-height: 1px;
+    color:#d7e4ff;
+}
+.tourDescList p{
+    padding:0;
+    margin:0;
+    line-height:14px;
+}
+.tourItemDesc{
+    font-size:13px;
+    color: #1869ff;
+    font-weight:bold;
+}
+.tourItemSubDesc{
+    font-size:13px;
+    color:#707070;
+}
+.tourItemPrice p{
+    font-size:20px;
+    font-weight:bold;
+    line-height: 2px;
+}
+.ticket .Item{
+    width:300px;
+    height:550px;
+}
+.ticket .Item img{
+    width:300px;
+    height:400px;
+    margin:0;
+    padding:0;
+}
+.ticlet .Item .ItemDesc{
+    padding-bottom:50px;
+}
+.ticketTabBox{
+    position:relative;
+    z-index:2;
+    top:-160px;
+    font-size:60px;
+    color:#fff;
+    font-weight: bold; 
+    margin:0;
+    padding:0;
+
+}
+.ticketTabBox p{
+    position:relative;
+   
+}
+.ticketTabBox p:nth-child(2){
+    font-size:15px;
+    top:-30px;
+    color:#000000;
+    margin:0;
+    padding:0;
+}
+.ticketTabBox p:nth-child(3){
+    font-size:12px;
+    top:-25px;
+    color:grey;
+    margin:0;
+    padding:0;
+}
+.ticketboxBlue{
+    border:1px solid #a8bce0;
+    width:50px;
+    height:20px;
+}
+.ticketboxBlue #ticketTextBlue{
+    font-size:10px;
+    line-height:2px;
+    text-align: center;
+    color:#a8bce0;
+}
+.ticketboxRed{
+    border:1px solid rgb(187, 81, 81);
+    width:50px;
+    height:20px;
+}
+.ticketboxRed #ticketTextRed{
+    font-size:10px;
+    line-height:2px;
+    text-align: center;
+    color:rgb(187, 81, 81);
+}
+.liveDescList {
+    position:relative;
+    
+}
+.liveDescList img{
+    width:300px;
+    height:400px;
+    border-radius:20px;
+    filter: brightness(50%);
+}
+.liveItem{
+    width:300px;
+    height:400px;
+}
+.liveItem > img{
+    width:300px;
+    height:400px;
+    border-radius:20px;
+}
+.liveBlock{
+    position:absolute;
+    z-index:2;
+    top:10px;
+    left:20px;
+    border:1px solid #000000;
+    background-color: #000000;
+    border-radius:20px;
+    width:80px;
+    height:30px;
+}
+.liveBlock p{
+    font-size:13px;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    line-height: 4px;
+}
+.liveDesc{
+    position:absolute;
+    z-index:2;
+    top:40px;
+    left:20px;
+    color:#fff;
+    font-weight:bold;
+}
+.liveCenterDesc{
+    position:absolute;
+    z-index:2;
+    top:144px;
+    left:68px;
+    text-align: center;
+    line-height:6px;
+}
+.liveCenterDesc p{
+    font-size:24px;
+    color:#fff;
+}
+.liveCenterDesc p:nth-child(2){
+    font-size:30px;
+    font-weight:bold;
+}
+.liveImgContainer{
+    display:flex;
+    position:absolute;
+    top:330px;
+    left:20px;
+
+}
+.liveImg img{
+    width:50px;
+    height:55px;
+    border-radius:10px;
+}
+
+.liveImgDesc p{
+    font-size:14px;
+    line-height:2px;
+    color:#fff;
+    font-weight:bold;
+    padding-left:5px;
+
+}
+#liveSalePercent{
+    color:red;
+    font-size:20px;
+    font-weight:bold;
+    line-height: 24px;
+
+}
+#livePrice{
+    font-size:20px;
+    font-weight:bold;
+}
+.todayBook{
+    margin-bottom:20px;
+}
+.bookItem{
+    margin-top:20px;
+    width:235px;
+    height:400px;
+    border:1px solid #ebebeb;
+   
+}
+.bookItem img{
+    width:235px;
+    height:400px;
+}
+.bookItemDescList{
+    text-align: center;
+    line-height: 2px;
+}
+.bookItemDesc p:nth-child(1){
+    font-size:12px;
+    font-weight:400;
+}
+.bookItemDesc p:nth-child(2){
+    font-weight:bold;
+}
+.bookItemList{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    padding-bottom:60px;
+}
+.eventItem{
+    width:300px;
+    height:400px;
+    border:1px solid #ebebeb;
+    border-radius:20px;
+}
+.eventItem img{
+    width:300px;
+    height:400px;
+    border-radius:20px;
+}
+.agreementContainer{
+    margin-top:40px;
+    border:1px solid #ebebeb;
+}
+.agreementDesc{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+    font-size:12px;
+    line-height: 24px;
+}
+.companyInfoContainer{
+    display:flex;
+    justify-content: space-around;
+}
+.interparkTripleInfoContainer{
+    display:flex;
+    margin-left:40px;
+
+}
+.interparkTripleInfo{
+    padding-left:5px;
+    line-height: 12px;
+}
+.interparkcommerceInfoContainer{
+    display:flex;
+    margin-right:80px;
+
+}
+.interparkcommerceInfo{
+    padding-left:5px;
+    line-height: 12px;
+}
+.footerVerticalLine{
+    width:1.6px;
+    height:220px;
+    margin-top:10px;
+    border:0.1px thin #ececec;
+    background-color:#ececec;
+} 
+a{
+    color:#1869ff;
+}
+#title{
+    font-weight: bold;
+}
+#copyright{
+    color:#d9d9d9;
+}
+#btn1{
+    background-color:#000000;
+    color:#fff;
+    font-weight:bold;
+}

@@ -1,0 +1,29 @@
+@use 'fonts' as *;
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+  margin: 0;
+  padding: 0;
+  // @include roboto-300();
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  min-width: 61rem;
+  // letter-spacing: 0.02rem;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

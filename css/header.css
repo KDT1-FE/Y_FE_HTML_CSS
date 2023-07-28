@@ -1,0 +1,344 @@
+
+/*
+----------------------------------
+    Header  Style
+----------------------------------
+*/
+
+.header-main {
+    border-bottom : 0.1rem solid rgba(0,0,0,0.08);
+    padding: 0 15rem 0 15rem;
+}
+
+.header-inner {
+    margin : 0 auto;
+    padding : 3rem 0 0;
+    box-sizing: border-box;
+    padding: 3rem 5rem 0;
+}
+
+.header-inner-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo .interpark-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/image/interpark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-logo h1 {
+    width: 15.1rem;
+    height: 3.8rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 0 2rem 0 0;
+}
+
+.header-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.header-input input {
+    width: 45.2rem;
+    height: 4.8rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.15);
+    border-radius: 2.4rem;
+    overflow: hidden;
+}
+
+.header-input .search-icon {
+    position: absolute;
+    right : 0;
+    padding-right: 1rem;
+    top : 3;
+    width: 2.8rem;
+    height: 1.8rem;
+    background-image: url("../assets/image/header_search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.header-right {
+    display : flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.header-right .menu {
+    display : flex;
+    align-items: center;
+    position: relative;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+.header-right .menu > li {
+    position: relative;
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    margin-left : 2rem;
+}
+
+.header-right .menu > li:last-child a {
+    position: relative;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-right .menu > li:last-child a:hover + .hover-menu {
+    display: block;
+}
+
+
+.hover-menu {
+    display: none;
+    position: absolute;
+    right: -0.8rem;
+    width: 10rem;
+    top: 4.7rem;
+    padding: 1.9rem 2rem;
+    background: #fff;
+    box-shadow: 0 0 1.6rem rgba(0,0,0,.2);
+    border-radius: 1.4rem;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-menu ul {
+    display: flex;
+    padding-top: 0.9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hover-menu ul .me {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+.header-right .menu .make-btn:before {
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 0.6rem;
+    content: '';
+    top: 43%;
+    right: -2.5rem;
+    z-index: 101;
+    background-image: url("../assets/image/under.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-inner-bottom {
+    padding: 3rem 0 2rem;
+}
+
+.header-inner-bottom nav {
+    display : flex;
+    justify-content : left;
+    align-items: center;
+}
+
+.header-inner-bottom nav > ul {
+    display : flex;
+    padding : 0;
+    margin: 0;
+    justify-content : start;
+    align-items: center;
+    height: 100%;
+}
+
+.header-inner-bottom nav > ul > li {
+    position: relative;
+    text-align: center;
+    margin-right: 2.2rem;
+}
+
+.header-inner-bottom nav > ul > li > a {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.header-inner-bottom nav > ul > li:last-child a .menu-text::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1.25rem;
+    width: 0.1rem;
+    height: 1.7rem;
+    background-color: #e5e5e5;
+    transform: translateY(-50%);
+}
+
+.header-inner-bottom nav > ul > li > a > i > img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/*
+----------------------------------------
+            FIXED HEADER
+----------------------------------------
+*/
+
+.fixed-header {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    color: #111;
+    padding: 10px;
+    transition: top 0.3s;
+    border-bottom: 0.01rem solid rgba(0,0,0,.1);
+}
+
+.fixed-header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 130.4rem;
+    align-items: center;
+    padding: 0;
+}
+
+.fixed-header .header-inner .header-left {
+    display : flex;
+    text-align: start;
+}
+
+.fixed-header .header-inner .header-left h1 {
+    margin-top: 0.2rem;
+}
+
+
+.fixed-header .header-inner .header-left .header-logo .interpark-logo {
+    width: 4rem;
+    height: 3.5rem;
+    background-position: left;
+}
+
+    
+.fixed-header .header-inner .header-left .main-nav .main-menu {
+    display: flex;
+}
+
+.fixed-header .header-inner .header-left .main-nav .main-menu li {
+    margin-right: 1.5rem;
+}
+
+.fixed-header .header-inner .header-left .main-nav .main-menu li > a > i > img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.fixed-header .header-inner .header-right .menu {
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+
+.fixed-header .header-inner .header-right .menu .make-btn:before {
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 0.6rem;
+    content: '';
+    top: 25%;
+    right: -2.5rem;
+    z-index: 101;
+    background-image: url("../assets/image/under.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-right .menu > li:last-child a {
+    position: relative;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-right .menu > li:last-child a:hover + .hover-menu-fixed {
+    display: block;
+}
+
+
+.hover-menu-fixed {
+    display: none;
+    position: absolute;
+    right: -0.8rem;
+    width: 10rem;
+    top: 2rem;
+    padding: 1.9rem 2rem;
+    background: #fff;
+    box-shadow: 0 0 1.6rem rgba(0,0,0,.2);
+    border-radius: 1.4rem;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-menu-fixed ul {
+    display: flex;
+    padding-top: 0.9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hover-menu-fixed ul .me {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.make-btn div ul li b {
+    font-weight: 600;
+}

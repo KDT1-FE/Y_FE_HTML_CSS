@@ -1,0 +1,282 @@
+/*
+---------------------------------------
+            LIVE BANNER
+---------------------------------------
+*/
+
+
+.liveBanner {
+    width: 130.4rem;
+    margin: 6rem auto;
+}
+
+.liveBanner .shopping__title .live-img{
+    width: 16rem;
+}
+
+.mySwiper5 {
+    position: relative;
+    overflow: hidden;
+    width: 130.4rem;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mySwiper5 .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.mySwiper5 .swiper-wrapper > .swiper-slide {
+    width: 299px;
+    height: 45.6rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+.mySwiper5 .swiper-wrapper > .swiper-slide > a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper5 .element__image {
+    width: 100%;
+    height: 100%;
+}
+.mySwiper5 .element__image::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 18.65%, transparent 39.75%), linear-gradient(180deg, transparent 56.75%, rgba(0,0,0,0.5) 87.59%);
+}
+
+.mySwiper5 > .swiper-wrapper > .swiper-slide img {
+    max-width: 100%;
+    height: 45.6rem;
+    object-fit: cover;
+}
+
+.mySwiper5 .upper--info {
+    position: absolute;
+    top: 2rem;
+    width: 90%;
+    height: fit-content;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 2rem;
+}
+
+.mySwiper5 .inner--infos {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    z-index: 10;
+}
+
+.mySwiper5 .inner--infos .live-day {
+    margin-bottom: 0.4rem;
+    font-size: 2.8rem;
+    line-height: 3.35rem;
+}
+
+.mySwiper5 .inner--infos .live-time {
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.mySwiper5 .upper--info .button__broadcast {
+    display: block;
+    height: 3.2rem;
+    padding: 0 1.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    line-height: 3.2rem;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 1.6rem;
+    font-weight: 700;
+}
+
+.mySwiper5 .upper--info .words--broadcast {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: start;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+}
+
+.mySwiper5 .live__bottom--info {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    bottom: 2rem;
+    width: 100%;
+    height: 6.4rem;
+    padding: 0 2rem;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.mySwiper5 .live__bottom--info .live__image {
+    position: absolute;
+    left: 2rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.mySwiper5 .live__bottom--info .live__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper5 .live__bottom--info .live__words {
+    color: #fff;
+    position: absolute;
+    left: 10.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.mySwiper5 .live__words .live__title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.4rem;
+    text-overflow: ellipsis;
+    text-align: start;
+}
+
+.mySwiper5 .live__words .live__subtitle {
+    position: absolute;
+    display: flex;
+    top: 3.9rem;
+    font-size : 1.5rem;
+    line-height: 2.0rem;
+    font-weight: 700;
+}
+
+.mySwiper5 .live__words .live__subtitle .live__sale {
+    color: #ef3e43;
+    font-size: 1.8rem;
+}
+
+.mySwiper5 .live__words .live__subtitle .live__price {
+    display: flex;
+    margin-left: 0.8rem;
+    font-size: 1.8rem;
+}
+
+.mySwiper5 .live__words .live__subtitle .live__price .live__won {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.views {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.view-all {
+    width: 4rem;
+    height: 4rem;
+    transform: scaleX(-1);
+    margin-bottom: 0.7rem;
+
+}
+
+.up-sit {
+    display: block;
+    margin-top: 1rem;
+    color: #1769ff;
+    border: 1px solid #1769ff;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+.down-sit {
+    display: block;
+    margin-top: 1rem;
+    color: tomato;
+    border: 1px solid tomato;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.liveBanner .shopping__content {
+    width: auto;
+    position: relative;
+}
+
+.liveBanner .shopping__content .right-btn-five {
+    position: absolute;
+    right: 0;
+    z-index: 50;
+    top: 50%;
+    z-index: 31;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-top: -1.5rem;
+    transform: translateX(50%);
+    background: hsla(0, 0%, 100%, 0.9);
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 0.8rem rgba(0,0,0,.13);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+}
+
+.liveBanner .shopping__content .right-btn-five::before {
+    content: '다음';
+    color: transparent;
+    width: 3.8rem;
+    height: 4rem;
+    margin-left: 0.3rem;
+    background-image: url("../assets/image/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.liveBanner .shopping__bottom {
+    position: relative;
+}
+
+.liveBanner .shopping__bottom > button {
+    position: absolute;
+    bottom: -7.5rem;
+}

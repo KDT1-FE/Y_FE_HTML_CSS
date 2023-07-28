@@ -1,576 +1,1555 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>NAVER VIBE</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/player.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,600;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="./index.js" defer></script>
-  </head>
-  <body class="body">
-    <header class="header">
-      <a href="/index.html" class="header_logo">
-          <span class="logo_naver">naver</span>
-          <span class="logo_vibe">vibe</span>
-      </a>
-      </div>
-      <div class="header_submenu">
-        <hr />
-        <a href="#" class="header_signin_area">
-            <img class="user_icon" src="./assets/user.png" />
-          <span class="login_txt">로그인</span>
-        </a>
-        <hr />
-        <div class="header_member">
-          <p class="member_p">로그인하고 할인 멤버십 확인하기</p>
-          <a href="#" class="member_button_area">
-            <img class="member_icon" src="./assets/love.png" />
-            <span class="member_text">멤버십 구독</span>
-          </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERPARK</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/evntBanner.css">
+    <link rel="stylesheet" href="css/shoppingBanner.css">
+    <link rel="stylesheet" href="css/tripBanner.css">
+    <link rel="stylesheet" href="css/movieBanner.css">
+    <link rel="stylesheet" href="css/liveBanner.css">
+    <link rel="stylesheet" href="css/bookBanner.css">
+    <link rel="stylesheet" href="css/adBanner.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header-main">
+        <div class="header-inner">
+            <div class="header-inner-top">
+                <div class="header-left">
+                    <div class="header-logo">
+                        <div class="interpark-logo"></div>
+                        <h1 class="interpark-word">interpark</h1>
+                    </div>
+                    <div class="header-input">
+                        <input type="text" placeholder="검색어를 입력해주세요"/>
+                        <div class="search-icon"></div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="menu">
+                        <li><a>로그인</a></li>
+                        <li><a>회원가입</a></li>
+                        <li class="make-btn">
+                            <a>마이페이지</a>
+                            <div class="hover-menu">
+                                <ul>
+                                    <li class="me"><b>투어</b> 마이페이지</li>
+                                    <li class="me"><b>티켓</b> 마이페이지</li>
+                                    <li class="me"><b>쇼핑</b> 마이페이지</li>
+                                    <li class="me"><b>도서</b> 마이페이지</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-inner-bottom">
+                <nav class="main-nav">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-1">
+                                    <img src="./assets/image/icon_tour.png" alt>
+                                </i>
+                                <span class="menu-text">투어</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-2">
+                                    <img src="./assets/image/icon_ticket.png" alt>
+                                </i>
+                                <span class="menu-text">티켓</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-3">
+                                    <img src="./assets/image/icon_shopping.png" alt>
+                                </i>
+                                <span class="menu-text">쇼핑</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-4">
+                                    <img src="./assets/image/icon_book.png" alt>
+                                </i>
+                                <span class="menu-text">도서</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-5">
+                                    <img src="./assets/image/icon_triple.png" alt>
+                                </i>
+                                <span class="menu-text">트리플</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-6">
+                                    <img src="./assets/image/icon_special.png" alt>
+                                </i>
+                                <span class="menu-text">1등특가</span>
+                                <i class="icon-6-1">
+                                    <img class="hot__icon" src="./assets/image/icon_hot.svg" alt>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span class="menu-text">선착순NOL굿즈증정</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="header_search">
-          <input class="search_input" placeholder="VIBE 검색"/>
-        </div>
-        <div class="header_menu">
-          <ul>
-          <li><a href="#"><img src="./assets/music.png" alt="" /><span>투데이</span></a></li>
-          <li><a href="#"><img src="./assets/trophy.png" alt="" /><span>차트</span></a></li>
-          <li><a href="#"><img src="./assets/sparkles.png" alt="" /><span>최신앨범</span></a></li>
-          <li><a href="#"><img src="./assets/vinyl.png" alt="" /><span>dj스테이션</span></a></li>
-          <li><a href="#"><img src="./assets/magazine.png" alt="" /><span>vibe mag</span></a></li>
-          <li><a href="#"><img src="./assets/add-to-playlist.png" alt="" /><span>이달의 노래</span></a></li>
-        <hr/>
-          <li><a href="#"><img src="./assets/heart.png" alt="" /><span>서비스 소개</span></a></li>
-          <li><a href="#"><img src="./assets/money.png" alt="" /><span>내돈내듣</span></a></li>
-          <li><a href="#"><img src="./assets/stage.png" alt="" /><span>onstage</span></a></li>
-          <li><a href="#"><img src="./assets/mic.png" alt="" /><span>vibe 오디오</span></a></li>
-        </ul>
-        </div>
-      </div>
-      <a href="/dasktop.html" class="header_install">데스크톱앱 설치</a>
     </header>
-    <section class="main">
-      <div class="section_music_container">
-        <div class="section_banner">
-          <div class="banner_img">
-            <img src="./assets/cover.png"/>
-          </div>
-          <div class="banner_text_area">
-            <img src="https://music-phinf.pstatic.net/20200620_15/1592637690919PFLOp_PNG/icon_special.png" />
-            <div class="banner_text">
-              <h1>컴백 소식이 들려, <br> 오마이걸</h1>
-              <h4>가장 오마이걸다운 모습으로 돌아왔다. 가장 뜨겁고 가장 시원한 여름이 담긴 노래로.</ㅇ>
-              <h6>vibe mag · 2023.07.25</h6>
+    <div class="fixed-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <div class="header-logo">
+                    <div class="interpark-logo"></div>
+                    <h1>interpark</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-1">
+                                    <img src="./assets/image/icon_tour.png" alt>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-2">
+                                    <img src="./assets/image/icon_ticket.png" alt>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-3">
+                                    <img src="./assets/image/icon_shopping.png" alt>
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="icon-4">
+                                    <img src="./assets/image/icon_book.png" alt>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-      </div>
-
-        <div class="magazine_container">
-          <div class="text_container_magazine">
-            <h2>매거진</h2>
-            <a class="plus" href="#">더 보기</a>
-          </div>
-          <div class="img_container_magazine">
-            <ul class="magazine_slider">
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/omygirl.png" />
-                    <div class="sub_text_magazine">
-                      <span>컴백 소식이 들려,<br>오마이걸</span>
-                      <p>2023.07.25</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine3.png" />
-                    <div class="sub_text_magazine">
-                      <span>이주의 디깅 #163<br>포스트 말론</span>
-                      <p>2023.07.25</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine2.png" />
-                    <div class="sub_text_magazine">
-                      <span>상반기,<br>화제의 알앤비 앨</span>
-                      <p>2023.07.14</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine1.png" />
-                    <div class="sub_text_magazine">
-                      <span>진짜는 앨범으로 말한다:<br>이센스, 빈지노</span>
-                      <p>2023.07.21</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine6.png" />
-                    <div class="sub_text_magazine">
-                      <span>이주의 디깅#162<br>빈지노</span>
-                      <p>2023.07.13</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine7.png" />
-                    <div class="sub_text_magazine">
-                      <span>사이코 외전,<br>세븐틴 준</span>
-                      <p>2023.07.25</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/zerobase.png" />
-                    <div class="sub_text_magazine">
-                      <span>제로베이스원,<br>찬란한 청춘의 시작</span>
-                      <p>2023.07.10</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li>
-                <a href="#">
-                  <div class="magazine_contents">
-                    <img src="./assets/magazine/new.png" />
-                    <div class="sub_text_magazine">
-                      <span>New Release #151 :<br>뉴진스, 도미닉 파이크</span>
-                      <p>2023.07.11</p>
-                    </div>
-                  </div>
-                </a></li>
-            </ul>
-          </div>
-          <button class="magazine_next"></button>
-          <button class="magazine_prev"></button>
-        </div>
-        <div class="news_container">
-          <div class="text_container_news">
-            <h2>news</h2>
-          </div>
-          <div class="img_container_news">
-            <ul class="news_slider">
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/박효신.png" />
-                    <div class="sub_text_news">
-                      <span>박효신이 4년 만에 팬미팅을 개최합니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/정국.png" />
-                    <div class="sub_text_news">
-                      <span>BTS 정국이 빌보드 ‘핫100’ 1위에 올랐습니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/샤이니.png" />
-                    <div class="sub_text_news">
-                      <span>샤이니의 ‘HARD’ 앨범이 영국 i-D에 이름을 올렸습니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/세븐틴.png" />
-                    <div class="sub_text_news">
-                      <span>세븐틴이  '팔로우' 투 서울 공연을 성황리에 마쳤습니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/tmxmfpdlzlwm.png" />
-                    <div class="sub_text_news">
-                      <span>스트레이 키즈가 K팝 최초 롤라팔루자 파리 헤드라이너로 무대에 섭니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/늉.png" />
-                    <div class="sub_text_news">
-                      <span>뉴진스가 빌보드 핫 100 차트에 올랐습니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/127.png" />
-                    <div class="sub_text_news">
-                      <span>NCT 127이 7주년 기념 팬미팅를 성황리에 마쳤습니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="news_contents">
-                    <img src="./assets/news/123.png" />
-                    <div class="sub_text_news">
-                      <span>(여자)아이들이 첫 미국 디지털 싱글을 공개했습니다</span>
-                      <p>관련 뉴스 보기</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul> 
-          </div>
-          <button class="news_next"></button>
-          <button class="news_prev"></button>
-        </div>
-        <div class="vibe_container">
-          <div class="text_container_vibe">
-            <h2>VIBE 추천 플레이리스트</h2>
-            <a class="plus" href="#">더 보기</a>
-          </div>
-          <div class="img_container_vibe">
-            <ul class="vibe_slider">
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe0.png" />
-                    <div class="sub_text_vibe">
-                      <span>최애랑 비밀 연애 중</span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe1.png" />
-                    <div class="sub_text_vibe">
-                      <span>Hot Girls Never Die 💘</span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe2.jpg" />
-                    <div class="sub_text_vibe">
-                      <span>하이틴 무드</span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe3.png" />
-                    <div class="sub_text_vibe">
-                      <span>하이틴 세계관 핵인싸 파티걸</span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe4.png" />
-                    <div class="sub_text_vibe">
-                      <span> 뉴욕에서 브이로그 찍는 That Girl 루틴 </span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe5.png" />
-                    <div class="sub_text_vibe">
-                      <span>낭만이 넘치는 캠퍼스 잔디 밭에서</span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe6.png" />
-                    <div class="sub_text_vibe">
-                      <span>걸어 다니는 명품 인플루언서의 삶</span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe7.png" />
-                    <div class="sub_text_vibe">
-                      <span>사랑에 빠진 사랑의 신 큐피드</span>
-                      <p>vibe</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <button class="vibe_next"></button>
-          <button class="vibe_prev"></button>
-        </div>
-        <div class="pick_container">
-            <div class="text_container_pick">
-              <h2>VIBE 추천 플레이리스트🏋️‍♀️</h2>
-              <a class="plus" href="#">더 보기</a>
+            <div class="header-right">
+                <ul class="menu">
+                    <li><a>로그인</a></li>
+                    <li><a>회원가입</a></li>
+                    <li class="make-btn"><a>마이페이지</a>
+                        <div class="hover-menu-fixed">
+                            <ul>
+                                <li class="me"><b>투어</b> 마이페이지</li>
+                                <li class="me"><b>티켓</b> 마이페이지</li>
+                                <li class="me"><b>쇼핑</b> 마이페이지</li>
+                                <li class="me"><b>도서</b> 마이페이지</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="img_container_pick">
-              <ul class="pick_slider">
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick0.png" />
-                      <div class="sub_text_pick">
-                        <span>최애랑 비밀 연애 중</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick1.png" />
-                      <div class="sub_text_pick">
-                        <span>Hot Girls Never Die 💘</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick2.png" />
-                      <div class="sub_text_pick">
-                        <span>하이틴 무드</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick3.png" />
-                      <div class="sub_text_pick">
-                        <span>하이틴 세계관 핵인싸 파티걸</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick4.png" />
-                      <div class="sub_text_pick">
-                        <span>노래방 K-Pop 콜렉션</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick5.png" />
-                      <div class="sub_text_pick">
-                        <span>노래방 Pop 콜렉션</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick6.png" />
-                      <div class="sub_text_pick">
-                        <span>노래방 국내 발라드 콜렉션</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="pick_contents">
-                      <img src="./assets/pick/pick7.png" />
-                      <div class="sub_text_pick">
-                        <span>노래방 국내 댄스 콜렉션</span>
-                        <p>vibe</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <button class="pick_next"></button>
-            <button class="pick_prev"></button>
         </div>
-        <div class="event_container">
-          <img src="./assets/event/video-tape.png"/>
-          <div class="event_text_container">
-            <div class="text_container">
-              <h3>아티스트 고르고 매일 믹스테잎 받기</h3>
-              <p>지금 VIBE 앱에서 취향 길들이기를 해보세요!</p>
-            </div>  
-            <div class="event_btn_container">
-              <a class="event_appStore" href="https://apps.apple.com/kr/app/id1338631589">
-                <img src="./assets/event/Download_on_the_App_Store-400px.png" />
-              </a>
-              <a class="event_googlePlay" href="https://play.google.com/store/apps/details?id=com.naver.vibe&pli=1">
-                <img src="./assets/event/Get-it-on-Google-Play-400px.png" alt="">
-              </a>
-            </div>
-          </div>  
-        </div>
-      </div>
-      <div class="promotion_container">
-        <div class="promotion_text_container">
-          <span>지금 바로 로그인하고<br>
-            한땀 한땀 만든 플레이리스트 듣기!</span>
-            <p>K-Pop부터 클래식까지 모든 장르를 아우르는 건 기본.<br>
-              수천 개의 플레이리스트가 트렌드에 맞게 업데이트.</p>
-        </div>
-        <div class="promotion_image_container">
-          <img class="" src="./assets/promotion/today_thumbs.1d76741b.png"/>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="footer_container">
-          <div>
-            <a class="notice_title" href="#">공지사항</a>
-          </div>
-            <div class="footer_notice_container">
-              <ul>
-                <li><a href="#">정기결제 7일 전 알림 메일로 대체 안내</a></li>
-                <!-- <li>VIBE 친구 초대 이벤트 종료 안내</li>
-                <li>VIBE 친구 초대 이벤트 종료 안내</li> -->
-              </ul>
-            </div>
-            <div class="social_container">
-              <button class="facebook"></button>
-              <button class="instagram"></button>
-              <button class="naver"></button>
-            </div>
-          </div>
-          <hr>
-          <div class="naver_info_container">
-            <div class="naver_info">
-              <span>네이버(주) 대표이사&nbsp;최수연</span>
-              <span>사업자등록번호&nbsp;220-81-62517</span>
-              <span>통신판매업신고번호&nbsp;제2006-경기성남-0692호</span>
-            </div>
-            <div class="naver_address">
-              <span>주소&nbsp;경기도 성남시 분당구 정자일로 95, NAVER 1784, 13561</span>
-              <span>대표전화&nbsp;1588-3820</span>
-              <span>이메일&nbsp;<a href="#">ccnaver@naver.com</a></span>
-              <span>호스팅 서비스 제공&nbsp;NAVER Cloud</span>
-            </div>
-            <div class="terms_container">
-              <a href="#">개인정보처리방침</a>
-              <a href="#">네이버 이용약관</a>
-              <a href="#">VIBE 이용약관</a>
-              <a href="#">VIBE 커뮤니티 운영정책</a>
-              <a href="#">고객센터</a>
-              <a href="#">결제/환불 안내</a>
-              <a href="#">VIBE 스마트봇</a>
-              <a href="#">톡톡상담</a>
-              <a href="#">사업자정보 확인</a>
-              <a href="#">© NAVER Corp.</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      </div>
-    </section>
-    <div class="player">
-      <div class="player_musicInfo_area">
-        <div class="musicInfo_icon_box">
-          <img src="./assets/play_music.png" />
-        </div>
-        <div class="player_musicInfo_text">
-          <div class="musicInfo_text_first">오늘 뭐 듣지?</div>
-          <div class="musicInfo_text_last">재생 버튼을 클릭해보세요.</div>
-        </div>
-      </div>
-      <div class="player_btn_area">
-        <button class="music_btn"><img src="./assets/random.png" /></button>
-        <button class="music_btn"><img class="back" src="./assets/music-player-back.png" /></button>
-        <button class="play_btn"><img class="play_icon" src="./assets/play-button.png" /></button>
-        <button class="music_btn"><img src="./assets/music-player-next.png" /></button>
-        <button class="music_btn"><img src="./assets/refresh.png" /></button>
-      </div>
-      <div class="player_sound_area">
-          <span><p>00:00</p> / <p>00:00</p></span>
-          <img src="./assets/speaker-filled-audio-tool.png" />
-          <div>
-            <input class="range" max="10" min="0" step="1" type="range" />          
-          </div>
-          <button class="playlist_btn">
-            <img src="./assets/playlist.png" /> 
-          </button>
-      </div>
     </div>
-  </body>
+    <div class="contents">
+        <section class="eventBanner">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/image/swipe1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/image/swipe2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/image/swipe3.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/image/swipe4.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/image/swipe5.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/image/swipe6.png" alt="">
+                  </div>
+                </div>
+            </div>
+            <button class="left-btn"></button>
+            <button class="right-btn"></button>
+        </section>
+        <section class="shoppingBanner">
+            <div class="shopping__title">
+                <h1>쇼핑 추천</h1>
+                <p>할인이 쎄다! 지금, 특가 상품을 확인하세요.</p>
+            </div>
+            <div class="shopping__content">
+                <div class="shopping__tab">
+                    <button class="tab--btn-btn1">쎈딜</button>
+                    <button class="tab--btn-btn2">베스트</button>
+                    <button class="tab--btn-btn3">유한킴벌리</button>
+                    <button class="tab--btn-btn4">인팍전자</button>
+                    <button class="tab--btn-btn5">소담상회</button>
+                </div>
+                <div class="swiper-container mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop11.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">30%</span>
+                                        <span class="upper__title-bold">6,900</span>
+                                        <span class="upper__title-thin">원~</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [Iprime]  [I*POP] 신규런칭 / 아이팝 무라벨 먹는샘물 2L 12펫/18펫/24펫 선택구매
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop13.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">1%</span>
+                                        <span class="upper__title-bold">112,110</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        *더쎈위크* 2023 NEW 하기스 네이처메이드 썸머 팬티/밴드 기저귀 2박스
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop9.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">31%</span>
+                                        <span class="upper__title-bold">14,400</span>
+                                        <span class="upper__title-thin">원~</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [Iprime] 카스제로 0.0 무알콜 논알콜 맥주맛 음료 330mlx24캔 아이프라임 
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop1.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">1%</span>
+                                        <span class="upper__title-bold">54,900</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [팸퍼스데이] 팸퍼스 2023 통잠팬티 4팩 기저귀 밤기저귀
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop3.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">14%</span>
+                                        <span class="upper__title-bold">40,900</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [다운로드쿠폰] 크리넥스 데코 앤 소프트 (28m-24롤)*2팩
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop4.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">34%</span>
+                                        <span class="upper__title-bold"><em>27,930</em>
+                                            <span class="upper__title-thin">원</span></span>
+                                    </div>
+                                    <div class="info--downer">
+                                        질레트 스킨텍 파워 면도기 핸들1 + 면도날 4입
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop5.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">7%</span>
+                                        <span class="upper__title-bold">57,880</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [일본판매정품] 템퍼 오리지널 배개 S/M/걱정없는 수면/인체공학적 이상적인 디자인
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop13.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">1%</span>
+                                        <span class="upper__title-bold">66,900</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [팸퍼스데이] 팸퍼스 2023 성인용 팬티 밴드 1박스 기저귀
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop8.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">14%</span>
+                                        <span class="upper__title-bold">40,900</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [한정 초특가] 꼼데가르송 짝퉁 반팔 티셔츠 / 여성 원포인트 레드와펜 블랙와펜
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop12.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">64%</span>
+                                        <span class="upper__title-bold">50,900</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [베짓웨폰코리아] 몸에 좋고 맛도 좋은 단단한 단호박형 둔기
+                                    </div>
+                                </div>
+                            </a>
+                        </div><div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop14.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">4%</span>
+                                        <span class="upper__title-bold">150,900</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [에어컨] 더운 여름을 시원하게 보낼까 의심이 드는 벽걸이형 에어컨
+                                    </div>
+                                </div>
+                            </a>
+                        </div><div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/shopping/shop10.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <span class="upper__sale">104%</span>
+                                        <span class="upper__title-bold">2,000,900</span>
+                                        <span class="upper__title-thin">원</span>
+                                    </div>
+                                    <div class="info--downer">
+                                        [함박 스테이크] 사실은 쯔양도 맛이 드럽게 없어서 포크만 먹고있는 창렬 스테이크
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-btn-two"></button>
+            <div class="shopping__bottom">
+                <button>쇼핑 홈 바로가기 ></button>
+            </div>
+            </div>
+        </section>
+        <section class="tripBanner">
+            <div class="shopping__title">
+                <h1>투어 특가</h1>
+                <p>해외여행은 인터파크다</p>
+            </div>
+            <div class="shopping__content">
+                <div class="shopping__tab">
+                    <button class="tab--btn-btn1">완전쇼크다</button>
+                    <button class="tab--btn-btn2">패키지</button>
+                    <button class="tab--btn-btn3">국내숙소</button>
+                    <button class="tab--btn-btn4">해외숙소</button>
+                </div>
+                <div class="swiper-container mySwiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip1.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip2.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip3.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip4.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip5.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip6.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip7.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip8.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/trip/trip9.jpg" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <button class="upper-button">완전쇼크다</button>
+                                        <span class="upper__course">비즈니스 트윈 → 스탠다드 트윈 (단독객실UP)</span>
+                                        <span class="upper__lodge">코모도호텔 부산</span>
+                                        <div class="info--downer">
+                                            <em>69,000</em>
+                                            <span class="downer-light">원~</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-btn-three"></button>
+            <div class="shopping__bottom">
+                <button>투어 홈 바로가기 ></button>
+            </div>
+            </div>
+        </section>
+        <section class="movieBanner">
+            <div class="shopping__title">
+                <h1>티켓 랭킹</h1>
+                <p>오늘은 뭐볼까? 지금 HOT한 공연</p>
+            </div>
+            <div class="shopping__content">
+                <div class="shopping__tab">
+                    <button class="tab--btn-btn1">뮤지컬</button>
+                    <button class="tab--btn-btn2">콘서트</button>
+                    <button class="tab--btn-btn3">연극</button>
+                    <button class="tab--btn-btn4">클래식/무용</button>
+                    <button class="tab--btn-btn4">레저/캠핑</button>
+                    <button class="tab--btn-btn4">아동/가족</button>
+                </div>
+                <div class="swiper-container mySwiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/movie/movie1.gif" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">1</div>
+                                        <span class="upper__course">뮤지컬 <트레이스 유></span>
+                                        <span class="upper__lodge">링크아트센터 벅스홀</span>
+                                        <div class="info--downer">
+                                            <span class="downer-light">2023.05.11 - 2023.08.20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/movie/movie2.gif" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">2</div>
+                                        <span class="upper__course">뮤지컬 <멤피스></span>
+                                        <span class="upper__lodge">충무아트센터 대극장</span>
+                                        <div class="info--downer">
+                                            <span class="downer-light">2023.07.20 - 2023.10.22</span>
+                                        </div>
+                                        <div class="up-sit">좌석우위</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/movie/movie3.gif" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">3</div>
+                                        <span class="upper__course">뮤지컬 <그날들> 10주년 기념공연</span>
+                                        <span class="upper__lodge">예술의정동 오페라극장</span>
+                                        <div class="info--downer">
+                                            <span class="downer-light">2023.07.12 - 2023.08.20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/movie/movie4.gif" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">4</div>
+                                        <span class="upper__course">뮤지컬 <멸화군></span>
+                                        <span class="upper__lodge">대학로 유니플렉스 1관</span>
+                                        <div class="info--downer">
+                                            <span class="downer-light">2023.06.23 - 2023.09.20</span>
+                                        </div>
+                                        <div class="down-sit">단독판매</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/movie/movie5.gif" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">5</div>
+                                        <span class="upper__course">뮤지컬 <오페라의 유령>- 서울</span>
+                                        <span class="upper__lodge">샤롯데씨어터</span>
+                                        <div class="info--downer">
+                                            <span class="downer-light">2023.07.21 - 2023.11.20</span>
+                                        </div>
+                                        <div class="up-sit">좌석우위</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/movie/movie6.gif" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">6</div>
+                                        <span class="upper__course">뮤지컬 <스웨그에이지 외쳐,조선!></span>
+                                        <span class="upper__lodge">홍익대 대학로 아트센터</span>
+                                        <div class="info--downer">
+                                            <span class="downer-light">2023.06.09 - 2023.08.20</span>
+                                        </div>
+                                        <div class="down-sit">단독판매</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/movie/movie7.gif" alt>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">7</div>
+                                        <span class="upper__course">뮤지컬 <벤허></span>
+                                        <span class="upper__lodge">LG아트센터 서울</span>
+                                        <div class="info--downer">
+                                            <span class="downer-light">2023.09.02 - 2023.11.19</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <div class="views">
+                                        <img class="view-all" style="width:fit-content" src="./assets/image/left-arrow.png" alt>
+                                        <p>전체보기</p>
+                                    </div>
+                                </div>
+                                <div class="element__info">
+                                    <div class= "info--upper">
+                                        <div class="upper-number">
+                                        </div>
+                                        <span class="upper__course"></span>
+                                        <span class="upper__lodge"></span>
+                                        <div class="info--downer">
+                                            <span class="downer-light"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-btn-four"></button>
+            <div class="shopping__bottom">
+                <button>티켓 홈 바로가기 ></button>
+            </div>
+            </div>
+        </section>
+        <section class="liveBanner">
+            <div class="shopping__title">
+                <img class="live-img" src="assets/image/live/live01.svg" alt=".">
+            </div>
+            <div class="shopping__content">
+                <div class="swiper-container mySwiper5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live02.png" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">방송예정</div>
+                                    <div class="words--broadcast">[부산]여름 성수기 여행 특가! 최대 77% 할인!</div>
+                                </div>
+                                <div class="inner--infos">
+                                    <div class="live-day">07월 27일 (목)</div>
+                                    <div class="live-time">19:00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live03.png" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">방송예정</div>
+                                    <div class="words--broadcast">인트쇼 라이브 2탄에 함께 할 피식쇼 멤버는 누구? 라이브 깜짝 특...</div>
+                                </div>
+                                <div class="inner--infos">
+                                    <div class="live-day">08월 01일 (화)</div>
+                                    <div class="live-time">11:00</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live04.jpg" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            [기획전] 인트 SHOW!
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live05.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">소담상회 x 올리쉐</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live06.png" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            올리쉐 넥 앤 페이스
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale">30%</span>
+                                            <span class="live__price">36,600
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live07.jpeg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">힐튼가든인 서울강남 방송 당일 / 일중일 특가!</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live08.jpg" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            힐튼 가든인 서울 강남
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale">64%</span>
+                                            <span class="live__price">158,400
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live09.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">[보홀] 에어텔 최대 60% 라이브 특가! 39만원대~</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live10.jpg" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            [카카오쇼핑X인터파크] 가보자고
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale"></span>
+                                            <span class="live__price">399,000
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live11.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">엔조이커플 라라와 함께하는 제주항공 동계 운임 최초 할인</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live12.png" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            [기획전] 제주공항은 크-다✈️인터파크-다!
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale"></span>
+                                            <span class="live__price">158,400
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live13.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">롯데호텔제주 생생한 현장라이브 진행!</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live14.jpg" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            롯데 호텔 제주
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale">66%</span>
+                                            <span class="live__price">229,500
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live15.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">[일본 북해도 3박 4일] 온천호텔 2박 + 라벤더 밭 관광까지</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live16.png" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            [북해도 3박 4일] 온천여행
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale">26%</span>
+                                            <span class="live__price">949,000
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live17.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">[강원]해수욕장 특집! 룸온리&패키지 쵀대 83% 할인특가</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live18.jpg" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            라마다 속초 호텔
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale">75%</span>
+                                            <span class="live__price">94,500
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live19.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">라마다 여수&군산, 최대 80% 할인!</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live20.jpg" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            여수 라마다 프라자 호텔
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale">78%</span>
+                                            <span class="live__price">68,850,400
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/live21.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">[나트랑&달랏]지금 가장 핫한 베트남 여행지♥ 라이브특가</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/live22.jpg" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            [인터파크LIVE]나트랑&달랏
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale">6%</span>
+                                            <span class="live__price">399,400
+                                                <span class="live__won">원</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img src="./assets/image/live/30.jpg" alt/>
+                                </div>
+                                <div class="upper--info">
+                                    <div class="button__broadcast">VOD</div>
+                                    <div class="words--broadcast">[이달의 여행]하와이 여행의 특가를 다 모았다!</div>
+                                </div>
+                            </a>
+                            <div class="live__bottom--info">
+                                <a href="javascript:void(0)">
+                                    <div class="live__image">
+                                        <img src="./assets/image/live/31.png" alt/>
+                                    </div>
+                                    <div class="live__words">
+                                        <div class="live__title">
+                                            [이달의 여행] 하와이 편
+                                        </div>
+                                        <div class="live__subtitle">
+                                            <span class="live__sale"></span>
+                                            <span class="live__price">
+                                                <span class="live__won"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-btn-five"></button>
+            <div class="shopping__bottom">
+                <button>인터파크 라이브 바로가기 ></button>
+            </div>
+            </div>
+        </section>
+        <section class="bookBanner">
+            <div class="shopping__title">
+                <h1>오늘의 도서</h1>
+                <p>지금 읽기 딱 좋은 책, 놓치지 마세요!</p>
+            </div>
+            <div class="shopping__content">
+                <div class="shopping__tab">
+                    <button class="tab--btn-btn1">MD's Pick</button>
+                    <button class="tab--btn-btn2">베스트셀러</button>
+                    <button class="tab--btn-btn3">신간추천</button>
+                    <button class="tab--btn-btn4">특가할인</button>
+                </div>
+                <div class="swiper-container mySwiper6">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book01.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">이토록 공부가 재밌어지는 순간</div>
+                                    <span class="element__price">16,200
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book02.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">맑은 날이 아니어서 오히려 좋아</div>
+                                    <span class="element__price">13,500
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book03.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">동주의 소포</div>
+                                    <span class="element__price">9,900
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book04.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">수상한 놀이공원 천옥원</div>
+                                    <span class="element__price">11,700
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book05.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">눈에 갇힌 외딴 산장에서</div>
+                                    <span class="element__price">16,920
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book06.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">이상한 나라의 앨리스 북퍼퓸 30ml</div>
+                                    <span class="element__price">9,900
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book07.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">미래엔 중학교 역사 1평가문제집</div>
+                                    <span class="element__price">11,700
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book08.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">일이란 무엇인가</div>
+                                    <span class="element__price">16,200
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book09.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">비욘드 더 스토리(BEYOND THE STORY)</div>
+                                    <span class="element__price">31,500
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/book/book10.jpg" alt/>
+                                </div>
+                                <div class="element__info">
+                                    <div class="book-name">아기 판다 푸바오</div>
+                                    <span class="element__price">16,200
+                                        <span class="money">원</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-btn-six"></button>
+            <div class="shopping__bottom">
+                <button>독서 홈 바로가기 ></button>
+            </div>
+            </div>
+        </section>
+        <section class="adBanner">
+            <div class="shopping__title">
+                <h1>이벤트</h1>
+                <p>인터파크에서 할인혜택을 꼭 누리세요</p>
+            </div>
+            <div class="shopping__content">
+                <div class="swiper-container mySwiper7">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad01.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad02.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad03.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad04.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad05.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad06.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad07.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad08.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad09.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad10.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad11.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad12.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad13.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad14.png" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad15.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad16.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad17.png" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad18.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad19.jpg" alt/>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0)">
+                                <div class="element__image">
+                                    <img class="img1" src="./assets/image/ad/ad20.png" alt/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-btn-seven"></button>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-main">
+        <div class="footer__banner">
+            <ul class="footer__banner--list">
+                <li class="list--item">
+                    <span>회사소개</span>
+                    <div class="hover-menu-footer">
+                        <ul>
+                            <li class="me"><b></b>인터파크트리플</li>
+                            <li class="me"><b></b>인터파크커머스</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list--item"><span>이용약관</span></li>
+                <li class="list--item"><span style="font-weight: 700;">개인정보 처리 방침</span></li>
+                <li class="list--item"><span>위치기반서비스 이용약관</span></li>
+                <li class="list--item"><span>분쟁해결기준</span></li>
+                <li class="list--item"><span>여행약관</span></li>
+                <li class="list--item"><span>여행자 보험 가입안내</span></li>
+                <li class="list--item">
+                    <span>공지사항</span>
+                    <div class="hover-menu-footer">
+                        <ul>
+                            <li class="me"><b></b>인터파크트리플</li>
+                            <li class="me"><b></b>인터파크커머스</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list--item">
+                    <span>고객센터</span>
+                    <div class="hover-menu-footer">
+                        <ul>
+                            <li class="me"><b></b>투어 고객센터</li>
+                            <li class="me"><b></b>티켓 고객센터</li>
+                            <li class="me"><b></b>쇼핑 고객센터</li>
+                            <li class="me"><b></b>도서 고객센터</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list--item">
+                    <span>Language</span>
+                    <div class="hover-menu-footer">
+                        <ul>
+                            <li class="me"><b></b>Korean</li>
+                            <li class="me"><b></b>English</li>
+                            <li class="me"><b></b>Japanese</li>
+                            <li class="me"><b></b>Chinese</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__info">
+            <div class="footer__info--content">
+                <div class="footer__box">
+                    <h2 class="footer__title">(주)인터파크트리플</h2>
+                    <div class="footer__content">
+                        <div class="footer__content--address">
+                            <ul class="address">
+                                <li>서울시 서초구 강남대로447 (서초동, 남서울빌딩)</li>
+                                <li>호스팅서비스제공자 (주)인터파크커머스 | 대표이사 김동식</li>
+                                <li>사업자등록번호 422-81-03185 <a href="javascript:void(0)">사업자정보확인</a>통신판매업신고 2023-서울서초-0823</li>
+                            </ul>
+                        </div>
+                    <div class="footer__content--tel">
+                        <div class="tel-service">
+                            <div class="service-title">고객센터 <a href="javascript:void(0)">쇼핑1:1문의</a> | <a href="javascript:void(0)">도서1:1문의</a></div>
+                                <ul>
+                                    <li>쇼핑 1588-1555 | 도서 1577-2555</li>
+                                    <li>팩스 02-6924-9050 | 이메일 helpshop@interparkshop.com</li>
+                                </ul>
+                        </div>
+                        <div class="tel-transaction">
+                            <div class="transaction-title"><span>전자금융거래 분쟁처리 담당</span></div>
+                                <ul>
+                                    <li>쇼핑 1588-1555 | 도서 1577-2555 | 팩스 02-6924-9050</li>
+                                    <li>이메일 helpshop@interparkshop.com | 개인정보보호책임자 cposhopping@interparkshop.com</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="footer__content--notice">
+                        <p>(주)인터파크트리플은 인터파크티켓, 인터파크투어의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 (주)인터파크트리플은 일체 책임을 지지 않습니다. Copyright ⓒ InterparkTriple Corp. All Rights Reserved.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="footer__box">
+                    <h2 class="footer__title">(주)인터파크커머스</h2>
+                    <div class="footer__content">
+                        <div class="footer__content--address">
+                            <ul class="address">
+                                <li>서울시 서초구 강남대로447 (서초동, 남서울빌딩)</li>
+                                <li>호스팅서비스제공자 (주)인터파크커머스 | 대표이사 김동식</li>
+                                <li>사업자등록번호 422-81-03185 <a href="javascript:void(0)">사업자정보확인</a>통신판매업신고 2023-서울서초-0823</li>
+                            </ul>
+                        </div>
+                        <div class="footer__content--tel">
+                            <div class="tel-service">
+                                <div class="service-title"> 고객센터 <a href="javascript:void(0)">쇼핑1:1문의</a> | <a href="javascript:void(0)">도서1:1문의</a></div>
+                                    <ul>
+                                        <li>쇼핑 1588-1555 | 도서 1577-2555</li>
+                                        <li>팩스 02-6924-9050 | 이메일 helpshop@interparkshop.com</li>
+                                    </ul>
+                            </div>
+                            <div class="tel-transaction">
+                                <div class="transaction-title"><span>전자금융거래 분쟁처리 담당</span></div>
+                                    <ul>
+                                        <li>쇼핑 1588-1555 | 도서 1577-2555 | 팩스 02-6924-9050</li>
+                                        <li>이메일 helpshop@interparkshop.com | 개인정보보호책임자 cposhopping@interparkshop.com</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="footer__content--notice">
+                            <p>(주)인터파크커머스는 인터파크쇼핑, 인터파크도서의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에 대해서 주식회사 인터파크커머스는 일체 책임을 지지 않습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>   
+</body>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
 </html>

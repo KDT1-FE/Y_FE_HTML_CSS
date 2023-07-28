@@ -6,9 +6,514 @@
   <title>Maison Francis Kurkdjian - Official online store</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
+  <header>
+    <div class="inner">
+      <div class="menu-container">
+        <a href="./index.html">
+          <img class="logo" src="./assets/images/icon-logo.svg" alt="Maison Francis Kurkdjian logo" />
+        </a>
+        <ul class="menu">
+          <li><a class="menu-name" href="javascript:void(0)">AQUA MEDIA COLOGNE FORTE</a></li>
+          <li><a class="menu-name collections" href="javascript:void(0)">COLLECTIONS</a></li>
+          <li><a class="menu-name fragrances" href="javascript:void(0)">FRAGRANCES</a></li>
+          <li><a class="menu-name bath-and-body" href="javascript:void(0)">BATH & BODY</a></li>
+          <li><a class="menu-name art-of-living" href="javascript:void(0)">ART OF LIVING</a>
+          <li><a class="menu-name the-maison" href="javascript:void(0)">THE MAISON</a></li>
+          <li><a class="menu-name" href="javascript:void(0)">FRAGRANCE FINDER</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <div class="country">
+              <div class="country-flag"></div>
+              <div class="country-currency">&#47; EUR</div>
+            </div>
+          </li>
+          <li><a class="search" href="javascript:void(0)">search</a></li>
+          <li><a class="location" href="javascript:void(0)">location</a></li>
+          <li><a class="account" href="javascript:void(0)">account</a></li>
+          <li>
+            <div class="cart">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <aside class="cart-container">
+      <div class="close"><img src="./assets/images/icon-close.png" alt="close cart"></div>
+      <div class="title">
+        <div class="bag">Your shopping bag</div>
+        <div class="count">0 Products</div>
+      </div>
+      <div class="message">Your shopping bag is empty</div>
+      <a class="link" href="javascript:void(0)">VISIT OUR ESHOP</a>
+    </aside>
+  </header>
+  <main>
+    <section class="main-video">
+      <video src="./assets/videos/main.mp4" muted loop autoplay></video>
+      <div class="brand-name">Maison<br/>Francis Kurkdjian<br/>Paris</div>
+      <a class="button" href="javascript:void(0)"><span class="discover">DISCOVER</span></a>
+    </section>
+    <section class="product">
+      <div class="inner">
+        <a class="gold io" href="javascript:void(0)">
+          <div class="image"></div>
+          <div class="name">Globe Trotter</div>
+          <div class="info">Gold Edition</div>
+          <div class="price">€125.00</div>
+        </a>
+        <a class="zinc io" href="javascript:void(0)">
+          <div class="image"></div>
+          <div class="name">Globe Trotter</div>
+          <div class="info">Zinc Edition</div>
+          <div class="price">€115.00</div>
+        </a>
+      </div>
+    </section>
+    <section class="product">
+      <div class="inner">
+        <a class="femme io" href="javascript:void(0)">
+          <div class="image"></div>
+          <div class="name">Amyris<br/>femme</div>
+          <div class="info">Eau de parfum</div>
+          <div class="price">€110.00</div>
+          <div class="fragrance">
+            <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+            <div class="fruity">Fruity</div>
+          </div>
+        </a>
+        <a class="homme io" href="javascript:void(0)">
+          <div class="image"></div>
+          <div class="name">Amyris<br/>homme</div>
+          <div class="info">Eau de toilette</div>
+          <div class="price">€105.00</div>
+          <div class="fragrance">
+            <div class="aromatic">Aromatic&nbsp&nbsp&nbsp</div>
+            <div class="woody">Woody</div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="product">
+      <div class="inner">
+        <a class="rouge io" href="javascript:void(0)">
+          <div class="image"></div>
+          <div class="name">Baccarat<br/>Rouge 540</div>
+          <div class="info">Travel Set - Eau de parfum</div>
+          <div class="price">€275.00</div>
+          <div class="fragrance">
+            <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+            <div class="ambery">Ambery&nbsp&nbsp&nbsp</div>
+            <div class="woody">Woody</div>
+          </div>
+        </a>
+        <a class="number-724 io" href="javascript:void(0)">
+          <div class="image"></div>
+          <div class="name">724</div>
+          <div class="info">Travel Set - Eau de parfum</div>
+          <div class="price">€225.00</div>
+          <div class="fragrance">
+            <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+            <div class="musky">Musky</div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="content">
+      <div class="inner">
+        <div class="fragrance-finder io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title">Fragrance Finder</div>
+          </a>
+          <div class="desc">
+            Discover the fragrances that suit you best thanks to the Fragrance Finder.<br/>This questionnaire, developed by Francis Kurkdjian, allows you to determine which fragrances in our olfactory wardrobe will reflect best the different facets of your personality.
+          </div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+        <div class="token-of-appreciation io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title">Token of Appreciation</div>
+          </a>
+          <div class="desc">Select a gift from a special online selection for every purchase over 150€.</div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+      </div>
+    </section>
+    <section class="text">
+      <div class="inner">
+        <div class="title io">Our selection</div>
+        <div class="body io">
+          <div class="desc">Express your personality by choosing one or more emblematic pieces from the Maison's fragrance wardrobe.</div>
+          <a class="link" href="javascript:void(0)">DISCOVER ALL FRAGRANCES</a>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="swiper slide1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="rouge" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Baccarat<br/>Rouge 540</div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €150.00</div>
+              <div class="fragrance">
+                <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+                <div class="ambery">Ambery&nbsp&nbsp&nbsp</div>
+                <div class="woody">Woody</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="aqua-media" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Aqua Media<br/><span class="font">Cologne forte</span></div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="herbal">Herbal&nbsp&nbsp&nbsp</div>
+                <div class="citrus">Citrus&nbsp&nbsp&nbsp</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="number-724" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">724</div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €120.00</div>
+              <div class="fragrance">
+                <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+                <div class="musky">Musky&nbsp&nbsp&nbsp</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="rouge-extrait" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Baccarat<br/>Rouge 540</div>
+              <div class="info">Extrait de parfum</div>
+              <div class="price">Starting from €210.00</div>
+              <div class="fragrance">
+                <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+                <div class="ambery">Ambery&nbsp&nbsp&nbsp</div>
+                <div class="woody">Woody</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="rose" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">À la rose</div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €120.00</div>
+              <div class="fragrance">
+                <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+                <div class="musky">Musky&nbsp&nbsp&nbsp</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="lhomme" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">I'Homme<br/>À la rose</div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €120.00</div>
+              <div class="fragrance">
+                <div class="woody">Woody</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="gentle-gold" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">gentle<br/>Fluidity</div>
+              <div class="info">Gold Edition - Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="ambery">Ambery&nbsp&nbsp&nbsp</div>
+                <div class="musky">Musky&nbsp&nbsp&nbsp</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="gentle-silver" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Gentle<br/>fluidity</div>
+              <div class="info">Silver Edition - Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="aromatic">Aromatic&nbsp&nbsp&nbsp</div>
+                <div class="woody">Woody&nbsp&nbsp&nbsp</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="universalis" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Aqua<br/>Universalis<br/><span class="font">Cologne forte</span></div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="citrus">Citrus&nbsp&nbsp&nbsp</div>
+                <div class="woody">Woody&nbsp&nbsp&nbsp</div>
+                <div class="musky">Musky</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="vitae" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Aqua Vitae<br/><span class="font">Cologne forte</span></div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+                <div class="citrus">Citrus&nbsp&nbsp&nbsp</div>
+                <div class="woody">Woody</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="celestia" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Aqua Celestia<br/><span class="font">Cologne forte</span></div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="citrus">Citrus&nbsp&nbsp&nbsp</div>
+                <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+                <div class="musky">Musky</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="soir" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Grand Soir</div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="woody">Woody&nbsp&nbsp&nbsp</div>
+                <div class="ambery">Ambery&nbsp&nbsp&nbsp</div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="matin" href="javascript:void(0)">
+              <div class="image"></div>
+              <div class="name">Petit Matin<br/></div>
+              <div class="info">Eau de parfum</div>
+              <div class="price">Starting from €110.00</div>
+              <div class="fragrance">
+                <div class="citrus">Citrus&nbsp&nbsp&nbsp</div>
+                <div class="floral">Floral&nbsp&nbsp&nbsp</div>
+                <div class="woody">Woody</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./assets/images/icon-right.png" alt="slide to right">
+        </div>
+        <div class="swiper-button-next">
+          <img src="./assets/images/icon-left.png" alt="slide to left">
+        </div>
+      </div>
   
+  
+  
+    </section>
+    <section class="content">
+      <div class="inner">
+        <div class="number-724 io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title">724</div>
+          </a>
+          <div class="desc">
+            Discover 724, our new eau de parfum. Behind these three numbers lies Francis Kurkdjian’s fascination for the cities of the world and their creative energy.
+          </div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+        <div class="aqua-media-cologne-forte io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title"><span class="font1">Aqua Media </span><span class="font2">Cologne forte</span></div>
+          </a>
+          <div class="desc">This new eau de parfum, whose facets shine at the heart of a citrus garden, evokes blissful landscapes and pristine nature, proving that happiness blossoms in simplicity.</div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+      </div>
+    </section>
+    <section class="text">
+      <div class="inner">
+        <div class="title io">Discovery Sets</div>
+        <div class="body io">
+          <div class="desc">Delve into the world of Maison Francis Kurkdjian with our discovery collections. A wonderful way of exploring the perfumes of the Maison and a perfect gift to give or receive.</div>
+          <a class="link" href="javascript:void(0)">DISCOVER ALL</a>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+    </section>
+    <section class="content">
+      <div class="inner">
+        <div class="scented-candles io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title">Scented candles</div>
+          </a>
+          <div class="desc">
+            A soft flaming glow and fragrant notes infuse a delicate and unique ambiance at home. Create a delicately refined atmosphere with our collection of Scented candles to create a relaxing and cozy atmosphere.
+          </div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+        <div class="bath-and-body io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title"><span class="font1">Bath & Body</div>
+          </a>
+          <div class="desc">Enrich your beauty ritual with the scented bath and body products echoing the emblematic perfumes of Maison Francis Kurkdjian's fragrance wardrobe, and extend their sillages with elegance.</div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+      </div>
+    </section>
+    <section class="last-content">
+      <div class="inner">
+        <div class="womens-fragrances io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title">Women's fragrances</div>
+          </a>
+          <div class="desc">
+            Our collection of perfumes for women is like a closet where each garment offers polished style and the olfactory nuances that express all facets of women’s radiance and fulfillment.
+          </div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+        <div class="mens-fragrances io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title">Men's fragrances</div>
+          </a>
+          <div class="desc">
+            Composed like an olfactory symphony, our collection of fragrances for men grants them freedom to express their personality with exceptional fragrances that reflect their wants.
+          </div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+        <div class="unisex-fragrances io">
+          <a class="intro" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="title">Unisex fragrances</div>
+          </a>
+          <div class="desc">
+            Our collection of unisex fragrances is composed of rare perfumes that unite man and woman in a shared story, a shared wake. A fragrance wardrobe meant to be shared at will.
+          </div>
+          <a class="link" href="javascript:void(0)">DISCOVER</a>
+        </div>
+      </div>
+    </section>
+    <section class="online-advantages">
+      <div class="inner">
+        <div class="delivery">
+          <div class="image"></div>
+          <div class="desc">Worldwide delivery</div>
+        </div>
+        <div class="adviser">
+          <div class="image"></div>
+          <div class="desc">A customer adviser is available by phone at +33<br/>(0)1 72 95 09 89, Monday to Saturday from 10<br/>am to 7 pm (Paris time) or by email</div>
+        </div>
+        <div class="payment">
+          <div class="image"></div>
+          <div class="desc">Secure payment</div>
+        </div>
+        <div class="gift-box">
+          <div class="image"></div>
+          <div class="desc">Gift-box in the colors<br/>of the Maison</div>
+        </div>
+        <div class="samples">
+          <div class="image"></div>
+          <div class="desc">2 complimentary samples<br/>subject to conditions</div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="title">Newsletter</div>
+      <div class="subtitle">Sign up to receive our latest news</div>
+      <div class="email">
+        <input type="text" />
+        <label for="">EMAIL</label>
+        <button type="button"></button>
+        <div class="policy">See our <a href="javascript:void(0)">privacy policy</a></div>
+      </div>
+    </section>
+    <footer>
+      <div class="inner">
+        <div class="footer-main">
+          <ul class="menu-contents">
+            <li class="menu-name">Accessibility</li>
+            <li class="menu-list"><a href="javascript:void(0)">MODE OFF</a></li>
+          </ul>
+          <ul class="menu-contents">
+            <li class="menu-name">Stores</li>
+            <li class="menu-list"><a href="javascript:void(0)">STORES</a></li>
+          </ul>
+          <ul class="menu-contents">
+            <li class="menu-name">Contact</li>
+            <li class="menu-list"><a href="javascript:void(0)">CONTACT US</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">CAREERS</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">PRESS</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">CUSTOM CARE</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">FAQ</a></li>
+          </ul>
+          <ul class="menu-contents">
+            <li class="menu-name">Legal Statement</li>
+            <li class="menu-list"><a href="javascript:void(0)">TERMS AND CONDITIONS</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">PRIVACY POLICY</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">CREDITS</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">COOKIES POLICY</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">COOKIE SETTINGS</a></li>
+          </ul>
+          <ul class="menu-contents">
+            <li class="menu-name">Social</li>
+            <li class="menu-list"><a href="javascript:void(0)">INSTAGRAMF</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">FACEBOOK</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">YOUTUBE</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">WEIBO</a></li>
+            <li class="menu-list"><a href="javascript:void(0)">MODE OFF</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div class="section1">
+            <div class="copyright">All rights reserved</div>
+          </div>
+          <div class="section2">
+            <img class="logo" src="./assets/images/icon-logo.svg" alt="Maison Francis Kurkdjian logo" />
+          </div>
+          <div class="section3">
+            <div class="country">
+              <div class="country-flag"></div>
+              <div class="country-currency">&#47; EUR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <aside class="to-top">
+      <img src="./assets/images/icon-to-top.svg" alt="scroll to top" />
+    </aside>
+  </main>
 </body>
 </html>

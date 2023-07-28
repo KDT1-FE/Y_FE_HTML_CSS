@@ -1,22 +1,2138 @@
 @font-face {
   font-family: 'BauerBodoni';
-  src: url(../assets/fonts/BauerBodoni-Roman.woff) format('woff'),
-    url(../assets/fonts/BauerBodoni-Roman.woff) format('woff2');
+  src: url(../assets/fonts/BauerBodoni.woff) format('woff'),
+    url(../assets/fonts/BauerBodoni.woff2) format('woff2');
 }
 @font-face {
   font-family: 'BauerBodoni-Italic';
-  src: url(../assets/fonts/BauerBodoni-Italic.woff) format('woff'),
-    url(../assets/fonts/BauerBodoni-Italic.woff2) format('woff2');
+  src: url(../assets/fonts/BauerBodoni-italic.woff) format('woff'),
+    url(../assets/fonts/BauerBodoni-italic.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk';
   font-weight: 400;
-  src: url(../assets/fonts/PostGrotesk-Book.woff) format('woff'),
-    url(../assets/fonts/PostGrotesk-Book.woff2) format('woff2');
+  src: url(../assets/fonts/PostGrotesk-Light.woff) format('woff'),
+    url(../assets/fonts/PostGrotesk-Light.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk';
   font-weight: 500;
+  src: url(../assets/fonts/PostGrotesk-Book.woff) format('woff'),
+    url(../assets/fonts/PostGrotesk-Book.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'PostGrotesk-Bold';
   src: url(../assets/fonts/PostGrotesk-Medium.woff) format('woff'),
     url(../assets/fonts/PostGrotesk-Medium.woff2) format('woff2');
+}
+body {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  width: 100%;
+  height: 107px;
+  border-bottom: 1px solid #DFDFDF;
+  z-index: 1000;
+}
+.inner {
+  width: 1360px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-container > a {
+  position: absolute;
+  width: 90px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+header .menu-container > a .logo {
+  position: absolute;
+  width: 50px;
+  top: 29px;
+  left: 0;
+}
+header .menu-container .menu {
+  position: absolute;
+  width: 1020px;
+  height: 100%;
+  left: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu-container .menu li .menu-name {
+  position: relative;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #646467;
+}
+header .menu-container .menu li .menu-name::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .5s;
+}
+header .menu-container .menu li:hover .menu-name::after {
+  width: 100%;
+}
+header .menu-container .icons {
+  position: absolute;
+  width: 208px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu-container .icons li {
+  display: flex;
+  justify-content: center;
+}
+header .menu-container .icons li .country,
+.footer-bottom .section3 .country {
+  width: 56px;
+  height: 12px;
+  display: flex;
+}
+header .menu-container .icons li .country .country-flag,
+.footer-bottom .section3 .country .country-flag {
+  background-image: url(../assets/images/flag-france.svg);
+  background-size: contain;
+  width: 16px;
+  height: 12px;
+}
+header .menu-container .icons li .country .country-currency,
+.footer-bottom .section3 .country .country-currency {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #646467;
+  text-indent: 4px;
+}
+header .menu-container .icons li a {
+  text-indent: -9999px;
+  width: 19px;
+  height: 18px;
+}
+header .menu-container .icons li .search {
+  background-image: url(../assets/images/icon-search.svg);
+}
+header .menu-container .icons li .location {
+  background-image: url(../assets/images/icon-location.svg);
+}
+header .menu-container .icons li .account {
+  background-image: url(../assets/images/icon-account.svg);
+}
+header .menu-container .icons li .cart {
+  background-image: url(../assets/images/icon-cart.svg);
+  width: 19px;
+  height: 18px;
+}
+header .menu-container .icons li .country:hover,
+header .menu-container .icons li .cart:hover,
+.footer-bottom .section3 .country {
+  cursor: pointer;
+}
+
+.cart-container {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 482px;
+  height: 100vh;
+  background-color: #FFF;
+  transition: .3s;
+}
+.cart-container.show {
+  transform: translateX(-482px);
+}
+.cart-container .close {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  width: 17px;
+  height: 17px;
+}
+.cart-container .close img {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+.cart-container .title {
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  width: 384px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cart-container .title .bag {
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 30px;
+  color: #5c5c5c;
+}
+.cart-container .title .count {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 16px;
+  color: #5c5c5c;
+}
+.cart-container .message {
+  position: absolute;
+  top: 54%;
+  left: 30%;
+  width: 200px;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.cart-container .link {
+  position: absolute;
+  bottom: 15px;
+  left: 66px;
+  width: 350px;
+  height: 45px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #5c5c5c;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #c4c4c4;
+}
+
+.main-video {
+  z-index: 1;
+  padding-top: 103px;
+  padding-bottom: 180px;
+}
+.main-video video {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  object-position: left top;
+}
+.main-video .brand-name {
+  position: absolute;
+  top: 187px;
+  left: 40px;
+  font-family: BauerBodoni;
+  font-size: 3.4375rem;
+  color: #FFF;
+  line-height: 4rem;
+}
+.main-video .button {
+  position: absolute;
+  top: 665px;
+  right: 40px;
+  width: 230px;
+  height: 50px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-video .button .discover {
+  display: inline-block;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.main-video .button .discover::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: 82px;
+  width: 67px;
+  border-bottom: 1px solid #646467;
+  opacity: 0;
+  transition: .3s;
+}
+.main-video .button:hover .discover::after {
+  opacity: 1;
+}
+
+.product {
+  width: 100%;
+  height: 563px;
+}
+
+.product .gold {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .gold .image {
+  background-image: url(../assets/images/globe-trotter-gold1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: .8s;
+}
+.product .gold:hover .image {
+  background-image: url(../assets/images/globe-trotter-gold2.webp);
+}
+.product .gold .name {
+  position: absolute;
+  top: 349px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+.product .gold .info {
+  top: 386px;
+}
+.product .gold .price {
+  top: 406px;
+}
+.product .gold .info,
+.product .gold .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+
+.product .zinc {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .zinc .image {
+  background-image: url(../assets/images/globe-trotter-zinc1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: .8s;
+}
+.product .zinc:hover .image {
+  background-image: url(../assets/images/globe-trotter-zinc2.webp);
+}
+.product .zinc .name {
+  position: absolute;
+  top: 349px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+.product .zinc .info {
+  top: 386px;
+}
+.product .zinc .price {
+  top: 406px;
+}
+.product .zinc .info,
+.product .zinc .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+
+.product .femme {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .femme .image {
+  background-image: url(../assets/images/amyris-femme1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: .8s;
+}
+.product .femme:hover .image {
+  background-image: url(../assets/images/amyris-femme2.webp);
+}
+.product .femme .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .femme:hover .name {
+  opacity: 0;
+}
+.product .femme .info {
+  top: 422px;
+}
+.product .femme .price {
+  top: 442px;
+}
+.product .femme .info,
+.product .femme .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .femme:hover .info,
+.product .femme:hover .price {
+  opacity: 0;
+}
+.product .femme .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .femme .floral {
+  position: relative;
+  opacity: 0;
+}
+.product .femme:hover .floral {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .3s;
+}
+.product .femme:hover .floral::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .1s;
+}
+.product .femme .fruity {
+  opacity: 0;
+}
+.product .femme:hover .fruity {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .55s;
+}
+
+.product .homme {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .homme .image {
+  background-image: url(../assets/images/amyris-homme1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: .8s;
+}
+.product .homme:hover .image {
+  background-image: url(../assets/images/amyris-homme2.webp);
+}
+.product .homme .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .homme:hover .name {
+  opacity: 0;
+}
+.product .homme .info {
+  top: 422px;
+}
+.product .homme .price {
+  top: 442px;
+}
+.product .homme .info,
+.product .homme .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .homme:hover .info,
+.product .homme:hover .price {
+  opacity: 0;
+}
+.product .homme .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .homme .aromatic {
+  position: relative;
+  opacity: 0;
+}
+.product .homme:hover .aromatic {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .3s;
+}
+.product .homme:hover .aromatic::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .1s;
+}
+.product .homme .woody {
+  opacity: 0;
+}
+.product .homme:hover .woody {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .55s;
+}
+
+.product .rouge {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .rouge .image {
+  background-image: url(../assets/images/baccarat-rouge-travel.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: .8s;
+}
+.product .rouge .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .rouge:hover .name {
+  opacity: 0;
+}
+.product .rouge .info {
+  top: 422px;
+}
+.product .rouge .price {
+  top: 442px;
+}
+.product .rouge .info,
+.product .rouge .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .rouge:hover .info,
+.product .rouge:hover .price {
+  opacity: 0;
+}
+.product .rouge .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .rouge .floral {
+  position: relative;
+  opacity: 0;
+}
+.product .rouge:hover .floral {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .3s;
+}
+.product .rouge:hover .floral::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .1s;
+}
+.product .rouge .ambery {
+  position: relative;
+  opacity: 0;
+}
+.product .rouge:hover .ambery {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .55s;
+}
+.product .rouge:hover .ambery::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .35s;
+}
+.product .rouge .woody {
+  opacity: 0;
+}
+.product .rouge:hover .woody {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .75s;
+}
+
+.product .number-724 {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .number-724 .image {
+  background-image: url(../assets/images/724-travel.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: .8s;
+}
+.product .number-724 .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .number-724:hover .name {
+  opacity: 0;
+}
+.product .number-724 .info {
+  top: 385px;
+}
+.product .number-724 .price {
+  top: 405px;
+}
+.product .number-724 .info,
+.product .number-724 .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: .8s;
+  opacity: 1;
+}
+.product .number-724:hover .info,
+.product .number-724:hover .price {
+  opacity: 0;
+}
+.product .number-724 .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .number-724 .floral {
+  position: relative;
+  opacity: 0;
+}
+.product .number-724:hover .floral {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .3s;
+}
+.product .number-724:hover .floral::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .1s;
+}
+.product .number-724 .musky {
+  opacity: 0;
+}
+.product .number-724:hover .musky {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .55s;
+}
+
+.content {
+  width: 100%;
+  height: 700px;
+}
+.content .inner {
+  justify-content: space-between;
+}
+.content .fragrance-finder {
+  width: 669px;
+  height: 666px;
+}
+.content .fragrance-finder .intro .image {
+  background-image: url(../assets/images/fragrance-finder.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .fragrance-finder .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .fragrance-finder .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.content .fragrance-finder .intro .title:hover::after {
+  width: 100%;
+}
+.content .fragrance-finder .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .fragrance-finder .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .fragrance-finder .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.content .fragrance-finder .link:hover::after {
+  width: 100%;
+}
+.content .token-of-appreciation {
+  width: 669px;
+  height: 666px;
+}
+.content .token-of-appreciation .intro .image {
+  background-image: url(../assets/images/token-of-appreciation.jpeg);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .token-of-appreciation .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .token-of-appreciation .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.content .token-of-appreciation .intro .title:hover::after {
+  width: 100%;
+}
+.content .token-of-appreciation .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .token-of-appreciation .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .token-of-appreciation .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.content .token-of-appreciation .link:hover::after {
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+  height: 298px;
+  box-sizing: border-box;
+  padding: 110px 0 20px 0;
+}
+.text .inner {
+  justify-content: space-between;
+}
+.text .title {
+  width: 408px;
+  height: 100%;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 55px;
+  color: #646467;
+}
+.text .body {
+  width: 845px;
+  height: 100%;
+}
+.text .body .desc {
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 28px;
+  color: #646467;
+  letter-spacing: 0.3px;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
+.text .body .link {
+  position: absolute;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  color: #646467;
+}
+.text .body .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.text .body .link:hover::after {
+  width: 100%;
+}
+
+.content .number-724 {
+  width: 669px;
+  height: 666px;
+}
+.content .number-724 .intro .image {
+  background-image: url(../assets/images/724.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .number-724 .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .number-724 .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.content .number-724 .intro .title:hover::after {
+  width: 100%;
+}
+.content .number-724 .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .number-724 .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .number-724 .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.content .number-724 .link:hover::after {
+  width: 100%;
+}
+
+.content .aqua-media-cologne-forte {
+  width: 669px;
+  height: 666px;
+}
+.content .aqua-media-cologne-forte .intro .image {
+  background-image: url(../assets/images/token-of-appreciation.jpeg);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .aqua-media-cologne-forte .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .aqua-media-cologne-forte .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.content .aqua-media-cologne-forte .intro .title:hover::after {
+  width: 100%;
+}
+.content .aqua-media-cologne-forte .intro .title .font2 {
+  font-family: 'BauerBodoni-Italic', sans-serif;
+}
+.content .aqua-media-cologne-forte .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .aqua-media-cologne-forte .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .aqua-media-cologne-forte .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.content .aqua-media-cologne-forte .link:hover::after {
+  width: 100%;
+}
+
+.content .scented-candles {
+  width: 669px;
+  height: 666px;
+}
+.content .scented-candles .intro .image {
+  background-image: url(../assets/images/scented-candles.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .scented-candles .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .scented-candles .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.content .scented-candles .intro .title:hover::after {
+  width: 100%;
+}
+.content .scented-candles .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .scented-candles .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .scented-candles .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.content .scented-candles .link:hover::after {
+  width: 100%;
+}
+.content .bath-and-body {
+  width: 669px;
+  height: 666px;
+}
+.content .bath-and-body .intro .image {
+  background-image: url(../assets/images/bath-and-body.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .bath-and-body .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .bath-and-body .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.content .bath-and-body .intro .title:hover::after {
+  width: 100%;
+}
+.content .bath-and-body .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .bath-and-body .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .bath-and-body .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.content .bath-and-body .link:hover::after {
+  width: 100%;
+}
+
+.last-content {
+  width: 100%;
+  height: 522px;
+}
+.last-content .inner {
+  justify-content: space-between;
+}
+.last-content .womens-fragrances {
+  width: 435px;
+  height: 490px;
+}
+.last-content .womens-fragrances .intro .image {
+  background-image: url(../assets/images/womens-fragrances.webp);
+  width: 435px;
+  height: 285px;
+  background-size: 435px 285px;
+  margin-bottom: 26px;
+}
+.last-content .womens-fragrances .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.last-content .womens-fragrances .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.last-content .womens-fragrances .intro .title:hover::after {
+  width: 100%;
+}
+.last-content .womens-fragrances .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.last-content .womens-fragrances .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.last-content .womens-fragrances .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.last-content .womens-fragrances .link:hover::after {
+  width: 100%;
+}
+
+.last-content .mens-fragrances {
+  width: 435px;
+  height: 490px;
+}
+.last-content .mens-fragrances .intro .image {
+  background-image: url(../assets/images/mens-fragrances.webp);
+  width: 435px;
+  height: 285px;
+  background-size: 435px 285px;
+  margin-bottom: 26px;
+}
+.last-content .mens-fragrances .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.last-content .mens-fragrances .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.last-content .mens-fragrances .intro .title:hover::after {
+  width: 100%;
+}
+.last-content .mens-fragrances .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.last-content .mens-fragrances .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.last-content .mens-fragrances .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.last-content .mens-fragrances .link:hover::after {
+  width: 100%;
+}
+
+.last-content .unisex-fragrances {
+  width: 435px;
+  height: 490px;
+}
+.last-content .unisex-fragrances .intro .image {
+  background-image: url(../assets/images/unisex-fragrances.webp);
+  width: 435px;
+  height: 285px;
+  background-size: 435px 285px;
+  margin-bottom: 26px;
+}
+.last-content .unisex-fragrances .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.last-content .unisex-fragrances .intro .title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width .3s;
+}
+.last-content .unisex-fragrances .intro .title:hover::after {
+  width: 100%;
+}
+.last-content .unisex-fragrances .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.last-content .unisex-fragrances .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.last-content .unisex-fragrances .link::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.last-content .unisex-fragrances .link:hover::after {
+  width: 100%;
+}
+
+.online-advantages {
+  width: 100%;
+  height: 300px;
+}
+.online-advantages .inner {
+  justify-content: space-between;
+}
+.online-advantages .inner > div {
+  width: 272px;
+  height: 272px;
+}
+.online-advantages .delivery,
+.online-advantages .adviser,
+.online-advantages .payment,
+.online-advantages .gift-box,
+.online-advantages .samples {
+  position:relative;
+}
+.online-advantages .image {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  width: 140px;
+  height: 160px;
+}
+.online-advantages .desc {
+  position: absolute;
+  top: 180px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #4a4a4f;
+  line-height: 1.25rem;
+  text-align: center;
+}
+.online-advantages .delivery .image {
+  background-image: url(../assets/images/delivery.svg);
+}
+.online-advantages .delivery .desc {
+  left: 65px;
+}
+.online-advantages .adviser .image {
+  background-image: url(../assets/images/adviser.svg);
+}
+.online-advantages .adviser .desc {
+  width: 292px;
+  left: -30px;
+}
+.online-advantages .payment .image {
+  background-image: url(../assets/images/payment.svg);
+}
+.online-advantages .payment .desc {
+  left: 70px;
+}
+.online-advantages .gift-box .image {
+  background-image: url(../assets/images/gift-box.svg);
+}
+.online-advantages .gift-box .desc {
+  left: 56px;
+}
+.online-advantages .samples .image {
+  background-image: url(../assets/images/samples.svg);
+}
+.online-advantages .samples .desc {
+  left: 43px;
+}
+
+.newsletter {
+  width: 100%;
+  height: 257px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5c5c5c;
+}
+.newsletter .title {
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.newsletter .subtitle {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+.newsletter .email {
+  position: relative;
+  width: 345px;
+  height: 125px;
+}
+.newsletter .email input {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #5c5c5c;
+}
+.newsletter .email label {
+  position: absolute;
+  top: 54px;
+  left: 0;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #5c5c5c;
+  transition: .3s;
+}
+.newsletter .email input:focus ~ label {
+  transform: translateY(-25px);
+}
+.newsletter .email button {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 46px;
+  height: 22px;
+  background-image: url(../assets/images/icon-submit.svg);
+  background-size: 48px 22px;
+  object-position: center;
+  border: none;
+  background-color: #FFF;
+  transition: .2s;
+}
+.newsletter .email button:hover {
+  transform: translateX(5px);
+}
+.newsletter .email .policy {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #4a4a4f;
+}
+.newsletter .email .policy a {
+  position: relative;
+  color: #5c5c5c;
+  font-weight: 500;
+}
+.newsletter .email .policy a::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 100%;
+  border: 0.5px solid #5c5c5c;
+}
+
+footer {
+  width: 100%;
+  height: 393px;
+  display: flex;
+  flex-direction: column;
+}
+footer .inner {
+  flex-direction: column;
+}
+.footer-main {
+  width: 100%;
+  height: 279px;
+  border-top: 0.3px solid #6e6e6e;
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+.footer-main .menu-contents {
+  width: 272px;
+  height: 210px;
+}
+.footer-main .menu-contents .menu-name {
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 20px;
+  color: #646467;
+  margin-bottom: 25px;
+}
+.footer-main .menu-contents .menu-list {
+  width: 100%;
+  height: 30px;
+}
+.footer-main .menu-contents .menu-list a {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 12px;
+  color: #646467;
+  letter-spacing: 1px;
+}
+.footer-main .menu-contents .menu-list a::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width .3s;
+}
+.footer-main .menu-contents .menu-list a:hover::after {
+  width: 100%;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 114px;
+  border-top: 0.3px solid #6e6e6e;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-bottom .section1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #4a4a4f;
+}
+.footer-bottom .section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-bottom .section2 .logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.footer-bottom .section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 59px;
+  height: 59px;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: .3s;
+}
+.to-top.hide {
+  opacity: 0;
+}
+.to-top img {
+  width: 25px;
+  height: 60px;
+}
+
+.swiper {
+  position: relative;
+  width: 1360px;
+  height: 500px;
+}
+.swiper .swiper-slide {
+  height: 500px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: "";
+  display: none;
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 235px;
+  left: 0;
+}
+.swiper-button-next {
+  right: 20px;
+}
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 16px;
+  height: 24px;
+}
+
+.slide1 .rouge .image {
+  background-image: url(../assets/images/baccarat-rouge1.webp);
+}
+.slide .rouge:hover .image {
+  background-image: url(../assets/images/baccarat-rouge2.webp);
+}
+.slide1 .aqua-media .image {
+  background-image: url(../assets/images/aqua-media-cologne-forte1.webp);
+}
+.slide1 .aqua-media:hover .image {
+  background-image: url(../assets/images/aqua-media-cologne-forte2.webp);
+}
+.slide1 .number-724 .image {
+  background-image: url(../assets/images/number-7241.webp);
+}
+.slide1 .number-724:hover .image {
+  background-image: url(../assets/images/number-7242.webp);
+}
+.slide1 .rouge-extrait .image {
+  background-image: url(../assets/images/rouge-extrait1.webp);
+}
+.slide .rouge-extrait:hover .image {
+  background-image: url(../assets/images/rouge-extrait2.webp);
+}
+.slide1 .rose .image {
+  background-image: url(../assets/images/a-la-rose1.webp);
+}
+.slide1 .rose:hover .image {
+  background-image: url(../assets/images/a-la-rose2.webp);
+}
+.slide1 .lhomme .image {
+  background-image: url(../assets/images/lhomme1.webp);
+}
+.slide1 .lhomme:hover .image {
+  background-image: url(../assets/images/lhomme2.webp);
+}
+.slide1 .gentle-gold .image {
+  background-image: url(../assets/images/gentle-fluidity1.webp);
+}
+.slide1 .gentle-gold:hover .image {
+  background-image: url(../assets/images/gentle-fluidity2.webp);
+}
+.slide1 .gentle-silver .image {
+  background-image: url(../assets/images/gentle-fluidity-silver1.webp);
+}
+.slide1 .gentle-silver:hover .image {
+  background-image: url(../assets/images/gentle-fluidity-silver2.webp);
+}
+.slide1 .universalis .image {
+  background-image: url(../assets/images/aqua-universalis1.webp);
+}
+.slide1 .universalis:hover .image {
+  background-image: url(../assets/images/aqua-universalis2.webp);
+}
+.slide1 .vitae .image {
+  background-image: url(../assets/images/aqua-vitae1.webp);
+}
+.slide1 .vitae:hover .image {
+  background-image: url(../assets/images/aqua-vitae2.webp);
+}
+.slide1 .celestia .image {
+  background-image: url(../assets/images/aqua-celestia1.webp);
+}
+.slide1 .celestia:hover .image {
+  background-image: url(../assets/images/aqua-celestia2.webp);
+}
+.slide1 .soir .image {
+  background-image: url(../assets/images/grand-soir1.webp);
+}
+.slide1 .soir:hover .image {
+  background-image: url(../assets/images/grand-soir2.webp);
+}
+.slide1 .matin .image {
+  background-image: url(../assets/images/petit-matin1.webp);
+}
+.slide1 .matin:hover .image {
+  background-image: url(../assets/images/petit-matin2.webp);
+}
+.slide1 .universalis .info {
+  top: 457px;
+}
+.slide1 .universalis .price {
+  top: 477px;
+}
+.slide1 .universalis .info,
+.slide1 .universalis .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: .8s;
+  opacity: 1;
+}
+.slide1 .universalis .fragrance {
+  position: absolute;
+  top: 420px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide1 .aqua-media .name .font,
+.slide1 .universalis .name .font,
+.slide1 .vitae .name .font,
+.slide1 .celestia .name .font {
+  font-family: 'BauerBodoni-Italic';
+}
+.slide1 .rouge,
+.slide1 .aqua-media,
+.slide1 .number-724,
+.slide1 .rouge-extrait,
+.slide1 .rose,
+.slide1 .lhomme,
+.slide1 .gentle-gold,
+.slide1 .gentle-silver,
+.slide1 .universalis,
+.slide1 .vitae,
+.slide1 .celestia,
+.slide1 .soir,
+.slide1 .matin {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.slide1 .rouge .image,
+.slide1 .aqua-media .image,
+.slide1 .number-724 .image,
+.slide1 .rouge-extrait .image,
+.slide1 .rose .image,
+.slide1 .lhomme .image,
+.slide1 .gentle-gold .image,
+.slide1 .gentle-silver .image,
+.slide1 .universalis .image,
+.slide1 .vitae .image,
+.slide1 .celestia .image,
+.slide1 .soir .image,
+.slide1 .matin .image {
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: .8s;
+}
+.slide1 .rouge .name,
+.slide1 .aqua-media .name,
+.slide1 .number-724 .name,
+.slide1 .rouge-extrait .name,
+.slide1 .rose .name,
+.slide1 .lhomme .name,
+.slide1 .gentle-gold .name,
+.slide1 .gentle-silver .name,
+.slide1 .universalis .name,
+.slide1 .vitae .name,
+.slide1 .celestia .name,
+.slide1 .soir .name,
+.slide1 .matin .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: .8s;
+  opacity: 1;
+}
+.slide1 .rouge:hover .name,
+.slide1 .aqua-media:hover .name,
+.slide1 .number-724:hover .name,
+.slide1 .rouge-extrait:hover .name,
+.slide1 .rose:hover .name,
+.slide1 .lhomme:hover .name,
+.slide1 .gentle-gold:hover .name,
+.slide1 .gentle-silver:hover .name,
+.slide1 .universalis:hover .name,
+.slide1 .vitae:hover .name,
+.slide1 .celestia:hover .name,
+.slide1 .soir:hover .name,
+.slide1 .matin:hover .name {
+  opacity: 0;
+}
+.slide1 .rouge .info,
+.slide1 .aqua-media .info,
+.slide1 .number-724 .info,
+.slide1 .rouge-extrait .info,
+.slide1 .rose .info,
+.slide1 .lhomme .info,
+.slide1 .gentle-gold .info,
+.slide1 .gentle-silver .info,
+.slide1 .vitae .info,
+.slide1 .celestia .info,
+.slide1 .soir .info,
+.slide1 .matin .info {
+  top: 422px;
+}
+.slide1 .rouge .price,
+.slide1 .aqua-media .price,
+.slide1 .number-724 .price,
+.slide1 .rouge-extrait .price,
+.slide1 .rose .price,
+.slide1 .lhomme .price,
+.slide1 .gentle-gold .price,
+.slide1 .gentle-silver .price,
+.slide1 .vitae .price,
+.slide1 .celestia .price,
+.slide1 .soir .price,
+.slide1 .matin .price {
+  top: 442px;
+}
+.slide1 .rouge .info,
+.slide1 .rouge .price,
+.slide1 .aqua-media .info,
+.slide1 .aqua-media .price,
+.slide1 .number-724 .info,
+.slide1 .number-724 .price,
+.slide1 .rouge-extrait .info,
+.slide1 .rouge-extrait .price,
+.slide1 .rose .info,
+.slide1 .rose .price,
+.slide1 .lhomme .info,
+.slide1 .lhomme .price,
+.slide1 .gentle-gold .info,
+.slide1 .gentle-gold .price,
+.slide1 .gentle-silver .info,
+.slide1 .gentle-silver .price,
+.slide1 .vitae .info,
+.slide1 .vitae .price,
+.slide1 .celestia .info,
+.slide1 .celestia .price,
+.slide1 .soir .info,
+.slide1 .soir .price,
+.slide1 .matin .info,
+.slide1 .matin .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: .8s;
+  opacity: 1;
+}
+.slide1 .rouge:hover .info,
+.slide1 .rouge:hover .price,
+.slide1 .aqua-media:hover .info,
+.slide1 .aqua-media:hover .price,
+.slide1 .number-724:hover .info,
+.slide1 .number-724:hover .price,
+.slide1 .number-724:hover .price,
+.slide1 .rouge-extrait:hover .info,
+.slide1 .rouge-extrait:hover .price,
+.slide1 .rose:hover .info,
+.slide1 .rose:hover .price,
+.slide1 .lhomme:hover .info,
+.slide1 .lhomme:hover .price,
+.slide1 .gentle-gold:hover .info,
+.slide1 .gentle-gold:hover .price,
+.slide1 .gentle-silver:hover .info,
+.slide1 .gentle-silver:hover .price,
+.slide1 .universalis:hover .info,
+.slide1 .universalis:hover .price,
+.slide1 .vitae:hover .info,
+.slide1 .vitae:hover .price,
+.slide1 .celestia:hover .info,
+.slide1 .celestia:hover .price,
+.slide1 .soir:hover .info,
+.slide1 .soir:hover .price,
+.slide1 .matin:hover .info,
+.slide1 .matin:hover .price {
+  opacity: 0;
+}
+.slide1 .rouge .fragrance,
+.slide1 .aqua-media .fragrance,
+.slide1 .number-724 .fragrance,
+.slide1 .rouge-extrait .fragrance,
+.slide1 .rose .fragrance,
+.slide1 .lhomme .fragrance,
+.slide1 .gentle-gold .fragrance,
+.slide1 .gentle-silver .fragrance,
+.slide1 .vitae .fragrance,
+.slide1 .celestia .fragrance,
+.slide1 .soir .fragrance,
+.slide1 .matin .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide1 .rouge .floral,
+.slide1 .rouge-extrait .floral,
+.slide1 .universalis .citrus,
+.slide1 .vitae .floral,
+.slide1 .celestia .citrus,
+.slide1 .matin .citrus {
+  position: relative;
+  opacity: 0;
+}
+.slide1 .rouge:hover .floral,
+.slide1 .rouge-extrait:hover .floral,
+.slide1 .universalis:hover .citrus,
+.slide1 .vitae:hover .floral,
+.slide1 .celestia:hover .citrus,
+.slide1 .matin:hover .citrus {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .3s;
+}
+.slide1 .rouge:hover .floral::after,
+.slide1 .rouge-extrait:hover .floral::after,
+.slide1 .universalis:hover .citrus::after,
+.slide1 .vitae:hover .floral::after,
+.slide1 .celestia:hover .citrus::after,
+.slide1 .matin:hover .citrus::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .1s;
+}
+.slide1 .rouge .ambery,
+.slide1 .rouge-extrait .ambery,
+.slide1 .universalis .woody,
+.slide1 .vitae .citrus,
+.slide1 .celestia .floral,
+.slide1 .matin .floral {
+  position: relative;
+  opacity: 0;
+}
+.slide1 .rouge:hover .ambery,
+.slide1 .rouge-extrait:hover .ambery,
+.slide1 .universalis:hover .woody,
+.slide1 .vitae:hover .citrus,
+.slide1 .celestia:hover .floral,
+.slide1 .matin:hover .floral {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .55s;
+}
+.slide1 .rouge:hover .ambery::after,
+.slide1 .rouge-extrait:hover .ambery::after,
+.slide1 .universalis:hover .woody::after,
+.slide1 .vitae:hover .citrus::after,
+.slide1 .celestia:hover .floral::after,
+.slide1 .matin:hover .floral::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .35s;
+}
+.slide1 .rouge .woody,
+.slide1 .rouge-extrait .woody,
+.slide1 .universalis .musky,
+.slide1 .vitae .woody,
+.slide1 .celestia .musky,
+.slide1 .matin .woody {
+  opacity: 0;
+}
+.slide1 .rouge:hover .woody,
+.slide1 .rouge-extrait:hover .woody,
+.slide1 .universalis:hover .musky,
+.slide1 .vitae:hover .woody,
+.slide1 .celestia:hover .musky,
+.slide1 .matin:hover .woody {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .75s;
+}
+
+.slide1 .aqua-media .herbal,
+.slide1 .number-724 .floral,
+.slide1 .rose .floral,
+.slide1 .gentle-gold .ambery,
+.slide1 .gentle-silver .aromatic,
+.slide1 .soir .woody {
+  position: relative;
+  opacity: 0;
+}
+.slide1 .aqua-media:hover .herbal,
+.slide1 .number-724:hover .floral,
+.slide1 .rose:hover .floral,
+.slide1 .gentle-gold:hover .ambery,
+.slide1 .gentle-silver:hover .aromatic,
+.slide1 .soir:hover .woody {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .3s;
+}
+.slide1 .aqua-media:hover .herbal::after,
+.slide1 .number-724:hover .floral::after,
+.slide1 .rose:hover .floral::after,
+.slide1 .gentle-gold:hover .ambery::after,
+.slide1 .gentle-silver:hover .aromatic::after,
+.slide1 .soir:hover .woody::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: .2s;
+  transition-delay: .1s;
+}
+.slide1 .aqua-media .citrus,
+.slide1 .number-724 .musky,
+.slide1 .rose .musky,
+.slide1 .gentle-gold .musky,
+.slide1 .gentle-silver .woody,
+.slide1 .soir .ambery {
+  opacity: 0;
+}
+.slide1 .aqua-media:hover .citrus,
+.slide1 .number-724:hover .musky,
+.slide1 .rose:hover .musky,
+.slide1 .gentle-gold:hover .musky,
+.slide1 .gentle-silver:hover .woody,
+.slide1 .soir:hover .ambery {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .55s;
+}
+
+.slide1 .lhomme .woody {
+  position: relative;
+  opacity: 0;
+}
+.slide1 .lhomme:hover .woody {
+  opacity: 1;
+  transition: .3s;
+  transition-delay: .3s;
 }

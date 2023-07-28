@@ -2,18 +2,58 @@ body {
   margin: 0;
 }
 
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.xsmall-text {
+  font-size: 10px;
+}
+
 .small-text {
   font-size: 12px;
 }
 
-.large-text {
+.weight400 {
+  font-weight: 400;
+}
+
+.fs20 {
   font-size: 20px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs40 {
+  font-size: 40px;
 }
 
 .thick {
   font-weight: bold;
 }
 
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
 .white-text {
   color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+.gray-text {
+  color: gray;
 }

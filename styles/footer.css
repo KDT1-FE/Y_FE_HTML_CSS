@@ -53,7 +53,34 @@ color: #cbb0ff;
     margin-top: 20px;
     margin-left: 20px;
 }
+
 .hr {
     border: 0.5px solid #999999; /* 테두리 스타일과 색상 설정 */
     margin: 0; /* 위 아래 여백 조절 */
   }
+.footer2-div1,
+.footer2-div2,
+.footer2-div3,
+.footer2-div4,
+.footer2-div5,
+.footer2-div6 {
+    position: relative;
+    padding: 10px;
+}
+
+
+.footer2-div1::after,
+.footer2-div2::after,
+.footer2-div3::after,
+.footer2-div4::after,
+.footer2-div5::after
+{
+    content: " ";
+    position: absolute;
+    right: -70px;
+    top:50%;
+    width: 1px;
+    height: 30%;
+    background-color: #999999;
+    transform: translateY(-50%);
+}

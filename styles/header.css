@@ -1,13 +1,46 @@
-
-.nav1 {
+.nav1{
     display: flex;
     justify-content: flex-end;
     background-color: #6a6fb3;
     align-items: center;
     border-bottom: 1px solid #f0f0f0;
-
 }
+.Korean,
+.Arrow, 
+.SSS, 
+.Potal {
+    position: relative;
+}
+
+.Korean::after,
+.Arrow::after, 
+.SSS::after, 
+.Potal::after {
+    content: " ";
+    position: absolute;
+    left: -10px;
+    top:50%;
+    width: 1px;
+    height: 210%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+.Potal {
+    position: relative;
+}
+.Potal::before{
+    content: " ";
+    position: absolute;
+    left: 60px;
+    top:50%;
+    width: 1px;
+    height: 210%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
 .nav2 {
+    position: relative;
     height: 120px;
     background-color: white;
     color: #333;
@@ -19,19 +52,62 @@
     margin: 70px;
 
 }
-.menu-1,
-.menu-2,
-.menu-3,
-.menu-4,
-.menu-5,
-.menu-6,
-.menu-7,
-.menu-8 {
-    font-size: 20px;
+a {
     font-family: 'Noto Light', sans-serif;
-    margin: 23px;
+    font-size: 16px;
     color: #333;
-}
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #6a6fb3;
+  }
+
+/* 드롭다운 버튼 스타일 */
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  .dropbtn{
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* 드롭다운 메뉴 스타일 */
+  .dropdown-content {
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    display: none; /* 처음에는 드롭다운 메뉴 숨김 */
+    background-color: lightgray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* 드롭다운 메뉴를 나타내도록 설정 */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    width: 100%;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* 드롭다운 메뉴 항목 호버 시 스타일 */
+  .dropdown-content a:hover {
+    color: #6a6fb3;
+  }
+  
 
 .LOGIN,
 .SEARCH,

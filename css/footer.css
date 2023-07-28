@@ -1,0 +1,109 @@
+/* Footer */
+footer {
+  width: 100%;
+  height: 280px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 8455px;
+  overflow: hidden;
+}
+footer .green-circle {
+  position: absolute;
+  bottom: -165px;
+  left: 70px;
+}
+footer .inner {
+  position: relative;
+  padding: 37px 40px 41px;
+}
+.inner > img {
+  width: 84px;
+  height: 62px;
+  position: absolute;
+  bottom: 40px;
+  left: 370px;
+}
+.family-site {
+  width: 240px;
+  height: 46px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #e8e8e8;
+  border-radius: 23px;
+  position: absolute;
+  top: 23px;
+  right: 30px;
+  cursor: pointer;
+}
+.family-site span {
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+.family-site span.material-icons {
+  font-size: 20px;
+  margin-right: -10px;
+}
+.sns {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  height: 46px;
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+.sns a {
+  width: 46px;
+  height: 46px;
+}
+.nongshim-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nongshim-info .list1 {
+  height: 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nongshim-info .list1 a {
+  color: #333;
+  padding: 0 10px;
+  font-size: 15px;
+}
+.nongshim-info .list1 a.green {
+  color: #96c11f;
+}
+.nongshim-info .list1 a.orange {
+  color: #ff6216;
+}
+.nongshim-info .list2 {
+  height: 56px;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.nongshim-info .list2 b,
+.nongshim-info .list2 span {
+  padding: 0 10px;
+}
+.nongshim-info .list2 b {
+  font-weight: 600;
+}
+.nongshim-info .list2 .seprate {
+  padding: 0;
+}
+.nongshim-info .copyright {
+  color: #666;
+  padding-left: 10px;
+  font-size: 14px;
+}

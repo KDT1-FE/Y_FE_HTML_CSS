@@ -1,0 +1,16 @@
+<svg id="페이스북" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5064a8;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="23" cy="23" r="23"/>
+  <path id="facebook" class="cls-2" d="M1274.76,7804.59h-3.1v-2.49a0.969,0.969,0,0,1,1.05-.93h2.01v-3.35l-2.3-.02c-3.14,0-3.86,2.5-3.86,4.1v2.69h-2.28v3.45h2.28v9.32h3.1v-9.32h2.62Z" transform="translate(-1248 -7785)"/>
+</svg>

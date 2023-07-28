@@ -15,36 +15,39 @@ const mySwiper = new Swiper('.swiper', {
   spaceBetween: 10,
   navigation: {
     prevEl: '.swiper-button-prev',
-    nextEl: '.swiper-button-next'
-  }
-})
+    nextEl: '.swiper-button-next',
+  },
+});
 
 const $toTop = document.querySelector('main .to-top');
 const $logoToTop = document.querySelector('.section2 .logo');
 
-window.addEventListener('scroll', _.throttle(() => {
-  if(window.scrollY < 830) {
-    console.log('scroll');
-    $toTop.classList.add('hide');
-  } else {
-    $toTop.classList.remove('hide');
-  }
-}, 300));
+window.addEventListener(
+  'scroll',
+  _.throttle(() => {
+    if (window.scrollY < 830) {
+      console.log('scroll');
+      $toTop.classList.add('hide');
+    } else {
+      $toTop.classList.remove('hide');
+    }
+  }, 300)
+);
 
 $toTop.addEventListener('click', () => {
-  gsap.to(window, .7, {
-    scrollTo: 0
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
   });
 });
 $logoToTop.addEventListener('click', () => {
-  gsap.to(window, .7, {
-    scrollTo: 0
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
   });
 });
 
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if(!entry.isIntersecting) {
+    if (!entry.isIntersecting) {
       return;
     }
     entry.target.classList.add('show');
@@ -56,7 +59,7 @@ $ios.forEach((element) => {
 });
 const ioContent = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if(!entry.isIntersecting) {
+    if (!entry.isIntersecting) {
       return;
     }
     entry.target.classList.add('show');
@@ -69,7 +72,7 @@ $ioContents.forEach((element) => {
 
 const ioText = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if(!entry.isIntersecting) {
+    if (!entry.isIntersecting) {
       return;
     }
     entry.target.classList.add('show');
@@ -82,7 +85,7 @@ $ioText.forEach((element) => {
 
 const io2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if(!entry.isIntersecting) {
+    if (!entry.isIntersecting) {
       return;
     }
     entry.target.classList.add('show');
@@ -94,7 +97,7 @@ $io2.forEach((element) => {
 });
 const io3 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if(!entry.isIntersecting) {
+    if (!entry.isIntersecting) {
       return;
     }
     entry.target.classList.add('show');

@@ -1,28 +1,33 @@
 @font-face {
   font-family: 'BauerBodoni';
-  src: url(../assets/fonts/BauerBodoni.woff) format('woff'),
+  src:
+    url(../assets/fonts/BauerBodoni.woff) format('woff'),
     url(../assets/fonts/BauerBodoni.woff2) format('woff2');
 }
 @font-face {
   font-family: 'BauerBodoni-Italic';
-  src: url(../assets/fonts/BauerBodoni-italic.woff) format('woff'),
+  src:
+    url(../assets/fonts/BauerBodoni-italic.woff) format('woff'),
     url(../assets/fonts/BauerBodoni-italic.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk';
   font-weight: 400;
-  src: url(../assets/fonts/PostGrotesk-Light.woff) format('woff'),
+  src:
+    url(../assets/fonts/PostGrotesk-Light.woff) format('woff'),
     url(../assets/fonts/PostGrotesk-Light.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk';
   font-weight: 500;
-  src: url(../assets/fonts/PostGrotesk-Book.woff) format('woff'),
+  src:
+    url(../assets/fonts/PostGrotesk-Book.woff) format('woff'),
     url(../assets/fonts/PostGrotesk-Book.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk-Bold';
-  src: url(../assets/fonts/PostGrotesk-Medium.woff) format('woff'),
+  src:
+    url(../assets/fonts/PostGrotesk-Medium.woff) format('woff'),
     url(../assets/fonts/PostGrotesk-Medium.woff2) format('woff2');
 }
 body {
@@ -40,10 +45,10 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #fff;
   width: 100%;
   height: 107px;
-  border-bottom: 1px solid #DFDFDF;
+  border-bottom: 1px solid #dfdfdf;
   z-index: 1000;
 }
 .inner {
@@ -93,13 +98,13 @@ header .menu-container .menu li .menu-name {
   color: #646467;
 }
 header .menu-container .menu li .menu-name::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .5s;
+  transition: width 0.5s;
 }
 header .menu-container .menu li:hover .menu-name::after {
   width: 100%;
@@ -171,8 +176,8 @@ header .menu-container .icons li .cart:hover,
   left: 100vw;
   width: 482px;
   height: 100vh;
-  background-color: #FFF;
-  transition: .3s;
+  background-color: #fff;
+  transition: 0.3s;
 }
 .cart-container.show {
   transform: translateX(-482px);
@@ -254,7 +259,7 @@ header .menu-container .icons li .cart:hover,
   left: 40px;
   font-family: BauerBodoni;
   font-size: 3.4375rem;
-  color: #FFF;
+  color: #fff;
   line-height: 4rem;
 }
 .main-video .button {
@@ -263,7 +268,7 @@ header .menu-container .icons li .cart:hover,
   right: 40px;
   width: 230px;
   height: 50px;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,14 +282,14 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .main-video .button .discover::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 36px;
   right: 82px;
   width: 67px;
   border-bottom: 1px solid #646467;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 .main-video .button:hover .discover::after {
   opacity: 1;
@@ -305,7 +310,7 @@ header .menu-container .icons li .cart:hover,
   width: 100%;
   height: 364px;
   background-size: 364px 364px;
-  transition: .8s;
+  transition: 0.8s;
 }
 .product .gold:hover .image {
   background-image: url(../assets/images/globe-trotter-gold2.webp);
@@ -350,7 +355,7 @@ header .menu-container .icons li .cart:hover,
   width: 100%;
   height: 364px;
   background-size: 364px 364px;
-  transition: .8s;
+  transition: 0.8s;
 }
 .product .zinc:hover .image {
   background-image: url(../assets/images/globe-trotter-zinc2.webp);
@@ -395,7 +400,7 @@ header .menu-container .icons li .cart:hover,
   width: 100%;
   height: 364px;
   background-size: 364px 364px;
-  transition: .8s;
+  transition: 0.8s;
 }
 .product .femme:hover .image {
   background-image: url(../assets/images/amyris-femme2.webp);
@@ -411,7 +416,7 @@ header .menu-container .icons li .cart:hover,
   line-height: 2.2rem;
   color: #646467;
   text-align: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .femme:hover .name {
@@ -433,7 +438,7 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
   display: flex;
   justify-content: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .femme:hover .info,
@@ -458,11 +463,11 @@ header .menu-container .icons li .cart:hover,
 }
 .product .femme:hover .floral {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .product .femme:hover .floral::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -470,16 +475,16 @@ header .menu-container .icons li .cart:hover,
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .1s;
+  transition: 0.2s;
+  transition-delay: 0.1s;
 }
 .product .femme .fruity {
   opacity: 0;
 }
 .product .femme:hover .fruity {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .55s;
+  transition: 0.3s;
+  transition-delay: 0.55s;
 }
 
 .product .homme {
@@ -492,7 +497,7 @@ header .menu-container .icons li .cart:hover,
   width: 100%;
   height: 364px;
   background-size: 364px 364px;
-  transition: .8s;
+  transition: 0.8s;
 }
 .product .homme:hover .image {
   background-image: url(../assets/images/amyris-homme2.webp);
@@ -508,7 +513,7 @@ header .menu-container .icons li .cart:hover,
   line-height: 2.2rem;
   color: #646467;
   text-align: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .homme:hover .name {
@@ -530,7 +535,7 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
   display: flex;
   justify-content: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .homme:hover .info,
@@ -555,11 +560,11 @@ header .menu-container .icons li .cart:hover,
 }
 .product .homme:hover .aromatic {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .product .homme:hover .aromatic::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -567,16 +572,16 @@ header .menu-container .icons li .cart:hover,
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .1s;
+  transition: 0.2s;
+  transition-delay: 0.1s;
 }
 .product .homme .woody {
   opacity: 0;
 }
 .product .homme:hover .woody {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .55s;
+  transition: 0.3s;
+  transition-delay: 0.55s;
 }
 
 .product .rouge {
@@ -589,7 +594,7 @@ header .menu-container .icons li .cart:hover,
   width: 100%;
   height: 364px;
   background-size: 364px 364px;
-  transition: .8s;
+  transition: 0.8s;
 }
 .product .rouge .name {
   position: absolute;
@@ -602,7 +607,7 @@ header .menu-container .icons li .cart:hover,
   line-height: 2.2rem;
   color: #646467;
   text-align: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .rouge:hover .name {
@@ -624,7 +629,7 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
   display: flex;
   justify-content: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .rouge:hover .info,
@@ -649,11 +654,11 @@ header .menu-container .icons li .cart:hover,
 }
 .product .rouge:hover .floral {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .product .rouge:hover .floral::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -661,8 +666,8 @@ header .menu-container .icons li .cart:hover,
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .1s;
+  transition: 0.2s;
+  transition-delay: 0.1s;
 }
 .product .rouge .ambery {
   position: relative;
@@ -670,11 +675,11 @@ header .menu-container .icons li .cart:hover,
 }
 .product .rouge:hover .ambery {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .55s;
+  transition: 0.3s;
+  transition-delay: 0.55s;
 }
 .product .rouge:hover .ambery::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -682,16 +687,16 @@ header .menu-container .icons li .cart:hover,
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .35s;
+  transition: 0.2s;
+  transition-delay: 0.35s;
 }
 .product .rouge .woody {
   opacity: 0;
 }
 .product .rouge:hover .woody {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .75s;
+  transition: 0.3s;
+  transition-delay: 0.75s;
 }
 
 .product .number-724 {
@@ -704,7 +709,7 @@ header .menu-container .icons li .cart:hover,
   width: 100%;
   height: 364px;
   background-size: 364px 364px;
-  transition: .8s;
+  transition: 0.8s;
 }
 .product .number-724 .name {
   position: absolute;
@@ -717,7 +722,7 @@ header .menu-container .icons li .cart:hover,
   line-height: 2.2rem;
   color: #646467;
   text-align: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .number-724:hover .name {
@@ -739,7 +744,7 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
   display: flex;
   justify-content: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .product .number-724:hover .info,
@@ -764,11 +769,11 @@ header .menu-container .icons li .cart:hover,
 }
 .product .number-724:hover .floral {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .product .number-724:hover .floral::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -776,16 +781,16 @@ header .menu-container .icons li .cart:hover,
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .1s;
+  transition: 0.2s;
+  transition-delay: 0.1s;
 }
 .product .number-724 .musky {
   opacity: 0;
 }
 .product .number-724:hover .musky {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .55s;
+  transition: 0.3s;
+  transition-delay: 0.55s;
 }
 
 .content {
@@ -814,13 +819,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .content .fragrance-finder .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .fragrance-finder .intro .title:hover::after {
   width: 100%;
@@ -842,13 +847,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .content .fragrance-finder .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .fragrance-finder .link:hover::after {
   width: 100%;
@@ -872,13 +877,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .content .token-of-appreciation .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .token-of-appreciation .intro .title:hover::after {
   width: 100%;
@@ -900,13 +905,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .content .token-of-appreciation .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .token-of-appreciation .link:hover::after {
   width: 100%;
@@ -948,13 +953,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .text .body .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .text .body .link:hover::after {
   width: 100%;
@@ -979,13 +984,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .content .number-724 .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .number-724 .intro .title:hover::after {
   width: 100%;
@@ -1007,13 +1012,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .content .number-724 .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .number-724 .link:hover::after {
   width: 100%;
@@ -1038,13 +1043,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .content .aqua-media-cologne-forte .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .aqua-media-cologne-forte .intro .title:hover::after {
   width: 100%;
@@ -1069,13 +1074,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .content .aqua-media-cologne-forte .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .aqua-media-cologne-forte .link:hover::after {
   width: 100%;
@@ -1100,13 +1105,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .content .scented-candles .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .scented-candles .intro .title:hover::after {
   width: 100%;
@@ -1128,13 +1133,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .content .scented-candles .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .scented-candles .link:hover::after {
   width: 100%;
@@ -1158,13 +1163,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .content .bath-and-body .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .bath-and-body .intro .title:hover::after {
   width: 100%;
@@ -1186,13 +1191,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .content .bath-and-body .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .content .bath-and-body .link:hover::after {
   width: 100%;
@@ -1224,13 +1229,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .last-content .womens-fragrances .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .last-content .womens-fragrances .intro .title:hover::after {
   width: 100%;
@@ -1252,13 +1257,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .last-content .womens-fragrances .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .last-content .womens-fragrances .link:hover::after {
   width: 100%;
@@ -1283,13 +1288,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .last-content .mens-fragrances .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .last-content .mens-fragrances .intro .title:hover::after {
   width: 100%;
@@ -1311,13 +1316,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .last-content .mens-fragrances .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .last-content .mens-fragrances .link:hover::after {
   width: 100%;
@@ -1342,13 +1347,13 @@ header .menu-container .icons li .cart:hover,
   display: inline;
 }
 .last-content .unisex-fragrances .intro .title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
   border-bottom: 1.2px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .last-content .unisex-fragrances .intro .title:hover::after {
   width: 100%;
@@ -1370,13 +1375,13 @@ header .menu-container .icons li .cart:hover,
   color: #646467;
 }
 .last-content .unisex-fragrances .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .last-content .unisex-fragrances .link:hover::after {
   width: 100%;
@@ -1398,7 +1403,7 @@ header .menu-container .icons li .cart:hover,
 .online-advantages .payment,
 .online-advantages .gift-box,
 .online-advantages .samples {
-  position:relative;
+  position: relative;
 }
 .online-advantages .image {
   position: absolute;
@@ -1490,7 +1495,7 @@ header .menu-container .icons li .cart:hover,
   font-size: 12px;
   letter-spacing: 1px;
   color: #5c5c5c;
-  transition: .3s;
+  transition: 0.3s;
 }
 .newsletter .email input:focus ~ label {
   transform: translateY(-25px);
@@ -1505,8 +1510,8 @@ header .menu-container .icons li .cart:hover,
   background-size: 48px 22px;
   object-position: center;
   border: none;
-  background-color: #FFF;
-  transition: .2s;
+  background-color: #fff;
+  transition: 0.2s;
 }
 .newsletter .email button:hover {
   transform: translateX(5px);
@@ -1527,7 +1532,7 @@ header .menu-container .icons li .cart:hover,
   font-weight: 500;
 }
 .newsletter .email .policy a::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
@@ -1575,13 +1580,13 @@ footer .inner {
   letter-spacing: 1px;
 }
 .footer-main .menu-contents .menu-list a::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 2px);
   left: 0;
   width: 0;
   border-bottom: 1px solid #646467;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 .footer-main .menu-contents .menu-list a:hover::after {
   width: 100%;
@@ -1632,7 +1637,7 @@ footer .inner {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
 .to-top.hide {
   opacity: 0;
@@ -1649,14 +1654,14 @@ footer .inner {
 }
 .swiper .swiper-slide {
   height: 500px;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .swiper-button-prev::after,
-.swiper-button-next::after{
-  content: "";
+.swiper-button-next::after {
+  content: '';
   display: none;
 }
 .swiper-button-prev {
@@ -1767,7 +1772,7 @@ footer .inner {
   color: #646467;
   display: flex;
   justify-content: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .slide1 .universalis .fragrance {
@@ -1822,7 +1827,7 @@ footer .inner {
   width: 100%;
   height: 364px;
   background-size: 364px 364px;
-  transition: .8s;
+  transition: 0.8s;
 }
 .slide1 .rouge .name,
 .slide1 .aqua-media .name,
@@ -1847,7 +1852,7 @@ footer .inner {
   line-height: 2.2rem;
   color: #646467;
   text-align: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .slide1 .rouge:hover .name,
@@ -1925,7 +1930,7 @@ footer .inner {
   color: #646467;
   display: flex;
   justify-content: center;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 1;
 }
 .slide1 .rouge:hover .info,
@@ -1997,8 +2002,8 @@ footer .inner {
 .slide1 .celestia:hover .citrus,
 .slide1 .matin:hover .citrus {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .slide1 .rouge:hover .floral::after,
 .slide1 .rouge-extrait:hover .floral::after,
@@ -2006,7 +2011,7 @@ footer .inner {
 .slide1 .vitae:hover .floral::after,
 .slide1 .celestia:hover .citrus::after,
 .slide1 .matin:hover .citrus::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -2014,8 +2019,8 @@ footer .inner {
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .1s;
+  transition: 0.2s;
+  transition-delay: 0.1s;
 }
 .slide1 .rouge .ambery,
 .slide1 .rouge-extrait .ambery,
@@ -2033,8 +2038,8 @@ footer .inner {
 .slide1 .celestia:hover .floral,
 .slide1 .matin:hover .floral {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .55s;
+  transition: 0.3s;
+  transition-delay: 0.55s;
 }
 .slide1 .rouge:hover .ambery::after,
 .slide1 .rouge-extrait:hover .ambery::after,
@@ -2042,7 +2047,7 @@ footer .inner {
 .slide1 .vitae:hover .citrus::after,
 .slide1 .celestia:hover .floral::after,
 .slide1 .matin:hover .floral::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -2050,8 +2055,8 @@ footer .inner {
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .35s;
+  transition: 0.2s;
+  transition-delay: 0.35s;
 }
 .slide1 .rouge .woody,
 .slide1 .rouge-extrait .woody,
@@ -2068,8 +2073,8 @@ footer .inner {
 .slide1 .celestia:hover .musky,
 .slide1 .matin:hover .woody {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .75s;
+  transition: 0.3s;
+  transition-delay: 0.75s;
 }
 
 .slide1 .aqua-media .herbal,
@@ -2088,8 +2093,8 @@ footer .inner {
 .slide1 .gentle-silver:hover .aromatic,
 .slide1 .soir:hover .woody {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 .slide1 .aqua-media:hover .herbal::after,
 .slide1 .number-724:hover .floral::after,
@@ -2097,7 +2102,7 @@ footer .inner {
 .slide1 .gentle-gold:hover .ambery::after,
 .slide1 .gentle-silver:hover .aromatic::after,
 .slide1 .soir:hover .woody::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   right: 6px;
@@ -2105,8 +2110,8 @@ footer .inner {
   height: 5.5px;
   background-color: RGB(136, 106, 51);
   border-radius: 50%;
-  transition: .2s;
-  transition-delay: .1s;
+  transition: 0.2s;
+  transition-delay: 0.1s;
 }
 .slide1 .aqua-media .citrus,
 .slide1 .number-724 .musky,
@@ -2123,8 +2128,8 @@ footer .inner {
 .slide1 .gentle-silver:hover .woody,
 .slide1 .soir:hover .ambery {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .55s;
+  transition: 0.3s;
+  transition-delay: 0.55s;
 }
 
 .slide1 .lhomme .woody {
@@ -2133,8 +2138,8 @@ footer .inner {
 }
 .slide1 .lhomme:hover .woody {
   opacity: 1;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .io {

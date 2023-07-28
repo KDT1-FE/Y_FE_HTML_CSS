@@ -1,0 +1,113 @@
+.section03 {
+  width: 100vw;
+  height: 100%;
+}
+
+.section03__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1272px;
+  padding: 250px 0 200px 0;
+}
+
+.section03__inner-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 100%;
+  animation-name: section03-fadeIn;
+  animation-duration: 1s;
+}
+
+.section03__main-text-container {
+  z-index: 5;
+  width: 100%;
+}
+
+.section03__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3182f6;
+  margin-bottom: 30px;
+}
+
+.section03__desc {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.section03__image-container01 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 600px;
+  height: 936px;
+  top: 5%;
+  align-self: flex-end;
+}
+
+.section03__iPhone01 {
+  position: absolute;
+  width: 600px;
+  height: 936px;
+  top: 0%;
+  left: 21.5%;
+  z-index: 2;
+}
+
+.section03__image-home01 {
+  position: relative;
+  width: 342px;
+  height: 749px;
+}
+
+.section03__image-container02 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 936px;
+  top: 30%;
+  align-self: flex-start;
+}
+
+.section03__iPhone02 {
+  position: absolute;
+  width: 600px;
+  height: 936px;
+  right: 21.5%;
+  z-index: 2;
+}
+
+.section03__image-home02 {
+  position: relative;
+  width: 342px;
+  height: 749px;
+}
+
+.section03__sub-desc {
+  position: relative;
+  align-self: flex-end;
+  top: 700px;
+  right: 25px;
+  font-size: 23px;
+  font-weight: 500;
+  color: rgb(51, 61, 75);
+  line-height: 1.5;
+}
+
+@keyframes section03-fadeIn {
+  from {
+    opacity: 0;
+    top: 5%;
+  }
+  to {
+    opacity: 1;
+    top: 0%;
+  }
+}

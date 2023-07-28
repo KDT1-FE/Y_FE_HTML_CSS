@@ -12,6 +12,8 @@ body {
     min-width: 1200px;
     width: 100%;
 }
+
+/* main banner */
 .swiper-container {
     height: 790px;
     position: relative;
@@ -89,4 +91,72 @@ body {
 .swiper-button-prev::after,
 .swiper-button-next::after {
     display: none;
+}
+
+
+/* recommend sectio */
+#main-recommend {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    border-bottom: 1px solid #eee;
+}
+.recommend__title {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    min-width: 1200px;
+    font-family: 'Noto Sans KR';
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    letter-spacing: 0px;
+}
+.recommend__lists {
+    display: inline-flex;
+    width: 1472px;
+    justify-content: space-between;
+}
+.recommend__lists figure {
+    display: inline-block;
+    padding: 32px 16px;
+    margin: 0;
+}
+.recommend__lists figure > img {
+    display: inline-block;
+    width: 213px;
+    height: 213px;
+}
+.recommend__product__title {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    text-align: start;
+    max-width: 210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-family: "Spoqa Han Sans";
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    letter-spacing: 0px;
+}
+.recommend__product__price {
+    display: inline-block;
+    width: 100%;
+    margin-top: 3px;
+    font-size: 12px;
+    max-width: 210px;
+    font-family: "Spoqa Han Sans";
+    font-weight: normal;
+    font-style: normal;
+    text-align: start;
+    text-decoration: none;
+    color: rgb(200, 10, 30);
+    letter-spacing: 0px;
 }

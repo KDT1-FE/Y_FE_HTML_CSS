@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+/* 사용하는 태그들 reset */
+body,div,ul,li,h1,p,button {
+  margin: 0;
+  padding: 0;
+}
+body,h1,button {
+  font: normal 14px/1 "Noto Sans KR", sans-serif;
+  color: #222;
+  font-weight: 400;
+}
+body {
+  text-align: left;
+  word-break: break-word;
+  background: #f9f9f9;
+}
+li {
+  list-style: none;
+}
+button {
+  vertical-align: middle;
+  cursor: pointer;
+  background: none;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+

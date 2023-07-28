@@ -1,0 +1,492 @@
+/* 로그인 화면 */
+.login {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  background: #f3f8fa;
+  justify-content: center;
+  align-items: center;
+}
+.login_left {
+  display: flex;
+  justify-content: right;
+  width: 40%;
+  height: 100vh;
+  min-height: 800px;
+  padding: 0 100px 0 20px;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+.login_left_box {
+  position: relative;
+  max-width: 380px;
+  top: 25%;
+}
+.login_right {
+  width: 60%;
+  height: 100vh;
+  min-height: 800px;
+  padding: 0 20px 0 100px;
+  background-image: url("../images/main/login_bg01.png"),
+    url("../images/main/main_bg02.png");
+  background-position: left top, center bottom;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+.login_right_box {
+  position: relative;
+  max-width: 757px;
+  top: 24%;
+}
+
+/* 로그인 로고*/
+.logo_top_wrap {
+  display: flex;
+  padding-bottom: 22px;
+}
+.logo_top_wrap h1 a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 170px;
+  height: 34px;
+  background: url("../images/common/logo.png") no-repeat 0 0;
+}
+.logo_top_wrap h1 span {
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 300;
+  color: #009bcb;
+}
+
+/* 로그인 버튼  */
+.login_btn_w {
+  padding-bottom: 15px;
+}
+.login_btn_w .btn_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  height: 83px;
+  line-height: 81px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  background: #009bcb;
+  border: 1px solid #009bcb;
+  border-radius: 3px;
+}
+.login_btn_w .btn_login span {
+  display: inline-block;
+  padding: 8px 0 10px 55px;
+  background: url("../images/main/login_icon03.png") no-repeat 0 50%;
+}
+.login_btn_w .btn_login2 {
+  margin-top: 21px;
+  width: 100%;
+  color: #234568;
+  height: 83px;
+  line-height: 81px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  background: #e3f2f2;
+  border: 1px solid #e3f2f2;
+  border-radius: 3px;
+}
+.login_btn_w .btn_login2 span {
+  line-height: normal;
+  display: inline-block;
+  padding: 10px 50px;
+  background: url("../images/main/login_icon07.png") no-repeat left center,
+    url("../images/main/login_icon10.png") no-repeat right center;
+  background-size: 35px, auto;
+}
+.login_btn_w .text_01 {
+  text-align: right;
+  padding-top: 10px;
+}
+.login_btn_w .text_01 a {
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #111;
+  font-size: 14px;
+  border-bottom: 1px solid #7c7f88;
+}
+.login_btn_w .text_02 {
+  text-align: center;
+  padding-top: 20px;
+}
+.login_btn_w .text_02 span {
+  display: inline-block;
+  height: 50px;
+  padding-left: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #111;
+  background: url("../images/main/login_icon01.png") no-repeat 0 center;
+}
+
+.login_btn_w .text_03 {
+  display: flex;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+.login_btn_w .text_03 li {
+  width: 50%;
+}
+.login_btn_w .text_03 li div {
+  padding-top: 5px;
+}
+.login_btn_w .text_03 li div .text01 {
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #234568;
+}
+.login_btn_w .text_03 li div .text02 {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+  border-bottom: 1px solid #b5b5b5;
+}
+.login_btn_w .text_03 + .text_03 li div .text01 {
+  color: #603979;
+}
+.login_btn_w .text_03 li div.bg01 {
+  padding-left: 66px;
+  background: url("../images/main/login_icon05.png") no-repeat 10px center;
+}
+.login_btn_w .text_03 li div.bg02 {
+  padding-left: 75px;
+  background: url("../images/main/login_icon12.png") no-repeat 16px center;
+}
+.login_btn_w .text_03 li div.bg03 {
+  padding-left: 66px;
+  background: url("../images/main/login_icon11.png") no-repeat 14px center;
+}
+.login_btn_w .text_03 li div.bg04 {
+  padding-left: 75px;
+  background: url("../images/main/timetable.png") no-repeat 11px center;
+}
+
+.login_btn_w .text_04 {
+  padding-top: 15px;
+}
+.login_btn_w .text_04 span {
+  display: inline-block;
+  padding: 7px 0 7px 33px;
+  color: #131d36;
+  background: url("../images/main/login_icon04.png") no-repeat 3px center;
+}
+
+.login_link_w {
+  display: flex;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fff;
+}
+.login_link_w li {
+  height: 43px;
+}
+.login_link_w li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.login_link_w li.login_link1 {
+  font-weight: 900;
+  flex: 32.5;
+}
+.login_link_w li.login_link2 {
+  flex: 27.5;
+}
+.login_link_w li.login_link2 a {
+  border-left: 1px solid #e2e2e2;
+}
+.login_link_w li.login_link3 {
+  flex: 13.33%;
+}
+.login_link_w li.login_link4 {
+  flex: 13.33%;
+}
+.login_link_w li.login_link5 {
+  flex: 13.33%;
+}
+.login_link_w li.login_link3 a {
+  border-left: 1px solid #e2e2e2;
+  background: url("../images/main/sns_icon01.png") no-repeat center center;
+}
+.login_link_w li.login_link4 a {
+  border-left: 1px solid #e2e2e2;
+  background: url("../images/main/youtube_dark_n.png") no-repeat center center;
+}
+.login_link_w li.login_link5 a {
+  border-left: 1px solid #e2e2e2;
+  background: url("../images/main/sns_icon03.png") no-repeat center center;
+}
+
+/* 사이트정보 */
+.login_text01 {
+  padding-top: 15px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 150%;
+  text-align: center;
+}
+.login_text01 p + p {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.login_text02 {
+  display: flex;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #727272;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+.login_text02 a {
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 24px;
+  color: #727272;
+  background: url("../images/main/login_icon02.png") no-repeat 0 center;
+}
+
+/* 공지사항 */
+.tab_type {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.tab_type li {
+  display: inline-block;
+  padding: 0 30px;
+}
+.tab_type li a {
+  display: block;
+  padding-bottom: 13px;
+  font-size: 30px;
+  color: #111111;
+  font-weight: 500;
+}
+.tab_type li a:hover,
+.tab_type li.on a {
+  color: #009bcb;
+  border-bottom: 3px solid #009bcb;
+}
+.tab_cont.on {
+  opacity: 1;
+  min-height: 310px;
+  padding-bottom: 30px;
+}
+
+.login_r_box01 {
+  width: 100%;
+}
+.tab_box01 {
+  padding-top: 10px;
+}
+.tab_box01 .link_btn {
+  display: inline-block;
+  color: #999999;
+  padding: 13px 0 6px 0;
+  border-bottom: 1px solid #b2b4b4;
+}
+.tab_box01 .title_ span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1.2em;
+}
+
+.tab_box01 ul {
+  clear: both;
+  overflow: hidden;
+}
+.tab_box01.stu_w ul {
+  background: #e5f3f8 url("../images/main/link_bg01.png") no-repeat right -20px top -18px;
+}
+.tab_box01 > ul > li {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  border: 1px solid #b3e0ee;
+  border-radius: 10px;
+}
+.tab_box01 .icon01 {
+  padding-left: 48px;
+  background: url("../images/main/notice_icon01.png") no-repeat 0 6px;
+  background-size: 36px;
+}
+.tab_box01 .icon02 {
+  padding-left: 42px;
+  background: url("../images/main/notice_icon02.png") no-repeat 0 6px;
+  background-size: 33px;
+}
+.tab_box01 .icon03 {
+  padding-left: 48px;
+  background: url("../images/main/notice_icon03.png") no-repeat 0 0;
+  background-size: 38px;
+}
+.tab_box01 .icon04 {
+  padding-left: 60px;
+  background: url("../images/main/notice_icon04.png") no-repeat 0 0;
+}
+.tab_box01 .icon05 {
+  padding-left: 40px;
+  background: url("../images/main/notice_icon05.png") no-repeat 0 6px;
+}
+.tab_box01 .link_btn {
+  display: inline-block;
+  font-weight: 300;
+  color: #999999;
+  padding-top: 13px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  border-bottom: 1px solid #b2b4b4;
+}
+.tab_cont .text_ {
+  padding-right: 42px;
+  padding-top: 16px;
+  text-align: right;
+  color: #8a8a8a;
+  font-weight: 300;
+}
+
+.tab_box01 .li01 {
+  display: flex;
+  justify-content: space-between;
+  background: #e5f3f8;
+  position: relative;
+}
+.tab_box01 .li01 > div {
+  padding: 25px;
+  overflow: hidden;
+}
+.tab_box01 .li01 .title_ span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.tab_box01 .li01::after {
+  display: block;
+  width: 33px;
+  height: 9px;
+  background: url("../images/main/tab1_after.png") center no-repeat;
+  position: absolute;
+  bottom: -9px;
+  left: 48px;
+}
+.tab_box01 .li01 .link01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+.tab_box01 .li01 .link02 {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab_box01 .li01 .link02 .title_ + .title_ {
+  margin-left: 25px;
+}
+.tab_box01 .li01 .title_ {
+  margin-top: 6px;
+}
+.tab_box01 .li01 .link_list {
+  padding-left: 18px;
+}
+.tab_box01 .li01 .icon03 + .link_list {
+  padding-left: 8px;
+}
+.tab_box01 .li01 .link01 .link_list {
+  width: 300px;
+}
+.tab_box01 .li01 .link_list a {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 8px;
+  margin: 2px;
+  float: left;
+  color: #fff;
+  background: #009bcb;
+  border-radius: 3px;
+}
+.tab_box01 .li01 .link_list a:nth-child(1),
+.tab_box01 .li01 .link_list a:nth-child(2),
+.tab_box01 .li01 .link_list a:nth-child(3),
+.tab_box01 .li01 .link_list a:nth-child(4) {
+  padding: 0 10px;
+}
+.tab_box01 .li01 .link_list a.on {
+  background: #00487b;
+  border: 1px solid #000;
+  line-height: 26px;
+}
+.tab_box01 .li01 .link_list a.col02 {
+  background: #799c92;
+}
+.tab_box01 .li01 .link_list a.col03 {
+  background: #8982a7;
+}
+
+.tab_box01 .li02 {
+  padding: 39px 35px 28px;
+  background: rgba(244, 249, 250, 0.95);
+}
+.tab_box01 .li02 .link03 {
+  overflow: hidden;
+  min-height: 383px;
+}
+.tab_box01 .li02 .title_ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tab_box01 .li02 .title_ span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.tab_box01 .li02 .notice_list {
+  margin-top: 12px;
+}
+.tab_box01 .li02 .notice_list ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  overflow: hidden;
+  color: #4c626a;
+}
+.tab_box01 .li02 .notice_list ul li .title {
+  width: auto;
+  font-size: 15px;
+  color: #4c626a;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tab_box01 .li02 .notice_list ul li .title:before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+  content: "";
+  background: #738a92;
+}

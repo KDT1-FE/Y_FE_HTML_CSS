@@ -165,12 +165,13 @@
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     display: flex; /* 아이콘들을 수평으로 정렬 */
+    align-items: center;
 }
+
 
 .footer-bottom-notice-list2 > a{
     margin-right: 14px;
 }
-
 
 .notice-list {
     font-size: 12px;
@@ -197,8 +198,16 @@
     text-decoration: underline;
 }
 
-
 .more-language {
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
+.more-language .svgfile {
+    margin-right: 5px;
+}
+
+._1trxeqso {
+    border: none;
+    
+}

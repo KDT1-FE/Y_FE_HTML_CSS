@@ -74,6 +74,20 @@ ul {
     flex: 1; /* 남은 공간을 모두 차지하도록 설정 */
 }
 
+@media screen and (max-width: 992px) {
+    .search-bar {
+        display: none;
+    }
+}
+
+/* 화면 크기가 992px 이하일 때 */
+@media screen and (max-width: 992px) {
+    .right-section {
+      margin-right: 10px; /* 오른쪽 여백을 먼저 줄입니다. */
+      margin-left: 0; /* 왼쪽 여백을 없앱니다. */
+    }
+  }
+
 input:focus {outline:none;}
 
 
@@ -92,6 +106,9 @@ input:focus {outline:none;}
     font-weight: 600;
 }
 
+.chat-button:hover {
+    opacity: 0.5;
+}
 .middle-section {
     flex: 1; /* 남은 공간을 모두 차지하도록 설정 */
 }

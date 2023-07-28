@@ -366,3 +366,22 @@ body {
     margin-right: 38px;
 }
 
+/* 
+/* 화면 크기가 작을 때 적용될 스타일 */
+/* @media screen and (max-width: 992px) {
+    .home-main-image-top,
+    .home-main-image-top2,
+    .home-main-image-top3,
+    .home-main-image-top4 {
+        max-width: 100%;
+        height: auto;
+        float: right;
+    }
+
+    #home-main-top,
+    #home-main-section-middle1,
+    #home-main-section-middle2,
+    #home-main-section-middle3 {
+        overflow: hidden;
+    }
+} */

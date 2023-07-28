@@ -1,0 +1,166 @@
+/* HEADER */
+header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 99;
+}
+header > .inner {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  gap: 102px;
+  margin: 0 auto;
+  z-index: 9;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 81px;
+  height: 100%;
+}
+.gnb {
+  display: flex;
+  gap: 0 48px;
+}
+.gnb li {
+}
+.gnb li > a {
+  color: #fff;
+}
+.gnb li > a:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+.down {
+  background-color: #fff;
+  color: #222;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+/* BADGES */
+header .badges {
+  z-index: 5;
+  position: fixed;
+  right: 14px;
+  bottom: 14%;
+  display: flex;
+}
+.store {
+  position: relative;
+  display: flex;
+}
+
+/* STORE BTN */
+
+.badges_btn {
+  margin-left: 15px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.store_btn {
+  display: block;
+  width: 56px;
+  height: 56px;
+  font-size: 0;
+  border-radius: 50%;
+  left: 0;
+  background-color: #222;
+  background-image: url("../images/ico_store.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.up_btn {
+  margin-right: 0;
+  background-image: url("../images/ico_arrowT.svg");
+  display: block;
+  width: 56px;
+  height: 56px;
+  font-size: 0;
+  border-radius: 50%;
+  background-color: #222;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: flex-end;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* hover */
+/* .store_qr {
+  display: none;
+  position: absolute;
+  padding: 24px 19px;
+  width: 180px;
+  border-radius: 14px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.store_qr:after {
+  position: absolute;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: " ";
+  top: 50%;
+  right: -200px;
+  width: 0;
+  height: 0;
+}
+.store_btn:hover + .store_qr {
+  display: block;
+} */
+
+/* QR창 */
+.store_qr {
+  position: relative;
+  padding: 24px 19px;
+  width: 180px;
+  height: 282px;
+  box-sizing: border-box;
+  border-radius: 14px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.store_info .tit {
+  font-size: 12px;
+  line-height: 18px;
+}
+.store_info .txt {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.btn_x {
+  position: absolute;
+  border: none;
+  right: 8px;
+  top: 8px;
+}
+.qr {
+  width: 142px;
+  height: 142px;
+
+  box-sizing: border-box;
+}
+.qr img {
+  width: 100%;
+  height: 100%;
+}

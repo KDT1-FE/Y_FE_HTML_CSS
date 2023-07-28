@@ -16,12 +16,12 @@ $(document).ready(function () {
     let gnb = $(".gnb>li");
 
     gnb.hover(function () {
-        $(this).find(".sub_menu").css("display", "block");
+        $(this).find(".sub_menu").show();
         $(".header").css({ height: "auto", overflow: "visible" });
     });
 
     gnb.mouseleave(function () {
-        $(this).find(".sub_menu").fadeOut();
+        $(this).find(".sub_menu").hide();
     });
 
 

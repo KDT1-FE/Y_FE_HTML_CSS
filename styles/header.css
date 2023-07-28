@@ -297,3 +297,52 @@
     font-size: 15px;
     font-family: 'Noto Light', sans-serif;
 }
+.section-6 {
+    height: 439px;
+    background-color: #ede9e8;
+    display: flex;
+    justify-content: center;
+}
+.section-6-div1,
+.section-6-div2 {
+    height: 345px;
+    margin: 20px;
+    background-color: white;
+}
+
+
+.vedio {
+    height: 240px;
+    width: 500px;
+}
+.topic {
+    margin: 20px;
+}
+.strong2 {
+    font-family: 'Noto Light', sans-serif;
+    font-size: 30px;
+    color: #444;
+}
+.plus_img2 {
+    float: right;
+    padding: 10px;
+}
+
+.topic-1,
+.topic-2,
+.topic-3,
+.topic-4,
+.topic-5 {
+    font-family: 'Noto Light', sans-serif;
+    font-size: 16px;
+    color: #777;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid #ede9e8 ;
+}
+.section-6-p {
+    font-size: 15px;
+    font-family: 'Noto Light', sans-serif;
+    color: #333;
+    padding: 24px;
+}

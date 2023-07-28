@@ -6,12 +6,9 @@
     <meta name="description" content="학습 및 과제를 위한 ArmorBearer 클론 사이트 입니다." />
     <title>The Armor Bearer clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet" /> -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="shortcut icon" href="./assets//images/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
     <script defer src="./assets/js/app.js"></script>
   </head>
 
@@ -67,6 +64,17 @@
         </section>
       </nav>
     </header>
+    <aside class="rwd-menu">
+      <nav class="rwd-menu__navigation">
+        <ul class="rwd-container">
+          <li class="rwd-container__item">COMPANY</li>
+          <li class="rwd-container__item">PRODUCT</li>
+          <li class="rwd-container__item">PARTNERS</li>
+          <li class="rwd-container__item">RECRUIT</li>
+          <li class="rwd-container__item">CONTACT</li>
+        </ul>
+      </nav>
+    </aside>
 
     <main>
       <!-- main carousel 영역 -->
@@ -117,6 +125,7 @@
       <!-- sub carousel 영역 -->
       <h2 class="a11yHidden">회사 프로덕트 라인업 소개</h2>
       <section class="section2">
+        <div class="design-hidden" aria-hidden="true"></div>
         <div class="section2__container">
           <div class="section2__container__title">
             <p class="section2__title__sentence">OUR COMPANY</p>
@@ -151,77 +160,63 @@
               <div class="section2__container__flex__item carousel2-item3">
                 <div class="carousel-contents">
                   <div class="content-box">
-                    <img class="carousel-icon" src="./assets/images/icons/tool.png" aria-hidden="true" />
+                    <div class="icon-box">
+                      <img class="carousel-icon" src="./assets/images/icons/tool.png" aria-hidden="true" />
+                    </div>
+                    <p>Tools & Techniques</p>
+                    <p>공구류 유통</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                   </div>
-                  <p>Tools & Techniques</p>
-                  <p>공구류 유통</p>
-                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
 
               <div class="section2__container__flex__item carousel2-item4">
                 <div class="carousel-contents">
                   <div class="content-box">
-                    <img class="carousel-icon" src="./assets/images/icons/interior.png" aria-hidden="true" />
+                    <div class="icon-box">
+                      <img class="carousel-icon" src="./assets/images/icons/interior.png" aria-hidden="true" />
+                    </div>
+                    <p>Interior</p>
+                    <p>공간 설계 및 시공</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                   </div>
-                  <p>Interior</p>
-                  <p>공간 설계 및 시공</p>
-                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
 
               <div class="section2__container__flex__item carousel2-item5">
                 <div class="carousel-contents">
                   <div class="content-box">
-                    <img class="carousel-icon" src="./assets/images/icons/fnb.png" aria-hidden="true" />
+                    <div class="icon-box">
+                      <img class="carousel-icon" src="./assets/images/icons/fnb.png" aria-hidden="true" />
+                    </div>
+                    <p>F&B</p>
+                    <p>식품류 수출업무</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                   </div>
-                  <p>F&B</p>
-                  <p>식품류 수출업무</p>
-                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
 
               <div class="section2__container__flex__item carousel2-item6">
                 <div class="carousel-contents">
                   <div class="content-box">
-                    <img class="carousel-icon" src="./assets/images/icons/dutyfree.png" aria-hidden="true" />
+                    <div class="icon-box">
+                      <img class="carousel-icon" src="./assets/images/icons/dutyfree.png" aria-hidden="true" />
+                    </div>
+                    <p>Duty Free Product</p>
+                    <p>면세물품 공급</p>
+                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                   </div>
-                  <p>Duty Free Product</p>
-                  <p>면세물품 공급</p>
-                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
 
               <div class="section2__container__flex__item carousel2-item7">
                 <div class="carousel-contents">
                   <div class="content-box">
-                    <img class="carousel-icon" src="./assets/images/icons/consulting.png" aria-hidden="true" />
-                  </div>
-                  <p>Consulting</p>
-                  <p>경영컨설팅 및 시장조사</p>
-                  <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="section2__container__flex__item carousel2-item1">
-                <div class="carousel-contents">
-                  <div class="content-box">
                     <div class="icon-box">
-                      <img class="carousel-icon" src="./assets/images/icons/trading.png" aria-hidden="true" />
+                      <img class="carousel-icon" src="./assets/images/icons/consulting.png" aria-hidden="true" />
                     </div>
-                    <p>Trading</p>
-                    <p>무역대행업무</p>
-                    <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="section2__container__flex__item carousel2-item2">
-                <div class="carousel-contents">
-                  <div class="content-box">
-                    <img class="carousel-icon" src="./assets/images/icons/construction.png" aria-hidden="true" />
-                    <p>Construction Material</p>
-                    <p>건설 / 건축자재 유통</p>
+                    <p>Consulting</p>
+                    <p>경영컨설팅 및 시장조사</p>
                     <a href="/" class="content-box-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                   </div>
                 </div>
@@ -291,6 +286,7 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer>
       <div class="footer__container">
         <div class="footer__container__wrap">

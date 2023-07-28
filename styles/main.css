@@ -148,15 +148,15 @@
     height: 157px;
     display: none; 
     position: absolute;
-    top: 248px;
+    top: 246px;
 }
 
 .img_hover2 {
     width: 157px;
-    height: 157px;
-    display: none; 
-    position: absolute;
-    bottom: 236px;
+    height: 156px;
+    display: none;
+    position: relative;
+    bottom: 157px;
 }
 
 
@@ -204,8 +204,7 @@
 .singer {
     width: 156px;
     height: 30px;
-    left: 1px;
-    bottom: 31px;
+    bottom: 30px;
     display: flex;
     position: relative;
     z-index: 1;

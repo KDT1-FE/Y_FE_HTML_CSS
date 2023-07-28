@@ -1,0 +1,288 @@
+.main-section {
+  width: 100vw;
+  height: 100vh;
+}
+.main-section .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50, 50);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.container .swiper-prev,
+.container .swiper-next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  z-index: 11;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .swiper-prev {
+  text-align: center;
+  padding: 6px;
+  left: 0;
+}
+
+.container .swiper-prev:hover {
+  border: 2px solid #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  transition: 0.1s;
+}
+.container .swiper-next {
+  text-align: center;
+  padding: 6px;
+  right: 0;
+}
+.container .swiper-next:hover {
+  border: 2px solid #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  transition: 0.1s;
+}
+.container .pagination {
+  width: 60px;
+  position: absolute;
+  bottom: 28px;
+  color: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.container .pagination span {
+  font-weight: 600;
+}
+
+.container .swiper-state {
+  width: 20px;
+  position: absolute;
+  bottom: 20.5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  left: 100px;
+}
+
+.container .swiper-state .pause {
+  z-index: 3;
+}
+
+.container .swiper-state .play {
+  position: absolute;
+  left: 15%;
+  bottom: 5px;
+}
+
+.hide {
+  display: none;
+  z-index: -1;
+}
+
+@media (width < 500px) {
+  .main-section {
+    width: 100vw;
+    height: 60vh;
+  }
+  .main-section .swiper {
+    position: relative;
+    height: 100%;
+  }
+  .main-section .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50, 50);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+  }
+  .main-section .section01-texture,
+  .main-section .section02-texture,
+  .main-section .section03-texture,
+  .main-section .section04-texture {
+    position: absolute;
+    color: #fff;
+    bottom: 25%;
+    left: 3%;
+  }
+  .main-section .section01-texture {
+    width: 70%;
+  }
+  .main-section .section01-texture .small-br {
+    display: none;
+  }
+  .main-section .section02-texture {
+    width: 90%;
+  }
+  .main-section .section02-texture .small-br {
+    display: none;
+  }
+  .main-section .section03-texture {
+    width: 95%;
+    bottom: 30%;
+  }
+  .main-section .section03-texture .small-br {
+    display: none;
+  }
+  .main-section .section04-texture {
+    width: 90%;
+  }
+  .main-section .section01-texture span,
+  .main-section .section02-texture span,
+  .main-section .section03-texture span,
+  .main-section .section04-texture span {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .container .swiper-prev {
+    left: 50%;
+    margin-left: -100px;
+  }
+  .container .swiper-next {
+    right: 50%;
+    margin-right: -100px;
+  }
+  .container .swiper-state {
+    left: 80px;
+  }
+  .btn-larger {
+    width: 150px;
+    padding: 9px 5px;
+    border: 2px solid #eee;
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .container .pagination span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+  .main-section {
+    height: 65vh;
+  }
+  .main-section .swiper {
+    position: relative;
+    height: 100%;
+  }
+  .main-section .section01-texture,
+  .main-section .section02-texture,
+  .main-section .section03-texture,
+  .main-section .section04-texture {
+    position: absolute;
+    color: #fff;
+    bottom: 15%;
+    left: 3%;
+  }
+  .main-section .section01-texture {
+    width: 70%;
+  }
+  .main-section .section01-texture .small-br {
+    display: none;
+  }
+  .main-section .section02-texture {
+    width: 90%;
+  }
+  .main-section .section02-texture .small-br {
+    display: none;
+  }
+  .main-section .section03-texture {
+    width: 95%;
+  }
+  .main-section .section03-texture .small-br {
+    display: none;
+  }
+  .main-section .section04-texture {
+    width: 90%;
+  }
+
+  .main-section .section01-texture span,
+  .main-section .section02-texture span,
+  .main-section .section03-texture span,
+  .main-section .section04-texture span {
+    font-size: 45px;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 35px;
+  }
+  .container .swiper-prev {
+    left: 50%;
+    margin-left: -100px;
+  }
+  .container .swiper-next {
+    right: 50%;
+    margin-right: -100px;
+  }
+  .container .swiper-state {
+    left: 80px;
+  }
+}
+
+@media (width > 1024px) {
+  .main-section .swiper {
+    position: relative;
+    height: 100%;
+  }
+  .main-section .section01-texture,
+  .main-section .section02-texture,
+  .main-section .section03-texture,
+  .main-section .section04-texture {
+    position: absolute;
+    color: #fff;
+    bottom: 30%;
+    left: 2.5%;
+  }
+  .main-section .section01-texture {
+    width: 70%;
+  }
+
+  .main-section .section02-texture {
+    width: 75%;
+  }
+
+  .main-section .section03-texture {
+    width: 35%;
+  }
+  .main-section .section04-texture {
+    width: 90%;
+  }
+
+  .main-section .section01-texture span,
+  .main-section .section02-texture span,
+  .main-section .section03-texture span,
+  .main-section .section04-texture span {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 60px;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 35px;
+  }
+  .container .swiper-prev {
+    left: 50%;
+    margin-left: -100px;
+  }
+  .container .swiper-next {
+    right: 50%;
+    margin-right: -125px;
+  }
+}

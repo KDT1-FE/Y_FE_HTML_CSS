@@ -1,0 +1,107 @@
+.service-section {
+  width: 100vw;
+  height: auto;
+  overflow-x: auto;
+}
+.service-section > .inner {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.service-section .inner .service-title h2 {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.service-section .inner .service-list {
+  width: 100%;
+  height: auto;
+}
+.service-section .inner .service-list .list-layout-1,
+.service-section .inner .service-list .list-layout-2 {
+  display: flex;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.service-section .inner .service-list .service-list-card {
+  position: relative;
+  margin-right: 18px;
+}
+.service-section .inner .service-list .service-list-card:last-child {
+  margin-right: 0;
+}
+
+.service-section .inner .service-list .service-list-card img {
+  width: 230px;
+  height: 230px;
+  border-radius: 13px;
+  position: relative;
+}
+
+.service-section .service-list-card .kakaowork-text,
+.service-section .service-list-card .engine-text,
+.service-section .service-list-card .search-text,
+.service-section .service-list-card .icloud-text,
+.service-section .service-list-card .iLaaS-text {
+  color: #000;
+  z-index: 100;
+  font-size: 18px;
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  font-weight: 600;
+}
+.service-section .service-list-card .kakaowork-text {
+  color: #fff;
+  font-weight: lighter;
+}
+.service-section .service-list-card .icloud-text,
+.service-section .service-list-card .iLaaS-text {
+  color: #fff;
+}
+.service-section .inner .service-list .service-list-card .kakaowork-hg {
+  font-weight: 600;
+}
+
+.service-section .service-list-card .live-text,
+.service-section .service-list-card .marqee-text,
+.service-section .service-list-card .biz-text,
+.service-section .service-list-card .talk-text,
+.service-section .service-list-card .center-text {
+  color: #000;
+  z-index: 100;
+  font-size: 12px;
+  position: absolute;
+  bottom: 20%;
+  left: 7%;
+  font-weight: 600;
+}
+.service-section .service-list-card .live-text2,
+.service-section .service-list-card .marqee-text2,
+.service-section .service-list-card .biz-text2,
+.service-section .service-list-card .talk-text2,
+.service-section .service-list-card .center-text2 {
+  color: #000;
+  z-index: 100;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  font-weight: 600;
+}
+
+@media (width > 1024px) {
+  .service-section .inner .service-list .service-list-card img {
+    width: 290px;
+    height: 290px;
+    border-radius: 13px;
+    position: relative;
+  }
+
+  .service-section .inner .service-list .list-layout-1,
+  .service-section .inner .service-list .list-layout-2 {
+    display: flex;
+    overflow: hidden;
+    margin-top: 35px;
+  }
+}

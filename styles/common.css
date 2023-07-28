@@ -1,0 +1,61 @@
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.btn {
+  width: 200px;
+  padding: 15px 10px;
+  border: 4px solid #eee;
+  border-radius: 35px;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+.btn-larger {
+  width: 250px;
+  padding: 18px 10px;
+  border: 4px solid #eee;
+  border-radius: 35px;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+}
+.btn:hover,
+.btn-larger:hover {
+  background-color: yellow;
+  color: black;
+  border: 4px solid yellow;
+}
+.effectBlack {
+  transition: 0.4s;
+  color: #000 !important;
+}
+.effectWhite {
+  transition: 0.4s;
+  color: #fff;
+}

@@ -98,7 +98,8 @@ a {
   text-decoration: none;
   color: #000;
 }
-
+h6.hidden_tit{display: none;}
+.logo_tit{font-size: 0;}
 img {
   width: 100%;
 }

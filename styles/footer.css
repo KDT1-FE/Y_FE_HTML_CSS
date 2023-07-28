@@ -1,4 +1,5 @@
 #footer-list {
+  border-top: 1px solid #e4e4e4;
   color: #404040;
   height: 164px;
   margin-bottom: 16px;
@@ -20,8 +21,7 @@
 #footer-list li {
   display: flex;
   justify-content: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
   margin-top: 2px;
 }
 
@@ -38,5 +38,5 @@
   width: 1px;
   height: 12px;
   background-color: hsl(210, 5%, 84%);
-  margin: 4px 8px 0;
+  margin-right: 12px;
 }

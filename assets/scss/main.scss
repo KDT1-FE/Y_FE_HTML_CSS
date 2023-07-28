@@ -1,3 +1,6 @@
+@import './mixin/img-to-bg';
+@import './mixin/media-query';
+
 // 변수선언
 $color-1: #00d084;
 
@@ -23,6 +26,7 @@ body {
 	border-bottom: 1px solid #ececec;
 	background-color: #fff;
 	position: relative;
+
 	.inner {
 		padding: 20px;
 		display: flex;

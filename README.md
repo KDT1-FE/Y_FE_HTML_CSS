@@ -13,7 +13,7 @@
 
 ## 배포 주소 및 카카오엔터프라이즈 주소
 
-배포 주소 : 미입력
+배포 주소 : https://effulgent-babka-3fe88e.netlify.app/
 
 카카오엔터프라이즈 주소 : https://kakaoenterprise.com/
 

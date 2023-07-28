@@ -381,8 +381,11 @@ ul.gnb .gnb_menu {
   z-index: 1;
 }
 .main p {
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   margin: 4vw;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 2.4rem;
 }
 
 .main_visual {

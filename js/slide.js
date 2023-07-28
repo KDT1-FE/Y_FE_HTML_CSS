@@ -14,10 +14,15 @@ const banner_swiper = new Swiper('.main.swiper', {
 
 // BEST MENU 🍩
 const menu_image_swiper = new Swiper('.menu-image.swiper', {
-  touchRatio: 0,
   speed: 0,
   slidesPerView: 3,
-  spaceBetween: 0,
+  spaceBetween: 15,
+  breakpoints: {
+    960: {
+      spaceBetween: 40,
+      touchRatio: 0,
+    },
+  },
   navigation: {
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next',

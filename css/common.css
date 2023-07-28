@@ -36,3 +36,19 @@ ul {
   margin-bottom: 15px;
   font-weight: 700;
 }
+
+@media (max-width: 960px) {
+  :root {
+    --swiper-navigation-size: 20px;
+  }
+
+  .inner {
+    padding: 0 10px;
+    display: flex;
+  }
+
+  .title {
+    font-size: 20px;
+    margin: 0 0 5px;
+  }
+}

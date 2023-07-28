@@ -21,9 +21,14 @@
 - [x] 부분적으로 BEM 방법론 도입
 - [x] JS 사용하지 않고 링크 이동 - 입점문의, 인재채용, 애플,구글 스토어 이동
 
-# 생략한 JS 기능
+# 개선 사항
 
 - [ ] 배경 이미지 변경
 - [ ] 화면 위치에 따른 애니메이션 효과
 - [ ] 숫자 증가 애니메이션 효과
 - [ ] 박스 여닫이 기능 + 추가 정보 출력
+
+# 기술 스택
+
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+

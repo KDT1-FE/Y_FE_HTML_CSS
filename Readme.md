@@ -38,7 +38,7 @@ Font Awesome: https://fontawesome.com/
 ## 유의사항
 
 * 메인 페이지만 구현
-* 내부 이동 링크는 <a href="#">로 지정 (main 중간에 있는 구독 Container는 외부사이트로 이동하기때문에 구현)
+* 내부 이동 링크는 href'#'으로 지정 (main 중간에 있는 구독 Container는 외부사이트로 이동하기때문에 구현)
 
 
 ## 빌드

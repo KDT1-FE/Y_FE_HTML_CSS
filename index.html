@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>농심 : 인생을 맛있게 (Lovely Life Lovely Food)t</title>
+    <link rel="icon" href="./favicon.png" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MATERIAL ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- RESET CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <!-- LODASH -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- SCROLL MAGIC -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- LODASH -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+      integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- JS -->
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="top__header">
+        <ul class="sub__menu">
+          <li class="sub__menu__el el1">농심</li>
+          <li class="sub__menu__el el2">브랜드</li>
+          <li class="sub__menu__el el3">누들푸들</li>
+          <li class="sub__menu__el el4">농심채용</li>
+        </ul>
+      </section>
+      <nav class="main__header">
+        <a href="/" class="main__logo">
+          <svg
+            alt="농심 로고"
+            id="logo-svg"
+            width="120px"
+            height="39px"
+            viewBox="0 0 120 39"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+              <path
+                class="logo-title"
+                d="M65.8643,20.3746 C74.5083,20.3746 81.5133,23.2996 81.5133,26.9056 C81.5133,30.5116 74.5083,33.4356 65.8643,33.4356 C57.2203,33.4356 50.2133,30.5116 50.2133,26.9056 C50.2133,23.2996 57.2203,20.3746 65.8643,20.3746 Z M118.307,21.1481 C119.242,21.1481 120,21.8921 120,22.8101 L120,30.1801 C120,31.0991 119.242,31.8431 118.307,31.8431 L91.502,31.8431 C90.566,31.8431 89.808,31.0991 89.808,30.1801 L89.808,22.8101 C89.808,21.8921 90.566,21.1481 91.502,21.1481 L118.307,21.1481 Z M65.8643,23.5086 C60.8253,23.5086 56.7403,25.0296 56.7403,26.9056 C56.7403,28.7816 60.8253,30.3026 65.8643,30.3026 C70.9023,30.3026 74.9873,28.7816 74.9873,26.9056 C74.9873,25.0296 70.9023,23.5086 65.8643,23.5086 Z M113.469,24.3951 L96.229,24.3951 L96.229,28.5431 L113.469,28.5431 L113.469,24.3951 Z M116.6941,5.816 C118.42141,5.816 119.834561,7.14441855 119.929966,8.8174705 L119.9351,8.998 L119.9351,17.787 C119.9351,19.545 118.4831,20.968 116.6941,20.968 C114.9041,20.968 113.4691,19.544 113.4541,17.787 C110.4561,21.119 102.7541,17.843 99.0101,14.239 C95.4871,17.952 90.8151,19.371 88.4801,19.371 C87.4031,19.371 86.7001,18.778 86.7001,17.879 C86.7001,16.979 87.4041,16.313 88.4421,16.214 C89.7771,16.123 94.0411,14.31 95.8511,8.456 C96.2541,7.113 97.4911,6.199 98.9541,6.199 C100.4301,6.199 101.3821,6.85 102.0661,8.49 C103.9771,13.402 109.2051,16.058 111.1331,15.985 C112.918285,15.9192593 113.400315,14.4311934 113.461932,14.2110999 L113.4691,14.184 L113.4541,8.998 C113.4541,7.241 114.9041,5.816 116.6941,5.816 Z M54.1293,5.38 C55.9193,5.38 57.3353,6.805 57.3353,8.56 L57.3353,11.4 L75.9023,11.4 C77.9873,11.4 78.6243,10.953 79.2853,10.744 C80.2123,10.454 81.2433,10.65 81.6353,11.516 C82.0283,12.382 81.5693,13.248 80.8163,13.726 C80.0633,14.202 78.3773,14.675 75.9023,14.675 L68.8113,14.675 L68.8113,16.423 L81.6583,16.452 C82.5933,16.452 83.3513,17.196 83.3513,18.116 C83.3513,19.033 82.5933,19.777 81.6583,19.777 L50.3483,19.777 C49.4123,19.777 48.6543,19.033 48.6543,18.116 C48.6543,17.196 49.4123,16.452 50.3483,16.452 L62.4713,16.423 L62.4713,14.675 L52.5723,14.701 C51.6373,14.701 50.8793,13.956 50.8793,13.037 L50.8883,8.56 C50.8883,6.805 52.3403,5.38 54.1293,5.38 Z"
+              ></path>
+              <path
+                class="logo-fill"
+                d="M22.6025,4.109 C19.3655,4.109 16.7315,7.979 16.7315,12.735 C16.7315,17.491 19.3655,21.36 22.6025,21.36 C25.8395,21.36 28.4745,17.491 28.4745,12.735 C28.4745,7.979 25.8395,4.109 22.6025,4.109 M22.6025,37.56 C10.5805,37.56 0.8005,29.315 0.8005,19.18 C0.8005,9.046 10.5805,0.8 22.6025,0.8 C34.6245,0.8 44.4055,9.046 44.4055,19.18 C44.4055,29.315 34.6245,37.56 22.6025,37.56"
+              ></path>
+              <path
+                class="logo-line"
+                d="M22.6025,20.56 C19.8535,20.56 17.5315,16.976 17.5315,12.735 C17.5315,8.493 19.8535,4.909 22.6025,4.909 C25.3515,4.909 27.6735,8.493 27.6735,12.735 C27.6735,16.976 25.3515,20.56 22.6025,20.56 M22.6025,0 C10.1395,0 -0.0005,8.604 -0.0005,19.181 C-0.0005,29.756 10.1395,38.36 22.6025,38.36 C35.0655,38.36 45.2055,29.756 45.2055,19.181 C45.2055,8.604 35.0655,0 22.6025,0 M22.6025,22.16 C26.2865,22.16 29.2735,17.939 29.2735,12.735 C29.2735,7.529 26.2865,3.309 22.6025,3.309 C18.9175,3.309 15.9315,7.529 15.9315,12.735 C15.9315,17.939 18.9175,22.16 22.6025,22.16 M22.6025,1.6 C34.2015,1.6 43.6055,9.47 43.6055,19.181 C43.6055,28.889 34.2015,36.76 22.6025,36.76 C11.0035,36.76 1.6005,28.889 1.6005,19.181 C1.6005,9.47 11.0035,1.6 22.6025,1.6"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <ul class="main__menu">
+          <li class="menus">
+            <div class="menu"><a href="javascript:void(0)">농심소개</a></div>
+            <div class="menu__box">
+              <div class="menu__contents">
+                <ul>
+                  <li class="menu__contents__text">
+                    <h4>OVERVIEW</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>경영이념</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>경영이념</span></li>
+                        <li><span>농심 WAY</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>연혁</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>세계속의 농심</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>CI소개</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text large">
+                    <h4>농심그룹</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>농심홀딩스</span></li>
+                        <li><span>농심태경</span></li>
+                        <li><span>농심기획</span></li>
+                        <li><span>농심미분</span></li>
+                      </ul>
+                      <ul>
+                        <li><span>율촌화학</span></li>
+                        <li><span>농심엔지니어링</span></li>
+                        <li><span>호텔농심</span></li>
+                        <li><span>율촌재단</span></li>
+                      </ul>
+                      <ul>
+                        <li><span>메가마트</span></li>
+                        <li><span>엔디에스</span></li>
+                        <li><span>농심개발</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>오시는길</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="menus">
+            <div class="menu">
+              <a href="javascript:void(0)">지속가능경영</a>
+            </div>
+            <div class="menu__box">
+              <div class="menu__contents">
+                <ul>
+                  <li class="menu__contents__text">
+                    <h4>OVERVIEW</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>PLANET</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>기후변화 대응</span></li>
+                        <li><span>지속가능한 패키징</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>PEOPLE</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>동반성장</span></li>
+                        <li><span>안전보건</span></li>
+                        <li><span>사회공헌</span></li>
+                        <li><span>율촌재단</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>PROSPERITY</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>연구개발</span></li>
+                        <li><span>소비자중심경영</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>(PRINCIPLEOF)GOVARNANCE</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>지배구조</span></li>
+                        <li><span>준법경영</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>지속가능경영보고서</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="menus">
+            <div class="menu"><a href="javascript:void(0)">홍보센터</a></div>
+            <div class="menu__box">
+              <div class="menu__contents">
+                <ul>
+                  <li class="menu__contents__text">
+                    <h4>OVERVIEW</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>농시미 이벤트</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>진행중 이벤트</span></li>
+                        <li><span>포인트마켓</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>농심 소식</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>농심 TV</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>N.서포터즈</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>라면피디아</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>글로벌 푸드 뉴스</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="menus">
+            <div class="menu"><a href="javascript:void(0)">투자정보</a></div>
+            <div class="menu__box">
+              <div class="menu__contents">
+                <ul>
+                  <li class="menu__contents__text">
+                    <h4>OVERVIEW</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>주식에 관한 사항</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>주가 정보</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text large">
+                    <h4>IR정보</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>애뉴얼리포트</span></li>
+                        <li><span>투자자료</span></li>
+                      </ul>
+                      <ul>
+                        <li><span>실적발표자료</span></li>
+                        <li><span>요약재무재표</span></li>
+                      </ul>
+                      <ul>
+                        <li><span>수익성</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text large">
+                    <h4>공시정보</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>공시사항</span></li>
+                        <li><span>공고기간안내</span></li>
+                      </ul>
+                      <ul>
+                        <li><span>공고자료</span></li>
+                      </ul>
+                      <ul>
+                        <li><span>공시정보관리규정</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="menus">
+            <div class="menu"><a href="javascript:void(0)">고객서비스</a></div>
+            <div class="menu__box">
+              <div class="menu__contents">
+                <ul>
+                  <li class="menu__contents__text">
+                    <h4>OVERVIEW</h4>
+                    <ul>
+                      <li></li>
+                    </ul>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>고객센터</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>상담접수</span></li>
+                        <li><span>상담제도 안내</span></li>
+                        <li><span>자주 묻는 질문(FAQ)</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__contents__text">
+                    <h4>공장견학</h4>
+                    <div class="text__flex-box">
+                      <ul>
+                        <li><span>견학신청</span></li>
+                        <li><span>견학조회</span></li>
+                        <li><span>견학후기</span></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="menus">
+            <div class="menu">
+              <a href="javascript:void(0)"></a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="navigator">
+          <div class="material-icons">
+            <a href="javascript:void(0)">search</a>
+          </div>
+          <div class="dropdown-menu">
+            <div class="material-icons">
+              <a href="javascript:void(0)">person</a>
+            </div>
+            <div class="dropdown">
+              <div class="arrow"></div>
+              <div class="list">
+                <span>로그인</span>
+                <span>회원가입</span>
+                <span>마이페이지</span>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-menu">
+            <div class="material-icons">
+              <a href="javascript:void(0)">translate</a>
+            </div>
+            <div class="dropdown">
+              <div class="arrow"></div>
+              <div class="list">
+                <span>KR</span>
+                <span>EN</span>
+                <span>CN</span>
+              </div>
+            </div>
+          </div>
+          <div class="material-icons">
+            <a href="javascript:void(0)">menu</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="slide1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/메인스크롤1.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/메인스크롤2.jpg"
+                alt="라면을 들고 웃는 여성"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/메인스크롤3.jpg"
+                alt="부모님 손을 잡고 춤추는 아이"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/메인스크롤4.jpg"
+                alt="Lovley Life Lovely Food"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide2">
+        <div class="material-icons" id="to-slide">expand_more</div>
+        <div class="green-circle first">
+          <img src="./assets/icons/초록구2.svg" alt="초록구 문양" />
+        </div>
+        <div class="green-circle second">
+          <img src="./assets/icons/초록구3.svg" alt="초록구 문양" />
+        </div>
+        <h2>내일을 위한 새롭고 활기찬 농심 소식</h2>
+        <div class="swiper" dir="rtl">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside">
+                <img
+                  src="./assets/images/농심소식1.jpg"
+                  alt="농심, 경북·충청 폭우피해지역에 이머전시 푸드팩 긴급지원"
+                />
+                <div class="info">
+                  <p>
+                    농심, 경북·충청 폭우피해지역에<br /><br />
+                    이머전시 푸드팩 긴급지원
+                  </p>
+                  <span class="date">2023.07.17</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside down">
+                <img
+                  src="./assets/images/농심소식2.jpg"
+                  alt="농심, 서울지방고용노동청과 안전문화 확산 업무협약 체결"
+                />
+                <div class="info">
+                  <p>
+                    농심, 서울지방고용노동청과 <br /><br />
+                    안전문화
+                  </p>
+                  <span class="date">2023.07.06</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside">
+                <img
+                  src="./assets/images/농심소식3.jpg"
+                  alt="농심, 짜파게티 만능소스 출시"
+                />
+                <div class="info">
+                  <p>농심, 짜파게티 만능소스 출시</p>
+                  <span class="date">2023.07.04</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside down">
+                <img
+                  src="./assets/images/농심소식4.jpg"
+                  alt="농심, 국민스낵 '새우깡' 인기 이어갈 '먹태깡' 출시"
+                />
+                <div class="info">
+                  <p>
+                    농심, 국민스낵 '새우깡' 인기 <br /><br />
+                    이어갈 '먹태깡' 출시
+                    <span class="date">2023.06.22</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside">
+                <img
+                  src="./assets/images/농심소식5.jpg"
+                  alt="농심 생생우동, 플라스틱 트레이 · 비닐 포장 제거"
+                />
+                <div class="info">
+                  <p>
+                    농심 생생우동, 플라스틱 트레이 <br /><br />
+                    비닐포장 제거
+                  </p>
+                  <span class="date">2023.06.14</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside down">
+                <img
+                  src="./assets/images/농심소식6.jpg"
+                  alt="농심, '라이필 탱탱 콜라겐 젤리스틱' 출시"
+                />
+                <div class="info">
+                  <p>농심, '라이필 탱탱 콜라겐 젤리스틱' 출시</p>
+                  <span class="date">2023.06.01</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside">
+                <img
+                  src="./assets/images/농심소식7.jpg"
+                  alt='"대학생 여러분 힘내세요!" 농심, 캠퍼스 팝업스토어 운영'
+                />
+                <div class="info">
+                  <p>
+                    "대학생 여러분 힘내세요!" <br /><br />
+                    농심, 캠퍼스 팝업스토어 운영
+                  </p>
+                  <span class="date">2023.05.31</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside down">
+                <img
+                  src="./assets/images/농심소식8.jpg"
+                  alt="농심, 포테토칩 잭슨페퍼로니맛 출시"
+                />
+                <div class="info">
+                  <p>농심, 포테토칩 잭슨페퍼로니맛 출시</p>
+                  <span class="date">2023.05.24</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside">
+                <img
+                  src="./assets/images/농심소식9.jpg"
+                  alt="농심, 발달장애인 18명 채용, '신나는 심포니' 창단"
+                />
+                <div class="info">
+                  <p>
+                    농심, 발달장애인 18명 채용, <br /><br />
+                    '신나는 심포니' 창단
+                  </p>
+                  <span class="date">2023.05.18</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inside down">
+                <img
+                  src="./assets/images/농심소식10.jpg"
+                  alt="농심, 슈퍼푸드 렌틸콩 스낵 '우와한 렌틸칩' 출시"
+                />
+                <div class="info">
+                  <p>
+                    농심, 슈퍼푸드 렌틸콩 스낵 <br /><br />
+                    '우와한 렌틸칩' 출시
+                  </p>
+                  <span class="date">2023.05.11</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="red-button">농심 소식</div>
+      </section>
+      <section class="intro__ns1">
+        <h2>
+          한국을 대표하는 맛,
+          <br />
+          세계를 감동시킨 우리의 맛
+        </h2>
+        <div class="green-circle">
+          <img src="./assets/icons/초록구4.svg" alt="초록구 문양" />
+        </div>
+        <div class="intro__ns__img">
+          <img src="./assets/images/main_intro.png" alt="라면 사진" />
+          <div class="orange-box spy"></div>
+          <div class="red-box spy"></div>
+        </div>
+
+        <div class="intro__ns-list">
+          <div class="intro-item">
+            <strong>경영이념</strong>
+            <p>
+              글로벌 식품 기업을 위한 힘찬 비상,<br />
+              농심은 고객과 함께 세계를 향해<br />
+              나아갑니다.
+            </p>
+          </div>
+          <div class="intro-item">
+            <strong>연혁</strong>
+            <p>
+              대한민국 식품 문화의 새로운<br />
+              역사를 쓴 농심의 발자취입니다.
+            </p>
+          </div>
+          <div class="intro-item">
+            <strong>농심 50년</strong>
+            <p>
+              50년간 이어온 농심의 한결같은 마음으로<br />
+              한국의 대표기업이 되었습니다.
+            </p>
+          </div>
+        </div>
+        <div class="red-button">농심 소개</div>
+      </section>
+      <section class="slide3">
+        <h2>N.Live로 즐기는 농심 이야기</h2>
+        <div class="green-circle">
+          <img src="./assets/icons/초록구1.svg" alt="초록구 문양" />
+        </div>
+        <div class="phone-shape"></div>
+        <div class="swiper" dir="ltr">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기9.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#YOUTUBE</span>
+                <p>형제라면 왕중왕 레시피 '채끝...</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.26</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기10.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#HOME</span>
+                <p>
+                  [최종명 작가의 '중국 음식 문...<br />
+                  첫사랑의 입맞춤 같은 기억,<br />
+                  전통 술도가에서 맛본 마오타...
+                </p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.25</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기1.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#BLOG</span>
+                <p>[당신이 몰랐던 사실]당신이...</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.24</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기2.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#BLOG</span>
+                <p>[당신이 몰랐던 사실]당신이...</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.24</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기3.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#YOUTUBE</span>
+                <p>홍예슬 뺨 미쳤다!🍜|라면에...</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.22</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기4.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#YOUTUBE</span>
+                <p>이거 미친X들 아니야!?🍜|라</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.22</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기5~6.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#BLOG</span>
+                <p>글로벌 푸드 트렌드:MZ세대...</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.21</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기5~6.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#BLOG</span>
+                <p>MZ세대의 놀이터, '팝업스토...</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.21</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기7.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#YOUTUBE</span>
+                <p>"비벤져스, ASSEMBLE!" 【...</p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.19</p></div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/nLive농심이야기8.jpg"
+                alt="인생을 맛있게, 농심"
+              />
+              <div class="slide3__text">
+                <span>#HOME</span>
+                <p>
+                  [홍경의 교수의 '건강한 영양학']<br />
+                  뱃살 분해하는 비타민, 무기질...
+                </p>
+              </div>
+              <div class="text--left"><p class="date">2023.07.18</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="red-button">N.LIVE</div>
+      </section>
+      <section class="intro__ns2">
+        <h2>
+          함께해서 더 아름다운 세상,
+          <br />
+          농심이 만들어갑니다
+        </h2>
+        <div class="green-circle">
+          <img src="./assets/icons/초록구4.svg" alt="초록구 문양" />
+        </div>
+        <div class="intro__ns__img">
+          <img src="./assets/images/main_intro2.png" alt="라면 사진" />
+          <div class="orange-box spy"></div>
+          <div class="red-box spy"></div>
+        </div>
+
+        <div class="intro__ns-list">
+          <div class="intro-item">
+            <div class="subject"><div>사회공헌</div></div>
+            <p>
+              작은 사랑의 실천을 통해<br />
+              함께 사는 세상,<br />
+              행복한 내일을 만들고자 합니다.
+            </p>
+          </div>
+          <div class="intro-item">
+            <div class="subject"><div>환경·안전</div></div>
+            <p>
+              안전한 제조공정, 식품의 생산을 통해<br />
+              고객의 건강과 행복을<br />
+              최우선으로 생각합니다.
+            </p>
+          </div>
+          <div class="intro-item">
+            <div class="subject">
+              <div>
+                소비자<br />
+                중심경영
+              </div>
+            </div>
+            <p>
+              소비자 중심으로 구성하고,<br />
+              관련 경영활동을 지속적으로<br />
+              개선합니다.
+            </p>
+          </div>
+        </div>
+        <div class="red-button">지속가능경영</div>
+      </section>
+      <section class="main-brand">
+        <h2>모두의 일상에 즐거움을 선사합니다</h2>
+        <div class="green-circle">
+          <img src="./assets/icons/초록구4.svg" alt="초록구 문양" />
+        </div>
+        <div class="brand-view">
+          <div class="brand-view__img">
+            <img src="/assets/images/brand-view__img.png" alt="brand image" />
+          </div>
+          <div class="orange-box spy"></div>
+          <div class="red-box spy"></div>
+          <h3>BEST BRAND</h3>
+          <div class="brands">
+            <div class="brand-list">
+              <div class="brand-item">
+                <div class="brand-item__wrap">
+                  <strong>INSTANT NOODLES</strong>
+                  <div class="img">
+                    <img src="./assets/icons/main_brand_01.png" alt="신라면" />
+                  </div>
+                  <div class="desc">
+                    한국의 맛으로 세계와<br />
+                    소통하다
+                  </div>
+                </div>
+              </div>
+              <div class="brand-item">
+                <div class="brand-item__wrap">
+                  <strong>SNACKS</strong>
+                  <div class="img">
+                    <img src="./assets/icons/main_brand_02.png" alt="새우깡" />
+                  </div>
+                  <div class="desc">
+                    장수 브랜드의 역사를<br />
+                    창조하다
+                  </div>
+                </div>
+              </div>
+              <div class="brand-item">
+                <div class="brand-item__wrap">
+                  <strong>BEVERAGES</strong>
+                  <div class="img">
+                    <img src="./assets/icons/main_brand_03.png" alt="백산수" />
+                  </div>
+                  <div class="desc">
+                    프리미엄 생수<br />
+                    브랜드의 미래를 열다
+                  </div>
+                </div>
+              </div>
+              <div class="brand-item">
+                <div class="brand-item__wrap">
+                  <strong>IMPORT BRAND</strong>
+                  <div class="img">
+                    <img
+                      src="./assets/icons/main_brand_04.png"
+                      alt="콘푸로스트"
+                    />
+                  </div>
+                  <div class="desc">
+                    세계일류의 다양한<br />
+                    밋을 즐기다
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="red-button">브랜드관</div>
+          </div>
+        </div>
+      </section>
+      <section class="main-map">
+        <div class="green-circle">
+          <img src="./assets/icons/초록구2.svg" alt="초록구 문양" />
+        </div>
+        <h2>국경을 뛰어넘는 농심의 맛</h2>
+
+        <div class="map-content">
+          <div class="pin-wrap china focus">
+            <img src="./assets/icons/map_pin.png" alt="" />
+            <strong>중국 현지인을 감동시킨 농심의 매운 맛</strong>
+            <p>
+              품질에 대한 자부심을 바탕으로 중국 전역에 농심의 맛<br />
+              그대로 프리미엄 이미지를 뿌리내리고 있습니다.
+            </p>
+          </div>
+          <div class="pin-wrap america hidden">
+            <img src="./assets/icons/map_pin.png" alt="" />
+            <strong>미국시장 최고의 브랜드를 목표로</strong>
+            <p>
+              미국 내에서 농심 제품들은 이제 한인 사회를 넘어<br />
+              미국 소비자들이 먼저 알고 찾는 글로벌 브랜드 반열에<br />
+              올라섰습니다.
+            </p>
+          </div>
+          <div class="pin-wrap japan hidden">
+            <img src="./assets/icons/map_pin.png" alt="" />
+            <strong>일본 매운맛 라면 시장을 선도하는 농심</strong>
+            <p>
+              신라면을 중심으로 브랜드 파워를 강화하여 경쟁이<br />
+              치열한 일본 라면시장에서 매운맛 No.1으로 도약하고자<br />
+              노력하고 있습니다.
+            </p>
+          </div>
+          <div class="pin-wrap australia hidden">
+            <img src="./assets/icons/map_pin.png" alt="" />
+            <strong>오세아니아를 매료시킨 농심의 매운 맛</strong>
+            <p>
+              호주 법인을 통해 오세아니아 공략에 박차를 가하고<br />
+              있으며, 현재 호주 양대 소매유통기업인 Woolworths<br />
+              와 Coles에 辛라면을 입점시켜 판매하고 있습니다.
+            </p>
+          </div>
+          <div class="pin-wrap vietnam hidden">
+            <img src="./assets/icons/map_pin.png" alt="" />
+            <strong>동남아지역의 HUB, 베트남법인 설립</strong>
+            <p>
+              호치민 법인을 통해 베트남 전 지역에 농심의 맛을<br />
+              알리고 있습니다. 더 나아가 동남아시아 지역의<br />
+              허브로 도약할 것입니다.
+            </p>
+          </div>
+          <div class="pin-wrap canada hidden">
+            <img src="./assets/icons/map_pin.png" alt="" />
+            <strong>미국을 넘어서 북미전역으로 농심의 맛 전파</strong>
+            <p>
+              2018년 기준, 캐나다 라면 시장 점유율 2위에 등극했습니다.<br />
+              국내를 넘어 해외에서도 인정 받는 농심의 라면은 캐나다에서도<br />
+              사랑을 받고 있습니다.
+            </p>
+          </div>
+          <img src="./assets/images/main_map.png" alt="지도" class="map" />
+          <div class="pin-list__wrap">
+            <div class="anchor-line"></div>
+            <div class="anchor">·</div>
+            <ul>
+              <li class="country china focus">CHINA</li>
+              <li class="country america">UNITED STATES</li>
+              <li class="country japan">JAPAN</li>
+              <li class="country australia">AUSTRALIA</li>
+              <li class="country vietnam">VIETNAM</li>
+              <li class="country canada">CANADA</li>
+            </ul>
+          </div>
+          <div class="country__intro">
+            <img
+              src="./assets/images/main_map_product.png"
+              alt="신라면 상차림"
+            />
+            <div class="desc">
+              <p class="desc-text china">2019년 중국지역 매출</p>
+              <p class="desc-text america hidden">2019년 미국지역 매출</p>
+              <p class="desc-text japan hidden">2019년 일본지역 매출</p>
+              <p class="desc-text australia hidden">2019년 호주지역 매출</p>
+              <p class="desc-text vietnam hidden">2019년 1월</p>
+              <p class="desc-text canada hidden">2020년 1월</p>
+              <div class="money">
+                <strong class="money-text china">2억 7천만</strong>
+                <strong class="money-text america hidden">2억 7천만</strong>
+                <strong class="money-text japan hidden">6.5천만</strong>
+                <strong class="money-text australia hidden">3천만</strong>
+                <strong class="money-text vietnam hidden">베트남법인</strong>
+                <strong class="money-text canada hidden">캐나다법인</strong>
+                <span class="money-span money">달러 돌파</span>
+                <span class="money-span company hidden">설립</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="red-button">세계속의 농심</div>
+      </section>
+      <section class="main-etc">
+        <div class="inner">
+          <a href="javascript:void(0)" class="stock-info">
+            <div class="stock-money">
+              <span>실시간 주가정보</span>
+              <strong>401,000</strong>
+            </div>
+            <div class="stock-wave">
+              <span>전일대비</span>
+              <span>
+                <span class="material-icons">arrow_drop_up</span>
+                <span>500</span>
+              </span>
+              <span class="seprate">|</span>
+              <span>등락율</span>
+              <span>0.12%</span>
+            </div>
+          </a>
+          <a href="javascript:void(0)">
+            <div class="icon">
+              <img src="./assets/icons/icon-cs.svg" alt="cs아이콘" />
+            </div>
+            <div class="info">
+              <strong>CS CENTER</strong>
+              <p>
+                언제나 고객님의 곁에서 소중한 의견에<br />
+                귀 기울이겠습니다.
+              </p>
+            </div>
+          </a>
+          <a href="javascript:void(0)">
+            <div class="icon">
+              <img src="./assets/icons/icon-factory.svg" alt="factory아이콘" />
+            </div>
+            <div class="info">
+              <strong>FACTORY TOUR</strong>
+              <p>
+                공장 견학을 통해 농심 제품의 생생한<br />
+                제조 공정을 직접 체험해보세요.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="green-circle">
+        <img src="./assets/icons/초록구1.svg" alt="초록구 문양" />
+      </div>
+      <div class="inner">
+        <div class="nongshim-info">
+          <div class="list1">
+            <div class="link1">
+              <a href="javascript:void(0)">상담접수</a>
+              <span class="seprate">|</span>
+              <a href="javascript:void(0)">FAQ</a>
+              <span class="seprate">|</span>
+              <a href="javascript:void(0)">오시는길</a>
+              <span class="seprate">|</span>
+              <a href="javascript:void(0)">이용약관</a>
+              <span class="seprate">|</span>
+              <a href="javascript:void(0)" class="green">개인정보처리방침</a>
+            </div>
+            <div class="link2">
+              <a href="javascript:void(0)" class="orange">특약점포탈</a>
+              <span class="seprate">|</span>
+              <a href="javascript:void(0)">전자결제</a>
+              <span class="seprate">|</span>
+              <a href="javascript:void(0)">증명서조회</a>
+              <span class="seprate">|</span>
+              <a href="javascript:void(0)">이메일주소무단수집거부</a>
+            </div>
+          </div>
+          <div class="list2">
+            <div class="info1">
+              <b>(주)농심</b>
+              <span class="seprate">|</span>
+              <span>서울특별시 동작구 여의대방로 112 (신대방동)</span>
+              <span class="seprate">|</span>
+              <span>사업자등록번호　118-81-03914</span>
+              <span class="seprate">|</span>
+              <span>대표이사　이병학</span>
+            </div>
+            <div class="info2">
+              <span>대표전화　02.820.7114</span>
+              <span class="seprate">|</span>
+              <span>고객센터　080.023.5181</span>
+            </div>
+          </div>
+          <div class="copyright">ⓒ NONGSHIM CO.,LTD.ALL RIGHTS RESERVED</div>
+        </div>
+        <img src="./assets/icons/web-accessibility-01.png" alt="web 접근성" />
+        <div class="family-site">
+          <span>패밀리 사이트</span>
+          <span class="material-icons">arrow_drop_down</span>
+        </div>
+        <div class="sns">
+          <a href="javascript:void(0)"
+            ><img src="./assets/icons/facebook.svg" alt="페이스북"
+          /></a>
+          <a href="javascript:void(0)"
+            ><img src="./assets/icons/instagram.svg" alt="인스타그램"
+          /></a>
+          <a href="javascript:void(0)"
+            ><img src="./assets/icons/youtube.svg" alt="유튜브"
+          /></a>
+          <a href="javascript:void(0)"
+            ><img src="./assets/icons/blog.png" alt="네이버블로그"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <div id="to-top">
+      <div class="material-icons">expand_less</div>
+    </div>
+  </body>
+</html>

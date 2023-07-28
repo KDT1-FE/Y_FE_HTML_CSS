@@ -21,7 +21,7 @@ var player = videojs("myPlayer", {
         { src : "./asset/video/main_video.mp4", type : "video/mp4"},
         { src : "./asset/video/main_video.webm", type : "video/webm"}
     ],
-    poster : "test-poster.png",
+    // poster : "test-poster.png",
     controls : false,
     autoplay: true,
     playsinline : true,

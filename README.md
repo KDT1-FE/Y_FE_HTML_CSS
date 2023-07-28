@@ -1,7 +1,7 @@
 # 클론한 사이트
 
 원본 링크 - <a>https://www.airbnb.co.kr</a>  
-데모 링크 - <a>seungsimdang-airbnb-clone.netlify.app</a>
+데모 링크 - <a>https://seungsimdang-airbnb-clone.netlify.app</a>
 
 ### 사용한 라이브러리 및 스택
 

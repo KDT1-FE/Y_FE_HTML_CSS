@@ -6,20 +6,12 @@
 
 .container {
   width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.container ::after {
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: url(/Jaehun/assets/img/background.jpg) no-repeat;
+  color: white;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url(/Jaehun/assets/img/background.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -99;
-  filter: brightness(0.3);
+  z-index: -30;
 }
 .container header.nav_list {
   display: flex;
@@ -114,6 +106,260 @@
 }
 .container header.nav_list div.nl_right .user_image:hover {
   cursor: pointer;
+}
+.container header.nav_list div.nl_right input#menu_toggle {
+  display: none;
+}
+.container header.nav_list div.nl_right label.menu_toggle {
+  padding: 4px;
+}
+.container header.nav_list div.nl_right nav#menu_nav {
+  display: none;
+  background-color: #282828;
+  position: fixed;
+}
+.container header.nav_list div.nl_right nav#menu_nav :hover {
+  background-color: #3e3e3e;
+}
+.container header.nav_list div.nl_right nav#menu_nav li {
+  position: relative;
+  list-style: none;
+  background-color: #282828;
+  width: 248px;
+  height: 40px;
+  padding: 10px 36px 0 16px;
+}
+.container header.nav_list div.nl_right nav#menu_nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+}
+.container header.nav_list div.nl_right input#menu_toggle:checked + nav#menu_nav {
+  display: block;
+}
+.container .body_container {
+  width: 100%;
+  height: 100%;
+}
+.container .body_container .column_nav {
+  width: 14%;
+  height: 100%;
+  color: white;
+  margin-top: 30px;
+  float: left;
+}
+.container .body_container .column_nav :hover {
+  cursor: pointer;
+}
+.container .body_container .column_nav .selected_option {
+  background-color: #2c2e27;
+  border-radius: 20%;
+}
+.container .body_container .column_nav .column_nav_img {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 18px;
+}
+.container .body_container .section_contents {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 50px;
+}
+.container .body_container .section_contents .select_tag {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 15px;
+}
+.container .body_container .section_contents .select_tag .tag_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 40px;
+  padding: 5px;
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(58, 52, 52, 0.3);
+}
+.container .body_container .section_contents .select_tag :hover {
+  cursor: pointer;
+  background: #2e2e2a;
+  transition: all 0.3s;
+}
+.container .body_container .section_contents .section_music_contents {
+  margin-top: 60px;
+  height: 5.0938rem;
+  display: flex;
+}
+.container .body_container .section_contents .section_music_contents div.profile_wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-image: url(/Jaehun/assets/img/user.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .body_container .section_contents .section_music_contents div.profile_singer {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-image: url(/Jaehun/assets/img/yuika.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .body_container .section_contents .section_music_contents .profile_inform {
+  height: auto;
+  margin-left: 24px;
+}
+.container .body_container .section_contents .section_music_contents .profile_inform .profile_name {
+  font-size: 16px;
+  color: #aaaaaa;
+  padding-bottom: 8px;
+}
+.container .body_container .section_contents .section_music_contents .profile_inform .profile_inform_two {
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+}
+.container .body_container .section_contents .section_music_contents .profile_inform .profile_inform_two .again_listen :hover {
+  border-bottom: 3px solid white;
+  cursor: pointer;
+}
+.container .body_container .section_contents .section_music_contents .profile_inform .profile_inform_two .again_listen span.profile_inform_text1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.container .body_container .section_contents .section_music_contents .profile_inform .profile_inform_two .more_option {
+  background: none;
+  border: 2px solid #272525;
+  border-radius: 25px;
+  padding: 16px;
+  color: white;
+}
+.container .body_container .section_contents .section_music_contents .profile_inform .profile_inform_two .more_option:hover {
+  cursor: pointer;
+  background-color: #262524;
+  transition: 0.3s;
+}
+.container .body_container .section_contents .section_music_contents .button_wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 50px 0 0 10px;
+}
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-prev,
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-prev2 {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-image: url(/Jaehun/assets/img/previous.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-next,
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-next2 {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-image: url(/Jaehun/assets/img/next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-prev::after,
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-next::after,
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-prev2::after,
+.container .body_container .section_contents .section_music_contents .button_wrap .swiper-button-next2::after {
+  display: none;
+}
+.container .body_container .swiper,
+.container .body_container .swiper2 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents {
+  display: flex;
+  gap: 40px;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .album_desc,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .album_desc {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_image,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_image {
+  border-radius: 10px;
+  object-fit: contain;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_image:hover,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_image:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_text_one,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_text_one {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_text_two,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .album_desc .album_text_two {
+  margin-top: 4px;
+  color: #9b9b9b;
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .singer_desc,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .singer_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .singer_desc .singer_text_one,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .singer_desc .singer_text_one {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .singer_desc .singer_text_two,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .singer_desc .singer_text_two {
+  margin-top: 4px;
+  color: #9b9b9b;
+  font-size: 16px;
+  margin-top: 4px;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .singer_desc .album_image,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .singer_desc .album_image {
+  border-radius: 50%;
+}
+.container .body_container .swiper .swiper-wrapper .swiper-slide .slider_contents .singer_desc .album_image:hover,
+.container .body_container .swiper2 .swiper-wrapper .swiper-slide .slider_contents .singer_desc .album_image:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

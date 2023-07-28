@@ -4,40 +4,64 @@ let arr = []
 for(i=0;i<hovermenus.length;i++){
   arr.push(hovermenus[i])
 }
-//이미지 호버 관련 선언
-//let selectedImg = document.querySelectorAll(".box .images")
-
+let isMouseOver = false;
 
 //헤더 호버 관련 코드
+const headerBg = document.querySelector("header")
+const whiteLogo = document.querySelector(".header-inner-wrapper .white")
+const blackLogo = document.querySelector(".header-inner-wrapper .black")
+const headerTextColor = document.querySelectorAll("header .navi-list .navi-text > a span")
+const headerRightTextColor = document.querySelector(".header-right-area .right-element")
+const headerBorderColor = document.querySelector(".header-inner-wrapper")
+
 arr.forEach(item => {
-  const headerBg = document.querySelector("header")
-  const whiteLogo = document.querySelector(".header-inner-wrapper .white")
-  const blackLogo = document.querySelector(".header-inner-wrapper .black")
-  const headerTextColor = document.querySelectorAll("header .navi-list .navi-text > a span")
-  const headerRightTextColor = document.querySelector(".header-right-area .right-element")
   //마우스 올렸을 때 헤더 변화 
   item.addEventListener('mouseover',function(){
-    headerBg.style.backgroundColor="white"
-    headerBg.style.borderBottomColor="black"
-    whiteLogo.style.display="none"
-    blackLogo.style.display="block"
-    headerRightTextColor.style.color="black"
-    for(i=0;i<headerTextColor.length;i++){
-      headerTextColor[i].style.color="black"
+    isMouseOver = true;
+    if(isMouseOver){
+      gsap.to(whiteLogo, 0, {display:'none'})
+      gsap.to(blackLogo, 0, {display:'block'})
+      gsap.to(headerBg, .1, {backgroundColor:'white'})
+      gsap.to(headerTextColor, .1, {color:'black'})
+      gsap.to(headerRightTextColor, .1, {color:'black'})
+      gsap.to(headerBorderColor, .1, {borderBottomColor:'black'})
+      console.log('test')
     }
   })
   //마우스 뗐을 때 헤더 변화
   item.addEventListener('mouseout',function(){
-    headerBg.style.backgroundColor="transparent"
-    headerBg.style.borderBottomColor="transparent"
-    whiteLogo.style.display="block"
-    blackLogo.style.display="none"
-    headerRightTextColor.style.color="white"
-    for(i=0;i<headerTextColor.length;i++){
-      headerTextColor[i].style.color="white"
-    }
+    isMouseOver = false;
   })
 })
+//헤더 스크롤 관련 코드
+window.addEventListener('scroll',_.throttle(function(){
+    if(window.scrollY>=200){
+      gsap.to(whiteLogo, 0, {display:'none'})
+      gsap.to(blackLogo, 0, {display:'block'})
+      gsap.to(headerBg, .1, {backgroundColor:'white'})
+      gsap.to(headerTextColor, .1, {color:'black'})
+      gsap.to(headerRightTextColor, .1, {color:'black'})
+      gsap.to(headerBorderColor, .1, {borderBottomColor:'black'})
+    }else if((window.scrollY<200)&&isMouseOver){
+      gsap.to(whiteLogo, 0, {display:'none'})
+      gsap.to(blackLogo, 0, {display:'block'})
+      gsap.to(headerBg, .1, {backgroundColor:'white'})
+      gsap.to(headerTextColor, .1, {color:'black'})
+      gsap.to(headerRightTextColor, .1, {color:'black'})
+      gsap.to(headerBorderColor, .1, {borderBottomColor:'black'})
+      console.log('itsworking')
+    }else{
+      gsap.to(whiteLogo, 0, {display:'block'})
+      gsap.to(blackLogo, 0, {display:'none'})
+      gsap.to(headerBg, .1, {backgroundColor:'transparent'})
+      gsap.to(headerTextColor, .1, {color:'white'})
+      gsap.to(headerRightTextColor, .1, {color:'white'})
+      gsap.to(headerBorderColor, .1, {borderBottomColor:'transparent'})
+    }
+},300))
+
+//이미지 호버 관련 선언
+//let selectedImg = document.querySelectorAll(".box .images")
 
 //슬라이더 내 이미지 호버 시 전환
 /*selectedImg.forEach((img)=>{
@@ -78,12 +102,11 @@ arr.forEach(item => {
     })
   })
 })*/
-
-
-//슬라이더
 function getType(data){
   return Object.prototype.toString.call(data).slice(8,-1)
 }
+
+//슬라이더
 
 new Swiper('.main-introduction .swiper-container', {
   autoplay: { // 자동 재생 여부
@@ -104,7 +127,11 @@ new Swiper('.products-container .swiper-container', {
     delay:3000
   },
   loop:false,
-  slidesPerView:3
+  slidesPerView:3,
+  navigation: { // 슬라이드 이전/다음 버튼 사용 여부
+    prevEl: '.products-container .swiper-prev', // 이전 버튼 선택자
+    nextEl: '.products-container .swiper-next' // 다음 버튼 선택자
+  }
 })
 
 new Swiper('.select-shop-container .swiper-container', {
@@ -113,7 +140,11 @@ new Swiper('.select-shop-container .swiper-container', {
     delay:3000
   },
   loop:false,
-  slidesPerView:3
+  slidesPerView:3,
+  navigation: { // 슬라이드 이전/다음 버튼 사용 여부
+    prevEl: '.select-shop-container .swiper-prev', // 이전 버튼 선택자
+    nextEl: '.select-shop-container .swiper-next' // 다음 버튼 선택자
+  }
 })
 
 new Swiper('.business-solution-slider .swiper-container', {
@@ -128,6 +159,3 @@ new Swiper('.business-solution-slider .swiper-container', {
     clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
   }
 })
-
-
-// 스크롤관련

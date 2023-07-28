@@ -49,8 +49,6 @@ header{
   width: 100%;
   z-index: 99;
   margin: 0 auto;
-  border-bottom: 1px solid transparent;
-  border-bottom-color: transparent;
 }
 header .header-inner-wrapper {
   box-sizing: border-box;
@@ -60,6 +58,8 @@ header .header-inner-wrapper {
   z-index: 9;
   background-color: 255,255,255,0;
   opacity: 1;
+  border-bottom:1px solid transparent;
+  border-bottom-color: transparent;
 }
 
 .row {
@@ -135,10 +135,10 @@ header .navi-list .navi-text .sub-menu {
 }
 header .navi-list .navi-text:hover .sub-menu {
   display:flex;
-  border-bottom:#2e2b2b;
   background-color: #fff;
   width:100%;
   border-bottom: 1px solid #000;
+  transform: translateY(-1px);
 }
 
 header .navi-list .navi-text .sub-menu > li {
@@ -230,6 +230,17 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   font-size: 17px;
   transform: translateY(-3px);
 }
+.text-container .menu li:first-child .text::before{
+  content: "";
+  position:absolute;
+  display: inline;
+  bottom:0;
+  width:0%;
+  height:1px;
+  background-color: #2e2b2b;
+  width:100%;
+  transform: translateY(3px);
+}
 .text-container .menu li:first-child~li .text::before{
   content: "";
   position:absolute;
@@ -247,9 +258,6 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 /* Products & Select#*/
 /* 슬라이드되는 박스 */
 
-.product-swiper .swiper-slide{
-  display: flex;  
-}
 .has-swiper .box {
   border-top:1px solid black;
   border-left:1px solid black;
@@ -261,6 +269,29 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   width:100%;
   margin-bottom: -10px;
 }
+.product-swiper{
+  position: relative;
+}
+.prev-next-buttons {
+  position:relative;
+  display: flex;
+  width:40px;
+  height:40px;
+  position:absolute;
+  top:0;
+  right:70px;
+  transform: translateY(-70px);
+}
+/* .swiper-prev,
+.swiper-next{
+  width:20px;
+  height:20px;
+} */
+/* .swiper-prev img,
+.swiper-next img{
+  width:20px;
+  height:20px;
+} */
 /* 박스 하단 글자들 */
 .has-swiper .product-swiper .product-description{
   padding: 45px 35px;

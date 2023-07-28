@@ -3,7 +3,7 @@
 반응형 기능은 거의 없으며 웹 전체화면 기준으로 구현했습니다.
 
 ## 프로젝트 사이트 주소
-당근마켓 사이트 URL : https://overwatch.blizzard.com/ko-kr/  
+당근마켓 사이트 URL : https://www.daangn.com/ 
 클론 코딩 프로젝트 사이트 URL : https://aquamarine-mousse-e4a8fd.netlify.app/
 
 ## 제작 기간: 2023/07/25~2023/07/28

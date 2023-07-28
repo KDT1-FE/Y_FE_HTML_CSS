@@ -1,4 +1,5 @@
 /* GLOBAL */
+/* 최대한 Apple 사이트의 폰트 및 레이아웃을 유사하게 만들기 위해 reset css 를 사용하지 않고 직접 조정 */
 *,
 *::before,
 *::after {

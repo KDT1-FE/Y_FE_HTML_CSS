@@ -4,6 +4,8 @@
 
 [실제 Apple 공식 사이트 링크](https://www.apple.com/kr/)
 
+[제작한 Apple 클론 사이트 주소](https://sensational-profiterole-3d8d07.netlify.app)
+
 **프로젝트 목표** <br>
 Y_FE ParkJisung(flamozzi) Apple 공식 사이트 클론
 
@@ -12,10 +14,10 @@ Y_FE ParkJisung(flamozzi) Apple 공식 사이트 클론
 
 **필수 요구사항 체크 리스트**
 
-- [ ] 과제에 대한 설명을 포함한 README.md 파일을 제공
+- [x] 과제에 대한 설명을 포함한 README.md 파일을 제공
 - [x] 과제 결과와 비교할 수 있는 실제 사이트(페이지) 주소 명시
-- [ ] 과정에서 사용한 프로젝트 폴더/파일 모두 포함하여 push
-- [ ] 실제 서비스로 배포하고 접근 가능한 링크 추가
+- [x] 과정에서 사용한 프로젝트 폴더/파일 모두 포함하여 push
+- [x] 실제 서비스로 배포하고 접근 가능한 링크 추가
 
 ## 구현사항 (작업 후 작성)
 

@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <title>일룸</title>
@@ -99,7 +101,58 @@
 
 
 
-    <div class="main"></div>
+    <div class="main">
+
+        <!-- main banner -->
+        <section class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner1.jpg" alt="main_banner1">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner2.jpg" alt="main_banner2">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner3.jpg" alt="main_banner3">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner4.jpg" alt="main_banner4">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner5.jpg" alt="main_banner5">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner6.jpg" alt="main_banner6">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner7.jpg" alt="main_banner7">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/main_banner8.jpg" alt="main_banner8">
+                    <a href="https://www.iloom.com/eventNews/event_news_detail.do?type=EVENT&no=223&type2=DOING" target="_blank"> </a>
+                </div>
+              
+            </div>
+
+            <div class="swiper__button__prev">
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper__button__next">
+                <div class="swiper-button-next"></div>
+            </div>
+          
+        </section>
+
+    </div>
 
 
 
@@ -179,7 +232,9 @@
                 </ul>
             </div>
     
-            <div class="footer__divider"></div>
+            <div class="footer__divider">
+                <hr style="background-color:#e0e0e0; border:1px solid #e0e0e0; border-bottom:none;"/>
+            </div>
     
             <div class="footer__bottom">
                 <ul>
@@ -221,5 +276,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 </html>

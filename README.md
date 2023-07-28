@@ -1,44 +1,79 @@
-[참고 내용]
+<img src="./assets/images/paikdabang.png">
 
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
+# 🥤빽다방 홈페이지 클론코딩
 
-과제 수행 및 제출 방법
+빽다방 홈페이지를 HTML, CSS, Javascript를 사용하여 클론코딩한 개인 프로젝트
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0\_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0\_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0\_이름)
+### 사이트 주소
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+배포 주소: https://jihongkyu.github.io/Paikdabang_CloneCoding
 
-필수 요구사항
+원본 주소: https://paikdabang.com
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+#
 
-선택 요구사항
+# 📆 제작 기간
 
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+### 2023년 07월 24일 ~ 2023년 07월 28일
 
-손쉬운 이미지 추출 방법
+# 📌필수요구 사항
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
+✅ 과제에 대한 설명을 포함한 README.md 파일을 제공
 
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+✅ 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시
+
+✅ 과정에서 사용한 프로젝트 폴더/파일이 모두 포함
+
+✅ 실제 서비스로 배포하고 접근 가능한 링크를 추가
+
+# 🚀 기술스택
+
+### 개발 환경
+
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+### 사용 언어
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+# 📝 기능 구현
+
+- HEADER
+
+  - `position: sticky`를 사용하여 스크롤 시 상단에 고정
+  - navbar 호버 시 submenu에 `display:flex` 적용
+
+  <img src="./assets/images/header.PNG">
+
+- CAROUSEL
+
+  - ul태그를 가로 정렬한 후 캐러셀 이동버튼 클릭 시 브라우저 가로 길이를 ul태그에서 빼서 캐러셀 구현
+
+  <img src="./assets/images/carousel.gif">
+
+- SECTION
+
+  - section 호버 시 `transform: scale` 을 사용하여 이미지 크기만 증가
+  - viewBtn 호버 시 `+`버튼에서 360도 돌면서 백종원 이미지로 변경
+
+  <img src="./assets/images/section.gif">
+
+- FOOTER - familySite
+
+  - `classList.toggle` 을 이용하여 familySite 클릭 시 familyMenu에 active 클래스 토글 -> `display:none`에서 `display: block`으로 바뀜
+
+  <img src="./assets/images/familySite.gif">
+
+# ✍ 개선 사항
+
+- 반응형 레이아웃 적용
+- 라이브러리를 사용하여 캐러셀 개선
+- SCSS를 적용시켜서 다시 제작해보기

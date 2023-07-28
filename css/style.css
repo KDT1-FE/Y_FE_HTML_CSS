@@ -1,0 +1,570 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.wrap .homepage-image-box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrap .homepage-image-box .img_content_box {
+  position: absolute;
+  top: 75vh;
+  height: 50px;
+  margin-bottom: 5rem;
+  padding: 0 6rem;
+}
+
+.wrap .homepage-image-box .img_content_box .img_content_box_message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.wrap .homepage-image-box .img_content_box .img_content_box_message p {
+  font-weight: bold;
+}
+
+.wrap .homepage-image-box .img_content_box .img_content_box_message h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.wrap .homepage-image-box .img_content_box .img_content_box_message h5 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.wrap .homepage-image-box .img_content_box .img-button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.wrap .homepage-image-box .img_content_box .img-button-box button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.wrap .homepage-image-box .img_content_box .img-button-box .detail {
+  border: none;
+  padding: 1rem 3.5rem;
+  background-color: #176bd9;
+}
+
+.wrap .homepage-image-box .img_content_box .img-button-box .detail:hover {
+  background-color: #0652b6d8;
+}
+
+.wrap .homepage-image-box .img_content_box .img-button-box .register {
+  padding: 0.9rem 2.5rem;
+  background: none;
+  border: 1px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap .homepage-image-box .img_content_box .img-button-box .register:hover {
+  border: 2px solid white;
+  padding: 0.9rem 2.436rem;
+}
+
+.wrap .homepage-image-box .slogan {
+  position: absolute;
+  top: 84px;
+  color: #fff;
+  padding: 0 6rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.wrap .homepage-image-box img {
+  width: 100%;
+  margin: -620px 0px 0px 0px;
+}
+
+.wrap .header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 6rem;
+  height: 84px;
+}
+
+.wrap .header .header_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1.4px solid #fff;
+}
+
+.wrap .header .header_box .logo_box {
+  width: 65px;
+  height: 65px;
+  margin-top: 5.7rem;
+  margin-right: 1.6rem;
+}
+
+.wrap .header .header_box .logo_box img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.wrap .header .header_box .header_menu_item_box {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .header .header_box .header_menu_item_box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 0.75rem;
+  border-bottom: 4px solid transparent;
+}
+
+.wrap .header .header_box .header_menu_item_box li:hover {
+  border-color: #1c69d4;
+}
+
+.wrap .header .header_box .header_icon_box {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.wrap .header .header_box .header_icon_box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 100%;
+  padding: 0 0.75rem;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+}
+
+.wrap .header .header_box .header_icon_box li:hover {
+  border-color: #1c69d4;
+}
+
+.wrap .header .header_box .header_icon_box span {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.wrap .experience {
+  padding: 1.5rem 5rem;
+  height: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .experience p {
+  color: #666666;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.wrap .experience h5 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.wrap .experience .experience-item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .experience .experience-item-box .experience-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .experience .experience-item-box .experience-item img {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.wrap .experience .experience-item-box .experience-item .item-desc h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.wrap .experience .experience-item-box .experience-item button {
+  margin-top: 2rem;
+  padding: 1rem 1.3rem;
+  background: none;
+  cursor: pointer;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.wrap .experience .experience-item-box .experience-item button:hover {
+  border: 2px solid black;
+  padding: 0.96rem 1.29rem;
+}
+
+.wrap .introduce-car-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrap .introduce-car-box {
+    gap: 7rem;
+  }
+}
+
+.wrap .introduce-car-box .introduce-car {
+  width: 100%;
+  height: 31rem;
+  position: relative;
+}
+
+.wrap .introduce-car-box .introduce-car img {
+  width: 100%;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-img-box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 31rem;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-img-box .di23 {
+  position: absolute;
+  width: 100%;
+  margin: -50% 0;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0 6rem;
+  cursor: pointer;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .introduce-car-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 23rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box button {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(1) {
+  background-color: #176bd9;
+  color: white;
+  border: none;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(1):hover {
+  background-color: #0652b6d8;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(2) {
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box .desc-button-box :nth-child(2):hover {
+  border: 2px solid white;
+  padding: 0.9rem 2.436rem;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box img {
+  width: 150px;
+  height: 50px;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box span {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-left: 1rem;
+  font-weight: 200;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 200;
+}
+
+.wrap .introduce-car-box .introduce-car .introduce-car-desc-box h4 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 200;
+}
+
+.wrap .car-buy-info {
+  height: 27rem;
+  padding: 2rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .car-buy-info img {
+  width: 50%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.wrap .car-buy-info .car-buy-info-contents {
+  padding: 4rem 0;
+}
+
+.wrap .car-buy-info h3 {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.wrap .car-buy-info h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.wrap .car-buy-info p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.wrap .car-buy-info button {
+  background: none;
+  border: 1.5px solid black;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.wrap .car-buy-info button:hover {
+  border: 2px solid black;
+  padding: 0.95rem 1.95rem;
+}
+
+.wrap .footer .footer-top {
+  height: 35rem;
+  background-color: #f6f6f6;
+  padding: 5rem 6rem 0 6rem;
+}
+
+.wrap .footer .footer-top p {
+  font-size: 0.625rem;
+  color: #4d4d4d;
+  margin-bottom: 1rem;
+}
+
+.wrap .footer .footer-top li {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #4d4d4d;
+  list-style-type: none;
+  margin-bottom: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.wrap .footer .footer-top li:hover {
+  color: black;
+}
+
+.wrap .footer .footer-top li span {
+  font-size: 1.2rem;
+}
+
+.wrap .footer .footer-top .footer-list-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .footer .footer-top .footer-list-box .list-title {
+  padding: 0 0.75rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.wrap .footer .footer-top .privacy {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.wrap .footer .footer-top .privacy div {
+  margin: 0 0.5rem;
+}
+
+.wrap .footer .footer-top .privacy span {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.wrap .footer .footer-top .privacy span:hover {
+  color: #1c69d4;
+  border-color: #1c69d4;
+}
+
+.wrap .footer .footer-top .SNS-box {
+  padding: 2rem 0.75rem 1rem 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.25rem;
+  gap: 1rem;
+}
+
+.wrap .footer .footer-top .SNS-box img {
+  width: 1.75rem;
+  cursor: pointer;
+}
+
+.wrap .footer .footer-bottom {
+  padding: 0 6rem;
+  height: 7.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .footer .footer-bottom p {
+  padding-left: 1rem;
+  font-size: 0.75rem;
+}
+
+.wrap .footer .footer-bottom .footer-bottom-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  list-style-type: none;
+}
+
+.wrap .footer .footer-bottom .footer-bottom-right :hover {
+  color: #1c69d4;
+}
+/*# sourceMappingURL=style.css.map */

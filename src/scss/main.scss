@@ -21,6 +21,18 @@
 .downArrow {
   @include exchange-arrow(down);
 }
+.modal {
+  position: fixed;
+  background-color: transparent;
+}
+.modal.active {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
+  z-index: 99;
+}
 
 header {
   @include media-small {
@@ -215,6 +227,73 @@ header {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+aside {
+  display: none;
+}
+
+aside.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 57rem;
+  color: $main-black;
+  height: 100vh;
+  background-color: $white;
+  z-index: 100;
+  overflow-x: hidden;
+  transition: all 0.5s;
+
+  @include keyframes(rwd-menu) {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 57rem;
+      opacity: 1;
+    }
+  }
+  @include animate(rwd-menu, 0.2s, linear, 1);
+
+  .rwd-menu__navigation {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 5.1rem;
+
+    .rwd-exit {
+      position: absolute;
+      cursor: pointer;
+      right: 0;
+      top: 0;
+      width: 5rem;
+      height: 5rem;
+      color: $main-black;
+      @include flex-center-row();
+
+      &::before {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+    .rwd-container {
+      padding: 0;
+      font-size: $font-sm;
+      width: 57rem;
+      line-height: 1.6;
+
+      &__item {
+        padding: 1.3rem 3rem 1.3rem 2rem;
+        border-bottom: 1px solid $grey300;
+
+        &:hover {
+          font-weight: $font-bold700;
         }
       }
     }

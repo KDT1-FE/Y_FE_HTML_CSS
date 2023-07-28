@@ -160,3 +160,42 @@ body {
     color: rgb(200, 10, 30);
     letter-spacing: 0px;
 }
+
+
+/* main card */
+.main-card {
+    margin: 70px auto;
+}
+.main__card__list {
+    width: 1491px;
+    margin: 0px auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0px;
+    display: flex;
+}
+.main__card__list > a {
+    margin-bottom: 25px;
+}
+.main__card__list > a:last-of-type {
+    margin-left: 20px;
+}
+.main__card__list li {
+    width: 464px;
+    height: 339px;
+    margin-right: 25px;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.main__card__list li img {
+    width: 100%;
+    transform: scale(1);
+    transition: .8s;
+}
+.main__card__list li img:hover {
+    transform: scale(1.02);
+    transition: .8s;
+}

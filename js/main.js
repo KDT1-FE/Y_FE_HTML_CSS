@@ -19,6 +19,7 @@ const SpaceEls=document.querySelectorAll('.Space')
 const SnsEl=document.querySelector('.SNS')
 const FooterEl=document.querySelector('.Footer')
 const menuEl=document.querySelector('.Quickmenu')
+const specific = document.querySelector('.specific_cartype')
 HeadMenuEls.addEventListener('click', function(e) {
   i++;
   if(i%2!=0){
@@ -33,6 +34,7 @@ HeadMenuEls.addEventListener('click', function(e) {
     CarTypeEl.style.display='none';
     ServiceEl.style.display='none';
     SnsEl.style.display='none';
+    specific.style.display='none';
     ADEl.forEach(element => {
       element.style.display = 'none';
     });
@@ -57,6 +59,7 @@ HeadMenuEls.addEventListener('click', function(e) {
     CarList.style.display='block';
     ServiceEl.style.display='block';
     SnsEl.style.display='block';
+    specific.style.display='block';
     ADEl.forEach(element => {
       element.style.display = 'flex';
     });
@@ -360,7 +363,6 @@ subgrEls.forEach(element => {
   });
 });
 
-const specific = document.querySelector('.specific_cartype')
 const carimg = document.querySelectorAll('.CarImg')
 const xbtn = document.querySelector('.xbtn')
 const first = document.querySelector('.first')

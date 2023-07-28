@@ -30,7 +30,8 @@ https://www.interpark.com/
 
 ### 헤더
 
-![Alt text](image.png)
+<img width="940" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/0f97d1f9-4c04-4429-baf7-a9934b8be69e">
+
 
 -   페이지 스크롤시 상단 고정
 
@@ -38,7 +39,8 @@ https://www.interpark.com/
 
 #### 1. 화면 상단
 
-![Alt text](1.gif)
+![image](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/3a455f45-dc46-429d-8a90-259b4446d44e)
+
 
 -   Animation 기능을 이용해 자동 슬라이드 기능 구현
 -   좌우 슬라이드 버튼 기능 미구현
@@ -46,28 +48,36 @@ https://www.interpark.com/
 
 #### 2. 화면 하단
 
-![Alt text](4.gif)
+![image](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/488f17bc-8012-4ae4-956a-0619c6a459c1)
+
 
 -   Animation 기능을 이용해 자동 슬라이드 기능 구현
 -   좌 -> 우 슬라이드 후 제일 끝 이미지에서 다시 첫 이미지로 우 -> 좌로 슬라이드
 
 ### 메인 컨텐츠 탭 기능
 
-![Alt text](2.gif)
+![123](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/1e818a3e-c1ef-4370-973e-4a4e38c0ee72)
+
 
 -   탭 버튼 클릭시 해당 div의 z-index값을 변경시켜주는 방식으로 탭 기능 구현
 -   좌우 슬라이드 버튼 기능 미구현
 
 ### 이외 메인 컨텐츠 화면 구현
 
-![Alt text](image-1.png)
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
+<img width="693" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/71e5bb8c-cfe0-4280-87e5-8d3ec12a47c3">
+
+<img width="690" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/2c175f74-d158-4bd0-89aa-e70bc5bb5435">
+
+<img width="699" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/c207223d-9e88-4036-972a-407970fb0f2d">
+
+<img width="669" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/bc52f4fa-4fa9-44d3-b585-8a5d5263a67c">
+
+- 첫번쨰 메인 컨텐츠를 제외 탭 기능 미구현
 
 ### Footer
 
-![Alt text](image-5.png)
+<img width="708" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79828541/3d02a284-a70a-4940-932b-80c5e7107376">
+
 
 ## 느낀 점
 

@@ -218,7 +218,7 @@
                     </div>                 
                 </div>  
                 <div class="ticket-list-container">
-                    <div class="ticket-list1">
+                    <div class="ticket-list1">                       
                         <div class="ticket-list1-button">
                             추천티켓
                         </div>
@@ -376,5 +376,39 @@
         </div>
     </footer>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const ticketListElement1 = document.querySelector(".ticket-list1");
+            const ticketListElement2 = document.querySelector(".ticket-list2");
+
+            ticketListElement1.addEventListener("mouseleave", function () {
+            ticketListElement1.style.backgroundColor = "white";  
+            document.querySelector(".ticket-list1-text-wrap").style.color= "#3d93ff";  
+            document.querySelector(".ticket-list1-more-button").style.backgroundImage="url(/assets/images/button-more.62d0e592.svg)"; 
+            document.querySelector(".ticket-list1-text-wrap").style.backgroundImage="url(./assets/images/ticket-icon.809361d9.svg)";
+            });
+
+            ticketListElement1.addEventListener("mouseenter", function () {
+            ticketListElement1.style.backgroundColor = "#3d93ff"; 
+            document.querySelector(".ticket-list1-more-button").style.backgroundImage="url(./assets/images/button-more-over.d13d8c6f.svg)";
+            document.querySelector(".ticket-list1-text-wrap").style.color="white";
+            document.querySelector(".ticket-list1-text-wrap").style.backgroundImage="url(./assets/images/ticket-icon-over.6cd52f25.svg)";
+            }); 
+
+            ticketListElement2.addEventListener("mouseleave", function () {
+            ticketListElement2.style.backgroundColor = "white";  
+            document.querySelector(".ticket-list2-text-wrap").style.color= "#3d93ff";  
+            document.querySelector(".ticket-list2-more-button").style.backgroundImage="url(/assets/images/button-more.62d0e592.svg)";  
+            document.querySelector(".ticket-list2-text-wrap").style.backgroundImage="url(./assets/images/sale-icon.2d3b6fff.svg)";
+            });
+
+            ticketListElement2.addEventListener("mouseenter", function () {
+            ticketListElement2.style.backgroundColor = "#3d93ff"; 
+            document.querySelector(".ticket-list2-more-button").style.backgroundImage="url(./assets/images/button-more-over.d13d8c6f.svg)";
+            document.querySelector(".ticket-list2-text-wrap").style.color="white";
+            document.querySelector(".ticket-list2-text-wrap").style.backgroundImage="url(./assets/images/sale-icon-over.606b02a5.svg)";
+            }); 
+        });
+    </script>
   </body>
 </html>

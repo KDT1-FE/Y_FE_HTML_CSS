@@ -4,7 +4,7 @@
 
 ## 링크
 - 참고한 주소: https://www.spotify.com/kr-ko/premium/
-- 배포 주소: 
+- 배포 주소: https://velvety-puppy-c1029b.netlify.app/
 
 ## 구성
 - header, nav, main, footer의 시맨틱 태그로 구성됨

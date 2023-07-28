@@ -7,7 +7,7 @@
 .container {
   width: 100%;
   color: white;
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url(/Jaehun/assets/img/background.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url(/assets/img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -53,7 +53,7 @@
   padding: 10px 10px 10px 50px;
   border: 1px solid rgb(77, 77, 77);
   background: none;
-  background: url(/Jaehun/assets/img/search-interface-symbol.png) no-repeat;
+  background: url(/assets/img/search-interface-symbol.png) no-repeat;
   background-position: 15px center;
   opacity: 0.8;
   color: white;
@@ -201,7 +201,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-image: url(/Jaehun/assets/img/user.jpg);
+  background-image: url(/assets/img/user.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -209,7 +209,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-image: url(/Jaehun/assets/img/yuika.jpg);
+  background-image: url(/assets/img/yuika.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -261,7 +261,7 @@
   position: relative;
   width: 36px;
   height: 36px;
-  background-image: url(/Jaehun/assets/img/previous.png);
+  background-image: url(/assets/img/previous.png);
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid white;
@@ -273,7 +273,7 @@
   position: relative;
   width: 36px;
   height: 36px;
-  background-image: url(/Jaehun/assets/img/next.png);
+  background-image: url(/assets/img/next.png);
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid white;

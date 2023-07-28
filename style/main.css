@@ -1,0 +1,367 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+#home-main-top {
+    display: flex; /* Flexbox를 사용하여 요소들을 옆으로 정렬 */
+    align-items: center;/* 요소들을 수직 가운데 정렬 */
+    padding-top: 24px;
+    background-color: #FBF7F2;
+}
+
+.home-main-desc {
+    flex: 1; /* 텍스트가 행 전체를 차지하도록 설정 */
+    padding: 0 20px; /* 텍스트와 이미지 사이의 간격 설정 */
+}
+
+.home-main-title {
+    font-size: 48px;
+    margin-left: 160px;
+}
+
+.text-m {
+    margin-left: 160px;
+    margin-top: 20px; 
+    color: #212529;
+    font-size: 16px;
+}
+
+.home-main-image-top {
+    flex: 1; /* 이미지가 행 전체를 차지하도록 설정 */
+    padding-top: 40px; /* 이미지와 섹션 상단 간격 설정 */
+    padding-bottom: 40px;
+    width: 804px;
+    height: 685px;
+    margin-right: 45px;
+}
+
+
+
+#home-main-section-middle1 {
+    display: flex; /* Flexbox를 사용하여 요소들을 옆으로 정렬 */
+    align-items: center;/* 요소들을 수직 가운데 정렬 */
+    padding-top: 24px;
+    background-color: #ffffff;
+}
+
+.home-main-image-top2 {
+    flex: 1;
+    width: 532px;
+    height: 684px;
+    margin-left: 100px;
+}
+
+
+.home-main-desc2 {
+    flex: 1;
+    margin-right: 110px;
+}
+
+.home-main-title2 {
+    font-size: 40px;
+    margin-right: 200px;
+    font-weight: 600;
+}
+
+.text-m2 {
+    color: #212529;
+}
+
+.popularItem-button {
+    margin-top: 10px;
+    border: none;
+    padding: 18px 25px; /* 채팅하기 버튼의 패딩 설정 */
+    color: black; /* 버튼 텍스트 색상 설정 */
+    background-color: #F1F3F5;
+    border-radius: 6px; /* 버튼 테두리 둥글게 설정 */
+    cursor: pointer; /* 커서 스타일 변경 */
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.trustDeal-button {
+    margin-left: 10px;
+    border: none;
+    padding: 18px 25px; /* 채팅하기 버튼의 패딩 설정 */
+    color: black; /* 버튼 텍스트 색상 설정 */
+    background-color: #F1F3F5;
+    border-radius: 6px; /* 버튼 테두리 둥글게 설정 */
+    cursor: pointer; /* 커서 스타일 변경 */
+    font-size: 17px;
+    font-weight: 550;
+}
+
+
+#home-main-middle2 {
+    display: flex;
+    background-color: #E6F3E6;
+    align-items: center;
+}
+
+.home-main-desc3 {
+    flex: 1;
+    margin-left: 180px;
+ }
+
+.text-m3 {
+    color:#212529;
+}
+.home-main-title3 {
+    font-size: 40px;
+}
+
+.home-story-list {
+    margin-top: 60px;
+    display: flex;
+    /* ul을 써서 디폴트값으로 padding-left값이 30px 들어가있어서 padding-left=0;으로 줌 */
+    padding-left: 0;
+}
+
+.home-story-list > li {
+    width: 136px;
+    height: 39px;
+}
+
+.home-story-list-item {
+    margin-right: 50px;
+}
+
+.icon-story1 {
+    background-image: url(https://d1unjqcospf8gs.cloudfront.net/assets/home/main/icon-story-1-9226479b836cdc960291ffda91ace46c90a632f6cc868aa8983b3624e662a924.svg);
+    width: 56px;
+    height: 56px;
+}
+
+.icon-story2 {
+    background-image: url(https://d1unjqcospf8gs.cloudfront.net/assets/home/main/icon-story-2-208bb88cad31e335b40bc8ac5b7684dcf8a36d77ac50770a497a9c967a3bfc4f.svg);
+    width: 56px;
+    height: 56px;
+}
+
+.icon-story3 {
+    background-image: url(https://d1unjqcospf8gs.cloudfront.net/assets/home/main/icon-story-3-0a14d64c6101a7271655747d8401b9f71506578f8a4c0640608074e977bbc7c0.svg);
+    width: 56px;
+    height: 56px;
+}
+
+.text1-1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text1-2 {
+    margin-top: 20px;
+    font-size: 13px;
+    color:#212529;
+}
+
+.text2-1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text2-2 {
+    margin-top: 20px;
+    font-size: 13px;
+    color:#212529;
+}
+
+.text3-1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text3-2 {
+    margin-top: 20px;
+    font-size: 13px;
+    color:#212529;
+}
+
+.home-main-image-top3 {
+    flex: 1;
+    width: 546px;
+    height: 740px;
+    margin-right: 300px;
+}
+
+
+
+#home-main-section-middle3 {
+    display: flex; /* Flexbox를 사용하여 요소들을 옆으로 정렬 */
+    align-items: center;/* 요소들을 수직 가운데 정렬 */
+    padding-top: 24px;
+    background-color: #ffffff;
+    margin: 0px 200px;
+}
+
+.home-main-image-top4 {
+    flex: 1;
+    width: 526px;
+    height: 735px;
+}
+
+.home-main-middle3 {
+    flex: 1;
+}
+
+.home-main-title3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.text-m3 {
+    color: #212529;
+}
+
+.gotofind-button {
+    margin-top: 10px;
+    border: none;
+    padding: 18px 25px; /* 채팅하기 버튼의 패딩 설정 */
+    color: black; /* 버튼 텍스트 색상 설정 */
+    background-color: #F1F3F5;
+    border-radius: 6px; /* 버튼 테두리 둥글게 설정 */
+    cursor: pointer; /* 커서 스타일 변경 */
+    font-size: 17px;
+    font-weight: 550;
+}
+
+#home-main-section-background-gray {
+    background-color: #F8F9FA;
+    padding: 6rem 0;
+}
+
+.home-hot-content {
+    width: 1024px;
+    padding-top: 24px;
+    margin: 0px 200px;
+}
+
+.home-hot-content-title {
+    text-align: center;
+    margin-bottom: 8rem;
+    font-size: 2.5rem;
+    line-height: 1.35;
+}
+
+.card-wraps {
+    display: flex;
+    justify-content: space-around;
+    width: 1024px;
+    height: 749px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card-wraps .card-top {
+    width: 212px;
+    height: 318.85px;
+    margin-right: 44px;
+    margin-bottom: 56px;
+}
+
+
+.card-photo img{
+    width: 100%;
+    height: 212px;
+    position: relative;
+    border-radius: 12px;
+    background-color: #F8F9FA;
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15);
+    box-sizing: border-box;
+}
+
+
+.card-desc {
+    margin-top: 12px;
+}
+
+.card-title {
+    font-size: 16px;
+    letter-spacing: -0.02px;
+    color: #212529;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.card-price {
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.card-region-name {
+    font-size: 13px;
+    color: #212529;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+.card-counts {
+    color: #868e96;
+    font-size: 13px;
+}
+
+.card-top a{
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.text-m4 {
+    color: #212529;
+}
+
+
+.home-keywords-content {
+    width: 1024px;
+    display: flex;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.home-keyword-title-text {
+    color: #212529;
+}
+
+.keyword-link {
+    text-decoration: none;
+    color: #212529;
+}
+
+.keyword-link:hover {
+    text-decoration: underline;
+}
+
+.top-keywords-list {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    margin-left: 4rem;
+    
+}
+
+.keyword-item-text {
+    vertical-align: middle;
+    color: #212529;
+    margin-right: 38px;
+}

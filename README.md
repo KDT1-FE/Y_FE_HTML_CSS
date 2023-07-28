@@ -1,45 +1,47 @@
-[참고 내용]
+# 당근마켓 홈페이지 클론 코딩 
+당근마켓 홈페이지를 클론하여 HTML, CSS를 사용하여 비슷하게 구현한 개인 프로젝트입니다. <br>
+반응형 기능은 거의 없으며 웹 전체화면 기준으로 구현했습니다.
 
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
+## 프로젝트 사이트 주소
+당근마켓 사이트 URL : https://www.daangn.com/ <br>
+클론 코딩 프로젝트 사이트 URL : https://aquamarine-mousse-e4a8fd.netlify.app/
 
-과제 수행 및 제출 방법
+## 제작 기간: 2023/07/25~2023/07/28
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+## 개발환경
+<div>
+  <img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=visual studio&logoColor=white">
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+</div>
+  
+## 사용기술
+<div>
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  </div>
+<br>
 
+## 개발 사항
+1. PC 레이아웃 적용
+2. flex&grid 사용
+3. footer 부분 반응형 적용
+4. 실제 홈페이지와 최대한 유사하게 만들고자 스타일링 원본 코드 참조
+5. 연결링크 구현
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+## 개선해야 할 사항
+1. 전체에 반응형 적용 - 당근마켓 메인페이지를 보면 화면을 줄이면 이미지쪽 여백이 먼저 사라지고 그뒤에 이미지와 글씨 사이의 여백이 사라지는데, 이 구현이 어려워서 하지 못함
+2. 언어 선택 박스 레이아웃 수정
+3. JS를 사용한 기능 구현 필요
 
-필수 요구사항
+## 필수 요구사항 체크리스트
+[O] 과제에 대한 설명이 들어있는 README.md 를 제공했는지<br>
+[O] 클론한 사이트 주소를 명시했는지<br>
+[O] 과정에서 사용한 프로젝트 폴더/파일이 모두 포함되어있는지<br>
+[O] 실제 접근가능한 주소를 명시했는지<br>
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
-
-선택 요구사항
-
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
-
-손쉬운 이미지 추출 방법
-
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
-
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+## 선택 요구사항
+[O] 시맨틱 태그를 사용했는지<br>
+[O] 실제사이트의 레거시 코드활용보단 최신의 CSS Flex , Grid를 사용했는지<br>
+[X] JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.<br>
+[X] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.

@@ -39,5 +39,6 @@ new Swiper('.swiper', {
   },
 });
 
+// Copyright 시간 자동 업데이트를 위해 get this year
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();

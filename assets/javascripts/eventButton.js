@@ -1,4 +1,4 @@
-// circle 정보를 객체 배열로 정의
+// 이미지에 대한 href, src 배열
 const circleInfo = [
   {
     href: "https://www.melon.com/album/detail.htm?albumId=11294520",
@@ -55,7 +55,11 @@ function handleCircleClick(event) {
   const newHref = circleInfo[circleNumber - 1].href;
   const newSrc = circleInfo[circleNumber - 1].src;
 
-  // href src 속성을 새로운 값으로 업데이트
+  // href와 src 속성을 새로운 값으로 업데이트하고 애니메이션 클래스 추가
+  const eventImgA = document.getElementById("eventImgA");
+  const eventImgContainer = document.getElementById("imgContainer");
+
   eventImgA.href = newHref;
   eventImg.src = newSrc;
+  eventImgContainer.classList.add("new-value");
 }

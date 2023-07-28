@@ -83,6 +83,7 @@
 #apple_store,
 #play_store {
   width: 230px;
+  cursor: pointer;
 }
 
 #play_store {

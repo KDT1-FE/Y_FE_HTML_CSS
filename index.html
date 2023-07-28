@@ -73,10 +73,10 @@
 
 
   <!-- BADGES -->
-  <!-- <section>
-    <div class="badges">
-      <div class="store">
-        
+  <section>
+    <ul class="badges">
+      <li class="store">
+        <div class="store_btn"></div>
         <div class="store_qr">
           <div class="store_info">
             <p class="tit">스토어</p>
@@ -87,14 +87,13 @@
           </div>
           <button type="button" class="btn_x"><img src="./images/ico_close_gray.svg" /></button>
         </div>
-        
-      </div>
-      <div class="badges_btn">
-      <div class="up_btn">  </div>
-      <div class="store_btn"></div>
+      </ii>
+      <li>
+        <div class="up_btn">  </div>
+      </li>
+    </ul>
     </div>
-    </div>
-  </section> -->
+  </section>
 
 </Header>
 
@@ -166,21 +165,21 @@
   <!-- 러쉬 소개 -->
   <div class="lush_info">
     <div class="inner">
-
+  
       <h2 class="lush_info__title">러쉬 소개</h2>
         <div class="swiper swiper__info">
           
           <ul class="swiper-wrapper">
-
+  
             <!-- 1. 러쉬소개 -->
             <li class="swiper-slide info">
               <a href="#">
-                <figure class="info_menu">
+                <div class="info_menu">
                   <img src="./images/main_lush_info@3x.jpg" class="img__lush_info" />
-                  <figcaption class="hover-txt">
+                  <p class="hover-txt">
                     "러쉬는 어떤 이유에서도 제품을 동물실험 하지 않고, 동물실험을 거친 원재료조차 사용하지 않습니다."
-                  </figcaption>
-                </figure>
+                  </p>
+                </div>
                   <h3>러쉬 소개</h3>
                   <p class="explain">러쉬는 자연에서 얻은 신선한 재료와 동물실험을 하지 않는 정<br />직한 재료를 사용하여 모든 제품을 손으로 만듭니다.</p>
               </a>
@@ -188,12 +187,12 @@
             <!-- 2. 러쉬 역사 -->
             <li class="swiper-slide his">
               <a href="#">
-                <figure class="info_menu">
+                <div class="info_menu">
                   <img src="./images/main_lush_history@3x.jpg" class="img__lush_history"/>
-                  <figcaption class="hover-txt">
+                  <p class="hover-txt">
                     “한국은 러쉬의 네 번째 해외 진출 국가입니다.”
-                  </figcaption>
-                </figure>
+                  </p>
+                </div>
                 <h3>러쉬 역사</h3>
                 <p class="explain">1995년, 러쉬는 영국에 항구도시 풀(Poole)에<br />서 탄생했습니다.</p>
               </a>
@@ -201,12 +200,12 @@
             <!-- 3. 이념과 가치 -->
             <li class="swiper-slide val">
               <a href="#">
-                <figure class="info_menu">
+                <div class="info_menu">
                   <img src="./images/main_lush_value@3x.jpg" class="img__lush_value"/>
-                  <figcaption class="hover-txt">
+                  <p class="hover-txt">
                     “우리는 제조자의 얼굴 스티커를 제품 라벨에 붙임으로써 자부심을 가질 수 있다고 믿습니다.”
-                  </figcaption>
-                </figure>
+                  </p>
+                </div>
                 <h3>이념과 가치</h3>
                 <p class="explain">신선한 과일과 채소, 최상의 에센셜 오일, 그리고 안전한 원료를<br /> 사용하여 효과적인 제품을 만들 수 있다는 것을 믿습니다.</p>
               </a>
@@ -214,26 +213,26 @@
             <!-- 4. 브랜드 정책 -->
             <li class="swiper-slide bran">
               <a href="#">
-                <figure class="info_menu">
+                <div class="info_menu">
                   <img src="./images/main_lush_brand@3x.jpg" class="img__lush_brand"/>
-                  <figcaption class="hover-txt">
+                  <p class="hover-txt">
                   “더불어 공장 거래, 인권 보호, 포장 최소화 등 다양한 캠페인 활동을 통해 기업 윤리와 신념을 알리고 있습니다.”
-                  </figcaption>
-                </figure>
+                  </p>
+                </div>
                 <h3>브랜드 정책</h3>
                 <p class="explain">동물과 자연과 사람이 조화롭게 공존하는 세상을 바라는 러쉬<br />비즈니스의 중심에는 강력한 브랜드 윤리가 자리 잡고있습니<br />다.</p>
               </a>
             </li>
-
+  
           </ul>
         </div>
     </div>    
   </div>  
-
+  
   <!-- 기부와 나눔 -->
   <div class="lush_share">
     <div class="inner">
-      <figure>
+      <figure class="share-img">
         <img class="share-thumbnail" src="./images/main_share@3x.jpg" />
       </figure>
       <div class="title">
@@ -243,7 +242,7 @@
       </div>
     </div>
   </div>
-
+  
 
   <!-- 카테고리 -->
   <div class="lush_category">
@@ -268,7 +267,7 @@
                    <p class="explain">당신에게 향기로운 입욕을<br />선물합니다</p>
                  </div>
  
-                 <div class="swiper swiper__circle">
+                 <div class="swiper swiper__circle swiper__bath">
                     <div class="swiper-wrapper wrapper__circle">
  
                       <div class="swiper-slide slide__circle">
@@ -351,99 +350,100 @@
  
          <!-- BODY -->
          <div class="swiper-slide slide__category slide__body">
-           <div class="cate_img">
+          <div class="cate_img">
                <div> <img src="./images/category/main_body@3x.png"  /> </div>
                <div class="cate_explain_back"> 
                  <img src="./images/category/qr_body.png" />
                  <p class="tit">모바일에서 보디 제품을 구매해 보세요!</p>
                  <p class="detail">365일 챙겨드리는 스마트 샘플까지 <br />놓치지 마세요!</p>
                </div>
-           </div>
-           <!-- 원형 이미지 -->
+          </div>
+                <!-- 원형 이미지 -->
              <div class="circle">
                <div class="circle__title">
                  <h2 class="tit">보디</h2>
-                 <p class="explain">늘 당신의 피부를 향긋하고<br />건강하게 빛내 줄거예요.</p></p>
+                 <p class="explain">늘 당신의 피부를 향긋하고<br />건강하게 빛내 줄거예요.</p>
                </div>
- 
-               <div class="swiper swiper__circle">
-                 <div class="swiper-wrapper wrapper__circle">
- 
+        
+               <div class="swiper swiper__circle swiper__body">
+                  <div class="swiper-wrapper wrapper__circle">
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_01@3x.png" />
                         <p class="txt">슬리피<br />보디 로션</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_02@3x.png" />
                         <p class="txt">팬지<br />보디 로션</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_03@3x.png" />
                         <p class="txt">드림 크림<br />보디 로션</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_04@3x.png" />
                         <p class="txt">핼핑 핸즈<br />핸드 크림</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_05@3x.png" />
                         <p class="txt">라임 바운티<br />보디 버터</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_06@3x.png" />
                         <p class="txt">핑크 페퍼민트<br />풋 로션</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_07@3x.png" />
-                        <p class="txt">코밍글 <br />보디 스크럽</p>
+                        <p class="txt">코밍글<br />보디 스크럽</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_08@3x.png" />
                         <p class="txt">리피트<br />풋 밤</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_09@3x.png" />
                         <p class="txt">채러티 팟<br />보디 로션</p>
                       </div>
                     </div>
-  
+        
                     <div class="swiper-slide slide__circle">
                       <div>
                         <img src="./images/category/body_10@3x.png" />
-                        <p class="txt">이치피치 <br />마사지 바</p>
+                        <p class="txt">이치피치<br />마사지 바</p>
                       </div>
                     </div>
-
-                  </div> 
-               </div>
-             </div>
- 
-         </div>
+        
+                  
+                  </div>
+                </div>
+              </div>
+        
+        </div>
  
          <!-- FACE -->
          <!-- FRAGRANCE -->
@@ -462,9 +462,9 @@
   <!-- 매장 찾기 -->
   <div class="lush_shop">
     <div class="inner">
-      <figure>
+      <div class="shop_img">
         <img class="shop-thumbnail" src="./images/main_shop@3x.jpg" />
-      </figure>
+      </div>
       <div class="title">
         <h2>매장 찾기</h2>
         <p>가장 가까운 매장을 찾고<br />향기로운 러쉬를 만나보세요.</p>  
@@ -476,7 +476,7 @@
   <!-- 코어 밸류 -->
   <div class="lush_value">
     <ul class="lush_value_list">
-      <li>Naked Products</li>
+      <li class="naked">Naked Products</li>
       <li>Fighting Animal Testing0</li>
       <li>Fresh Cosmetics</li>
       <li>100% Vegetarian</li>

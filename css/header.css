@@ -52,86 +52,51 @@ header > .inner {
 header .badges {
   z-index: 5;
   position: fixed;
-  right: 14px;
+  right: 24px;
   bottom: 14%;
-  display: flex;
+
+  flex-direction: column;
 }
 .store {
   position: relative;
+  height: 60px;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 /* STORE BTN */
 
-.badges_btn {
-  margin-left: 15px;
-  gap: 24px;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.store_btn {
-  display: block;
-  width: 56px;
-  height: 56px;
+.store_btn,
+.up_btn {
   font-size: 0;
   border-radius: 50%;
-  left: 0;
+  width: 56px;
+  height: 56px;
   background-color: #222;
-  background-image: url("../images/ico_store.svg");
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.store_btn {
+  background-image: url("../images/ico_store.svg");
 }
 .up_btn {
-  margin-right: 0;
+  z-index: 30;
+  float: right;
+  margin-top: 20px;
   background-image: url("../images/ico_arrowT.svg");
-  display: block;
-  width: 56px;
-  height: 56px;
-  font-size: 0;
-  border-radius: 50%;
-  background-color: #222;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: flex-end;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-/* hover */
-/* .store_qr {
-  display: none;
-  position: absolute;
-  padding: 24px 19px;
-  width: 180px;
-  border-radius: 14px;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-.store_qr:after {
-  position: absolute;
-  border: solid transparent;
-  border-color: rgba(51, 51, 51, 0);
-  border-bottom-color: #333;
-  border-width: 10px;
-  pointer-events: none;
-  content: " ";
-  top: 50%;
-  right: -200px;
-  width: 0;
-  height: 0;
-}
-.store_btn:hover + .store_qr {
-  display: block;
-} */
 
 /* QR창 */
 .store_qr {
+  margin-right: 30px;
+  float: left;
+  display: none;
   position: relative;
   padding: 24px 19px;
   width: 180px;
   height: 282px;
+  top: -100%;
   box-sizing: border-box;
   border-radius: 14px;
   text-align: center;
@@ -157,10 +122,12 @@ header .badges {
 .qr {
   width: 142px;
   height: 142px;
-
   box-sizing: border-box;
 }
 .qr img {
   width: 100%;
   height: 100%;
+}
+.store_btn:hover + .store_qr {
+  display: flex;
 }

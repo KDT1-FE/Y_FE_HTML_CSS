@@ -111,8 +111,7 @@
   background: rgba(0, 0, 0, 0.4);
 }
 .survey .survey-thumbnail {
-  object-fit: cover;
-  height: 362px;
+  height: 400px;
 }
 .survey .title_area {
   z-index: 5;
@@ -132,49 +131,35 @@
   line-height: 42px;
   letter-spacing: -2px;
 }
-.survey .btn_white {
-}
 
 /* 러쉬소개 - SWIPER */
 .lush_info {
   margin-top: 176px;
-  position: relative;
-  overflow: hidden;
-  overflow: inherit;
 }
-.lush_info .inner {
-  clip-path: inset(0 -100vw 0 0);
-}
+
 .lush_info__title {
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 18px;
 }
 /*  */
-.lush_info .swiper {
-  background-color: pink;
-}
 .lush_info .swiper-wrapper {
   align-items: center;
 }
 .lush_info .swiper-slide {
-  width: 100%;
-  box-sizing: border-box;
-  background-color: aqua;
-}
-/* .lush_info .swiper-slide + .swiper-slide {
-  margin-left: 72px;
-} */
-.lush_info .swiper-slide a {
-  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 100px;
 }
 
 .lush_info .swiper-slide .info_menu {
   position: relative;
-  width: 100%;
+  overflow: hidden;
 }
-
-.lush_info .swiper-slide figure img {
+.lush_info .swiper-slide a {
+  display: block;
+}
+.lush_info .swiper-slide .info_menu img {
   width: 100%;
   height: 100%;
 }
@@ -183,12 +168,10 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 33px;
   box-sizing: border-box;
   text-indent: -15px;
   color: #fff;
@@ -196,13 +179,12 @@
   font-size: 32px;
   line-height: 42px;
   letter-spacing: -1px;
-
-  visibility: hidden;
+  opacity: 0;
   background: rgba(0, 0, 0, 0.5);
   transition: all ease-in-out 0.5s;
 }
 .lush_info .swiper-slide .info_menu:hover .hover-txt {
-  visibility: visible;
+  opacity: 1;
 }
 .lush_info .swiper-slide .info_menu:hover img {
   scale: 1.1;
@@ -210,22 +192,22 @@
 }
 
 /* IMAGE SIZE */
-/* .lush_info .info figure {
+.lush_info .info div {
   width: 392px;
   height: 560px;
 }
-.lush_info .his figure {
+.lush_info .his div {
   width: 288px;
   height: 320px;
 }
-.lush_info .val figure {
+.lush_info .val div {
   width: 392px;
   height: 436px;
 }
-.lush_info .bran figure {
+.lush_info .bran div {
   width: 392px;
   height: 560px;
-} */
+}
 
 .lush_info .swiper-slide > a {
   color: #222;
@@ -248,12 +230,15 @@
   display: flex;
   gap: 64px;
   justify-content: center;
-  overflow: hidden;
 }
-.share-thumbnail {
-  object-fit: cover;
+.share-img {
+  overflow: hidden;
   width: 600px;
   height: 408px;
+}
+.share-thumbnail {
+  width: 700px;
+  height: auto;
 }
 .lush_share .title {
   font-weight: 700;
@@ -272,6 +257,11 @@
 }
 
 /* 카테고리 */
+.lush_category .swiper__category .swiper-wrapper > .swiper-slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 .lush_category {
   margin-top: 176px;
@@ -281,13 +271,14 @@
 .lush_category .inner {
   overflow: hidden;
   height: 100%;
+  width: 1400px;
 }
 .swiper__category {
   padding-bottom: 40px;
 }
 .wrapper__category {
 }
-.slide__category {
+.wrapper__category > .slide__category {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -298,17 +289,17 @@
   height: 560px;
 }
 .cate_img img {
-  width: 100%;
-  height: 100%;
+  width: 475px;
+  height: 560px;
 }
 /* QR - 뒷면 */
-.cate_explain_back {
+.cate_img .cate_explain_back {
   z-index: 6;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 95%;
+  height: 100%;
   color: #fff;
   align-items: center;
   text-align: center;
@@ -321,10 +312,10 @@
 .cate_img:hover .cate_explain_back {
   opacity: 1;
 }
-
 .cate_explain_back img {
   width: 180px;
   height: 180px;
+  margin-top: 100px;
 }
 .cate_explain_back .tit {
   margin-top: 48px;
@@ -335,13 +326,14 @@
   margin-top: 32px;
   line-height: 24px;
 }
-/* 타이틀 + 원형 */
+
+/* CIRCLE */
 .circle {
-  padding-left: 64px;
-  overflow: hidden;
   width: calc(100% - 475px);
+  overflow: hidden;
 }
 .circle__title {
+  padding-left: 64px;
   width: 100%;
   padding-bottom: 64px;
   font-weight: 700;
@@ -354,37 +346,79 @@
   font-size: 32px;
 }
 
-/* CIRCLE */
+/* CIRCLE SWIPER */
+.swiper__circle {
+  padding-left: 64px;
+}
 .slide__circle {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   overflow: hidden;
   margin-right: 66px;
   width: 288px;
   height: 288px;
   border-radius: 50%;
+}
+.slide__circle > div {
   position: relative;
 }
 .slide__circle img {
+  width: 288px;
+  height: 288px;
+}
+
+/* circle 뒷면 hover */
+.slide__circle .txt {
+  display: flex;
+  position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 0.4s;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
 }
+.slide__circle:hover .txt {
+  opacity: 1;
+}
+
+/* PAGINATION */
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #757575;
+}
+
 /* 매장 찾기 */
 .lush_shop {
   margin-top: 155px;
 }
 .lush_shop .inner {
   display: flex;
-  gap: 64px;
-  justify-content: center;
-  overflow: hidden;
+  gap: 0 64px;
+  align-items: flex-start;
 }
-.shop-thumbnail {
-  object-fit: cover;
-  width: 807px;
+.lush_shop .shop_img {
+  overflow: hidden;
+  width: 808px;
   height: 560px;
 }
+.shop-thumbnail {
+  align-self: center;
+  width: 1050px;
+  height: auto;
+}
+
+/* TXT */
 .lush_shop .title {
   font-weight: 700;
 }
@@ -408,11 +442,11 @@
   width: 100%;
   height: 720px;
   background-color: #fafafa;
+
   background-position: center center;
   background-size: cover;
 }
 .lush_value_list {
-  background-color: aqua;
   margin: auto;
   font-size: 0;
   display: grid;

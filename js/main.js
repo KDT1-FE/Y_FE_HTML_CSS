@@ -32,10 +32,9 @@ new simpleParallax(shop, {
 // SWIPER
 
 // 러쉬 소개
-
 const swiper__info = document.querySelector(".swiper__info");
 new Swiper(swiper__info, {
-  slidesPerView: 4,
+  slidesPerView: "auto",
   centeredSlides: true,
   spaceBetween: 50,
   grabCursor: true,
@@ -49,7 +48,10 @@ new Swiper(swiper__category, {
   autoplay: {
     delay: 5000,
   },
-  loop: true,
+  rewind: true,
+  speed: 500,
+  observer: true,
+  observeParents: true,
   effect: "fade",
   fadeEffect: {
     crossFade: true,
@@ -57,21 +59,21 @@ new Swiper(swiper__category, {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    type: "bullet",
   },
 });
 
 // 카테고리__원형이미지
-const swiper__circle = document.querySelector(".swiper__circle");
-new Swiper(swiper__circle, {
-  slidesPerView: auto,
-  // centeredSlides: true,
-  spaceBetween: 5,
-  grabCursor: true,
 
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
-  loop: true,
+const swiperEls = document.querySelectorAll(".swiper__circle");
+swiperEls.forEach(swiperEl => {
+  new Swiper(swiperEl, {
+    slidesPerView: "auto",
+    spaceBetween: 25,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+  });
 });

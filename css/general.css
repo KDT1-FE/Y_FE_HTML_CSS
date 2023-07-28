@@ -1,5 +1,5 @@
 body {
-  font-family: 'NotoSans', sans-serif;
+  font-family: "NotoSans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #333;
@@ -16,6 +16,7 @@ a {
 img {
   display: block;
   object-fit: cover;
+  backface-visibility: hidden;
 }
 .btn {
   display: block;
@@ -28,7 +29,7 @@ img {
   line-height: 58px;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'NotoSans';
+  font-family: "NotoSans";
 }
 .btn--white {
   position: relative;
@@ -36,7 +37,7 @@ img {
   border: 1px solid #fff;
 }
 .btn--white:hover {
-  color : #222;
+  color: #222;
   background-color: #fff;
 }
 .btn--black {

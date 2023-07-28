@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    color: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Open Sans","arial","Apple SD Gothic Neo","Noto Sans CJK KR","본고딕","KoPubDotum","나눔바른고딕","나눔고딕","NanumGothic","맑은고딕","Malgun Gothic",sans-serif;
+}
+
+body{
+    background-color: #efefef;
+}
+
+.div-wrapper{
+    display: flex;
+    margin: 0 15%;
+    background-color: #efefef;
+}
+
+.article{
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 20px 25px;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+/* nav */
+.nav{ 
+    display: flex;
+    height: 42px;
+    background-color: #008275;
+    color: #eceeef;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: -8px;
+}
+
+.nav > ul > li > select{
+    color: black;
+}
+
+.nav > form{
+    color: black;
+    margin: auto 0;
+}
+
+.nav button{
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+
+#sj-div{
+    display: flex;
+    align-items: center;
+}
+
+#sj-div > div > a{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#ad-img{
+    width: 728px;
+    height: 90px;
+}
+
+#ad-img2{
+    width: 300px;
+    height: 250px;
+}
+
+.sj-img{ 
+    width: 25px;
+    height: 25px;
+}
+
+.sj-img2{
+    width: 60px;
+    height: 60px;
+}
+
+
+#cc-by-nc-sa{
+    width: 88px;
+    height: 31px;
+}
+
+footer img{
+    width: 32px;
+    height: 32px;
+}
+
+aside > div{
+    width: 300px;
+    margin: 17.5px;
+    border: 1px solid #ccc;
+    background-color: white
+}
+
+table a{
+    color: #0275D8;
+}
+
+.sj-span{
+    font-size: 1.2888888889em;
+}
+
+.sj-div2{
+    font-size: .9rem;
+
+}
+
+.sj-div2 a{
+    color: #0275D8;
+}
+
+aside a{
+    color: #0275D8;
+}
+
+footer a{
+    color: #0275D8;
+}
+
+.help{
+    display: flex;
+    margin-left: auto;
+    font-size: .9rem;
+}
+
+.help > div{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    color: #373A3C;
+}
+
+.sj-footer{
+
+    border-top: 1px solid #ccc;
+    background-color: white;
+}
+
+.sj-footer > ul{
+    display: flex;
+    justify-content: center;
+}
+
+.sj-footer > p{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright > *{
+    text-align: right;
+    font-size: .9rem;
+    line-height: 10px;
+
+}
+
+.recent-modify{
+    text-align: right;
+    font-size: .9rem;
+}
+
+#namu{
+    font-size: .9rem;
+    padding: 5px;
+}
+#namu > a{
+    color: #0275D8;
+}
+
+/* 나무뉴스 list*/
+.news-content > div{
+    border-top: 1px solid #ccc;
+    padding: 3px 10px;
+    font-size: .9rem;
+}
+
+/* 나무뉴스 title*/
+.news-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+/* 최근 변경 list*/
+#aside-div > div > div{
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 3px 10px;
+    font-size: .9rem;
+}
+
+/* 최근 변경 더보기 */
+#aside-div > div > div > div{
+    margin-left: auto;
+}
+
+/* 최근 변경 title*/
+#recent-change{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+
+#sj-tbody > tr{
+    border: 1px solid #ccc;
+    font-size: .9rem;
+}
+
+#sj-tbody > tr > td{
+    padding: 5px 10px;
+}
+
+#sj-tbody tr td:nth-child(2) {
+    padding: 0 10px;
+  }
+
+#sj-tbody-2 > tr > td{
+    padding: 5px 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.ad-img{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sj-span2{
+    font-size: 1.3888888889em;;
+}
+
+#knowledge-tree{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0 10px 0;
+    padding: 10px 0 20px 0;
+    font-size: .9rem;
+}
+
+.sj-etc{
+    font-size: .9rem;
+}
+
+#namu-project{
+    color:#fff; 
+    font-size: 1.2888888889em;
+}
+
+#namu-project-wrapper{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+#sj-fixed{
+    height: 40px;
+    display: flex;
+    bottom: 0;
+    margin: 15px;
+    opacity: .8;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+#sj-fixed > div{
+    background-color: #008275;
+    border: 1px solid #ccc;
+    color: #fff!important;
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 40px;
+    width: 40px;
+    margin-right: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#namu-logo{
+    width: 105.5px;
+    height: 41.5px;
+}
+
+.sj-ul > li{
+    list-style-type: disc;
+    margin-left: -10px;
+    line-height: 10px;
+}
+
+
+#search-div{
+    display: flex;
+    align-items: center;
+    height: 42px;
+    margin-left: auto;
+    margin-right: 300px;
+}
+
+#search-div input{
+    width: 250px;
+    height: 42px;
+    border: 1px solid #ccc;
+    color: black;
+    padding-left: 10px;
+}
+
+#search-div button{
+    width: 32px;
+    height: 42px;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#search-div > div > div{
+    width: 38.4px; 
+    height:38.4px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+#namu-div{
+    display: flex;
+    align-items: center;
+    height: 42px;
+    margin-left: 295px;
+}
+
+#namu-div img{
+    width: 105.5px;
+}
+
+#namu-div > div{
+    width: 112px;
+    height: 41.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* 모달 */
+.CreateModal {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 1022;
+    background-color: rgba(0, 0, 0, 0.2); /* 어둡기를 조절하려면 투명도 값을 조정하세요 */
+    color: #373A3C;
+    font-size: .9rem;
+    line-height: 35px;
+    display: none;
+    overflow-y: auto;
+  }
+  
+.CreateModal > div {
+
+display: inline-block;
+width: 600px;
+height: 970px;
+background: white;
+--saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+box-shadow: 0 0 0 1px var(--saf-0), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+background-color: white;
+
+border-radius: 6px;
+user-select: none;
+z-index: 1012;
+position: relative;
+text-align: left;
+padding-left: 15px;
+}
+
+.CreateModal header{
+    width: 568px;
+   margin-left: 17px;
+}
+
+.CreateModal header ul{
+    display: flex; 
+    border: 1px solid #ccc;
+    height: 41px;
+    align-items: center;
+    padding-left: 10px;    
+}
+
+.CreateModal header ul li:nth-child(1){
+    background-color: #ababab;
+    color: white;
+}
+.CreateModal header ul li{
+    width: 43px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.CloseModalButton {
+position: absolute;
+right: 10px;
+top: 6px;
+background: transparent;
+border: none;
+font-size: 30px;
+cursor: pointer;
+}
+
+.sj-ul2{
+    margin-left: -50px;
+    line-height:30px;
+ 
+}
+
+.sj-ul2 li{
+    list-style-type: disc;
+    line-height:30px;
+}
+
+#dropdownContent{
+    width: 200px;
+    height: 332px;
+
+    display: none; 
+    position:absolute; 
+    top: 45px;
+    left: 560px;
+    color: #373A3C;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: .9rem;
+    line-height: 30px;
+}
+
+#dropdownContent iconify-icon{
+    margin: 0 10px;
+}
+
+#dropdownContent > div{
+    transition: background-color 0.3s; 
+}
+
+#dropdownContent > div:hover{
+    background-color: #d0d0d0;
+}
+
+.help > div{
+    transition: background-color 0.3s; 
+}
+
+.help > div:hover{
+    background-color: #d0d0d0;
+}

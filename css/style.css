@@ -1,0 +1,6 @@
+@import "reset.css";
+@import "common.css";
+@import "layout.css";
+
+/* all subpage css */
+@import "index.css";

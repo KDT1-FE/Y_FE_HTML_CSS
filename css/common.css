@@ -1,0 +1,66 @@
+body {
+  font-family: -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #fffef2;;
+  overflow-x: hidden;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,'wght' 200,'GRAD' 0,'opsz' 24
+}
+
+a {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  text-align: left;
+  min-width: 300px;
+  font-weight: 700;
+  padding: 19px 23px;
+  color: inherit;
+  transition:  .3s cubic-bezier(.215,.61,.355,1);
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btn--white {
+  border: 1px solid #fffef2;
+  color: #fffef2;
+}
+
+.btn--white:hover {
+  background: #fffef2;
+  color: #333;
+}
+.btn--blank--dark {
+  border: 1px solid rgba(51,51,51,.2);
+  color: #333;
+}
+
+.btn--blank--dark:hover {
+  background: #333;
+  color: #fffef2;
+}
+
+.btn--dark {
+  background-color:#000;
+  color: #f6f5e8;
+}
+

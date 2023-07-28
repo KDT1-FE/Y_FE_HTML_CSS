@@ -35,28 +35,35 @@
 
 | 헤더 + 메인  | 인기 콘텐츠 |
 | :--: | :--: |
-| <img width=“500” src=""> | <img width=“500” src="">  |
+| <img width=“500” src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/4e71c978-dda0-484b-98b8-113b0ba111f1"> | <img width=“500” src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/6cd22f6f-0556-4786-b27e-ed8595eaa284">  |
 | 특징 + 배너 | 기기 |
-| <img width=“500” src=""> | <img width=“500” src=""> |
+| <img width=“500” src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/d31872aa-3181-4f34-8dbe-398cceb25ca7"> | <img width=“500” src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/3b82c8a0-b5eb-4ee5-a146-524cf24372bd"> |
 | 질문 | 헤더 + 푸터 |
-| <img width=“500” src=""> | <img width=“500” src=""> |
-
----
+| <img width=“500” src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/766171b6-4313-41c3-ae4f-c7e33501ba06"> | <img width=“500” src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/3056e22f-d65f-4093-88aa-0b835c822d0d"> |
 
 ## 주요 기능 🔧
 
 1. 반응형
+   
+    ![2](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/4da847b6-9302-421a-ac48-ab4c6337e667)
+    ![3](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/8bbc2f26-dd73-479b-99b5-b9cc145aa3a0)
 
-    CSS의 Media Query를 이용하여 모바일, 테블릿, 데스크탑으로 나누어 구현했습니다.
+   CSS의 Media Query를 이용하여 모바일, 테블릿, 데스크탑으로 나누어 구현했습니다.
 2. 헤더 투명화
 
-    JavaScript와 CSS를 이용하여 특정 스크롤 영역에서 헤더와 버튼이 투명하도록 처리했습니다.
+   ![1](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/220098d7-a1cf-4128-b322-00e0d48b8f1c)
+
+   JavaScript와 CSS를 이용하여 특정 스크롤 영역에서 헤더와 버튼이 투명하도록 처리했습니다.
 3. 메인 이미지 전환 기능
+
+   ![4](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/478c8701-dabd-48c1-a8ec-ffc85c5e5c56)
 
     `<input>`, `<label>`과 CSS만을 이용하여 메인 이미지 밑에 버튼을 클릭하면 콘텐츠 이미지가 전환되도록 구현했습니다.
 4. 질문 아코디언(펼침/닫힘) 기능
 
-    JavaScript와 CSS를 이용하여 질문 영역을 클릭하면 질문 상자가 열리거나 닫히도록 처리했습니다.
+    ![5](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/79249376/e832a2d7-451e-42b9-909f-69c254052923)
+
+   JavaScript와 CSS를 이용하여 질문 영역을 클릭하면 질문 상자가 열리거나 닫히도록 처리했습니다.
 
 
 ## JS가 필요한 부분 ⚙️

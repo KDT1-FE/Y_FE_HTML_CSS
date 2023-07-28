@@ -1,3 +1,161 @@
-.footer {
+.footer{
+    font-family: 'Noto Sans KR', 'Malgun Gothic';
+    width: 100%;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #f0f0f0;
+    border: none;
+    margin-top: 120px;
+    float: bottom;
+}
+
+.footer > div {
+    width: 1200px;
+    padding: 55px 20px 20px;
+    margin: 0px auto;
+}
+
+.footer__inner {
+    position: relative;
+    float: left;
+    margin-right: 120px;
+}
+.footer__inner:first-of-type {
+    width: 240px;
+    margin-right: 0px;
+}
+.footer__inner:last-of-type {
+    margin-right: 0px;
+}
+.footer__inner-title {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+.footer__inner-content {
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+
+.footer__inner dl {
+    display: flex;
+    width: 330px;
+}
+
+.inner__title-width{
+    width: 110px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.footer-top__button {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 8px 12px 8px 36px;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 2px;
+    border: solid 1px #aaa;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.footer__inner dl > dd,
+.footer-top__button {
+    margin: 0 0 10px 0;
+    z-index: 10;
+    width: fit-content;
+}
+
+.kakao__button {
+    padding: 5px 26px 5px 16px;
+    font-weight: bold;
+}
+.kakao__button::after {
+    content: '';
+    background-image: url(../assets/icons/icn_kakao_blck.svg);
+    background-repeat: no-repeat;
+    position: static;
+    float: left;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 -5px 6px;
+    background-size: 20px;
+    background-position: center;
+}
+.service__button {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 5px 12px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    border-radius: 2px;
+    border: solid 1px #aaa;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.footer__inner__item {
+    font-size: 13px;
+}
+.footer__inner__item p:first-of-type {
+    padding: 7px 0px 0px 0px;
+    font-weight: 500;
     
+}
+.footer__inner__item p:not(first-of-type){
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+.footer__inner__item p:nth-of-type(2)::before {
+    content: "평일";
+    position: absolute;
+    left: 0px;
+}
+.footer__inner__item p:last-of-type::before {
+    content: "토요일";
+    position: absolute;
+    left: 0px;
+}
+
+.footer__icons {
+    margin-bottom: 10px;
+}
+
+.footer__inner--width{
+    width: 890px;
+}
+.footer__inner--width ul:first-of-type {
+    float: left;
+}
+.footer__inner--width ul:last-of-type {
+    display: inline-flex;
+    height: 140px;
+    align-items: flex-end;
+    float: right;
+    margin: 0 49px 0 0;
+}
+.footer__inner--width ul:first-of-type li {
+    margin-bottom: 14px;
+    font-size: 12px;
+}
+.footer__inner--width ul:last-of-type li {
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.footer__divider {
+    margin: 30px 0px;
+}
+
+.footer__bottom {
+    height: 280px;
 }

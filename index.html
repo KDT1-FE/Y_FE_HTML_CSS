@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src = "script.js"></script>
+    <link rel = "stylesheet" type ="text/css" href="styles.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20d70f3e0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class = "header">
+        <div class="left">
+            <i class="fa-solid fa-bars" id ="threebars"></i>
+            <img src="UberEats/UberEatsImages04.svg">
+        </div>
+        <div class="right">
+            <button class="login" ><i class="fa-solid fa-user"></i> Log in</button>
+            <button class="signup" >Sign up</button>
+        </div>
+    </div>
+    
+    <div class = "section1">
+        <img src = "UberEats/UberEatsImages05.png" width=100% height=auto class="yellow-background">
+        <div class = "top-left">Order food to your door
+            <style>
+                .dropbtn {
+                  color: white;
+                  font-size: 16px;
+                  border: none;
+                  cursor: pointer;
+                }
+                
+                .dropbtn:hover, .dropbtn:focus {
+                  background-color: white;
+                }
+                
+                .dropdown {
+                  float: right;
+                  position: relative;
+                  display: inline-block;
+                }
+                
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: white;
+                  min-width: 160px;
+                  overflow: auto;
+                  right: 0;
+                  z-index: 1;
+                }
+                
+                .dropdown-content a {
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                }
+                
+                .dropdown a:hover .hover_img{display: inline /*background: "UberEats/UberEatsImages01.png"*/}
+                
+                .show {display: block;}
+            </style>
+    
+            <div class="dropdown" style="position:relative; padding-right: 500px;">
+                <button onclick="myFunction()" class="dropbtn">
+                    <img width=100% height=100% class = "dropbtn" src="UberEats/delievernow.png">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home"><img src = "UberEats/delievernow.png" width=100% height=auto></a>
+                  <a href="#about">Schedule for later</a>
+                </div>
+            </div>
+              
+              <script>
+              /* When the user clicks on the button, 
+              toggle between hiding and showing the dropdown content */
+              function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+              }
+              
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }
+                }
+              }
+            </script>
+    
+            <style>
+                .button {
+                  display: inline-block;
+                  padding: 17px 17px;
+                  font-size: 20px;
+                  cursor: pointer;
+                  text-align: center;
+                  text-decoration: none;
+                  outline: none;
+                  color: #fff;
+                  background-color: black;
+                  border: none;
+                  border-radius: 8px;
+                }
+                
+                .button:hover {background-color: rgb(51, 49, 49)}
+                
+            </style>
+            <div class="below-top-left">
+                <form>
+                    <input type ="text" id = "deliv_address" placeholder="Enter delivery address" size="75">
+                </form>
+                <button class="button" id = "findfood">Find Food</button>
+                <div class = "sub-top-left"><u>Sign In</u> for your recent addresses</div>
+            </div>
+        </div>
+        
+        <img src = "UberEats/UberEatsImages04.svg" width=100% height=auto class="hover_img">
+
+
+
+    </div>
+
+    <div class="section2">  
+        <div class="section2-1" id = "section2-items"><img src = "UberEats/UberEatsImages06.webp" width=90% height=auto>
+            <p class="section2-1" style="font-size: 30px; font-weight: bold;" id = "section2-items">Feed your employees</p>
+            <p class="section2-1" style="font-size: 15px; font-family: 'Poppins', sans-serif;" id = "section2-items"><u>Create a business account</u></p>
+        </div>    
+        <div class="section2-1" id = "section2-items"><img src = "UberEats/UberEatsImages07.webp" width=90% height=auto>
+            <p class="section2-1" style="font-size: 30px; font-weight: bold;" id = "section2-items">Your restaurant, delivered</p>
+            <p class="section2-1" style="font-size: 15px; font-family: 'Poppins', sans-serif;" id = "section2-items"><u>Add your restaurant</u></p>
+        </div> 
+        <div class="section2-1" id = "section2-items"><img src = "UberEats/UberEatsImages08.webp" width=90% height=auto>
+            <p class="section2-1" style="font-size: 30px; font-weight: bold;" id = "section2-items">Deliver with Uber Eats</p>
+            <p class="section2-1" style="font-size: 15px; font-family: 'Poppins', sans-serif;" id = "section2-items"><u>Sign up to deliver</u></p>
+        </div>     
+    </div>
+
+    <div class="section3">
+        <div class = "section3-header" style="font-size: 40px; font-weight: bold;">Cities near me</div>
+        <div class = "section3-header" style="font-size: 20px;"><u>View all 500+ cities</u></div>
+    </div>
+    <img src = "UberEats/map.png" width=95% style="display: block; padding-left: 50px; padding-top: 15px; padding-right: 50px;">
+    <div class ="section3-list">
+        <ul class="city-list">
+            <li>Akron</li>
+            <li>Albuquerque</li>
+            <li>Bridgeport</li>
+            <li>Concord</li>
+            <li>Dayton</li>
+            <li>El Paso</li>
+            <li>Hartford</li>
+            <li>Houston</li>
+            <li>Indianapolis</li>
+            <li>McAllen</li>
+            <li>Mesa</li>
+            <li>Milwaukee</li>
+            <li>Nashville</li>
+            <li>New Orleans</li>
+            <li>Oklahoma City</li>
+            <li>Omaha</li>
+            <li>Orlando</li>
+            <li>Palm Bay</li>
+            <li>Providence</li>
+            <li>Queens</li>
+            <li>San Antonio</li>
+            <li>Stony Brook</li>
+            <li>Tucson</li>
+            <li>West Hollywood</li>
+        </ul>
+    </div>
+
+    <div class="section3">
+        <div class = "section3-header" style="font-size: 40px; font-weight: bold;">Countries with Uber Eats</div>
+        <div class = "section3-header" style="font-size: 20px;"><u>View all countries</u></div>
+    </div>
+    <div class ="section3-list">
+        <ul class="country-list">
+            <li>Australia</li>
+            <li>Belgium</li>
+            <li>Canada</li>
+            <li>Chile</li>
+            <li>Costa Rica</li>
+            <li>Dominican Republic</li>
+            <li>Ecuador</li>
+            <li>El Salvador</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Guatemala</li>
+            <li>Ireland</li>
+            <li>Italy</li>
+            <li>Japan</li>
+            <li>Kenya</li>
+            <li>Mexico</li>
+            <li>Netherlands</li>
+            <li>New Zealand</li>
+            <li>Panama</li>
+            <li>Poland</li>
+            <li>Portugal</li>
+            <li>South Africa</li>
+            <li>Spain</li>            
+            <li>Sri Lanka</li>
+            <li>Sweden</li>
+            <li>Switzerland</li>
+            <li>Taiwan (ROC)</li>            
+            <li>United Kingdom</li>
+            <li>United States</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section5">
+        <div class="section5-left">
+            <img src="UberEats/UberEatsImages04.svg" id ="UberEats-logo">
+            <img src = "UberEats/UberEatsImages09.svg" width=25% height=auto id="app-store">
+            <img src = "UberEats/UberEatsImages10.png" width=25% height=auto id="google-play">
+        </div>
+        <div class="section5-right">
+            <ul class="section5-list">
+                <li>Get Help</li>
+                <li>Buy gift cards</li>
+                <li>Add your restaurant</li>
+                <li>Sign up to deliver</li>
+                <li>Create a business account</li>
+                <li>Promotions</li>
+                <li>Restaurants near me</li>
+                <li>View all cities</li>
+                <li>View all countries</li>
+                <li>Pickup near me</li>            
+                <li>About Uber Eats</li>
+                <li>English</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+</html>

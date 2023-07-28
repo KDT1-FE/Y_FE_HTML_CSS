@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Uber Move';
+    src: local('Uber Move Regular'), local('Uber-Move-Regular'),
+        url('UberMove-Regular.woff2') format('woff2'),
+        url('UberMove-Regular.woff') format('woff'),
+        url('UberMove-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

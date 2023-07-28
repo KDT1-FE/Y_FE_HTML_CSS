@@ -1,10 +1,6 @@
 # HTML, CSS, JS 클론 코딩 과제
 > 인터파크 메인 페이지 클론 코딩
 
-<img src="https://img.shields.io/badge/html5-#E34F26?style=for-the-badge&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/css3-#1572B6?style=for-the-badge&logo=css3&logoColor=white">
-<img src="https://img.shields.io/badge/javascript-#F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
-
 ## 설치 방법
 
 클론한 사이트:
@@ -16,7 +12,7 @@ https://www.interpark.com/
 데모 링크:
 
 ```
-
+https://glistening-salamander-d7cd38.netlify.app/
 ```
 
 ## 구현 사항
@@ -26,3 +22,15 @@ https://www.interpark.com/
 - hover 하면 submenu가 펼쳐지는 nav
 - swiper 라이브러리를 이용한 다양한 형태의 swiper 구현
 - 클릭하면 페이지의 top으로 이동시켜주는 버튼
+
+## 필수 요구 사항
+- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
+- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
+- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
+- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+## 선택 요구 사항
+- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
+- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
+- 부분적으로 BEM 방법론을 도입해보세요.
+- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
+- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)

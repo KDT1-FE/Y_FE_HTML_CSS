@@ -89,7 +89,7 @@
 .slideButton{
     display:flex;
     justify-content: space-between;
-    margin-right:118px;
+    margin-right:20px;
 }
 .slidePrevButton,.slideNextButton{
     position:relative;
@@ -103,18 +103,14 @@
     z-index:2;
     align-items: center;
 }
-.slideNextButton{
-   left:90px;
-}
-.slidePrevButton i{
-    margin-top:18px;
-    margin-left:16px;
 
+.slidePrevButton i{
+    margin-top:16px;
+    margin-left:18px;
 }
 .slideNextButton i{
-    margin-top:18px;
-    margin-left:16px;
-    
+    margin-top:16px;
+    margin-left:18px;
 }
 .slideItem{
     display:flex;
@@ -123,13 +119,10 @@
    
 }
 .slideItem img{
-    position:relative;
-    top:-20px;
-    width:620px;
+    margin-right:30px;
+    width:600px;
     border-radius:20px;
     background-color: transparent;
-    z-index:1;
-    
 }
 .DescList{
     padding-top:40px;
@@ -143,7 +136,7 @@
 .subDesc{
     font-size:18px;
     line-height:2px;
-    color:rgb(18,18,18,0.5)
+    color:#12121280;
 
 }
 .tabContainer{
@@ -211,11 +204,11 @@ span {
     padding-left:5px;
 }
 .tour .Item {
-    width:420px;
+    width:410px;
+    height:360px;
 }
 .tour .Item img{
-    position:relative;
-    width:420px;
+    width:410px;
     height:250px;
 }
 .ItemDescList{
@@ -242,7 +235,7 @@ span {
 .tourDescList p{
     padding:0;
     margin:0;
-    line-height:20px;
+    line-height:14px;
 }
 .tourItemDesc{
     font-size:13px;
@@ -253,15 +246,17 @@ span {
     font-size:13px;
     color:#707070;
 }
-.tourItemPrice{
-    
+.tourItemPrice p{
+    font-size:20px;
+    font-weight:bold;
+    line-height: 2px;
 }
 .ticket .Item{
-    width:315px;
+    width:300px;
     height:550px;
 }
 .ticket .Item img{
-    width:315px;
+    width:300px;
     height:400px;
     margin:0;
     padding:0;
@@ -370,7 +365,6 @@ span {
     z-index:2;
     top:144px;
     left:68px;
-    /* right:50px; */
     text-align: center;
     line-height:6px;
 }
@@ -419,13 +413,13 @@ span {
 }
 .bookItem{
     margin-top:20px;
-    width:250px;
+    width:235px;
     height:400px;
     border:1px solid #ebebeb;
    
 }
 .bookItem img{
-    width:250px;
+    width:235px;
     height:400px;
 }
 .bookItemDescList{
@@ -446,7 +440,6 @@ span {
     padding-bottom:60px;
 }
 .eventItem{
-    /* margin-top:20px; */
     width:300px;
     height:400px;
     border:1px solid #ebebeb;
@@ -456,9 +449,6 @@ span {
     width:300px;
     height:400px;
     border-radius:20px;
-}
-.footer{
-  
 }
 .agreementContainer{
     margin-top:40px;
@@ -499,11 +489,18 @@ span {
     margin-top:10px;
     border:0.1px thin #ececec;
     background-color:#ececec;
-    
 } 
+a{
+    color:#1869ff;
+}
 #title{
     font-weight: bold;
 }
 #copyright{
     color:#d9d9d9;
+}
+#btn1{
+    background-color:#000000;
+    color:#fff;
+    font-weight:bold;
 }

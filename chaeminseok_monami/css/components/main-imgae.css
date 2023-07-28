@@ -1,0 +1,33 @@
+.main-img {
+    margin-top: 150px;
+    position: relative;
+    width: 100vw;
+    z-index: 0;
+    justify-content: center;
+    min-width: 1250px;
+    height: 652px;
+}
+
+.main-img-text {
+    width: 500px;
+    color: white;
+    position: absolute;
+    font-weight: 200;
+    top: 180px;
+    left: 350px;
+}
+.main-img-text-big {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.main-img-text-big > div {
+    margin-bottom: 15px;
+}
+.main-img-text-small {
+    font-size: 15px;
+    font-weight: 600;
+    color: darkgray;
+}
+.main-img-text-small > div {
+    margin-bottom: 5px;
+}

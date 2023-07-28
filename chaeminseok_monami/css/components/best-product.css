@@ -1,0 +1,45 @@
+.section-product {
+    width: 100vw;
+    text-align: center;
+    margin-top: 100px;
+    height: 265px;
+    background-color: #eeeeee;
+}
+.section-product > div:first-child {
+    font-family: 'Space Mono', monospace;
+
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.section-product > div:nth-child(2) {
+    padding: 0 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #c44479;
+}
+.section-product > div:nth-child(3) {
+    color: #696b69;
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+.product-buttons {
+    display: flex;
+    justify-content: center;
+}
+.product-buttons div {
+    width: 155px;
+    height: 33px;
+    border: 2px solid #bcbcbc;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkgray;
+    font-size: 14px;
+    font-weight: 600;
+}
+#border-red {
+    border: 2px solid #c44479;
+}

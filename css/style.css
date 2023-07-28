@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.main.swiper .swiper-wrapper .swiper-slide > a > img.mobile {
+  display: none;
+}
+
 .main.swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
   width: 10px;
@@ -88,6 +92,15 @@
 
 .menu .menu-image .swiper-wrapper .swiper-slide > a > img:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 960px) {
+  .main.swiper .swiper-wrapper .swiper-slide > a > img.pc {
+    display: none;
+  }
+  .main.swiper .swiper-wrapper .swiper-slide > a > img.mobile {
+    display: block;
+  }
 }
 
 /* BEST GOODS */

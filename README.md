@@ -63,7 +63,7 @@ https://www.audi.co.kr/kr/web/ko.html
     </tr>
     <tr>
       <td><img src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/37584686/ef4ab48c-80ce-4f14-8720-1fe6d885d2ec" alt="gif-function2" width="370"></td>
-      <td><img src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/37584686/e1598982-2933-412c-bd8d-17cd9396ac50" alt="gif-function3" width="370"></td>
+      <td><img src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/37584686/16d028bb-0238-4d21-8746-e78920230f87" alt="gif-function3" width="370"></td>
     </tr>
   </table>
 </div>

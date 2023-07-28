@@ -105,7 +105,15 @@
   bottom: -103%;
 }
 
-.section07__icon-container > img {
+.section07__icon {
+  width: 178px;
+  height: 178px;
+  margin-left: 1rem;
+  z-index: 3;
+  opacity: 1;
+}
+
+.section07__icon-center {
   width: 178px;
   height: 178px;
   margin-left: 1rem;

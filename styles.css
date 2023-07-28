@@ -1,0 +1,254 @@
+.yellow-background{
+    position: relative;
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0);
+    z-index: 1;
+    transition: all 0.5s;
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header ul{
+    text-align: center;
+} 
+
+.header ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header-scrolled {
+    background-color: white;
+}
+
+#threebars{
+    width: 20px;
+}
+
+.login {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+  }
+  
+.login:hover {background-color: rgb(184, 177, 177)}
+
+.left {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.right {
+    padding-top: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signup {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+  }
+  
+.signup:hover {background-color: rgb(51, 49, 49)}
+
+.top-left {
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.below-top-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.sub-top-left{
+    position: absolute;
+    top: 150px;
+    left: 16px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+#deliv_address {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+#deliv_address:hover {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#deliv_address:not(:placeholder-shown) {
+    border-color: red;
+}
+
+#delivernow {
+
+}
+
+#findfood {
+    position: relative;
+    top: 0px;
+    left: 800px;
+}
+
+.hover_img {
+    position: absolute;
+    display: none;
+}
+
+.dropbtn {
+}
+
+#myDropdown{
+    position: absolute;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+.section2-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.section3 {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section3-list-items {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+li {
+    margin: 30px 0;
+}
+
+.city-list {
+    -moz-column-count: 6;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: flex-start;
+}
+
+.country-list {
+    -moz-column-count: 8;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    padding-bottom: 50px;
+
+}
+
+.section5{
+    display:flex;
+    flex-direction: row;
+}
+
+#UberEats-logo{
+    position: relative;
+    top:40px;
+    left: 50px;
+}
+
+#app-store{
+    position: relative;
+    top:270px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#google-play{
+    position: relative;
+    top:228px;
+    left: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.section5-list {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    padding-left: 200px;
+}
+
+.section5-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}

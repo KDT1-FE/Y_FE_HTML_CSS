@@ -10,8 +10,8 @@
 ## 💸 사이트 
 <img width="160" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/63582234/27eed1b4-fc24-44db-b525-669e0ae2b069">  
 
-![Static Badge](https://img.shields.io/badge/banksalad%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-18cd8c?style=for-the-badge&link=https%3A%2F%2Fwww.banksalad.com%2F)  
-![Static Badge](https://img.shields.io/badge/banksalad%20%EB%8D%B0%EB%AA%A8-cbf8e7?style=for-the-badge&link=https%3A%2F%2F64c37bf4ce7d850008dc2dd8--stellular-cranachan-a24baf.netlify.app%2F)  
+[![Static Badge](https://img.shields.io/badge/banksalad%20%EA%B3%B5%EC%8B%9D%20%ED%8E%98%EC%9D%B4%EC%A7%80-18cd8c?style=for-the-badge)](https://www.banksalad.com/)  
+[![Static Badge](https://img.shields.io/badge/banksalad%20%EB%8D%B0%EB%AA%A8%20%ED%8E%98%EC%9D%B4%EC%A7%80-cbf8e7?style=for-the-badge)](https://64c37bf4ce7d850008dc2dd8--stellular-cranachan-a24baf.netlify.app/)  
 <br><br>
 
 

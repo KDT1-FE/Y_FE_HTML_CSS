@@ -44,4 +44,17 @@ li {
     width: 100%;
     margin: 20px 0;
   }
-  
+
+
+@media (max-width: 1024px) {
+    .separator {
+        width: 630px;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 766px) {
+    .separator {
+        display: none;
+    }
+
+}

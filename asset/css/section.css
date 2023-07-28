@@ -516,6 +516,7 @@
         width: 251px;
         height: 130px;
     }
+
 }
 @media (max-width: 1024px) {
     .text {
@@ -723,7 +724,5 @@
     .half-box {
         height: 484px;
     }
-    body {
-        overflow-x: hidden;
-    }
+
 }

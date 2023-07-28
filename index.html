@@ -573,4 +573,56 @@
         </article>
     </main>
 </body>
+
+<!-- header scroll -->
+<script>
+    const navigation = document.querySelector('.header-container');
+    const slideSection = document.querySelector('.curation-section');
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY > navigation.getBoundingClientRect().top){
+            navigation.style.position="fixed"
+            navigation.style.top="0";
+            slideSection.style.marginTop="121px";
+        }else{
+            navigation.style.position="relative"
+            navigation.style.top="0";
+            slideSection.style.marginTop="0";
+        }
+    })
+</script>
+
+<!-- slider setinterval -->
+<script>
+    var slideIndex = 1;
+
+    let slideCallback = function(){
+        if(slideIndex === 13){
+            slideIndex = 1;
+        }else{
+            slideIndex++;
+        }
+
+        const slide = document.querySelector(`.curation-section input:nth-child(${slideIndex})`);
+        slide.checked = true;
+    }
+
+    slideinterval = setInterval(slideCallback,5000)
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var checkboxes = document.querySelectorAll('input[type=radio][name=slide]');
+        
+    for (var checkbox of checkboxes)
+    {
+        checkbox.addEventListener('change', function(event)
+        {
+            if (event.target.checked) {
+                clearInterval(slideinterval)
+                slideIndex = Object.values(checkboxes).indexOf(event.target)+1;
+                slideinterval = setInterval(slideCallback,5000)
+            }
+        });
+    }
+}, false);
+</script>
 </html>

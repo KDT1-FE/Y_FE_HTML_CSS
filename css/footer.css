@@ -1,0 +1,109 @@
+footer {
+  height: 100%;
+}
+
+footer .container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+footer .container .in_footer {
+  position: relative;
+  padding: 30px 0;
+  text-align: center;
+  color: #262626;
+}
+
+footer .container .in_footer .logo {
+  max-width: 179px;
+  margin: 0 auto;
+}
+
+footer .container .in_footer .logo img {
+  width: 100%;
+}
+
+footer .container .in_footer .company_info {
+  padding-top: 30px;
+  font-size: 0.812rem;
+}
+
+.company_info ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_info ul li {
+  line-height: 1.7;
+}
+
+.company_info ul li::after {
+  content: '|';
+  display: inline-block;
+  padding: 0 14px;
+}
+
+.company_info ul li:last-child::after {
+  display: none;
+}
+
+.company_info p {
+  line-height: 150%;
+  margin-top: 32px;
+}
+
+.in_footer .right_box {
+  width: 100%;
+  max-width: 175px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  font-size: 0.75rem;
+}
+
+.in_footer .right_box .family_site {
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid #262626;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.in_footer .right_box .family_site .family_menu {
+  border: 1px solid #262626;
+  padding: 0 5px;
+  width: 175px;
+  position: absolute;
+  bottom: 28px;
+  left: -1px;
+  background: #fff;
+  display: none;
+}
+
+.in_footer .right_box .family_site .family_menu p {
+  cursor: pointer;
+  padding: 7px 0;
+}
+
+.in_footer .right_box .family_site .family_menu p:hover {
+  font-weight: bold;
+}
+
+footer .to_top {
+  position: fixed;
+  right: 60px;
+  bottom: 17px;
+  width: 60px;
+  height: 60px;
+  background: url('../assets/images/off.png') no-repeat center;
+  display: inline-block;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.in_footer .right_box .family_site .family_menu.active {
+  display: block;
+}

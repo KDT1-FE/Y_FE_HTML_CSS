@@ -1,6 +1,19 @@
 @use 'abstracts' as *;
 @use 'base' as *;
 
+@include keyframes(load) {
+  0% {
+    position: relative;
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .a11yHidden {
   @include a11y-hidden();
 }
@@ -10,6 +23,9 @@
 }
 
 header {
+  @include media-small {
+    position: relative;
+  }
   // 환율 정보 섹션
   .exchange__wrap {
     @include media-small {
@@ -55,8 +71,8 @@ header {
       width: 100vw;
       position: fixed;
       top: 0;
-      left: 50%;
-      transform: translate(-50%);
+      // left: 50%;
+      // transform: translate(-50%);
       background-color: $white;
       z-index: 50;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -216,7 +232,7 @@ main {
       height: 80rem;
       margin: 0 auto;
       transform: translate(0);
-      transition: all 0.5s;
+      transition: transform 0.2s;
 
       &__item {
         height: 100%;
@@ -311,13 +327,22 @@ main {
   }
 
   .section2 {
+    position: relative;
     padding-bottom: 10rem;
+
+    .design-hidden {
+      background-color: $white;
+      position: absolute;
+      z-index: 40;
+      width: 7.5rem;
+      height: 100%;
+    }
 
     &__container {
       overflow: hidden;
       position: relative;
       padding: 10rem 0 13rem 2rem;
-      margin-left: 7rem;
+      margin-left: 5.5rem;
 
       &__title {
         @include font(montserrat, $font-bold700);
@@ -339,9 +364,11 @@ main {
 
       .section2__container__flex {
         display: flex;
-        width: 900vw;
+        width: 700vw;
         height: 50rem;
         margin: 0 auto;
+        transform: translate(0rem);
+        transition: transform 0.3s;
 
         &__item {
           height: 100%;
@@ -448,7 +475,6 @@ main {
           }
         }
       }
-
       .section2-move {
         @include flex-center-row();
         font-size: $font-base;
@@ -463,13 +489,23 @@ main {
       }
       .prev {
         position: absolute;
-        bottom: 38%;
+        bottom: 40%;
         left: 0;
+        z-index: 60;
       }
       .next {
-        position: absolute;
-        bottom: 38%;
-        left: 116rem;
+        z-index: 60;
+
+        @include media-subdown {
+          right: 0;
+          position: absolute;
+          bottom: 40%;
+        }
+        @include media-subup {
+          position: absolute;
+          bottom: 40%;
+          left: 116rem;
+        }
       }
     }
   }

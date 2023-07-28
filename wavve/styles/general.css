@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+
+
+body, html {
+    height: 100%;
+    background-color: #1b1b1b;
+    font-family: NotoSans,sans-serif;
+}
+
+button, input, select {
+    font-family: NotoSans,sans-serif;
+}
+
+body {
+    color: #a5a5a5;
+}
+
+.body {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    min-height: 100%;
+}
+
+*, body, html {
+    box-sizing: border-box;
+}
+
+ui, li {
+    list-style: none;
+}
+
+body, button,  li, ol, p, pre, select, textarea,  ul {
+    margin: 0;
+    padding: 0;
+} 

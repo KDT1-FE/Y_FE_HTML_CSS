@@ -1,0 +1,66 @@
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-movie {
+    margin: auto;
+    margin-top:50px;
+    display: block;
+    width: 95%;
+    border-radius: 20px;
+    height: 150%;
+    text-align: center;
+    z-index: 0;
+}
+
+.left-arrow {
+    margin-left:80px;
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    width: 7%;
+    opacity: 0.8;
+    z-index: 1; 
+}
+
+.right-arrow {
+    margin-right: 80px;
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 7%;
+    opacity: 0.8;
+    z-index: 1; 
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    opacity: 1.5; 
+    cursor: pointer;
+}
+
+.stop {
+    width: 6%;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-baseball {
+    display: block;
+    background-color: rgb(0,0,0);
+    margin-top: 50px;
+}
+
+.baseball {
+    width: 80%;
+    margin: auto;
+    display: block;
+}

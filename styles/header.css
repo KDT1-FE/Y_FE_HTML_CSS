@@ -182,6 +182,16 @@ a {
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.3s ease; 
 }
+.div-1:hover,
+.div-2:hover, 
+.div-3:hover, 
+.div-4:hover, 
+.div-5:hover, 
+.div-6:hover, 
+.div-7:hover,
+.div-8:hover  {
+    background-color: #6a6fb3;
+}
 .section-3-div1-1:hover,
 .section-3-div1-2:hover,
 .section-3-div1-3:hover,

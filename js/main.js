@@ -41,3 +41,66 @@ $logoToTop.addEventListener('click', () => {
     scrollTo: 0
   });
 });
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add('show');
+  });
+});
+const $ios = document.querySelectorAll('.io');
+$ios.forEach((element) => {
+  io.observe(element);
+});
+const ioContent = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add('show');
+  });
+});
+const $ioContents = document.querySelectorAll('.io-content');
+$ioContents.forEach((element) => {
+  ioContent.observe(element);
+});
+
+const ioText = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add('show');
+  });
+});
+const $ioText = document.querySelectorAll('.io-text');
+$ioText.forEach((element) => {
+  ioText.observe(element);
+});
+
+const io2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add('show');
+  });
+});
+const $io2 = document.querySelectorAll('.io-2');
+$io2.forEach((element) => {
+  io2.observe(element);
+});
+const io3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if(!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add('show');
+  });
+});
+const $io3 = document.querySelectorAll('.io-3');
+$io3.forEach((element) => {
+  io3.observe(element);
+});

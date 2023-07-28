@@ -1676,7 +1676,7 @@ footer .inner {
 .slide1 .rouge .image {
   background-image: url(../assets/images/baccarat-rouge1.webp);
 }
-.slide .rouge:hover .image {
+.slide1 .rouge:hover .image {
   background-image: url(../assets/images/baccarat-rouge2.webp);
 }
 .slide1 .aqua-media .image {
@@ -1694,7 +1694,7 @@ footer .inner {
 .slide1 .rouge-extrait .image {
   background-image: url(../assets/images/rouge-extrait1.webp);
 }
-.slide .rouge-extrait:hover .image {
+.slide1 .rouge-extrait:hover .image {
   background-image: url(../assets/images/rouge-extrait2.webp);
 }
 .slide1 .rose .image {
@@ -2135,4 +2135,38 @@ footer .inner {
   opacity: 1;
   transition: .3s;
   transition-delay: .3s;
+}
+
+.io {
+  opacity: 0;
+  transition: 1s;
+  transform: translate(0, 100px);
+}
+.io-content {
+  opacity: 0;
+  transition: 1.2s;
+  transform: translate(0, 120px);
+}
+.io-text {
+  opacity: 0;
+  transition: 1.5s;
+  transform: translate(0, 160px);
+}
+.io-2 {
+  opacity: 0;
+  transition: 1.15s;
+  transform: translate(0, 110px);
+}
+.io-3 {
+  opacity: 0;
+  transition: 1.3s;
+  transform: translate(0, 120px);
+}
+.io.show,
+.io-content.show,
+.io-text.show,
+.io-2.show,
+.io-3.show {
+  transform: translate(0, 0);
+  opacity: 1;
 }

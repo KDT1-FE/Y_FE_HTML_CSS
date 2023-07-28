@@ -9,7 +9,7 @@ header {
   z-index: 100;
 }
 
-.header-container {
+.header-wrap {
   max-width: 120rem;
   height: 6.4rem;
   display: flex;
@@ -42,6 +42,10 @@ header {
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.navigation li {
+  margin: 0;
 }
 
 /* 현재 선택된 탭에서만 오렌지 컬로로 폰트 색상 변경 */

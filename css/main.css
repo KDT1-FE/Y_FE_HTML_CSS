@@ -1,0 +1,504 @@
+* {
+    outline: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(0,0,0,0.87);
+    -webkit-text-size-adjust: none;      
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    transition: .4s;
+    background: #f7323f;
+    z-index: 210;
+    display: block;
+}
+
+section {
+    position: relative;
+    width: 1024px;
+    height: 64px;
+    background: none;
+    margin: 0 auto;
+    display: block;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+address, caption, em, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+header section h1 {
+    position: absolute;
+    top: 26px;
+    left: 31px;
+    width: 96px;
+    height: 20px;
+    margin: 0;
+    background: url('//image.goodchoice.kr/images/web_v3/h1_logo_pc_w.png') 0 0 no-repeat;
+    background-size: 96px auto;
+}
+
+header section .btn_srch {
+    position: absolute;
+    border: none;
+    text-indent: -9999px;
+    top: 22px;
+    right: 396px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url('//image.goodchoice.kr/images/web_v3/ico_srch_2.png') 50% 50% no-repeat;
+    background-size: 24px auto;   
+}
+.pc .gnb_pc {
+    display: inline-block;
+    position: absolute;
+    top: 27px;
+    right: 31px;
+}
+
+.gnb_pc li {
+    display: inline-block;
+    position: relative;
+    min-width: 53px;
+    min-height: 35px;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.gnb_pc li a {
+    display: inline-block;
+    font-size: 18px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0;
+}
+
+.gnb_pc li button {
+    border: none;
+    padding: 0;
+    background: none;
+    font-size: 18px;
+    line-height: 1;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0;
+}
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+button span {
+    position: relative;
+}
+
+.gnb_pc .list_03 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    padding: 32px;
+    background: #fff;
+    text-align: left;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+}
+
+.gnb_pc li ul li {
+    display: block;
+    min-width: auto;
+    min-height: auto;
+    margin: 0 0 14px 0;
+}
+
+.gnb_pc li ul li a,
+.gnb_pc li ul li button {
+    overflow: visible !important;
+    display: block;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0;
+    font-size: 16px;
+    color: rgba(0,0,0,0.87);
+}
+.main_spot a{
+    height: 580px;
+    display: block;
+    background: #fff url('//image.goodchoice.kr/images/web_v3/mainspot_2306.png') 50% 100% no-repeat;
+    background-size: 924px auto;
+}
+
+.main_link {
+    padding: 32px 0 29px 41px;
+    background: rgb(253,253,253);
+    overflow: hidden;
+}
+
+.main_link ul {
+    overflow: hidden;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.main_link li {
+    float: left;
+    width: 163px;
+}
+
+.main_link li a {
+    display: block;
+    height: 107px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.56);
+    text-align: center;
+
+}
+
+.main_link li a span {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+.main_link li a p {
+    height: auto;
+    padding-top: 14px;
+}
+
+.ico_01{
+    background: url('../img/모텔.png') no-repeat;
+    background-size: 72px auto;
+}
+.ico_02{
+    background: url('../img/호텔리조트.png') no-repeat;
+    background-size: 72px auto;
+}
+.ico_03{
+    background: url('../img/펜션.png') no-repeat;
+    background-size: 72px auto;
+}
+.ico_04{
+    background: url('../img/게스트하우스.png') no-repeat;
+    background-size: 72px auto;
+}
+.ico_05{
+    background: url('../img/캠핑 글램핑.png') no-repeat;
+    background-size: 72px auto;
+}
+.ico_06{
+    background: url('../img/해외여행.png') no-repeat;
+    background-size: 72px auto;
+}
+
+
+
+.recommend {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 78px 31px 0 31px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: rgba(0,0,0,0.87);
+    font-weight: bold;
+}
+
+.recommend li {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 473px;
+    height: 162px;
+    margin: 0 0 16px 0;
+    padding: 0 24px 0 186px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+.recommend li a {
+    display: block;
+    height: 162px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgba(0,0,0,0.56);
+    box-sizing: border-box;
+}
+
+.recommend li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 162px;
+    height: 162px;
+}
+
+.appdown{
+    display: block;
+    overflow: hidden;
+    width: 962px;
+    height: 320px;
+    margin: 64px auto 78px auto;
+    background: url('//image.goodchoice.kr/images/web_v3/bg_appdown.png') center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.appdown p {
+    margin: 103px 0 27px 0;
+    font-size: 28px;
+    color: rgba(0,0,0,0.87);
+}
+
+.appdown div a {
+    display: inline-block;
+    width: 168px;
+    height: 52px;
+    margin: 0 4px;
+}
+
+.appdown div a img {
+    width: 168px;
+    height: auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: rgba(0,0,0,0.87);
+    font-weight: bold;
+}
+
+.event_main {
+    width: 962px;
+    margin: 0 auto;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+.swiper-container img {
+    width: 962px;
+    margin: 0 auto;
+}
+
+.swiper-slide{
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    left: 0;
+    text-align: center;
+}
+
+.ad_ask {
+    width: 962px;
+    margin: 24px auto 0 auto;
+}
+
+.ad_ask .pc {
+    display: block;
+}
+
+.ad_ask ul li:first-child {
+    display: inline-block;
+    float: left;
+    width: 473px;
+}
+
+.ad_ask ul li a {
+    display: block;
+    height: 200px;
+    padding: 0 0 0;
+}
+.ad_ask ul li a img {
+    width: auto;
+    height: 200px;
+}
+
+footer {
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    margin-top: 120px;
+    padding: 63px 31px 40px 31px !important;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    background: rgb(245,245,245);
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(0,0,0,0.38);
+    font-family: initial;
+}
+
+footer .align {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+footer .link {
+    overflow: hidden;
+}
+
+footer .link li {
+    float: left;
+    margin-bottom: 5px;
+    line-height: normal;
+}
+
+footer .link li a {
+    display: inline-block;
+    text-decoration: none
+}
+
+footer .link li span {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    width: 24px;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.btn_go_top {
+    display: inline-block;
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url('//image.goodchoice.kr/images/web_v3/ico_top.png') 0 0 no-repeat;
+    background-size: 40px auto;
+    text-indent: -9999px;
+}
+
+footer p {
+    clear: both;
+    padding: 37px 0 24px 0;
+}
+footer p b {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer p span {
+    display: inline-block;
+}
+
+footer address {
+    line-height: 22px;
+}
+
+footer address span {
+    display: block;
+    padding-bottom: 7px;
+}
+
+footer address .order {
+    display: block;
+    padding: 6px 0;
+}
+
+footer .ico {
+    margin: 26px 0 0 0;
+}
+
+footer .ico a {
+    margin-right: 25px;
+    font-size: 30px;
+}
+
+.icon-ic_blog::before{
+    content: "\e908";
+}
+
+footer .ico span {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    text-indent: -9999px;
+}
+.wrap.show, footer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.recommend li strong {
+    display: block;
+    padding: 38px 0 14px 0;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    color: rgb(0,121,107);
+}
+
+.wrap {
+    width: 100%;
+    background: #fff;
+
+}
+

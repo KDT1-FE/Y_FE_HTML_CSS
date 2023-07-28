@@ -35,7 +35,7 @@
   content: "";
   display: flex;
   justify-content: center;
-  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+  background-image: url(../assets/sp_main.png);
   background-size: 422px 405px;
   background-repeat: no-repeat;
   background-position: 0px -128px;
@@ -51,7 +51,7 @@
 #nav a div {
   content: "";
   display: inline-block;
-  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.752c7542.png);
+  background-image: url(../assets/sp_main.png);
   background-size: 422px 405px;
   background-position: -250px -90px;
   background-repeat: no-repeat;

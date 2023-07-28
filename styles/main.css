@@ -13,6 +13,7 @@
 
 #main-left-ad,
 #main-right-ad {
+  background: gray;
 }
 
 aside,
@@ -44,10 +45,80 @@ aside,
   height: 426px;
   margin-bottom: 16px;
 }
+
+#main-news a {
+  text-decoration: none;
+}
+#main-news a:hover {
+  text-decoration: underline;
+}
+
 #main-login {
   height: 164px;
   margin-bottom: 16px;
+  padding: 21px 20px 18px;
+  font-size: 1.4rem;
+  display: flex;
+  flex-flow: column;
+  line-height: 18px;
 }
+
+#main-login > div :first-of-type {
+  line-height: 18px;
+}
+
+#main-login-button {
+  margin-top: 13px;
+  padding: 17px 0;
+  background-color: #03c750;
+  color: white;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+#main-login-button img {
+  background-image: url(../assets/sp_main.png);
+  background-size: 424px 409px;
+  background-position: -120px -166px;
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 16px;
+  display: inline-block;
+  margin: 3px 8px 0 0;
+  vertical-align: -1px;
+}
+
+#main-login > div:last-of-type {
+  font-size: 1.3rem;
+}
+
+#main-login > div:last-of-type a {
+  text-decoration: none;
+  color: #3d3d3d;
+  letter-spacing: -0.4px;
+}
+
+#main-login > div:last-of-type a:hover {
+  text-decoration: underline;
+}
+
+#main-login > div:last-of-type a:visited {
+  color: inherit;
+}
+
+#main-login > div:last-of-type > a:nth-of-type(2)::before,
+#main-login > div:last-of-type > a:nth-of-type(2)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: hsl(210, 5%, 84%);
+  margin: 4px 12px 0;
+}
+
 #main-right-ad {
   height: 240px;
   margin-bottom: 16px;

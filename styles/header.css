@@ -29,7 +29,7 @@ header {
   margin: 0.1rem 0;
 }
 
-.navigation {
+.category {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -37,23 +37,23 @@ header {
   padding-right: 4rem;
 }
 
-.navigation > ul {
+.category > ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navigation li {
+.category li {
   margin: 0;
 }
 
 /* 현재 선택된 탭에서만 오렌지 컬로로 폰트 색상 변경 */
-.navigation .font-orange {
+.category .font-orange {
   color: #ff6f0f;
 }
 
-.navigation a {
+.category a {
   font-size: 1.8rem;
   font-weight: 700;
   color: #4d5159;
@@ -63,7 +63,7 @@ header {
   white-space: nowrap;
 }
 
-.navigation a:hover {
+.category a:hover {
   color: gray;
   cursor: pointer;
 }

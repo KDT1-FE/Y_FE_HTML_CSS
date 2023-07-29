@@ -1,0 +1,86 @@
+.footer1 {
+    position: relative;
+}
+
+.Select-Moim {
+    position: absolute;
+    /* 포지션 절대적으로 설정 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#university,
+#service,
+#site {
+    /* 기본 스타일 제거 */
+    width: 170px;
+    height: 30px;
+    border: 1px #ccc solid;
+    margin: 10px;
+    font-size: 13px;
+    color: #333;
+    padding: 5px;
+}
+.footer2 {
+    height: 132px;
+    background-color: #3f3f3f;
+}
+.footer2-div-moim {
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    color: #999999;
+    font-size: 12px;
+    font-family: 'Noto Light', sans-serif;
+}
+.footer2-div2-moim {
+    display: flex;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+.footer2-div2 {
+color: #cbb0ff;
+}
+
+.footer2-div2-1 {
+    color: white;
+    font-size: 12px;
+    font-family: 'Noto Light', sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.hr {
+    border: 0.5px solid #999999; /* 테두리 스타일과 색상 설정 */
+    margin: 0; /* 위 아래 여백 조절 */
+  }
+.footer2-div1,
+.footer2-div2,
+.footer2-div3,
+.footer2-div4,
+.footer2-div5,
+.footer2-div6 {
+    position: relative;
+    padding: 10px;
+}
+
+
+.footer2-div1::after,
+.footer2-div2::after,
+.footer2-div3::after,
+.footer2-div4::after,
+.footer2-div5::after
+{
+    content: " ";
+    position: absolute;
+    right: -70px;
+    top:50%;
+    width: 1px;
+    height: 30%;
+    background-color: #999999;
+    transform: translateY(-50%);
+}

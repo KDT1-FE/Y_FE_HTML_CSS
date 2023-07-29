@@ -1,0 +1,497 @@
+.nav1{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #6a6fb3;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+.Korean,
+.Arrow, 
+.SSS, 
+.Potal {
+    position: relative;
+}
+
+.Korean::after,
+.Arrow::after, 
+.SSS::after, 
+.Potal::after {
+    content: " ";
+    position: absolute;
+    left: -10px;
+    top:50%;
+    width: 1px;
+    height: 210%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+.Potal {
+    position: relative;
+}
+.Potal::before{
+    content: " ";
+    position: absolute;
+    left: 60px;
+    top:50%;
+    width: 1px;
+    height: 210%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+.nav2 {
+    position: relative;
+    height: 120px;
+    background-color: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+.img_logo {
+    margin: 70px;
+
+}
+a {
+    font-family: 'Noto Light', sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #6a6fb3;
+  }
+
+/* 드롭다운 버튼 스타일 */
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  .dropbtn{
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* 드롭다운 메뉴 스타일 */
+  .dropdown-content {
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    display: none; /* 처음에는 드롭다운 메뉴 숨김 */
+    background-color: lightgray;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* 드롭다운 메뉴를 나타내도록 설정 */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    width: 100%;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* 드롭다운 메뉴 항목 호버 시 스타일 */
+  .dropdown-content a:hover {
+    color: #6a6fb3;
+  }
+  
+
+.LOGIN,
+.SEARCH,
+.Korean,
+.SSS,
+.Potal {
+    font-size: 13px;
+    color: white;
+    font-family: 'Noto Light', sans-serif;
+    margin: 10px;    
+}
+.Potal {
+    margin-right: 100px;
+    height: auto;
+}
+
+.main_img {
+    width: 100%;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+  
+}
+
+.thumb-1, 
+.thumb-2,
+.thumb-3 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    border: solid 1px #ede9e8;
+    margin: 12px;
+}
+
+.thumb-1-p,
+.thumb-2-p,
+.thumb-3-p {
+    font-family: 'Noto Light', sans-serif;
+    color: #333;
+    padding-top: 15px;
+}
+
+.section-3 {
+    background-color: #4c5156;
+    height: 400px;
+}
+.section-3-div1 {
+    display: flex;
+}
+.section-3-div2 {
+    display: flex;
+}
+.section-3-div1-1,
+.section-3-div1-2,
+.section-3-div1-3,
+.section-3-div1-4,
+.section-3-div1-5,
+.section-3-div1-6,
+.section-3-div1-7,
+.plus_img {
+    font-family: 'Noto Light', sans-serif;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease; 
+}
+.div-1:hover,
+.div-2:hover, 
+.div-3:hover, 
+.div-4:hover, 
+.div-5:hover, 
+.div-6:hover, 
+.div-7:hover,
+.div-8:hover  {
+    background-color: #6a6fb3;
+}
+.section-3-div1-1:hover,
+.section-3-div1-2:hover,
+.section-3-div1-3:hover,
+.section-3-div1-4:hover,
+.section-3-div1-5:hover,
+.section-3-div1-6:hover,
+.section-3-div1-7:hover,
+.plus_img:hover {
+      border-bottom: 1px solid white; /* hover되었을 때 선의 색상과 두께를 조절합니다 */
+      cursor: pointer;
+}
+
+.plus_img {
+    margin-left: auto;
+}
+.section-3-div1-1 {
+    margin-left: 400px;
+}
+
+.section-3-div2{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .div-1,
+  .div-2,
+  .div-3,
+  .div-4,
+  .div-5,
+  .div-6,
+  .div-7,
+  .div-8{
+    position: relative;
+    width: 20%; /* 각 요소가 한 줄에 4개씩 배치되도록 너비를 조절합니다 */
+    padding: 10px;
+    font-family: 'Noto Light', sans-serif;
+    font-size: 15px;
+    color: #444;
+    background-color: white;
+    height: 80px;
+    padding: 30px;
+  }
+
+  .div-1::after,
+  .div-2::after,
+  .div-3::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 1px;
+    height: 80%;
+    transform: translate(0, -50%);
+    background: #e1e1e1;
+  }
+
+  .div-5::after,
+  .div-6::after,
+  .div-7::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 1px;
+    height: 80%;
+    transform: translate(0, -50%);
+    background: #e1e1e1;
+  }
+
+ .div-1,
+ .div-2,
+ .div-3,
+ .div-4 {
+    border-top: solid 6px #6a6fb3;
+    border-bottom: solid 1px #e1e1e1;
+ }
+  
+  .p-1,
+  .p-2,
+  .p-3,
+  .p-4,
+  .p-5,
+  .p-6,
+  .p-7,
+  .p-8 {
+    font-size: 12px;
+    color: #777;
+      }
+
+.section-4{
+    background-color: #12adad;
+    text-align: center;
+    height: 225px;
+}
+.section-4-p-moim {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.SUNGSHIN-LINK {
+    font-size: 35px;
+    font-family: 'Noto Light', sans-serif;
+    color: white;
+    padding-top: 60px;
+}
+.section-4-p1,
+.section-4-p2,
+.section-4-p3,
+.section-4-p4,
+.section-4-p5,
+.section-4-p6,
+.section-4-p7,
+.section-4-p8,
+.section-4-p9,
+.section-4-p10,
+.section-4-p11,
+.section-4-p12 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Noto Light', sans-serif;
+    color: white;
+    position: relative;
+    padding: 15px;
+
+}
+.section-4-p1::after,
+.section-4-p2::after,
+.section-4-p3::after,
+.section-4-p4::after,
+.section-4-p5::after,
+.section-4-p6::after,
+.section-4-p7::after,
+.section-4-p8::after,
+.section-4-p9::after,
+.section-4-p10::after,
+.section-4-p11::after {
+    content: " ";
+    position: absolute;
+    right: 0px;
+    top:50%;
+    width: 1px;
+    height: 30%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+.section-5 {
+    height: 468px;
+}
+.section-5-div-container {
+    display: flex;
+    justify-content: center;
+
+}
+.sungshin-news{
+    text-align: center;
+    color: #444;
+    font-size: 35px;
+    font-family: 'Noto Light', sans-serif;
+    margin-top:50px;
+
+}
+.section-5-div1,
+.section-5-div2,
+.section-5-div3,
+.section-5-div4 {
+    height: 300px;
+    margin: 30px;
+    border: solid 1px #ede9e8;
+
+}
+
+.img2-1,
+.img2-2,
+.img2-3,
+.img2-4 {
+    width: 218px;
+    height: 218px;
+}
+.section-5-p1,
+.section-5-p2,
+.section-5-p3,
+.section-5-p4 {
+    text-align: center;
+    color: #444;
+    font-size: 15px;
+    font-family: 'Noto Light', sans-serif;
+}
+.section-6 {
+    height: 439px;
+    background-color: #ede9e8;
+    display: flex;
+    justify-content: center;
+}
+.section-6-div1,
+.section-6-div2 {
+    height: 345px;
+    margin: 20px;
+    background-color: white;
+}
+
+
+.vedio {
+    height: 240px;
+    width: 500px;
+}
+.topic {
+    margin: 20px;
+}
+.QuickMenu {
+    display: block;
+    font-family: 'Noto Light', sans-serif;
+    font-size: 30px;
+    color: #444;
+    text-align: center;
+
+}
+.plus_img2 {
+    float: right;
+    padding: 10px;
+}
+
+.topic-1,
+.topic-2,
+.topic-3,
+.topic-4,
+.topic-5 {
+    font-family: 'Noto Light', sans-serif;
+    font-size: 16px;
+    color: #777;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid #ede9e8 ;
+}
+.strong2 {
+    font-size: 30px;
+    font-family: 'Noto Light', sans-serif;
+    color: #444;
+}
+
+.section-6-p {
+    font-size: 15px;
+    font-family: 'Noto Light', sans-serif;
+    color: #333;
+    padding: 24px;
+}
+
+.article {
+    background-color: #3c3c64;
+    height: 340px;
+}
+.QuickMenu {
+    font-family: 'Noto Light', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+}
+
+.article-div-moim {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    
+}
+.QuickMenu-1,
+.QuickMenu-2,
+.QuickMenu-3,
+.QuickMenu-4,
+.QuickMenu-5,
+.QuickMenu-6,
+.QuickMenu-7,
+.QuickMenu-8,
+.QuickMenu-9,
+.QuickMenu-10,
+.QuickMenu-11 {
+    margin: 20px;
+}
+
+
+
+.article-p1,
+.article-p2,
+.article-p3,
+.article-p4,
+.article-p5,
+.article-p6,
+.article-p7,
+.article-p8,
+.article-p9,
+.article-p10,
+.article-p11{
+    font-family: 'Noto Light', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+.footer1 {
+    height: 117px;
+    background-color: #333333;
+}

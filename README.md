@@ -1,45 +1,30 @@
-[참고 내용]
+# SSWU 홈페이지 클론 코딩
+- 클론 사이트 : https://www.sungshin.ac.kr/sites/main_kor/main.jsp
+- 데모 링크 : https://keen-vacherin-2f7c72.netlify.app
 
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
-
-과제 수행 및 제출 방법
-
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+### 구현한 내용
+- html, css 를 사용하여 구현
+- 시맨틱 태그를 최대한 사용
+- Flex를 사용하여 화면을 배치 
+- netlify를 이용하여 사이트 배포
 
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+### 아쉬웠던 점
+- 메뉴바를 클론 사이트와 동일하게 구현하지 못한 점
+- 오른쪽 사이트 플로팅과, 슬라이드를 구현하지 못한 점
+- 시맨틱 태그를 이용하였지만 태그를 깨끗하게 사용하지 못 한 느낌이 들었다
 
-필수 요구사항
+### 참고 이미지 
+<img width="1500" alt="img1" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/85981963/a1a1f8c1-d917-47ef-ba0c-0500c7ffed1b">
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+### Select 태그 이용
+<img width="1511" alt="스크린샷 2023-07-28 오후 11 31 43" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/85981963/fa62fddf-749f-4558-b360-9fd68a4ce7ae">
 
-선택 요구사항
+### hover를 통한 색 바꿈
+https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/85981963/5d811a06-4c6c-4f50-8e66-bddcbe338dcf
 
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+### Develop
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
-손쉬운 이미지 추출 방법
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
 
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!

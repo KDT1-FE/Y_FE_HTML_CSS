@@ -1,0 +1,65 @@
+.online-advantages {
+  width: 100%;
+  height: 300px;
+}
+.online-advantages .inner {
+  justify-content: space-between;
+}
+.online-advantages .inner > div {
+  width: 272px;
+  height: 272px;
+}
+.online-advantages .delivery,
+.online-advantages .adviser,
+.online-advantages .payment,
+.online-advantages .gift-box,
+.online-advantages .samples {
+  position: relative;
+}
+.online-advantages .image {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  width: 140px;
+  height: 160px;
+}
+.online-advantages .desc {
+  position: absolute;
+  top: 180px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #4a4a4f;
+  line-height: 1.25rem;
+  text-align: center;
+}
+.online-advantages .delivery .image {
+  background-image: url(../../assets/images/delivery.svg);
+}
+.online-advantages .delivery .desc {
+  left: 65px;
+}
+.online-advantages .adviser .image {
+  background-image: url(../../assets/images/adviser.svg);
+}
+.online-advantages .adviser .desc {
+  width: 292px;
+  left: -30px;
+}
+.online-advantages .payment .image {
+  background-image: url(../../assets/images/payment.svg);
+}
+.online-advantages .payment .desc {
+  left: 70px;
+}
+.online-advantages .gift-box .image {
+  background-image: url(../../assets/images/gift-box.svg);
+}
+.online-advantages .gift-box .desc {
+  left: 56px;
+}
+.online-advantages .samples .image {
+  background-image: url(../../assets/images/samples.svg);
+}
+.online-advantages .samples .desc {
+  left: 43px;
+}

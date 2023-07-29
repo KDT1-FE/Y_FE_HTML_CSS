@@ -1,0 +1,593 @@
+.content {
+  width: 100%;
+  height: 700px;
+}
+.content .inner {
+  justify-content: space-between;
+}
+.content .fragrance-finder {
+  width: 669px;
+  height: 666px;
+}
+.content .fragrance-finder .intro .image {
+  background-image: url(../../assets/images/fragrance-finder.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .fragrance-finder .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .fragrance-finder .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.content .fragrance-finder .intro .title:hover::after {
+  width: 100%;
+}
+.content .fragrance-finder .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .fragrance-finder .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .fragrance-finder .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.content .fragrance-finder .link:hover::after {
+  width: 100%;
+}
+.content .token-of-appreciation {
+  width: 669px;
+  height: 666px;
+}
+.content .token-of-appreciation .intro .image {
+  background-image: url(../../assets/images/token-of-appreciation.jpeg);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .token-of-appreciation .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .token-of-appreciation .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.content .token-of-appreciation .intro .title:hover::after {
+  width: 100%;
+}
+.content .token-of-appreciation .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .token-of-appreciation .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .token-of-appreciation .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.content .token-of-appreciation .link:hover::after {
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+  height: 298px;
+  box-sizing: border-box;
+  padding: 110px 0 20px 0;
+}
+.text .inner {
+  justify-content: space-between;
+}
+.text .title {
+  width: 408px;
+  height: 100%;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 55px;
+  color: #646467;
+}
+.text .body {
+  width: 845px;
+  height: 100%;
+}
+.text .body .desc {
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 28px;
+  color: #646467;
+  letter-spacing: 0.3px;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
+.text .body .link {
+  position: absolute;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  color: #646467;
+}
+.text .body .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.text .body .link:hover::after {
+  width: 100%;
+}
+
+.content .number-724 {
+  width: 669px;
+  height: 666px;
+}
+.content .number-724 .intro .image {
+  background-image: url(../../assets/images/724.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .number-724 .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .number-724 .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.content .number-724 .intro .title:hover::after {
+  width: 100%;
+}
+.content .number-724 .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .number-724 .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .number-724 .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.content .number-724 .link:hover::after {
+  width: 100%;
+}
+
+.content .aqua-media-cologne-forte {
+  width: 669px;
+  height: 666px;
+}
+.content .aqua-media-cologne-forte .intro .image {
+  background-image: url(../../assets/images/token-of-appreciation.jpeg);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .aqua-media-cologne-forte .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .aqua-media-cologne-forte .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.content .aqua-media-cologne-forte .intro .title:hover::after {
+  width: 100%;
+}
+.content .aqua-media-cologne-forte .intro .title .font2 {
+  font-family: 'BauerBodoni-Italic', sans-serif;
+}
+.content .aqua-media-cologne-forte .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .aqua-media-cologne-forte .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .aqua-media-cologne-forte .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.content .aqua-media-cologne-forte .link:hover::after {
+  width: 100%;
+}
+
+.content .scented-candles {
+  width: 669px;
+  height: 666px;
+}
+.content .scented-candles .intro .image {
+  background-image: url(../../assets/images/scented-candles.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .scented-candles .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .scented-candles .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.content .scented-candles .intro .title:hover::after {
+  width: 100%;
+}
+.content .scented-candles .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .scented-candles .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .scented-candles .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.content .scented-candles .link:hover::after {
+  width: 100%;
+}
+.content .bath-and-body {
+  width: 669px;
+  height: 666px;
+}
+.content .bath-and-body .intro .image {
+  background-image: url(../../assets/images/bath-and-body.webp);
+  width: 666px;
+  height: 464px;
+  background-size: 666px 464px;
+  margin-bottom: 26px;
+}
+.content .bath-and-body .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.content .bath-and-body .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.content .bath-and-body .intro .title:hover::after {
+  width: 100%;
+}
+.content .bath-and-body .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content .bath-and-body .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content .bath-and-body .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.content .bath-and-body .link:hover::after {
+  width: 100%;
+}
+
+.last-content {
+  width: 100%;
+  height: 522px;
+}
+.last-content .inner {
+  justify-content: space-between;
+}
+.last-content .womens-fragrances {
+  width: 435px;
+  height: 490px;
+}
+.last-content .womens-fragrances .intro .image {
+  background-image: url(../../assets/images/womens-fragrances.webp);
+  width: 435px;
+  height: 285px;
+  background-size: 435px 285px;
+  margin-bottom: 26px;
+}
+.last-content .womens-fragrances .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.last-content .womens-fragrances .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.last-content .womens-fragrances .intro .title:hover::after {
+  width: 100%;
+}
+.last-content .womens-fragrances .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.last-content .womens-fragrances .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.last-content .womens-fragrances .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.last-content .womens-fragrances .link:hover::after {
+  width: 100%;
+}
+
+.last-content .mens-fragrances {
+  width: 435px;
+  height: 490px;
+}
+.last-content .mens-fragrances .intro .image {
+  background-image: url(../../assets/images/mens-fragrances.webp);
+  width: 435px;
+  height: 285px;
+  background-size: 435px 285px;
+  margin-bottom: 26px;
+}
+.last-content .mens-fragrances .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.last-content .mens-fragrances .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.last-content .mens-fragrances .intro .title:hover::after {
+  width: 100%;
+}
+.last-content .mens-fragrances .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.last-content .mens-fragrances .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.last-content .mens-fragrances .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.last-content .mens-fragrances .link:hover::after {
+  width: 100%;
+}
+
+.last-content .unisex-fragrances {
+  width: 435px;
+  height: 490px;
+}
+.last-content .unisex-fragrances .intro .image {
+  background-image: url(../../assets/images/unisex-fragrances.webp);
+  width: 435px;
+  height: 285px;
+  background-size: 435px 285px;
+  margin-bottom: 26px;
+}
+.last-content .unisex-fragrances .intro .title {
+  position: relative;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.875rem;
+  color: #646467;
+  display: inline;
+}
+.last-content .unisex-fragrances .intro .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.last-content .unisex-fragrances .intro .title:hover::after {
+  width: 100%;
+}
+.last-content .unisex-fragrances .desc {
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.last-content .unisex-fragrances .link {
+  position: relative;
+  font-family: 'PostGrotesk-Bold', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.last-content .unisex-fragrances .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.last-content .unisex-fragrances .link:hover::after {
+  width: 100%;
+}

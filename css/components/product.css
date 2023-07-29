@@ -1,0 +1,497 @@
+.product {
+  width: 100%;
+  height: 563px;
+}
+
+.product .gold {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .gold .image {
+  background-image: url(../../assets/images/globe-trotter-gold1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: 0.8s;
+}
+.product .gold:hover .image {
+  background-image: url(../../assets/images/globe-trotter-gold2.webp);
+}
+.product .gold .name {
+  position: absolute;
+  top: 349px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+.product .gold .info {
+  top: 386px;
+}
+.product .gold .price {
+  top: 406px;
+}
+.product .gold .info,
+.product .gold .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+
+.product .zinc {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .zinc .image {
+  background-image: url(../../assets/images/globe-trotter-zinc1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: 0.8s;
+}
+.product .zinc:hover .image {
+  background-image: url(../../assets/images/globe-trotter-zinc2.webp);
+}
+.product .zinc .name {
+  position: absolute;
+  top: 349px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+.product .zinc .info {
+  top: 386px;
+}
+.product .zinc .price {
+  top: 406px;
+}
+.product .zinc .info,
+.product .zinc .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+
+.product .femme {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .femme .image {
+  background-image: url(../../assets/images/amyris-femme1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: 0.8s;
+}
+.product .femme:hover .image {
+  background-image: url(../../assets/images/amyris-femme2.webp);
+}
+.product .femme .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .femme:hover .name {
+  opacity: 0;
+}
+.product .femme .info {
+  top: 422px;
+}
+.product .femme .price {
+  top: 442px;
+}
+.product .femme .info,
+.product .femme .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .femme:hover .info,
+.product .femme:hover .price {
+  opacity: 0;
+}
+.product .femme .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .femme .floral {
+  position: relative;
+  opacity: 0;
+}
+.product .femme:hover .floral {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.product .femme:hover .floral::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+.product .femme .fruity {
+  opacity: 0;
+}
+.product .femme:hover .fruity {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.55s;
+}
+
+.product .homme {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .homme .image {
+  background-image: url(../../assets/images/amyris-homme1.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: 0.8s;
+}
+.product .homme:hover .image {
+  background-image: url(../../assets/images/amyris-homme2.webp);
+}
+.product .homme .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .homme:hover .name {
+  opacity: 0;
+}
+.product .homme .info {
+  top: 422px;
+}
+.product .homme .price {
+  top: 442px;
+}
+.product .homme .info,
+.product .homme .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .homme:hover .info,
+.product .homme:hover .price {
+  opacity: 0;
+}
+.product .homme .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .homme .aromatic {
+  position: relative;
+  opacity: 0;
+}
+.product .homme:hover .aromatic {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.product .homme:hover .aromatic::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+.product .homme .woody {
+  opacity: 0;
+}
+.product .homme:hover .woody {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.55s;
+}
+
+.product .rouge {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .rouge .image {
+  background-image: url(../../assets/images/baccarat-rouge-travel.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: 0.8s;
+}
+.product .rouge .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .rouge:hover .name {
+  opacity: 0;
+}
+.product .rouge .info {
+  top: 422px;
+}
+.product .rouge .price {
+  top: 442px;
+}
+.product .rouge .info,
+.product .rouge .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .rouge:hover .info,
+.product .rouge:hover .price {
+  opacity: 0;
+}
+.product .rouge .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .rouge .floral {
+  position: relative;
+  opacity: 0;
+}
+.product .rouge:hover .floral {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.product .rouge:hover .floral::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+.product .rouge .ambery {
+  position: relative;
+  opacity: 0;
+}
+.product .rouge:hover .ambery {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.55s;
+}
+.product .rouge:hover .ambery::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-delay: 0.35s;
+}
+.product .rouge .woody {
+  opacity: 0;
+}
+.product .rouge:hover .woody {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.75s;
+}
+
+.product .number-724 {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product .number-724 .image {
+  background-image: url(../../assets/images/724-travel.webp);
+  width: 100%;
+  height: 364px;
+  background-size: 364px 364px;
+  transition: 0.8s;
+}
+.product .number-724 .name {
+  position: absolute;
+  top: 346px;
+  width: 100%;
+  height: 36px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  color: #646467;
+  text-align: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .number-724:hover .name {
+  opacity: 0;
+}
+.product .number-724 .info {
+  top: 385px;
+}
+.product .number-724 .price {
+  top: 405px;
+}
+.product .number-724 .info,
+.product .number-724 .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product .number-724:hover .info,
+.product .number-724:hover .price {
+  opacity: 0;
+}
+.product .number-724 .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-family: 'BauerBodoni', sans-serif;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .number-724 .floral {
+  position: relative;
+  opacity: 0;
+}
+.product .number-724:hover .floral {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.product .number-724:hover .floral::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+.product .number-724 .musky {
+  opacity: 0;
+}
+.product .number-724:hover .musky {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.55s;
+}

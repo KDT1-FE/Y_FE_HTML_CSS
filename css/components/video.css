@@ -1,0 +1,52 @@
+.main-video {
+  z-index: 1;
+  padding-top: 103px;
+  padding-bottom: 180px;
+}
+.main-video video {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  object-position: left top;
+}
+.main-video .brand-name {
+  position: absolute;
+  top: 187px;
+  left: 40px;
+  font-family: BauerBodoni;
+  font-size: 3.4375rem;
+  color: #fff;
+  line-height: 4rem;
+}
+.main-video .button {
+  position: absolute;
+  top: 665px;
+  right: 40px;
+  width: 230px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-video .button .discover {
+  display: inline-block;
+  font-family: 'PostGrotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.main-video .button .discover::after {
+  content: '';
+  position: absolute;
+  top: 36px;
+  right: 82px;
+  width: 67px;
+  border-bottom: 1px solid #646467;
+  opacity: 0;
+  transition: 0.3s;
+}
+.main-video .button:hover .discover::after {
+  opacity: 1;
+}

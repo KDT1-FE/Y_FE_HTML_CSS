@@ -120,7 +120,7 @@ var birthModal = function (data) {
         if (cookie === 'true' || dataSet === "true"){
             $(data).find('.overlay').css("display", "none");
             var iframe = $(data).find('iframe');
-            var src = $(iframe).attr('src');
+            var src = $(iframe).attr('data-src');
             $(iframe).attr('src', '').attr('src', src);
         } else {
             $('.youtube-overlay').removeClass('overlayNone');

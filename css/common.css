@@ -23,8 +23,8 @@ input::placeholder {color:#ababab; }
 
 span, b, strong{line-height:inherit; font-family:inherit;}
 
-body { min-width: 1300px;}
-.wrap {background-color: #000;}
+body { min-width: 1300px; background-color: #000;}
+.wrap { display:none; opacity: 1;}
 
 /* header */
 

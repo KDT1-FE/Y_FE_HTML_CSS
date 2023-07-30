@@ -176,7 +176,6 @@ var modalClose = function (modal) {
 var scrollMove = function (e) {
     var topHeight = $(e).attr('data-href');
     var offset = $(topHeight).offset();
-    console.log(offset);
     if (topHeight === "#overview"){
         $('html,body').animate({scrollTop:(offset.top - 160)}, 500);
     } else {

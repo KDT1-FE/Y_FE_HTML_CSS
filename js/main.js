@@ -188,3 +188,5 @@ var birthCheck = function () {
 var modalClose = function (modal) {
     $(modal).css("display", "none");
 }
+
+

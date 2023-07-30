@@ -784,18 +784,18 @@
                                 <h3 class="title">연령 확인</h3>
                                 <p class="normal-text">계속하려면 생년월일을 입력하세요.</p>
                             </div>
-                            <form id="birthForm">
-                                <select required="required" class="form-control input-sm" id="year" name="year">
+                            <form action="javascript:birthCheck();" id="birthForm" method="post">
+                                <select required class="form-control input-sm" id="year" name="year">
                                     <option disabled selected value="">년</option>
                                 </select>
-                                <select required="required" class="form-control input-sm" id="month" name="month">
+                                <select required class="form-control input-sm" id="month" name="month">
                                     <option disabled value="">월</option>
                                 </select>
-                                <select required="required" class="form-control input-sm" id="day" name="day">
+                                <select required class="form-control input-sm" id="day" name="day">
                                     <option disabled value="">일</option>
                                 </select>
                                 <div class="submit-box">
-                                    <button type="button" class="red_button" onclick="birthCheck();">계속</button>
+                                    <button type="submit" class="red_button">계속</button>
                                 </div>
                             </form>
                         </div>

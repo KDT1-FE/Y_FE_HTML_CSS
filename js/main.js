@@ -173,4 +173,13 @@ var modalClose = function (modal) {
     $(modal).css("display", "none");
 }
 
-
+var scrollMove = function (e) {
+    var topHeight = $(e).attr('data-href');
+    var offset = $(topHeight).offset();
+    console.log(offset);
+    if (topHeight === "#overview"){
+        $('html,body').animate({scrollTop:(offset.top - 160)}, 500);
+    } else {
+        $('html,body').animate({scrollTop:(offset.top - 80)}, 500);
+    }
+}

@@ -1,10 +1,10 @@
  KaKao 웹페이지 클론코딩
 -
- 링크 : https://kdt0-junghyoju--phenomenal-pixie-888ba7.netlify.app/
+ 링크 : https://kdt0-junghyoju-kakaoclone.netlify.app/
 
 원본 페이지 
 -
-링크:https://www.kakaocorp.com/page/
+링크 : https://www.kakaocorp.com/page/
 
 사용기술
 -

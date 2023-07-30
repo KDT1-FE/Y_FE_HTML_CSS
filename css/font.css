@@ -1,0 +1,70 @@
+@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format("truetype")}
+@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format("truetype")}
+@font-face{font-display:swap;font-family:Blizzard;font-style:"normal";font-weight:300;src:url(https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt94217c59f4a5815a/5fbd95580100b746db953ff6/blizzard-300-normal.woff) format("woff")}
+@font-face{font-display:swap;font-family:Blizzard;font-style:italic;font-weight:300;src:url(https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt6265792bcb15f8cf/5fbd95570b0a825636795f93/blizzard-300-italic.woff) format("woff")}
+@font-face{font-display:swap;font-family:Blizzard;font-style:"normal";font-weight:400;src:url(https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/bltd282a24c6d400df1/5fbd966e21b96a46dc51a9f6/blizzard-400-normal.woff) format("woff")}
+@font-face{font-display:swap;font-family:Blizzard;font-style:italic;font-weight:400;src:url(https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blta6017e96865fdd0d/5fbd946f21b96a46dc51a9f2/blizzard-400-italic.woff) format("woff")}
+@font-face{font-display:swap;font-family:Blizzard;font-style:"normal";font-weight:700;src:url(https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt61ecbf75b23a76ff/5fbd96a3a9e913483b74d58b/blizzard-700-normal.woff) format("woff")}
+@font-face{font-display:swap;font-family:Blizzard;font-style:italic;font-weight:700;src:url(https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt18311f4c612ce876/5fbd96a20b0a825636795f9b/blizzard-700-italic.woff) format("woff")}
+@font-face{font-display:swap;font-family:Poppins;font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format("woff2");unicode-range:u+0900-097f,u+1cd0-1cf6,u+1cf8-1cf9,u+200c-200d,u+20a8,u+20b9,u+25cc,u+a830-a839,u+a8e0-a8fb}
+@font-face{font-display:swap;font-family:Poppins;font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format("woff2");unicode-range:u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff}
+@font-face{font-display:swap;font-family:Poppins;font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format("woff2");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}
+@font-face{font-family:Archivo;font-stretch:100%;font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/archivo/v9/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTBjNZ-BdvBU7iVNRQGG4.woff) format("woff");unicode-range:u+0102-0103,u+0110-0111,u+0128-0129,u+0168-0169,u+01a0-01a1,u+01af-01b0,u+1ea0-1ef9,u+20ab}
+@font-face{font-family:Archivo;font-stretch:100%;font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/archivo/v9/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTBjNZ-RdvBU7iVNRQGG4.woff) format("woff");unicode-range:u+0100-024f,u+0259,u+1e??,u+2020,u+20a0-20ab,u+20ad-20cf,u+2113,u+2c60-2c7f,u+a720-a7ff}
+@font-face{font-family:Archivo;font-stretch:100%;font-style:normal;font-weight:500;src:url(https://fonts.gstatic.com/s/archivo/v9/k3k6o8UDI-1M0wlSV9XAw6lQkqWY8Q82sJaRE-NWIDdgffTTBjNZ9xdvBU7iVNRQ.woff) format("woff");unicode-range:u+00??,u+0131,u+0152-0153,u+02bb-02bc,u+02c6,u+02da,u+02dc,u+2000-206f,u+2074,u+20ac,u+2122,u+2191,u+2193,u+2212,u+2215,u+feff,u+fffd}
+@font-face {
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt095210837aa1e0f0/625005917f50a04889644422/AlegreyaSans-Regular.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Alegreya Sans";
+    font-weight: 500;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blta747941659c3c73c/62500591844d9555dbf9416f/AlegreyaSans-Medium.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltcb28d02e46f1735f/6250059188b34525a18e655f/AlegreyaSans-Bold.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Exocet Blizzard OT";
+    font-weight: 500;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Old Fenris";
+    font-weight: 400;
+    font-style: "normal";
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt87dbca38eae7d12d/625007b988b34525a18e6563/OldFenris-Regular.otf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Kenris";
+    font-weight: 400;
+    font-style: "normal";
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt6a92d64ed3f977ad/63f915c0f7e2e96287bd37d5/Kenris_build_2021-06-15.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Yoon Myungjo";
+    font-weight: 500;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt06edc9c52b99c4fe/63f915cdb624bd69a0f70250/YoonMyungjo240.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Yoon Myungjo";
+    font-weight: 400;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltd648653f49cde39d/63f915c04f98c853eaf09926/YoonMyungjo230.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Kodia";
+    font-weight: 400;
+    src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt5e839e1622754c57/63f915c066192b60e02052c6/Kodia_11172.ttf");
+    font-display: swap;
+  }

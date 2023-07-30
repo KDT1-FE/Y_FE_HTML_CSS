@@ -7,6 +7,7 @@
     position: relative; 
     width: 100%; 
     height: 110vh;
+    min-height:1000px;
 }	
 #visual .visual_in {
     position:absolute; 
@@ -29,6 +30,7 @@
     left:50%; 
     transform: translateX(-50%);
     opacity: 0.9;
+    min-height:1000px;
 }
 
 #visual .visual_in .control-bar{
@@ -171,7 +173,7 @@ button.red_button:hover::after {
     opacity: 1;
 }
 
-#overview {display: flex; justify-content: center; position:relative; top:-11.5vh;}
+#overview {display: flex; justify-content: center; position:relative; top:-110px;}
 .overview-wrap {display:flex; justify-content: center; width:calc(100% - 80px);}
 #overview .overview-inner {
     width:100%;

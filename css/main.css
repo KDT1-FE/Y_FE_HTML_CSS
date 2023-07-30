@@ -1055,7 +1055,7 @@ figcaption {
   margin-bottom: 4vw;
 }
 .top_btn {
-  left: 95%;
+  /* left: 95vw; */
   font-size: 1.6rem;
   font-weight: 400;
   text-transform: lowercase;

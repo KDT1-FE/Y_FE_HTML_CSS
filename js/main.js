@@ -74,35 +74,9 @@ $(document).ready(function () {
         $(".slide").css("margin-left","5%");
 
     }       
-    
-});
 
-    //slide pager
-    function count(type) {
-        const resultElement = document.getElementById("num");
-        let number = resultElement.innerText;
 
-        // 더하기/빼기
-        if (type === "plus") {
-            if (number < 5) {
-            number = parseInt(number) + 1;
-            } else {
-            number = 1;
-            }
-        } else if (type === "minus") {
-            if (number > 1 || num < 5) {
-            number = parseInt(number) - 1;
-            } else {
-            number = parseInt(number * 6) - 1;
-            }
-        }
-
-        // 결과 출력
-        resultElement.innerText = number;
-    }
-
-    // 스크롤 애니메이션
-    
+    // 스크롤 애니메이션    
     function checkVisible( element, check = 'above' ) {
         const viewportHeight = $(window).height(); 
         const scrolltop = $(window).scrollTop(); 
@@ -131,4 +105,33 @@ $(document).ready(function () {
     }
 
     window.addEventListener('scroll', toy);
+    
+});
+
+    //slide pager
+    function count(type) {
+        const resultElement = document.getElementById("num");
+        let number = resultElement.innerText;
+
+        // 더하기/빼기
+        if (type === "plus") {
+            if (number < 5) {
+            number = parseInt(number) + 1;
+            } else {
+            number = 1;
+            }
+        } else if (type === "minus") {
+            if (number > 1 || num < 5) {
+            number = parseInt(number) - 1;
+            } else {
+            number = parseInt(number * 6) - 1;
+            }
+        }
+
+        // 결과 출력
+        resultElement.innerText = number;
+    }
+
+
+
 

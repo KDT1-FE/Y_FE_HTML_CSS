@@ -1,0 +1,259 @@
+.headerInner{
+    display: flex;
+    align-items: center;
+    width: 1280px;
+    height: 100px;
+    box-sizing:border-box;
+    padding-top: 12px;
+    margin: 0 auto;
+}
+
+.tourHeader{
+    height: 150px;
+}
+
+.logoWrap{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logoImg{
+    background-image: url(../assets/logo_tour.png);
+    background-size: 195px auto;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    width:195px;
+    height:38px;
+    padding-right: 31px;
+}
+
+.logoBtn{
+    background-image: url(../assets/ico_arrow_down.svg);
+    background-repeat: no-repeat;
+    background-size: 8px auto;
+    background-position: center center;
+    position: absolute;
+    display: block;
+    width:24px;
+    height:24px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.interparkWrap{
+    overflow: hidden;
+    position: absolute;
+    top: 35px;
+    left: -140px;
+    z-index: 100;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+.categoryItem:first-child{
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.interparkWrap{
+    display: none;
+}
+
+.logoBtn:hover > .interparkWrap {
+    display: block;
+}
+
+.interparkWrap>ul{
+    list-style:none;
+    padding: 20px;
+    margin:0;
+}
+
+.categoryItem{
+    margin-bottom:10px;
+}
+
+.categoryItem:last-child{
+    margin-bottom:0px;
+}
+
+.categoryItem>span{
+    font-size: 20px;
+}
+
+
+
+.mainLogoBtn{
+    background-image: url(../assets/logo_tour.png);
+    background-size: 195px auto;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    width:120px;
+    height:38px;
+    padding-right: 31px;
+}
+
+.searchWrap{
+    position: relative;
+    width: 452px;
+    margin-left: 20px;    
+}
+
+.searchForm{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-right: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.placeholder{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #111;
+    font-size: 15px;
+    
+}
+
+.searchBtn{
+    background-image: url(../assets/btn_search_new.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: #fff;
+    border: 0;
+    top: 14px;
+    right: 20px;
+    width:20px;
+    height:20px;
+    text-indent: -1000px;
+
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+
+.usermenuWrap{
+    margin-left: auto;
+}
+
+.menulist{
+    display: flex;
+    list-style: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+.navInner{
+    display: flex;
+    margin:0 auto;
+    width: 1280px;
+    height: 50px;
+}
+
+.navlistWrap{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1280px;
+    align-content: center;
+
+}
+
+.mainlist{
+    display: flex;
+    list-style: none;
+    padding-left:0px;
+    letter-spacing: 0.5px;
+}
+
+.mainItem{
+    display: inline-block;
+    padding: 2px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-right: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.mainItem:hover{
+    height: 45px;
+    border-bottom: 2px solid #000;
+}
+
+.eventlist{
+    display: flex;
+    list-style: none;
+    padding-left:0px;
+    letter-spacing: 0.5px;
+}
+
+.eventItem {
+    display: inline-block;
+    padding: 2px;
+    height: 50px;
+    font-size: 16px;
+    color: #1769ff;
+    font-weight: bold;
+    line-height: 50px;
+    padding-right: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.eventItem:hover{
+    height: 45px;
+    border-bottom: 2px solid #1769ff;
+}
+
+
+.line {
+    display: inline-block;
+    padding: 2px;
+    height: 50px;
+    font-size: 16px;
+    color: #eee;
+    font-weight: bold;
+    line-height: 50px;
+    padding-right: 20px;
+}
+
+.navBanner {
+    background-image: url(../assets/01.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 180px;
+    height: 50px;
+}
+
+.headerMarketing{
+    background-image: url(../assets/headerMarketing01.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 180px;
+    height: 50px;
+    margin-left:auto;
+    cursor: pointer;
+}

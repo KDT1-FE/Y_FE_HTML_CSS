@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.snappin-box-text h1 {
+.snappin-box-text h2 {
   font-size: 42px;
 
   letter-spacing: 3px;
@@ -20,6 +20,10 @@
   animation-delay: 1s;
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+.snappin-box-text .firstH2{
+  color: #F9F8F8;
 }
 
 .snappin-box-text p {

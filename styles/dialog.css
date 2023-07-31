@@ -1,4 +1,4 @@
-dialog {
+#menu {
   width: 0px;
   min-height: 100vh;
 
@@ -17,13 +17,12 @@ dialog {
   align-self: flex-start;
 }
 
-dialog[open] {
+#menu[open] {
   width: 310px;
   opacity: 1;
-  pointer-events: auto;
 }
 
-dialog::backdrop {
+#menu::backdrop {
   backdrop-filter: blur(5px);
 }
 

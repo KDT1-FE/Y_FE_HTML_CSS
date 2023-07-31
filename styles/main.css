@@ -23,6 +23,24 @@ main {
   scroll-snap-align: center;
 }
 
+#wlcome-video {
+  display: block;
+
+  height: 100vh;
+  object-fit: cover;
+
+  inline-size: 100%;
+
+  overflow: clip;
+  overflow-clip-margin: content-box;
+
+  outline: none;
+  border: none;
+
+  position: relative;
+  z-index: -1;
+}
+
 .modelY {
   background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop");
 }

@@ -3,30 +3,8 @@
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 ::-webkit-scrollbar {
   display: none;
-}
-
-video {
-  display: block;
-
-  height: 100vh;
-  object-fit: cover;
-
-  inline-size: 100%;
-
-  overflow: clip;
-  overflow-clip-margin: content-box;
-
-  outline: none;
-  border: none;
-
-  position: relative;
-  z-index: -1;
 }
 
 .hidden {
@@ -37,12 +15,20 @@ button {
   border: none;
 
   background-color: transparent;
-  color: #181a1f;
+  color: #171A20;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #181a1f;
+  color: #171A20;
+}
+
+.white {
+  color: #F9F8F8;
+}
+
+.black{
+  color: #171A20;
 }

@@ -5,7 +5,7 @@
 */
 
 // 실시간 사용자 스크롤 위치 감지용 main 요소 불러오기
-const mainPage = document.querySelector(".main-page");
+const mainPage = document.querySelector("#main-page");
 // header 로고와 글자 색 변경용 모든 header 요소 불러오기
 const headerLogo = document.querySelector(".site-logo-tesla");
 const headerText = document.querySelectorAll(".site-nav li span");
@@ -15,7 +15,7 @@ const BLACK = "#171A20";
 const WHITE = "#F9F8F8";
 
 // 실시간 사용자 스크롤의 위치가 첫 페이지에 있다면 header 로고와 글자 색을 WHITE, 아니면 BLACK으로 변경
-main.addEventListener("scroll", event => {
+mainPage.addEventListener("scroll", event => {
   if (event.target.scrollTop === 0) {
     changeColorToWhite();
   } else {

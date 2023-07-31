@@ -65,6 +65,16 @@
   align-items: center;
 }
 
+.menu-items li:last-child {
+  height: 55px;
+  min-width: 230px;
+
+  margin-top: 10px;
+  padding: 0;
+
+  transition: 0.4s;
+}
+
 .menu-item {
   height: 40px;
   min-width: 230px;
@@ -82,17 +92,6 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
-}
-
-.menu-items li:last-child {
-  height: 55px;
-  min-width: 230px;
-
-  margin-top: 10px;
-  padding: 0;
-
-  cursor: pointer;
-  transition: 0.4s;
 }
 
 .menu-item-word {

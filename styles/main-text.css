@@ -1,8 +1,6 @@
 .snappin-box-text {
   max-width: 400px;
-  height: auto;
-
-  margin: 0 auto;
+  
   position: absolute;
   top: 14%;
 
@@ -64,9 +62,6 @@
   bottom: 5rem;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 
   animation-name: fadeInUp;
   animation-delay: 2s;

@@ -14,7 +14,7 @@ header {
 }
 
 .site-logo {
-  padding: 0px 0px 0px 32px;
+  padding-left: 32px;
 }
 
 .site-logo-tesla {
@@ -39,7 +39,7 @@ header {
   width: 220px;
   line-height: 27px;
 
-  padding: 0px 32px 0px 0px;
+  padding-right: 32px;
 
   display: flex;
   justify-content: flex-end;

@@ -64,8 +64,8 @@ function switchBackToOriginal(event) {
 sidesImages.forEach((image) => {
   // Extract the original source from the 'src' attribute and store it as 'data-original-src'
   image.setAttribute('data-original-src', image.src);
-  image.addEventListener('mouseover', changeImageOnHover);
-  image.addEventListener('mouseout', switchBackToOriginal);
+  image.addEventListener('mouseenter', changeImageOnHover);
+  image.addEventListener('mouseleave', switchBackToOriginal);
 });
 
 

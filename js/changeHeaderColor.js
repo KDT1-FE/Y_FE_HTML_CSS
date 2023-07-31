@@ -15,10 +15,8 @@ const BLACK = "#171A20";
 const WHITE = "#F9F8F8";
 
 // 실시간 사용자 스크롤의 위치가 첫 페이지에 있다면 header 로고와 글자 색을 WHITE, 아니면 BLACK으로 변경
-mainPage.addEventListener("scroll", (event) => {
-  let userScroll = mainPage.scrollTop;
-
-  if (userScrollInFirstPage(userScroll)) {
+main.addEventListener("scroll", event => {
+  if (event.target.scrollTop === 0) {
     changeColorToWhite();
   } else {
     changeColorToBlack();

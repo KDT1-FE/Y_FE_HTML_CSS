@@ -7,14 +7,23 @@
 - 수 십개의 이벤트 핸들러가 존재하다보니, 성능 저하가 발생하였습니다. 이를 예방하고자, 한번만 일어나는 이벤트들은, 이벤트 발생 후 이벤트를 제거하여 줬으며, 이에 사용된 변수들의 메모리도 반환시켜줬습니다.
 
 - 😁[토스 홈페이지](https://toss.im)         😎[배포용 링크](https://kdt0-choiwuhyeok--silver-beijinho-ba5d8e.netlify.app) 
-  
+<br>
+
+## 🎁기술 스택
+<div style="display:flex; justify-contents: center;">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+</div>
+<br>
+
 ## 🙉필수 요구사항
 
  - [x] 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
  - [x] 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
  - [x]  과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
  - [x] 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
-
+<br>
 ## 🐵선택 요구사항
 
  - [x] < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
@@ -22,7 +31,7 @@
  - [ ] 부분적으로 BEM 방법론을 도입해보세요.
  - [x] JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
  - [x] JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
-
+<br>
   ## 🌞애니메이션 관련
   기본 스크롤 애니매이션 구현은 제가 작성한 블로그에 적었습니다.  https://koeyhhh.tistory.com/20
 

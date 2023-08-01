@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Music</title>
+    <link rel="icon" href="assets/img/youtube.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="nav_list">
+            <!-- 왼쪽 nav -->
+            <div class="nl_left">
+                <div class="menu_bar_wrap">
+                    <img src="assets/img/menu.png" class="menu_bar">
+                </div>
+                <img src="assets/img/on_platform_logo_dark.svg">
+                <!-- 왼쪽 nav에 취합 -->
+                <input type="text" class="search_input" autocomplete="off" placeholder="노래, 앨범, 아티스트, 팟캐스트 검색">
+            </div>
+            <!-- 오른쪽 nav  -->
+            <div class="nl_right">
+                <div class="connect_image">
+                    <img src="assets/img/smart-devices.png">
+                </div>
+                <div>
+                    <label class="menu_toggle" for="menu_toggle">
+                        <img src="assets/img/user.jpg" class="user_image">
+                    </label>
+                    <input type="checkbox" id="menu_toggle">
+                    <nav id="menu_nav">
+                        <ul id="menu_itemList">
+                            <li class="menu_items"><a href="#" class="menu_name">내 채널</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">유료 멤버쉽</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">계정 전환</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">로그아웃</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">시청기록</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">설정</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">서비스 약관 및 개인정보처리방침</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">고객센터</a></li>
+                            <li class="menu_items"><a href="#" class="menu_name">의견 보내기</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="body_container">
+            <!-- 세로 nav Container -->
+            <div class="column_nav">
+                <div class="column_nav_img selected_option"><img src="assets/img/home.png"><span>홈</span></div>
+                <div class="column_nav_img"><img src="assets/img/compass.png"><span>둘러보기</span></div>
+                <div class="column_nav_img"><img src="assets/img/librarymusic.png"><span>보관함</span></div>
+            </div>
+            <div class="section_contents">
+                <div class="select_tag">
+                    <div class="tag_name"><span>에너지 충전</span></div>
+                    <div class="tag_name"><span>휴식</span></div>
+                    <div class="tag_name"><span>운동</span></div>
+                    <div class="tag_name"><span>출퇴근/등하교</span></div>
+                    <div class="tag_name"><span>집중</span></div>
+                </div>
+                <div class="section_music_contents">
+                    <!-- 프로필 -->
+                    <div class="profile_wrap"></div>
+                    <!-- 이름 -->
+                    <div class="profile_inform">
+                        <div class="profile_name"><span>재훈재훈</span></div>
+                        <!-- 다시 듣기 -->
+                        <div class="profile_inform_two">
+                            <div class="again_listen"><span class="profile_inform_text1">다시 듣기</span></div>
+                            <button class="more_option" type="button">더보기</button>
+                        </div>
+                    </div>
+                    <!-- 슬라이드 표시 -->
+                    <div class="button_wrap">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <!-- <div class="button-previous"></div>
+                        <div class="button-next"></div> -->
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider_contents">
+                                <div class="album_desc">
+                                    <img src="assets/img/slideImg/ayaho.jpg" class="album_image">
+                                    <span class="album_text_one">Sound Of Bell</span>
+                                    <p class="album_text_two">싱글 · ayaho</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/misaki.jpg" class="album_image">
+                                    <span class="singer_text_one">misaki</span>
+                                    <p class="singer_text_two">구독자 13.2만명</p>
+                                </div>
+                                <div class="album_desc">
+                                    <img src="assets/img/slideImg/kenshi.jpg" class="album_image">
+                                    <span class="album_text_one">Lady</span>
+                                    <p class="album_text_two">노래 · Kenshi Yonezu</p>
+                                </div>
+                                <div class="album_desc">
+                                    <img src="assets/img/slideImg/stay.jpg" class="album_image">
+                                    <span class="album_text_one">Stay</span>
+                                    <p class="album_text_two">노래 · BLACKPINK</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/riria.jpg" class="album_image">
+                                    <span class="singer_text_one">riria.</span>
+                                    <p class="singer_text_two">구독자 40.4만명</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider_contents">
+                                <div class="album_desc">
+                                    <img src="assets/img/slideImg/himawari.jpg" class="album_image">
+                                    <span class="album_text_one">Himawari</span>
+                                    <p class="album_text_two">노래 · ado</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/pazi.jpg" class="album_image">
+                                    <span class="singer_text_one">Pazi</span>
+                                    <p class="singer_text_two">구독자 32명</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/mosawo.jpg" class="album_image">
+                                    <span class="singer_text_one">mosawo</span>
+                                    <p class="singer_text_two">구독자 60.7만명</p>
+                                </div>
+                                <div class="album_desc">
+                                    <img src="assets/img/slideImg/lady.jpg" class="album_image">
+                                    <span class="album_text_one">Lady - Kenshi Yonezu cover by Lilpa</span>
+                                    <p class="album_text_two">릴파 lilpa · 조회수 259만회</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/uru.jpg" class="album_image">
+                                    <span class="singer_text_one">우루</span>
+                                    <p class="singer_text_two">구독자 94.3만명</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 음악 표시 ex) 프로필, 이름, 다시듣기, 더보기, 앨범 슬라이드 등 -->
+
+                <!-- TODO -->
+                <div class="section_music_contents">
+                    <!-- 프로필 -->
+                    <div class="profile_singer"></div>
+                    <!-- 이름 -->
+                    <div class="profile_inform">
+                        <div class="profile_name"><span>아래 아티스트를 좋아한다면</span></div>
+                        <!-- 다시 듣기 -->
+                        <div class="profile_inform_two">
+                            <div class="again_listen"><span class="profile_inform_text1">Yuika</span></div>
+                        </div>
+                    </div>
+                    <!-- 슬라이드 표시 -->
+                    <div class="button_wrap">
+                        <div class="swiper-button-prev2"></div>
+                        <div class="swiper-button-next2"></div>
+                        <!-- <div class="button-previous"></div>
+                        <div class="button-next"></div> -->
+                    </div>
+                </div>
+                <div class="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider_contents">
+                                <div class="singer_desc">
+                                    <img src="assets/img/yuika.jpg" class="album_image">
+                                    <span class="singer_text_one">Yuika</span>
+                                    <p class="singer_text_two">구독자 60.9만명 </p>
+                                </div>
+                                <div class="album_desc">
+                                    <img src="assets/img/yuika/suki.jpg" class="album_image">
+                                    <span class="album_text_one">Sukidakara</span>
+                                    <p class="album_text_two">노래 · Yuika</p>
+                                </div>
+                                <div class="album_desc">
+                                    <img src="assets/img/yuika/seventeen.jpg" class="album_image">
+                                    <span class="album_text_one">17</span>
+                                    <p class="album_text_two">노래 · Kenshi Yonezu</p>
+                                </div>
+                                <div class="album_desc">
+                                    <img src="assets/img/yuika/koi.jpg" class="album_image">
+                                    <span class="album_text_one">koidorobou</span>
+                                    <p class="album_text_two">노래 · Yuika</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/yuika/Sobanite.jpg" class="album_image">
+                                    <span class="singer_text_one">Yuika cover</span>
+                                    <p class="singer_text_two">구독자 10만명</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider_contents">
+                                <div class="album_desc">
+                                    <img src="assets/img/slideImg/himawari.jpg" class="album_image">
+                                    <span class="album_text_one">Himawari</span>
+                                    <p class="album_text_two">노래 · ado</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/pazi.jpg" class="album_image">
+                                    <span class="singer_text_one">Pazi</span>
+                                    <p class="singer_text_two">구독자 32명</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/mosawo.jpg" class="album_image">
+                                    <span class="singer_text_one">mosawo</span>
+                                    <p class="singer_text_two">구독자 60.7만명</p>
+                                </div>
+                                <div class="album_desc">
+                                    <img src="assets/img/slideImg/lady.jpg" class="album_image">
+                                    <span class="album_text_one">Lady - Kenshi Yonezu cover by Lilpa</span>
+                                    <p class="album_text_two">릴파 lilpa · 조회수 259만회</p>
+                                </div>
+                                <div class="singer_desc">
+                                    <img src="assets/img/slideImg/uru.jpg" class="album_image">
+                                    <span class="singer_text_one">우루</span>
+                                    <p class="singer_text_two">구독자 94.3만명</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        var swiper2 = new Swiper('.swiper2', {
+            slidesPerView: 1,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next2',
+                prevEl: '.swiper-button-prev2',
+            },
+            on: {
+                resize: function () {
+                    swiper2.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+    </script>
+</body>
+
+</html>

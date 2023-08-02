@@ -68,9 +68,8 @@ strong {
 .home {
   position: relative;
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   border-bottom: 1px solid #505050;
-  padding: 0 40px;
 }
 
 .header {
@@ -180,7 +179,6 @@ strong {
   background-color: #545454;
 }
 
-/* 1024px colums */
 .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -193,13 +191,6 @@ strong {
 .header-bottom-btn {
   display: flex;
   column-gap: 10px;
-}
-
-@media screen and (max-width: 1024px) {
-  .header-bottom-btn {
-    flex-direction: column;
-    row-gap: 10px;
-  }
 }
 
 .header-bottom-btn button {
@@ -280,9 +271,6 @@ strong {
 
 /* INTRODUCE SECTION */
 .introduce {
-  margin-top: 4rem;
-  margin-bottom: 8rem;
-  padding-right: 6rem;
 }
 
 .introduce .container {
@@ -419,8 +407,6 @@ strong {
 /* DESTINATION SECTION */
 /* 1024px */
 .destination {
-  padding: 0 6rem;
-  margin-bottom: 6rem;
 }
 
 .destination__title {
@@ -510,7 +496,6 @@ strong {
 
 /* MANAGER SECTIOn */
 .manager {
-  margin-bottom: 6rem;
 }
 
 .manager__container {
@@ -546,7 +531,6 @@ strong {
 
 /* ========== EXPERIENCE SECTION ========== */
 .experience {
-  padding: 4rem;
 }
 
 .experience__logo h2 {
@@ -630,7 +614,6 @@ strong {
 
 /* ========== PHOTOS SECTION ========== */
 .photos {
-  padding: 0 4rem;
   width: 100%;
   position: relative;
 }
@@ -715,7 +698,6 @@ strong {
 .footer {
   background-color: #000e11;
   color: white;
-  padding: 4rem 4rem 0 4rem;
   font-size: 1.5vw;
 }
 

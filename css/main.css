@@ -452,6 +452,21 @@ strong {
   right: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .service__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shared-flights {
+    overflow: hidden;
+  }
+
+  .shared-flights svg {
+    height: 100%;
+  }
+}
+
 /* DESTINATION SECTION */
 /* 1024px */
 .destination {

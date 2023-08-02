@@ -62,6 +62,15 @@ address, caption, em, var {
     font-style: normal;
     font-weight: normal;
 }
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
 
 header section h1 {
     position: absolute;
@@ -86,6 +95,19 @@ header section .btn_srch {
     background: url('//image.goodchoice.kr/images/web_v3/ico_srch_2.png') 50% 50% no-repeat;
     background-size: 24px auto;   
 }
+
+textarea, button, input, select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+
+#content {
+    overflow: hidden;
+}
+
 .pc .gnb_pc {
     display: inline-block;
     position: absolute;
@@ -240,6 +262,14 @@ button span {
     padding: 78px 31px 0 31px;
 }
 
+.recommend li:nth-child(even) {
+    margin-left: 16px;
+}
+
+.recommend li:last-child {
+    display: block;
+}
+
 h2 {
     font-size: 24px;
     margin-bottom: 35px;
@@ -318,6 +348,7 @@ h2 {
 .swiper-container {
     margin-left: auto;
     margin-right: auto;
+    height: auto;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -326,8 +357,7 @@ h2 {
 
 
 .swiper-container img {
-    width: 962px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .swiper-slide{
@@ -352,6 +382,26 @@ h2 {
     text-align: center;
 }
 
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
 .ad_ask {
     width: 962px;
     margin: 24px auto 0 auto;
@@ -361,17 +411,32 @@ h2 {
     display: block;
 }
 
+.ad_ask ul li {
+    height: 200px;
+    border: 1px solid rgba(0,0,0,0.04);
+    overflow: hidden;
+}
+
 .ad_ask ul li:first-child {
     display: inline-block;
     float: left;
     width: 473px;
 }
 
+.ad_ask ul li:last-child {
+    display: inline-block;
+    float: right;
+    width: 473px;
+}
+
+
 .ad_ask ul li a {
     display: block;
     height: 200px;
     padding: 0 0 0;
 }
+
+
 .ad_ask ul li a img {
     width: auto;
     height: 200px;
@@ -388,7 +453,10 @@ footer {
     font-size: 13px;
     line-height: 20px;
     color: rgba(0,0,0,0.38);
-    font-family: initial;
+}
+
+footer a {
+    color: rgba(0,0,0,0.38);
 }
 
 footer .align {
@@ -397,7 +465,7 @@ footer .align {
 }
 
 footer .link {
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 footer .link li {
@@ -408,7 +476,20 @@ footer .link li {
 
 footer .link li a {
     display: inline-block;
-    text-decoration: none
+}
+
+
+
+footer .link li:nth-of-type(3) a {
+    color: rgba(0,0,0,0.87);
+}
+
+footer .link li:nth-child(6) {
+    clear: both;
+}
+
+footer .link li:nth-child(5), footer .link li:nth-child(8) {
+    clear: none;
 }
 
 footer .link li span {
@@ -420,6 +501,14 @@ footer .link li span {
     text-align: center;
 }
 
+footer .link li button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 13px;
+    line-height: 1;
+    color: rgba(0,0,0,0.38);
+}
 
 .btn_go_top {
     display: inline-block;
@@ -463,25 +552,6 @@ footer address .order {
     padding: 6px 0;
 }
 
-footer .ico {
-    margin: 26px 0 0 0;
-}
-
-footer .ico a {
-    margin-right: 25px;
-    font-size: 30px;
-}
-
-.icon-ic_blog::before{
-    content: "\e908";
-}
-
-footer .ico span {
-    display: inline-block;
-    overflow: hidden;
-    width: 0;
-    text-indent: -9999px;
-}
 .wrap.show, footer.show {
     opacity: 1;
     visibility: visible;

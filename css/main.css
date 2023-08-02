@@ -636,6 +636,7 @@ strong {
 
 /* ========== EXPERIENCE SECTION ========== */
 .experience {
+  padding: 4rem;
 }
 
 .experience__logo h2 {
@@ -715,6 +716,33 @@ strong {
   color: white;
   border-radius: 30px;
   font-size: 1.15vw;
+}
+
+@media screen and (max-width: 768px) {
+  section.experience {
+    padding: 1rem;
+  }
+
+  .experience__logo h2 {
+    padding: 2rem 0 2rem 0;
+    margin: 0;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-grid p {
+    width: 100%;
+  }
+
+  .experience-items-grid {
+    padding-top: 2rem;
+  }
+
+  .experience-item {
+    margin-bottom: 2rem;
+  }
 }
 
 /* ========== PHOTOS SECTION ========== */

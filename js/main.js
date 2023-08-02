@@ -27,28 +27,15 @@ $(document).ready(function () {
 
       
     // 슬라이드
-    let sd = $(".slide figure").width(); //
-    //   console.log(sd);
-
-    $(".slide").css("margin-left", -sd);
-
     function slide_left() {
-        $(".slide").animate({ "margin-left": -sd }, 500, function () {
-        $(".slide > figure:first-child").insertAfter(
-            ".slide > figure:last-child"
-        );
-        $(".slide").css("margin-left", -sd);
-        });
+        $(".slide > figure:first-child").insertAfter(".slide > figure:last-child");
     }
 
     function slide_right() {
-        $(".slide").animate({ "margin-left": "0" }, 500, function () {
-        $(".slide > figure:last-child").insertBefore(
-            ".slide > figure:first-child"
-        );
-        $(".slide").css("margin-left", -sd);
-        });
-    }
+        $(".slide > figure:last-child").insertBefore(".slide > figure:first-child");
+    }    
+
+    // var Timer2 = setInterval(slide_left,3000);
 
     //next 버튼 클릭 시
     $(".sd_nav_btn.next").click(function () {
@@ -74,9 +61,35 @@ $(document).ready(function () {
         $(".slide").css("margin-left","5%");
 
     }       
+    
+});
 
+    //slide pager
+    function count(type) {
+        const resultElement = document.getElementById("num");
+        let number = resultElement.innerText;
 
-    // 스크롤 애니메이션    
+        // 더하기/빼기
+        if (type === "plus") {
+            if (number < 5) {
+            number = parseInt(number) + 1;
+            } else {
+            number = 1;
+            }
+        } else if (type === "minus") {
+            if (number > 1 || num < 5) {
+            number = parseInt(number) - 1;
+            } else {
+            number = parseInt(number * 6) - 1;
+            }
+        }
+
+        // 결과 출력
+        resultElement.innerText = number;
+    }
+
+    // 스크롤 애니메이션
+    
     function checkVisible( element, check = 'above' ) {
         const viewportHeight = $(window).height(); 
         const scrolltop = $(window).scrollTop(); 
@@ -105,33 +118,4 @@ $(document).ready(function () {
     }
 
     window.addEventListener('scroll', toy);
-    
-});
-
-    //slide pager
-    function count(type) {
-        const resultElement = document.getElementById("num");
-        let number = resultElement.innerText;
-
-        // 더하기/빼기
-        if (type === "plus") {
-            if (number < 5) {
-            number = parseInt(number) + 1;
-            } else {
-            number = 1;
-            }
-        } else if (type === "minus") {
-            if (number > 1 || num < 5) {
-            number = parseInt(number) - 1;
-            } else {
-            number = parseInt(number * 6) - 1;
-            }
-        }
-
-        // 결과 출력
-        resultElement.innerText = number;
-    }
-
-
-
 

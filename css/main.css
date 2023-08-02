@@ -804,6 +804,7 @@ strong {
   background-color: #000e11;
   color: white;
   font-size: 1.5vw;
+  padding: 4rem;
 }
 
 .footer__logo {
@@ -896,4 +897,33 @@ strong {
   color: #8d8d8d;
   line-height: 1.2;
   margin-top: 3vw;
+}
+
+@media screen and (max-width: 768px) {
+  footer.footer {
+    padding: 1rem;
+  }
+
+  .footer__sections {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer__sections .sections {
+    max-width: 100%;
+    padding-top: 1rem;
+  }
+
+  .footer__sections .sections .item {
+    width: 100%;
+  }
+
+  .footer__others {
+    flex-direction: column;
+  }
+
+  .footer__others .info {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
 }

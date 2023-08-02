@@ -73,6 +73,7 @@ strong {
 }
 
 .header {
+  width: 100%;
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -94,13 +95,14 @@ strong {
 }
 
 .header-top {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 1rem 0 1rem;
 }
 
 .logo-desktop {
-  padding: 40px 0 0 40px;
-  max-width: 1000px;
+  width: 60%;
 }
 
 .logo-desktop svg {
@@ -111,7 +113,10 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px 0 3rem 40px;
+}
+
+.spacer {
+  width: 100%;
 }
 
 .nav-list .top {
@@ -156,7 +161,6 @@ strong {
 
 .nav-btn {
   display: flex;
-  margin-left: 2rem;
 }
 
 .nav-btn button {
@@ -183,9 +187,6 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 3rem;
-  margin-bottom: 40px;
 }
 
 .header-bottom-btn {
@@ -201,6 +202,34 @@ strong {
   font-size: 1.125rem;
   border-radius: 30px;
   white-space: nowrap;
+}
+
+/* HOME RESPONSIVE */
+@media screen and (max-width: 425px) {
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-item,
+  .nav-list p,
+  .header-bottom p {
+    display: none;
+  }
+
+  .header-bottom-btn {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .nav-btn {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  .header-bottom {
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
 }
 
 .overlay {

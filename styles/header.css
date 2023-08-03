@@ -28,6 +28,8 @@ header {
 
 .site-nav-products {
   width: 620px;
+
+  margin-left: 80px;
   padding: 0px 8px;
 
   display: flex;
@@ -36,7 +38,7 @@ header {
 }
 
 .site-nav-items {
-  width: 220px;
+  width: 250px;
   line-height: 27px;
 
   padding-right: 32px;
@@ -71,8 +73,6 @@ header ol a:hover,
 
 .site-nav-items-menu {
   padding: 4px 8px;
-
-  box-sizing: content-box;
 
   font-size: 14px;
   cursor: pointer;

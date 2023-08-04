@@ -1098,9 +1098,7 @@ body {
 .section-discover .category-wrap .color_pick .color_box {
   display: block;
   box-sizing: border-box;
-  line-height: 29px;
   margin-right: 10px;
-  vertical-align: top;
   width: 50px;
   height: 30px;
   border-radius: 2px;
@@ -1115,8 +1113,54 @@ body {
     margin-bottom: 5px;
   }
 }
-.section-discover .category-wrap .color_pick .color_box:first-child {
+.section-discover .category-wrap .color_pick .color_box[data-category=ffffff] {
   border: 1px solid #ddd;
+  background-color: #ffffff;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category=ff0000] {
+  background-color: #ff0200;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category=ff6d01] {
+  background-color: #ff6d01;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category=ffc002] {
+  background-color: #ffc002;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="55c40c"] {
+  background-color: #55c40c;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="19a200"] {
+  background-color: #19a200;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="0bb9c8"] {
+  background-color: #0bb9c8;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="0166ff"] {
+  background-color: #0166ff;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="8a00ff"] {
+  background-color: #8a00ff;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category=ff1ed3] {
+  background-color: #ff1ed3;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category=e9c2a9] {
+  background-color: #e9c2a9;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category=c58a11] {
+  background-color: #c58a11;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category=c58a11] {
+  background-color: #c58a11;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="753515"] {
+  background-color: #753515;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="949494"] {
+  background-color: #949494;
+}
+.section-discover .category-wrap .color_pick .color_box[data-category="000000"] {
+  background-color: #000000;
 }
 .section-discover .category-wrap .color_pick .color_box.on:before {
   content: "";

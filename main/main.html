@@ -11,333 +11,335 @@
 		<script src="../assets/js/lib/swiper.min.js"></script>
 	</head>
 	<body>
-		<header class="header">
-			<div class="inner">
-				<div class="header-left">
-					<h1 class="header__logo"></h1>
-					<nav class="header__nav">
-						<a href="" class="link">작품</a>
-						<a href="" class="link">배경화면</a>
-						<a href="" class="link">스토리</a>
-						<a href="" class="link">콜라보레이션</a>
-					</nav>
-					<div class="plus-wrap">
-						<button type-="button" class="header__plus">
-							<i></i>
-						</button>
-						<div id="gnb_more_area" class="ly_area">
-							<span class="ic"></span>
-							<ul class="lst_profile">
+		<main>
+			<header class="header">
+				<div class="inner">
+					<div class="header-left">
+						<h1 class="header__logo"></h1>
+						<nav class="header__nav">
+							<a href="" class="link">작품</a>
+							<a href="" class="link">배경화면</a>
+							<a href="" class="link">스토리</a>
+							<a href="" class="link">콜라보레이션</a>
+						</nav>
+						<div class="plus-wrap">
+							<button type-="button" class="header__plus">
+								<i></i>
+							</button>
+							<div id="gnb_more_area" class="ly_area">
+								<span class="ic"></span>
+								<ul class="lst_profile">
+									<li>
+										<a href="https://grafolio.naver.com/about.grfl">서비스 소개</a>
+									</li>
+									<li>
+										<a href="http://ogqmarket.naver.com">네이버 OGQ 마켓</a>
+									</li>
+									<li>
+										<a id="creator_center_link" href="http://hello.grafolio.net">공식블로그</a>
+									</li>
+									<li>
+										<a href="https://grafolio.naver.com/contactus.grfl">제휴문의</a>
+									</li>
+									<li id="notice">
+										<a href="https://grafolio.naver.com/notice/list.grfl">공지사항</a>
+									</li>
+									<li id="help">
+										<a href="https://grafolio.naver.com/help.grfl" target="_blank">도움말</a>
+									</li>
+									<li id="gnb_lang_menu" class="type_lang">
+										<a id="current_locale" class="current_locale" href="javascript:void(0)" role="combobox">한국어<i class="ico_arr"></i> </a>
+										<ul id="lang_list" role="listbox" class="list_lang">
+											<li id="ko_KR" class="on">
+												<a href="javascript:selectLocale('ko_KR');">한국어</a>
+											</li>
+											<li id="en_US">
+												<a href="javascript:selectLocale('en_US');">English(US)</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="header-right">
+						<h1 class="logo-mobile"></h1>
+						<div class="search-inner">
+							<div class="search">
+								<input type="text" id="search" name="search" value="" style="color: rgb(160, 160, 160)" autocomplete="off" />
+								<a href="#" class="btn"><i class="ico"></i></a>
+							</div>
+							<a href="#" class="btn-login">
+								<span>로그인</span>
+							</a>
+							<a href="#" class="btn-mobile">
+								<i class="xi-bars"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="recommend-wrap">
+					<div class="recommend">
+						<div class="recommend-tag">
+							<h3 class="recommend-title">추천 태그</h3>
+							<div class="tag-area">
+								<a href="" class="item">#필름사진</a>
+								<a href="" class="item">#따뜻한_말</a>
+								<a href="" class="item">#배경화면</a>
+								<a href="" class="item">#인물화</a>
+								<a href="" class="item">#hello_artist</a>
+							</div>
+						</div>
+						<div class="recommend-creator">
+							<h3 class="recommend-title">추천 크리에이터</h3>
+							<ul class="recommend-list">
 								<li>
-									<a href="https://grafolio.naver.com/about.grfl">서비스 소개</a>
+									<a href="#">
+										<div class="thumb">
+											<img src="https://g-grafolio.pstatic.net/20210503_109/1619974830872yRpzq_JPEG/IMG_20190723_160852_697.jpg" width="80" height="80" alt="" />
+										</div>
+										<strong aria-label="크리에이터" class="name">하찌나나</strong>
+										<span aria-label="카테고리" class="category">사진</span>
+									</a>
 								</li>
 								<li>
-									<a href="http://ogqmarket.naver.com">네이버 OGQ 마켓</a>
+									<a href="#">
+										<div class="thumb">
+											<img src="https://g-grafolio.pstatic.net/20220907_16/1662479749120prfWh_JPEG/LOGO.jpg" width="80" height="80" alt="" />
+										</div>
+										<strong aria-label="크리에이터" class="name">헤이로즈</strong>
+										<span aria-label="카테고리" class="category">조소/공예</span>
+									</a>
 								</li>
 								<li>
-									<a id="creator_center_link" href="http://hello.grafolio.net">공식블로그</a>
+									<a href="#">
+										<div class="thumb">
+											<img src="https://g-grafolio.pstatic.net/20230306_107/1678074241901K3Q05_PNG/__.PNG" width="80" height="80" alt="" />
+										</div>
+										<strong aria-label="크리에이터" class="name">슈히</strong>
+										<span aria-label="카테고리" class="category">디자인</span>
+									</a>
 								</li>
 								<li>
-									<a href="https://grafolio.naver.com/contactus.grfl">제휴문의</a>
-								</li>
-								<li id="notice">
-									<a href="https://grafolio.naver.com/notice/list.grfl">공지사항</a>
-								</li>
-								<li id="help">
-									<a href="https://grafolio.naver.com/help.grfl" target="_blank">도움말</a>
-								</li>
-								<li id="gnb_lang_menu" class="type_lang">
-									<a id="current_locale" class="current_locale" href="javascript:void(0)" role="combobox">한국어<i class="ico_arr"></i> </a>
-									<ul id="lang_list" role="listbox" class="list_lang">
-										<li id="ko_KR" class="on">
-											<a href="javascript:selectLocale('ko_KR');">한국어</a>
-										</li>
-										<li id="en_US">
-											<a href="javascript:selectLocale('en_US');">English(US)</a>
-										</li>
-									</ul>
+									<a href="#">
+										<div class="thumb">
+											<img src="https://g-grafolio.pstatic.net/20220805_14/1659661399751WKm1J_JPEG/2021_VMB_Jack-41_high.jpg" width="80" height="80" alt="" />
+										</div>
+										<strong aria-label="크리에이터" class="name">아우토슈타트</strong>
+										<span aria-label="카테고리" class="category">사운드</span>
+									</a>
 								</li>
 							</ul>
 						</div>
-					</div>
-				</div>
-				<div class="header-right">
-					<h1 class="logo-mobile"></h1>
-					<div class="search-inner">
-						<div class="search">
-							<input type="text" id="search" name="search" value="" style="color: rgb(160, 160, 160)" autocomplete="off" />
-							<a href="#" class="btn"><i class="ico"></i></a>
-						</div>
-						<a href="#" class="btn-login">
-							<span>로그인</span>
-						</a>
-						<a href="#" class="btn-mobile">
-							<i class="xi-bars"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="recommend-wrap">
-				<div class="recommend">
-					<div class="recommend-tag">
-						<h3 class="recommend-title">추천 태그</h3>
-						<div class="tag-area">
-							<a href="" class="item">#필름사진</a>
-							<a href="" class="item">#따뜻한_말</a>
-							<a href="" class="item">#배경화면</a>
-							<a href="" class="item">#인물화</a>
-							<a href="" class="item">#hello_artist</a>
-						</div>
-					</div>
-					<div class="recommend-creator">
-						<h3 class="recommend-title">추천 크리에이터</h3>
-						<ul class="recommend-list">
-							<li>
-								<a href="#">
-									<div class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20210503_109/1619974830872yRpzq_JPEG/IMG_20190723_160852_697.jpg" width="80" height="80" alt="" />
-									</div>
-									<strong aria-label="크리에이터" class="name">하찌나나</strong>
-									<span aria-label="카테고리" class="category">사진</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20220907_16/1662479749120prfWh_JPEG/LOGO.jpg" width="80" height="80" alt="" />
-									</div>
-									<strong aria-label="크리에이터" class="name">헤이로즈</strong>
-									<span aria-label="카테고리" class="category">조소/공예</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20230306_107/1678074241901K3Q05_PNG/__.PNG" width="80" height="80" alt="" />
-									</div>
-									<strong aria-label="크리에이터" class="name">슈히</strong>
-									<span aria-label="카테고리" class="category">디자인</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20220805_14/1659661399751WKm1J_JPEG/2021_VMB_Jack-41_high.jpg" width="80" height="80" alt="" />
-									</div>
-									<strong aria-label="크리에이터" class="name">아우토슈타트</strong>
-									<span aria-label="카테고리" class="category">사운드</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="recommend-work">
-						<h3 class="recommend-title">추천 작품</h3>
-						<ul class="recommend-list">
-							<li>
-								<a href="#">
-									<div class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20230722_10/1690003754210pp03j_JPEG/%B2%BF%BD%E1%B4%D1%C0%E5_019.JPG?type=f240_160" width="120" height="80" alt="이미지" />
-									</div>
-									<strong aria-label="작품명" class="desc">#17</strong>
-									<span aria-label="작가" class="creator">노지민</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20230721_71/16898674387522laic_JPEG/3G2A4650_1.jpg?type=f240_160" width="120" height="80" alt="이미지" />
-									</div>
-									<strong aria-label="작품명" class="desc">부처님 비가 또 옵니다...</strong>
-									<span aria-label="작가" class="creator">thank</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="thumb">
-										<img src="https://g-grafolio.pstatic.net/20210513_71/1620905955324G5qAy_JPEG/%BE%D6%B8%C5%C7%D1_%BE%C6%C0%CC_jpg.jpg?type=f240_160" width="120" height="80" alt="이미지" />
-									</div>
-									<strong aria-label="작품명" class="desc">애매한 사이</strong>
-									<span aria-label="작가" class="creator">djkwon2007</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<button type="button" class="btn-close"></button>
-				</div>
-			</div>
-		</header>
-		<div class="mobile-menu">
-			<div class="mobile-wrap">
-				<button type-="button" class="header__plus">
-					<i></i>
-				</button>
-				<div class="mobile-head">
-					<h1 class="header__logo"></h1>
-					<button type="button" class="mobile-close"></button>
-				</div>
-				<div id="gnb_more_area" class="ly_area">
-					<span class="ic"></span>
-					<ul class="lst_profile">
-						<li>
-							<a href="https://grafolio.naver.com/about.grfl">서비스 소개</a>
-						</li>
-						<li>
-							<a href="http://ogqmarket.naver.com">네이버 OGQ 마켓</a>
-						</li>
-						<li>
-							<a id="creator_center_link" href="http://hello.grafolio.net">공식블로그</a>
-						</li>
-						<li>
-							<a href="https://grafolio.naver.com/contactus.grfl">제휴문의</a>
-						</li>
-						<li id="notice">
-							<a href="https://grafolio.naver.com/notice/list.grfl">공지사항</a>
-						</li>
-						<li id="help">
-							<a href="https://grafolio.naver.com/help.grfl" target="_blank">도움말</a>
-						</li>
-						<li id="gnb_lang_menu" class="type_lang">
-							<a id="current_locale" class="current_locale" href="javascript:void(0)" role="combobox">한국어<i class="ico_arr"></i></a>
-							<ul id="lang_list" role="listbox" class="list_lang">
-								<li id="ko_KR" role="option" class="on"><a href="javascript:selectLocale('ko_KR');">한국어</a></li>
-								<li id="en_US" role="option"><a href="javascript:selectLocale('en_US');">English(US)</a></li>
+						<div class="recommend-work">
+							<h3 class="recommend-title">추천 작품</h3>
+							<ul class="recommend-list">
+								<li>
+									<a href="#">
+										<div class="thumb">
+											<img src="https://g-grafolio.pstatic.net/20230722_10/1690003754210pp03j_JPEG/%B2%BF%BD%E1%B4%D1%C0%E5_019.JPG?type=f240_160" width="120" height="80" alt="이미지" />
+										</div>
+										<strong aria-label="작품명" class="desc">#17</strong>
+										<span aria-label="작가" class="creator">노지민</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="thumb">
+											<img src="https://g-grafolio.pstatic.net/20230721_71/16898674387522laic_JPEG/3G2A4650_1.jpg?type=f240_160" width="120" height="80" alt="이미지" />
+										</div>
+										<strong aria-label="작품명" class="desc">부처님 비가 또 옵니다...</strong>
+										<span aria-label="작가" class="creator">thank</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="thumb">
+											<img src="https://g-grafolio.pstatic.net/20210513_71/1620905955324G5qAy_JPEG/%BE%D6%B8%C5%C7%D1_%BE%C6%C0%CC_jpg.jpg?type=f240_160" width="120" height="80" alt="이미지" />
+										</div>
+										<strong aria-label="작품명" class="desc">애매한 사이</strong>
+										<span aria-label="작가" class="creator">djkwon2007</span>
+									</a>
+								</li>
 							</ul>
-						</li>
-					</ul>
+						</div>
+						<button type="button" class="btn-close"></button>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-menu">
+				<div class="mobile-wrap">
+					<button type-="button" class="header__plus">
+						<i></i>
+					</button>
+					<div class="mobile-head">
+						<h1 class="header__logo"></h1>
+						<button type="button" class="mobile-close"></button>
+					</div>
+					<div id="gnb_more_area" class="ly_area">
+						<span class="ic"></span>
+						<ul class="lst_profile">
+							<li>
+								<a href="https://grafolio.naver.com/about.grfl">서비스 소개</a>
+							</li>
+							<li>
+								<a href="http://ogqmarket.naver.com">네이버 OGQ 마켓</a>
+							</li>
+							<li>
+								<a id="creator_center_link" href="http://hello.grafolio.net">공식블로그</a>
+							</li>
+							<li>
+								<a href="https://grafolio.naver.com/contactus.grfl">제휴문의</a>
+							</li>
+							<li id="notice">
+								<a href="https://grafolio.naver.com/notice/list.grfl">공지사항</a>
+							</li>
+							<li id="help">
+								<a href="https://grafolio.naver.com/help.grfl" target="_blank">도움말</a>
+							</li>
+							<li id="gnb_lang_menu" class="type_lang">
+								<a id="current_locale" class="current_locale" href="javascript:void(0)" role="combobox">한국어<i class="ico_arr"></i></a>
+								<ul id="lang_list" role="listbox" class="list_lang">
+									<li id="ko_KR" role="option" class="on"><a href="javascript:selectLocale('ko_KR');">한국어</a></li>
+									<li id="en_US" role="option"><a href="javascript:selectLocale('en_US');">English(US)</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<section class="section section-pick">
-			<div class="inner">
-				<div class="tit-bx">
-					<p class="tit">Editors' Pick</p>
-					<div class="category-inner">
+			<section class="section section-pick">
+				<div class="inner">
+					<div class="tit-bx">
+						<p class="tit">Editors' Pick</p>
+						<div class="category-inner">
+							<ul class="category">
+								<li class="category__item top-cate"><a href="" class="link on" data-category="summer">여름</a></li>
+								<li class="category__item top-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
+								<li class="category__item top-cate"><a href="" class="link" data-category="sky">하늘</a></li>
+								<li class="category__item top-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
+								<li class="category__item top-cate"><a href="" class="link" data-category="botanic">식물</a></li>
+								<li class="category__item top-cate"><a href="" class="link" data-category="flower">꽃</a></li>
+								<li class="category__item top-cate"><a href="" class="link" data-category="sea">바다</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper"></div>
+						<div class="swiper-control">
+							<div class="container">
+								<button type="button" class="swiper-button swiper-button--prev">
+									<i class="xi-angle-left"></i>
+								</button>
+								<button type="button" class="swiper-button swiper-button--next">
+									<i class="xi-angle-right"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section-creator">
+				<div class="inner">
+					<div class="tit-bx">
+						<p class="tit">Top Creators</p>
+					</div>
+					<div class="creators-wrap">
+						<ul class="creators" id="container"></ul>
+					</div>
+				</div>
+			</section>
+			<section class="section section-discover">
+				<div class="inner">
+					<div class="tit-bx">
+						<p class="tit">Discover</p>
+						<ul class="tags">
+							<li class="tags__item"><a href="" class="link on">태그별</a></li>
+							<li class="tags__item"><a href="" class="link">색상별</a></li>
+							<li class="tags__item"><a href="" class="link">유형별</a></li>
+						</ul>
+					</div>
+					<div class="category-wrap">
 						<ul class="category">
-							<li class="category__item top-cate"><a href="" class="link on" data-category="summer">여름</a></li>
-							<li class="category__item top-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
-							<li class="category__item top-cate"><a href="" class="link" data-category="sky">하늘</a></li>
-							<li class="category__item top-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
-							<li class="category__item top-cate"><a href="" class="link" data-category="botanic">식물</a></li>
-							<li class="category__item top-cate"><a href="" class="link" data-category="flower">꽃</a></li>
-							<li class="category__item top-cate"><a href="" class="link" data-category="sea">바다</a></li>
+							<li class="category__item btm-cate"><a href="" class="link on all-btn">전체</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="summer">여름</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="sky">하늘</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="botanic">식물</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="flower">꽃</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="sea">바다</a></li>
+						</ul>
+						<button class="toggle-btn"></button>
+					</div>
+					<div class="category-wrap" style="display: none">
+						<div class="color_pick" id="colorPicker" style="display: block">
+							<div>
+								<span class="color_box border_box" data-category="ffffff" style="background-color: #fff"></span>
+								<span class="color_box" data-category="ff0000" aria-label="빨간색"></span>
+								<span class="color_box" data-category="ff6d01" aria-label="주황색"></span>
+								<span class="color_box" data-category="ffc002" aria-label="노란색"></span>
+								<span class="color_box" data-category="55c40c" aria-label="연두색"></span>
+								<span class="color_box" data-category="19a200" aria-label="초록색"></span>
+								<span class="color_box" data-category="0bb9c8" aria-label="하늘색"></span>
+								<span class="color_box" data-category="0166ff" aria-label="파랑색"></span>
+								<span class="color_box" data-category="8a00ff" aria-label="보라색"></span>
+								<span class="color_box" data-category="ff1ed3" aria-label="핑크색"></span>
+								<span class="color_box" data-category="e9c2a9" aria-label="노란빛 분홍색"></span>
+								<span class="color_box" data-category="c58a11" aria-label="연한 갈색"></span>
+								<span class="color_box" data-category="753515" aria-label="갈색"></span>
+								<span class="color_box" data-category="949494" aria-label="회색"></span>
+								<span class="color_box" data-category="000000" aria-label="검은색"></span>
+							</div>
+						</div>
+					</div>
+					<div class="category-wrap" style="display: none">
+						<ul class="category">
+							<li class="category__item btm-cate"><a href="" class="link on all-btn">전체</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="summer">여름</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="sky">하늘</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="botanic">식물</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="flower">꽃</a></li>
+							<li class="category__item btm-cate"><a href="" class="link" data-category="sea">바다</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="swiper-container">
-					<div class="swiper-wrapper"></div>
-					<div class="swiper-control">
-						<div class="container">
-							<button type="button" class="swiper-button swiper-button--prev">
-								<i class="xi-angle-left"></i>
+				<ul class="wallpapers">
+					<div class="sort-inner">
+						<div class="sort-select">
+							<button type="button" class="sort-btn">
+								<span class="txt">인기순</span>
 							</button>
-							<button type="button" class="swiper-button swiper-button--next">
-								<i class="xi-angle-right"></i>
-							</button>
+							<ul class="sort-select__list">
+								<li class="item on popular-btn">
+									<a href="">인기순</a>
+								</li>
+								<li class="item recent-btn">
+									<a href="">최신순</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section section-creator">
-			<div class="inner">
-				<div class="tit-bx">
-					<p class="tit">Top Creators</p>
-				</div>
-				<div class="creators-wrap">
-					<ul class="creators" id="container"></ul>
-				</div>
-			</div>
-		</section>
-		<section class="section section-discover">
-			<div class="inner">
-				<div class="tit-bx">
-					<p class="tit">Discover</p>
-					<ul class="tags">
-						<li class="tags__item"><a href="" class="link on">태그별</a></li>
-						<li class="tags__item"><a href="" class="link">색상별</a></li>
-						<li class="tags__item"><a href="" class="link">유형별</a></li>
-					</ul>
-				</div>
-				<div class="category-wrap">
-					<ul class="category">
-						<li class="category__item btm-cate"><a href="" class="link on all-btn">전체</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="summer">여름</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="sky">하늘</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="botanic">식물</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="flower">꽃</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="sea">바다</a></li>
-					</ul>
-					<button class="toggle-btn"></button>
-				</div>
-				<div class="category-wrap" style="display: none">
-					<div class="color_pick" id="colorPicker" style="display: block">
-						<div>
-							<span class="color_box border_box" data-category="ffffff" style="background-color: #fff" tabindex="0"></span>
-							<span class="color_box" data-category="ff0000" aria-label="빨간색" style="background-color: #ff0200" tabindex="0"></span>
-							<span class="color_box" data-category="ff6d01" aria-label="주황색" style="background-color: #ff6d01" tabindex="0"></span>
-							<span class="color_box" data-category="ffc002" aria-label="노란색" style="background-color: #ffc002" tabindex="0"></span>
-							<span class="color_box" data-category="55c40c" aria-label="연두색" style="background-color: #55c40c" tabindex="0"></span>
-							<span class="color_box" data-category="19a200" aria-label="초록색" style="background-color: #19a200" tabindex="0"></span>
-							<span class="color_box" data-category="00bdce" aria-label="하늘색" style="background-color: #00bdce" tabindex="0"></span>
-							<span class="color_box" data-category="0166ff" aria-label="파랑색" style="background-color: #0166ff" tabindex="0"></span>
-							<span class="color_box" data-category="8a00ff" aria-label="보라색" style="background-color: #8a00ff" tabindex="0"></span>
-							<span class="color_box" data-category="ff1ed3" aria-label="핑크색" style="background-color: #ff1ed3" tabindex="0"></span>
-							<span class="color_box" data-category="e9c2a9" aria-label="노란빛 분홍색" style="background-color: #e9c2a9" tabindex="0"></span>
-							<span class="color_box" data-category="c58a11" aria-label="연한 갈색" style="background-color: #c58a11" tabindex="0"></span>
-							<span class="color_box" data-category="753515" aria-label="갈색" style="background-color: #753515" tabindex="0"></span>
-							<span class="color_box" data-category="949494" aria-label="회색" style="background-color: #949494" tabindex="0"></span>
-							<span class="color_box" data-category="000000" aria-label="검은색" style="background-color: #000" tabindex="0"></span>
-						</div>
-					</div>
-				</div>
-				<div class="category-wrap" style="display: none">
-					<ul class="category">
-						<li class="category__item btm-cate"><a href="" class="link on all-btn">전체</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="summer">여름</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="brunch">브런치 먹는 날</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="sky">하늘</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="pink">분홍분홍해</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="botanic">식물</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="flower">꽃</a></li>
-						<li class="category__item btm-cate"><a href="" class="link" data-category="sea">바다</a></li>
-					</ul>
-				</div>
-			</div>
-			<ul class="wallpapers">
-				<div class="sort-inner">
-					<div class="sort-select">
-						<button type="button" class="sort-btn">
-							<span class="txt">인기순</span>
-						</button>
-						<ul class="sort-select__list">
-							<li class="item on popular-btn">
-								<a href="">인기순</a>
-							</li>
-							<li class="item recent-btn">
-								<a href="">최신순</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="inner"></div>
-			</ul>
-		</section>
-		<footer class="footer">
-			<div class="inner">
-				<ul class="policy">
-					<li class="policy__item"><a href="" class="link">이용약관</a></li>
-					<li class="policy__item">
-						<a href="" class="link"><b>개인정보 처리방침</b></a>
-					</li>
-					<li class="policy__item">
-						<a href="" class="link"><b>Ⓒ Grafolio.</b></a>
-					</li>
+					<div class="inner"></div>
 				</ul>
-			</div>
-		</footer>
-		<script src="../assets/js/main.js"></script>
+			</section>
+			<footer class="footer">
+				<div class="inner">
+					<ul class="policy">
+						<li class="policy__item"><a href="" class="link">이용약관</a></li>
+						<li class="policy__item">
+							<a href="" class="link"><b>개인정보 처리방침</b></a>
+						</li>
+						<li class="policy__item">
+							<a href="" class="link"><b>Ⓒ Grafolio.</b></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+			<script src="../assets/js/main.js" type="module"></script>
+		</main>
 	</body>
 </html>
 

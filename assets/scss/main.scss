@@ -4,6 +4,23 @@
 // 변수선언
 $color-1: #00d084;
 
+// color 변수선언
+$color-ffffff: #ffffff;
+$color-ff0000: #ff0200;
+$color-ff6d01: #ff6d01;
+$color-ffc002: #ffc002;
+$color-55c40c: #55c40c;
+$color-19a200: #19a200;
+$color-0bb9c8: #0bb9c8;
+$color-0166ff: #0166ff;
+$color-8a00ff: #8a00ff;
+$color-ff1ed3: #ff1ed3;
+$color-e9c2a9: #e9c2a9;
+$color-c58a11: #c58a11;
+$color-753515: #753515;
+$color-949494: #949494;
+$color-000000: #000000;
+
 // Common
 body {
 	overflow-x: hidden;
@@ -1045,9 +1062,7 @@ body {
 				display: block;
 				-webkit-box-sizing: border-box;
 				box-sizing: border-box;
-				line-height: 29px;
 				margin-right: 10px;
-				vertical-align: top;
 				width: 50px;
 				height: 30px;
 				border-radius: 2px;
@@ -1059,9 +1074,56 @@ body {
 					border-radius: 50%;
 					margin-bottom: 5px;
 				}
-				&:first-child {
+				&[data-category='ffffff'] {
 					border: 1px solid #ddd;
+					background-color: $color-ffffff;
 				}
+				&[data-category='ff0000'] {
+					background-color: $color-ff0000;
+				}
+				&[data-category='ff6d01'] {
+					background-color: $color-ff6d01;
+				}
+				&[data-category='ffc002'] {
+					background-color: $color-ffc002;
+				}
+				&[data-category='55c40c'] {
+					background-color: $color-55c40c;
+				}
+				&[data-category='19a200'] {
+					background-color: $color-19a200;
+				}
+				&[data-category='0bb9c8'] {
+					background-color: $color-0bb9c8;
+				}
+				&[data-category='0166ff'] {
+					background-color: $color-0166ff;
+				}
+				&[data-category='8a00ff'] {
+					background-color: $color-8a00ff;
+				}
+				&[data-category='ff1ed3'] {
+					background-color: $color-ff1ed3;
+				}
+				&[data-category='e9c2a9'] {
+					background-color: $color-e9c2a9;
+				}
+				&[data-category='c58a11'] {
+					background-color: $color-c58a11;
+				}
+				&[data-category='c58a11'] {
+					background-color: $color-c58a11;
+				}
+				&[data-category='753515'] {
+					background-color: $color-753515;
+				}
+				&[data-category='949494'] {
+					background-color: $color-949494;
+				}
+				&[data-category='000000'] {
+					background-color: $color-000000;
+				}
+
 				&.on {
 					&:before {
 						content: '';

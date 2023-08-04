@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+$grid-breakpoints: (
+	xxxs: 0,
+	xxs: 320px,
+	xs: 375px,
+	sm: 576px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1200px,
+	xxl: 1400px,
+	xxxl: 1600px,
+) !default;
+
+@mixin mdq-min($breakpoint) {
+	$min: if(map-get($grid-breakpoints, $breakpoint) == 0, 0, map-get($grid-breakpoints, $breakpoint) + 0.02);
+	@media all and (min-width: $min) {
+		@content;
+	}
+}
+
+@mixin mdq-max($breakpoint) {
+	$max: map-get($grid-breakpoints, $breakpoint);
+	@media all and (max-width: $max) {
+		@content;
+	}
+}
+

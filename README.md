@@ -1,45 +1,52 @@
-[참고 내용]
-
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
-
-과제 수행 및 제출 방법
-
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+## 프로젝트 개요
+HTML, CSS, JS 를 활용하여 자신이 원하는 페이지를 선정해 클론 코딩하는 프로젝트입니다.
 
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+## 사이트 링크
+- 클론 사이트 : https://grafolio.naver.com/wallpaper.grfl
+- 배포 사이트 : http://grafolio.dothome.co.kr/main/main.html
 
-필수 요구사항
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+## 화면 미리보기
+![메인페이지](./assets/images/mainpage.png)
 
-선택 요구사항
 
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+## 구현 상세 내용
+- scss 에서 <span style="color:pink;">변수 선언, @include</span> 를 활용하여 반복되는 구문을 재사용했습니다.
+- <span style="color:pink;">모바일, 태블릿</span> 사이즈에도 적용될 수 있도록 반응형 구현을 했습니다. 
+- 배열 함수인 <span style="color:pink;">map, filter, some</span> 을 활용하여 카테고리 필터링을 구현했습니다.
 
-손쉬운 이미지 추출 방법
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
+## 사용한 스택
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+
+## 피드백 받고 싶은 부분
+"자바스크립트로 버튼, 필터의 기능을 넣다 보니 줄이 매우 길어지고 반복되는 부분도 많고 비효율적이라고 많이 느껴졌습니다. 리팩토링이 필요한 부분 그리고 어떻게 리팩토링하는 것이 좋은지 조언 듣고 싶습니다!!"
+
+
+## 오류 및 서치로 알게된 부분
+1. 2중 for문<br>
+같은 클래스를 가진 여러 개의 버튼을 클릭했을 때, 해당 버튼만 활성화되고 나머지 버튼은 비활성화 시키는 것을
+2중 for 문으로 활용 가능하다는 것을 알게 되었습니다.
+
+![메인페이지](./assets/images/forloop.png)
+
+2. 객체 date 표기법<br>
+객체 속성 중 date 부분에 'YY.MM.DD' 라고 표기했었는데 'invalid Date' 오류가 떠서
+new Date() 사용해서 객체를 생성할 때는 'YYYY.MM.DD' 이 형식을 지켜야 한다는 것을 알게 되었습니다.
+
+![메인페이지](./assets/images/date.png)
+
+3. 공유되는 배열은 처음에 선언하기<br>
+아래 3개의 버튼을 누를 때마다 walls 에서 필터된 배열을 만들어냈는데
+그 배열을 담은 변수를 어떻게 서로 공유하지 싶다가 애초에 필터링 될 배열을 선언해 주고 
+이벤트 일어날 때마다 재할당하면 된다는 것을 알게 되었습니다.
+
+![메인페이지](./assets/images/filtered.png)
+
+
+
+

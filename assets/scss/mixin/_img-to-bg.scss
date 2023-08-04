@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@mixin img-to-bg($value: 100%, $type: cover) {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		display: block;
+		padding-bottom: $value;
+	}
+
+	@if ($value == contain) {
+		$value: 100%;
+		$type: contain;
+	}
+
+	@if ($type == cover) {
+		> img {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: auto;
+			height: auto;
+			min-width: 1000%;
+			min-height: 1000%;
+			max-width: none;
+			max-height: none;
+			transform: translate(-50%, -50%) scale(0.1);
+		}
+	} @else if ($type == contain) {
+		> img {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: auto;
+			height: auto;
+			min-width: 0;
+			min-height: 0;
+			max-width: 100%;
+			max-height: 100%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+

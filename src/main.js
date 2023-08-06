@@ -21,6 +21,10 @@ const sliderWidth = 1060;
 const topBannerPrev = 560;
 const topBannerNext = -1620;
 
+//prev, next
+const prev = "prev";
+const next = "next";
+
 let loopInterval = setInterval(() => {
   translateContainer(-1); // 다음 슬라이드를 보여주는 함수
 }, 3000);
@@ -37,8 +41,8 @@ topBannerWrapper.addEventListener("mouseover", () => {
 
 //carousel translate 함수
 function translateCarouselWrapper(direction, items) {
-  const selectedBtn = direction === 1 ? "prev" : "next";
-  if (direction === -1) {
+  items.style.transitionDuration = "300ms";
+  if (direction === next) {
     items.style.transform = `translateX(-${sliderWidth}px)`;
   } else {
     items.style.transform = `translateX(${sliderWidth}px)`;
@@ -48,19 +52,18 @@ function translateCarouselWrapper(direction, items) {
 // item 이동 후 item 재배치 함수
 function reorganizeCarouselWrapper(selectedBtn, items) {
   items.removeAttribute("style");
-  selectedBtn === "prev"
+  selectedBtn === prev
     ? items.insertBefore(items.lastElementChild, items.firstElementChild)
     : items.appendChild(items.firstElementChild);
 }
 
 // 메인 슬라이드 translate 함수
 function translateContainer(direction) {
-  const selectedBtn = direction === 1 ? "prev" : "next";
   topBannerItems.style.transitionDuration = "500ms";
   let information = topBannerItems.children[3].firstElementChild;
   information.style.visibility = "hidden";
   information.style.opacity = 0;
-  if (direction === -1) {
+  if (direction === next) {
     topBannerItems.style.transform = `translateX(${topBannerNext}px)`;
   } else {
     topBannerItems.style.transform = `translateX(${topBannerPrev}px)`;
@@ -73,12 +76,12 @@ function translateContainer(direction) {
 function reorganizeEl(selectedBtn) {
   topBannerItems.removeAttribute("style");
   let information =
-    selectedBtn === "prev"
+    selectedBtn === prev
       ? topBannerItems.children[2].firstElementChild
       : topBannerItems.children[4].firstElementChild;
   information.style.opacity = 1;
   information.style.visibility = "visible";
-  selectedBtn === "prev"
+  selectedBtn === prev
     ? topBannerItems.insertBefore(
         topBannerItems.lastElementChild,
         topBannerItems.firstElementChild
@@ -91,31 +94,31 @@ function reorganizeEl(selectedBtn) {
   // 처음 화면에 보여지는 슬라이드 아이템은 information이 보여지게
   information.style.opacity = 1;
   information.style.visibility = "visible";
-
-  topPrev.addEventListener("click", translateContainer.bind(this, 1));
-  topNext.addEventListener("click", translateContainer.bind(this, -1));
+  //prev는 1 next는 -1
+  topPrev.addEventListener("click", translateContainer.bind(this, prev));
+  topNext.addEventListener("click", translateContainer.bind(this, next));
   mainPrev.addEventListener(
     "click",
-    translateCarouselWrapper.bind(this, 1, mainItems)
+    translateCarouselWrapper.bind(this, prev, mainItems)
   );
   mainNext.addEventListener(
     "click",
-    translateCarouselWrapper.bind(this, -1, mainItems)
+    translateCarouselWrapper.bind(this, next, mainItems)
   );
   subPrev.addEventListener(
     "click",
-    translateCarouselWrapper.bind(this, 1, subItems)
+    translateCarouselWrapper.bind(this, prev, subItems)
   );
   subNext.addEventListener(
     "click",
-    translateCarouselWrapper.bind(this, -1, subItems)
+    translateCarouselWrapper.bind(this, next, subItems)
   );
   lastPrev.addEventListener(
     "click",
-    translateCarouselWrapper.bind(this, 1, lastItems)
+    translateCarouselWrapper.bind(this, prev, lastItems)
   );
   lastNext.addEventListener(
     "click",
-    translateCarouselWrapper.bind(this, -1, lastItems)
+    translateCarouselWrapper.bind(this, next, lastItems)
   );
 })();

@@ -598,9 +598,6 @@ strong {
 }
 
 /* MANAGER SECTIOn */
-.manager {
-}
-
 .manager__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -26,11 +26,11 @@ const prev = "prev";
 const next = "next";
 
 let loopInterval = setInterval(() => {
-  translateContainer(-1); // 다음 슬라이드를 보여주는 함수
+  translateContainer(next); // 다음 슬라이드를 보여주는 함수
 }, 3000);
 topBannerWrapper.addEventListener("mouseout", () => {
   loopInterval = setInterval(() => {
-    translateContainer(-1); // 다음 슬라이드를 보여주는 함수
+    translateContainer(next); // 다음 슬라이드를 보여주는 함수
   }, 3000);
 });
 topBannerWrapper.addEventListener("mouseover", () => {
@@ -47,12 +47,12 @@ function translateCarouselWrapper(direction, items) {
   } else {
     items.style.transform = `translateX(${sliderWidth}px)`;
   }
-  items.ontransitionend = () => reorganizeCarouselWrapper(selectedBtn, items);
+  items.ontransitionend = () => reorganizeCarouselWrapper(direction, items);
 }
 // item 이동 후 item 재배치 함수
-function reorganizeCarouselWrapper(selectedBtn, items) {
+function reorganizeCarouselWrapper(direction, items) {
   items.removeAttribute("style");
-  selectedBtn === prev
+  direction === prev
     ? items.insertBefore(items.lastElementChild, items.firstElementChild)
     : items.appendChild(items.firstElementChild);
 }
@@ -69,19 +69,19 @@ function translateContainer(direction) {
     topBannerItems.style.transform = `translateX(${topBannerPrev}px)`;
   }
   //5초동안 gap + 이미지 크기 + 이미지 절반 크기인 1620px만큼 움직임
-  topBannerItems.ontransitionend = () => reorganizeEl(selectedBtn);
+  topBannerItems.ontransitionend = () => reorganizeEl(direction);
 }
 
 // main 술라이드 아이템 이동 후 재배치 함수
-function reorganizeEl(selectedBtn) {
+function reorganizeEl(direction) {
   topBannerItems.removeAttribute("style");
   let information =
-    selectedBtn === prev
+    direction === prev
       ? topBannerItems.children[2].firstElementChild
       : topBannerItems.children[4].firstElementChild;
   information.style.opacity = 1;
   information.style.visibility = "visible";
-  selectedBtn === prev
+  direction === prev
     ? topBannerItems.insertBefore(
         topBannerItems.lastElementChild,
         topBannerItems.firstElementChild

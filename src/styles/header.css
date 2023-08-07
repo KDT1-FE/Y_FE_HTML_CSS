@@ -1,4 +1,4 @@
-header {
+#header {
   height: 60px;
   width: 100vw;
 
@@ -13,11 +13,11 @@ header {
   animation-duration: 1s;
 }
 
-.site-logo {
+#header #tesla-logo {
   padding-left: 32px;
 }
 
-.site-logo-tesla {
+#header #tesla-logo svg {
   width: 148px;
   height: 48px;
 

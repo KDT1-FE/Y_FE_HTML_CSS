@@ -13,9 +13,9 @@
 </head>
 <body>
   <header>
-    <div class="inner inner__header">
+    <div class="inner inner--header">
       <div class="header__top">
-        <div class="header__top--left">
+        <div class="header__top__left">
           <h1 class="logo">
             <img src="./img/logo.png" alt="interpark">
           </h1>
@@ -26,7 +26,7 @@
                 인트쇼, 초특가 할인 소식!
               </span>
             </label>
-            <button>
+            <button type="button">
               <img src="./img/btn_search.png" alt="검색">
             </button>
           </div>
@@ -45,12 +45,12 @@
             </i>
           </div>
         </div>
-        <div class="header__top--right">
-          <div class="myMenu">로그인</div>
-          <div class="myMenu">회원가입</div>
-          <div class="myMenu">
+        <div class="header__top__right">
+          <div class="my-menu">로그인</div>
+          <div class="my-menu">회원가입</div>
+          <div class="my-menu">
             마이 페이지
-            <ul class="myMenu__details">
+            <ul class="my-menu__details">
               <li><span>투어</span> 마이페이지</li>
               <li><span>티켓</span> 마이페이지</li>
               <li><span>쇼핑</span> 마이페이지</li>
@@ -114,7 +114,7 @@
   </header>
   <div id="contentWrap">
     <section class="eventBannerWrap">
-      <div class="inner sectionInner">
+      <div class="inner">
         <div class="eventBanner__swiperBox">
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -135,13 +135,13 @@
               </div>
             </div>
           </div>
-          <button class="swiper-prev">이전</button>
-          <button class="swiper-next">다음</button>
+          <button type="button" class="swiper-prev swiper-prev__eventBanner">이전</button>
+          <button type="button" class="swiper-next swiper-next__eventBanner">다음</button>
         </div>
       </div>
     </section>
     <section class="shoppingWrap">
-      <div class="inner sectionInner">
+      <div class="inner">
         <div class="section__title">
           <h2>쇼핑 추천</h2>
           <p>할인이 쎄다! 지금, 특가 상품을 확인하세요.</p>
@@ -382,12 +382,12 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-prev">이전</button>
-            <button class="swiper-next">다음</button>
+            <button type="button" class="swiper-prev swiper-prev__shopping">이전</button>
+            <button type="button" class="swiper-next swiper-next__shopping">다음</button>
           </div>
         </div>
         <div class="section__bottom">
-          <button class="btn__go">
+          <button type="button" class="btn__go">
             쇼핑 홈 바로가기
             <i class="ico__goLink"></i>
           </button>
@@ -395,7 +395,7 @@
       </div>
     </section>
     <section class="tourWrap">
-      <div class="inner sectionInner">
+      <div class="inner">
         <div class="section__title">
           <h2>투어 특가</h2>
           <p>해외여행은 인터파크다</p>
@@ -601,12 +601,12 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-prev">이전</button>
-            <button class="swiper-next">다음</button>
+            <button type="button" class="swiper-prev swiper-prev__tour">이전</button>
+            <button type="button" class="swiper-next swiper-next__tour">다음</button>
           </div>
         </div>
         <div class="section__bottom">
-          <button class="btn__go">
+          <button type="button" class="btn__go">
             투어 홈 바로가기
             <i class="ico__goLink"></i>
           </button>
@@ -614,7 +614,7 @@
       </div>
     </section>
     <section class="ticketWrap">
-      <div class="inner sectionInner">
+      <div class="inner">
         <div class="section__title">
           <h2>티켓 랭킹</h2>
           <p>오늘 뭐볼까? 지금 HOT한 공연</p>
@@ -788,12 +788,12 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-prev">이전</button>
-            <button class="swiper-next">다음</button>
+            <button type="button" class="swiper-prev swiper-prev__ticket">이전</button>
+            <button type="button" class="swiper-next swiper-next__ticket">다음</button>
           </div>
         </div>
         <div class="section__bottom">
-          <button class="btn__go">
+          <button type="button" class="btn__go">
             티켓 홈 바로가기
             <i class="ico__goLink"></i>
           </button>
@@ -801,7 +801,7 @@
       </div>
     </section>
     <section class="liveTvWrap">
-      <div class="inner sectionInner">
+      <div class="inner">
         <div class="section__title">
           <h2>
             <img src="./img/live/title_live.png" alt="인터파크 LIVE">
@@ -1104,7 +1104,7 @@
                         <img src="./img/live/live_logo.png" alt="인터파크LIVE">
                       </h3>
                       <p class="liveMent">방송준비중입니다.</p>
-                      <button class="liveBtnLink">편성표 바로가기</button>
+                      <button type="button" class="liveBtnLink">편성표 바로가기</button>
                     </div>
                   </div>
                 </div>
@@ -1118,18 +1118,18 @@
                         <img src="./img/live/live_logo.png" alt="인터파크LIVE">
                       </h3>
                       <p class="liveMent">방송준비중입니다.</p>
-                      <button class="liveBtnLink">편성표 바로가기</button>
+                      <button type="button" class="liveBtnLink">편성표 바로가기</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="swiper-prev">이전</button>
-            <button class="swiper-next">다음</button>
+            <button type="button" class="swiper-prev swiper-prev__live">이전</button>
+            <button type="button" class="swiper-next swiper-next__live">다음</button>
           </div>
         </div>
         <div class="section__bottom">
-          <button class="btn__go">
+          <button type="button" class="btn__go">
             인터파크 라이브 바로가기
             <i class="ico__goLink"></i>
           </button>
@@ -1137,7 +1137,7 @@
       </div>
     </section>
     <section class="bookWrap">
-      <div class="inner sectionInner">
+      <div class="inner">
         <div class="section__title">
           <h2>
             <img src="./img/live/title_live.png" alt="인터파크 LIVE">
@@ -1285,12 +1285,12 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-prev">이전</button>
-            <button class="swiper-next">다음</button>
+            <button type="button" class="swiper-prev swiper-prev__book">이전</button>
+            <button type="button" class="swiper-next swiper-next__book">다음</button>
           </div>
         </div>
         <div class="section__bottom">
-          <button class="btn__go">
+          <button type="button" class="btn__go">
             도서 홈 바로가기
             <i class="ico__goLink"></i>
           </button>
@@ -1298,7 +1298,7 @@
       </div>
     </section>
     <section class="eventWrap">
-      <div class="inner sectionInner">
+      <div class="inner">
         <div class="section__title">
           <h2>이벤트</h2>
           <p>인터파크에서 할인혜택을 꼭 챙기세요.</p>
@@ -1394,8 +1394,8 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-prev">이전</button>
-            <button class="swiper-next">다음</button>
+            <button type="button" class="swiper-prev swiper-prev__event">이전</button>
+            <button type="button" class="swiper-next swiper-next__event">다음</button>
         </div>
         </div>
       </div>
@@ -1560,7 +1560,9 @@
     <div class="adBanner">
       <img src="./img/toTop_adBanner.png" alt="">
     </div>
-    <div class="ico__arrow--up"></div>
+    <div class="ico__arrow--up">
+      <span class="sr-only">최상단으로 이동</span>
+    </div>
   </div>
   <!--script-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

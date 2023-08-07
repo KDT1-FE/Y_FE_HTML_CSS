@@ -1,10 +1,10 @@
-footer {
+.footer {
   width: 100%;
   height: 393px;
   display: flex;
   flex-direction: column;
 }
-footer .inner {
+.footer .inner {
   flex-direction: column;
 }
 .footer-main {

@@ -22,6 +22,7 @@ const slides = new Swiper(".main-section .swiper", {
     delay: 1000,
   },
   speed: 2000,
+  effect: "fade",
   loop: true,
   navigation: {
     prevEl: ".main-section .swiper-prev",

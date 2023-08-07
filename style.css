@@ -819,6 +819,10 @@ header {
   margin: 0 auto;
 }
 
+.site-map-li {
+  padding-left: 65px;
+}
+
 .site-map-wrap .site-map > li:nth-child(1) {
   padding-left: 0px;
   float: left;
@@ -836,6 +840,10 @@ header {
   color: #ffffff;
   font-weight: 400;
   line-height: 1.89;
+}
+
+.site-map-play-hr {
+  margin-bottom: 10px;
 }
 
 .depth-2-wrap > li > a {

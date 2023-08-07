@@ -1,0 +1,141 @@
+.container__banner {
+  display: flex;
+  justify-content: center;
+  background-color: #1D75DE;
+  color: #FFFFFF;
+}
+
+.container__banner--inner_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .container__banner--inner_div {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container__banner--inner_div {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container__banner--inner_div {
+    width: 1170px;
+  }
+}
+
+.container__banner--name {
+  text-decoration: underline;
+}
+
+.container__banner--close {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  line-height: 1.5;
+  min-height: 54px;
+  background-color: black;
+}
+
+.header__inner_container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 750px;
+  height: 54px;
+}
+
+@media (min-width: 992px) {
+  .header__inner_container {
+    max-width: 970px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__inner_container {
+    max-width: 1170px;
+  }
+}
+
+.header__mobile_menu {
+  display: flex;
+  position: relative;
+}
+
+.header__mobile_menu > button {
+  border: none;
+  padding: 0 0 1px 9px;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.header__mobile_menu > button > span {
+  display: block;
+  height: 3px;
+  width: 22px;
+  transition: transform .2s;
+  border-radius: 1px;
+  background-color: white;
+} 
+
+.header__mobile_menu > button > span:nth-child(n+2) {
+  margin-top: 4px;
+}
+
+@media (min-width: 992px) {
+  .header__mobile_menu {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    display: none;
+  }
+}
+
+.header__logo {
+  margin-top: 13px;
+}
+
+@media (min-width: 992px) {
+  .header__logo {
+    margin-top: 20px;
+  }
+}
+
+.header__logo > a > img {
+  height: 27px;
+  width: 89px;
+}
+
+@media (min-width: 992px) {
+  .header__logo > a > img {
+    height: 40px;
+    width: 132px;
+  }
+}
+
+.header__image {
+  position: relative;
+}

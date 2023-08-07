@@ -9,7 +9,7 @@
 
 ## 구현 모습
 
-![ezgif com-video-to-gif (3)](https://github.com/xxxjinn/html_css/assets/102955516/215d8b35-e2db-4446-9524-04ae84e7e7e4)
+![](./assets/images/homepage_gif.gif)
 
 ## 요구사항
 

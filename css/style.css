@@ -16,6 +16,10 @@
   display: none;
 }
 
+.main.swiper .swiper-pagination {
+  bottom: 70px;
+}
+
 .main.swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
   width: 10px;
@@ -33,7 +37,7 @@
 
 /* BEST MENU */
 .menu .inner {
-  margin: 50px 0 100px;
+  margin: 50px auto 100px;
   position: relative;
   align-items: center;
   height: 300px;
@@ -103,7 +107,7 @@
 .menu .menu-image .swiper-wrapper .swiper-slide > a > img {
   width: 100%;
   border-radius: 50%;
-  transition: 0.5s;
+  transition: opacity 0.5s;
 }
 
 .menu .menu-image .swiper-wrapper .swiper-slide > a > img:hover {
@@ -150,7 +154,7 @@
 .goods .inner {
   align-items: start;
   height: 300px;
-  margin: 50px 0 100px;
+  margin: 50px auto 100px;
 }
 
 /* EVENT */
@@ -160,7 +164,7 @@
 }
 .event .inner {
   flex-direction: column;
-  height: 400px;
+  height: auto;
 }
 
 .event .inner .title {

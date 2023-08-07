@@ -32,11 +32,13 @@ header .inner .logo > a {
   line-height: 60px;
 }
 
-header label {
+header .toggle {
   background-image: url('../images/hambuger.png');
   background-repeat: no-repeat;
   background-position: 15px center;
   background-size: 20px auto;
+  background-color: transparent;
+  border: 0;
   width: 60px;
   height: 60px;
   position: absolute;
@@ -100,7 +102,7 @@ header label {
 @media (max-width: 1460px) {
   header .inner {
     margin: 0;
-    width: 100vw;
+    padding: 0;
   }
   header .inner .logo > a {
     margin: 0 auto;
@@ -117,7 +119,7 @@ header label {
     height: 100%;
   }
 
-  header label {
+  header .toggle {
     display: block;
   }
 

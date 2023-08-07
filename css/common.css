@@ -7,7 +7,6 @@
 }
 
 * {
-  /* font-family: Pretendard; */
   box-sizing: border-box;
 }
 
@@ -26,6 +25,8 @@ ul {
 }
 
 .inner {
+  margin: auto;
+  max-width: 2000px;
   padding: 0 2.4em;
   display: flex;
 }

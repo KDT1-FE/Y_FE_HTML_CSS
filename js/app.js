@@ -1,12 +1,8 @@
-const toggle = document.querySelector('header label');
+const toggle = document.querySelector('header .toggle');
 const navbar = document.querySelector('.navbar-box');
 let hide = true;
 
 toggle.addEventListener('click', () => {
-  if (hide) {
-    navbar.classList.remove('hide');
-  } else {
-    navbar.classList.add('hide');
-  }
+  navbar.classList.toggle('hide');
   hide = !hide;
 });

@@ -10,6 +10,7 @@ new Swiper('.best-item .swiper', {
   },
 });
 
+// 스크롤 헤더 
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', function (event) {
@@ -30,7 +31,7 @@ window.addEventListener('scroll', function (event) {
     }
 });
 
-
+// 스크롤 시 요소 fade in
 const observer = new IntersectionObserver((e) => {
   e.forEach((v, i) => {
     if (v.isIntersecting) {

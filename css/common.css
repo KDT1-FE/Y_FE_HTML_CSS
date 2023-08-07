@@ -1,10 +1,17 @@
+:root {
+  /* color */
+  --color-black: #252525;
+  --color-white: #fffef2;
+
+}
+
 body {
   font-family: -apple-system, "system-ui", Roboto, "Helvetica Neue", sans-serif;
   color: #333;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #fffef2;;
+  background-color: var(  --color-white);
   overflow-x: hidden;
 }
 
@@ -46,12 +53,12 @@ a {
 
 
 .btn--white {
-  border: 1px solid #fffef2;
-  color: #fffef2;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
 }
 
 .btn--white:hover {
-  background: #fffef2;
+  background:  var(--color-white);
   color: #333;
 }
 .btn--blank--dark {
@@ -61,7 +68,7 @@ a {
 
 .btn--blank--dark:hover {
   background: #333;
-  color: #fffef2;
+  color:  var(--color-white);
 }
 
 .btn--dark {

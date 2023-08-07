@@ -1,0 +1,65 @@
+.visual {
+    position: relative;
+    height: 100vh;
+    background-image: url("../assets/new_main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .visual-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50rem;
+        background: linear-gradient(180deg, white, white 5.9rem, rgba(255, 255, 255, 0) 100%);
+    }
+    .visual-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation: showAnimaiton;
+        animation-delay: 1.5s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        .texts {
+            margin-top: 17rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include bp640 {
+                margin-top: 10rem;
+            }
+            h2 {
+                font-size: 6.6rem;
+                font-weight: 700;
+                text-align: center;
+                line-height: 1.4;
+                margin-bottom: 5rem;
+                @include bp640 {
+                    font-size: 3.3rem;
+                    color: rgba(25, 31, 40, 1);
+                }
+            }
+            .btns {
+                display: flex;
+                gap: 0.4rem;
+            }
+        }
+    }
+    .arrow {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: scrollAnimation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.business {
+    padding: 10rem 0 25rem 0;
+    background-color: $black;
+    @include bp640 {
+        padding: 0 0 10rem 0;
+    }
+    .img-wrap {
+        width: 100%;
+        margin-bottom: 1.1rem;
+        opacity: 0;
+        @include showTopAni(0);
+        @include bp640 {
+            margin-bottom: 0.4rem;
+            width: auto;
+            height: 60rem;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .container {
+        max-width: none;
+        .inner {
+            .title-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 2.1rem;
+                opacity: 0;
+                @include showTopAni(1);
+                .title {
+                    font-size: 6rem;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    color: $white;
+                    text-align: center;
+                    @include bp640 {
+                        font-size: 3.6rem;
+                    }
+                }
+                .sub-title {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    color: $greyC1;
+                    text-align: center;
+                    margin-bottom: 20rem;
+                    @include bp640 {
+                        font-size: 1.8rem;
+                        margin-bottom: 10rem;
+                    }
+                }
+            }
+            .link-wrap {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                opacity: 0;
+                @include bp640 {
+                    flex-direction: column;
+                    gap: 8rem;
+                }
+                @include showTopAni(2);
+                .link {
+                    width: calc(100% / 4);
+                    max-width: 30rem;
+                    @include bp640 {
+                        width: 100%;
+                        max-width: none;
+                    }
+                    .disc-str {
+                        color: $white;
+                        font-size: 3rem;
+                        margin-bottom: 1.2rem;
+                        font-weight: 700;
+                        line-height: 1.3;
+                        @include bp640 {
+                            font-size: 2.6rem;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    .disc {
+                        margin-bottom: 3.8rem;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        line-height: 1.6;
+                        color: $greyC1;
+                        @include bp640 {
+                            font-size: 1.8rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

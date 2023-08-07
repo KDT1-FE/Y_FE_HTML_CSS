@@ -1,0 +1,44 @@
+.finance {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80rem;
+    background-image: url("../assets/section2_4_big.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include bp640 {
+        height: 66.5rem;
+        background-size: contain;
+        background-image: url("../assets/section2_4_big_mobile.png");
+    }
+    .text {
+        font-size: 10rem;
+        font-weight: 700;
+        line-height: 1.3;
+        color: $greyFB;
+        text-align: center;
+        @include bp640 {
+            font-size: 5.5rem;
+            text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.45);
+        }
+    }
+    .left-door {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc((100vw - 104rem) / 2);
+        height: 100%;
+        background-color: $white;
+    }
+    .right-door {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc((100vw - 104rem) / 2);
+        height: 100%;
+        background-color: $white;
+    }
+}

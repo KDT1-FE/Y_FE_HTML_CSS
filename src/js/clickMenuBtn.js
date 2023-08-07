@@ -5,11 +5,11 @@
 */
 
 // 메뉴바 구현용 dialog 요소 불러오기
-const menuDialog = document.querySelector("dialog");
+const menuDialog = document.querySelector("#menu");
 
 // 메뉴바 여닫는용 button 요소들 불러오기
-const menuBtn = document.querySelector(".site-nav-items-menu");
-const menuCloseBtn = document.querySelector(".menu-close-btn");
+const menuBtn = document.querySelector("#menu-btn");
+const menuCloseBtn = document.querySelector("#menu-close-btn");
 
 // 메뉴 button을 누르면 메뉴바가 열림
 menuBtn.addEventListener("click", () => {

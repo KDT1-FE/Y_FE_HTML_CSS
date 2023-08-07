@@ -1,0 +1,77 @@
+@import '_main-article.scss';
+
+.sub-article {
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .item__img {
+    background-size: cover;
+    background-position: 50%;
+    width: 520px;
+    height: 350px;
+  }
+  padding: 75px 0;
+  .last-slider {
+    @include slider;
+    .last-wrapper {
+      @include wrapper;
+      height: 480px;
+    }
+    .last-text {
+      @include text;
+
+      .last-text__title {
+        @include text__title;
+      }
+      .last-text__see-more {
+        @include see-more;
+      }
+      .last-prev {
+        @include prev;
+      }
+      .last-next {
+        @include next;
+      }
+    }
+    .last-items {
+      @include items;
+    }
+    .last-items__item {
+      display: flex;
+      width: 1060px;
+      justify-content: space-between;
+
+      .item__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0 0 10px;
+        flex-direction: column;
+        .title {
+          color: #333;
+          font-size: 19px;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .content {
+          color: #999;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: normal;
+        }
+        button {
+          border-radius: 1000px;
+          border: 1px solid #e1e2e3;
+          background: #fff;
+          box-shadow: 0px 0px 0px 1px #36f inset;
+          min-width: 64px;
+          padding: 13px 26.41px 12px 26.5px;
+          color: #36f;
+          font-family: Pretendard Variable;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

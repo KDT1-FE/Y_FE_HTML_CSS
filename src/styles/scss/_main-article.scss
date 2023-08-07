@@ -1,0 +1,178 @@
+$wrapper-z-index: 10;
+$button-z-index: 200;
+@mixin slider {
+  position: relative;
+  margin-bottom: 5.325vw;
+}
+@mixin wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  max-width: 1060px;
+  margin: 0 auto;
+  z-index: $wrapper-z-index;
+} // main-wrapper, sub-wrapper 사용
+@mixin text {
+  position: relative;
+  padding-top: 16px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+@mixin text__title {
+  text-align: center;
+  span {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  color: #333;
+  font-size: 22px;
+  font-weight: 400;
+}
+@mixin see-more {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+@mixin prev {
+  position: absolute;
+  border-radius: 18px;
+  border: 1px solid #e1e2e4;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  min-width: 36px;
+  min-height: 36px;
+  bottom: 2vw;
+  padding: 0;
+  z-index: $button-z-index;
+}
+@mixin next {
+  z-index: $button-z-index;
+  position: absolute;
+  border-radius: 18px;
+  border: 1px solid #e1e2e4;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  min-width: 36px;
+  min-height: 36px;
+  padding: 0;
+  bottom: 2vw;
+  right: 0.7vw;
+}
+@mixin items {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: -100%;
+}
+@mixin item {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
+  .item__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 0 10px;
+    .title {
+      color: #333;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .content {
+      color: #999;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+    }
+    button {
+      border-radius: 1000px;
+      border: 1px solid #e1e2e3;
+      background: #fff;
+      box-shadow: 0px 0px 0px 1px #36f inset;
+      min-width: 64px;
+      padding: 13px 26.41px 12px 26.5px;
+      color: #36f;
+      font-family: Pretendard Variable;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+.main-article {
+  .item__img {
+    background-size: cover;
+    background-position: 50%;
+    width: 520px;
+    height: 270.39px;
+  } //main slider , sub slider 공통 item-img
+  svg {
+    width: 1.4em;
+    height: 1.4em;
+  }
+
+  .main-slider {
+    @include slider;
+    .main-wrapper {
+      @include wrapper;
+    }
+    .main-text {
+      @include text;
+
+      .main-text__title {
+        @include text__title;
+      }
+      .main-text__see-more {
+        @include see-more;
+      }
+      .main-prev {
+        @include prev;
+      }
+      .main-next {
+        @include next;
+      }
+    }
+    .main-items {
+      @include items;
+    }
+    .main-items__item {
+      @include item;
+    }
+  }
+
+  .sub-slider {
+    @include slider;
+    .sub-wrapper {
+      @include wrapper;
+    }
+    .sub-text {
+      @include text;
+
+      .sub-text__title {
+        @include text__title;
+      }
+      .sub-text__see-more {
+        @include see-more;
+      }
+      .sub-prev {
+        @include prev;
+      }
+      .sub-next {
+        @include next;
+      }
+    }
+    .sub-items {
+      @include items;
+    }
+    .sub-items__item {
+      @include item;
+    }
+  }
+}

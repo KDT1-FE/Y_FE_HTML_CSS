@@ -1,0 +1,67 @@
+// header scss
+$header-z-index: 10000;
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: $header-z-index;
+  .inner-wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    .menu {
+      height: 55px;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: inherit;
+        li {
+          display: flex;
+          margin: 0;
+          color: #333333;
+          list-style: none;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          padding: 15px;
+        }
+      } // 공통적으로 적용
+      .menu__logo {
+        img,
+        svg {
+          margin: 7px;
+        }
+      }
+      // header 태그 안에 클래스 이름에 따른 css
+      .menu__category:hover {
+        box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.1);
+      }
+      .menu__service::before {
+        margin: auto 10px auto 0;
+        display: block;
+        width: 1px;
+        height: 10px;
+        content: "";
+        background-color: #e1e2e3;
+        padding: 0;
+      }
+      .menu__service--button {
+        font-size: 14px;
+        color: #666;
+        line-height: 30px;
+        height: 30px;
+        border: 1px solid #e1e2e3;
+        border-radius: 15px;
+        padding: 0 10px;
+      }
+      .menu__service {
+        padding-left: 15px;
+      }
+    } // 메뉴
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "y_fe_html_css",
+  "version": "1.0.0",
+  "description": "[참고 내용]",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KDT1-FE/Y_FE_HTML_CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KDT1-FE/Y_FE_HTML_CSS/issues"
+  },
+  "homepage": "https://github.com/KDT1-FE/Y_FE_HTML_CSS#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

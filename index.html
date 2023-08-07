@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>원티드 - 나다운 일의 시작</title>
+    <link rel="stylesheet" href="./src/styles/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css"
+    />
+    <script defer src="src/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="inner-wrapper">
+        <div class="menu">
+          <ul class="menu__logo">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=17&q=75"
+              alt="menubar"
+            />
+            <svg width="74px" height="21px" viewBox="0 0 140 32">
+              <path
+                fill="currentColor"
+                d="M89.8 2.2l-5.6 2.4v4.8h-3.8v5.2h3.8v10.2c0 4.2 2.6 7 6.6 7 1.6 0 2.6-.4 3.2-.6V26c-.2 0-1 .2-1.8.2-1.6 0-2.4-.6-2.4-2.6v-8.8H94V9.6h-4.2V2.2zM28.6 9.6l-4 14-4.6-14h-5.6l-4.6 14L6 9.6H0l6.8 21.8h6l4.4-14.6 4.6 14.6h6l6.8-21.8zM134.4 2.2v8.6c-1.4-1-3-1.6-4.8-1.8h-.4-1.6c-5 .4-8.2 4.2-9.2 9-.2.8-.2 1.4-.2 2.2V22c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.4V0l-5.4 2.2zm-5.2 24.4c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM116.2 18c-.8-5.2-4.6-9-10-9s-9.2 3.8-10 9c-.2.8-.2 1.6-.2 2.6v1.6c.6 5.6 4.4 10 10.2 10 4.6 0 8-2.8 9.4-6.8l-5-1.2c-.8 1.8-2.4 3.2-4.4 3.2-2.8 0-4.6-2.2-5-5.2h15.2v-1.6c0-1 0-1.8-.2-2.6zm-14.8 0c.8-2.2 2.4-3.6 4.8-3.6s4 1.6 4.8 3.6h-9.6zM50.6 11c-1.4-1-3.2-1.8-5.2-1.8H44.8h-.6c-5.2.4-8.6 4-9.4 9-.2.8-.2 1.4-.2 2.2v1.8c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.6V9.6h-5.6V11zm-5.2 15.6c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM71.2 9c-2.2 0-4.6 1-6 3.2V9.6h-5.6v21.8h5.6V18.8c0-2.6 1.4-4.6 4-4.6 2.8 0 3.8 2 3.8 4.4v12.8h5.6V17.6c.2-4.8-2.2-8.6-7.4-8.6z"
+              ></path>
+            </svg>
+          </ul>
+          <ul>
+            <li class="menu__category">채용</li>
+            <li class="menu__category">이벤트</li>
+            <li class="menu__category">이력서</li>
+            <li class="menu__category">커뮤니티</li>
+            <li class="menu__category">프리랜서</li>
+            <li class="menu__category">AI 합격 예측</li>
+          </ul>
+          <ul>
+            <li>
+              <svg
+                xmlns="https://www.w3.org/2000/svg"
+                xmlns:xlink="https://www.w3.org/1999/xlink"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+              >
+                <defs>
+                  <path
+                    id="qt2dnsql4a"
+                    d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"
+                  ></path>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <use
+                    fill="#333"
+                    fill-rule="nonzero"
+                    stroke="#333"
+                    stroke-width=".3"
+                    xlink:href="#qt2dnsql4a"
+                  ></use>
+                </g>
+              </svg>
+            </li>
+            <li class="menu__service">회원가입/로그인</li>
+            <li class="menu__service">
+              <a class="menu__service--button">기업 서비스</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- 메인 슬라이더 -->
+      <section class="top-banner">
+        <button class="top-prev">
+          <svg class="SvgIcon_SvgIcon__root__svg__DKYBi" viewBox="0 0 18 18">
+            <path
+              d="m6.045 9 5.978-5.977a.563.563 0 1 0-.796-.796L4.852 8.602a.562.562 0 0 0 0 .796l6.375 6.375a.563.563 0 0 0 .796-.796L6.045 9z"
+            ></path>
+          </svg>
+        </button>
+        <div class="wrapper">
+          <div class="items">
+            <div class="items__item">
+              <div class="information">
+                <div class="information__title">인턴십도 원티드에서,</div>
+                <div class="information__content">
+                  다양한 경험과 커리어를 시작하세요!
+                </div>
+                <hr />
+                <button>바로가기</button>
+              </div>
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2095%2F7a4fd7c9.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <section class="information">
+                <div class="information__title">세일즈 파트리더 채용중</div>
+                <div class="information__content">
+                  성장 섹터에서 성과를 낼 파트리더
+                </div>
+                <hr />
+                <button>바로가기</button>
+              </section>
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2117%2Fde64f45c.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <section class="information">
+                <div class="information__title">
+                  라이브 스타일 커머스의 새로운 기준
+                </div>
+                <div class="information__content">
+                  뷰티 셀렉션에서 전 직군 채용 중
+                </div>
+                <hr />
+                <button>바로가기</button>
+              </section>
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2101%2F4fc3c7bc.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <section class="information">
+                <div class="information__title">
+                  딥러닝 , 1세대 글로벌 리더 루닛
+                </div>
+                <div class="information__content">
+                  QA,PM 개발 외 전 직군 적극 채용 중!
+                </div>
+                <hr />
+                <button>바로가기</button>
+              </section>
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2116%2Feb44f6dd.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <section class="information">
+                <div class="information__title">2023 아기 유니콘 기업</div>
+                <div class="information__content">
+                  글로벌 기업 성장성을 인정 받아 적극 채용 중
+                </div>
+                <hr />
+                <button>바로가기</button>
+              </section>
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2059%2F24c52879.jpg&w=1060&q=100"
+              />
+            </div>
+            <div class="items__item">
+              <section class="information">
+                <div class="information__title">
+                  임상실험 디지털 전환 , JNPMEDI
+                </div>
+                <div class="information__content">
+                  훌륭한 동료들과 함께 할 전 직군 채용 중
+                </div>
+                <hr />
+                <button>바로가기</button>
+              </section>
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2109%2F96eea574.jpg&w=1060&q=100"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="top-next">
+          <svg class="SvgIcon_SvgIcon__root__svg__DKYBi" viewBox="0 0 18 18">
+            <path
+              d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"
+            ></path>
+          </svg>
+        </button>
+      </section>
+      <!-- 메인 슬라이더 -->
+      <!-- 채용 포지션 section -->
+      <article class="recruit-bar">
+        <section>
+          <svg
+            xmlns="https://www.w3.org/2000/svg"
+            xmlns:xlink="https://www.w3.org/1999/xlink"
+            width="28"
+            height="28"
+            viewBox="0 0 18 18"
+          >
+            <defs>
+              <path
+                id="qt2dnsql4a"
+                d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"
+              ></path>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <use
+                fill="#fff"
+                fill-rule="nonzero"
+                stroke="#fff"
+                stroke-width=".3"
+                xlink:href="#qt2dnsql4a"
+              ></use>
+            </g></svg
+          >채용 중인 포지션 보러가기
+        </section>
+      </article>
+      <!-- 채용 포지션 section -->
+      <!-- 관심 포지션 섹션 -->
+      <article class="interest-bar">
+        <section>
+          <div>
+            <div class="interest-bar__title">내가 관심 있을만한 포지션</div>
+            <div class="interest-bar__content">
+              회원가입 후, 이력서와 포지션 분석을 통해 적합한 포지션을
+              추천받으세요!
+            </div>
+          </div>
+          <img
+            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fhome%2Fai_banner%2Fidentify_people.png&w=486&q=75"
+          />
+          <button>지금 시작하기</button>
+        </section>
+      </article>
+      <!-- 관심 포지션 섹션 -->
+      <!-- 커리어 중간 점검 섹션 -->
+      <article class="career-bar">
+        <section>
+          내 연차에 이 연봉 괜찮은가? 궁금할 땐
+          <img src="https://static.wanted.co.kr/career_connect/gomin.png" />
+          <button>커리어 중간 점검</button>
+        </section>
+      </article>
+      <!-- 커리어 중간 점검 섹션 -->
+      <!-- 프로필, 매치업  -->
+      <nav>
+        <ul>
+          <li class="profile">
+            <svg class="SvgIcon_SvgIcon__root__svg__DKYBi" viewBox="0 0 28 28">
+              <defs>
+                <path
+                  d="M16.46 12.565c-.631.802-1.025 1.667-1.039 2.59-.02 1.45.793 2.538 2.286 3.154l.116.038c3.487.898 5.788 2.958 5.788 5.03l.014 1.226c0 .026-.194.188-.35.189H4.662c-.136 0-.274-.122-.274-.178l-.014-1.248c0-1.997 2.086-3.93 5.412-4.868a4.468 4.468 0 0 0 1.275-.538c.775-.474 1.316-1.135 1.448-2.014a.875.875 0 0 0-1.731-.259c-.044.292-.256.552-.629.779a2.898 2.898 0 0 1-.795.337c-4.04 1.137-6.73 3.632-6.73 6.573l.014 1.248c0 1.062.965 1.918 2.024 1.918h18.613c1.061-.003 2.099-.871 2.099-1.949l-.014-1.227c0-3.003-2.9-5.612-7.039-6.697-.825-.354-1.16-.816-1.15-1.49.006-.473.248-1.003.663-1.53.272-.346.545-.606.71-.736l.087-.08c1.233-1.29 2.03-3 2.03-4.666 0-3.648-3.053-6.709-6.692-6.709-3.639 0-6.692 3.061-6.692 6.709 0 1.57.443 2.914 1.357 4.048a.875.875 0 1 0 1.363-1.097c-.655-.813-.97-1.768-.97-2.951 0-2.682 2.27-4.959 4.942-4.959s4.941 2.276 4.941 4.959c0 1.162-.587 2.437-1.506 3.417-.258.211-.6.545-.944.981z"
+                  id="IconProfileThick-a"
+                ></path>
+              </defs>
+              <g fill-rule="evenodd">
+                <mask id="IconProfileThick-b" fill="#fff">
+                  <use xlink:href="#IconProfileThick-a"></use>
+                </mask>
+                <use fill-rule="nonzero" xlink:href="#IconProfileThick-a"></use>
+                <g mask="url(#IconProfileThick-b)">
+                  <path d="M0 0h28v28H0z"></path>
+                </g>
+              </g></svg
+            >내 프로필
+          </li>
+          <li class="match">
+            <svg class="SvgIcon_SvgIcon__root__svg__DKYBi" viewBox="0 0 28 28">
+              <defs>
+                <path
+                  d="M10.208 25.083a.875.875 0 0 1-.875-.875v-6.125h-1.75v6.125a.875.875 0 0 1-.875.875H2.042a.875.875 0 0 1-.875-.875V4.375c0-.483.391-.875.875-.875h12.833c.483 0 .875.392.875.875v3.791h9.625c.446 0 .814.334.868.766l.007.11v10.5a.875.875 0 0 1-1.75 0V9.917h-8.75v13.416h9.625a.875.875 0 0 1 0 1.75H10.208zM14 5.25H2.917v18.083h2.916v-6.125c0-.483.392-.875.875-.875h3.5c.484 0 .875.392.875.875v6.125H14V5.25zm4.375 10.792c.644 0 1.167.522 1.167 1.166v1.167a1.167 1.167 0 0 1-2.334 0v-1.167c0-.644.523-1.166 1.167-1.166zm0-4.667c.644 0 1.167.522 1.167 1.167v1.166a1.167 1.167 0 0 1-2.334 0v-1.166c0-.645.523-1.167 1.167-1.167zm-11.5 0a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1h-.333a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1h.333zm0-4.667a1 1 0 0 1 1 1v1.5a1 1 0 0 1-1 1h-.333a1 1 0 0 1-1-1v-1.5a1 1 0 0 1 1-1h.333z"
+                  id="building-icon-a"
+                ></path>
+              </defs>
+              <g fill-rule="evenodd">
+                <mask id="building-icon-b" fill="#fff">
+                  <use xlink:href="#building-icon-a"></use>
+                </mask>
+                <use fill-rule="nonzero" xlink:href="#building-icon-a"></use>
+                <g mask="url(#building-icon-b)">
+                  <path d="M0 0h28v28H0z"></path>
+                </g>
+              </g></svg
+            >매치업
+          </li>
+        </ul>
+      </nav>
+      <!-- 프로필, 매치업  -->
+      <!-- main article -->
+      <article class="main-article">
+        <!-- main slider -->
+        <section class="main-slider">
+          <!-- slider 전 제목 -->
+          <div class="main-text">
+            <div class="main-text__title">
+              <span>#연봉이 최고의 복지 🎀 </span>회사를 소개합니다
+            </div>
+            <div class="main-text__see-more">포지션으로 더 보기</div>
+            <button class="main-prev">
+              <svg
+                class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="m6.045 9 5.978-5.977a.563.563 0 1 0-.796-.796L4.852 8.602a.562.562 0 0 0 0 .796l6.375 6.375a.563.563 0 0 0 .796-.796L6.045 9z"
+                ></path>
+              </svg>
+            </button>
+            <button class="main-next">
+              <svg
+                class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <!-- slider 전 제목 -->
+          <section class="main-wrapper">
+            <div class="main-items">
+              <div class="main-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29253%2Fjnkwbjjznclarjb3__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">벤디트</div>
+                      <br />
+                      <div class="content">IT,컨텐츠</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F40903%2Fqwvpxot1uxtcwuyn__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">익스펜드케이</div>
+                      <br />
+                      <div class="content">기타서비스업</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15632%2Fwg8odxj8zecfsmme__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">휴넷</div>
+                      <br />
+                      <div class="content">IT,컨텐츠</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F13965%2Fjqsnr2jwcmue7s7b__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">카페24</div>
+                      <br />
+                      <div class="content">IT,컨텐츠</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F38303%2Fwewpzwazijb87jz7__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">타이드스퀘어</div>
+                      <br />
+                      <div class="content">기타서비스업</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F23902%2Fptfdntppd3bjiwbc__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">에이치시티</div>
+                      <br />
+                      <div class="content">제조</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- main slider -->
+        <!-- sub slider -->
+        <section class="sub-slider">
+          <div class="sub-text">
+            <div class="sub-text__title">
+              <span>#퇴사율 10% 이하 🎈</span>회사를 소개합니다
+            </div>
+            <div class="sub-text__see-more">포지션으로 더 보기</div>
+            <button class="sub-prev">
+              <svg
+                class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="m6.045 9 5.978-5.977a.563.563 0 1 0-.796-.796L4.852 8.602a.562.562 0 0 0 0 .796l6.375 6.375a.563.563 0 0 0 .796-.796L6.045 9z"
+                ></path>
+              </svg>
+            </button>
+            <button class="sub-next">
+              <svg
+                class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <!-- sub slider 제목 -->
+          <!-- sub slider -->
+          <section class="sub-wrapper">
+            <div class="sub-items">
+              <div class="sub-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F3342%2Fnmshwilloxvcqlxq__1080_790.png&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">벤디트</div>
+                      <br />
+                      <div class="content">IT,컨텐츠</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F43704%2Fgr2anmde0zo9j3jn__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">익스펜드케이</div>
+                      <br />
+                      <div class="content">기타서비스업</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F459%2Fhwmp4kt5strenwek__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">미쏘</div>
+                      <br />
+                      <div class="content">IT,컨텐츠</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F21933%2Flkeo6pdcbgznxuaz__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">현대캐피탈</div>
+                      <br />
+                      <div class="content">금융</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sub-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F41386%2Fpo2qhhhflhtr5gum__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">타이드스퀘어</div>
+                      <br />
+                      <div class="content">기타서비스업</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F1161%2F15400_2_1.54dffb4a__1080_790.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div>
+                      <div class="title">에이치시티</div>
+                      <br />
+                      <div class="content">제조</div>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </article>
+      <!-- main,sub 슬라이더 포함된 main article -->
+      <hr
+        style="
+          border: 0.7px solid #ececec;
+          max-width: 1060px;
+          margin: 30px auto;
+        "
+      />
+      <!-- bottom 슬라이더 포함된 sub article -->
+      <article class="sub-article">
+        <section class="last-slider">
+          <div class="last-text">
+            <div class="last-text__title">
+              <span>테마로 모아보는 요즘 채용</span>
+            </div>
+            <div class="last-text__see-more">포지션으로 더 보기</div>
+            <button class="last-prev">
+              <svg
+                class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="m6.045 9 5.978-5.977a.563.563 0 1 0-.796-.796L4.852 8.602a.562.562 0 0 0 0 .796l6.375 6.375a.563.563 0 0 0 .796-.796L6.045 9z"
+                ></path>
+              </svg>
+            </button>
+            <button class="last-next">
+              <svg
+                class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <!-- 마지막 슬라이더
+          last slider 클래스 명 수정 예정 -->
+          <section class="last-wrapper">
+            <div class="last-items">
+              <div class="last-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2Fthemes%2F390_234655a0.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div class="title">
+                      최근 100억 이상투자 유치 기업 개발 포지션
+                    </div>
+                    <br />
+                    <div class="content">2023년 로켓 성장 준비 완료!</div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2Fthemes%2F287_00a5a859.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div class="title">신입 적극 채용 기업</div>
+                    <br />
+                    <div class="content">
+                      현재 신입을 채용 중인 기업을 소개합니다
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="last-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2Fthemes%2F444_2fde60b6.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div class="title">일할 맛 나는 업무 환경</div>
+                    <br />
+                    <div class="content">멋진 오피스 환경을 지닌 기업</div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2Fthemes%2F261_8ecbc1ef.png&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div class="title">주말 3일! 주 4일 근무 기업</div>
+                    <br />
+                    <div class="content">
+                      일과 삶의 균형을 찾을 수 있는 기업을 소개합니다
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="last-items__item">
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2Fthemes%2F262_b097b9cb.png&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div class="title">재택근무</div>
+                    <br />
+                    <div class="content">
+                      장소에 구애받지 않고 효율적으로 일하는 기업을 소개합니다
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="item__img"
+                    style="
+                      background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2Fthemes%2F334_eb0d81bc.jpg&w=520&q=100);
+                    "
+                  ></div>
+                  <div class="item__content">
+                    <div class="title">안정적인 흑자 기업</div>
+                    <br />
+                    <div class="content">
+                      안정적으로 흑자 수입을 올리고 있는 기업을 소개합니다
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </article>
+      <hr
+        style="border: 0.7px solid #ececec; max-width: 1060px; margin: 0 auto"
+      />
+      <!-- 서브 아티클 -->
+      <!-- 가장 하단 섹션 -->
+      <section class="bottom-section">
+        <header>요즘 뜨는 포지션</header>
+        <ul>
+          <li>
+            <div
+              class="img"
+              style="
+                background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22317%2Fuuqm6yslgrlqtu01__400_400.png&w=400&q=75W);
+              "
+            ></div>
+            <div class="text">
+              <div class="title">[여름인턴] P&C 매니저</div>
+              <div class="name">딥다이브</div>
+              <div class="location">서울 한국</div>
+              <div class="etc">채용보상금 100만원</div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="img"
+              style="
+                background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F22317%2Fuuqm6yslgrlqtu01__400_400.png&w=400&q=75W);
+              "
+            ></div>
+
+            <div class="text">
+              <div class="title">그로스 세일즈 매니저 (MD)</div>
+              <div class="name">딥다이브</div>
+              <div class="location">서울 한국</div>
+              <div class="etc">채용보상금 100만원</div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="img"
+              style="
+                background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34540%2Fo0xdstovhuvbnelb__400_400.jpg&w=400&q=75);
+              "
+            ></div>
+            <div class="text">
+              <div class="title">콘텐츠 기획자</div>
+              <div class="name">미디온그룹</div>
+              <div class="location">서울 한국</div>
+              <div class="etc">채용보상금 100만원</div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="img"
+              style="
+                background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F573%2Fzohcgobvbdaad809__400_400.jpg&w=400&q=75);
+              "
+            ></div>
+            <div class="text">
+              <div class="title">CX 매니저</div>
+              <div class="name">유니드컴즈</div>
+              <div class="location">서울 한국</div>
+              <div class="etc">채용보상금 100만원</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <div class="main">
+          <div class="nav">
+            <a class="nav__logo">
+              <svg width="35px" height="14px" viewBox="0 0 79 32">
+                <path
+                  fill="#24e0a6"
+                  d="M27.755 5.155A15.953 15.953 0 0015.992 0C7.152 0-.012 7.164-.012 16.004s7.164 16.004 16.004 16.004c4.653 0 8.84-1.985 11.763-5.155A15.953 15.953 0 0031.996 16c0-4.183-1.606-7.992-4.241-10.845z"
+                ></path>
+                <path
+                  fill="#438bff"
+                  d="M51.286 5.155A15.953 15.953 0 0039.523 0c-8.84 0-16.004 7.164-16.004 16.004s7.164 16.004 16.004 16.004c4.653 0 8.84-1.985 11.763-5.155A15.953 15.953 0 0055.527 16c0-4.179-1.61-7.992-4.241-10.845z"
+                ></path>
+                <path
+                  fill="#2c5bf2"
+                  d="M74.812 5.155A15.953 15.953 0 0063.049 0c-8.84 0-16.004 7.164-16.004 16.004s7.164 16.004 16.004 16.004c4.653 0 8.84-1.985 11.763-5.155A15.953 15.953 0 0079.053 16c0-4.183-1.61-7.992-4.241-10.845z"
+                ></path>
+                <path
+                  fill="#24e0bc"
+                  d="M27.755 5.155A15.953 15.953 0 0015.992 0C7.152 0-.012 7.164-.012 16.004s7.164 16.004 16.004 16.004c4.653 0 8.84-1.985 11.763-5.155A15.953 15.953 0 0123.514 16c0-4.183 1.61-7.992 4.241-10.845z"
+                ></path>
+                <path
+                  fill="#438bff"
+                  d="M51.282 5.155C48.359 1.985 44.171 0 39.519 0s-8.84 1.985-11.763 5.155a15.953 15.953 0 014.241 10.853c0 4.187-1.61 8-4.241 10.853 2.923 3.17 7.111 5.155 11.763 5.155s8.84-1.985 11.763-5.155c-2.631-2.853-4.241-6.662-4.241-10.853s1.61-8 4.241-10.853z"
+                ></path>
+                <path
+                  fill="#3a68f9"
+                  d="M27.755 5.155a15.953 15.953 0 00-4.241 10.853c0 4.187 1.61 8 4.241 10.853 2.631-2.853 4.241-6.662 4.241-10.853s-1.606-8-4.241-10.853z"
+                ></path>
+                <path
+                  fill="#2c5bf2"
+                  d="M63.049 0c-4.653 0-8.84 1.985-11.763 5.155a15.953 15.953 0 014.241 10.853c0 4.187-1.61 8-4.241 10.853a15.953 15.953 0 0011.763 5.155c8.84 0 16.004-7.164 16.004-16.004C79.053 7.164 71.885 0 63.049 0z"
+                ></path>
+                <path
+                  fill="#0049db"
+                  d="M51.282 5.155a15.953 15.953 0 00-4.241 10.853c0 4.187 1.61 8 4.241 10.853a15.953 15.953 0 004.241-10.853c.004-4.191-1.606-8-4.241-10.853z"
+                ></path></svg
+              ><svg width="71px" height="16px" viewBox="0 0 140 32">
+                <path
+                  fill="currentColor"
+                  d="M89.8 2.2l-5.6 2.4v4.8h-3.8v5.2h3.8v10.2c0 4.2 2.6 7 6.6 7 1.6 0 2.6-.4 3.2-.6V26c-.2 0-1 .2-1.8.2-1.6 0-2.4-.6-2.4-2.6v-8.8H94V9.6h-4.2V2.2zM28.6 9.6l-4 14-4.6-14h-5.6l-4.6 14L6 9.6H0l6.8 21.8h6l4.4-14.6 4.6 14.6h6l6.8-21.8zM134.4 2.2v8.6c-1.4-1-3-1.6-4.8-1.8h-.4-1.6c-5 .4-8.2 4.2-9.2 9-.2.8-.2 1.4-.2 2.2V22c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.4V0l-5.4 2.2zm-5.2 24.4c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM116.2 18c-.8-5.2-4.6-9-10-9s-9.2 3.8-10 9c-.2.8-.2 1.6-.2 2.6v1.6c.6 5.6 4.4 10 10.2 10 4.6 0 8-2.8 9.4-6.8l-5-1.2c-.8 1.8-2.4 3.2-4.4 3.2-2.8 0-4.6-2.2-5-5.2h15.2v-1.6c0-1 0-1.8-.2-2.6zm-14.8 0c.8-2.2 2.4-3.6 4.8-3.6s4 1.6 4.8 3.6h-9.6zM50.6 11c-1.4-1-3.2-1.8-5.2-1.8H44.8h-.6c-5.2.4-8.6 4-9.4 9-.2.8-.2 1.4-.2 2.2v1.8c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.6V9.6h-5.6V11zm-5.2 15.6c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM71.2 9c-2.2 0-4.6 1-6 3.2V9.6h-5.6v21.8h5.6V18.8c0-2.6 1.4-4.6 4-4.6 2.8 0 3.8 2 3.8 4.4v12.8h5.6V17.6c.2-4.8-2.2-8.6-7.4-8.6z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.wantedlab.com/" target="_blank">기업소개</a
+            ><a href="https://help.wanted.co.kr/hc/ko/" target="_blank"
+              >고객센터</a
+            ><a href="https://blog.wantedlab.com/" target="_blank"
+              >원티드 블로그</a
+            ><a href="https://www.wanted.co.kr/terms" target="_blank"
+              >이용약관</a
+            ><a href="https://www.wanted.co.kr/privacy" target="_blank"
+              ><b>개인정보 처리방침</b></a
+            >
+          </div>
+          <div class="social">
+            <a href="https://www.instagram.com/wantedjobs.kr/" target="_blank"
+              ><img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_instagram.png&amp;w=20&amp;q=100"
+                alt="instagram" /></a
+            ><a
+              href="https://www.youtube.com/channel/UC0tGZ6MqieGG2m5lA5PeQsw"
+              target="_blank"
+              ><img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_youtube.png&amp;w=25&amp;q=100"
+                alt="youtube" /></a
+            ><a href="https://www.facebook.com/wantedkr" target="_blank"
+              ><img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_facebook.png&amp;w=20&amp;q=100"
+                alt="facebook" /></a
+            ><a href="https://blog.naver.com/wantedlab" target="_blank"
+              ><img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_blog.png&amp;w=20&amp;q=100"
+                alt="blog" /></a
+            ><a
+              href="https://apps.apple.com/kr/app/id1074569961"
+              target="_blank"
+              ><img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_apple.png&amp;w=17&amp;q=100"
+                alt="apple" /></a
+            ><a
+              href="https://play.google.com/store/apps/details?id=com.wanted.android.wanted"
+              target="_blank"
+              ><img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_google.png&amp;w=17&amp;q=100"
+                alt="google"
+            /></a>
+          </div>
+        </div>
+        <div class="sub">
+          <p class="Footer_footerText__CTqnd kr">
+            (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300
+            롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147<br />유료직업소개사업등록번호
+            : (국내) 제2020-3230259-14-5-00018호 | 사업자등록번호 : 299-86-00021
+            | 02-539-7118<br />© Wantedlab, Inc.
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

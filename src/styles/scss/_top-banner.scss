@@ -1,0 +1,95 @@
+$arrow-z-index: 10;
+$information-z-index: 1000;
+
+@mixin arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  width: 30px;
+  height: 60px;
+  opacity: 0.5;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 16px;
+  z-index: $arrow-z-index;
+  border: 0;
+}
+
+.top-banner {
+  margin-top: 25px;
+  position: relative;
+  .items {
+    display: flex;
+    position: absolute;
+    transform: translate(-530px);
+    gap: 30px;
+    top: 0;
+    &.active {
+      transition: 0.3s;
+    }
+    .items__item {
+      position: relative;
+      width: 1060px;
+    }
+    .information {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      width: 330px;
+      height: 146px;
+      background-color: #fff;
+      z-index: $information-z-index;
+      top: 35%;
+      left: 2%;
+
+      border-radius: 6px;
+      .information__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin: 20px 20px 0 20px;
+      }
+      .information__content {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 20px 13px 20px;
+      }
+      //px로 주면 화면이 작아질 때 해당 information만 위치가 그대로여서 vw로 지정했습니다 더 좋은 방법이 있을까요?
+      hr {
+        color: #e1e2e4;
+      }
+      button {
+        margin-left: 10px;
+        margin-top: 10px;
+        color: #3366ff;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        background-color: white;
+        font-family: Pretendard Variable;
+        //button의 글자는 font-family를 직접 지정
+      }
+    }
+  }
+  .wrapper {
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-prev {
+    @include arrow-button;
+    left: calc((100% - 1200px) / 2);
+    color: black;
+  }
+  .top-next {
+    @include arrow-button;
+    right: calc((100% - 1250px) / 2);
+  }
+}
+//   나중에 marin 해서 prev와 next에 넣어놓는 게 나을ㄷ스

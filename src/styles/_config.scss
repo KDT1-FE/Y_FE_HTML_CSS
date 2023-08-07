@@ -1,9 +1,6 @@
-@import "./utils";
-$color-primary: royalblue;
-$body-font: "S-CoreDream-3Light", Arial, Helvetica, sans-serif;
-$venti: "VentiCF", sans-serif;
-$mango: "Mango", "Helvetica Neue";
-$font-color: #d3ceb9;
+@use "./variables.scss" as *;
+@use "./_utils.scss" as *;
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

@@ -1,4 +1,6 @@
-@import "./utils";
+@use "./variables.scss" as *;
+@use "./_utils.scss" as *;
+
 /* -------------------------- 서브 페이지 스타일 -------------------------- */
 .key-visual.sub1 {
   .key-visual__swiper {
@@ -85,9 +87,6 @@
   padding-top: 100px;
   padding-bottom: 80px;
   overflow: hidden;
-  @include mobile {
-    padding-top: 30px;
-  }
   &__round-txt {
     width: 120px;
     height: 120px;
@@ -96,10 +95,6 @@
     font-family: $venti;
     font-weight: 100;
     letter-spacing: 0.06em;
-    @include mobile {
-      width: 80px;
-      height: 80px;
-    }
     svg {
       animation: rotateCircle 30s infinite linear;
     }
@@ -115,9 +110,6 @@
     font-size: 15px;
     font-family: $venti;
     font-weight: 300;
-    @include mobile {
-      font-size: 12px;
-    }
   }
   &__infos {
     position: relative;
@@ -139,9 +131,6 @@
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    @include mobile {
-      top: -15px;
-    }
   }
   &__left-img,
   &__right-img {
@@ -173,12 +162,6 @@
     font-weight: 400;
     white-space: nowrap;
     z-index: -1;
-    @include mobile {
-      font-size: 20vw;
-    }
-    @include tablet {
-      font-size: 20vw;
-    }
   }
   &__bg-txt1 {
     top: 50%;
@@ -207,9 +190,6 @@
       font-weight: 400;
       margin-top: 25px;
       line-height: 1.8;
-      @include mobile {
-        font-size: 13px;
-      }
     }
   }
 }
@@ -226,24 +206,11 @@
 /* -------------------------- 프롤로그 02 -------------------------- */
 .prologue-sect02 {
   padding-bottom: 260px;
-  @include mobile {
-    padding-bottom: 80px;
-  }
   &__fixed-bg {
     height: 765px;
     background: fixed url("../../static/images/prologue/sub1_view_bg.jpg") 50% /
       cover no-repeat;
     margin-bottom: 170px;
-    @include mobile {
-      height: 250px;
-      margin-bottom: 80px;
-      background-attachment: scroll;
-    }
-  }
-  &__figure {
-    @include mobile {
-      display: block;
-    }
   }
 
   &__img,
@@ -253,9 +220,6 @@
   }
   &__img {
     padding-right: 100px;
-    @include tablet {
-      padding-right: 30px;
-    }
     img {
       max-width: 100%;
     }
@@ -263,39 +227,94 @@
   &__figc-txt {
     padding-top: 200px;
     flex-direction: column;
-    @include mobile {
-      padding-top: 15px;
-    }
-    @include tablet {
-      padding-top: 15px;
-    }
     h5 {
       font-size: 15px;
       font-weight: 400;
       transform: rotate(-90deg);
       transform-origin: top left;
-      @include mobile {
-        font-size: 13px;
-        transform: rotate(0);
-      }
-      @include tablet {
-        transform: rotate(0);
-      }
     }
     h3 {
       margin-bottom: 45px;
-      @include mobile {
-        font-size: 52px;
-        margin-bottom: 20px;
-        line-height: 1.4;
-      }
     }
     p {
       font-size: 15px;
       font-weight: 400;
       line-height: 1.8;
-      @include mobile {
+    }
+  }
+}
+/* 모바일 반응형 */
+@include mobile {
+  /* -------------------------- 프롤로그 01 -------------------------- */
+  .prologue-sect01 {
+    padding-top: 30px;
+    &__round-txt {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__small-title {
+      font-size: 12px;
+    }
+    &__center-img {
+      top: -15px;
+    }
+    &__bg-txt1,
+    &__bg-txt2 {
+      font-size: 20vw;
+    }
+
+    &__desc p {
+      font-size: 13px;
+    }
+  }
+  /* -------------------------- 프롤로그 02 -------------------------- */
+  .prologue-sect02 {
+    padding-bottom: 80px;
+    &__fixed-bg {
+      height: 250px;
+      margin-bottom: 80px;
+      background-attachment: scroll;
+    }
+    &__figure {
+      display: block;
+    }
+    &__img {
+      padding-right: 30px;
+    }
+    &__figc-txt {
+      padding-top: 15px;
+      h5 {
         font-size: 13px;
+        transform: rotate(0);
+      }
+      h3 {
+        font-size: 52px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+/* 태블릿 반응형 */
+@include tablet {
+  /* -------------------------- 프롤로그 01 -------------------------- */
+  .prologue-sect01 {
+    &__bg-txt1,
+    &__bg-txt2 {
+      font-size: 20vw;
+    }
+  }
+  /* -------------------------- 프롤로그 02 -------------------------- */
+  .prologue-sect02 {
+    &__figc-txt {
+      padding-top: 15px;
+      h5 {
+        transform: rotate(0);
       }
     }
   }

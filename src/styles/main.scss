@@ -1,13 +1,12 @@
-@import "./utils";
+@use "./variables.scss" as *;
+@use "./_utils.scss" as *;
+
 /* -------------------------- 메인 비주얼 영역 -------------------------- */
 .key-visual {
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  @include mobile {
-    height: 500px;
-  }
   &__swiper {
     height: 100%;
     .swiper-slide {
@@ -112,11 +111,6 @@
         color: #fff;
         cursor: pointer;
         box-sizing: border-box;
-        @include mobile {
-          width: 50px;
-          padding-top: 10px;
-          font-size: 12px;
-        }
         &:hover::before {
           transform: scaleX(1);
         }
@@ -135,9 +129,6 @@
         left: 0;
         text-align: right;
         padding-right: 25px;
-        @include mobile {
-          padding-right: 5px;
-        }
         &::before {
           right: 0;
           transform-origin: right;
@@ -147,9 +138,6 @@
       .swiper-controls__next-btn {
         right: 0;
         padding-left: 25px;
-        @include mobile {
-          padding-left: 5px;
-        }
         &::before {
           left: 0;
           transform-origin: left;
@@ -172,15 +160,6 @@
     color: #fff;
     margin-top: 14px;
     margin-bottom: 20px;
-    @include mobile {
-      margin-top: 6px;
-    }
-  }
-  @include mobile {
-    bottom: 30px;
-    .inner-container {
-      display: none;
-    }
   }
   .watch-link {
     font-size: 20px;
@@ -234,10 +213,6 @@
   padding-top: 220px;
   padding-bottom: 215px;
   overflow: hidden;
-  @include mobile {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
   /* 상단 타이틀 + 이미지 슬라이드 */
   .the-concept__top-content {
     grid-template-columns: 16.42% 66.8% 16.78%;
@@ -245,17 +220,6 @@
     grid-template-areas:
       "conceptTitle conceptTitle conceptBtns"
       "conceptSlideBtns conceptSlideWrap conceptSlideWrap";
-    @include mobile {
-      display: flex;
-      flex-direction: column;
-      row-gap: unset;
-    }
-    @include tablet {
-      grid-template-columns: 24% 50% 26%;
-    }
-    @include laptop {
-      grid-template-columns: 21.5% 52.5% 26%;
-    }
   }
   .the-concept__title {
     grid-area: conceptTitle;
@@ -264,13 +228,6 @@
       letter-spacing: 0.04em;
       padding-left: 40px;
       line-height: 1.4;
-      @include mobile {
-        margin-top: 15px;
-        margin-bottom: 30px;
-        padding-left: 0;
-        font-size: 13px;
-        line-height: 1.6;
-      }
     }
   }
   .the-concept__top-btns {
@@ -283,9 +240,7 @@
     align-self: start;
     transition: 0.8s;
     cursor: pointer;
-    @include mobile {
-      display: none;
-    }
+
     &:hover {
       color: #fff;
       .line::after {
@@ -321,10 +276,6 @@
     align-self: end;
     padding-left: 50px;
     position: relative;
-    @include mobile {
-      margin-top: 5px;
-      order: 2;
-    }
     &::after {
       content: "";
       position: absolute;
@@ -333,11 +284,6 @@
       height: 18px;
       left: 92px;
       background-color: $font-color;
-      @include mobile {
-        top: 4px;
-        left: 76px;
-        height: 12px;
-      }
     }
     .the-concept__prev-btn,
     .the-concept__next-btn {
@@ -347,19 +293,13 @@
       font-size: 22px;
       width: 40px;
       cursor: pointer;
-      @include mobile {
-        font-size: 17px;
-        width: 24px;
-      }
     }
   }
   .the-concept__img-slide-wrap {
     grid-area: conceptSlideWrap;
     .the-concept__img-swiper .swiper-slide {
       height: 400px;
-      @include mobile {
-        height: 200px;
-      }
+
       img {
         width: 100%;
         height: 100%;
@@ -372,15 +312,10 @@
   .the-concept__bottom-content {
     margin-top: 190px;
     position: relative;
-    @include mobile {
-      margin-top: 100px;
-      display: block;
-    }
+
     .img-wrap {
       width: 41.79%;
-      @include mobile {
-        width: 80%;
-      }
+
       img {
         width: 100%;
       }
@@ -388,30 +323,17 @@
     figcaption {
       width: 58.21%;
       padding-left: 5.36%;
-      @include mobile {
-        width: 100%;
-        padding-left: 0;
-        position: relative;
-        top: -20px;
-      }
+
       h2 {
         height: 1em;
         margin-bottom: 50px;
         white-space: nowrap;
         transition: 1.6s;
-        @include mobile {
-          margin-bottom: 20px;
-          margin-left: 33%;
-        }
       }
       p {
         margin-bottom: 40px;
         letter-spacing: 0.04em;
         line-height: 2;
-        @include mobile {
-          font-size: 13px;
-          margin-bottom: 20px;
-        }
       }
       .the-concept__lint-btn {
         position: absolute;
@@ -430,18 +352,6 @@
         &:hover {
           padding-left: 130px;
         }
-        @include mobile {
-          position: static;
-          width: 100px;
-          height: 100px;
-          padding-left: 20px;
-        }
-        @include tablet {
-          bottom: -160px;
-        }
-        @include laptop {
-          bottom: -80px;
-        }
       }
     }
   }
@@ -454,10 +364,7 @@
   padding-bottom: 200px;
   background-color: #171b24;
   position: relative;
-  @include mobile {
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
+
   .the-poolvilla__title {
     position: relative;
     z-index: 1;
@@ -468,16 +375,7 @@
     grid-template-areas:
       ". poolCenter poolCenter poolCenter ."
       "poolLeft poolLeft poolTxt poolRight poolRight";
-    @include mobile {
-      display: block;
-      position: relative;
-    }
-    @include tablet {
-      grid-template-columns: 42% 39% 20%;
-      grid-template-areas:
-        "poolCenter poolCenter poolCenter"
-        "poolLeft poolTxt poolRight";
-    }
+
     img {
       vertical-align: top;
       max-width: 100%;
@@ -485,58 +383,30 @@
     .the-poolvilla__img-area__center {
       grid-area: poolCenter;
       margin-top: -60px;
-      @include mobile {
-        margin-top: -25px;
-      }
     }
     .the-poolvilla__img-area__left {
       grid-area: poolLeft;
       margin-top: -125px;
-      @include mobile {
-        margin-top: 0;
-        position: absolute;
-        left: 0;
-        top: 170px;
-        width: 150px;
-      }
     }
     .the-poolvilla__img-area__txt {
       grid-area: poolTxt;
       padding: 100px 0 0 130px;
-      @include mobile {
-        padding: 100px 0 0 0;
-      }
-      @include tablet {
-        padding: 100px 0 0 0;
-      }
+
       h3 {
         font-family: $body-font;
         font-size: 18px;
         font-weight: 400;
         margin-bottom: 40px;
         letter-spacing: 0.04em;
-        @include mobile {
-          font-size: 15px;
-        }
       }
       p {
         line-height: 1.8;
         color: #fff;
         font-size: 15px;
-        @include mobile {
-          font-size: 13px;
-        }
       }
     }
     .the-poolvilla__img-area__right {
       grid-area: poolRight;
-      @include mobile {
-        margin-top: 0;
-        position: absolute;
-        right: 0;
-        top: 200px;
-        width: 80px;
-      }
     }
   }
   .the-poolvilla__link-btn {
@@ -550,67 +420,25 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    @include mobile {
-      position: static;
-      width: 80px;
-      height: 80px;
-      margin-top: 30px;
-    }
   }
 }
 
-/* -------------------------- the-poolvilla 영역 -------------------------- */
+/* -------------------------- the-offers 영역 -------------------------- */
 .the-offers {
   position: relative;
   padding-top: 125px;
   padding-bottom: 250px;
-  @include mobile {
-    padding-top: 60px;
-    padding-bottom: 150px;
-  }
-  .inner-container {
-    @include mobile {
-      padding: 0;
-      width: calc(100% - 50px);
-      overflow: hidden;
-    }
-    @include tablet {
-      padding: 0;
-      width: calc(100% - 50px);
-      overflow: hidden;
-    }
-  }
+
   .the-offers__title {
     text-align: center;
     margin-bottom: 165px;
-    @include mobile {
-      margin-bottom: 65px;
-    }
-    @include tablet {
-      margin-bottom: 65px;
-    }
   }
   .the-offers__img-swiper {
     overflow: hidden;
-    @include mobile {
-      overflow: visible;
-    }
-    @include tablet {
-      overflow: visible;
-    }
+
     .swiper-wrapper {
       height: 440px;
       margin-left: -80px;
-      @include mobile {
-        height: 150px;
-        margin-left: 0;
-        overflow: visible;
-      }
-      @include tablet {
-        height: 150px;
-        margin-left: 0;
-        overflow: visible;
-      }
     }
     .swiper-slide {
       width: 17.5%;
@@ -625,38 +453,7 @@
         width: 30%;
         height: 440px;
       }
-      @include mobile {
-        width: auto;
-        padding: 0;
-        height: 150px;
-        &.swiper-slide-prev,
-        &.swiper-slide-next {
-          height: 150px;
-        }
-        &.swiper-slide-active {
-          width: auto;
-          height: 150px;
-          transform: scale(1.5);
-          z-index: 1;
-          transition: 0.6s;
-        }
-      }
-      @include tablet {
-        width: auto;
-        padding: 0;
-        height: 150px;
-        &.swiper-slide-prev,
-        &.swiper-slide-next {
-          height: 150px;
-        }
-        &.swiper-slide-active {
-          width: auto;
-          height: 150px;
-          transform: scale(1.5);
-          z-index: 1;
-          transition: 0.6s;
-        }
-      }
+
       > div {
         width: 100%;
         height: 100%;
@@ -705,24 +502,12 @@
     text-align: center;
     font-size: 15px;
     font-weight: 400;
-    @include mobile {
-      margin-top: 70px;
-      font-size: 13px;
-    }
-    @include tablet {
-      margin-top: 70px;
-    }
   }
   .the-offers__line {
     position: relative;
     border-bottom: 1px solid #474c4f;
     margin-top: 124px;
-    @include mobile {
-      margin-top: 70px;
-    }
-    @include tablet {
-      margin-top: 70px;
-    }
+
     &::after {
       content: "";
       position: absolute;
@@ -732,11 +517,292 @@
       height: 1px;
       background-color: $font-color;
       transform: translateX(-50%);
-      @include mobile {
+    }
+  }
+}
+
+/* 모바일 반응형 */
+@include mobile {
+  /* -------------------------- 메인 비주얼 영역 -------------------------- */
+  .key-visual {
+    height: 500px;
+    &__swiper {
+      .swiper-controls
+        :is(.swiper-controls__prev-btn, .swiper-controls__next-btn) {
+        width: 50px;
+        padding-top: 10px;
+        font-size: 12px;
+      }
+      .swiper-controls__prev-btn,
+      .swiper-controls__next-btn {
+        padding-right: 5px;
+      }
+    }
+  }
+  .key-visual__fixed {
+    bottom: 30px;
+    .inner-container {
+      display: none;
+    }
+    h3 {
+      margin-top: 6px;
+    }
+  }
+  /* -------------------------- The Concept 영역 -------------------------- */
+  .the-concept {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    /* 상단 타이틀 + 이미지 슬라이드 */
+    .the-concept__top-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: unset;
+    }
+    .the-concept__title p {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      padding-left: 0;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .the-concept__top-btns {
+      display: none;
+    }
+    .the-concept__img-slide-btns {
+      margin-top: 5px;
+      order: 2;
+      &::after {
+        top: 4px;
+        left: 76px;
+        height: 12px;
+      }
+      .the-concept__prev-btn,
+      .the-concept__next-btn {
+        font-size: 17px;
+        width: 24px;
+      }
+    }
+    .the-concept__img-slide-wrap .the-concept__img-swiper .swiper-slide {
+      height: 200px;
+    }
+
+    /* 하단 이미지 + 설명글 */
+    .the-concept__bottom-content {
+      margin-top: 100px;
+      display: block;
+      .img-wrap {
+        width: 80%;
+      }
+      figcaption {
+        width: 100%;
+        padding-left: 0;
+        position: relative;
+        top: -20px;
+        h2 {
+          margin-bottom: 20px;
+          margin-left: 33%;
+        }
+        p {
+          font-size: 13px;
+          margin-bottom: 20px;
+        }
+        .the-concept__lint-btn {
+          position: static;
+          width: 100px;
+          height: 100px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+  /* -------------------------- the-poolvilla 영역 -------------------------- */
+  .the-poolvilla {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    .the-poolvilla__img-area {
+      display: block;
+      position: relative;
+
+      img {
+        vertical-align: top;
+        max-width: 100%;
+      }
+      .the-poolvilla__img-area__center {
+        margin-top: -25px;
+      }
+      .the-poolvilla__img-area__left {
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+        top: 170px;
         width: 150px;
       }
-      @include tablet {
+      .the-poolvilla__img-area__txt {
+        padding: 100px 0 0 0;
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      .the-poolvilla__img-area__right {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        top: 200px;
+        width: 80px;
+      }
+    }
+    .the-poolvilla__link-btn {
+      position: static;
+      width: 80px;
+      height: 80px;
+      margin-top: 30px;
+    }
+  }
+  /* -------------------------- the-offers 영역 -------------------------- */
+  .the-offers {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    .inner-container {
+      padding: 0;
+      width: calc(100% - 50px);
+      overflow: hidden;
+    }
+    .the-offers__title {
+      margin-bottom: 65px;
+    }
+    .the-offers__img-swiper {
+      overflow: visible;
+      .swiper-wrapper {
+        height: 150px;
+        margin-left: 0;
+        overflow: visible;
+      }
+      .swiper-slide {
+        width: auto;
+        padding: 0;
+        height: 150px;
+        &.swiper-slide-prev,
+        &.swiper-slide-next {
+          height: 150px;
+        }
+        &.swiper-slide-active {
+          width: auto;
+          height: 150px;
+          transform: scale(1.5);
+          z-index: 1;
+          transition: 0.6s;
+        }
+      }
+    }
+    .the-offers__desc {
+      margin-top: 70px;
+      font-size: 13px;
+    }
+    .the-offers__line {
+      margin-top: 70px;
+      &::after {
         width: 150px;
+      }
+    }
+  }
+}
+
+/* 태블릿 반응형 */
+@include tablet {
+  /* -------------------------- The Concept 영역 -------------------------- */
+  .the-concept {
+    padding-top: 220px;
+    padding-bottom: 215px;
+    overflow: hidden;
+
+    /* 상단 타이틀 + 이미지 슬라이드 */
+    .the-concept__top-content {
+      grid-template-columns: 24% 50% 26%;
+    }
+
+    /* 하단 이미지 + 설명글 */
+    .the-concept__bottom-content {
+      figcaption .the-concept__lint-btn {
+        bottom: -160px;
+      }
+    }
+  }
+
+  /* -------------------------- the-poolvilla 영역 -------------------------- */
+  .the-poolvilla {
+    .the-poolvilla__img-area {
+      grid-template-columns: 42% 39% 20%;
+      grid-template-areas:
+        "poolCenter poolCenter poolCenter"
+        "poolLeft poolTxt poolRight";
+      .the-poolvilla__img-area__txt {
+        padding: 100px 0 0 0;
+      }
+    }
+  }
+
+  /* -------------------------- the-offers 영역 -------------------------- */
+  .the-offers {
+    .inner-container {
+      padding: 0;
+      width: calc(100% - 50px);
+      overflow: hidden;
+    }
+    .the-offers__title {
+      margin-bottom: 65px;
+    }
+    .the-offers__img-swiper {
+      overflow: visible;
+      .swiper-wrapper {
+        height: 150px;
+        margin-left: 0;
+        overflow: visible;
+      }
+      .swiper-slide {
+        width: auto;
+        padding: 0;
+        height: 150px;
+        &.swiper-slide-prev,
+        &.swiper-slide-next {
+          height: 150px;
+        }
+        &.swiper-slide-active {
+          width: auto;
+          height: 150px;
+          transform: scale(1.5);
+          z-index: 1;
+          transition: 0.6s;
+        }
+      }
+    }
+    .the-offers__desc {
+      margin-top: 70px;
+    }
+    .the-offers__line {
+      margin-top: 70px;
+      &::after {
+        width: 150px;
+      }
+    }
+  }
+}
+
+/* 랩탑 반응형 */
+@include laptop {
+  /* -------------------------- The Concept 영역 -------------------------- */
+  .the-concept {
+    /* 상단 타이틀 + 이미지 슬라이드 */
+    .the-concept__top-content {
+      grid-template-columns: 21.5% 52.5% 26%;
+    }
+
+    /* 하단 이미지 + 설명글 */
+    .the-concept__bottom-content {
+      figcaption .the-concept__lint-btn {
+        bottom: -80px;
       }
     }
   }

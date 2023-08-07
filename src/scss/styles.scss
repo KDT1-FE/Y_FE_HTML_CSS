@@ -1,0 +1,29 @@
+@import "variables", "header", "menu", "main-content", "main-text", "main-btn",
+  "footer";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  border: none;
+
+  background-color: transparent;
+  color: $black;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $black;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tesla는 전기차, 태양광과 가정용 및 기업용 통합 에너지 솔루션을 통해 지속 가능한 에너지로의 전 세계적 전환을 가속화하고 있습니다."
+    />
+    <meta
+      name="keywords"
+      content="Tesla, 전기 차량, EV, 전기차, Elon Musk, Sustainable Energy, 오토파일럿, 수퍼차저, Model S, Model X, Model 3, Model Y, Roadster, 에너지, Powerwall, Powerpack, Megapack, Battery Storage, 태양광 패널, Solar Roof"
+    />
+    <title>전기차, 태양광 및 청정 에너지 | Tesla 대한민국</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/styles.css" />
+    <script defer src="./src/js/clickMenuBtn.js"></script>
+    <script defer src="./src/js/changeHeaderColor.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="header-logo">
+        <a aria-label="Tesla Header Logo" href="index.html">
+          <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+      </h1>
+      <ol class="header-nav header-nav-products">
+        <li>
+          <a title="Model S" href="https://www.tesla.com/ko_kr/models">
+            <span>Model S</span>
+          </a>
+        </li>
+        <li>
+          <a title="Model 3" href="https://www.tesla.com/ko_kr/model3">
+            <span>Model 3</span>
+          </a>
+        </li>
+        <li>
+          <a title="Model X" href="https://www.tesla.com/ko_kr/modelx">
+            <span>Model X</span>
+          </a>
+        </li>
+        <li>
+          <a title="Model Y" href="https://www.tesla.com/ko_kr/modely">
+            <span>Model Y</span>
+          </a>
+        </li>
+        <li>
+          <a title="Cybertruck" href="https://www.tesla.com/ko_kr/cybertruck">
+            <span>Cybertruck</span>
+          </a>
+        </li>
+        <li>
+          <a title="Powerwall" href="https://www.tesla.com/ko_kr/powerwall">
+            <span>Powerwall</span>
+          </a>
+        </li>
+      </ol>
+      <ol class="header-nav header-nav-etc">
+        <li>
+          <a
+            title="Shop"
+            href="https://shop.tesla.com/ko_kr?tesref=true"
+            class="site-nav-items-shop"
+          >
+            <span class="site-nav-items-shop-text">Shop</span>
+          </a>
+        </li>
+        <li>
+          <a
+            title="계정"
+            href="https://auth.tesla.com/oauth2/v1/authorize?redirect_uri=https%3A%2F%2Fwww.tesla.com%2Fteslaaccount%2Fowner-xp%2Fauth%2Fcallback&response_type=code&client_id=ownership&scope=offline_access%20openid%20ou_code%20email%20phone&audience=https%3A%2F%2Fownership.tesla.com%2F&locale=ko-KR"
+            class="site-nav-items-acount"
+          >
+            <span class="site-nav-items-acount-text">계정</span>
+          </a>
+        </li>
+        <li>
+          <button title="메뉴" id="menu-btn">
+            <span>메뉴</span>
+          </button>
+        </li>
+      </ol>
+      <dialog id="menu">
+        <div id="menu-header">
+          <button aria-label="menu-close-btn" id="menu-close-btn" type="button">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.53 17.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.748.748 0 0 1-1.06 0 .75.75 0 0 1 0-1.06L10.94 12 5.47 6.53a.75.75 0 1 1 1.06-1.06L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <section id="menu-box">
+          <ol id="menu-items">
+            <li>
+              <a
+                title="신규 인벤토리"
+                href="https://www.tesla.com/ko_kr/inventory/new/m3"
+                ><span>신규 인벤토리</span></a
+              >
+            </li>
+            <li>
+              <a
+                title="인증중고 인벤토리"
+                href="https://www.tesla.com/ko_kr/inventory/used/ms"
+                ><span>인증중고 인벤토리</span></a
+              >
+            </li>
+            <li>
+              <a title="트레이드인" href="https://www.tesla.com/ko_kr/tradein"
+                ><span>트레이드인</span></a
+              >
+            </li>
+            <li>
+              <a title="Roadster" href="https://www.tesla.com/ko_kr/roadster"
+                ><span id="menu-items-thick-text">Roadster</span></a
+              >
+            </li>
+            <li>
+              <a title="충전" href="https://www.tesla.com/ko_kr/charging"
+                ><span>충전</span></a
+              >
+            </li>
+            <li>
+              <a
+                title="상업용 에너지"
+                href="https://www.tesla.com/ko_kr/commercial"
+                ><span>상업용 에너지</span></a
+              >
+            </li>
+            <li>
+              <a
+                title="전력사업용 에너지"
+                href="https://www.tesla.com/ko_kr/utilities"
+                ><span>전력사업용 에너지</span></a
+              >
+            </li>
+            <li>
+              <a title="에너지" href="https://www.tesla.com/ko_kr/energy"
+                ><span>에너지</span></a
+              >
+            </li>
+            <li>
+              <a title="법인 판매" href="https://www.tesla.com/ko_kr/fleet"
+                ><span>법인 판매</span></a
+              >
+            </li>
+            <li>
+              <a title="채용정보" href="https://www.tesla.com/ko_kr/careers"
+                ><span>채용정보</span></a
+              >
+            </li>
+            <li>
+              <a
+                title="Tesla 찾기"
+                href="https://www.tesla.com/ko_kr/findus?v=2&bounds=52.33397135978222%2C-67.62597775%2C24.984029181782336%2C-130.90722775&zoom=5&filters=store%2Cservice%2Csupercharger%2Cdestination%20charger%2Cbodyshop%2Cparty"
+                class="menu-item -hideon-phone-only"
+                ><span id="menu-items-thick-text">Tesla 찾기</span></a
+              >
+            </li>
+            <li>
+              <a title="이벤트" href="https://www.tesla.com/ko_kr/events"
+                ><span>이벤트</span></a
+              >
+            </li>
+            <li>
+              <a title="지원" href="https://www.tesla.com/ko_KR/support"
+                ><span>지원</span></a
+              >
+            </li>
+            <li>
+              <a
+                title="투자자 정보"
+                href="https://ir.tesla.com/#quarterly-disclosure"
+                ><span>투자자 정보</span></a
+              >
+            </li>
+            <li>
+              <div aria-label="language config" id="menu-language" tabindex="0">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10ZM9.254 20.047a8.147 8.147 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.526 8.526 0 0 0 5.003 4.547Zm.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501.308 0 .658-.137 1.04-.5.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12c0 .691.036 1.36.103 2h6.294c.067-.64.103-1.309.103-2 0-.691-.036-1.36-.103-2H8.853c-.067.64-.103 1.309-.103 2Zm-1.405-2H3.737a8.522 8.522 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a20.75 20.75 0 0 1 0-4Zm1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5-.308 0-.658.137-1.04.5-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56Zm7.577 1.5a20.728 20.728 0 0 1 0 4h3.61a8.52 8.52 0 0 0 .236-2 8.52 8.52 0 0 0-.237-2h-3.609Zm3.094-1.5a8.526 8.526 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.526 8.526 0 0 0 4.252 8.5h3.3Zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.526 8.526 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <div id="menu-language-text">
+                  <strong>대한민국</strong>
+                  <span>한국어</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </dialog>
+    </header>
+    <main id="main">
+      <section class="snappin-box test-drive">
+        <video id="welcome-video" loop muted autoplay>
+          <source
+            src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="snappin-box-text">
+          <h2>Tesla 경험하기</h2>
+          <p>지금 시승 예약하기</p>
+        </div>
+        <div class="snappin-box-btn">
+          <a href="https://www.tesla.com/ko_kr/drive">시승 신청</a>
+        </div>
+      </section>
+      <section class="snappin-box modelY">
+        <div class="snappin-box-text">
+          <h2>Model Y</h2>
+          <a href="https://www.tesla.com/ko_kr/drive?selectedModel=modely"
+            ><p>시승 신청</p></a
+          >
+        </div>
+        <div class="snappin-box-btn">
+          <a href="https://www.tesla.com/ko_kr/inventory/new/my"
+            >신규 인벤토리</a
+          >
+          <a href="https://www.tesla.com/ko_kr/modely/design#overview"
+            >주문하기</a
+          >
+        </div>
+        <div class="modelY-chevron">
+          <span role="button" aria-pressed="false" aria-label="다음">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </span>
+        </div>
+      </section>
+      <section class="snappin-box model3">
+        <div class="snappin-box-text">
+          <h2>Model 3</h2>
+          <a href="https://www.tesla.com/ko_kr/drive?selectedModel=model3"
+            ><p>시승 신청</p></a
+          >
+        </div>
+        <div class="snappin-box-btn">
+          <a href="https://www.tesla.com/ko_kr/inventory/new/my"
+            >신규 인벤토리</a
+          >
+          <a href="https://www.tesla.com/ko_kr/model3/design#overview"
+            >주문하기</a
+          >
+        </div>
+      </section>
+      <section class="snappin-box modelX">
+        <div class="snappin-box-text">
+          <h2>Model X</h2>
+          <a href="https://www.tesla.com/ko_kr/drive"><p>시승 신청</p></a>
+        </div>
+        <div class="snappin-box-btn">
+          <a href="https://www.tesla.com/ko_kr/modelx/design#overview"
+            >주문하기</a
+          >
+          <a href="https://www.tesla.com/ko_kr/modelx">자세히 알아보기</a>
+        </div>
+      </section>
+      <section class="snappin-box modelS">
+        <div class="snappin-box-text">
+          <h2>Model S</h2>
+          <a href="https://www.tesla.com/ko_kr/drive"><p>시승 신청</p></a>
+        </div>
+        <div class="snappin-box-btn">
+          <a href="https://www.tesla.com/ko_kr/models/design#overview"
+            >주문하기</a
+          >
+          <a href="https://www.tesla.com/ko_kr/models">자세히 알아보기</a>
+        </div>
+      </section>
+      <section class="snappin-box powerwall">
+        <div class="snappin-box-text">
+          <h2>태양광과 Powerwall</h2>
+          <p>모든 전력을 공급</p>
+        </div>
+        <div class="snappin-box-btn">
+          <a href="https://www.tesla.com/ko_kr/energy">자세히 알아보기</a>
+        </div>
+      </section>
+      <section class="snappin-box accessories">
+        <div class="snappin-box-text">
+          <h2>액세사리</h2>
+        </div>
+        <div class="snappin-box-btn">
+          <a href="https://shop.tesla.com/ko_kr?tesref=true">지금 쇼핑하기</a>
+        </div>
+        <footer id="footer" role="article">
+          <nav class="footer-nav">
+            <ul class="footer-nav-items">
+              <li>
+                <a href="/ko_kr/about" title="Copyright 2023 Tesla Motors"
+                  >Tesla © 2023</a
+                >
+              </li>
+              <li>
+                <a href="/ko_kr/legal">개인정보 처리방침 및 법적고지 </a>
+              </li>
+              <li>
+                <a href="/ko_kr/legal/terms">이용 약관</a>
+              </li>
+              <li class="-hideo-navn-phone-only footer-nav-item">
+                <a href="/ko_kr/contact">문의하기</a>
+              </li>
+              <li>
+                <a href="/ko_kr/blog">새 소식</a>
+              </li>
+              <li class="-hideo-navn-phone-only footer-nav-item">
+                <a href="/ko_kr/findus/list">위치</a>
+              </li>
+            </ul>
+            <div class="footer-nav-banner">
+              <p>
+                테슬라코리아 유한회사 | 사업자등록번호 : 524-88-00237 |
+                데이비드존파인스타인, 케네스어니스트무어 | 통신판매업신고:
+                제2016-서울강남-02964호 |
+                <a
+                  href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=5248800237"
+                  target="_blank"
+                  >사업자정보확인</a
+                >
+                | 호스팅제공자: Tesla Inc. | 주소 : 서울특별시 강남구 테헤란로
+                134, 14층 | 대표전화 : 080-617-1388&nbsp;|&nbsp;<a
+                  href="mailto:southkorea@tesla.com"
+                  style="border-bottom: solid 1px white"
+                  >southkorea@tesla.com</a
+                >
+              </p>
+            </div>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

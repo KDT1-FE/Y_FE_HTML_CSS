@@ -1,0 +1,91 @@
+#header {
+  height: 60px;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  z-index: 1;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+#header-logo {
+  padding-left: 32px;
+
+  svg {
+    width: 148px;
+    height: 48px;
+
+    padding: 0px 16px;
+
+    color: $white;
+  }
+}
+
+.header-nav-products {
+  width: 620px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 80px;
+  padding: 0px 8px;
+}
+
+.header-nav-etc {
+  width: 250px;
+  line-height: 27px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-right: 32px;
+}
+
+.header-nav li a {
+  padding: 4px 8px;
+
+  transition: 0.4s;
+
+  &:hover {
+    border-radius: 3px;
+
+    background-color: #b3b9bc4b;
+  }
+
+  span {
+    margin: 0px 8px;
+
+    font: {
+      size: 14px;
+      weight: 450;
+      family: "Open Sans", sans-serif;
+    }
+
+    color: $white;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-nav-products,
+  .header-nav-etc li:nth-of-type(1),
+  .header-nav-etc li:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

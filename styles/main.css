@@ -223,11 +223,11 @@
     margin-bottom: 10px;
 }
 
-.product-compose__text p{
+.vbox .linkbox{
     margin-bottom: 5px;
 }
 
-.product-compose__text .linkbox p{
+.linkbox{
     text-align: right;
 }
 

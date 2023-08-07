@@ -6,7 +6,7 @@ header {
   z-index: 999;
 }
 
-#header-wrap {
+.header-wrap {
   max-width: 128rem;
   height: 16rem;
   padding: 3rem 0 0;

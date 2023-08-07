@@ -57,7 +57,7 @@ button {
     overflow: hidden;
 }
 
-#mainwrap {
+.main-wrap {
     display: flex;
     flex-direction: column;
 }

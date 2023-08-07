@@ -13,11 +13,11 @@
   animation-duration: 1s;
 }
 
-#header #tesla-logo {
+#header #header-logo {
   padding-left: 32px;
 }
 
-#header #tesla-logo svg {
+#header #header-logo svg {
   width: 148px;
   height: 48px;
 

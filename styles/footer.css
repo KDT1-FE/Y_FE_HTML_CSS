@@ -63,7 +63,7 @@ footer {
     width: 0.8rem;
     height: 0.6rem;
     margin-left: 0.4rem;
-    background: url(/assets/icons/arrow_pc.svg) no-repeat 50%;
+    background: url(../assets/icons/arrow_pc.svg) no-repeat 50%;
     vertical-align: 0.1rem;
 }
 .footer-policy-list > li:first-child::before {

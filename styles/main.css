@@ -179,7 +179,7 @@ main section {
     content: '';
     width: 1.8rem;
     height: 2.8rem;
-    background: url(/assets/icons/slider_arrow.svg) no-repeat 50%;
+    background: url(../assets/icons/slider_arrow.svg) no-repeat 50%;
 }
 
 .content-today button:nth-of-type(1):after {
@@ -234,7 +234,7 @@ main section {
     width: 0.7rem;
     height: 1.1rem;
     margin-left: 0.7rem;
-    background: url(/assets/icons/icon_linkArrow.svg) no-repeat 50%;
+    background: url(../assets/icons/icon_linkArrow.svg) no-repeat 50%;
 }
 
 .content-shopping-list ul {
@@ -340,7 +340,7 @@ button.tab-button_selected {
 }
 
 .content-shopping-item {
-    background: #fff url(/assets/icons/no_img_interpark.svg) 50% no-repeat;
+    background: #fff url(../assets/icons/no_img_interpark.svg) 50% no-repeat;
     background-size: 70%;
     position: relative;
     height: 30rem;
@@ -420,7 +420,7 @@ button.tab-button_selected {
     margin-right: 0;
 }
 .content-tour-item {
-    background: #fff url(/assets/icons/no_img_interpark.svg) 50% no-repeat;
+    background: #fff url(../assets/icons/no_img_interpark.svg) 50% no-repeat;
     background-size: 70%;
     position: relative;
     height: 24.4rem;
@@ -525,7 +525,7 @@ button.tab-button_selected {
 }
 
 .content-ticket-item {
-    background: #fff url(/assets/icons/no_img_interpark.svg) 50% no-repeat;
+    background: #fff url(../assets/icons/no_img_interpark.svg) 50% no-repeat;
     background-size: 70%;
     position: relative;
     height: 40rem;
@@ -654,7 +654,7 @@ button.tab-button_selected {
     object-fit: cover;
 }
 .content-live-item {
-    background: #fff url(/assets/icons/no_img_interpark.svg) 50% no-repeat;
+    background: #fff url(../assets/icons/no_img_interpark.svg) 50% no-repeat;
     background-size: 70%;
     position: relative;
     height: 45.6rem;
@@ -858,7 +858,7 @@ button.tab-button_selected {
 }
 
 .content-book-item {
-    background: #fff url(/assets/icons/no_img_interpark.svg) 50% no-repeat;
+    background: #fff url(../assets/icons/no_img_interpark.svg) 50% no-repeat;
     background-size: 70%;
     position: relative;
     height: 33.42rem;

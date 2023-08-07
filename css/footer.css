@@ -68,7 +68,6 @@
 .footer-top__button {
     position: relative;
     display: inline-block;
-    float: left;
     padding: 8px 12px 8px 36px;
     font-size: 12px;
     line-height: 18px;
@@ -104,7 +103,6 @@
 .service__button {
     position: relative;
     display: inline-block;
-    float: left;
     padding: 5px 12px;
     font-size: 12px;
     line-height: 18px;
@@ -137,6 +135,9 @@
 
 .footer__icons {
     margin-bottom: 10px;
+}
+.footer__icons > a {
+    margin-right: 4px;
 }
 
 .footer__inner--width{

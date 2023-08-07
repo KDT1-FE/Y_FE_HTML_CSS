@@ -28,163 +28,96 @@
   width: 16px;
   height: 24px;
 }
-
-.slide1 .rouge .image {
+.slide1-tile--rouge .image {
   background-image: url(../../assets/images/baccarat-rouge1.webp);
 }
-.slide1 .rouge:hover .image {
+.slide1-tile--rouge:hover .image {
   background-image: url(../../assets/images/baccarat-rouge2.webp);
 }
-.slide1 .aqua-media .image {
+.slide1-tile--aqua-media .image {
   background-image: url(../../assets/images/aqua-media-cologne-forte1.webp);
 }
-.slide1 .aqua-media:hover .image {
+.slide1-tile--aqua-media:hover .image {
   background-image: url(../../assets/images/aqua-media-cologne-forte2.webp);
 }
-.slide1 .number-724 .image {
+.slide1-tile--number-724 .image {
   background-image: url(../../assets/images/number-7241.webp);
 }
-.slide1 .number-724:hover .image {
+.slide1-tile--number-724:hover .image {
   background-image: url(../../assets/images/number-7242.webp);
 }
-.slide1 .rouge-extrait .image {
+.slide1-tile--rouge-extrait .image {
   background-image: url(../../assets/images/rouge-extrait1.webp);
 }
-.slide1 .rouge-extrait:hover .image {
+.slide1-tile--rouge-extrait:hover .image {
   background-image: url(../../assets/images/rouge-extrait2.webp);
 }
-.slide1 .rose .image {
+.slide1-tile--rose .image {
   background-image: url(../../assets/images/a-la-rose1.webp);
 }
-.slide1 .rose:hover .image {
+.slide1-tile--rose:hover .image {
   background-image: url(../../assets/images/a-la-rose2.webp);
 }
-.slide1 .lhomme .image {
+.slide1-tile--lhomme .image {
   background-image: url(../../assets/images/lhomme1.webp);
 }
-.slide1 .lhomme:hover .image {
+.slide1-tile--lhomme:hover .image {
   background-image: url(../../assets/images/lhomme2.webp);
 }
-.slide1 .gentle-gold .image {
+.slide1-tile--gentle-gold .image {
   background-image: url(../../assets/images/gentle-fluidity1.webp);
 }
-.slide1 .gentle-gold:hover .image {
+.slide1-tile--gentle-gold:hover .image {
   background-image: url(../../assets/images/gentle-fluidity2.webp);
 }
-.slide1 .gentle-silver .image {
+.slide1-tile--gentle-silver .image {
   background-image: url(../../assets/images/gentle-fluidity-silver1.webp);
 }
-.slide1 .gentle-silver:hover .image {
+.slide1-tile--gentle-silver:hover .image {
   background-image: url(../../assets/images/gentle-fluidity-silver2.webp);
 }
-.slide1 .universalis .image {
+.slide1-tile--universalis .image {
   background-image: url(../../assets/images/aqua-universalis1.webp);
 }
-.slide1 .universalis:hover .image {
+.slide1-tile--universalis:hover .image {
   background-image: url(../../assets/images/aqua-universalis2.webp);
 }
-.slide1 .vitae .image {
+.slide1-tile--vitae .image {
   background-image: url(../../assets/images/aqua-vitae1.webp);
 }
-.slide1 .vitae:hover .image {
+.slide1-tile--vitae:hover .image {
   background-image: url(../../assets/images/aqua-vitae2.webp);
 }
-.slide1 .celestia .image {
+.slide1-tile--celestia .image {
   background-image: url(../../assets/images/aqua-celestia1.webp);
 }
-.slide1 .celestia:hover .image {
+.slide1-tile--celestia:hover .image {
   background-image: url(../../assets/images/aqua-celestia2.webp);
 }
-.slide1 .soir .image {
+.slide1-tile--soir .image {
   background-image: url(../../assets/images/grand-soir1.webp);
 }
-.slide1 .soir:hover .image {
+.slide1-tile--soir:hover .image {
   background-image: url(../../assets/images/grand-soir2.webp);
 }
-.slide1 .matin .image {
+.slide1-tile--matin .image {
   background-image: url(../../assets/images/petit-matin1.webp);
 }
-.slide1 .matin:hover .image {
+.slide1-tile--matin:hover .image {
   background-image: url(../../assets/images/petit-matin2.webp);
 }
-.slide1 .universalis .info {
-  top: 457px;
-}
-.slide1 .universalis .price {
-  top: 477px;
-}
-.slide1 .universalis .info,
-.slide1 .universalis .price {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 14px;
-  color: #646467;
-  display: flex;
-  justify-content: center;
-  transition: 0.8s;
-  opacity: 1;
-}
-.slide1 .universalis .fragrance {
-  position: absolute;
-  top: 420px;
-  width: 100%;
-  height: 40px;
-  font-size: 1.2rem;
-  color: #646467;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide1 .rouge,
-.slide1 .aqua-media,
-.slide1 .number-724,
-.slide1 .rouge-extrait,
-.slide1 .rose,
-.slide1 .lhomme,
-.slide1 .gentle-gold,
-.slide1 .gentle-silver,
-.slide1 .universalis,
-.slide1 .vitae,
-.slide1 .celestia,
-.slide1 .soir,
-.slide1 .matin {
+.slide1-tile {
   position: relative;
   width: 364px;
   height: 555px;
 }
-.slide1 .rouge .image,
-.slide1 .aqua-media .image,
-.slide1 .number-724 .image,
-.slide1 .rouge-extrait .image,
-.slide1 .rose .image,
-.slide1 .lhomme .image,
-.slide1 .gentle-gold .image,
-.slide1 .gentle-silver .image,
-.slide1 .universalis .image,
-.slide1 .vitae .image,
-.slide1 .celestia .image,
-.slide1 .soir .image,
-.slide1 .matin .image {
+.slide1-tile .image {
   width: 100%;
   height: 364px;
   background-size: cover;
   transition: 0.8s;
 }
-.slide1 .rouge .name,
-.slide1 .aqua-media .name,
-.slide1 .number-724 .name,
-.slide1 .rouge-extrait .name,
-.slide1 .rose .name,
-.slide1 .lhomme .name,
-.slide1 .gentle-gold .name,
-.slide1 .gentle-silver .name,
-.slide1 .universalis .name,
-.slide1 .vitae .name,
-.slide1 .celestia .name,
-.slide1 .soir .name,
-.slide1 .matin .name {
+.slide1-tile .name {
   position: absolute;
   top: 346px;
   width: 100%;
@@ -197,73 +130,29 @@
   transition: 0.8s;
   opacity: 1;
 }
-.slide1 .rouge:hover .name,
-.slide1 .aqua-media:hover .name,
-.slide1 .number-724:hover .name,
-.slide1 .rouge-extrait:hover .name,
-.slide1 .rose:hover .name,
-.slide1 .lhomme:hover .name,
-.slide1 .gentle-gold:hover .name,
-.slide1 .gentle-silver:hover .name,
-.slide1 .universalis:hover .name,
-.slide1 .vitae:hover .name,
-.slide1 .celestia:hover .name,
-.slide1 .soir:hover .name,
-.slide1 .matin:hover .name {
+.slide1-tile--rouge:hover .name,
+.slide1-tile--aqua-media:hover .name,
+.slide1-tile--number-724:hover .name,
+.slide1-tile--rouge-extrait:hover .name,
+.slide1-tile--rose:hover .name,
+.slide1-tile--lhomme:hover .name,
+.slide1-tile--gentle-gold:hover .name,
+.slide1-tile--gentle-silver:hover .name,
+.slide1-tile--universalis:hover .name,
+.slide1-tile--vitae:hover .name,
+.slide1-tile--celestia:hover .name,
+.slide1-tile--soir:hover .name,
+.slide1-tile--matin:hover .name {
   opacity: 0;
 }
-.slide1 .rouge .info,
-.slide1 .aqua-media .info,
-.slide1 .number-724 .info,
-.slide1 .rouge-extrait .info,
-.slide1 .rose .info,
-.slide1 .lhomme .info,
-.slide1 .gentle-gold .info,
-.slide1 .gentle-silver .info,
-.slide1 .vitae .info,
-.slide1 .celestia .info,
-.slide1 .soir .info,
-.slide1 .matin .info {
+.slide1-tile .info {
   top: 422px;
 }
-.slide1 .rouge .price,
-.slide1 .aqua-media .price,
-.slide1 .number-724 .price,
-.slide1 .rouge-extrait .price,
-.slide1 .rose .price,
-.slide1 .lhomme .price,
-.slide1 .gentle-gold .price,
-.slide1 .gentle-silver .price,
-.slide1 .vitae .price,
-.slide1 .celestia .price,
-.slide1 .soir .price,
-.slide1 .matin .price {
+.slide1-tile .price {
   top: 442px;
 }
-.slide1 .rouge .info,
-.slide1 .rouge .price,
-.slide1 .aqua-media .info,
-.slide1 .aqua-media .price,
-.slide1 .number-724 .info,
-.slide1 .number-724 .price,
-.slide1 .rouge-extrait .info,
-.slide1 .rouge-extrait .price,
-.slide1 .rose .info,
-.slide1 .rose .price,
-.slide1 .lhomme .info,
-.slide1 .lhomme .price,
-.slide1 .gentle-gold .info,
-.slide1 .gentle-gold .price,
-.slide1 .gentle-silver .info,
-.slide1 .gentle-silver .price,
-.slide1 .vitae .info,
-.slide1 .vitae .price,
-.slide1 .celestia .info,
-.slide1 .celestia .price,
-.slide1 .soir .info,
-.slide1 .soir .price,
-.slide1 .matin .info,
-.slide1 .matin .price {
+.slide1-tile .info,
+.slide1-tile .price {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -274,47 +163,54 @@
   transition: 0.8s;
   opacity: 1;
 }
-.slide1 .rouge:hover .info,
-.slide1 .rouge:hover .price,
-.slide1 .aqua-media:hover .info,
-.slide1 .aqua-media:hover .price,
-.slide1 .number-724:hover .info,
-.slide1 .number-724:hover .price,
-.slide1 .number-724:hover .price,
-.slide1 .rouge-extrait:hover .info,
-.slide1 .rouge-extrait:hover .price,
-.slide1 .rose:hover .info,
-.slide1 .rose:hover .price,
-.slide1 .lhomme:hover .info,
-.slide1 .lhomme:hover .price,
-.slide1 .gentle-gold:hover .info,
-.slide1 .gentle-gold:hover .price,
-.slide1 .gentle-silver:hover .info,
-.slide1 .gentle-silver:hover .price,
-.slide1 .universalis:hover .info,
-.slide1 .universalis:hover .price,
-.slide1 .vitae:hover .info,
-.slide1 .vitae:hover .price,
-.slide1 .celestia:hover .info,
-.slide1 .celestia:hover .price,
-.slide1 .soir:hover .info,
-.slide1 .soir:hover .price,
-.slide1 .matin:hover .info,
-.slide1 .matin:hover .price {
+.slide1-tile--rouge:hover .info,
+.slide1-tile--rouge:hover .price,
+.slide1-tile--aqua-media:hover .info,
+.slide1-tile--aqua-media:hover .price,
+.slide1-tile--number-724:hover .info,
+.slide1-tile--number-724:hover .price,
+.slide1-tile--number-724:hover .price,
+.slide1-tile--rouge-extrait:hover .info,
+.slide1-tile--rouge-extrait:hover .price,
+.slide1-tile--rose:hover .info,
+.slide1-tile--rose:hover .price,
+.slide1-tile--lhomme:hover .info,
+.slide1-tile--lhomme:hover .price,
+.slide1-tile--gentle-gold:hover .info,
+.slide1-tile--gentle-gold:hover .price,
+.slide1-tile--gentle-silver:hover .info,
+.slide1-tile--gentle-silver:hover .price,
+.slide1-tile--universalis:hover .info,
+.slide1-tile--universalis:hover .price,
+.slide1-tile--vitae:hover .info,
+.slide1-tile--vitae:hover .price,
+.slide1-tile--celestia:hover .info,
+.slide1-tile--celestia:hover .price,
+.slide1-tile--soir:hover .info,
+.slide1-tile--soir:hover .price,
+.slide1-tile--matin:hover .info,
+.slide1-tile--matin:hover .price {
   opacity: 0;
 }
-.slide1 .rouge .fragrance,
-.slide1 .aqua-media .fragrance,
-.slide1 .number-724 .fragrance,
-.slide1 .rouge-extrait .fragrance,
-.slide1 .rose .fragrance,
-.slide1 .lhomme .fragrance,
-.slide1 .gentle-gold .fragrance,
-.slide1 .gentle-silver .fragrance,
-.slide1 .vitae .fragrance,
-.slide1 .celestia .fragrance,
-.slide1 .soir .fragrance,
-.slide1 .matin .fragrance {
+.slide1-tile--universalis .info {
+  top: 457px;
+}
+.slide1-tile--universalis .price {
+  top: 477px;
+}
+.slide1-tile--universalis .info,
+.slide1-tile--universalis .price {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.slide1-tile .fragrance {
   position: absolute;
   top: 400px;
   width: 100%;
@@ -325,32 +221,37 @@
   justify-content: center;
   align-items: center;
 }
-
-.slide1 .rouge .floral,
-.slide1 .rouge-extrait .floral,
-.slide1 .universalis .citrus,
-.slide1 .vitae .floral,
-.slide1 .celestia .citrus,
-.slide1 .matin .citrus {
+.slide1-tile--universalis .fragrance {
+  position: absolute;
+  top: 420px;
+  width: 100%;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide1-tile .fragrance4 {
   position: relative;
   opacity: 0;
 }
-.slide1 .rouge:hover .floral,
-.slide1 .rouge-extrait:hover .floral,
-.slide1 .universalis:hover .citrus,
-.slide1 .vitae:hover .floral,
-.slide1 .celestia:hover .citrus,
-.slide1 .matin:hover .citrus {
+.slide1-tile--rouge:hover .fragrance4,
+.slide1-tile--rouge-extrait:hover .fragrance4,
+.slide1-tile--universalis:hover .fragrance4,
+.slide1-tile--vitae:hover .fragrance4,
+.slide1-tile--celestia:hover .fragrance4,
+.slide1-tile--matin:hover .fragrance4 {
   opacity: 1;
   transition: 0.3s;
   transition-delay: 0.3s;
 }
-.slide1 .rouge:hover .floral::after,
-.slide1 .rouge-extrait:hover .floral::after,
-.slide1 .universalis:hover .citrus::after,
-.slide1 .vitae:hover .floral::after,
-.slide1 .celestia:hover .citrus::after,
-.slide1 .matin:hover .citrus::after {
+.slide1-tile--rouge:hover .fragrance4::after,
+.slide1-tile--rouge-extrait:hover .fragrance4::after,
+.slide1-tile--universalis:hover .fragrance4::after,
+.slide1-tile--vitae:hover .fragrance4::after,
+.slide1-tile--celestia:hover .fragrance4::after,
+.slide1-tile--matin:hover .fragrance4::after {
   content: '';
   position: absolute;
   top: 7px;
@@ -362,31 +263,26 @@
   transition: 0.2s;
   transition-delay: 0.1s;
 }
-.slide1 .rouge .ambery,
-.slide1 .rouge-extrait .ambery,
-.slide1 .universalis .woody,
-.slide1 .vitae .citrus,
-.slide1 .celestia .floral,
-.slide1 .matin .floral {
+.slide1-tile .fragrance5 {
   position: relative;
   opacity: 0;
 }
-.slide1 .rouge:hover .ambery,
-.slide1 .rouge-extrait:hover .ambery,
-.slide1 .universalis:hover .woody,
-.slide1 .vitae:hover .citrus,
-.slide1 .celestia:hover .floral,
-.slide1 .matin:hover .floral {
+.slide1-tile--rouge:hover .fragrance5,
+.slide1-tile--rouge-extrait:hover .fragrance5,
+.slide1-tile--universalis:hover .fragrance5,
+.slide1-tile--vitae:hover .fragrance5,
+.slide1-tile--celestia:hover .fragrance5,
+.slide1-tile--matin:hover .fragrance5 {
   opacity: 1;
   transition: 0.3s;
   transition-delay: 0.55s;
 }
-.slide1 .rouge:hover .ambery::after,
-.slide1 .rouge-extrait:hover .ambery::after,
-.slide1 .universalis:hover .woody::after,
-.slide1 .vitae:hover .citrus::after,
-.slide1 .celestia:hover .floral::after,
-.slide1 .matin:hover .floral::after {
+.slide1-tile--rouge:hover .fragrance5::after,
+.slide1-tile--rouge-extrait:hover .fragrance5::after,
+.slide1-tile--universalis:hover .fragrance5::after,
+.slide1-tile--vitae:hover .fragrance5::after,
+.slide1-tile--celestia:hover .fragrance5::after,
+.slide1-tile--matin:hover .fragrance5::after {
   content: '';
   position: absolute;
   top: 7px;
@@ -398,50 +294,40 @@
   transition: 0.2s;
   transition-delay: 0.35s;
 }
-.slide1 .rouge .woody,
-.slide1 .rouge-extrait .woody,
-.slide1 .universalis .musky,
-.slide1 .vitae .woody,
-.slide1 .celestia .musky,
-.slide1 .matin .woody {
+.slide1-tile .fragrance6 {
   opacity: 0;
 }
-.slide1 .rouge:hover .woody,
-.slide1 .rouge-extrait:hover .woody,
-.slide1 .universalis:hover .musky,
-.slide1 .vitae:hover .woody,
-.slide1 .celestia:hover .musky,
-.slide1 .matin:hover .woody {
+.slide1-tile--rouge:hover .fragrance6,
+.slide1-tile--rouge-extrait:hover .fragrance6,
+.slide1-tile--universalis:hover .fragrance6,
+.slide1-tile--vitae:hover .fragrance6,
+.slide1-tile--celestia:hover .fragrance6,
+.slide1-tile--matin:hover .fragrance6 {
   opacity: 1;
   transition: 0.3s;
   transition-delay: 0.75s;
 }
 
-.slide1 .aqua-media .herbal,
-.slide1 .number-724 .floral,
-.slide1 .rose .floral,
-.slide1 .gentle-gold .ambery,
-.slide1 .gentle-silver .aromatic,
-.slide1 .soir .woody {
+.slide1-tile .fragrance2 {
   position: relative;
   opacity: 0;
 }
-.slide1 .aqua-media:hover .herbal,
-.slide1 .number-724:hover .floral,
-.slide1 .rose:hover .floral,
-.slide1 .gentle-gold:hover .ambery,
-.slide1 .gentle-silver:hover .aromatic,
-.slide1 .soir:hover .woody {
+.slide1-tile--aqua-media:hover .fragrance2,
+.slide1-tile--number-724:hover .fragrance2,
+.slide1-tile--rose:hover .fragrance2,
+.slide1-tile--gentle-gold:hover .fragrance2,
+.slide1-tile--gentle-silver:hover .fragrance2,
+.slide1-tile--soir:hover .fragrance2 {
   opacity: 1;
   transition: 0.3s;
   transition-delay: 0.3s;
 }
-.slide1 .aqua-media:hover .herbal::after,
-.slide1 .number-724:hover .floral::after,
-.slide1 .rose:hover .floral::after,
-.slide1 .gentle-gold:hover .ambery::after,
-.slide1 .gentle-silver:hover .aromatic::after,
-.slide1 .soir:hover .woody::after {
+.slide1-tile--aqua-media:hover .fragrance2::after,
+.slide1-tile--number-724:hover .fragrance2::after,
+.slide1-tile--rose:hover .fragrance2::after,
+.slide1-tile--gentle-gold:hover .fragrance2::after,
+.slide1-tile--gentle-silver:hover .fragrance2::after,
+.slide1-tile--soir:hover .fragrance2::after {
   content: '';
   position: absolute;
   top: 7px;
@@ -453,30 +339,29 @@
   transition: 0.2s;
   transition-delay: 0.1s;
 }
-.slide1 .aqua-media .citrus,
-.slide1 .number-724 .musky,
-.slide1 .rose .musky,
-.slide1 .gentle-gold .musky,
-.slide1 .gentle-silver .woody,
-.slide1 .soir .ambery {
+.slide1-tile--aqua-media .fragrance3,
+.slide1-tile--number-724 .fragrance3,
+.slide1-tile--rose .fragrance3,
+.slide1-tile--gentle-gold .fragrance3,
+.slide1-tile--gentle-silver .fragrance3,
+.slide1-tile--soir .fragrance3 {
   opacity: 0;
 }
-.slide1 .aqua-media:hover .citrus,
-.slide1 .number-724:hover .musky,
-.slide1 .rose:hover .musky,
-.slide1 .gentle-gold:hover .musky,
-.slide1 .gentle-silver:hover .woody,
-.slide1 .soir:hover .ambery {
+.slide1-tile--aqua-media:hover .fragrance3,
+.slide1-tile--number-724:hover .fragrance3,
+.slide1-tile--rose:hover .fragrance3,
+.slide1-tile--gentle-gold:hover .fragrance3,
+.slide1-tile--gentle-silver:hover .fragrance3,
+.slide1-tile--soir:hover .fragrance3 {
   opacity: 1;
   transition: 0.3s;
   transition-delay: 0.55s;
 }
-
-.slide1 .lhomme .woody {
+.slide1-tile .fragrance1 {
   position: relative;
   opacity: 0;
 }
-.slide1 .lhomme:hover .woody {
+.slide1-tile--lhomme:hover .fragrance1 {
   opacity: 1;
   transition: 0.3s;
   transition-delay: 0.3s;

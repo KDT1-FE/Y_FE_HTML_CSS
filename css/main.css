@@ -24,28 +24,32 @@ body {
 
 main {
     width: 100%;
+    height: 100%;
 }
 
 button {
-    appearance: auto;
-    text-rendering: auto;
-    color: #111;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    box-sizing: border-box;
+    padding: 0.8rem 1.2rem;
+
+    white-space: nowrap;
+
+    border: 0.07rem solid #e5e5e5;
+    border-radius: 1.5rem;
+    cursor: pointer;
     background-color: transparent;
-    margin: 0em;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-image: initial;
+}
+
+.section__bottom {
+    display: flex;
+    justify-content: center;
+
+    margin: 1.5rem;
+}
+
+.bottom--button {
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: 1rem 2rem;
 }
 
 a {
@@ -54,21 +58,8 @@ a {
     margin: 0;
 }
 
-img {
-    object-fit: contain;
-}
-
 input:focus {
     outline: none;
-}
-
-/* ---------------------------------------
-            SWIPER CSS
---------------------------------------- */
-.main__wrapper {
-    width: 75%;
-
-    margin: 0 auto;
 }
 
 .background-logo {
@@ -78,13 +69,34 @@ input:focus {
     cursor: pointer;
 }
 
+/* ---------------------------------------
+            SWIPER CSS
+--------------------------------------- */
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+    height: 100%;
+
+    margin: 0 auto;
+    gap: 5.5rem;
+}
+
 .swiper-container {
     width: 100%;
+    height: 100%;
 
     overflow: hidden;
 }
 
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
 .swiper-slide {
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -92,9 +104,20 @@ input:focus {
 .slide__image {
     width: 100%;
     border-radius: 0.7rem;
+}
+
+.slide__image--inner {
+    width: 100%;
+    height: 100%;
+
     object-fit: cover;
 }
+
 .left-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 3rem;
     height: 3rem;
 
@@ -112,8 +135,8 @@ input:focus {
 }
 
 .left-btn::before {
-    width: 0.8rem;
-    height: 0.5rem;
+    width: 1rem;
+    height: 1rem;
 
     content: '다음';
     color: transparent;
@@ -125,6 +148,10 @@ input:focus {
 }
 
 .right-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 3rem;
     height: 3rem;
 
@@ -142,8 +169,8 @@ input:focus {
 }
 
 .right-btn::before {
-    width: 0.8rem;
-    height: 0.5rem;
+    width: 1rem;
+    height: 1rem;
 
     content: '다음';
     color: transparent;
@@ -152,6 +179,90 @@ input:focus {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+/* ---------------------------------------
+            TOP_BANNER_BUTTON
+--------------------------------------- */
+
+.banner--title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.banner--title-top {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.banner--title-bottom {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+
+    color: hsla(0, 0%, 7%, 0.5);
+}
+
+.banner--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.banner--buttons {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 1rem;
+    gap: 1rem;
+
+    font-weight: 600;
+}
+
+.banner--icon:first-child {
+    background-color: #333;
+    color: #fff;
+}
+
+.banner--container {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 2rem;
+
+    position: relative;
+}
+
+.item--block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    border: 0.09rem solid #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.item--info-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 @media (max-width: 800px) {

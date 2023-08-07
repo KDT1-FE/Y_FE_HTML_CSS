@@ -29,12 +29,12 @@ var swiper2 = new Swiper('.shopping__container', {
         clickable: true,
     },
     navigation: {
-        prevEl: '.left-btn-two',
-        nextEl: '.right-btn-two',
+        prevEl: '.shopping__button--left',
+        nextEl: '.shopping__button--right',
     },
 });
 
-var swiper3 = new Swiper('.mySwiper3', {
+var swiper3 = new Swiper('.trip__container', {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
@@ -47,12 +47,12 @@ var swiper3 = new Swiper('.mySwiper3', {
         clickable: true,
     },
     navigation: {
-        prevEl: '.left-btn-three',
-        nextEl: '.right-btn-three',
+        prevEl: '.trip__button--left',
+        nextEl: '.trip__button--right',
     },
 });
 
-var swiper4 = new Swiper('.mySwiper4', {
+var swiper4 = new Swiper('.movie__container', {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 4,

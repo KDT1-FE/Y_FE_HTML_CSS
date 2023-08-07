@@ -1,0 +1,45 @@
+.target-value-banner {
+  padding-top: 2.6vw;
+}
+
+.target-value-li {
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.target-value-text {
+  padding: 0 10px;
+}
+
+.line-divided::after {
+  content: "";
+
+  width: 1px;
+  height: 80px;
+
+  display: block;
+  background: #f9f9f9;
+  transform: translateY(-50%);
+
+  position: absolute;
+  top: 50%;
+  left: -12px;
+}
+
+.line-divided:first-of-type::after {
+  width: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .line-divided:after {
+    width: 150px;
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    top: -12px;
+    left: 50%;
+
+    align-self: center;
+  }
+}

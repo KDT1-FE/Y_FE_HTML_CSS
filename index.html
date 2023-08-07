@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney+</title>
+    <link
+      rel="icon"
+      href="./assets/icons/favicon-32x32.3699f19f7fdff1a556c0953c12fb883f.png"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/popula.css" />
+    <link rel="stylesheet" href="./styles/targetValue.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/benefit.css" />
+    <link rel="stylesheet" href="./styles/questions.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <header id="header" class="header hidden-header">
+      <nav class="navigation">
+        <a href="/" id="header-logo" class="hidden-item">
+          <img class="disney-icon" src="./assets/images/logo.svg" />
+        </a>
+        <ul class="navigation-ul">
+          <li>
+            <a id="header-signup" class="sign-up btn hidden-item" href="/"
+              >지금 가입</a
+            >
+          </li>
+          <li>
+            <a class="sign-in btn" href="/">로그인</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main">
+        <div class="main-box">
+          <img class="main-logo" src="./assets/images/logo.svg" />
+          <h1>
+            이 모든 이야기가 여기에<br />
+            지금 스트리밍 중
+          </h1>
+          <p>구독을 시작하려면 이메일 주소를 입력하세요.</p>
+          <form class="email-form">
+            <input class="email-input" type="email" placeholder="이메일 주소" />
+            <button class="email-button">구독하기</button>
+          </form>
+          <p class="mian-price">
+            *유료 멤버십 월 9,900원 / 연 99,000원<br />
+            *연간 구독 시 최대 16% 할인된 가격
+          </p>
+        </div>
+        <div class="slide">
+          <input type="radio" name="img_select" id="select_box1" checked />
+          <input type="radio" name="img_select" id="select_box2" />
+          <input type="radio" name="img_select" id="select_box3" />
+          <input type="radio" name="img_select" id="select_box4" />
+          <div class="slide-nav">
+            <label class="label1" for="select_box1"></label>
+            <label class="label2" for="select_box2"></label>
+            <label class="label3" for="select_box3"></label>
+            <label class="label4" for="select_box4"></label>
+          </div>
+          <button class="slide-btn"></button>
+          <div>
+            <ul id="imgbox">
+              <li class="select_img select1">
+                <img
+                  class="background only-mobile"
+                  src="./assets/images/main/revenant_m.jpeg"
+                />
+                <img
+                  class="background only-desktop"
+                  src="./assets/images/main/revenant_d.jpeg"
+                />
+                <div class="slide-text-box">
+                  <p class="slide-text">악귀</p>
+                  <p class="slide-text">지금 스트리밍 중</p>
+                </div>
+              </li>
+              <li class="select_img select2">
+                <img
+                  class="background only-mobile"
+                  src="./assets/images/main/avatar2_m.jpeg"
+                />
+                <img
+                  class="background only-desktop"
+                  src="./assets/images/main/avatar_d.jpeg"
+                />
+                <div class="slide-text-box">
+                  <p class="slide-text">아바타: 물의 길</p>
+                  <p class="slide-text">지금 스트리밍 중</p>
+                </div>
+              </li>
+              <li class="select_img select3">
+                <img
+                  class="background only-mobile"
+                  src="./assets/images/main/invasion_m.jpeg"
+                />
+                <img
+                  class="background only-desktop"
+                  src="./assets/images/main/invasion_d.jpeg"
+                />
+                <div class="slide-text-box">
+                  <p class="slide-text">시크릿 인베이젼</p>
+                  <p class="slide-text">지금 스트리밍 중</p>
+                </div>
+              </li>
+              <li class="select_img select4">
+                <img
+                  class="background only-mobile"
+                  src="./assets/images/main/the_zone_m.jpeg"
+                />
+                <img
+                  class="background only-desktop"
+                  src="./assets/images/main/the_zone_d.jpeg"
+                />
+                <div class="slide-text-box">
+                  <p class="slide-text">더 존: 버텨야 산다 2</p>
+                  <p class="slide-text">지금 스트리밍 중</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="center">
+        <h2 class="popula-title">인기 콘텐츠</h2>
+        <ul class="popula-box middle grid-list three-column mobile-two-column">
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/1.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/2.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/3.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/4.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/5.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/6.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/7.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/8.png" />
+          </li>
+          <li class="grid-item">
+            <img class="popula-img" src="./assets/images/popular/9.png" />
+          </li>
+        </ul>
+      </section>
+      <section class="center target-value-banner">
+        <ul class="grid-list four-column mobile-one-column">
+          <li class="line-divided grid-item target-value-li">
+            <p class="h3 target-value-text">1,200편 이상의 영화</p>
+            <p>어워드 수상에 빛나는 블록버스터 및 단독 공개작 포함</p>
+          </li>
+          <li class="line-divided grid-item target-value-li">
+            <p class="h3 target-value-text">20,000편 이상의 에피소드</p>
+            <p>코미디, 드라마, 범죄 실화 등 다양한 장르</p>
+          </li>
+          <li class="line-divided grid-item target-value-li">
+            <p class="h3 target-value-text">신규 및 단독 공개 콘텐츠</p>
+            <p>매주 새로운 영화 및 시리즈 공개</p>
+          </li>
+          <li class="line-divided grid-item target-value-li">
+            <p class="h3 target-value-text">최대 4대 기기 동시 스트리밍</p>
+            <p>원하는 기기에서 원하는 방식으로 시청</p>
+          </li>
+        </ul>
+      </section>
+      <section class="banner-container">
+        <img class="banner-img" src="./assets/images/banner.jpeg" />
+        <div class="banner-text-box">
+          <h2>
+            취향에 따라 골라보는 다양한<br />
+            콘텐츠가 모두 한자리에
+          </h2>
+          <p class="text-medium">
+            디즈니+는 디즈니, 픽사, 마블, 스타워즈, 내셔널지오그래픽, Star의
+            최고 콘텐츠들을 모두 한곳에 모아 제공합니다.
+          </p>
+        </div>
+      </section>
+      <section class="original center">
+        <h2>디즈니+ 오리지널과 블록버스터 영화</h2>
+        <p>
+          다른 어디에서도 볼 수 없는 디즈니+ 오리지널을 만나보세요. 디즈니,
+          픽사, 마블, 스타워즈의 최고 인기 영화도 마음껏 즐길 수 있습니다.
+        </p>
+        <ul class="grid-list middle three-column mobile-two-column">
+          <li class="grid-item">
+            <img src="./assets/images/original/1.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/2.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/3.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/4.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/5.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/6.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/7.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/8.png" />
+          </li>
+          <li class="grid-item">
+            <img src="./assets/images/original/9.png" />
+          </li>
+        </ul>
+      </section>
+      <section class="benefit">
+        <ul class="grid-list three-column mobile-one-column">
+          <li class="grid-item">
+            <img class="benefit-img" src="./assets/icons/benefits/1.png" />
+            <h4>취향에 따라 골라보는 다양한 콘텐츠</h4>
+            <p class="text-medium">
+              디즈니, 픽사, 마블, 스타워즈, 내셔널지오그래픽, Star의 콘텐츠를 다
+              함께 즐겨보세요. 인기 영화, 몰아보기 시리즈, 디즈니+와 Star에서
+              독점 공개하는 오리지널까지, 원하는 만큼 볼 수 있습니다. 완결
+              시리즈는 물론 오리지널 신작과 최신 히트작도 언제든지 시청하세요.
+            </p>
+          </li>
+          <li class="grid-item">
+            <img class="benefit-img" src="./assets/icons/benefits/2.png" />
+            <h4>최대 4대의 기기에서 동시 스트리밍</h4>
+            <p class="text-medium">
+              하나의 스트리밍 서비스로 모두가 각자 취향에 맞는 콘텐츠를 즐길 수
+              있습니다. 원하는 기기에서 원하는 방식으로 시청하세요. 최대 4대의
+              기기에서 동시 스트리밍하는 그 시간, 모두가 행복해집니다.
+            </p>
+          </li>
+          <li class="grid-item">
+            <img class="benefit-img" src="./assets/icons/benefits/3.svg" />
+            <h4>다양한 콘텐츠 마음껏 저장 가능</h4>
+            <p class="text-medium">
+              최대 10대의 기기에서 원하는 콘텐츠를 자유롭게 저장하세요. 100편이
+              넘는 작품을 고화질 4K UHD 및 HDR로 시청할 수 있습니다. 강력한 시청
+              제한 기능으로 온 가족이 안전하게 이용할 수 있으며, 서로 떨어져
+              있을 때에도 GroupWatch로 함께 스트리밍할 수 있습니다.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="devices center">
+        <h2>즐겨 사용하는 기기에서 시청 가능</h2>
+        <p class="text-medium">TV, 컴퓨터, 스마트폰 & 태블릿, 게임 콘솔</p>
+        <ul class="grid-list four-column mobile-two-column">
+          <li class="grid-item">
+            <img src="./assets/icons/device/1.png" />
+            <h3>TV</h3>
+            <p class="text-medium">
+              Amazon Fire TV (로그인 전용)<br />
+              Android TV<br />
+              Apple TV<br />
+              Chromecast<br />
+              LG TV<br />
+              삼성 TV<br />
+              Hisense<br />
+              Panasonic
+            </p>
+          </li>
+          <li class="grid-item">
+            <img src="./assets/icons/device/2.png" />
+            <h3>컴퓨터</h3>
+            <p class="text-medium">
+              Chrome OS<br />
+              MacOS<br />
+              Windows PC
+            </p>
+          </li>
+          <li class="grid-item">
+            <img src="./assets/icons/device/3.png" />
+            <h3>스마트폰 & 태블릿</h3>
+            <p class="text-medium">
+              Amazon Fire 태블릿 (로그인 전용)<br />
+              Android 스마트폰 & 태블릿<br />
+              iPhone & iPad
+            </p>
+          </li>
+          <li class="grid-item">
+            <img src="./assets/icons/device/4.png" />
+            <h3>게임 콘솔</h3>
+            <p class="text-medium">
+              PS4 & PS5<br />
+              Xbox One<br />
+              Xbox 시리즈 X<br />
+              Xbox 시리즈 S
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="questions center">
+        <h2>자주 묻는 질문</h2>
+        <div id="question1" class="accordion-container">
+          <button class="accordion-btn h5">디즈니+는 무엇인가요</button>
+          <p class="accordion-child">
+            디즈니+는 디즈니, 픽사, 마블, 스타워즈, 내셔널지오그래픽, Star의
+            콘텐츠를 모두 즐길 수 있는 곳입니다. 최신 공개작부터 시대를 초월한
+            명작과 독점 오리지널에 이르기까지 다양하고 풍성한 콘텐츠를 광고 없이
+            스트리밍할 수 있습니다.
+          </p>
+        </div>
+        <div id="question2" class="accordion-container">
+          <button class="accordion-btn h5">
+            디즈니+에서 어떤 콘텐츠를 시청할 수 있나요
+          </button>
+          <ul class="accordion-child">
+            <li>
+              <p>디즈니+는 새로운 콘텐츠를 계속해서 추가하고 있습니다.</p>
+            </li>
+            <li><p>- 최신 공개작과 시대를 초월한 명작</p></li>
+            <li><p>- 독점 공개하는 새로운 오리지널 영화와 시리즈</p></li>
+            <li>
+              <p>- 흥미진진한 스페셜과 기간 한정 스트리밍되는 특별 콘텐츠</p>
+            </li>
+            <li>
+              <p>
+                - 그때 그 시절 추억의 작품과 인기 시리즈의 지난 시즌 에피소드
+              </p>
+            </li>
+            <li>
+              <p>
+                - 스카이워커 사가 전체와 대부분의 마블 시네마틱 유니버스 작품
+              </p>
+            </li>
+            <li><p>- 인기 단편과 실험적인 단편</p></li>
+            <li><p>- 다큐멘터리, 리얼리티 시리즈 등</p></li>
+          </ul>
+        </div>
+        <div id="question3" class="accordion-container">
+          <button class="accordion-btn h5">
+            디즈니+를 어디에서 시청할 수 있나요
+          </button>
+          <p class="accordion-child">
+            디즈니+ 앱은 모바일 기기, 웹 브라우저, 게임 콘솔, 셋톱박스, 스마트
+            TV에서 이용할 수 있습니다. 지원되는 기기의 전체 목록을 보려면 여기를
+            클릭하세요.
+          </p>
+        </div>
+        <div id="question4" class="accordion-container">
+          <button class="accordion-btn h5">
+            디즈니+를 얼마에 이용할 수 있나요
+          </button>
+          <p class="accordion-child">
+            월 9,900원 또는 연 99,000원으로 디즈니+를 이용하실 수 있습니다.
+          </p>
+        </div>
+        <div id="question5" class="accordion-container">
+          <button class="accordion-btn h5">디즈니+는 무엇을 제공하나요</button>
+          <ul class="accordion-child">
+            <li><p>디즈니+는 다음을 제공합니다.</p></li>
+            <li><p>- 광고 없는 탁월한 시청 경험</p></li>
+            <li><p>- 최대 10대의 기기에 원하는 콘텐츠 마음껏 저장</p></li>
+            <li><p>- 300편이 넘는 작품 고화질 4K UHD 및 HDR로 시청</p></li>
+            <li><p>- 추가 요금 없이 최대 4대의 기기에서 동시 스트리밍</p></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img class="footer-logo" src="./assets/images/logo.svg" />
+      <ul class="footer-text footer-ul">
+        <li>
+          <span class="language-selector">
+            <select class="footer-text footer-select">
+              <option value="/en-kr/">English</option>
+              <option selected value="/ko-kr/">한국어</option>
+            </select>
+          </span>
+        </li>
+        <li><a class="footer-a">디즈니+ 이용약관</a></li>
+        <li><a class="footer-a">개인정보 처리방침</a></li>
+        <li><a class="footer-a">개인정보 처리방침 부속서</a></li>
+        <li><a class="footer-a">관심 기반 광고</a></li>
+        <li><a class="footer-a">고객센터</a></li>
+        <li><a class="footer-a">다양한 시청 방법</a></li>
+        <li><a class="footer-a">디즈니+ 소개</a></li>
+        <li><a class="footer-a">통신판매업 사업자정보확인</a></li>
+      </ul>
+      <p class="footer-text">
+        월트디즈니컴퍼니코리아 유한책임회사 | 대표자: 김소연 | 서울특별시 강남구
+        테헤란로 152, 7층 (우편번호: 06236) | Email: help@disneyplus.kr |
+        연락처: 080 822 1416 | 사업자등록번호: 220-81-03347 | 통신판매업
+        신고번호: 제2021-서울강남-05456호 |
+        <br />
+        비디오물배급업 신고번호: 제2016-16호 | 호스팅서비스 사업자: NSOne
+        <br />
+        <br />
+        디즈니+의 콘텐츠는 서비스 여부에 따라 달라질 수 있습니다.
+        <br />
+        © 2022 Disney and its related entities. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+body {
+  font-family: Seol-Sans, sans-serif;
+  margin: 0;
+  background-color: #050714;
+
+  color: silver;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+section {
+  padding: 5.6vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #f9f9f9;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3 {
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.h1,
+h1 {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.h2,
+h2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.h3,
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 32px;
+}
+
+.h4,
+h4 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.h5,
+h5 {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+.h2,
+.h3,
+.h4,
+h2,
+h3,
+h4 {
+  margin-bottom: 16px;
+}
+
+.h4,
+.h5,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+.grid-item h3,
+.grid-item h4 {
+  margin-top: 20px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.middle {
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-left: 0;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-medium {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .h2,
+  .h3,
+  .h4,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .h2,
+  .h3,
+  .h4,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 16px;
+  }
+
+  .h1,
+  h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .h2,
+  h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .h3,
+  h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .h4,
+  h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .medium,
+  .text-medium {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  .h2,
+  .h3,
+  .h4,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 24px;
+  }
+
+  .h1,
+  h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .h2,
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .h3,
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .h4,
+  h4 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .h5,
+  h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .medium,
+  .text-medium {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.mobile-two-column .grid-item {
+  width: calc(50% - 12px);
+}
+
+.mobile-one-column .grid-item {
+  width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  .four-column .grid-item {
+    width: calc(25% - 18px);
+  }
+  .three-column .grid-item {
+    width: calc(33.3% - 16px);
+  }
+}

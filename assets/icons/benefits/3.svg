@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Download icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SB3---Dark" transform="translate(-1000.000000, -3784.000000)" stroke="#ADAFBF">
+            <g id="Download-icon" transform="translate(1001.000000, 3785.000000)">
+                <circle id="Oval-Copy-4" stroke-width="2" cx="31" cy="31" r="31"></circle>
+                <g id="Group-7" transform="translate(25.000000, 22.000000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                    <path d="M6,0.512820513 L6,18.8562197" id="Line"></path>
+                    <path d="M13,13.8461538 L7,18.8562197" id="Line"></path>
+                    <path d="M6,13.8461538 L4.4408921e-15,18.8562197" id="Line-Copy" transform="translate(3.000000, 16.410256) scale(-1, 1) translate(-3.000000, -16.410256) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

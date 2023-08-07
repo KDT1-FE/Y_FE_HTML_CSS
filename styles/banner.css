@@ -1,0 +1,25 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+}
+
+.banner-img {
+  display: block;
+  height: auto;
+  max-width: 50%;
+}
+
+.banner-text-box {
+  padding: 0 2vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-box {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner-img {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}

@@ -5,7 +5,6 @@
     position: relative;
 }
 
-/* 전체 */
 .header-content{
     display: flex;
     flex-direction: column;
@@ -46,7 +45,7 @@
     background-color: #f8f8f8;
 }
 
-.search-bar-form input{
+.search-bar-input{
     outline: none;
     border: 0;
     width: 322px;
@@ -65,7 +64,7 @@
     align-items: center;
 }
 
-.header-utils a{
+.header-utils__link{
     font-size: 12px;
 }
 
@@ -79,7 +78,7 @@
 
 }
 
-.header-utils a:hover{
+.header-utils__link:hover{
     color: #ed234b;
 }
 
@@ -121,48 +120,6 @@
 .category-nav__menu-opener > svg{
     margin-right: 9px;
 }
-
-
-.focus-nav-list{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    margin-left: 16px;
-    padding: 0;
-}
-
-.focus-nav-list__item{
-    padding: 0 12px;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.focus-nav-list__item:hover{
-    color: #ed234b;   
-}
-
-.operation-nav-list{
-    display: flex;
-    align-items: center;
-    color: #474747;
-}
-
-.operation-nav-list__divider{
-    width: 1px;
-    height: 12px;
-    margin: 0 4px;
-    background-color: #d6d6d6;
-}
-
-.operation-nav-list__link{
-    padding: 0 12px;
-    font-size: 14px;
-}
-
-.operation-nav-list__link:hover{
-    color: #ed234b;
-}
-
 
 /* hover category */
 .category-nav__menu-opener:hover .category-menu{
@@ -233,4 +190,45 @@
 
 .main-category-menu__category-link-list li:hover .category-menu-detail{
     display: block;
+}
+
+/* 주요 타이틀 네비 */
+.focus-nav-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: 16px;
+    padding: 0;
+}
+
+.focus-nav-list__item{
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.focus-nav-list__item:hover{
+    color: #ed234b;   
+}
+
+.operation-nav-list{
+    display: flex;
+    align-items: center;
+    color: #474747;
+}
+
+.operation-nav-list__divider{
+    width: 1px;
+    height: 12px;
+    margin: 0 4px;
+    background-color: #d6d6d6;
+}
+
+.operation-nav-list__link{
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.operation-nav-list__link:hover{
+    color: #ed234b;
 }

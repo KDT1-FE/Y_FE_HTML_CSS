@@ -1,23 +1,23 @@
-@import './abstracts/mixins'; // 믹스인
-@import './abstracts/variables'; // 변수
-@import './abstracts/keyframes'; // 애니메이션
+@import "./abstracts/mixins"; // 믹스인
+@import "./abstracts/variables"; // 변수
+@import "./abstracts/keyframes"; // 애니메이션
 
-@import './base/common'; // 공통
-@import './base/reset'; // 리셋
-@import './base/typography'; // 글꼴
+@import "./base/common"; // 공통
+@import "./base/reset"; // 리셋
+@import "./base/typography"; // 글꼴
 
-@import './components/button'; // 버튼
+@import "./components/button"; // 버튼
 
-@import './layout/header'; // 헤더 영역
-@import './layout/visual'; // 비쥬얼 영역
-@import './layout/banner'; // 배너 영역
-@import './layout/home'; // 홈 영역
-@import './layout/remittance'; // 송금 영역
-@import './layout/loan'; // 대출 영역
-@import './layout/credit'; // 신용 영역
-@import './layout/investment'; // 투자 영역
-@import './layout/finance'; // 금융 영역
-@import './layout/management'; // 관리 영역
-@import './layout/service'; // 서비스 영역
-@import './layout/business'; // 사업 영역
-@import './layout/footer'; // 푸터 영역
+@import "./layout/header"; // 헤더 영역
+@import "./layout/visual"; // 비쥬얼 영역
+@import "./layout/banner"; // 배너 영역
+@import "./layout/home"; // 홈 영역
+@import "./layout/remittance"; // 송금 영역
+@import "./layout/loan"; // 대출 영역
+@import "./layout/credit"; // 신용 영역
+@import "./layout/investment"; // 투자 영역
+@import "./layout/finance"; // 금융 영역
+@import "./layout/management"; // 관리 영역
+@import "./layout/service"; // 서비스 영역
+@import "./layout/business"; // 사업 영역
+@import "./layout/footer"; // 푸터 영역

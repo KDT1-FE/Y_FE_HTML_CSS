@@ -41,14 +41,14 @@
                         justify-content: center;
                         align-items: center;
                         width: 12rem;
-                        height: 12rem;     
-                        margin-bottom: 3rem;   
+                        height: 12rem;
+                        margin-bottom: 3rem;
                         @include bp640 {
                             width: 6rem;
                             height: 6rem;
                             border-radius: 1.6rem;
                             margin-bottom: 1.6rem;
-                        }                
+                        }
                         img {
                             width: 6rem;
                             height: 6rem;
@@ -64,14 +64,14 @@
                         }
                         .disc-str {
                             width: 100%;
-                            margin-bottom: .6rem;
+                            margin-bottom: 0.6rem;
                             font-size: 2rem;
                             font-weight: 600;
                             line-height: 1.6;
                             color: $grey4B;
                             @include bp640 {
                                 font-size: 1.8rem;
-                                margin-bottom: .4rem;
+                                margin-bottom: 0.4rem;
                             }
                         }
                         .disc {
@@ -99,19 +99,16 @@
                     }
                 }
                 .cnt3 {
-                    .img-wrap { 
+                    .img-wrap {
                         background-color: #e8f3ff;
                     }
                 }
                 .cnt4 {
-                    .img-wrap { 
+                    .img-wrap {
                         background-color: #aeefd5;
                     }
                 }
             }
         }
-    }
-    &.on {
-
     }
 }

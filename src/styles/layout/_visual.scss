@@ -1,7 +1,7 @@
 .visual {
     position: relative;
     height: 100vh;
-    background-image: url('../assets/new_main.png');
+    background-image: url("../assets/new_main.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@
             }
             .btns {
                 display: flex;
-                gap: .4rem;
+                gap: 0.4rem;
             }
         }
     }
@@ -56,7 +56,7 @@
         transform: translate(-50%, -50%);
         animation: scrollAnimation;
         animation-duration: 4s;
-        animation-iteration-count: infinite;        
+        animation-iteration-count: infinite;
         img {
             width: 5rem;
             height: 5rem;

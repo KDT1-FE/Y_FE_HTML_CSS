@@ -19,7 +19,7 @@
     50% {
         transform: translate(-50%, -50%);
         opacity: 1;
-    }    
+    }
     75% {
         transform: translate(-50%, 0%);
         opacity: 1;
@@ -33,7 +33,7 @@
 @keyframes showTopAnimation {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(5rem);
     }
     100% {
         opacity: 1;

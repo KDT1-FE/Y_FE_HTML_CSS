@@ -5,14 +5,14 @@
     justify-content: center;
     width: 100%;
     height: 80rem;
-    background-image: url('../assets/section2_4_big.jpg');
+    background-image: url("../assets/section2_4_big.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @include bp640 {
         height: 66.5rem;
         background-size: contain;
-        background-image: url('../assets/section2_4_big_mobile.png');
+        background-image: url("../assets/section2_4_big_mobile.png");
     }
     .text {
         font-size: 10rem;

@@ -1,12 +1,11 @@
-body {
-    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
 html {
     font-size: 62.5%;
 }
 
 body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+        "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 1rem;
 }
 
@@ -50,10 +49,10 @@ body {
     color: $blueF6;
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
     @include bp640 {
         font-size: 1.5rem;
-        margin-bottom: .8rem;
+        margin-bottom: 0.8rem;
     }
     img {
         width: 2.4rem;

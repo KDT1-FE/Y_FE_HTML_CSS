@@ -71,7 +71,7 @@
                 }
                 .content-wrap {
                     img {
-                        @include showTopAni(1.5)
+                        @include showTopAni(1.5);
                     }
                     .text {
                         @include showTopAni(1);

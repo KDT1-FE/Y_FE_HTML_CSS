@@ -8,14 +8,14 @@
         .inner {
             .title-wrap {
                 margin-bottom: 8rem;
-                opacity: 0;                
+                opacity: 0;
             }
             .content-wrap {
                 display: flex;
                 flex-direction: column;
                 gap: 15rem;
                 @include bp640 {
-                    gap: 6rem
+                    gap: 6rem;
                 }
                 .content {
                     display: flex;
@@ -49,7 +49,7 @@
                 .cnt2 {
                     flex-direction: row-reverse;
                     @include bp640 {
-                        flex-direction: column
+                        flex-direction: column;
                     }
                 }
             }

@@ -2,13 +2,9 @@
     @media (min-width: 0) and (max-width: 640px) {
         @content;
     }
-} // 브레이크 포인트 반응형 viewport 넓이
+}
 
 @mixin showTopAni($Sequence: 0) {
-    animation: showTopAnimation;
-    animation-duration: .5s;
-    animation-delay: $Sequence * 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-} // 스크롤 해당 영역 도착 시 실행되는 애니메이션
+    // animation: [name] [duration] [timing-fuction] [delay] [interation-conunt] [direction] [fill-mode] [play-state]
+    animation: showTopAnimation 0.5s ease-in-out $Sequence * 0.5s 1 forwards;
+}

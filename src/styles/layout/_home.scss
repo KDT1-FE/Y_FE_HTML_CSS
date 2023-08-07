@@ -81,14 +81,14 @@
             .inner {
                 .content-wrap {
                     .cnt1 {
-                        @include showTopAni(2)
+                        @include showTopAni(2);
                     }
                     .cnt2 {
-                        @include showTopAni(3)
+                        @include showTopAni(3);
                     }
                 }
                 .text-wrap {
-                    @include showTopAni(4)
+                    @include showTopAni(4);
                 }
             }
         }

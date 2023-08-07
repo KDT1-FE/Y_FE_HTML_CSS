@@ -10,7 +10,7 @@
         opacity: 0;
         @include showTopAni(0);
         @include bp640 {
-            margin-bottom: .4rem;
+            margin-bottom: 0.4rem;
             width: auto;
             height: 60rem;
         }

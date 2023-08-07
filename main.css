@@ -347,8 +347,8 @@ html div span a h3 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: -520px;
-  left: 20px;
+  top: -580px;
+  left: 25px;
   width: 20px;
   padding: 15px;
   border-radius: 30px;

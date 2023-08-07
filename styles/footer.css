@@ -8,17 +8,17 @@ footer {
   text-align: center;
 }
 
-footer img {
+.footer-logo {
   width: 80px;
   margin-bottom: 10px;
 }
 
-footer ul {
+.footer-ul {
   font-size: 11px;
   line-height: 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   margin: 0 auto 15px;
   padding: 0;
 }
@@ -27,7 +27,7 @@ footer ul {
   margin: 0 8px;
 }
 
-footer select {
+.footer-select {
   border: 0;
   margin: 8px 0;
   padding: 0 26px;
@@ -36,22 +36,13 @@ footer select {
   background-color: rgba(255, 255, 255, 0);
 }
 
-footer ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 15px;
-  padding: 0;
-}
-
-footer a {
+.footer-a {
   padding: 8px 12px;
   color: silver;
   cursor: pointer;
 }
 
-footer a:hover {
+.footer-a:hover {
   padding: 8px 12px;
   color: #f9f9f9;
 }

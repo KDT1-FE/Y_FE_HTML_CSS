@@ -2,12 +2,12 @@
   padding-top: 2.6vw;
 }
 
-.target-value-banner li {
+.target-value-li {
   flex-wrap: wrap;
   position: relative;
 }
 
-.line-divided p {
+.target-value-text {
   padding: 0 10px;
 }
 

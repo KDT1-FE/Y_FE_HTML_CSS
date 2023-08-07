@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-.main img {
+.main-logo {
   width: 130px;
   margin-bottom: 2vw;
 }
@@ -22,7 +22,7 @@
   margin-bottom: 24px;
 }
 
-.email-form input {
+.email-input {
   border-radius: 4px;
   width: 100%;
   background-color: #31343e;
@@ -35,12 +35,12 @@
   display: block;
 }
 
-.email-form input:focus {
+.email-input:focus {
   border-color: hsla(0, 0%, 100%, 0.3);
   outline: 0;
 }
 
-.email-form button {
+.email-button {
   margin-top: 10px;
   border-radius: 4px;
   padding: 0 44px;
@@ -60,7 +60,7 @@
   box-sizing: border-box;
 }
 
-.email-form button:hover {
+.email-button:hover {
   background: #016cf9;
 }
 
@@ -82,7 +82,7 @@
     max-width: 600px;
   }
 
-  .main img {
+  .main-logo {
     width: 160px;
   }
 }
@@ -91,7 +91,7 @@
     max-width: 640px;
   }
 
-  .main img {
+  .main-logo {
     width: 180px;
   }
 }
@@ -109,12 +109,12 @@
     flex-direction: row;
   }
 
-  .email-form input {
+  .email-input {
     border-radius: 4px 0 0 4px;
     width: 60%;
   }
 
-  .email-form button {
+  .email-button {
     border-radius: 0 4px 4px 0;
     margin-top: 0;
     width: 40%;
@@ -145,7 +145,10 @@ input[type="radio"] {
   display: none;
 }
 
-.slide-nav label {
+.label1,
+.label2,
+.label3,
+.label4 {
   background-color: silver;
   border: none;
   flex-grow: 1;
@@ -159,11 +162,12 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.slide-nav label :after {
-  background: 0 0;
+.label1:after,
+.label2:after,
+.label3:after,
+.label4:after {
   content: "";
   cursor: pointer;
-  display: flex;
   height: 100%;
   position: absolute;
   right: -7px;
@@ -236,7 +240,7 @@ input[id="select_box4"]:checked ~ .slide-nav .label4 {
   line-height: 16px;
 }
 
-.slide-text-box p {
+.slide-text {
   margin-bottom: 0;
 }
 
@@ -271,7 +275,10 @@ input[id="select_box4"]:checked ~ div #imgbox .select4 {
     width: 60vw;
   }
 
-  .slide-nav label {
+  .label1,
+  .label2,
+  .label3,
+  .label4 {
     height: 3px;
     width: auto;
   }

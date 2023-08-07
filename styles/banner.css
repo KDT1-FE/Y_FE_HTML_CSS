@@ -1,15 +1,15 @@
-.banner-box {
+.banner-container {
   display: flex;
   align-items: center;
 }
 
-.banner-box img {
+.banner-img {
   display: block;
   height: auto;
   max-width: 50%;
 }
 
-.banner-box div {
+.banner-text-box {
   padding: 0 2vw;
 }
 
@@ -18,7 +18,7 @@
     flex-direction: column-reverse;
     text-align: center;
   }
-  .banner-box img {
+  .banner-img {
     margin-bottom: 20px;
     max-width: 100%;
   }

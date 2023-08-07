@@ -1,0 +1,187 @@
+.product {
+  width: 100%;
+  height: 563px;
+}
+.product-tile {
+  position: relative;
+  width: 364px;
+  height: 555px;
+}
+.product-tile .image {
+  width: 100%;
+  height: 364px;
+  background-size: cover;
+  transition: 0.8s;
+}
+.product-tile .name {
+  position: absolute;
+  top: 349px;
+  width: 100%;
+  height: 36px;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+}
+.product-tile .name-transit {
+  transition: 0.8s;
+  opacity: 1;
+}
+.product-tile--femme:hover .name-transit,
+.product-tile--homme:hover .name-transit,
+.product-tile--rouge:hover .name-transit,
+.product-tile--724:hover .name-transit {
+  opacity: 0;
+}
+.product-tile .info1,
+.product-tile .price1 {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product-tile .info1 {
+  top: 386px;
+}
+.product-tile .price1 {
+  top: 406px;
+}
+.product-tile--724:hover .info1,
+.product-tile--724:hover .price1 {
+  opacity: 0;
+}
+.product-tile .info2,
+.product-tile .price2 {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  transition: 0.8s;
+  opacity: 1;
+}
+.product-tile .info2 {
+  top: 422px;
+}
+.product-tile .price2 {
+  top: 442px;
+}
+.product-tile--femme:hover .info2,
+.product-tile--femme:hover .price2,
+.product-tile--homme:hover .info2,
+.product-tile--homme:hover .price2,
+.product-tile--rouge:hover .info2,
+.product-tile--rouge:hover .price2 {
+  opacity: 0;
+}
+.product-tile .fragrance {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #646467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-tile .fragrance--1st {
+  position: relative;
+  opacity: 0;
+}
+.product-tile--femme:hover .fragrance--1st,
+.product-tile--homme:hover .fragrance--1st,
+.product-tile--rouge:hover .fragrance--1st,
+.product-tile--724:hover .fragrance--1st {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.product-tile--femme:hover .fragrance--1st::after,
+.product-tile--homme:hover .fragrance--1st::after,
+.product-tile--rouge:hover .fragrance--1st::after,
+.product-tile--724:hover .fragrance--1st::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-delay: 0.1s;
+}
+.product-tile .fragrance--2nd {
+  position: relative;
+  opacity: 0;
+}
+.product-tile--femme:hover .fragrance--2nd,
+.product-tile--homme:hover .fragrance--2nd,
+.product-tile--rouge:hover .fragrance--2nd,
+.product-tile--724:hover .fragrance--2nd {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.55s;
+}
+.product-tile--rouge:hover .fragrance--2nd::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 5.5px;
+  height: 5.5px;
+  background-color: RGB(136, 106, 51);
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-delay: 0.35s;
+}
+.product-tile .fragrance--3rd {
+  opacity: 0;
+}
+.product-tile--rouge:hover .fragrance--3rd {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.75s;
+}
+
+.product-tile--gold .image {
+  background-image: url(../../assets/images/globe-trotter-gold1.webp);
+}
+.product-tile--gold:hover .image {
+  background-image: url(../../assets/images/globe-trotter-gold2.webp);
+}
+.product-tile--zinc .image {
+  background-image: url(../../assets/images/globe-trotter-zinc1.webp);
+}
+.product-tile--zinc:hover .image {
+  background-image: url(../../assets/images/globe-trotter-zinc2.webp);
+}
+.product-tile--femme .image {
+  background-image: url(../../assets/images/amyris-femme1.webp);
+}
+.product-tile--femme:hover .image {
+  background-image: url(../../assets/images/amyris-femme2.webp);
+}
+.product-tile--homme .image {
+  background-image: url(../../assets/images/amyris-homme1.webp);
+}
+.product-tile--homme:hover .image {
+  background-image: url(../../assets/images/amyris-homme2.webp);
+}
+.product-tile--rouge .image {
+  background-image: url(../../assets/images/baccarat-rouge-travel.webp);
+}
+.product-tile--724 .image {
+  background-image: url(../../assets/images/724-travel.webp);
+}

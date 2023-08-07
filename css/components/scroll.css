@@ -1,0 +1,22 @@
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width: 59px;
+  height: 59px;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: 0.3s;
+}
+.to-top.hide {
+  opacity: 0;
+}
+.to-top .to-top__image {
+  width: 25px;
+  height: 60px;
+}

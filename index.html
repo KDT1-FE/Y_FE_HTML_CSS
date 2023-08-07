@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Francis Kurkdjian - Official online store</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+      integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="inner">
+        <div class="menu-container">
+          <a href="./index.html">
+            <img class="logo" src="./assets/images/icon-logo.svg" alt="Maison Francis Kurkdjian logo" />
+          </a>
+          <ul class="menu PostGrotesk">
+            <li>
+              <a class="menu-name" href="javascript:void(0)">AQUA MEDIA COLOGNE FORTE</a>
+            </li>
+            <li>
+              <a class="menu-name collections" href="javascript:void(0)">COLLECTIONS</a>
+            </li>
+            <li>
+              <a class="menu-name fragrances" href="javascript:void(0)">FRAGRANCES</a>
+            </li>
+            <li>
+              <a class="menu-name bath-and-body" href="javascript:void(0)">BATH & BODY</a>
+            </li>
+            <li>
+              <a class="menu-name art-of-living" href="javascript:void(0)">ART OF LIVING</a>
+            </li>
+            <li>
+              <a class="menu-name the-maison" href="javascript:void(0)">THE MAISON</a>
+            </li>
+            <li>
+              <a class="menu-name" href="javascript:void(0)">FRAGRANCE FINDER</a>
+            </li>
+          </ul>
+          <ul class="icons">
+            <li>
+              <div class="country PostGrotesk">
+                <div class="country-flag"></div>
+                <div class="country-currency">&#47; EUR</div>
+              </div>
+            </li>
+            <li><a class="search" href="javascript:void(0)">search</a></li>
+            <li><a class="location" href="javascript:void(0)">location</a></li>
+            <li><a class="account" href="javascript:void(0)">account</a></li>
+            <li>
+              <div class="cart"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="cart-container">
+        <div class="close">
+          <img src="./assets/images/icon-close.png" alt="close cart" />
+        </div>
+        <div class="title">
+          <div class="bag BauerBodoni">Your shopping bag</div>
+          <div class="count PostGrotesk">0 Products</div>
+        </div>
+        <div class="message PostGrotesk">Your shopping bag is empty</div>
+        <a class="link PostGrotesk" href="javascript:void(0)">VISIT OUR ESHOP</a>
+      </aside>
+    </header>
+    <main>
+      <section class="main-video">
+        <video src="./assets/videos/main.mp4" class="video" loop autoplay></video>
+        <div class="brand-name BauerBodoni">Maison<br />Francis Kurkdjian<br />Paris</div>
+        <a class="button" href="javascript:void(0)"><span class="discover PostGrotesk">DISCOVER</span></a>
+      </section>
+      <section class="product">
+        <div class="inner">
+          <a class="product-tile product-tile--gold io" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="name BauerBodoni">Globe Trotter</div>
+            <div class="info1 PostGrotesk">Gold Edition</div>
+            <div class="price1 PostGrotesk">€125.00</div>
+          </a>
+          <a class="product-tile product-tile--zinc io" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="name BauerBodoni">Globe Trotter</div>
+            <div class="info1 PostGrotesk">Zinc Edition</div>
+            <div class="price1 PostGrotesk">€115.00</div>
+          </a>
+        </div>
+      </section>
+      <section class="product">
+        <div class="inner">
+          <a class="product-tile product-tile--femme io" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="name name-transit BauerBodoni">Amyris<br />femme</div>
+            <div class="info2 PostGrotesk">Eau de parfum</div>
+            <div class="price2 PostGrotesk">€110.00</div>
+            <div class="fragrance BauerBodoni">
+              <div class="fragrance--1st">Floral&nbsp&nbsp&nbsp</div>
+              <div class="fragrance--2nd">Fruity</div>
+            </div>
+          </a>
+          <a class="product-tile product-tile--homme io" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="name name-transit BauerBodoni">Amyris<br />homme</div>
+            <div class="info2 PostGrotesk">Eau de toilette</div>
+            <div class="price2 PostGrotesk">€105.00</div>
+            <div class="fragrance BauerBodoni">
+              <div class="fragrance--1st">Aromatic&nbsp&nbsp&nbsp</div>
+              <div class="fragrance--2nd">Woody</div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="product">
+        <div class="inner">
+          <a class="product-tile product-tile--rouge io" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="name name-transit BauerBodoni">Baccarat<br />Rouge 540</div>
+            <div class="info2 PostGrotesk">Travel Set - Eau de parfum</div>
+            <div class="price2 PostGrotesk">€275.00</div>
+            <div class="fragrance BauerBodoni">
+              <div class="fragrance--1st">Floral&nbsp&nbsp&nbsp</div>
+              <div class="fragrance--2nd">Ambery&nbsp&nbsp&nbsp</div>
+              <div class="fragrance--3rd">Woody</div>
+            </div>
+          </a>
+          <a class="product-tile product-tile--724 io" href="javascript:void(0)">
+            <div class="image"></div>
+            <div class="name name-transit BauerBodoni">724</div>
+            <div class="info1 PostGrotesk">Travel Set - Eau de parfum</div>
+            <div class="price1 PostGrotesk">€225.00</div>
+            <div class="fragrance BauerBodoni">
+              <div class="fragrance--1st">Floral&nbsp&nbsp&nbsp</div>
+              <div class="fragrance--2nd">Musky</div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="content">
+        <div class="inner">
+          <div class="content-tile io">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image fragrance-finder__image"></div>
+              <span class="title BauerBodoni">Fragrance Finder</span>
+            </a>
+            <div class="desc PostGrotesk">
+              Discover the fragrances that suit you best thanks to the Fragrance Finder.<br />This questionnaire, developed by Francis Kurkdjian, allows you to determine which fragrances in our
+              olfactory wardrobe will reflect best the different facets of your personality.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+          <div class="content-tile io-content">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image appreciation__image"></div>
+              <span class="title BauerBodoni">Token of Appreciation</span>
+            </a>
+            <div class="desc PostGrotesk">Select a gift from a special online selection for every purchase over 150€.</div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+        </div>
+      </section>
+      <section class="text">
+        <div class="inner">
+          <div class="title BauerBodoni io">Our selection</div>
+          <div class="body io-text">
+            <div class="desc BauerBodoni">Express your personality by choosing one or more emblematic pieces from the Maison's fragrance wardrobe.</div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER ALL FRAGRANCES</a>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="swiper slide1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--rouge" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Baccarat<br />Rouge 540</div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €150.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance4">Floral&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance5">Ambery&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance6">Woody</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--aqua-media" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Aqua Media<br /><span class="BauerBodoni-italic">Cologne forte</span></div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance2">Herbal&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance3">Citrus&nbsp&nbsp&nbsp</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--number-724" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">724</div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €120.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance2">Floral&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance3">Musky&nbsp&nbsp&nbsp</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--rouge-extrait" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Baccarat<br />Rouge 540</div>
+                <div class="info PostGrotesk">Extrait de parfum</div>
+                <div class="price PostGrotesk">Starting from €210.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance4">Floral&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance5">Ambery&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance6">Woody</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--rose" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">À la rose</div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €120.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance2">Floral&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance3">Musky&nbsp&nbsp&nbsp</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--lhomme" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">I'Homme<br />À la rose</div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €120.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance1">Woody</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--gentle-gold" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">gentle<br />Fluidity</div>
+                <div class="info PostGrotesk">Gold Edition - Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance2">Ambery&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance3">Musky&nbsp&nbsp&nbsp</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--gentle-silver" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Gentle<br />fluidity</div>
+                <div class="info PostGrotesk">Silver Edition - Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance2">Aromatic&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance3">Woody&nbsp&nbsp&nbsp</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--universalis" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Aqua<br />Universalis<br /><span class="BauerBodoni-italic">Cologne forte</span></div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance4">Citrus&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance5">Woody&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance6">Musky</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--vitae" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Aqua Vitae<br /><span class="BauerBodoni-italic">Cologne forte</span></div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance4">Floral&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance5">Citrus&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance6">Woody</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--celestia" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Aqua Celestia<br /><span class="BauerBodoni-italic">Cologne forte</span></div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance4">Citrus&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance5">Floral&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance6">Musky</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--soir" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Grand Soir</div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance2">Woody&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance3">Ambery&nbsp&nbsp&nbsp</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide1-tile slide1-tile--matin" href="javascript:void(0)">
+                <div class="image"></div>
+                <div class="name BauerBodoni">Petit Matin<br /></div>
+                <div class="info PostGrotesk">Eau de parfum</div>
+                <div class="price PostGrotesk">Starting from €110.00</div>
+                <div class="fragrance BauerBodoni">
+                  <div class="fragrance4">Citrus&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance5">Floral&nbsp&nbsp&nbsp</div>
+                  <div class="fragrance6">Woody</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./assets/images/icon-right.png" alt="slide to right" class="swiper-button__image" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="./assets/images/icon-left.png" alt="slide to left" class="swiper-button__image" />
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="inner">
+          <div class="content-tile io">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image number-724__image"></div>
+              <span class="title BauerBodoni">724</span>
+            </a>
+            <div class="desc PostGrotesk">
+              Discover 724, our new eau de parfum. Behind these three numbers lies Francis Kurkdjian’s fascination for the cities of the world and their creative energy.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+          <div class="content-tile io-content">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image aqua-media__image"></div>
+              <span class="title BauerBodoni">Aqua Media <span class="BauerBodoni-italic">Cologne forte</span></span>
+            </a>
+            <div class="desc PostGrotesk">
+              This new eau de parfum, whose facets shine at the heart of a citrus garden, evokes blissful landscapes and pristine nature, proving that happiness blossoms in simplicity.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+        </div>
+      </section>
+      <section class="text">
+        <div class="inner">
+          <div class="title BauerBodoni io">Discovery Sets</div>
+          <div class="body io-text">
+            <div class="desc BauerBodoni">
+              Delve into the world of Maison Francis Kurkdjian with our discovery collections. A wonderful way of exploring the perfumes of the Maison and a perfect gift to give or receive.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER ALL</a>
+          </div>
+        </div>
+      </section>
+      <section class="slider"></section>
+      <section class="content">
+        <div class="inner">
+          <div class="content-tile io">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image scented-candles__image"></div>
+              <span class="title BauerBodoni">Scented candles</span>
+            </a>
+            <div class="desc PostGrotesk">
+              A soft flaming glow and fragrant notes infuse a delicate and unique ambiance at home. Create a delicately refined atmosphere with our collection of Scented candles to create a relaxing
+              and cozy atmosphere.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+          <div class="content-tile io-content">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image bath-and-body__image"></div>
+              <span class="title BauerBodoni">Bath & Body</span>
+            </a>
+            <div class="desc PostGrotesk">
+              Enrich your beauty ritual with the scented bath and body products echoing the emblematic perfumes of Maison Francis Kurkdjian's fragrance wardrobe, and extend their sillages with
+              elegance.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+        </div>
+      </section>
+      <section class="last-content">
+        <div class="inner">
+          <div class="last-content-tile io-">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image womens-fragrances__image"></div>
+              <span class="title BauerBodoni">Women's fragrances</span>
+            </a>
+            <div class="desc PostGrotesk">
+              Our collection of perfumes for women is like a closet where each garment offers polished style and the olfactory nuances that express all facets of women’s radiance and fulfillment.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+          <div class="last-content-tile io-2">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image mens-fragrances__image"></div>
+              <span class="title BauerBodoni">Men's fragrances</span>
+            </a>
+            <div class="desc PostGrotesk">
+              Composed like an olfactory symphony, our collection of fragrances for men grants them freedom to express their personality with exceptional fragrances that reflect their wants.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+          <div class="last-content-tile io-3">
+            <a class="intro" href="javascript:void(0)">
+              <div class="image unisex-fragrances__image"></div>
+              <span class="title BauerBodoni">Unisex fragrances</span>
+            </a>
+            <div class="desc PostGrotesk">
+              Our collection of unisex fragrances is composed of rare perfumes that unite man and woman in a shared story, a shared wake. A fragrance wardrobe meant to be shared at will.
+            </div>
+            <a class="link PostGrotesk--bold" href="javascript:void(0)">DISCOVER</a>
+          </div>
+        </div>
+      </section>
+      <section class="online-advantages">
+        <div class="inner">
+          <div class="delivery">
+            <div class="image"></div>
+            <div class="desc PostGrotesk">Worldwide delivery</div>
+          </div>
+          <div class="adviser">
+            <div class="image"></div>
+            <div class="desc PostGrotesk">A customer adviser is available by phone at +33<br />(0)1 72 95 09 89, Monday to Saturday from 10<br />am to 7 pm (Paris time) or by email</div>
+          </div>
+          <div class="payment">
+            <div class="image"></div>
+            <div class="desc PostGrotesk">Secure payment</div>
+          </div>
+          <div class="gift-box">
+            <div class="image"></div>
+            <div class="desc PostGrotesk">Gift-box in the colors<br />of the Maison</div>
+          </div>
+          <div class="samples">
+            <div class="image"></div>
+            <div class="desc PostGrotesk">2 complimentary samples<br />subject to conditions</div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="title BauerBodoni">Newsletter</div>
+        <div class="subtitle PostGrotesk">Sign up to receive our latest news</div>
+        <div class="email">
+          <input type="text" class="input" />
+          <label for="" class="label PostGrotesk--bold">EMAIL</label>
+          <button type="button" class="button"></button>
+          <div class="policy PostGrotesk">See our <a href="javascript:void(0)" class="link">privacy policy</a></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-main">
+            <ul class="menu-contents">
+              <li class="menu-name BauerBodoni">Accessibility</li>
+              <li class="menu-list PostGrotesk-Bold">
+                <a href="javascript:void(0)" class="link">MODE OFF</a>
+              </li>
+            </ul>
+            <ul class="menu-contents">
+              <li class="menu-name">Stores</li>
+              <li class="menu-list"><a href="javascript:void(0)" class="link">STORES</a></li>
+            </ul>
+            <ul class="menu-contents">
+              <li class="menu-name">Contact</li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">CONTACT US</a>
+              </li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">CAREERS</a>
+              </li>
+              <li class="menu-list"><a href="javascript:void(0)" class="link">PRESS</a></li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">CUSTOM CARE</a>
+              </li>
+              <li class="menu-list"><a href="javascript:void(0)" class="link">FAQ</a></li>
+            </ul>
+            <ul class="menu-contents">
+              <li class="menu-name">Legal Statement</li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">TERMS AND CONDITIONS</a>
+              </li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">PRIVACY POLICY</a>
+              </li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">CREDITS</a>
+              </li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">COOKIES POLICY</a>
+              </li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">COOKIE SETTINGS</a>
+              </li>
+            </ul>
+            <ul class="menu-contents">
+              <li class="menu-name">Social</li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">INSTAGRAM</a>
+              </li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">FACEBOOK</a>
+              </li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">YOUTUBE</a>
+              </li>
+              <li class="menu-list"><a href="javascript:void(0)" class="link">WEIBO</a></li>
+              <li class="menu-list">
+                <a href="javascript:void(0)" class="link">MODE OFF</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <div class="section1 PostGrotesk">
+              <div class="copyright">All rights reserved</div>
+            </div>
+            <div class="section2">
+              <img class="logo" src="./assets/images/icon-logo.svg" alt="Maison Francis Kurkdjian logo" />
+            </div>
+            <div class="section3">
+              <div class="country">
+                <div class="country-flag"></div>
+                <div class="country-currency">&#47; EUR</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <aside class="to-top">
+        <img src="./assets/images/icon-to-top.svg" alt="scroll to top" class="to-top__image" />
+      </aside>
+    </main>
+  </body>
+</html>

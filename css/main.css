@@ -1,0 +1,57 @@
+@import './components/fonts.css';
+@import './components/header.css';
+@import './components/video.css';
+@import './components/product.css';
+@import './components/content.css';
+@import './components/online-advantages.css';
+@import './components/newsletter.css';
+@import './components/footer.css';
+@import './components/scroll.css';
+@import './components/slider.css';
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.io {
+  opacity: 0;
+  transition: 1s;
+  transform: translate(0, 100px);
+}
+.io-content {
+  opacity: 0;
+  transition: 1.2s;
+  transform: translate(0, 120px);
+}
+.io-text {
+  opacity: 0;
+  transition: 1.5s;
+  transform: translate(0, 160px);
+}
+.io-2 {
+  opacity: 0;
+  transition: 1.15s;
+  transform: translate(0, 110px);
+}
+.io-3 {
+  opacity: 0;
+  transition: 1.3s;
+  transform: translate(0, 120px);
+}
+.io.show,
+.io-content.show,
+.io-text.show,
+.io-2.show,
+.io-3.show {
+  transform: translate(0, 0);
+  opacity: 1;
+}

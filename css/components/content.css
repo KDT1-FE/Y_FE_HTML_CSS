@@ -1,0 +1,194 @@
+.content {
+  width: 100%;
+  height: 700px;
+}
+.content .inner {
+  justify-content: space-between;
+}
+.content-tile {
+  width: 669px;
+  height: 666px;
+}
+.content-tile .image {
+  width: 666px;
+  height: 464px;
+  background-size: cover;
+  margin-bottom: 26px;
+}
+.content-tile .title {
+  position: relative;
+  font-size: 1.875rem;
+  color: #646467;
+}
+.content-tile .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.content-tile .title:hover::after {
+  width: 100%;
+}
+.content-tile .desc {
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.content-tile .link {
+  position: relative;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.content-tile .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.content-tile .link:hover::after {
+  width: 100%;
+}
+
+.fragrance-finder__image {
+  background-image: url(../../assets/images/fragrance-finder.webp);
+}
+.appreciation__image {
+  background-image: url(../../assets/images/token-of-appreciation.jpeg);
+}
+.number-724__image {
+  background-image: url(../../assets/images/724.webp);
+}
+.aqua-media__image {
+  background-image: url(../../assets/images/token-of-appreciation.jpeg);
+}
+.scented-candles__image {
+  background-image: url(../../assets/images/scented-candles.webp);
+}
+.bath-and-body__image {
+  background-image: url(../../assets/images/bath-and-body.webp);
+}
+
+.text {
+  width: 100%;
+  height: 298px;
+  padding: 110px 0 20px 0;
+}
+.text .inner {
+  justify-content: space-between;
+}
+.text .title {
+  width: 408px;
+  height: 100%;
+  font-size: 55px;
+  color: #646467;
+}
+.text .body {
+  width: 845px;
+  height: 100%;
+}
+.text .body .desc {
+  font-size: 28px;
+  color: #646467;
+  letter-spacing: 0.3px;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
+.text .body .link {
+  position: absolute;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  color: #646467;
+}
+.text .body .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.text .body .link:hover::after {
+  width: 100%;
+}
+
+.last-content {
+  width: 100%;
+  height: 522px;
+}
+.last-content .inner {
+  justify-content: space-between;
+}
+.last-content-tile {
+  width: 435px;
+  height: 490px;
+}
+.last-content-tile .image {
+  width: 435px;
+  height: 285px;
+  background-size: cover;
+  margin-bottom: 26px;
+}
+.last-content-tile .title {
+  position: relative;
+  font-size: 1.875rem;
+  color: #646467;
+}
+.last-content-tile .title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  border-bottom: 1.2px solid #646467;
+  transition: width 0.3s;
+}
+.last-content-tile .title:hover::after {
+  width: 100%;
+}
+.last-content-tile .desc {
+  font-size: 1rem;
+  color: #4a4a4f;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+.last-content-tile .link {
+  position: relative;
+  font-size: 0.75rem;
+  letter-spacing: 1.2px;
+  color: #646467;
+}
+.last-content-tile .link::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.3s;
+}
+.last-content-tile .link:hover::after {
+  width: 100%;
+}
+
+.womens-fragrances__image {
+  background-image: url(../../assets/images/womens-fragrances.webp);
+}
+.mens-fragrances__image {
+  background-image: url(../../assets/images/mens-fragrances.webp);
+}
+.unisex-fragrances__image {
+  background-image: url(../../assets/images/unisex-fragrances.webp);
+}

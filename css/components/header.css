@@ -1,0 +1,194 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 107px;
+  border-bottom: 1px solid #dfdfdf;
+  z-index: 1000;
+}
+.inner {
+  width: 1360px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu-container > a {
+  position: absolute;
+  width: 90px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.header .menu-container > a .logo {
+  position: absolute;
+  width: 50px;
+  top: 29px;
+  left: 0;
+}
+.header .menu-container .menu {
+  position: absolute;
+  width: 1020px;
+  height: 100%;
+  left: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu-container .menu li .menu-name {
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #646467;
+}
+.header .menu-container .menu li .menu-name::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #646467;
+  transition: width 0.5s;
+}
+.header .menu-container .menu li:hover .menu-name::after {
+  width: 100%;
+}
+.header .menu-container .icons {
+  position: absolute;
+  width: 208px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu-container .icons li {
+  display: flex;
+  justify-content: center;
+}
+.header .menu-container .icons li .country,
+.footer-bottom .section3 .country {
+  width: 56px;
+  height: 12px;
+  display: flex;
+}
+.header .menu-container .icons li .country .country-flag,
+.footer-bottom .section3 .country .country-flag {
+  background-image: url(../assets/images/flag-france.svg);
+  background-size: contain;
+  width: 16px;
+  height: 12px;
+}
+.header .menu-container .icons li .country .country-currency,
+.footer-bottom .section3 .country .country-currency {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #646467;
+  text-indent: 4px;
+}
+.header .menu-container .icons li a {
+  text-indent: -9999px;
+  width: 19px;
+  height: 18px;
+}
+.header .menu-container .icons li .search {
+  background-image: url(../assets/images/icon-search.svg);
+}
+.header .menu-container .icons li .location {
+  background-image: url(../assets/images/icon-location.svg);
+}
+.header .menu-container .icons li .account {
+  background-image: url(../assets/images/icon-account.svg);
+}
+.header .menu-container .icons li .cart {
+  background-image: url(../assets/images/icon-cart.svg);
+  width: 19px;
+  height: 18px;
+}
+.header .menu-container .icons li .country:hover,
+.header .menu-container .icons li .cart:hover,
+.footer-bottom .section3 .country {
+  cursor: pointer;
+}
+
+.cart-container {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 482px;
+  height: 100vh;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.cart-container.show {
+  transform: translateX(-482px);
+}
+.cart-container .close {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  width: 17px;
+  height: 17px;
+}
+.cart-container .close img {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+.cart-container .title {
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  width: 384px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cart-container .title .bag {
+  font-size: 30px;
+  color: #5c5c5c;
+}
+.cart-container .title .count {
+  font-size: 16px;
+  color: #5c5c5c;
+}
+.cart-container .message {
+  position: absolute;
+  top: 54%;
+  left: 30%;
+  width: 200px;
+  height: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.cart-container .link {
+  position: absolute;
+  bottom: 15px;
+  left: 66px;
+  width: 350px;
+  height: 45px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #5c5c5c;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #c4c4c4;
+}

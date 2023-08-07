@@ -20,7 +20,7 @@
   transition: all 0.5s ease;
 }
 .login_left_box {
-  margin-top: 48%;
+  margin-top: 330px;
   max-width: 380px;
 }
 .login_right {
@@ -489,6 +489,7 @@
   content: "";
   background: #738a92;
 }
+
 .login_mobile_show {
   display: none;
 }

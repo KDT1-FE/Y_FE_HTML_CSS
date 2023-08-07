@@ -47,6 +47,11 @@
   line-height: 24px;
 }
 
+header .down {
+  background-color: #fff;
+  color: #222;
+}
+
 /* MAIN */
 
 /* 러쉬 앱 소개 */
@@ -145,6 +150,7 @@
 /*  */
 .lush_info .swiper-wrapper {
   align-items: center;
+  transition: all 2s;
 }
 .lush_info .swiper-slide {
   width: auto;
@@ -349,6 +355,9 @@
 /* CIRCLE SWIPER */
 .swiper__circle {
   padding-left: 64px;
+}
+.wrapper__circle {
+
 }
 .slide__circle {
   overflow: hidden;

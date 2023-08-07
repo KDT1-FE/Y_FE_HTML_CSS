@@ -1,13 +1,136 @@
+/* POP-UP MODAL */
+#modal {
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  top: 0;
+  left: 0;
+}
+.popup_area {
+  width: 434px;
+  height: 549px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  background: url("../images/popup_img.png") no-repeat 0 0;
+}
+
+#close-modal {
+  z-index: 9;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background-position: center;
+    background: url("../images/ico_close_white.svg") no-repeat;
+}
+.pop_contents {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+}
+.pop_contents .tit > h2 {
+  margin-top: 90px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.pop_contents .tit > p {
+   display: block;
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+.check {
+  margin-top: 15px;
+  margin-left: -270px;
+  text-align: left;
+  cursor: pointer;
+  height: 20px;
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+}
+
+.check > input {
+  width: 20px;
+  height: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 30%;
+  background: url("https://weare.lush.co.kr/images/checkbox.png") no-repeat 0 0;
+}
+.check > label {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+.qr_area {
+  margin-top: 59px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.qr_area img {
+  width: 95px;
+  height: 95px;
+  box-sizing: border-box;
+  margin: 25px auto 35px;
+}
+.link_copy_btn {
+    font-family: "NotoSans";
+    padding:0 16px;
+    height:24px;
+    color:#fff;
+    font-size:12px;
+    font-weight:400;
+    border-radius: 12px;
+    background-color: #18A957;
+    cursor: pointer;
+    border: none;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+
 /* HEADER */
 header {
   position: fixed;
   background-color: rgba(255, 255, 255, 0);
-  align-items: center;
-  justify-content: center;
+
   width: 100%;
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   z-index: 99;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
 }
 header > .inner {
   height: 96px;
@@ -20,11 +143,13 @@ header > .inner {
   z-index: 9;
 }
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: url("../images/logo.svg") no-repeat 0 0;
+  background-position: center;
   width: 81px;
   height: 100%;
+}
+.logo > a {
+  
 }
 .gnb {
   display: flex;
@@ -41,12 +166,15 @@ header > .inner {
 }
 .down {
   background-color: #fff;
-  color: #222;
-  -webkit-transition-duration: 0.4s;
-  -webkit-transition-timing-function: ease;
-  transition-duration: 0.4s;
-  transition-timing-function: ease;
+  border-bottom: 1px solid #ccc;
 }
+.down li > a {
+  color: #222;
+}
+.down .logo {
+  background-image: url("https://weare.lush.co.kr/images/logo_black.svg");
+}
+
 
 /* BADGES */
 header .badges {
@@ -112,12 +240,14 @@ header .badges {
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
+  
 }
 .btn_x {
   position: absolute;
   border: none;
   right: 8px;
   top: 8px;
+  background: unset
 }
 .qr {
   width: 142px;

@@ -22,9 +22,17 @@
   <!-- SIMPLE PARALLAX -->
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/daf7071c1b.js" crossorigin="anonymous"></script>
+
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Lodash throttle
+  <script src="
+https://cdn.jsdelivr.net/npm/lodash.throttle@4.1.1/index.min.js
+"></script> -->
 
   <!-- CSS -->
   <link rel="stylesheet" href="./css/font.css">
@@ -39,13 +47,41 @@
 </head>
 <body>
 
+<!-- POP-UP MODAL -->
+<div id="modal">
+  
+  <div class="popup_area">
+
+      <button id="close-modal"></button>
+
+      <div class="check">
+        <input type="checkbox" id="0ne-week">
+        <label for="1week">일주일동안 그만보기</label>  
+      </div>
+
+    <div class="pop_contents">
+    
+    <div class="tit">
+    <h2>쇼핑은 편리한<br />모바일 스토어에서!</h2>
+    <p>러쉬코리아 공식 홈페이지가<br />새롭게 개편되었어요.</p>
+    </div>
+
+    <div class="qr_area">
+      <p>큐알코드 찍고<br />쇼핑 시작하기</p>
+      <img src="./images/pop_qr.png" />
+      <button class="link_copy_btn">모바일 URL 복사하기</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+
 
   <!-- HEADER -->
   <Header>
     <div class="inner">
       <div class="logo">
         <a href="/">
-          <img src="./images/logo.svg" />
         </a>
       </div>
 
@@ -99,20 +135,21 @@
 
 
   <!-- VISUAL -->
- <section>
-   <div class="visual">
+  <section>
+    <div class="visual">
       <div class="inner">
 
         <div class="visual_text">
           <div class="title">
           <p class="page-start">지금 러쉬는</p>
           <p>더 신선하게 준비중!</p>
-         </div>
+        </div>
           <p class="description">곧, 러쉬 공식 앱 스토어로 찾아올게요.</p>
         </div>
       </div>
-   </div>
-</section>
+    </div>
+  </section>
+
 
 <!-- MAIN -->
 <main>
@@ -515,11 +552,11 @@
         COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.
       </p>
       <ul class="sns">
-        <li><a href="https://m.youtube.com/user/LUSHKOREA1" target="_blank" title="새 창으로 열림"><object data="./images/category/bath_02@3x.png" type="image/svg+xml" aria-label="유투브" title="유투브"></object></a></li>
-        <li><a href="https://pf.kakao.com/_VEbUM" target="_blank" title="새 창으로 열림"><object data="./images/category/bath_02@3x.png" type="image/svg+xml" aria-label="러쉬 카카오플러스"></object></a></li>                        
-        <li><a href="https://twitter.com/LUSHKOREA" target="_blank" title="새 창으로 열림"><object data="./images/category/bath_02@3x.png" type="image/svg+xml" aria-label="트위터"></object></a></li>
-        <li><a href="https://blog.naver.com/lushkr1" target="_blank" title="새 창으로 열림"><object data="./images/category/bath_02@3x.png" type="image/svg+xml" aria-label="블로그"></object></a></li>  
-        <li><a href="https://m.post.naver.com/lushkr1" target="_blank" title="새 창으로 열림"><object data="./images/category/bath_02@3x.png" type="image/svg+xml" aria-label="러쉬 네이버포스트"></object></a></li>
+        <li><a href="https://m.youtube.com/user/LUSHKOREA1" target="_blank" title="새 창으로 열림"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://pf.kakao.com/_VEbUM" target="_blank" title="새 창으로 열림" ><img src="./images/kakao-talk.png" class="fa-brands"></a></li>                        
+        <li><a href="https://twitter.com/LUSHKOREA" target="_blank" title="새 창으로 열림"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://blog.naver.com/lushkr1" target="_blank" title="새 창으로 열림" ><img src="./images/blog.png" class="fa-brands"></a></li>  
+        <li><a href="https://m.post.naver.com/lushkr1" target="_blank" title="새 창으로 열림" class="fa-brands"><i class="fa-solid fa-store"></i></a></li>
       </ul>
     </div>
   </section>

@@ -10,7 +10,7 @@
 ## 1. 개요
 
 러쉬 웹페이지(https://weare.lush.co.kr/)의 레이아웃을 클론 코딩했습니다.
-<img src="./images/20230724 lush.gif">
+<img src="./images/20230728 lush.gif">
 
 scss는 미사용했으며, 몇가지 library와 함께 html, css, js를 이용하여 진행했습니다.
 
@@ -25,7 +25,7 @@ https://kdt0-parkeunyeong-lush.netlify.app/ <br>
 
 <img src="https://swiperjs.com/images/swiper-logo.svg" width=16px> [Swiper](https://swiperjs.com/) <br>
 
-<img src="./images/simpleparallax.png" width=16px>[SimpleParallax](https://simpleparallax.com/)
+<img src="./images/simpleparallax.png" width=16px> [SimpleParallax](https://simpleparallax.com/)
 
 ## 4. JS 또는 그 외 필요한 부분
 
@@ -78,3 +78,14 @@ grab 모션으로 slide를 직접 끌어보거나 자동으로 fade되는 이미
 ### (3) 일부 생략
 
 이중 swiper를 사용한 카테고리 부분은 원래 아이템이 더 많았지만, 레이아웃 클론이기에 생략하고 2개만 진행했습니다.
+
+또한 원본 사이트에서는 아이템이 오른쪽으로 넘쳐 보이는 부분이 있지만, 클론 시에는 넘치지 않도록 자체 수정했으니 참고 부탁드립니다.
+
+
+## 7  리팩토링
+
+### (1) 230807 리팩토링
+① 스크롤 시 헤더 투명 -> 불투명으로 변환 효과 <br>
+② 첫화면 팝업창 추가 <br>
+③ footer sns 이미지 변경 <br>
+④ js 내 코딩 통일 <br>

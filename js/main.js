@@ -1,7 +1,52 @@
+// import _ from 'lodash'
+
+//좌표 찾기
+// let browserPoint = (event)=>{
+//   console.log(`브라우저 좌표 : (${event.pageX}, ${event.pageY})`);
+// }
+// let clientPoint = (event) =>{
+//   console.log(`화면 좌표 : (${event.clientX}, ${event.clientY})`);
+// }
+// window.addEventListener('click',e=>{
+//   browserPoint(e);
+//   clientPoint(e);
+// });
+
+//POP-UP MODAL
+const closeModal = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+
+const modalControl = function() {
+  modal.classList.toggle('hidden');
+  console.log("PEEKABOO!")
+};
+
+  closeModal.addEventListener("click", modalControl);
+
+
+
+//HEADER
+  const header = document.querySelector("header");
+  const page = document.querySelector(".page-start");
+  const pageOffsetTop = page.offsetTop;
+
+  function ChangeColor() {
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 370) {
+    header.classList.add('down');
+    } else {
+    header.classList.remove('down');
+    }
+  });
+  console.log("CHANGE!");
+};
+
+ChangeColor()
+
 // SIMPLE PARALLAX
 
 // 설문조사
-const suvey = document.getElementsByClassName("survey-thumbnail");
+const suvey = document.querySelector(".survey-thumbnail");
 new simpleParallax(suvey, {
   delay: 0.5,
   orientation: "down",
@@ -12,7 +57,7 @@ new simpleParallax(suvey, {
 });
 
 // 기부와 나눔
-const share = document.getElementsByClassName("share-thumbnail");
+const share = document.querySelector(".share-thumbnail");
 new simpleParallax(share, {
   delay: 0.5,
   orientation: "down",
@@ -21,7 +66,7 @@ new simpleParallax(share, {
 });
 
 // 매장 찾기
-const shop = document.getElementsByClassName("shop-thumbnail");
+const shop = document.querySelector(".shop-thumbnail");
 new simpleParallax(shop, {
   delay: 0.5,
   orientation: "down",
@@ -68,6 +113,7 @@ const swiperEls = document.querySelectorAll(".swiper__circle");
 swiperEls.forEach(swiperEl => {
   new Swiper(swiperEl, {
     slidesPerView: "auto",
+    speed: 500,
     spaceBetween: 25,
     grabCursor: true,
     loop: true,
@@ -77,3 +123,11 @@ swiperEls.forEach(swiperEl => {
     },
   });
 });
+
+
+//QR 버튼
+
+const storeBtn = document.querySelector(".store_btn")
+storeBtn.onClick = function () {
+
+}

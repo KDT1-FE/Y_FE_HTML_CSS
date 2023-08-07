@@ -1,0 +1,60 @@
+@import "reset.css";
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+*,
+button,
+input,
+select,
+span,
+button,
+a,
+textarea {
+    font-family: Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+html {
+    font-size: 10px;
+    text-size-adjust: none;
+}
+
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+}
+
+input {
+    border: none;
+}
+input:focus {
+    outline:none;
+}
+
+button {
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+}
+

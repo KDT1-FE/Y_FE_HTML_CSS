@@ -1,0 +1,206 @@
+footer {
+    font-family: Pretendard;
+    max-width: none;
+    margin: 3rem 0 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.footer-policy {
+    max-width: none;
+    height: 5rem;
+    padding: 0;
+    margin: 0 auto 0.4rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.footer-policy-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+.footer-policy-list > li:not(:first-child)::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 0.1rem;
+    height: 1.2rem;
+    left: 0;
+    top: 50%;
+    margin: 0;
+    vertical-align: middle;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.footer-policy-item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 3.1rem;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #333;
+}
+.footer-policy-item_bold {
+    font-weight: 700;
+}
+
+.footer-policy-link {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #333;
+}
+.footer-policy-list > li button:after {
+    content: '';
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.6rem;
+    margin-left: 0.4rem;
+    background: url(../assets/icons/arrow_pc.svg) no-repeat 50%;
+    vertical-align: 0.1rem;
+}
+.pl-0 {
+    padding-left: 0;
+}
+
+.footer-inner {
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 0 0 5rem;
+    text-align: center;
+    color: hsla(0, 0%, 7%, 0.5);
+    font-size: 1.1rem;
+}
+
+.footer-info-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.footer-info-left {
+    padding-right: 2.1rem;
+}
+
+.footer-info-right {
+    padding-left: 21px;
+}
+
+.footer-info-right li {
+    display: block;
+}
+
+.footer-info-wrapper div:nth-of-type(2)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 0.009em;
+    height: 100%;
+    margin-left: -0.05rem;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+a.footer-info-link {
+    color: #4a95ff;
+    text-decoration-line: underline;
+}
+
+.footer-info {
+    display: flex;
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.footer-info-title {
+    display: block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+    color: #111;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.footer-info-list,
+.footer-info_tel {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #666;
+    text-align: left;
+    line-height: 1.7rem;
+}
+.footer-info-list li {
+    display: inline-block;
+}
+
+.footer-info-customer-center {
+    display: flex;
+    margin-top: 1rem;
+}
+.footer-info-troubleCenter {
+    margin-top: 1rem;
+}
+.footer-info_tel-subtitle {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.footer-info-link_no-color {
+    color: #666;
+}
+
+.footer-info-customer-center div a:nth-of-type(2)::before {
+    content: '';
+    display: inline-block;
+    width: 0.1rem;
+    height: 1rem;
+    margin: 0 0.6rem;
+    background: #666;
+}
+.footer-info_tel-bar::after {
+    content: '';
+    display: inline-block;
+    width: 0.1rem;
+    height: 1rem;
+    margin: 0 0.4rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+.footer-info-notice {
+    max-width: none;
+    text-align: left;
+    margin: 1rem 0 0;
+    font-size: 1.1rem;
+}
+.footer-info-notice p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: hsla(0, 0%, 7%, 0.4);
+}
+
+.footer-info-li_inline {
+    display: inline;
+}

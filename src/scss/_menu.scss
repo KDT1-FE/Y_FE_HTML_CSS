@@ -1,0 +1,168 @@
+@mixin menuBtnHover {
+  border-radius: 3px;
+  background-color: #b3b9bc4b;
+}
+
+#menu-btn {
+  padding: 4px 8px;
+
+  font-size: 14px;
+  color: $white;
+
+  cursor: pointer;
+
+  transition: 0.4s;
+
+  &:hover {
+    @include menuBtnHover;
+  }
+}
+
+#menu {
+  width: 0px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 0;
+  border: none;
+  padding: 0;
+
+  opacity: 0;
+  transition: 0.8s cubic-bezier(0.375, 0.035, 0.055, 0.965);
+
+  /* header의 flex 레이아웃인 align-items: center에
+  영향을 받으므로 item 따로 배열 */
+  align-self: flex-start;
+
+  &[open] {
+    width: 310px;
+    opacity: 1;
+  }
+
+  &::backdrop {
+    backdrop-filter: blur(5px);
+  }
+}
+
+#menu-header {
+  width: 290px;
+  height: 80px;
+
+  display: flex;
+  justify-content: end;
+
+  padding: 20px 0;
+
+  position: fixed;
+
+  background-color: $white;
+}
+
+#menu-close-btn svg {
+  width: 24px;
+  height: 24px;
+
+  transition: 0.4s;
+
+  &:hover {
+    @include menuBtnHover;
+  }
+}
+
+#menu-box {
+  padding: {
+    top: 5px;
+    right: 30px;
+    bottom: 80px;
+    left: 30px;
+  }
+
+  background-color: $white;
+}
+
+#menu-items {
+  margin-top: 90px;
+
+  li {
+    height: 40px;
+    min-width: 230px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 4px 8px;
+
+    &:last-child {
+      height: 55px;
+      min-width: 230px;
+
+      margin-top: 10px;
+      padding: 0;
+    }
+
+    a {
+      height: 40px;
+      min-width: 230px;
+
+      transition: 0.4s;
+
+      span {
+        margin: 0 4px;
+
+        font-size: 14px;
+        line-height: 40px;
+      }
+
+      &:hover {
+        @include menuBtnHover;
+      }
+    }
+  }
+}
+
+#menu-items-thick-text {
+  font: {
+    size: 16px;
+    weight: 600;
+  }
+
+  letter-spacing: 0.5px;
+}
+
+#menu-language {
+  display: flex;
+  justify-content: flex-start;
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    margin: {
+      top: 8px;
+      right: 0;
+      bottom: 24px;
+      left: 8px;
+    }
+  }
+}
+
+#menu-language-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  padding: {
+    top: 8px;
+    right: 12px;
+    bottom: 8px;
+    left: 8px;
+  }
+
+  span {
+    font-size: 12px;
+    color: #5c5e62;
+  }
+}

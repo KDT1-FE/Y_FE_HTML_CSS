@@ -19,9 +19,8 @@
   transition: all 0.5s ease;
 }
 .login_left_box {
-  position: relative;
+  margin-top: 48%;
   max-width: 380px;
-  top: 25%;
 }
 .login_right {
   width: 60%;
@@ -35,9 +34,7 @@
   transition: all 0.5s ease;
 }
 .login_right_box {
-  position: relative;
   max-width: 757px;
-  top: 24%;
 }
 
 /* 로그인 로고*/
@@ -291,6 +288,7 @@
 }
 
 .login_r_box01 {
+  margin-top: 40%;
   width: 100%;
 }
 .tab_box01 {

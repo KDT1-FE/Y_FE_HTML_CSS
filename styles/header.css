@@ -32,19 +32,13 @@ header {
   cursor: pointer;
 }
 
-.header-search-wrap {
-  position: relative;
-}
-
 .header-search {
   position: relative;
   width: 45.4rem;
   max-width: 48.8rem;
   height: 5rem;
-  margin: 0 auto;
   border: 0.1rem solid rgba(0, 0, 0, 0.15);
   border-radius: 2.4rem;
-  overflow: hidden;
 }
 
 .header-search_input {
@@ -68,14 +62,12 @@ header {
 
 .header-search_button {
   position: absolute;
-  height: 100%;
   right: 0;
   top: 0;
   width: 5.2rem;
   height: 4.8rem;
   background: url(../assets/icons/btn_search.svg) no-repeat 50%;
   border: none;
-  cursor: pointer;
 }
 
 .header-search-popup {
@@ -121,7 +113,6 @@ header {
   position: relative;
 }
 .header-mymenu li {
-  font-family: Pretendard;
   font-size: 1.5rem;
   color: #111;
   font-weight: 500;

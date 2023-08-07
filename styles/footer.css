@@ -13,7 +13,6 @@ footer {
     margin: 0 auto 0.4rem;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-    block-size: border-box;
     text-align: center;
 }
 .footer-policy-list {
@@ -44,7 +43,6 @@ footer {
     display: inline-flex;
     align-items: center;
     height: 100%;
-    box-sizing: border-box;
     padding: 0 3.1rem;
     line-height: 1.7rem;
 }
@@ -86,13 +84,11 @@ footer {
 }
 
 .footer-info-wrapper {
-    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 3rem;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .footer-info-wrapper > div:first-of-type {
@@ -127,7 +123,6 @@ a.footer-info-link {
     display: flex;
     width: 50%;
     margin: 0;
-    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -191,7 +186,6 @@ a.footer-info-link {
     background: rgba(0, 0, 0, 0.3);
 }
 .footer-info-notice {
-    display: block;
     max-width: none;
     text-align: left;
     margin: 1rem 0 0;

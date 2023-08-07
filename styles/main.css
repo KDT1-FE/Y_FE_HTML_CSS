@@ -284,9 +284,7 @@ aside,
   height: 90px;
   font-size: 1.4rem;
   line-height: 1.7rem;
-
   margin-right: 11px;
-
   padding-top: 20px;
   padding-left: 20 5 5px;
   padding-right: 5px;
@@ -399,7 +397,6 @@ aside,
   flex-direction: column;
   text-align: center;
   align-items: center;
-  /* flex-flow: column; */
 }
 
 #shop-second-box div:nth-of-type(1) div {
@@ -412,6 +409,17 @@ aside,
   height: 32px;
   margin-bottom: 10px;
 }
+
+/* #shop-second-box div:nth-of-type(2) div {
+  content: "";
+  background-image: url(../assets/sp_main2.png);
+  background-size: 122px 106px;
+  background-repeat: no-repeat;
+  background-position: -34px 0;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+} */
 
 #shop-second-box div:nth-of-type(3) div {
   content: "";

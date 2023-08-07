@@ -45,6 +45,7 @@
 }
 
 #footer-list a {
+  color: black;
   text-decoration: none;
 }
 #footer-list a:hover {

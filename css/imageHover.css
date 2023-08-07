@@ -1,34 +1,34 @@
 /* 이미지 호버를 위한 css코드 */
 /* product섹션 */
-.has-swiper .box .one {
+.has-swiper .box .box--1 {
   background: url("../assets/slide2-1_hover.jpg");
   background-size: 100%;
 }
-.has-swiper .box .two {
+.has-swiper .box .box--2 {
   background: url("../assets/slide2-2_hover.jpg");
   background-size: 100%;
 }
-.has-swiper .box .three {
+.has-swiper .box .box--3 {
   background: url("../assets/slide2-3_hover.jpg");
   background-size: 100%;
 }
-.has-swiper .box .four {
+.has-swiper .box .box--4 {
   background: url("../assets/slide2-4_hover.jpg");
   background-size: 100%;
 }
-.has-swiper .box .five {
+.has-swiper .box .box--5 {
   background: url("../assets/slide2-5_hover.jpg");
   background-size: 100%;
 }
-.has-swiper .box .six {
+.has-swiper .box .box--6 {
   background: url("../assets/slide2-6_hover.jpg");
   background-size: 100%;
 }
-.has-swiper .box .seven {
+.has-swiper .box .box--7 {
   background: url("../assets/slide2-7_hover.jpg");
   background-size: 100%;
 }
-.has-swiper .box .eight {
+.has-swiper .box .box--8 {
   background: url("../assets/slide2-8_hover.jpg");
   background-size: 100%;
 }

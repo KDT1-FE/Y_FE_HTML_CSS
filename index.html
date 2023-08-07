@@ -9,7 +9,7 @@
   <!-- reset cdn -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <!-- 폰트 -->
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+  <link defer rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
   <!--Swiper-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
@@ -18,9 +18,9 @@
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/imageHover.css">
+  <link defer rel="stylesheet" href="./css/reset.css">
+  <link defer rel="stylesheet" href="./css/main.css">
+  <link defer rel="stylesheet" href="./css/imageHover.css">
   <script defer src="./main.js"></script>
 </head>
 
@@ -240,14 +240,14 @@
     </div>
   </header>
 
-  <section class="updown-btn-container">
+  <aside class="updown-btn-container">
     <div class="go-top-btn">
       <img src="./assets/icons/arrow_top.png" alt="위로버튼">
     </div>
     <div class="go-bottom-btn">
       <img src="./assets/icons/arrow_bottom.png" alt="아래로버튼">
     </div>
-  </section>
+  </aside>
 
   <section class="main-introduction">
     <div class="swiper-container">
@@ -289,7 +289,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="box">
-              <div class="images one">
+              <div class="images box--1">
                 <img class="origin-img" src="assets/slide2-1.jpg" alt="슬라이드2-1">
               </div>       
               <div class="product-description">
@@ -309,7 +309,7 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <div class="images two">
+              <div class="images box--2">
                 <img src="assets/slide2-2.jpg" class="origin-img" alt="슬라이드2-2">
               </div>
               <div class="product-description">
@@ -329,7 +329,7 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <div class="images three">
+              <div class="images box--3">
                 <img src="assets/slide2-3.jpg" class="origin-img" alt="슬라이드2-3">
               </div>
               <div class="product-description">
@@ -349,7 +349,7 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <div class="images four">
+              <div class="images box--4">
                 <img src="assets/slide2-4.jpg" class="origin-img" alt="슬라이드2-3">
               </div>
               <div class="product-description">
@@ -369,7 +369,7 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <div class="images five">
+              <div class="images box--5">
                 <img src="assets/slide2-5.jpg" class="origin-img" alt="슬라이드2-3">
               </div>
               <div class="product-description">
@@ -389,7 +389,7 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <div class="images six">
+              <div class="images box--6">
                 <img src="assets/slide2-6.jpg" class="origin-img" alt="슬라이드2-3">
               </div>
               <div class="product-description">
@@ -407,7 +407,7 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <div class="images seven">
+              <div class="images box--7">
                 <img src="assets/slide2-7.jpg" class="origin-img" alt="슬라이드2-3">
               </div>
               <div class="product-description">
@@ -425,7 +425,7 @@
           </div>
           <div class="swiper-slide">
             <div class="box">
-              <div class="images eight">
+              <div class="images box--8">
                 <img src="assets/slide2-8.jpg" class="origin-img" alt="슬라이드2-3">
               </div>
               <div class="product-description">
@@ -667,56 +667,57 @@
       <img src="./assets/review12.jpg" alt="리뷰이미지12">
     </div>
   </section>
-</body>
-<footer>
-  <div class="grid-wrapper">
-    <div class="customer-center">
-      <div class="bold-title">
-        <h4>CUSTOMER CENTER</h4>
-        <h4>1855-2014</h4>
-      </div>
-      <div class="explain-text">
-        <div>평일 AM10:00 - PM06:00 (점심시간 12:00 - 13:00)</div>
-        <div>주말 AM11:00 - PM03:00</div>
-        <div>(*주말은 매장 안내 및 서비스 오류 상담만 가능합니다./공휴일 휴무)</div>
-        <div>문의 Info@jacksonchameleon.co.kr</div>
-      </div>
-    </div>
-    <div class="showroom">
-      <div class="bold-title">
-        <h4>SHOWROOM</h4>
-        <img src="./assets/logoSmall.png" alt="jackson chameleon">
-      </div>
-      <div class="explain-text">
-        <div class="icons">
-          <img src="./assets/icons/icon-facebook.svg" alt="페이스북">
-          <img src="./assets/icons/icon-insta.svg" alt="인스타그램">
-          <img src="./assets/icons/icon-youtube.svg" alt="유튜브">
-        </div>
-        <div>연희점 : 서울시 서대문구 연희로11가길 42</div>
-        <div>화-일 11:00 - 19:00</div>
-        <div>(*매월 마지막 주 금요일 18:00마감)</div>
-        <div>의왕 무브먼트랩 : 경기도 의왕시 백운로 588</div>
-        <div>부산 무브먼트랩 : 부산 해운대구 달맞이길65번길 148</div>
-        <div>한남 세컨드마켓 : 서울특별시 용산구 대사관로15길 8-3</div>
-        <div>화-일 11:30 - 19:00</div>
-        <button class="shop-information">매장 안내 바로가기</button>
-      </div>
-    </div>
-    <div class="etc">
-      <div>(주) 잭슨카멜레온 11154 경기도 포천시 군내면 용정경제로2길 13 1층 대표 송재영 정봉윤 황두현 사업자번호 230-81-10281[사업자정보확인] 통신판매업 2015-경기포천-0086</div>
-      <div class="text-wrapper">
-        <span>온라인숍 이용안내</span>
-        <span>이용약관</span>
-        <span>개인정보 보호정책</span>
-      </div>
-      <hr>
-      <div>© JACKSONCHAMELEON, INC. ALL RIGHTS RESERVED</div>
-    </div>
-  </div>
 
-  <div class="final-message">
-    <span>MAKE NEW HARMONY JACKSON CHAMELEON</span>
-  </div>
-</footer>
+  <footer>
+    <div class="grid-wrapper">
+      <div class="customer-center">
+        <div class="bold-title">
+          <h4>CUSTOMER CENTER</h4>
+          <h4>1855-2014</h4>
+        </div>
+        <div class="explain-text">
+          <div>평일 AM10:00 - PM06:00 (점심시간 12:00 - 13:00)</div>
+          <div>주말 AM11:00 - PM03:00</div>
+          <div>(*주말은 매장 안내 및 서비스 오류 상담만 가능합니다./공휴일 휴무)</div>
+          <div>문의 Info@jacksonchameleon.co.kr</div>
+        </div>
+      </div>
+      <div class="showroom">
+        <div class="bold-title">
+          <h4>SHOWROOM</h4>
+          <img src="./assets/logoSmall.png" alt="jackson chameleon">
+        </div>
+        <div class="explain-text">
+          <div class="icons">
+            <img src="./assets/icons/icon-facebook.svg" alt="페이스북">
+            <img src="./assets/icons/icon-insta.svg" alt="인스타그램">
+            <img src="./assets/icons/icon-youtube.svg" alt="유튜브">
+          </div>
+          <div>연희점 : 서울시 서대문구 연희로11가길 42</div>
+          <div>화-일 11:00 - 19:00</div>
+          <div>(*매월 마지막 주 금요일 18:00마감)</div>
+          <div>의왕 무브먼트랩 : 경기도 의왕시 백운로 588</div>
+          <div>부산 무브먼트랩 : 부산 해운대구 달맞이길65번길 148</div>
+          <div>한남 세컨드마켓 : 서울특별시 용산구 대사관로15길 8-3</div>
+          <div>화-일 11:30 - 19:00</div>
+          <button class="shop-information">매장 안내 바로가기</button>
+        </div>
+      </div>
+      <div class="etc">
+        <div>(주) 잭슨카멜레온 11154 경기도 포천시 군내면 용정경제로2길 13 1층 대표 송재영 정봉윤 황두현 사업자번호 230-81-10281[사업자정보확인] 통신판매업 2015-경기포천-0086</div>
+        <div class="text-wrapper">
+          <span>온라인숍 이용안내</span>
+          <span>이용약관</span>
+          <span>개인정보 보호정책</span>
+        </div>
+        <hr>
+        <div>© JACKSONCHAMELEON, INC. ALL RIGHTS RESERVED</div>
+      </div>
+    </div>
+  
+    <div class="final-message">
+      <span>MAKE NEW HARMONY JACKSON CHAMELEON</span>
+    </div>
+  </footer>
+</body>
 </html>

@@ -5,7 +5,7 @@
 */
 
 // 실시간 사용자 스크롤 위치 감지용 main 요소 불러오기
-const mainPage = document.querySelector("#main-page");
+const mainPage = document.querySelector("#main");
 // header 로고와 글자 색 변경용 모든 header 요소 불러오기
 const headerLogo = document.querySelector("#header-logo svg");
 const headerText = document.querySelectorAll(".header-nav span");

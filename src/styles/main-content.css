@@ -1,4 +1,4 @@
-main {
+#main {
   min-width: 100vw;
   height: 100vh;
 
@@ -23,7 +23,7 @@ main {
   scroll-snap-align: center;
 }
 
-#wlcome-video {
+#welcome-video {
   display: block;
 
   height: 100vh;

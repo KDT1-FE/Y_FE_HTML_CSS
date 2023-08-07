@@ -16,29 +16,25 @@
 
   position: relative;
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: {
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
 
   scroll-snap-align: center;
 }
 
 #welcome-video {
-  display: block;
-
   height: 100vh;
-  object-fit: cover;
 
-  inline-size: 100%;
-
-  overflow: clip;
-  overflow-clip-margin: content-box;
-
-  outline: none;
   border: none;
 
   position: relative;
   z-index: -1;
+
+  object-fit: cover;
+  inline-size: 100%;
 }
 
 .modelY {

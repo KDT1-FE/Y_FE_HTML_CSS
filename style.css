@@ -310,16 +310,17 @@ a{
 }
 
 .home_image_container .iphone_wrap:first-of-type{
-  display:block;
-  opacity:0;
+  display:none;
   top: 0;
   right: -104px;
+  animation: appear_from_bottom ease 1.5s;
 }
 
 .home_image_container .iphone_wrap:last-of-type{
-  opacity:0;
+  display:none;
   bottom:0;
   left:-104px; 
+  animation: appear_from_bottom ease 1.5s;
 }
 
 .iphone_wrap .image_item1{
@@ -353,14 +354,16 @@ a{
 
 
 .home_text2{
-  opacity: 0;
+  display: none;
   position:absolute;
   bottom: 166px;
   right: 0;
+  animation: appear_from_bottom ease 1.5s;
 }
 
 .home_text{
-  opacity: 0;
+  display: none;
+  animation: appear_from_bottom ease 1.5s;
 }
 
 .home_text h1{

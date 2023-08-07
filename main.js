@@ -11,8 +11,7 @@ addEventListener('reset',()=>{
 })
 
 const initalize = ()=>{
-  windowHeight = window.outerHeight
-  history.scrollRestoration = "manual";
+    let windowHeight = window.outerHeight
 }
 
 /* intro 애니메이션 */
@@ -38,175 +37,166 @@ setTimeout(()=>{
 
 
 let windowHeight = window.innerHeight
-initalize()
+
 /* home 스크롤 이벤트 */
-const homeText = document.querySelector('.home_text')
-const homeIphone1 = document.querySelector('.home_image_container .iphone_wrap:first-of-type')
-const homeIphone2 = document.querySelector('.home_image_container .iphone_wrap:last-of-type')
-const homeText2 = document.querySelector('.home_text2')
+const homeEventHandler = ()=>{
+    // 추후 removeEventHandler를 통하여 이벤트를 제거함으로 변수에 할당된 메모리 반환
+    const homeText = document.querySelector('.home_text')
+    const homeIphone1 = document.querySelector('.home_image_container .iphone_wrap:first-of-type')
+    const homeIphone2 = document.querySelector('.home_image_container .iphone_wrap:last-of-type')
+    const homeText2 = document.querySelector('.home_text2')
 
-// homeText가 50% 정도 뷰포트에 나왔을 경우 아래 함수를 실행시키고 싶다
-
-let observer1 = new IntersectionObserver(entries=>{
-  observer1cb(entries[0])
-},{root: null,threshold:0.5})
-
-const observer1cb = entry=>{
-  if(entry.isIntersecting){
-    homeText.style.opacity = 1
-    homeText.style.animation = `appear_from_bottom ease 1.5s`
-    // 화면에 시간간격마다 차례대로 화면에 요소를 띄움, 띄어지는 요소는 CSS animation 이 걸려있어서 부드럽게 동작
-    setTimeout(()=>{
-        homeIphone1.style.opacity = 1
-        homeIphone1.style.animation = `appear_from_bottom ease 1.5s`
-      setTimeout(()=>{
-          homeIphone2.style.opacity = 1
-          homeIphone2.style.animation = `appear_from_bottom ease 1.5s`
+    // window 화면 상단에서 한 요소의 가장 높은 위치까지 크기와 윈도우 높이를 비교
+    // console.log(homeText.getBoundingClientRect().top < windowHeight) 
+    if(homeText.getBoundingClientRect().top < windowHeight-200){
         setTimeout(()=>{
-            homeText2.style.opacity = 1
-            homeText2.style.animation = `appear_from_bottom ease 1.5s`
-            observer1.unobserve(homeText)
-        },600)
-      },600)
-    },600)
-  }
+            homeText.style.display="block"
+            // 화면에 시간간격마다 차례대로 화면에 요소를 띄움, 띄어지는 요소는 CSS animation 이 걸려있어서 부드럽게 동작
+            setTimeout(()=>{
+                homeIphone1.style.display = "block"
+                setTimeout(()=>{
+                    homeIphone2.style.display = "block"
+                    setTimeout(()=>{
+                        homeText2.style.display = "block"
+                    },600)
+                },600)
+            },600)
+        },300)
+        // 성능 최적화를 위하여 한번 사용한 eventListener를 제거 => 딱 한번만 동작하게 됨
+        window.removeEventListener('scroll',homeEventHandler)
+    }
 }
-observer1.observe(homeText)
+window.addEventListener('scroll',homeEventHandler)
+
 
 /* home2 스크롤 이벤트 */
-const home2Text = document.querySelector('.home2_textwrap')
-const home2Contents = document.querySelectorAll('.home2_content')
-const home2Images = document.querySelectorAll('.home2_image_container')
+const home2EventHandler = ()=>{
+    const home2Text = document.querySelector('.home2_textwrap')
+    const home2Contents = document.querySelectorAll('.home2_content')
+    const home2Images = document.querySelectorAll('.home2_image_container')
 
-let observer2 = new IntersectionObserver(entries=>{
-  observer2cb(entries[0])
-},{threshold:0.5})
-
-const observer2cb = entry=>{
-  if(entry.isIntersecting){
-    home2Text.style.animation = 'appear_from_bottom ease 1.5s'
-    home2Text.style.opacity = 1
-    
-    setTimeout(()=>{
-      home2Contents.forEach(item=>{
-        item.style.animation = 'appear_from_bottom ease 1.5s'
-        item.style.opacity = 1
-      })
-      
-      setTimeout(()=>{
-        home2Images.forEach(item=>{
-          item.style.animation = 'appear_from_bottom ease 1.5s'
-          item.style.opacity = 1
-        })
-      },600)
-    },600)
-    observer2.unobserve(home2Text)
-  }
+    if(home2Text.getBoundingClientRect().top < windowHeight-200){
+        setTimeout(()=>{
+            home2Text.style.animation = 'appear_from_bottom ease 1.5s'
+            home2Text.style.opacity = 1
+            
+            setTimeout(()=>{
+                home2Contents.forEach(item=>{
+                    item.style.animation = 'appear_from_bottom ease 1.5s'
+                    item.style.opacity = 1
+                })
+                
+                setTimeout(()=>{
+                    home2Images.forEach(item=>{
+                        item.style.animation = 'appear_from_bottom ease 1.5s'
+                        item.style.opacity = 1
+                    })
+                },600)
+            },600)
+        },200)
+        window.removeEventListener('scroll',home2EventHandler)
+    }
 }
-observer2.observe(home2Text)
+window.addEventListener('scroll',home2EventHandler)
 
 /* home3 스크롤 이벤트 */
-const home3Text = document.querySelector('.home3_textwrap')
-const home3ImageContainer = document.querySelector('.home3_image_container .iphone_wrap')
-const home3P = document.querySelector('.home3_textwrap2 p')
-const home3TextSpans = document.querySelectorAll('.home3_textwrap2 h3')
+const home3EventHandler = ()=>{
+    const home3Text = document.querySelector('.home3_textwrap')
+    const home3ImageContainer = document.querySelector('.home3_image_container .iphone_wrap')
+    const home3P = document.querySelector('.home3_textwrap2 p')
+    const home3TextSpans = document.querySelectorAll('.home3_textwrap2 h3')
 
-
-let observer3 = new IntersectionObserver(entries=>{
-  observer3cb(entries[0])
-})
-const observer3cb = entry=>{
-  if(entry.isIntersecting){
-    home3Text.style.animation = 'appear_from_bottom ease 1.5s'
-    home3Text.style.opacity = 1
-    setTimeout(()=>{
-      home3ImageContainer.style.animation = 'appear_from_bottom ease 1.5s'
-      home3ImageContainer.style.opacity = 1
-      setTimeout(()=>{
-        home3P.style.animation = 'appear_from_bottom ease 1.5s'
-        home3P.style.opacity = 1
-        //console.log(home3TextSpans)
+    if(home3Text.getBoundingClientRect().top < windowHeight-200){
         setTimeout(()=>{
-          home3TextSpans[0].style.animation = 'appear_from_bottom ease 1.5s'
-          home3TextSpans[0].style.opacity = 1
-          setTimeout(()=>{
-            home3TextSpans[1].style.animation = 'appear_from_bottom ease 1.5s'
-            home3TextSpans[1].style.opacity = 1
+            home3Text.style.animation = 'appear_from_bottom ease 1.5s'
+            home3Text.style.opacity = 1
             setTimeout(()=>{
-              home3TextSpans[2].style.animation = 'appear_from_bottom ease 1.5s'
-              home3TextSpans[2].style.opacity = 1
+                home3ImageContainer.style.animation = 'appear_from_bottom ease 1.5s'
+                home3ImageContainer.style.opacity = 1
+                setTimeout(()=>{
+                    home3P.style.animation = 'appear_from_bottom ease 1.5s'
+                    home3P.style.opacity = 1
+                    //console.log(home3TextSpans)
+                    setTimeout(()=>{
+                        home3TextSpans[0].style.animation = 'appear_from_bottom ease 1.5s'
+                        home3TextSpans[0].style.opacity = 1
+                        setTimeout(()=>{
+                            home3TextSpans[1].style.animation = 'appear_from_bottom ease 1.5s'
+                            home3TextSpans[1].style.opacity = 1
+                            setTimeout(()=>{
+                                home3TextSpans[2].style.animation = 'appear_from_bottom ease 1.5s'
+                                home3TextSpans[2].style.opacity = 1
+                            },600)
+                        },600)
+                    },600)                   
+                },600)
             },600)
-          },600)
-          },600)                   
-        },600)
-    },600)
-    observer3.unobserve(home3Text)
-  }
+        },300)
+        window.removeEventListener('scroll',home3EventHandler)
+    }
 }
-observer3.observe(home3Text)
+window.addEventListener('scroll',home3EventHandler)
 
 
 /* home4 스크롤 이벤트 */
-const home4Text = document.querySelector('.home4_textwrap')
-const home4Contents = document.querySelectorAll('.home4_content_textwrap')
-const home4Images = document.querySelectorAll('.home4_content img')
+const home4EventHandler = ()=>{
+    const home4Text = document.querySelector('.home4_textwrap')
+    const home4Contents = document.querySelectorAll('.home4_content_textwrap')
+    const home4Images = document.querySelectorAll('.home4_content img')
 
-let observer4 = new IntersectionObserver(entries=>{
-  observer4cb(entries[0])
-},{threshold:0.5})
-
-const observer4cb = entry=>{
-  if(entry.isIntersecting){
-    home4Text.style.animation = 'appear_from_bottom ease 1.5s'
-      home4Text.style.opacity = 1
-      setTimeout(()=>{
-        home4Contents.forEach(item=>{
-          item.style.animation = 'appear_from_bottom ease 1.5s'
-          item.style.opacity = 1
-        })
+    if(home4Text.getBoundingClientRect().top < windowHeight-200){
         setTimeout(()=>{
-          home4Images.forEach(item=>{
-            item.style.animation = 'appear_from_bottom ease 1.5s'
-            item.style.opacity = 1
-          })
-        },600)
-    },600)
-    observer4.unobserve(home4Text)
-  }
+            home4Text.style.animation = 'appear_from_bottom ease 1.5s'
+            home4Text.style.opacity = 1
+            setTimeout(()=>{
+                home4Contents.forEach(item=>{
+                    item.style.animation = 'appear_from_bottom ease 1.5s'
+                    item.style.opacity = 1
+                })
+
+                setTimeout(()=>{
+                    home4Images.forEach(item=>{
+                        item.style.animation = 'appear_from_bottom ease 1.5s'
+                        item.style.opacity = 1
+                    })
+
+                },600)
+            },600)
+        },200) 
+        window.removeEventListener('scroll',home4EventHandler)
+    }
 }
-observer4.observe(home4Text)
+window.addEventListener('scroll',home4EventHandler)
 
 /* home5 스크롤 이벤트 */
-const home5Text = document.querySelector('.home5_textwrap')
-const home5P1 = document.querySelector('.home5_content_text_inner p:first-of-type')
-const home5P2 = document.querySelector('.home5_content_text_inner p:last-of-type')
-const home5Text2 = document.querySelector('.home5_textwrap2')
+const home5EventHandler = ()=>{
+    const home5Text = document.querySelector('.home5_textwrap')
+    const home5P1 = document.querySelector('.home5_content_text_inner p:first-of-type')
+    const home5P2 = document.querySelector('.home5_content_text_inner p:last-of-type')
+    const home5Text2 = document.querySelector('.home5_textwrap2')
 
-let observer5 = new IntersectionObserver(entries=>{
-  observer5cb(entries[0])
-},{threshold:0.5})
-
-const observer5cb = entry=>{
-  if(entry.isIntersecting){
-    home5Text.style.animation = 'appear_from_bottom ease 1.5s'
-    home5Text.style.opacity = 1
-    
-    setTimeout(()=>{
-      home5P1.style.animation = 'appear_from_bottom ease 1.5s'
-      home5P1.style.opacity = 1
-      setTimeout(()=>{
-        home5P2.style.animation = 'appear_from_bottom ease 1.5s'
-        home5P2.style.opacity = 1
+    if(home5Text.getBoundingClientRect().top < windowHeight-200){
         setTimeout(()=>{
-          home5Text2.style.animation = 'appear_from_bottom ease 1.5s'
-          home5Text2.style.opacity = 1
-        },600)
-      },600)      
-    },600)     
-    observer5.unobserve(home5Text)
-  }
+            home5Text.style.animation = 'appear_from_bottom ease 1.5s'
+            home5Text.style.opacity = 1
+            
+            setTimeout(()=>{
+                home5P1.style.animation = 'appear_from_bottom ease 1.5s'
+                home5P1.style.opacity = 1
+                setTimeout(()=>{
+                    home5P2.style.animation = 'appear_from_bottom ease 1.5s'
+                    home5P2.style.opacity = 1
+                    setTimeout(()=>{
+                        home5Text2.style.animation = 'appear_from_bottom ease 1.5s'
+                        home5Text2.style.opacity = 1
+                    },600)
+                },600)      
+            },600)     
+        },200)
+        window.removeEventListener('scroll',home5EventHandler)
+    }
 }
-observer5.observe(home5Text)
+window.addEventListener('scroll',home5EventHandler)
 
 /* home5 스크롤에 따른 아이콘 등장 이벤트 - 이건 이벤트를 지우진 않음 */ 
 
@@ -346,57 +336,54 @@ const home6ScrollHandler = ()=>{
 window.addEventListener('scroll', home6ScrollHandler)
 
 /* Home7 스크롤 등장 애니메이션 */
-const home7Text = document.querySelector('.home7_textwrap')
-const home7Contents = document.querySelectorAll('.home7_content')
 
-const observer7 = new IntersectionObserver(entries=>{
-  observer7cb(entries[0])
-},{threshold:0.5})
+const home7EventHandler = ()=>{
+    const home7Text = document.querySelector('.home7_textwrap')
+    const home7Contents = document.querySelectorAll('.home7_content')
 
-const observer7cb = entry=>{
-  if(entry.isIntersecting){
-    home7Text.style.animation = 'appear_from_bottom ease 1.5s'
-    home7Text.style.opacity = 1
-    
-    setTimeout(()=>{
-      home7Contents.forEach(item=>{
-        item.style.animation = 'appear_from_bottom ease 1.5s'
-        item.style.opacity = 1
-      }) 
-    },600)
-    observer7.unobserve(home7Text)
-  }
-  observer7.observe(home7Text)
-  }
-observer7.observe(home7Text)
-
-
+    if(home7Text.getBoundingClientRect().top < windowHeight-200){
+        setTimeout(()=>{
+            home7Text.style.animation = 'appear_from_bottom ease 1.5s'
+            home7Text.style.opacity = 1
+            
+            setTimeout(()=>{
+                home7Contents.forEach(item=>{
+                    item.style.animation = 'appear_from_bottom ease 1.5s'
+                    item.style.opacity = 1
+                })
+                
+            },600)     
+        },200)
+        window.removeEventListener('scroll',home7EventHandler)
+    }
+}
+window.addEventListener('scroll',home7EventHandler)
 
 
 /* Home8 스크롤 등장 애니메이션 */
-const home8Img = document.querySelector('.home8_container img')
-const home8Text = document.querySelector('.home8_textwrap')
-const home8Content = document.querySelector('.home8_content')
 
-let observer8 = new IntersectionObserver(entries=>{
-  observer8cb(entries[0])
-},{threshold:0.4})
+const home8EventHandler = ()=>{
+    const home8Img = document.querySelector('.home8_container img')
+    const home8Text = document.querySelector('.home8_textwrap')
+    const home8Content = document.querySelector('.home8_content')
 
-const observer8cb = entry => {
-  if(entry.isIntersecting){
-    home8Img.style.animation = 'appear_from_bottom ease 1.5s'
-    home8Img.style.opacity = 1
+    if(home8Img.getBoundingClientRect().top < windowHeight-200){
+        setTimeout(()=>{
+            home8Img.style.animation = 'appear_from_bottom ease 1.5s'
+            home8Img.style.opacity = 1
+            
+            setTimeout(()=>{
+                home8Text.style.animation = 'appear_from_bottom ease 1.5s'
+                home8Text.style.opacity = 1
+
+                setTimeout(()=>{
+                    home8Content.style.animation = 'appear_from_bottom ease 1.5s'
+                    home8Content.style.opacity = 1
+                },600)
+            },600)
     
-    setTimeout(()=>{
-      home8Text.style.animation = 'appear_from_bottom ease 1.5s'
-      home8Text.style.opacity = 1
-  
-      setTimeout(()=>{
-        home8Content.style.animation = 'appear_from_bottom ease 1.5s'
-        home8Content.style.opacity = 1
-      },600)
-    },600)
-    observer8.unobserve(home8Img)
-  }
+        },200)
+        window.removeEventListener('scroll',home8EventHandler)
+    }
 }
-observer8.observe(home8Img)
+window.addEventListener('scroll',home8EventHandler)

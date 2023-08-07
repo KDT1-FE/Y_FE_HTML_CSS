@@ -52,7 +52,6 @@ function nextMove() {
     if(cur <= maxSlide) {
         const offset = slideWidth * (cur-1);
         slideItems.forEach(i => {
-            //i.setAttribute("style", `left : ${-offset}px`);
             i.style.left =  `${-offset}px`;
         
         });
@@ -63,7 +62,6 @@ function nextMove() {
         cur = 0;
         let offset = slideWidth * (cur-1);
         slideItems.forEach(i => {
-            //i.setAttribute("style", `left : ${-offset}px`);
             i.style.left =  `${-offset}px`;
         
         });
@@ -71,7 +69,6 @@ function nextMove() {
         offset = slideWidth * cur;
         setTimeout(() => {
             slideItems.forEach( i => {
-                //i.setAttribute("style", `left : ${-offset}px`);
                 i.style.left =  `${-offset}px`;
             })
         }, 0);
@@ -86,7 +83,6 @@ function prevMove() {
     if(cur > 0) {
         const offset = slideWidth * cur;
         slideItems.forEach(i => {
-            //i.setAttribute("style", `left : ${-offset}px`);
             i.style.left =  `${-offset}px`;
         });
         paginationItems.forEach( i => i.classList.remove("active"));
@@ -96,7 +92,6 @@ function prevMove() {
         cur = maxSlide + 1;
         let offset = slideWidth * cur;
         slideItems.forEach(i => {
-            //i.setAttribute("style", `left : ${-offset}px`);
             i.style.left =  `${-offset}px`;
         
         });
@@ -104,7 +99,6 @@ function prevMove() {
         offset = slideWidth * cur;
         setTimeout(() => {
             slideItems.forEach( i => {
-                //i.setAttribute("style", `left : ${-offset}px`);
                 i.style.left =  `${-offset}px`;
             });
         }, 0);
@@ -125,7 +119,6 @@ for(let i=0; i<maxSlide; i++) {
         cur = i+1;
         const offset = slideWidth * cur;
         slideItemsImgs.forEach(i => {
-            //i.setAttribute("style", `left : ${-offset}px`);
             i.style.left =  `${-offset}px`;
         
         });

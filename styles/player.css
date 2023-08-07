@@ -106,3 +106,25 @@
   -webkit-appearance: none;
   accent-color: #ffffff;
 }
+@media (max-width: 999px) {
+  .musicInfo_icon_box {
+    display: none;
+  }
+  .music_btn.change {
+    display: none;
+  }
+  .music_btn.rotate {
+    display: none;
+  }
+  .player_musicInfo_area {
+    margin-left: 10px;
+  }
+  .player_sound_area {
+    width: 10%;
+  }
+  .player_sound_area span,
+  .player_input_container,
+  .player_audio_img {
+    display: none;
+  }
+}

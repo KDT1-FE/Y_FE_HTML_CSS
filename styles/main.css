@@ -225,9 +225,6 @@ input[id="select_box4"]:checked ~ .slide-nav .label4 {
 }
 
 .background {
-  background-size: 100%;
-  background-repeat: no-repeat;
-
   position: absolute;
   top: 0;
   right: 0;
@@ -235,7 +232,6 @@ input[id="select_box4"]:checked ~ .slide-nav .label4 {
   bottom: 0;
 
   pointer-events: none;
-  z-index: 0;
 }
 
 .only-desktop {

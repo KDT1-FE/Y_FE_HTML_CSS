@@ -23,24 +23,42 @@
           </button>
         </div>
       </div>
-      <div class="header">
-        <header>
+      <header class="weight400 fs16">
+        <div class="header__inner_container">
           <div class="header__logo">
-            <img src="./assets/image/Spotify_Logo_CMYK_White.png" alt="logo image"></img>
-            <a href="index.html" class="header__image"></a>
+            <a href="index.html" class="header__image">
+              <img src="./assets/image/Spotify_Logo_CMYK_White.png" alt="logo image"></img>
+            </a>
           </div>  
-        </header>
-        <nav class="nav white-text">
-          <ul class="nav__link thick">
-            <li><a href="#">프리미엄</a></li>
-            <li><a href="#">지원</a></li>
-            <li><a href="#">다운로드하기</a></li>
-            <li>|</li>
-            <li><a href="#">가입하기</a></li>
-            <li><a href="#">로그인하기</a></li>
-          </ul>
-        </nav>
-      </div>
+          <nav class="header__inner_nav white-text">
+            <ul class="header__inner_nav--link thick">
+              <li><a href="#">프리미엄</a></li>
+              <li><a href="#">지원</a></li>
+              <li><a href="#">다운로드하기</a></li>
+              <li><a href="">|</a></li>
+              <li><a href="#">가입하기</a></li>
+              <li><a href="#">로그인하기</a></li>
+            </ul>
+          </nav>
+          <div class="header__mobile_menu" onclick="mobile_nav_menu()">
+            <button class="transparent">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav class="header__mobile_nav">
+              <ul class="white-text">
+                <li><a href="#">프리미엄</a></li>
+                <li><a href="#">지원</a></li>
+                <li><a href="#">다운로드하기</a></li>
+                <li role="separator"><a href="">ㅡ</a></li>
+                <li><a href="#">가입하기</a></li>
+                <li><a href="#">로그인하기</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
       <main>
         <section class="section__register-banner">
           <article>

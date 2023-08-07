@@ -26,6 +26,10 @@ body {
   font-weight: 700;
 }
 
+.fs16 {
+  font-size: 16px;
+}
+
 .fs18 {
   font-size: 18px;
 }
@@ -52,6 +56,10 @@ body {
 
 .white {
   background-color: white;
+}
+
+.transparent {
+  background-color: transparent;
 }
 
 .white-text {

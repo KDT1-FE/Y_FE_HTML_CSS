@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>잭슨카멜레온</title>
+  <!-- 파비콘 -->
+  <link rel="icon" type="image/png" sizes="16x16"  href="./assets/icons/favicon-16x16.png">
+  <!-- reset cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- 폰트 -->
+  <link defer rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link defer rel="stylesheet" href="./css/reset.css">
+  <link defer rel="stylesheet" href="./css/main.css">
+  <link defer rel="stylesheet" href="./css/imageHoverEffect.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-inner-wrapper">
+      <div class="header-inner">
+        <div id="fixed-top-header" class="normal">
+          <div class="row">
+            <div class="logo-line">
+              <a href="/">
+                <img src="./assets/logo.png"  alt="Jackson Chameleon" class="max logo-image black">
+                <img src="./assets/logo-w.png" alt="Jackson Chameleon" class="max logo-image white">
+              </a>
+            </div>
+            <div class="navi-wrapper">
+              <ul class="navi-list">
+                <li class="navi-text has-submenu">
+                  <a href="/">
+                    <span>SHOP</span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/">All</a>
+                    </li>
+                    <li>
+                      <a href="/">Sofas</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="/">Fabric</a>
+                        </li>
+                        <li>
+                          <a href="/">Leather</a>
+                        </li>
+                        <li>
+                          <a href="/">Module</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/">Tables</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="/">Dining</a>
+                        </li>
+                        <li>
+                          <a href="/">Side</a>
+                        </li>
+                        <li>
+                          <a href="/">Sofa</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/">Chairs</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="/">Dining</a>
+                        </li>
+                        <li>
+                          <a href="/">Rounge</a>
+                        </li>
+                        <li>
+                          <a href="/">Bench</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/">Storage</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="/">Sideboard</a>
+                        </li>
+                        <li>
+                          <a href="/">Storage</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/">Lighting</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="/">Table lamp</a>
+                        </li>
+                        <li>
+                          <a href="/">Floor lamp</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/">Accessories</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="/">Cushion</a>
+                        </li>
+                        <li>
+                          <a href="/">Rug</a>
+                        </li>
+                        <li>
+                          <a href="/">Home deco</a>
+                        </li>
+                        <li>
+                          <a href="/">Pet</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/">Maintenance</a>
+                    </li>
+                    <li>
+                      <a href="/">Select#</a>
+                      <ul class="depth3">
+                        <li>
+                          <a href="/">Artemide</a>
+                        </li>
+                        <li>
+                          <a href="/">Flos</a>
+                        </li>
+                        <li>
+                          <a href="/">Vibia</a>
+                        </li>
+                        <li>
+                          <a href="/">Marset</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="navi-text has-submenu">
+                  <a href="/">
+                    <span>SPECIAL OFFER</span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/">NEW JACKSON CHAMELEON</a>
+                    </li>
+                    <li>
+                      <a href="/">Pop-up</a>
+                    </li>
+                    <li>
+                      <a href="/">Membership</a>
+                    </li>
+                    <li>
+                      <a href="/">Second Market</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="navi-text">
+                  <a href="/">
+                    <span>REVIEW</span>
+                  </a>
+                </li>
+
+                <li class="navi-text">
+                  <a href="/">
+                    <span>STORIES</span>
+                  </a>
+                </li>
+
+                <li class="navi-text has-submenu">
+                  <a href="/">
+                    <span>COMMUNITY</span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="/">Notice</a>
+                    </li>
+                    <li>
+                      <a href="/">CS Center</a>
+                    </li>
+                    <li>
+                      <a href="/">Q&A</a>
+                    </li>
+                    <li>
+                      <a href="/">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="/">Store</a>
+                    </li>
+                    <li>
+                      <a href="/">About</a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+            <div class="header-right-area">
+              <a href="/" class="right-element">BUSINESS</a>
+              <svg id="icon-search" class="right-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.69 196.65" height="22">
+                <defs>
+                  <style>.cls-1{fill:#040000;}</style>
+                </defs>
+                <path class="cls-1" d="m78.13,156.26C35,156.26,0,121.17,0,78.13S35.08,0,78.13,0s78.13,35.08,78.13,78.13-35,78.13-78.13,78.13Zm0-150.28C38.32,5.97,5.97,38.32,5.97,78.13s32.35,72.16,72.16,72.16,72.16-32.43,72.16-72.16S117.94,5.97,78.13,5.97Z"></path><path class="cls-1" d="m193.66,196.65c-.75,0-1.49-.25-2.07-.83l-62.37-62.37c-1.16-1.16-1.16-3.07,0-4.23s3.07-1.16,4.23,0l62.37,62.37c1.16,1.16,1.16,3.07,0,4.23-.58.58-1.41.83-2.16.83Z"></path>
+              </svg>
+              <svg id="icon-member" class="right-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.2 100" height="22">
+                <defs>
+                  <style>.cls-1{fill:#040000;}</style>
+                </defs>
+                <path class="cls-1" d="m45.08,43.14c-11.89,0-21.57-9.68-21.57-21.57S33.19,0,45.08,0s21.57,9.68,21.57,21.57-9.68,21.57-21.57,21.57Zm0-40.41c-10.41,0-18.84,8.47-18.84,18.84s8.47,18.84,18.84,18.84,18.84-8.47,18.84-18.84c0-10.41-8.43-18.84-18.84-18.84Z"></path><path class="cls-1" d="m88.95,100c-.68,0-1.22-.57-1.22-1.22v-30.08c0-8.01-6.53-14.51-14.51-14.51H16.98c-8.01,0-14.55,6.53-14.55,14.51v30.08c0,.68-.57,1.22-1.22,1.22-.68,0-1.22-.57-1.22-1.22v-30.08c0-9.38,7.63-16.98,16.98-16.98h56.25c9.38,0,16.98,7.63,16.98,16.98v30.08c0,.68-.57,1.22-1.25,1.22Z"></path>
+              </svg>
+              <svg id="icon-cart" class="right-element" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.58 92.37" height="22">
+                <defs>
+                  <style>.cls-1{fill:#040000;}</style>
+                </defs>
+                <path class="cls-1" d="m88.35,92.37H1.23c-.69,0-1.23-.54-1.23-1.23V24.4c0-.69.54-1.23,1.23-1.23h87.12c.69,0,1.23.54,1.23,1.23v66.74c-.04.69-.58,1.23-1.23,1.23Zm-85.92-2.47h84.69V25.63H2.43v64.28Z"></path><path class="cls-1" d="m59.67,32.23c-.65,0-1.2-.54-1.2-1.2v-14.9c0-7.58-6.16-13.7-13.7-13.7s-13.7,6.16-13.7,13.7v14.9c0,.65-.54,1.2-1.2,1.2s-1.2-.54-1.2-1.2v-14.9C28.68,7.25,35.89,0,44.81,0s16.13,7.21,16.13,16.13v14.9c-.07.65-.58,1.2-1.27,1.2Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside class="updown-btn-container">
+    <div class="go-top-btn">
+      <img src="./assets/icons/arrow_top.png" alt="위로버튼">
+    </div>
+    <div class="go-bottom-btn">
+      <img src="./assets/icons/arrow_bottom.png" alt="아래로버튼">
+    </div>
+  </aside>
+
+  <section class="main-introduction">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/slide1-1.jpg" class="swiper1-img" alt="슬라이드이미지1-1">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/slide1-2.jpg" class="swiper1-img" alt="슬라이드이미지1-2">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/slide1-3.jpg" class="swiper1-img" alt="슬라이드이미지1-3">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/slide1-4.jpg" class="swiper1-img" alt="슬라이드이미지1-4">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/slide1-5.jpg" class="swiper1-img" alt="슬라이드이미지1-5">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <section class="products-container has-swiper appear1">
+    <div class="text-container">
+      <h2 class="title">Products</h2>
+      <ul class="menu">
+        <li>
+          <div class="text">New Collection</div>
+        </li>
+        <li>
+          <div class="text">Bestseller</div>
+        </li>
+      </ul>
+    </div>
+    <div class="product-swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--1">
+                <img class="origin-img" src="assets/slide2-1.jpg" alt="슬라이드2-1">
+              </div>       
+              <div class="product-description">
+                <div class="info">
+                  <h4>Mass Sofa - Limited</h4>
+                </div>
+                <div class="meta">
+                  <span class="last-price text">990,000원</span>
+                  <span class="current-price text">693,000원-</span>
+                  <span class="right">
+                    <span class="discount text">30%</span>
+                    <span class="feature text">Limited Edition</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--2">
+                <img src="assets/slide2-2.jpg" class="origin-img" alt="슬라이드2-2">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Pebble Cushion - Limited</h4>
+                </div>
+                <div class="meta">
+                  <span class="last-price text">110,000원</span>
+                  <span class="current-price text">77,000원-</span>
+                  <span class="right">
+                    <span class="discount text">30%</span>
+                    <span class="feature text">Limited Edition</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--3">
+                <img src="assets/slide2-3.jpg" class="origin-img" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Leve Module - Limited</h4>
+                </div>
+                <div class="meta">
+                  <span class="last-price text">1,243,000원</span>
+                  <span class="current-price text">870,100원-</span>
+                  <span class="right">
+                    <span class="discount text">30%</span>
+                    <span class="feature text">Limited Edition</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--4">
+                <img src="assets/slide2-4.jpg" class="origin-img" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Leve Sofa - Limited</h4>
+                </div>
+                <div class="meta">
+                  <span class="last-price text">2,695,000원</span>
+                  <span class="current-price text">1,886,500원~</span>
+                  <span class="right">
+                    <span class="discount text">30%</span>
+                    <span class="feature text">Limited Edition</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--5">
+                <img src="assets/slide2-5.jpg" class="origin-img" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Leve Cushion - Limited</h4>
+                </div>
+                <div class="meta">
+                  <span class="last-price text">132,000원-</span>
+                  <span class="current-price text">92,400원</span>
+                  <span class="right">
+                    <span class="discount text">30%</span>
+                    <span class="feature text">Limited Edition</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--6">
+                <img src="assets/slide2-6.jpg" class="origin-img" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Tartan Module</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">2,860,000원 -</span>
+                  <span class="right">
+                    <span class="feature text">New Collection</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--7">
+                <img src="assets/slide2-7.jpg" class="origin-img" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Tartan Sofa</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">5,720,000원 -</span>
+                  <span class="right">
+                    <span class="feature text">New Collection</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box--8">
+                <img src="assets/slide2-8.jpg" class="origin-img" alt="슬라이드2-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Tartan Cushion</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">231,000원 -</span>
+                  <span class="right">
+                    <span class="feature text">New Collection</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prev-next-buttons">
+          <img class="swiper-prev" src="./assets/icons/icon-left-arrow.svg" alt="이전">
+          <img class="swiper-next" src="./assets/icons/icon-right-arrow.svg" alt="다음">
+      </div>
+    </div>
+
+  </section>
+
+  <section class="half-banner-container appear2">
+    <div class="first half-banner">
+      <a href="/">
+        <img src="./assets/row_half_banner.jpg" alt="halfbanner1번째이미지">
+        <div class="text-area">
+          <div class="sub-title">Row Shelf</div>
+          <div class="title">Displayinig the essence of self.</div>
+        </div>
+        <div class="btn-shopnow">SHOP</div>
+      </a>
+    </div>
+    <div class="second half-banner">
+      <a href="">
+        <img src="./assets/mass_half_banner.jpg" alt="halfbanner2번째이미지">
+        <div class="text-area">
+          <div class="sub-title">Mass Sofa</div>
+          <div class="title">Clean and minimal silhouette seamed with natural curves.</div>
+        </div>
+        <div class="btn-shopnow">SHOP</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="select-shop-container has-swiper appear3">
+    <div class="text-container">
+      <h2 class="title">Select#</h2>
+      <ul class="menu">
+        <li><div class="text">Lighting</div></li>
+        <li><div class="text">Rug</div></li>
+        <li><div class="text">Home Deco</div></li>
+      </ul>      
+    </div>
+    <div class="product-swiper has-swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box2--1">
+                <img src="assets/slide3-1.jpg" class="origin-img" alt="슬라이드3-1">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Cone Table Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">286,000원 -</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box2--2">
+                <img src="assets/slide3-2.jpg" class="origin-img" alt="슬라이드3-2">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Scoop Table Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">264,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box2--3">
+                <img src="assets/slide3-3.jpg" class="origin-img" alt="슬라이드3-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Pin Table Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">374,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box2--4">
+                <img src="assets/slide3-4.jpg" class="origin-img" alt="슬라이드3-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Cone Floor Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">550,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box2--5">
+                <img src="assets/slide3-5.jpg" class="origin-img" alt="슬라이드3-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Scoop Floor Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">429,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="images box2--6">
+                <img src="assets/slide3-6.jpg" class="origin-img" alt="슬라이드3-3">
+              </div>
+              <div class="product-description">
+                <div class="info">
+                  <h4>Pin Floor Lamp</h4>
+                </div>
+                <div class="meta">
+                  <span class="current-price text">429,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prev-next-buttons">
+        <img class="swiper-prev" src="./assets/icons/icon-left-arrow.svg" alt="이전">
+        <img class="swiper-next" src="./assets/icons/icon-right-arrow.svg" alt="다음">
+    </div>
+    </div>
+
+  </section>
+
+  <section class="stories-container appear4">
+    <div class="text-container">
+      <h2 class="title">Stories</h2>
+    </div>
+    <div class="boxes">
+      <div class="box">
+        <img src="./assets/stories-1.jpg" alt="스토리1">
+        <span>6월의 먼슬리 아이템</span>
+      </div>
+      <div class="box">
+        <img src="./assets/stories-2.jpg" alt="스토리1">
+        <span>5월의 먼슬리 아이템</span>
+      </div>
+      <div class="box">
+        <img src="./assets/stories-3.jpg" alt="스토리1">
+        <span>4월의 먼슬리 아이템</span>
+      </div>
+      <div class="box">
+        <img src="./assets/stories-4.jpg" alt="스토리1">
+        <span>3월의 먼슬리 아이템</span>
+      </div>
+    </div>
+  </section>
+  
+  <section class="business-solution-container appear5">
+    <div class="business-wrap">
+      
+      <div class="text-container">
+        <h2 class="title">Business solution</h2>
+        <div class="menu">카페, 오피스, 레스토랑, 코워킹 스페이스 휴게 공간 등 공간의 목적, 기능에 알맞은 솔루션을 제공합니다.</div>
+      </div>
+      <div class="btn-request">문의하기</div>
+
+      <div class="business-solution-slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/business_main_03.jpg" class="swiper1-img" alt="슬라이드이미지1-1">
+              <div class="whereText">
+                <span class="firstPlace">네이버 판교 오피스</span>
+              </div>  
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/business_main_04.jpg" class="swiper1-img" alt="슬라이드이미지1-2">
+              <div class="whereText">
+                <span class="secondPlace">코웨이 갤러리</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/business_main_05.jpg" class="swiper1-img" alt="슬라이드이미지1-3">
+              <div class="whereText">
+                <span class="thirdPlace">캉코 키친</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="review-container">
+    <div class="text-container">
+      <h2 class="title">Review</h2>
+    </div>
+    <div class="grid-container">
+      <img src="./assets/review1.jpg" alt="리뷰이미지1">
+      <img src="./assets/review2.jpg" alt="리뷰이미지2">
+      <img src="./assets/review3.jpg" alt="리뷰이미지3">
+      <img src="./assets/review4.jpg" alt="리뷰이미지4">
+      <img src="./assets/review5.jpg" alt="리뷰이미지5">
+      <img src="./assets/review6.jpg" alt="리뷰이미지6">
+      <img src="./assets/review7.jpg" alt="리뷰이미지7">
+      <img src="./assets/review8.jpg" alt="리뷰이미지8">
+      <img src="./assets/review9.jpg" alt="리뷰이미지9">
+      <img src="./assets/review10.jpg" alt="리뷰이미지10">
+      <img src="./assets/review11.jpg" alt="리뷰이미지11">
+      <img src="./assets/review12.jpg" alt="리뷰이미지12">
+    </div>
+  </section>
+
+  <footer>
+    <div class="grid-wrapper">
+      <div class="customer-center">
+        <div class="bold-title">
+          <h4>CUSTOMER CENTER</h4>
+          <h4>1855-2014</h4>
+        </div>
+        <div class="explain-text">
+          <div>평일 AM10:00 - PM06:00 (점심시간 12:00 - 13:00)</div>
+          <div>주말 AM11:00 - PM03:00</div>
+          <div>(*주말은 매장 안내 및 서비스 오류 상담만 가능합니다./공휴일 휴무)</div>
+          <div>문의 Info@jacksonchameleon.co.kr</div>
+        </div>
+      </div>
+      <div class="showroom">
+        <div class="bold-title">
+          <h4>SHOWROOM</h4>
+          <img src="./assets/logoSmall.png" alt="jackson chameleon">
+        </div>
+        <div class="explain-text">
+          <div class="icons">
+            <img src="./assets/icons/icon-facebook.svg" alt="페이스북">
+            <img src="./assets/icons/icon-insta.svg" alt="인스타그램">
+            <img src="./assets/icons/icon-youtube.svg" alt="유튜브">
+          </div>
+          <div>연희점 : 서울시 서대문구 연희로11가길 42</div>
+          <div>화-일 11:00 - 19:00</div>
+          <div>(*매월 마지막 주 금요일 18:00마감)</div>
+          <div>의왕 무브먼트랩 : 경기도 의왕시 백운로 588</div>
+          <div>부산 무브먼트랩 : 부산 해운대구 달맞이길65번길 148</div>
+          <div>한남 세컨드마켓 : 서울특별시 용산구 대사관로15길 8-3</div>
+          <div>화-일 11:30 - 19:00</div>
+          <button class="shop-information">매장 안내 바로가기</button>
+        </div>
+      </div>
+      <div class="etc">
+        <div>(주) 잭슨카멜레온 11154 경기도 포천시 군내면 용정경제로2길 13 1층 대표 송재영 정봉윤 황두현 사업자번호 230-81-10281[사업자정보확인] 통신판매업 2015-경기포천-0086</div>
+        <div class="text-wrapper">
+          <span>온라인숍 이용안내</span>
+          <span>이용약관</span>
+          <span>개인정보 보호정책</span>
+        </div>
+        <hr>
+        <div>© JACKSONCHAMELEON, INC. ALL RIGHTS RESERVED</div>
+      </div>
+    </div>
+  
+    <div class="final-message">
+      <span>MAKE NEW HARMONY JACKSON CHAMELEON</span>
+    </div>
+  </footer>
+</body>
+</html>

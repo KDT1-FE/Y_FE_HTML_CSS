@@ -1,45 +1,60 @@
-[참고 내용]
+# 👩🏻‍💻 HTML/CSS 클론 과제
 
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
-
-과제 수행 및 제출 방법
-
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+## 📌 개요
+- **HTML/CSS** 사용을 익히고 클론 코딩을 진행한다.
+- **시맨틱 마크업**을 활용한다. 
+- 레거시 코드 활용보단 **최신의 CSS를 활용**한다.  
+<br><br>  
 
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+## 💸 사이트 
+<img width="160" alt="image" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/63582234/27eed1b4-fc24-44db-b525-669e0ae2b069">  
+<br>
+<a href="https://www.banksalad.com/" target="_blank">
+  <img src="https://img.shields.io/badge/banksalad%20%EA%B3%B5%EC%8B%9D%20%ED%8E%98%EC%9D%B4%EC%A7%80-18cd8c?style=for-the-badge" alt="Static Badge">
+</a>  
+<br>
+<a href="https://64c37bf4ce7d850008dc2dd8--stellular-cranachan-a24baf.netlify.app/" target="_blank">
+  <img src="https://img.shields.io/badge/banksalad%20%EB%8D%B0%EB%AA%A8%20%ED%8E%98%EC%9D%B4%EC%A7%80-cbf8e7?style=for-the-badge" alt="Static Badge">
+</a>   
+<br><br><br>  
 
-필수 요구사항
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+## ✨ 구현 내용
+### navigation
+![뱅샐_네비게이션](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/63582234/ab197dc6-cabc-4fb5-ad0a-1dda7f8db103)  
+→ css 연산자를 활용하여 javascript를 생략해 navigation 구현  
+<br>  
 
-선택 요구사항
+### 무한 자동 slide show
+![뱅샐_슬라이드쇼](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/63582234/4d61f06d-6872-44fc-a2fe-1b6303789808)  
+→ javascript를 사용하여 무한으로 4초마다 자동 슬라이드 되는 슬라이드 쇼 구현  
+<br>  
 
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+### 전체 모습
+![뱅샐_전체](https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/63582234/6cf7d79c-6369-46a5-95c6-72a5480ade29)  
+→ 완성된 뱅크샐러드 데모 페이지 전체 모습  
+<br><br>
 
-손쉬운 이미지 추출 방법
+## 🚀 트러블 슈팅
+### ✅ svg file load 이슈  
+<img width="355" alt="svg_error" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/63582234/950ddd48-0edf-4005-b1cc-5f4dce86e715">  
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
+- **문제**) file 크기가 너무 큼  
+- **시도1**) svg file 최적화 → 해결 X  
+- **시도2**) png file로 변환 → 해결 O, 화질 깨짐
+<br>  
 
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+### ❌ animation svg file load 이슈
+- **문제**) 파악 중 (해결 X)  
+<br><br>  
+
+## 📝 배운 점
+- 시맨틱 마크업, flex 등 배웠던 내용을 잘 활용하기 위해 신경 쓰며 코드를 짜는 경험이 공부가 많이 되었다.  
+- animation svg file 오류를 해결하지 못해 모든 부분을 완성하지 못한 것이 많이 아쉬웠고, 오류를 해결하기 위해 더 고민해봐야겠다.  
+<br><br>  
+
+## 🛠️ Stack
+![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=HTML5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=CSS3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=white)

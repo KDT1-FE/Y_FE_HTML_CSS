@@ -160,3 +160,11 @@ hr {
   width: 80%;
   border: 2px solid white;
 }
+.main__header {
+  visibility: hidden;
+}
+@media (max-width: 999px) {
+  .header {
+    display: none;
+  }
+}

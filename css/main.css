@@ -8,7 +8,9 @@
 @import './components/footer.css';
 @import './components/scroll.css';
 @import './components/slider.css';
-
+* {
+  box-sizing: border-box;
+}
 body {
   position: relative;
   max-width: 1440px;

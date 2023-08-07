@@ -81,7 +81,6 @@
 .text {
   width: 100%;
   height: 298px;
-  box-sizing: border-box;
   padding: 110px 0 20px 0;
 }
 .text .inner {

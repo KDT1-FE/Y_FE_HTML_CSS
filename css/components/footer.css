@@ -12,8 +12,8 @@
   border-top: 0.3px solid #6e6e6e;
   display: flex;
   justify-content: space-evenly;
-  box-sizing: border-box;
   padding-top: 50px;
+  border: 2px solid pink;
 }
 .footer-main .menu-contents {
   width: 272px;

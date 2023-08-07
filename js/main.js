@@ -1,5 +1,5 @@
 new Swiper('.best-item .swiper', {
-  slidesPerView: 3,
+  slidesPerView: 2,
   navigation: {
     nextEl: '.swiper-btn-next',
     prevEl: '.swiper-btn-prev',
@@ -7,6 +7,17 @@ new Swiper('.best-item .swiper', {
 
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+  breakpoints: {
+    625: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,
+    },
+    1920: {
+      slidesPerView: 4,
+    },
   },
 });
 

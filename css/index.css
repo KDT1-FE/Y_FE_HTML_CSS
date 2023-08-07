@@ -156,6 +156,7 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .swiper-slide .img-wrap {

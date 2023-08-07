@@ -24,12 +24,14 @@
 @media screen and (max-width: 1025px) {
   .sub-nav {
     padding: 12px 0px;
+    width: 100%;
     overflow: hidden;
-    /* overflow-x:scroll; */
+    overflow-x:scroll;
   }
-  .sub-nav ul{
-    width: fit-content;
-  }
+  /* .sub-nav ul{
+    width: 100%;
+    overflow: hidden;
+  } */
 
   .sub-nav::-webkit-scrollbar {
     display: none;
@@ -169,6 +171,13 @@
   .grid-category .grid-item-title{
     font-size: 16px;
     padding: 10px;
+  }
+  .best-item .swiper {
+    margin: 0 20px 20px;
+  }
+  .swiper-btn-prev,
+  .swiper-btn-next {
+    display: none;
   }
 
   .skin-type {

@@ -1,0 +1,403 @@
+body, button, input, main, table, textarea, p {
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; }
+body { 
+    margin: 0;
+}
+.main {
+    position : relative;
+    padding-top : 130px;
+    width :100%;
+    margin : 0 auto;
+    
+}
+.banner_section {
+    display: flex;
+    white-space: nowrap;
+    margin : 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 480px;
+    position : relative;
+}
+
+.slide_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position : relative;
+    left: 0;
+    width: 100%;
+    max-height: 480px;
+    flex-shrink: 0;
+    transition: left 0.15s;
+}
+
+.slide_item > img {
+    object-fit: contain;
+    width: min-content;
+    max-height: 480px;
+    overflow: hidden;
+}
+.next_btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 16px);
+    width: 80px;
+    height: 80px;
+
+}
+#left {
+    left: 0px;
+}
+#right {
+    right: 0px;
+}
+ul,li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.slide_pagination {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide_pagination > li {
+    color: #ffffff88;
+    cursor: pointer;
+    font-size: 25px;
+}
+.slide_pagination > li.active{
+    color: #ffffff;
+    
+}
+
+.img_box div {
+    position : relative;
+    width : 100%;
+    white-space: nowrap;
+    font-size:0; /*빈공간을 없애기 위함*/
+    overflow: hidden; /*초과해서 이미지가 나올 경우 나오지 않게 함*/
+}
+.img_box div img {
+    position : relative;
+    max-height: 480px;
+    width : 100%;
+    overflow : hidden;
+}
+.grid_section {
+    position : relative;
+    margin : 40px auto 56px auto ;
+    text-align: center;
+    justify-content:center;
+    max-width : 1280px;
+    padding : 0 40px;
+
+}
+.grid_section_container {
+    display : grid;
+    position : relative;
+    padding : 0 40px;
+    max-width : 1280px;
+    grid-template-columns : repeat(5,minmax(0,1fr));
+    grid-column-gap : 8px;
+    grid-row-gap : 8px;
+    text-align : center;
+    justify-content : center;
+
+}
+.grid_section_container > div > img {
+    text-align : center;
+    justify-content : center;
+    box-sizing: border-box;
+    border-radius : 10px;
+    overflow : hidden;
+    display : flex;
+    border : none;
+    width : 100%;
+    height : 100px;
+    cursor: pointer;
+
+    
+}
+.grid_section_container div p {
+    text-align : center;
+    justify-content : center;
+    font-size: 15px;
+    letter-spacing: -.15px;
+    color: #333;
+    margin : 8px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home_product, .popular_product, .icream_challenge, .prada_product, .new_in_section , .identity_section, .luxury_section, .today_user, .upcoming_release{
+    display: flex;
+    position: relative;
+    flex-direction : column;
+    max-width: 1280px;
+    margin: 40px auto 56px auto;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.product_container {
+    min-width: 1129px;
+    display : grid;
+    position : relative;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    max-width : 1280px;
+    margin : 0 auto;
+    padding : 0 40px;
+
+}
+.container_title {
+    text-align : start;
+    padding : 0 40px;
+    margin : 30px 0 0 0;
+
+}
+.bookmark_icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    z-index: 1;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.release_day_container {
+    min-width: 30px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    height: 49px;
+    
+}
+.release_month {
+    line-height: 19px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    letter-spacing: -.05px;
+    border-bottom: 2px solid #222;
+    text-align: center;
+    padding-bottom: 2px;
+    margin: 0;
+
+}
+.release_day {
+    padding-top: 2px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    text-align: center;
+    padding: 2px 0;
+    margin: 0;
+
+}
+#title {
+    margin : 0px;
+}
+#sub_title {
+    color : #909090;
+    margin-top : 2px;
+}
+.product_container  div{
+    max-width : 291px;
+    text-align : start;
+}
+.product_img_container {
+    position: relative;
+
+}
+.product_1 img{ 
+    width : 291px;
+    height : 291px;
+    background-color : #ebf0f5;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.product_2 img{
+    width : 291px;
+    height : 291px;
+    background-color : #f5f5f5;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+    
+}
+.product_3 img{
+    width : 291px;
+    height : 291px;
+    background-color : #f6eeed;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.product_4 img{
+    width : 291px;
+    height : 291px;
+    background-color : #ebf0f5;
+    overflow : hidden;
+    display : flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.product_name {
+    font-size : 13px;
+    font-weight : 700;
+    color : #222;
+    margin : 0;
+    padding-top : 9px;
+}
+.product_content {
+    margin : 0px 0px 2px 0px;
+    color : #222;
+    font-size : 13px;
+}
+.product_price {
+    font-size : 14px;
+    padding-top : 12px;
+    margin : 0;
+
+}
+.price_feat {
+    font-size : 11px;
+    color : #22222280;
+    margin : 0;
+
+}
+hr {
+    max-width : 1280px;
+    border: 0;
+    background: #dee2e6;
+    height : 0.6px;
+    
+}
+.more_btn button {
+    padding : 0px 30px;
+    margin-top : 20px;
+    color: rgba(34,34,34,.8);
+    border-radius : 12px;
+    font-size: 14px;
+    letter-spacing: -.14px;
+    border: 1px solid #d3d3d3;
+    height : 40px;
+    background-color : white;
+    cursor: pointer;
+}
+.brand_grid {
+    display : flex;
+    position : relative;
+    flex-direction : column;
+    width : 100%;
+    max-width : 1280px;
+    text-align : center;
+    margin : 40px auto 56px auto;
+    padding : 0 40px;
+}
+.brand_grid_container {
+    display : grid;
+    position : relative;
+    max-width : 1280px;
+    grid-template-columns : repeat(5,minmax(0,1fr));
+    grid-column-gap : 8px;
+    grid-row-gap : 16px;
+    text-align : center;
+    justify-content : center;
+    margin : 16px 0;
+    padding : 0 40px;
+
+
+}
+.brand_img {
+    width : 231px;
+    height : 100px;
+    border-radius: 10px;
+}
+.brand_name {
+    font-size : 15px;
+    color : #333;
+    margin : 3px 0 0 0;
+
+}
+.banner_section_not_move > .banner {
+    position : relative;
+    width : 100%;
+    overflow : hidden;
+    height : 480px;
+    padding : 0;
+    margin : 0;
+    display : flex;
+
+
+}
+.banner_section_not_move > .banner >img {
+    margin : 0 auto;
+    max-height : 480px;
+    
+
+}
+.user_container {
+    display : flex;
+    position : relative;
+    flex-direction : row;
+    padding : 0 40px;
+    max-width : 1280px;
+    text-align : center;
+    justify-content : space-between;
+
+}
+.user_div {
+    position : relative;
+}
+.user_profile_img {
+    width : 36px;
+    height : 36px;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.user_content_img {
+    border-radius: 10px;
+    width : 193px;
+    height : 257px;
+}
+.user_id{
+    position : absolute;
+    font-size: 13px;
+    color: #fff;
+    left: 8px;
+    bottom: 8px;
+    margin : 0;
+    text-overflow: ellipsis;
+    
+
+
+}

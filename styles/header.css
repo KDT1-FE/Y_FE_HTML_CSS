@@ -1,0 +1,159 @@
+body, button, input, select, table, textarea {
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.container {
+    display : flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    top: 0;
+    left : 0;
+    right : 0;
+    z-index: 100;
+    margin : 0 auto;
+    background-color : white;
+    
+
+}
+.header {
+    position: relative;
+    max-width : 1280px;
+    width : 100%;
+    
+
+}
+
+
+.top_section {
+    height : 22px;
+    display : flex;
+    max-width : 1280px;
+    padding: 8px 40px 0;
+
+
+}
+
+.top_list {
+    list-style-type: none;
+    display : flex;
+    margin-top : 0px;
+    margin-left : auto;
+    
+}
+
+.top_list li {
+    float: left;
+    color: #222222CC;
+    padding-left : 20px;
+    font-size : 12px;
+    cursor: pointer;
+    
+}
+
+.main_section {
+    display: flex;
+    position : relative;
+    height : 24px;
+    flex-direction : row;
+    justify-content : space-between;
+    padding : 20px 40px;
+}
+.left_secton {
+    display: flex;
+    position : relative;
+    
+}
+.kream_logo {
+    height : 24px;
+    width : 120px;
+}
+.right_section {
+    display: flex;
+    position : relative;
+    flex-direction: row;
+    justify-content : space-between;
+    align-items: center;
+    height : 24px;
+    width : 298px;
+
+;
+}
+
+.home_btn {
+    background-color:transparent;
+    border: 0;
+    color : #222222;
+    font-size : 18px;
+    font-weight : 700;
+    text-align : center;
+    padding: 0px;
+    cursor: pointer;
+
+}
+.style_btn,
+.shop_btn{
+    background-color:transparent;
+    border: 0;
+    color : #222222;
+    font-size : 18px;
+    padding: 0px;
+    cursor: pointer;
+
+}
+
+.search_btn {
+    background-color:transparent;
+    border: 0;
+    color : #222222;
+    padding: 0px;
+    cursor: pointer;
+
+}
+#search_img {
+    width : 28px;
+    height : 28px;
+
+}
+#logo {
+    width : 120px;
+    height : 24px;
+
+}
+.nav {
+    position : relative;
+    width : 100%;
+    max-width : 1280px;
+    height : 44px;
+    min-width: 580px;
+}
+
+.sidebar_link {
+    list-style-type: none;
+    padding : 0px 40px;
+    
+}
+#event_link {
+    color : #0000EF;
+
+}
+.sidebar_link li {
+    float: left;
+    color: #222222;
+    font-size : 16px;
+    padding : 0px  27px 6px 0px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    
+}
+#selected ::after {
+    content: "";
+    display: block;
+    width: 32px;
+    border-bottom: 2px solid #000000;
+    margin: 7px 0px;
+}
+
+
+

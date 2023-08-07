@@ -1,0 +1,154 @@
+body, button, input, select, table, textarea {
+    font-family: Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+    .footer {
+    position : relative;
+    max-width : 1280px;
+    width : 100%;
+    justify-content : center;
+    margin : 0 auto;
+    
+    
+}
+.footer_container {
+    display : flex;
+    flex-direction : column;
+    max-width : 1280px;
+    width : 100%;
+    
+    margin : 0  auto;
+    justify-content : center;
+
+}
+.info_container {
+    display : flex;
+    position : relative;
+    justify-content : space-between;
+    padding : 0 40px;
+    max-width : 1280px;
+    
+    
+}
+.service_center {
+    padding : 40px 0;
+}
+.about_company {
+    position : relative;
+    justify-content : space-between;
+    padding : 0 40px;
+    max-width : 1280px;
+    
+}
+.info_list {
+    display : flex;
+    width : 400px;
+    justify-content : space-between;
+    position : relative;
+    flex-direction : row;
+    justify-center : center;
+    padding : 40px 0;
+}
+.info_title {
+    font-size: 16px;
+    letter-spacing: -.16px;
+    font-weight: 700;
+    margin : 0;
+    padding : 0 0 4px 0;
+}
+
+.info_content {
+    font-size : 14px;
+    color : #22222280;
+    margin : 12px 0;
+
+    
+
+}
+#question {
+    padding : 8px 0;
+    font-size : 14px;
+    margin : 0;
+}
+
+.question_btn {
+    border: 0;
+    background-color: black;
+    color : white;
+    padding : 0 14px;
+    height : 34px;
+    font-size : 12px;
+}
+.about_company {
+    position : relative;
+    display : flex;
+    margin: 30px 0;
+    
+}
+
+.comany_content_list {
+    list-style-type: none;
+    display : flex;
+    margin-top : 0px;
+    padding : 0;
+
+}
+
+.comany_content_list li {
+    float: left;
+    color: #222222CC;
+    padding-right : 20px;
+    font-size : 14px;
+    letter-spacing: -.21px;
+
+}
+.social_media {
+    display : flex;
+    width : 112px;
+    justify-content : space-between;
+
+}
+.social_media_icon svg{
+    width : 24px;
+    height : 24x;
+}
+.company_info {
+    position : relative;
+    padding : 0 40px;
+    max-width : 1280px;
+}
+.info_row_1, .info_row_2 {
+    display: flex;
+    position: relative;
+
+}
+.company_info_content {
+    margin : 0 17px 0 0;
+    color: #22222280;
+    font-size : 12px;
+
+}
+.notice_gurantee {
+    position : relative;
+    padding : 40px 0  8px 40px;
+    max-width : 1280px;
+    
+
+}
+#notice_title {
+    font-size: 12px;
+    letter-spacing: -.06px;
+    font-weight: 700;
+    margin: 0;
+}
+.notice_content {
+    color: #22222280;
+    font-size : 12px;
+    max-width: 750px;;
+    margin: 4px 0 8px 0 ;
+
+
+}
+hr {
+    margin: 0 40px;
+}
+

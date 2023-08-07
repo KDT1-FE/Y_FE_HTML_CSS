@@ -29,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 .container .swiper-prev {
   text-align: center;

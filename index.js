@@ -1,7 +1,7 @@
 // 스크롤에 따라 헤더 숨기기
-let header = document.getElementById("header");
-let logo = document.getElementById("header-logo");
-let signup = document.getElementById("header-signup");
+const header = document.getElementById("header");
+const logo = document.getElementById("header-logo");
+const signup = document.getElementById("header-signup");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY < 330) {

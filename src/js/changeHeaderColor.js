@@ -7,8 +7,8 @@
 // 실시간 사용자 스크롤 위치 감지용 main 요소 불러오기
 const mainPage = document.querySelector("#main-page");
 // header 로고와 글자 색 변경용 모든 header 요소 불러오기
-const headerLogo = document.querySelector(".site-logo-tesla");
-const headerText = document.querySelectorAll(".site-nav li span");
+const headerLogo = document.querySelector("#header-logo svg");
+const headerText = document.querySelectorAll(".header-nav span");
 
 // 변경 색상 정의
 const BLACK = "#171A20";
@@ -32,7 +32,7 @@ function userScrollInFirstPage(userScroll) {
 function changeColorToWhite() {
   headerLogo.style.color = WHITE;
 
-  headerText.forEach((span) => {
+  headerText.forEach(span => {
     span.style.color = WHITE;
   });
 }
@@ -41,7 +41,7 @@ function changeColorToWhite() {
 function changeColorToBlack() {
   headerLogo.style.color = BLACK;
 
-  headerText.forEach((span) => {
+  headerText.forEach(span => {
     span.style.color = BLACK;
   });
 }

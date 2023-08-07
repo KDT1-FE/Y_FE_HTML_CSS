@@ -13,11 +13,11 @@
   animation-duration: 1s;
 }
 
-#header #header-logo {
+#header-logo {
   padding-left: 32px;
 }
 
-#header #header-logo svg {
+#header-logo svg {
   width: 148px;
   height: 48px;
 
@@ -26,7 +26,7 @@
   color: #f9f8f8;
 }
 
-.site-nav-products {
+.header-nav-products {
   width: 620px;
 
   margin-left: 80px;
@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.site-nav-items {
+.header-nav-etc {
   width: 250px;
   line-height: 27px;
 
@@ -48,20 +48,17 @@
   align-items: center;
 }
 
-header ol a {
+.header-nav li a {
   padding: 4px 8px;
   transition: 0.4s;
 }
 
-header ol a:hover,
-.site-nav-items-menu:hover,
-.menu-items li:last-child:hover,
-.menu-close-icon:hover {
+.header-nav li a:hover {
   border-radius: 3px;
   background-color: #b3b9bc4b;
 }
 
-.site-nav li span {
+.header-nav li a span {
   margin: 0px 8px;
 
   font-family: "Open Sans", sans-serif;
@@ -71,19 +68,10 @@ header ol a:hover,
   color: #f9f8f8;
 }
 
-.site-nav-items-menu {
-  padding: 4px 8px;
-
-  font-size: 14px;
-  cursor: pointer;
-
-  transition: 0.4s;
-}
-
 @media (max-width: 1200px) {
-  .site-nav-products,
-  .site-nav-items li:nth-of-type(1),
-  .site-nav-items li:nth-of-type(2) {
+  .header-nav-products,
+  .header-nav-etc li:nth-of-type(1),
+  .header-nav-etc li:nth-of-type(2) {
     display: none;
   }
 }

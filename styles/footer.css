@@ -1,0 +1,191 @@
+.footer{
+    font-weight: 400;
+    color: #171717;
+    margin-top: 70px;
+}
+
+
+/* notice */
+.footer__notice{
+    padding: 24px 0;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.footer__content{
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer__notice-title{
+    margin: 0 24px 0 0;
+    padding: 6px 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2e2e2e;
+    line-height: 26px;
+}
+
+.footer__notice-list{
+    flex: 1 1 auto;
+}
+
+.footer__notice-link{
+    display: flex;
+    align-items: center;
+    padding: 8px 4px;
+    line-height: 22px;
+}
+
+.footer__notice-link:hover{
+    background: rgba(0,0,0,.05);
+}
+
+.footer__notice-info{
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+}
+
+.footer__notice-name{
+    font-size: 14px;
+}
+
+.footer__notice-date{
+    flex: 0 0 auto;
+    font-size: 11px;
+    color: #757575;
+    margin: 0 0 0 24px;
+}
+
+.footer__notice-arrow{
+    flex: 0 0 16px;
+    height: 16px;
+    margin: 0 0 0 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://fastcampus.co.kr/assets/img/footer_notice_arrow.svg);
+}
+
+/* info */
+.footer__info-links{
+    background: #5e5e5e;
+    font-size: 12px;
+}
+
+.footer__link-list{
+    height: 44px;
+    padding: 0 4px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer__link-list{
+    display: flex;
+    align-items: center;
+}
+
+.footer__info-link{
+    color: #fff;
+}
+
+.footer__link-list-divider::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: #919191;
+    display: flex;
+}
+
+/* company-info */
+.footer__company-info{
+    padding: 24px 0;
+    background-color: #2e2e2e;
+    font-size: 12px;
+    color: #919191;
+    line-height: 22px;
+}
+
+.footer__comapny-info-content{
+    flex-direction: column;
+}
+
+.footer__company-info-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 44px;
+}
+
+.footer__company-name{
+    display: block;
+    color: #fff;
+}
+
+.footer__company-name strong{
+    font-size: 16px ;
+    font-weight: 700;
+    margin: 0 8px 0 0;
+}
+
+.footer__company-kr-name{
+    font-size: 12px;
+    color: #fff;
+}
+
+.footer__emblems{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer__mobile-toggled-element{
+    font-size: 12px;
+    color: #919191;
+    line-height: 22px;
+    width: 100%;
+}
+
+.footer__company-info-list{
+    display: flex;
+}
+
+.footer__company-info-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.footer__company-info-list-item::after{
+    content: "";
+    display: block;
+    width: 0.22rem;
+    height: 0.22rem;
+    margin: 0 0.4rem;
+    border-radius: 0.11rem;
+    background-color: #919191;
+}
+
+.footer__company-info-list-item:last-child::after{
+    display: none;
+}
+
+.footer__divider{
+    width: 100%;
+    height: 1px;
+    background-color: #919191;
+}
+
+/* mutiple-line */
+.multiple-line{
+    color: #fff;
+}
+
+.multiple-line a:hover{
+    text-decoration: underline;
+}
+
+/* operation-info */

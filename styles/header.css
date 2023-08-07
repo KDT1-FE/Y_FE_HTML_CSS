@@ -1,0 +1,234 @@
+.header-container{
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    position: relative;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 89px;
+}
+
+/* 상단 */
+.header-top-element{
+    width: 980px;
+    height: 36px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header-search-bar{
+    width:42rem;
+    margin-left: 1.6rem;
+    margin-right: auto;
+}
+
+.search-bar-form{
+    box-sizing: border-box;
+    width: 386px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1.6rem;
+    border: 1px solid #f8f8f8;
+    border-radius: 10rem;
+    background-color: #f8f8f8;
+}
+
+.search-bar-input{
+    outline: none;
+    border: 0;
+    width: 322px;
+    background-color: #f8f8f8;
+}
+
+.header-utils{
+    width: 202px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.header-utils__link{
+    display: flex;
+    align-items: center;
+}
+
+.header-utils__link{
+    font-size: 12px;
+}
+
+.b2b-marketing-link{
+    display: flex;
+    align-items: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    padding: 1px 9px;
+    font-weight: 700;
+
+}
+
+.header-utils__link:hover{
+    color: #ed234b;
+}
+
+
+/* 하단 */
+.header-navigation{
+    width: 980px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+}
+
+.focus-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.category-nav__menu-opener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 122px;
+    height: 36px;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.category-nav__menu-opener:hover{
+    background-color: #ed234b;
+}
+
+.category-nav__menu-opener > svg{
+    margin-right: 9px;
+}
+
+/* hover category */
+.category-nav__menu-opener:hover .category-menu{
+    display: flex;
+}
+
+.category-menu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    color: #474747;
+    padding: 4px 0;
+    z-index: 100;
+    top:36px;
+    left:0px;
+}
+
+.category-menu-container{
+    width: 220px;
+    padding: 4px 0;
+}
+
+.link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 24px;
+}
+
+.link > div{
+    margin: 0 12px 0 0;
+}
+
+.link > svg{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    visibility: visible;
+    transform: translateY(-50%);
+}
+
+
+.link:hover{
+    color: #ed234b;
+    text-decoration: underline;
+    background-color: #f8f8f8;
+    font-weight: 700;
+}
+
+.category-menu__img{
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
+.category-menu-detail{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 220px;
+    width: 220px;
+    height: 408px;
+    padding: 4px 0;
+    background-color: #fff;
+}
+
+.main-category-menu__category-link-list li:hover .category-menu-detail{
+    display: block;
+}
+
+/* 주요 타이틀 네비 */
+.focus-nav-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: 16px;
+    padding: 0;
+}
+
+.focus-nav-list__item{
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.focus-nav-list__item:hover{
+    color: #ed234b;   
+}
+
+.operation-nav-list{
+    display: flex;
+    align-items: center;
+    color: #474747;
+}
+
+.operation-nav-list__divider{
+    width: 1px;
+    height: 12px;
+    margin: 0 4px;
+    background-color: #d6d6d6;
+}
+
+.operation-nav-list__link{
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.operation-nav-list__link:hover{
+    color: #ed234b;
+}

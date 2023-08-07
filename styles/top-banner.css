@@ -1,0 +1,12 @@
+.top-banner{
+    height: 42px;
+    background-color: #1586FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-banner__img{
+    width: 980px;
+    height: 42px;
+}

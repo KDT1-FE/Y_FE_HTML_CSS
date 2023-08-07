@@ -79,7 +79,7 @@ window.addEventListener('scroll', _.throttle(function() {
       element.style.transition = "opacity 2.5s, transform 2.5s";
     }
   });
-}, 200));
+}, 200), { passive: true });
 
 // function getType(data){
 //   return Object.prototype.toString.call(data).slice(8,-1)

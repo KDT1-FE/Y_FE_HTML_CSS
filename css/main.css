@@ -1,0 +1,518 @@
+/* GLOBAL */
+/* 최대한 Apple 사이트의 폰트 및 레이아웃을 유사하게 만들기 위해 reset css 를 사용하지 않고 직접 조정 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  color: #1d1d1f;
+  font-weight: 400;
+  line-height: 1.4;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+img {
+  /* img를 block으로 처리하여 기존 inline의 baseline으로 인한 불필요한 margin 제거 */
+  display: block;
+}
+html {
+  font-size: 10px;
+  font-family: 'SF Pro KR', sans-serif;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+.title {
+  color: #fff;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+.title-dark {
+  color: #1d1d1f;
+}
+.title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+.title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: -0.008rem;
+  font-weight: 400;
+}
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.cta-link:hover {
+  text-decoration: underline;
+}
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+.cta .cta-link {
+  color: #2997ff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+.cta .cta-link.cta-link-darker {
+  color: #0066cc;
+}
+.cta .cta-link.cta-link-btn-white {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  font-size: 1.7rem;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  min-width: 28px;
+  padding-top: 10.5px;
+  padding-bottom: 7.5px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #ffffff;
+  color: #000;
+}
+.cta-link.cta-link-btn-white:hover {
+  opacity: 0.8;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgba(22, 22, 23, 0.8);
+  /* 애플 공식 홈페이지의 header 블러처리를 위함 */
+  backdrop-filter: blur(2rem);
+}
+.nav-link-apple {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url('../images/apple.svg') center no-repeat;
+}
+.nav-link-search {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url('../images/search.svg') center no-repeat;
+}
+.nav-link-bag {
+  width: 1.4rem;
+  height: 4.4rem;
+  background: url('../images/bag.svg') center no-repeat;
+}
+header .nav-list {
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 -2rem;
+  white-space: nowrap;
+}
+header .nav-list .nav-item {
+  font-size: 1.2rem;
+  align-items: center;
+  color: #fff;
+  padding: 0 2rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+header .nav-list .nav-item:hover {
+  opacity: 1;
+}
+header .nav-list .nav-item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  /* hover 될 때만 보일 수 있도록 평소에는 none */
+  display: none;
+}
+header .nav-list .nav-item:hover .item__contents {
+  display: block;
+}
+header .nav-list .nav-item .item__contents .contents__menu {
+  background-color: rgba(22, 22, 23, 1);
+  padding: 40px 22px 84px;
+}
+header .nav-list .nav-item .item__contents .contents__menu > ul {
+  display: flex;
+  padding: 20px 0;
+  list-style: none;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+header .nav-list .nav-item .item__contents .contents__menu > ul > li {
+  padding-right: 44px;
+  margin: 0 0 -4px;
+}
+header .nav-list .nav-item .item__contents .contents__menu > ul > li h4 {
+  cursor: default;
+  padding: 3px 0 12px 0;
+  font-size: 12px;
+  color: #86868b;
+  list-style: none;
+}
+header .nav-list .nav-item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #e8e8ed;
+
+  cursor: pointer;
+  list-style: none;
+}
+header .nav-list .nav-item .item__contents .contents__menu > ul > li .big-font li {
+  font-size: 24px;
+  padding-right: 44px;
+}
+header .nav-list .nav-item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #fff;
+}
+
+/* TRADE IN */
+.trade-in {
+  margin-top: 4.4rem;
+  width: 100%;
+  height: 4.4rem;
+  background-color: #fff;
+}
+.trade-in .container {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+}
+.trade-in .container .ref-link-1 {
+  font-size: x-small;
+  margin-left: 2px;
+}
+.trade-in .container a {
+  color: #0070c9;
+  margin-left: 3px;
+  /* display: inline-block; */
+}
+.trade-in .container a:hover {
+  text-decoration: underline #0070c9;
+}
+
+/* YOUTUBE VIDEO */
+.youtube {
+  position: relative;
+  width: 100%;
+  max-width: 256rem;
+  height: 69.2rem;
+  margin: auto;
+  background-color: #333;
+  border-bottom: 1.2rem solid #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.youtube .youtube__area {
+  width: 256rem;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(256rem / -2);
+  top: 50%;
+  margin-top: calc(256rem * 9 / 16 / -2);
+}
+.youtube .youtube__area::before {
+  content: '';
+  display: block;
+  /* 16:9 비율의 요소를 만드는 방법 56.25% */
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.youtube .container {
+  position: relative;
+  padding-bottom: 5.5rem;
+}
+.youtube .container .title {
+  color: #fff;
+  text-align: center;
+}
+.youtube .container .title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+.youtube .container .title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: -0.008rem;
+  font-weight: 400;
+}
+.youtube .container .cta {
+  text-align: center;
+}
+.youtube .container .cta-link {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.youtube .cta-link:hover {
+  text-decoration: none;
+}
+.youtube .cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+/* HERO IPHONE SECTION */
+.iphone-14-pro {
+  background: url('../images/hero_iphone-14-pro.jpg');
+}
+
+/* HERO MACBOOK SECTION */
+.macbook-air-15 {
+  background: url('../images/hero-macbook-air-15.jpg');
+}
+
+/* OVERRIDE HERO IMAGES */
+/* Moved to the bottom of all section styles to keep consistent styles */
+.hero {
+  display: flex;
+  height: 69.2rem;
+  max-width: 256rem;
+  margin: auto;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1.2rem solid #fff;
+  cursor: pointer;
+}
+
+/* PRODUCTS GRID */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: calc((126.2rem * 2) + 12px);
+  margin: auto;
+}
+.grid-item {
+  background-color: #333;
+  /* 가운데 gap이 두꺼워지는 것을 줄이기위해 */
+  flex-basis: calc(50% - 6px); /* 12px 간격을 반으로 나누어 양쪽 아이템에 적용 */
+  height: 58rem;
+  max-width: 126.2rem;
+  margin-bottom: 12px; /* 세로 간격은 12px 유지 */
+  cursor: pointer;
+}
+.grid-item .title .title-heading {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.grid-item .title .title-sub-heading {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+.grid-item .cta .cta-link {
+  font-size: 1.7rem;
+}
+.grid-item:nth-child(1) {
+  background: url('../images/product_grid1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item:nth-child(2) {
+  background: url('../images/product_grid2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item .watch-text {
+  margin: auto;
+}
+.grid-item:nth-child(3) {
+  background: url('../images/product_grid3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item .ipad-pro-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item:nth-child(4) {
+  background: url('../images/product_grid4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item:nth-child(5) {
+  background: url('../images/product_grid5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item:nth-child(6) {
+  background: url('../images/product_grid6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* APPLE TV PLUS */
+.apple-tv-plus {
+  margin: auto;
+  cursor: pointer;
+}
+.apple-tv-plus .swiper {
+  padding-bottom: 50px;
+}
+.apple-tv-plus .swiper .swiper-wrapper {
+  max-height: 66.725rem;
+  display: flex;
+  transition: transform 0.3s ease; /* 슬라이드 애니메이션을 위한 transition 추가 */
+}
+.apple-tv-plus .swiper-slide {
+  max-width: 125rem;
+  max-height: 66.725rem;
+  opacity: 0.3;
+}
+.apple-tv-plus .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 비율 유지하며 채워지도록 설정 */
+}
+.apple-tv-plus .swiper-slide .cta-link-apple-tv-plus {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 980px;
+  font-size: 1.7rem;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  min-width: 28px;
+  padding-top: 10.5px;
+  padding-bottom: 7.5px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #ffffff;
+  color: #000;
+}
+.apple-tv-plus .swiper-slide-active {
+  opacity: 1; /* 가운데 아이템은 active 상태로 opacity를 1로 설정 */
+}
+.apple-tv-plus .swiper .swiper-pagination {
+  left: 0;
+  right: 0;
+  align-items: center;
+  height: 3.8rem;
+  display: flex; /* Pagination bullet들이 겹치지 않도록 flex container로 설정 */
+  justify-content: center; /* Bullet들을 가운데 정렬 */
+  gap: 0.8rem; /* Pagination bullet 간의 간격 조정 */
+}
+.apple-tv-plus .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 0.8rem; /* pagination bullet 크기 조정 */
+  height: 0.8rem;
+  background-color: #000; /* pagination bullet 색상을 검정색으로 설정 */
+  opacity: 0.5; /* 비활성화된 pagination bullet의 투명도 조정 */
+}
+.apple-tv-plus .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1; /* 활성화된 pagination bullet의 투명도 조정 */
+}
+
+/* FOOTER */
+footer {
+  background-color: #f5f5f7;
+  color: #6e6e73;
+}
+footer .inner {
+  width: 102.4rem;
+  height: 100%;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 22px;
+}
+footer .inner .ref-link-text {
+  justify-content: center;
+  margin: auto;
+  border-bottom: 1px solid #d2d2d7;
+}
+footer .inner .footer-cta-column-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+footer .inner .footer-cta-column-group .title {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+footer .inner .footer-cta-column-group .list {
+  font-weight: 400;
+  list-style-type: none;
+}
+footer .inner .footer-cta-column-group .list title,
+footer .inner .footer-cta-column-group .list a {
+  color: #424245;
+  margin: 0.8em 0;
+}
+footer .inner .footer-cta-column-group .list a:hover {
+  text-decoration: underline;
+}
+footer .footer-cta-end-comment {
+  display: flex;
+}
+footer .footer-cta-end-comment {
+  display: flex;
+  font-weight: 400;
+}
+footer .footer-cta-end-comment a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+footer .copyright {
+  margin-top: 12px;
+  display: flex;
+}
+footer .country {
+  margin-top: 12px;
+}
+footer .footer-info-link {
+  display: flex;
+}
+footer .footer-info-link a {
+  color: #424245;
+}
+footer .footer-info-link a:hover {
+  text-decoration: underline;
+}
+footer .footer-summary {
+  border-top: 1px solid #d2d2d7;
+  display: flex;
+  justify-content: space-between;
+}

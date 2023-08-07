@@ -36,7 +36,7 @@ html div span a h3 {
 }
 
 .txtArea span {
-  font-size: 18px;
+  font-size: 1em;
   color: #fff;
   margin-top: 30px;
   line-height: 25px;
@@ -62,7 +62,7 @@ html div span a h3 {
 
 .my-slides:nth-child(2) span,
 .my-slides:nth-child(3) span {
-  font-size: 18px;
+  font-size: 1em;
   color: #212121;
   margin-top: 30px;
   line-height: 25px;

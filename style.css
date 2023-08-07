@@ -738,10 +738,25 @@ header {
   bottom: 55px;
   left: 51px;
   font-size: 70px;
-  color: #3d93ff;
+  color: #3c93ff;
   font-weight: 600;
   line-height: 1.21;
   letter-spacing: -0.5px;
+}
+
+/**hover 시*/
+.ticket-list1:hover {
+  background-color: #3c93ff;
+  transition: 0.4s;
+}
+
+.ticket-list1:hover .ticket-list1-more-button {
+  background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
+}
+
+.ticket-list1:hover .ticket-list1-text-wrap {
+  background-image: url(./assets/images/icons/ticket-icon-over.6cd52f25.svg);
+  color: white;
 }
 
 .ticket-list2 {
@@ -802,6 +817,21 @@ header {
   font-weight: 600;
   line-height: 1.21;
   letter-spacing: -0.5px;
+}
+
+/**hover 시*/
+.ticket-list2:hover {
+  background-color: #3c93ff;
+  transition: 0.4s;
+}
+
+.ticket-list2:hover .ticket-list2-more-button {
+  background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
+}
+
+.ticket-list2:hover .ticket-list2-text-wrap {
+  background-image: url(./assets/images/icons/sale-icon-over.606b02a5.svg);
+  color: white;
 }
 
 .site-map-wrap {

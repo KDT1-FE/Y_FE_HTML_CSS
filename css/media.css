@@ -1,5 +1,8 @@
 @media (min-width: 861px) {
-    #toggle,.m_gnb{display: none;}
+  #toggle,
+  .m_gnb {
+    display: none;
+  }
 }
 
 @media (max-width: 860px) {
@@ -22,15 +25,41 @@
     height: 0;
   }
   .search_open_btn:after {
-    font-size: 5.3vw;
+    font-size: 1.5rem;
   }
 
+  .main .main_tit {
+    font-size: 2.2rem;
+  }
+  .main .main_tit {
+    font-size: 4rem;
+  }
+  .sub_tit {
+    font-size: 2rem;
+  }
+  .main p,
+  .txt_box p,
+  .footer .menu,
+  .footer .sns_nav li a {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .main_new .inner figcaption,
+  .main_log figcaption,
+  .footer .bottom .shop_toggle,
+  .footer .bottom .shop_toggle::after,
+  .footer .bottom .copy {
+    font-size: 0.8rem;
+  }
+  .footer .bottom .address {
+    line-height: 1rem;
+  }
 
   #wrap {
-      width: 100%;
-      left: 0px;
-      position: absolute;
-      transition: 0.5s;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    transition: 0.5s;
   }
 
   #toggle {
@@ -40,7 +69,7 @@
     position: fixed;
     cursor: pointer;
     top: 3vw;
-    left: 90vw;    
+    left: 90vw;
     z-index: 10;
     cursor: pointer;
   }
@@ -57,156 +86,158 @@
 
   .m_toggle_line:first-child {
     top: 3vw;
-  }      
-  
-  .m_toggle_line.toggle_act01 {
-        transform: rotate(45deg);
-        position: absolute;
-        top: 1vw;
-    }   
-    
-    .m_toggle_line.toggle_act02 {
-        transform: rotate(-45deg);
-        position: absolute;
-        top:1vw    
-    }
-    
-    .m_gnb {
-        width: 100%;
-        height: 100vh;
-        background-color: #f0ece5;
-        position: absolute;
-        left: -100%;
-        top: 0px;
-        z-index: 1;
-        padding: 45% 10% 25% 10%;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-    .m_gnb .m_gnb_menu {
-        font-size: 4vw;
-        color: #000;
-        line-height: 3.2rem;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .m_gnb .m_buyshop .m_gnb_menu{font-size:6vw}
-    
-    .m_gnb ul > li:hover {
-        background-color: #fff;
-    }
-    
-    .wrap_pos {
-        left: 100% !important;
-    }
-    
-    @media (max-width: 540px) {
-        .sec,
-        .wd60,
-        .main p {
-        width: 100%;
-        }
-        .m_gnb{padding: 65% 10% 25% 10%;}
-        .m_gnb .m_gnb_menu{line-height: 2.2rem;;}
-        .more_btn {
-        width: 39vw;
-        height: 12vw;
-        line-height: 12vw;
-        margin: 4vw auto;
-        z-index: 1;
-        }
-
-        .logo_tit {
-        width: 100%;
-        }
-
-        .more_btn span:after {
-        width: 39vw;
-        height: 12.7vw;
-        }
-        .row,
-        .row .txt_box,
-        .row .img_box {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        }
-        .row .txt_box {
-        padding: 4vw;
-        }
-        .max_bone .row {
-        flex-direction: column-reverse;
-        }
-        .main_new .inner {
-        width: 100%;
-        margin: 0 auto;
-        }
-        .main_new .inner .slide {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        }
-        .main_new .inner .slide figure {
-        width: 47%;
-        box-sizing: border-box;
-        margin-bottom: 5vw;
-        }
-        .main_new .slide figure a {
-        width: 100%;
-        }
-        .main_new .inner figcaption {
-        line-height: 1rem;
-        }
-
-        .insta {
-        flex-wrap: wrap;
-        }
-        .insta ul {
-        display: flex;
-        width: 90%;
-        margin: 0 auto;
-        height: 100vw;
-        flex-wrap: wrap;
-        }
-        .insta ul li {
-        width: 47%;
-        }
-        .insta ul li:first-child,
-        .insta ul li:nth-child(2) {
-        margin-bottom: 3vw;
-        }
-        .insta ul li:first-child,
-        .insta ul li:nth-child(3) {
-        margin-left: 3vw;
-        }
-
-        .footer .row {
-        flex-direction: row;
-        }
-        .footer .sns_nav li:last-child > a:after {
-        font-size: 1.3rem;
-        }
-        .footer .bottom .shop_toggle::after {
-        right: -5vw;
-        }
-
-        p,
-        figcaption,
-        .main p {
-        line-height: 1rem;
-        }
-        .aside_top,
-        .main_new .sd_bottom {
-        display: none;
-        }
-    }
-    
   }
 
+  .m_toggle_line.toggle_act01 {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1vw;
+  }
 
+  .m_toggle_line.toggle_act02 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 1vw;
+  }
+
+  .m_gnb {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0ece5;
+    position: absolute;
+    left: -100%;
+    top: 0px;
+    z-index: 1;
+    padding: 45% 10% 25% 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .m_gnb .m_gnb__menu {
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .m_gnb .m_buyshop .m_gnb__menu {
+    font-size: 1.8rem;
+  }
+
+  .m_gnb ul > li:hover {
+    background-color: #fff;
+  }
+
+  .wrap_pos {
+    left: 100% !important;
+  }
+
+  @media (max-width: 540px) {
+    .sec,
+    .wd60,
+    .main p {
+      width: 100%;
+    }
+    .m_gnb {
+      padding: 65% 10% 25% 10%;
+    }
+    .m_gnb .m_gnb_menu_ {
+      line-height: 2.2rem;
+    }
+    .more_btn {
+      width: 39vw;
+      height: 12vw;
+      line-height: 12vw;
+      margin: 4vw auto;
+      z-index: 1;
+    }
+    .search_open .hash li {
+      font-size: 0.8rem;
+      line-height: 1.8rem;
+    }
+
+    .logo_tit {
+      width: 100%;
+    }
+
+    .more_btn span:after {
+      width: 39vw;
+      height: 12.7vw;
+    }
+    .row,
+    .row .txt_box,
+    .row .img_box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .row .txt_box {
+      padding: 4vw;
+    }
+    .max_bone .row {
+      flex-direction: column-reverse;
+    }
+    .main_new .inner {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .main_new .inner .slide {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .main_new .inner .slide figure {
+      width: 47%;
+      box-sizing: border-box;
+      margin-bottom: 5vw;
+    }
+    .main_new .slide figure a {
+      width: 100%;
+    }
+    .main_new .inner figcaption {
+      line-height: 1rem;
+    }
+
+    .insta {
+      flex-wrap: wrap;
+    }
+    .insta ul {
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+      height: 100vw;
+      flex-wrap: wrap;
+    }
+    .insta ul li {
+      width: 47%;
+    }
+    .insta ul li:first-child,
+    .insta ul li:nth-child(2) {
+      margin-bottom: 3vw;
+    }
+    .insta ul li:first-child,
+    .insta ul li:nth-child(3) {
+      margin-left: 3vw;
+    }
+
+    .footer .row {
+      flex-direction: row;
+    }
+    .footer .sns_nav li:last-child > a:after {
+      font-size: 1rem;
+    }
+    .footer .bottom .shop_toggle::after {
+      right: -5vw;
+    }
+
+    .aside_top,
+    .main_new .sd_bottom {
+      display: none;
+    }
+  }
+}

@@ -4,12 +4,7 @@
 ---------------------------------------
 */
 
-.eventBanner {
-    width : 130.4rem;
-    margin : 0 auto;
-    padding : 3rem 0 6rem;
-    align-items: center;
-    border: none;
+.event__b {
     position: relative;
 }
 
@@ -46,8 +41,8 @@
     margin-top: -1.5rem;
     transform: translateX(50%) scaleX(-1);
     background: hsla(0, 0%, 100%, 0.9);
-    border: 0.1rem solid rgba(0,0,0,0.1);
-    box-shadow: 0 0 0.8rem rgba(0,0,0,.13);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
     align-items: center;
     justify-content: center;
     border-radius: 10rem;
@@ -59,7 +54,7 @@
     width: 3.8rem;
     height: 4rem;
     margin-left: 0.3rem;
-    background-image: url("../assets/image/right-arrow.svg");
+    background-image: url('../assets/image/right-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -76,8 +71,8 @@
     margin-top: -1.5rem;
     transform: translateX(50%);
     background: hsla(0, 0%, 100%, 0.9);
-    border: 0.1rem solid rgba(0,0,0,0.1);
-    box-shadow: 0 0 0.8rem rgba(0,0,0,.13);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
     align-items: center;
     justify-content: center;
     border-radius: 10rem;
@@ -89,7 +84,7 @@
     width: 3.8rem;
     height: 4rem;
     margin-left: 0.3rem;
-    background-image: url("../assets/image/right-arrow.svg");
+    background-image: url('../assets/image/right-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

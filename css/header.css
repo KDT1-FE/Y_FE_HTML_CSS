@@ -5,19 +5,17 @@
 */
 
 .header {
-    margin-top: 0.7rem;
-    padding: 0 5rem 0;
-
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
-    background-color: chocolate;
 }
 
 .header__wrapper {
     display: flex;
     flex-direction: column;
 
+    width: 75%;
+    margin: 1rem auto;
+
     white-space: nowrap;
-    background-color: cornflowerblue;
 }
 
 .header__top {
@@ -26,21 +24,16 @@
     justify-content: space-between;
 
     margin-top: 1rem;
-    background-color: cadetblue;
 }
 
 .header__top--left {
     display: flex;
     align-items: center;
-
-    background-color: darkcyan;
 }
 
 .header__top--logo {
     display: flex;
     align-items: center;
-
-    background-color: yellow;
 }
 
 .header__top--interpark-logo {
@@ -59,28 +52,42 @@
 
 .header__top--input {
     display: flex;
-    position: relative;
-    background-color: violet;
 
     margin-left: 1.5rem;
 }
 
 .header__top--input-text {
+    display: flex;
+    align-items: center;
+
     width: 27.2rem;
     height: 2.8rem;
+
+    position: relative;
 
     border: 0.1rem solid rgba(0, 0, 0, 0.15);
     border-radius: 2.4rem;
 }
 
+.header__top--input-space {
+    display: inline-block;
+
+    width: calc(100% - 4rem);
+
+    margin-left: 1rem;
+
+    background-color: transparent;
+    border: none;
+}
+
 .header__top--input-icon {
-    width: 2.8rem;
-    height: 1.8rem;
+    width: 1.3rem;
+    height: 1.3rem;
 
     position: absolute;
 
     top: 50%;
-    right: 0;
+    right: 3%;
     transform: translateY(-50%);
 
     background-image: url('../assets/image/header_search.svg');
@@ -89,23 +96,24 @@
 .header__top--right {
     display: flex;
     align-items: center;
+
+    margin-right: 0.5%;
 }
 
 .header__top--menu {
     display: flex;
-    gap: 1.3rem;
 
-    background-color: darkgoldenrod;
     position: relative;
+
+    gap: 1.3rem;
 }
 
 .header__top--toggle-btn {
-    position: relative;
     cursor: pointer;
 }
 
 .header__top--hover-menu {
-    display: block;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -113,7 +121,7 @@
 
     position: absolute;
     top: 170%;
-    right: -20%;
+    right: 0;
 
     background: #fff;
     box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
@@ -138,15 +146,20 @@
     cursor: pointer;
 }
 
+.header__top--toggle-text {
+    position: relative;
+}
+
 .header__top--toggle-text::before {
     display: block;
     content: '';
 
     width: 3rem;
-    height: 0.6rem;
+    height: 0.5rem;
 
     position: absolute;
-    right: 0;
+    right: -50%;
+    top: 35%;
 
     background-image: url('../assets/image/under.svg');
     background-repeat: no-repeat;
@@ -154,55 +167,59 @@
     background-size: contain;
 }
 
-.header-inner-bottom {
-    padding: 3rem 0 2rem;
+.header__bottom {
+    margin-top: 1.5rem;
 }
 
-.header-inner-bottom nav {
+.header__bottom--menu {
     display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.header-inner-bottom nav > ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
     justify-content: start;
     align-items: center;
-    height: 100%;
 }
 
-.header-inner-bottom nav > ul > li {
-    position: relative;
-    text-align: center;
-    margin-right: 2.2rem;
-}
-
-.header-inner-bottom nav > ul > li > a {
+.header__bottom--menu-item {
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: #111;
+
+    margin-right: 1.3rem;
+
+    font-weight: 600;
 }
 
-.header-inner-bottom nav > ul > li:last-child a .menu-text::before {
+.header__bottom--menu-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+
+    margin-right: 0.5rem;
+}
+
+.header__bottom--menu-icon-hot {
+    width: 1.4rem;
+    height: 1.4rem;
+
+    margin-left: 0.2rem;
+
+    background-image: url('../assets/image/icon_hot.svg');
+}
+
+.header__bottom--menu-event-text {
+    position: relative;
+
+    font-weight: 600;
+}
+
+.header__bottom--menu-event-text::before {
     content: '';
+
+    width: 0.1rem;
+    height: 1rem;
+
     position: absolute;
     top: 50%;
-    left: -1.25rem;
-    width: 0.1rem;
-    height: 1.7rem;
-    background-color: #e5e5e5;
-    transform: translateY(-50%);
-}
+    left: -0.75rem;
 
-.header-inner-bottom nav > ul > li > a > i > img {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+    background-color: #ededed;
+    transform: translateY(-50%);
 }
 
 /*

@@ -5,23 +5,25 @@
 */
 
 html {
-    width: 100%;
-    background-color: green;
+    height: 100%;
 
     font-size: 16px;
     box-sizing: border-box;
+
     overflow-x: hidden;
 
     font-family: 'Pretendard', Helvetica, 'Segoe UI', sans-serif;
 }
 
 body {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
 }
 
 main {
     width: 100%;
-    padding: 0 5rem;
 }
 
 button {
@@ -52,10 +54,18 @@ a {
     margin: 0;
 }
 
-.contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+img {
+    object-fit: contain;
+}
+
+input:focus {
+    outline: none;
+}
+
+.main__wrapper {
+    width: 75%;
+
+    margin: 0 auto;
 }
 
 .background-logo {

@@ -34,8 +34,10 @@
                             <div class="header__top--interpark-logo background-logo"></div>
                         </div>
                         <div class="header__top--input">
-                            <input class="header__top--input-text" type="text" placeholder="검색어를 입력해주세요" />
-                            <div class="header__top--input-icon background-logo"></div>
+                            <div class="header__top--input-text">
+                                <input class="header__top--input-space" type="text" />
+                                <div class="header__top--input-icon background-logo"></div>
+                            </div>
                         </div>
                     </div>
                     <!-- header left section-->
@@ -75,64 +77,50 @@
                         </ul>
                     </div>
                 </div>
-                <div class="header-inner-bottom">
-                    <nav class="main-nav">
-                        <ul class="main-menu">
+                <!-- header bottom-->
+                <div class="header__bottom">
+                    <nav class="header__bottom--nav">
+                        <!-- header bottom navigation-->
+                        <ul class="header__bottom--menu">
                             <li>
-                                <a href="javascript:void(0)">
-                                    <i class="icon-1">
-                                        <img src="./assets/image/icon_tour.png" alt />
-                                    </i>
-                                    <span class="menu-text">투어</span>
+                                <a class="header__bottom--menu-item" href="javascript:void(0)">
+                                    <img class="header__bottom--menu-icon" src="./assets/image/icon_tour.png" alt />
+                                    <span>투어</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">
-                                    <i class="icon-2">
-                                        <img src="./assets/image/icon_ticket.png" alt />
-                                    </i>
-                                    <span class="menu-text">티켓</span>
+                                <a class="header__bottom--menu-item" href="javascript:void(0)">
+                                    <img class="header__bottom--menu-icon" src="./assets/image/icon_ticket.png" alt />
+                                    <span>티켓</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">
-                                    <i class="icon-3">
-                                        <img src="./assets/image/icon_shopping.png" alt />
-                                    </i>
-                                    <span class="menu-text">쇼핑</span>
+                                <a class="header__bottom--menu-item" href="javascript:void(0)">
+                                    <img class="header__bottom--menu-icon" src="./assets/image/icon_shopping.png" alt />
+                                    <span>쇼핑</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">
-                                    <i class="icon-4">
-                                        <img src="./assets/image/icon_book.png" alt />
-                                    </i>
-                                    <span class="menu-text">도서</span>
+                                <a class="header__bottom--menu-item" href="javascript:void(0)">
+                                    <img class="header__bottom--menu-icon" src="./assets/image/icon_book.png" alt />
+                                    <span>도서</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">
-                                    <i class="icon-5">
-                                        <img src="./assets/image/icon_triple.png" alt />
-                                    </i>
-                                    <span class="menu-text">트리플</span>
+                                <a class="header__bottom--menu-item" href="javascript:void(0)">
+                                    <img class="header__bottom--menu-icon" src="./assets/image/icon_triple.png" alt />
+                                    <span>트리플</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">
-                                    <i class="icon-6">
-                                        <img src="./assets/image/icon_special.png" alt />
-                                    </i>
-                                    <span class="menu-text">1등특가</span>
-                                    <i class="icon-6-1">
-                                        <img class="hot__icon" src="./assets/image/icon_hot.svg" alt />
-                                    </i>
+                                <a class="header__bottom--menu-item" href="javascript:void(0)">
+                                    <img class="header__bottom--menu-icon" src="./assets/image/icon_special.png" alt />
+                                    <span>1등특가</span>
+                                    <div class="header__bottom--menu-icon-hot background-logo"></div>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">
-                                    <span class="menu-text">선착순NOL굿즈증정</span>
-                                </a>
+                                <a class="header__bottom--menu-event-text" href="javascript:void(0)"> 선착순NOL굿즈증정 </a>
                             </li>
                         </ul>
                     </nav>
@@ -214,28 +202,28 @@
                 </div>
             </div>
         </div>
-        <main>
-            <div class="contents">
-                <section class="eventBanner">
-                    <div class="swiper-container mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./assets/image/swipe1.jpg" alt="" />
+        <main class="main__container">
+            <div class="main__wrapper">
+                <section class="event__banner">
+                    <div class="event__container swiper-container">
+                        <div class="event__wrapper swiper-wrapper">
+                            <div class="event__item swiper-slide">
+                                <img class="event__item--image" src="./assets/image/swipe1.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/image/swipe2.jpg" alt="" />
+                            <div class="event__item swiper-slide">
+                                <img class="event__item--image" src="./assets/image/swipe2.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/image/swipe3.png" alt="" />
+                            <div class="event__item swiper-slide">
+                                <img class="event__item--image" class="event__item--image" src="./assets/image/swipe3.png" alt="" />
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/image/swipe4.png" alt="" />
+                            <div class="event__item swiper-slide">
+                                <img class="event__item--image" src="./assets/image/swipe4.png" alt="" />
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/image/swipe5.jpg" alt="" />
+                            <div class="event__item swiper-slide">
+                                <img class="event__item--image" src="./assets/image/swipe5.jpg" alt="" />
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/image/swipe6.png" alt="" />
+                            <div class="event__item swiper-slide">
+                                <img class="event__item--image" src="./assets/image/swipe6.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -1446,7 +1434,7 @@
                 </section>
             </div>
         </main>
-        <footer class="footer-main">
+        <footer style="display: none" class="footer-main">
             <div class="footer__banner">
                 <ul class="footer__banner--list">
                     <li class="list--item">

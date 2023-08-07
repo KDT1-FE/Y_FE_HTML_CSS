@@ -24,6 +24,10 @@ a {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   background-color: #000000;
   width: 100%;
@@ -162,7 +166,6 @@ header {
   width: 232px;
   height: 66px;
   margin-right: 13px;
-  cursor: pointer;
   border: none;
   background-color: #00ff0000;
 }
@@ -179,7 +182,6 @@ header {
   width: 232px;
   height: 66px;
   margin-right: 13px;
-  cursor: pointer;
   border-radius: 50px;
   border: none;
 }
@@ -269,7 +271,6 @@ header {
 .card1-more-button:hover {
   transition: background-image 0.5s;
   background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
-  cursor: pointer;
 }
 
 .down-button-color2-wrap {
@@ -388,7 +389,6 @@ header {
 .card2-more-button:hover {
   transition: background-image 0.5s;
   background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
-  cursor: pointer;
 }
 
 .card2-down-button {
@@ -509,7 +509,6 @@ header {
 .card3-more-button:hover {
   transition: background-image 0.5s;
   background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
-  cursor: pointer;
 }
 
 .card3-down-button {
@@ -588,7 +587,6 @@ header {
 .card4-more-button:hover {
   transition: background-image 0.5s;
   background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
-  cursor: pointer;
 }
 
 .card4-down-button {
@@ -661,7 +659,6 @@ header {
   height: 58px;
   background-color: #00ff0000;
   border: none;
-  cursor: pointer;
   margin-right: 12px;
 }
 
@@ -676,7 +673,6 @@ header {
   height: 58px;
   background-color: #00ff0000;
   border: none;
-  cursor: pointer;
 }
 
 .right-button:hover {
@@ -729,10 +725,6 @@ header {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-}
-
-.ticket-list1-more-button:hover {
-  cursor: pointer;
 }
 
 .ticket-list1-text-wrap {
@@ -804,10 +796,6 @@ header {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-}
-
-.ticket-list2-more-button:hover {
-  cursor: pointer;
 }
 
 .ticket-list2-text-wrap {

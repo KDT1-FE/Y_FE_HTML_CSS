@@ -120,7 +120,6 @@ footer {
 }
 a.footer-info-link {
     color: #4a95ff;
-    -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
 }
 

@@ -18,8 +18,6 @@
         border-radius: 1.7rem;
     }
 }
-@media (width > 1024px) {
-}
 
 main {
     min-height: 1000px;

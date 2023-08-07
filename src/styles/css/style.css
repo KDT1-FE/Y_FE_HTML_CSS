@@ -95,8 +95,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px 20px 0 20px;
 }
 .top-banner .items .information .information__content {
   font-size: 14px;

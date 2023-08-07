@@ -1,0 +1,137 @@
+footer {
+  width: 100vw;
+  margin-top: 30px;
+}
+
+footer .inner {
+  width: 90%;
+  padding-bottom: 20px;
+}
+
+footer .inner .copyright-big-screen {
+  display: none;
+}
+footer .inner .copyright-small-screen {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+footer .inner .line-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+footer .inner .line-1 ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .inner .line-1 ul li a {
+  font-size: 11px;
+  color: #888888;
+}
+
+footer .inner .line-1 ul li a:first-of-type {
+  display: flex;
+  align-items: center;
+}
+footer .inner .line-1 .hg {
+  color: #000;
+  font-weight: 600;
+}
+
+footer .inner .line-1 ul li a .material-icons {
+  margin-left: 2px;
+  font-size: 20px;
+  color: #888888;
+}
+
+footer .inner .related-site {
+  position: absolute;
+  font-size: 11px;
+  right: 0;
+  color: #888888;
+  background-color: #f4f4f4;
+  padding: 5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+footer .inner .related-site:hover {
+  color: #000;
+  transition: 0.4s;
+}
+
+footer .inner .related-site span:first-child {
+  padding-right: 30px;
+}
+
+@media (width < 500px) {
+  footer .inner .line-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+  }
+  footer .inner .line-1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  footer .inner .related-site {
+    margin: 30px 0;
+    position: relative;
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #888888;
+    background-color: #f4f4f4;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  footer .inner .related-site span:first-child {
+    padding-left: 10px;
+  }
+  footer .inner .related-site span:last-child {
+    position: absolute;
+    right: 3%;
+  }
+}
+
+@media (width > 1024px) {
+  footer .inner .copyright-big-screen {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  footer .inner .copyright-small-screen {
+    display: none;
+  }
+
+  footer .inner .line-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer .inner .line-1 ul {
+    margin-right: 150px;
+  }
+  footer .inner .line-1 ul li a {
+    font-size: 13px;
+    color: #888888;
+  }
+  footer .inner .related-site {
+    font-size: 12px;
+  }
+}

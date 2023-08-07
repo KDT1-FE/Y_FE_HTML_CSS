@@ -1,0 +1,75 @@
+.business-section {
+  width: 100vw;
+  margin-top: 150px;
+}
+.business-section .inner {
+  width: 90%;
+}
+.business-section .inner .business-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.business-section .inner .business-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+.business-section .inner .business-container .business-card {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 10px;
+}
+.business-section .business-card .card-title {
+  color: #ffb500;
+  margin-bottom: 10px;
+}
+.business-section .business-card .card-subs {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.business-section .business-card .follow-link:hover .material-icons {
+  background-color: yellow;
+  color: #000;
+  transition: 0.4s;
+}
+.business-section .business-card .follow-link a {
+  display: flex;
+  align-items: center;
+  color: #888888;
+  font-size: 14px;
+}
+.business-section .business-card .follow-link a .material-icons {
+  padding: 0.5px;
+  font-size: 18px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+
+@media (width < 500px) {
+  .business-section .inner .business-container .business-card {
+    width: 90%;
+  }
+  .business-section .business-card .card-title {
+    margin-bottom: 15px;
+  }
+  .business-section .business-card .card-subs {
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+}
+@media (width > 1024px) {
+  .business-section .inner .business-container .business-card {
+    width: 30%;
+  }
+  .business-section .business-card .card-title {
+    margin-bottom: 20px;
+  }
+  .business-section .business-card .card-subs {
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+}

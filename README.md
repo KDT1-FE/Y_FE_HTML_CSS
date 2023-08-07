@@ -1,45 +1,203 @@
-[참고 내용]
+# KDT0_NohWookJIn
 
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
+<div align="center">
+   <img width="1680" alt="Kakao-enterprise" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/101846817/781c78a1-eea0-40c6-a6ca-0f862be7e826">
+</div>
+<br /><br />
 
-과제 수행 및 제출 방법
+# 카카오 엔터프라이즈 클론 코딩
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+> **카카오 엔터프라이즈 클론 코딩** <br/> **개발기간: 2023.07.24~ 2023.07.28**
 
+<br />
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+## 배포 주소 및 카카오엔터프라이즈 주소
 
-필수 요구사항
+배포 주소 : https://effulgent-babka-3fe88e.netlify.app/
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+카카오엔터프라이즈 주소 : https://kakaoenterprise.com/
 
-선택 요구사항
+<br />
 
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
+## 프로젝트 소개
 
-손쉬운 이미지 추출 방법
+카카오 엔터프라이즈 클론 코딩입니다. <br />
+원본 사이트와 마찬가지로 스마트폰, 태블릿, PC 모든 기기에서 동작할 수 있도록 반응형으로 만들었습니다.
 
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
+<br />
 
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+## 사용 라이브러리
+
+- Google Material Icons
+- GSAP
+- Swiper
+- Lodash
+
+<br />
+
+---
+
+## Stacks
+
+### Environment
+
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
+
+### Development
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
+
+---
+
+## 화면 구성 📺
+
+|                                                             헤더 + 메인 섹션                                                             |                                                              뉴스 섹션                                                              |
+| :--------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: |
+| <img width=“500” alt="Header-Main" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/101846817/1b41b444-5b16-4d06-b64c-9b7863854c26"> |  <img width=“500” alt="News" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/101846817/971011d4-7ecf-4495-9b2c-e7314ff8b766">  |
+|                                                               서비스 섹션                                                                |                                                              하단 섹션                                                              |
+|   <img width=“500” alt="Service" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/101846817/95b4210c-2cf5-48a2-b617-d23025986c50">   | <img width=“500” alt="Footer" src="https://github.com/KDT1-FE/Y_FE_HTML_CSS/assets/101846817/3df0beb6-f70e-4fb7-ba58-65c478b5b1b8"> |
+
+---
+
+## 주요 기능 📦
+
+### ⭐️ 일정 스크롤 이상을 충족할 시 헤더가 사라집니다.
+
+<br />
+
+> **화면**
+
+<!-- <img width="500" src="readme-images/Header.gif"/> -->
+
+<br />
+
+> **코드**
+
+```bash
+const headerElement = document.querySelector("header");
+window.addEventListener(
+  "scroll",
+  _.throttle(() => {
+    if (window.scrollY > 550) {
+      gsap.to(headerElement, 0.6, {
+        opacity: 0,
+        display: "none",
+      });
+    } else {
+      gsap.to(headerElement, 0.6, {
+        opacity: 1,
+        display: "block",
+      });
+    }
+  })
+);
+```
+
+<br /><br />
+
+### ⭐️ 메인 섹션 - 슬라이더 기능(자동 슬라이드, 슬라이드 넘김, 슬라이드 정지 및 재생)
+
+<br />
+
+> **화면**
+
+<!-- <img width="500" src="readme-images/Slide.gif"/> -->
+
+<br />
+
+> **코드**
+
+```bash
+const slides = new Swiper(".main-section .swiper", {
+  direction: "horizontal",
+  autoplay: {
+    delay: 1000,
+  },
+  speed: 2000,
+  loop: true,
+  navigation: {
+    prevEl: ".main-section .swiper-prev",
+    nextEl: ".main-section .swiper-next",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: "true",
+  },
+});
+
+const current = document.querySelector(".pagination-current");
+const total = document.querySelector(".pagination-total");
+slides.on("transitionEnd", function () {
+  current.innerHTML = slides.realIndex + 1;
+});
+
+const stopBtn = document.querySelector(".swiper-state .pause");
+const playBtn = document.querySelector(".swiper-state .play");
+stopBtn.addEventListener("click", () => {
+  slides.autoplay.stop();
+  stopBtn.classList.add("hide");
+  playBtn.classList.remove("hide");
+});
+playBtn.addEventListener("click", () => {
+  slides.autoplay.start();
+  stopBtn.classList.remove("hide");
+  playBtn.classList.add("hide");
+});
+```
+
+<br /><br />
+
+### ⭐️ 이미지 양방향 애니메이션
+
+> **화면**
+
+<!-- <img width="500" src="readme-images/Service.gif"/> -->
+
+<br />
+
+> **코드**
+
+```bash
+gsap.to(".list-layout-1 .service-list-card", {
+  x: -1200,
+  duration: 40,
+  repeat: -1,
+  repeatDelay: 0,
+  ease: "none",
+})
+
+gsap.from(".list-layout-2 .service-list-card", {
+  x: -700,
+  duration: 40,
+  repeat: -1,
+  repeatDelay: 0,
+  ease: "none",
+})
+```
+
+<br />
+
+## 아키텍쳐
+
+### 디렉토리 구조
+
+```bash
+├── README.md
+├── index.html
+├── main.js
+├── styles : CSS 화면 구성 순입니다.
+    └── common.css : 모든 요소에 적용할 공통 CSS입니다.
+    └── header.css
+    └── mainSection.css
+    └── newsSection.css
+    └── serviceSection.css
+    └── customerSection.css
+    └── businessSection.css
+    └── questionSection.css
+    └── footer.css
+
+```

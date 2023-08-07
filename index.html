@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>카카오엔터프라이즈</title>
+
+    <!--브라우저 스타일 초기화-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <!--Google Material Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/mainSection.css" />
+    <link rel="stylesheet" href="styles/newsSection.css" />
+    <link rel="stylesheet" href="styles/serviceSection.css" />
+    <link rel="stylesheet" href="styles/customerSection.css" />
+    <link rel="stylesheet" href="styles/businessSection.css" />
+    <link rel="stylesheet" href="styles/questionSection.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS -->
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <!-- <img src="./images/logo.svg" alt="kakao_enterprise" /> -->
+          <span>kakao<span class="logo-bolder">enterprise</span> </span>
+        </a>
+
+        <ul class="menu">
+          <li class="item">
+            <a href="#">서비스</a>
+          </li>
+          <li class="item">
+            <a href="#">기술</a>
+          </li>
+          <li class="item">
+            <a href="#">고객사례</a>
+          </li>
+          <li class="item">
+            <a href="#">개발자</a>
+          </li>
+          <li class="item">
+            <a href="#">도입문의</a>
+          </li>
+          <li class="item">
+            <a href="#">회사정보</a>
+          </li>
+        </ul>
+
+        <div class="recruiting">
+          <a href="#">
+            <span>인재영입</span>
+            <span class="material-icons">north_east</span>
+          </a>
+        </div>
+
+        <div class="material-icons icons-small">menu</div>
+      </div>
+    </header>
+
+    <!-- SECTION1 : 미디어 브리핑 -->
+    <section class="main-section">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/AMD_수정.png" alt="" />
+            <div class="section01-texture">
+              <span
+                >카카오 i 클라우드, <br class="small-br" />
+                AMD 협업 확대로 클라우드 고도화</span
+              >
+              <a href="#" class="btn-larger">보도자료 바로가기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/AMD-영상-복사2.jpg" alt="" />
+            <div class="section02-texture">
+              <span
+                >카카오 i 클라우드, <br class="small-br" />
+                'AMD 데이터센터 및 AI 기술 프리미어' <br class="small-br" />
+                컨퍼런스 참여</span
+              >
+              <a href="#" class="btn-larger">영상보기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/미디어데이-1.png" alt="" />
+            <div class="section03-texture">
+              <span
+                >KaKao i Cloud <br class="small-br" />
+                미디어 브리핑</span
+              >
+              <a href="#" class="btn-larger">보도자료 바로가기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/개발자_기업사이트-배너.png" alt="" />
+            <div class="section04-texture">
+              <span
+                >KREW TALK 우리는 <br />
+                카카오엔터프라이즈에서 일합니다</span
+              >
+              <a href="#" class="btn-larger">자세히보기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="swiper-prev">
+            <span class="material-icons">chevron_left</span>
+          </div>
+          <div class="pagination">
+            <span class="pagination-current">1</span>
+            <span>&#183;</span>
+            <span class="pagination-total">4</span>
+          </div>
+          <div class="swiper-state">
+            <span class="material-icons pause">pause</span>
+            <span class="material-icons play hide">play_arrow</span>
+          </div>
+          <div class="swiper-next">
+            <span class="material-icons">chevron_right</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION2 : Connect. Solve. Create -->
+    <section class="news-section">
+      <div class="inner">
+        <div class="news-item item-cards">
+          <img src="images/news-typo-connect.svg" alt="news-typo-connect" />
+          <img src="images/news-typo-solve.svg" alt="news-typo-solve" />
+          <div class="item-class">
+            <img src="images/news-typo-create.svg" alt="news-typo-connect" />
+            <img src="images/news-typo-ai.svg" alt="news-typo-ai" />
+          </div>
+        </div>
+
+        <div class="news-item2 item-cards">
+          <div class="item-texture">
+            <span class="item-category">보도자료 </span>
+            <span class="item-title"
+              >카카오 i 클라우드, AMD 협업 확대로 클라우드 고도화 속도
+              낸다</span
+            >
+          </div>
+          <img src="images/kep_tumb_01_보도자료_AMD.jpg" alt="보도자료_AMD" />
+        </div>
+
+        <div class="news-item3 item-cards">
+          <div class="item-texture">
+            <span class="item-category"
+              >보도자료
+              <img
+                src="images/icon-new.png"
+                alt=""
+                class="display-inline-change"
+              />
+            </span>
+            <span class="item-title"
+              >개방형 클라우드 플랫폼 'K-PaaS 확장성 확인' 획득</span
+            >
+          </div>
+          <img
+            src="images/이미지_카카오엔터프라이즈_PaaS-TA-e1689829773328.jpg"
+            alt="카카오엔터프라이즈"
+          />
+          <div class="item-tags">
+            <span>#PaaS</span>
+            <span>#카카오i클라우드</span>
+            <span>#쿠버네티스엔진</span>
+            <span>#클라우드네이티브</span>
+          </div>
+        </div>
+
+        <div class="news-item4 item-cards">
+          <div class="item-texture">
+            <span class="item-category">보도자료</span>
+            <span class="item-title"
+              >카카오 i 클라우드, 멀티AZ 제공하는 신규 리전 공개 "고성능, 고사양
+              클라우드까지 폭넓은 선택권 제공"</span
+            >
+          </div>
+          <img src="images/thumb-default.jpg" alt="default" />
+        </div>
+
+        <div class="news-item5 item-cards">
+          <div class="item-texture">
+            <span class="item-category">새소식</span>
+            <span class="item-title"
+              >카카오 i 라스 OM/WM 플랫폼 기능 업데이트</span
+            >
+          </div>
+          <img
+            src="images/kep_tumb_02_새소식_라스OMWM.jpg"
+            alt="새소식_라스OMWM"
+          />
+          <div class="item-tags">
+            <span>#OM</span>
+            <span>#wm</span>
+            <span>#디지털물류</span>
+            <span>#카카오i라스</span>
+          </div>
+        </div>
+
+        <div class="news-item6 item-cards">
+          <div class="item-texture">
+            <span class="item-category">보도자료</span>
+            <span class="item-title">이경진 신임 대표이사 선임</span>
+          </div>
+          <img src="images/thumb-default.jpg" alt="default" />
+        </div>
+
+        <div class="news-item7 item-cards">
+          <div class="item-texture">
+            <span class="item-category">보도자료</span>
+            <span class="item-title"
+              >고성능 프리미엄 클라우드 시장 공략한다 “글로벌 탑티어 목표로 기술
+              고도화 매진”</span
+            >
+          </div>
+          <img
+            src="images/kep_tumb_03_보도자료_고성능프리미엄클라우드.jpg"
+            alt="default"
+          />
+        </div>
+
+        <div class="news-item8 item-cards">
+          <div class="item-texture">
+            <span class="item-category">새소식</span>
+            <span class="item-title"
+              >상생 Boost Up : 리본 프로그램 1기 오리엔테이션 및 교육 진행</span
+            >
+          </div>
+          <img src="images/상생.png" alt="default" />
+          <div class="item-tags">
+            <span>#리본프로그램</span>
+            <span>#상생부스트업</span>
+          </div>
+        </div>
+
+        <div class="news-item9 item-cards">
+          <div class="item-texture">
+            <span class="item-category">마케팅 행사</span>
+            <span class="item-title"
+              >카카오 i 라스 “5월 무료 물류상담 이벤트”</span
+            >
+          </div>
+          <img
+            src="images/kep_tumb_05_마케팅행사_물류상담이벤트.jpg"
+            alt="default"
+          />
+          <div class="item-tags">
+            <span>#물류</span>
+            <span>#카카오i라스</span>
+          </div>
+        </div>
+
+        <div class="news-item10 item-cards">
+          <div class="item-texture">
+            <span class="item-category">보도자료</span>
+            <span class="item-title"
+              >카카오엔터프라이즈, 카카오워크와 시프티 연동 통해 플랫폼
+              확장나선다</span
+            >
+          </div>
+          <img src="images/kep_tumb_04_보도자료_시프티연동.jpg" alt="default" />
+          <div class="item-tags">
+            <span>#서드파티</span>
+            <span>#시프티</span>
+            <span>#업무커뮤니케이션플랫폼</span>
+            <span>#카카오워크</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more">
+        <div class="load-more-container">
+          <span>더 불러오기</span>
+          <!-- <span class="material-icons">add_circle</span> -->
+          <div class="load-more-icon">+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION3 : 기술과 서비스 -->
+    <section class="service-section">
+      <div class="inner">
+        <div class="service-title">
+          <h2>기술과 서비스</h2>
+        </div>
+        <div class="service-list">
+          <!-- Latout 1 -->
+          <div class="list-layout-1">
+            <div class="service-list-card">
+              <img src="images/Kakaowork_Symbol_310-1.gif" alt="" />
+              <span class="kakaowork-text"
+                >kakao<span class="kakaowork-hg">work</span></span
+              >
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-service-engine.jpg" alt="" />
+              <span class="engine-text">kakao i engine</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/cloud-animation_matte.gif" alt="" />
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-service-search.jpg" alt="" />
+              <span class="search-text">kakao i search</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/Folder-animation.gif" alt="" />
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-service-live.jpg" alt="" />
+              <span class="live-text">kakao i connect</span>
+              <span class="live-text2">Live</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/KakaoiCloud_Symbol_ver04_310-1.gif" alt="" />
+              <span class="icloud-text">kakao i cloud</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-marqee-place-1.jpg" alt="" />
+              <span class="marqee-text">kakao i connect</span>
+              <span class="marqee-text2">Place</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/Kakaowork_Symbol_310-1.gif" alt="" />
+              <span class="kakaowork-text"
+                >kakao<span class="kakaowork-hg">work</span></span
+              >
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-service-engine.jpg" alt="" />
+              <span class="engine-text">kakao i engine</span>
+            </div>
+          </div>
+
+          <!-- Layout 2 -->
+          <div class="list-layout-2">
+            <div class="service-list-card">
+              <img src="images/main-service-message.jpg" alt="" />
+              <span class="biz-text">kakao i connect</span>
+              <span class="biz-text2">Biz Message</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/kakaoiLaaS_Symbol_310-2.gif" alt="" />
+              <span class="iLaaS-text">kakao i LaaS</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/ryan-animation_ver02.gif" alt="" />
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-service-talk.jpg" alt="" />
+              <span class="talk-text">kakao i connect</span>
+              <span class="talk-text2">Talk</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/chat_animation_matte.gif" alt="" />
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-service-center.jpg" alt="" />
+              <span class="center-text">kakao i connect</span>
+              <span class="center-text2">Center</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/main-service-message.jpg" alt="" />
+              <span class="biz-text">kakao i connect</span>
+              <span class="biz-text2">Biz Message</span>
+            </div>
+
+            <div class="service-list-card">
+              <img src="images/kakaoiLaaS_Symbol_310-2.gif" alt="" />
+              <span class="iLaaS-text">kakao i LaaS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION4 : 고객사례 -->
+    <section class="customer">
+      <div class="inner">
+        <div class="customer-texture">
+          <h1>
+            카카오엔터프라이즈는 <br class="br-h1" />
+            고객, 파트너와 함께 성장하고 있습니다
+          </h1>
+          <div class="btn">고객사례 보기</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION5 : 혁신적인 비즈니스 -->
+    <section class="business-section">
+      <div class="inner">
+        <div class="business-title">
+          <h1>혁신적인 비즈니스</h1>
+        </div>
+        <div class="business-container">
+          <div class="business-card">
+            <span class="card-title">회사소개</span>
+            <span class="card-subs"
+              >카카오엔터프라이즈는 비즈니스와 일상에 기술을 더하여 디지털
+              혁신을 만들어갑니다.</span
+            >
+            <div class="follow-link">
+              <a href="#">
+                <span>회사소개 바로가기</span>
+                <span class="material-icons">navigate_next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="business-card">
+            <span class="card-title">개발자</span>
+            <span class="card-subs"
+              >카카오엔터프라이즈는 개발자들과 함께 성장하는 기술
+              기업입니다.</span
+            >
+            <div class="follow-link">
+              <a href="#">
+                <span>개발자 바로가기</span>
+                <span class="material-icons">navigate_next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="business-card">
+            <span class="card-title">인재영입</span>
+            <span class="card-subs"
+              >국내 최고의 개발자, 기획자, 디자이너 그리고 비즈니스 전문가가
+              모여 새로운 길을 만들어갑니다.</span
+            >
+            <div class="follow-link">
+              <a href="#">
+                <span>인재영입 바로가기</span>
+                <span class="material-icons">navigate_next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION5 : 기술, 서비스 문의 -->
+    <section class="question">
+      <div class="inner">
+        <div class="question-texture">
+          <h1>카카오엔터프라이즈의 기술과 서비스에 대해 문의하세요</h1>
+          <div class="btn">문의하기</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <div class="copyright-big-screen">
+          <span>&copy; Kakao Enterprise Corp.</span>
+        </div>
+
+        <div class="line-1">
+          <ul>
+            <li>
+              <a href="#">
+                <span>회사소개</span>
+                <span class="material-icons">expand_more</span>
+              </a>
+            </li>
+            <li><a href="#" class="hg">개인정보처리방침</a></li>
+            <li><a href="#">사이버윤리실</a></li>
+            <li>
+              <a href="#">
+                <span>공지사항</span>
+                <span class="material-icons">expand_more</span>
+              </a>
+            </li>
+            <li><a href="#">고객지원</a></li>
+          </ul>
+          <div class="related-site">
+            <span>관련사이트</span>
+            <span>+</span>
+          </div>
+        </div>
+
+        <div class="copyright-small-screen">
+          <span>&copy; Kakao Enterprise Corp.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

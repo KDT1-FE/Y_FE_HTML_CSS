@@ -14,7 +14,7 @@
 /* main-quick-container */
 .main-quick-container {
     position: fixed;
-    display: -moz-flex;
+    display: flex;
     display: flex;
     align-items: flex-end;
     right: 32px;
@@ -25,7 +25,7 @@
 }
 
 .main-quick {
-    display: -moz-flex;
+    display: flex;
     display: flex;
     overflow: hidden;
     float: right;

@@ -128,7 +128,7 @@ header .btn-allmenu {
     float: right;
     width: 24px;
     height: 24px;
-    margin: 38px 0px 0 0;
+    margin-top: 38px;
     right: 30px;
     background: url(../images/icon/ico_allmenu_white.svg);
 }

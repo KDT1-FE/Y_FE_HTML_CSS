@@ -2,7 +2,8 @@
 @import url(header.css);
 @import url(footer.css);
 
-.main-title:after {
+/* 타이틀마다 있는 마침표 */
+.main-title::after { 
     content: '';
     display: inline-block;
     width: 20px;
@@ -11,21 +12,19 @@
     background-color: #d50037;
 }
 
-/* main-quick-container */
+/* main-quick-container - 기업 단체 구매 버튼 */
 .main-quick-container {
     position: fixed;
-    display: flex;
     display: flex;
     align-items: flex-end;
     right: 32px;
     bottom: 32px;
-    z-index: 1;
     transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
     transition-delay: 0.5s;
+    z-index: 1; /* fullpage-wrapper 위로 올라와야 함 */
 }
 
 .main-quick {
-    display: flex;
     display: flex;
     overflow: hidden;
     float: right;
@@ -47,6 +46,7 @@
     white-space: nowrap;
 }
 
+/* fullpage-wrapper */
 .fullpage-wrapper {
     position: absolute;
     top: 50%;
@@ -54,13 +54,14 @@
     transform: translate(-50%, -50%);
     height: 100%;
     width: 100%;
-    z-index: -1;
 }
 
 .fullpage-wrapper .fp-section {
     height: 100vh;
 }
-/* main-section-visual */
+
+/* =================== VISUAL =================== */
+
 .main-section-visual img {
     display: block;
     position: absolute;
@@ -76,7 +77,6 @@
 .main-section-visual .swiper-pagination-wrap {
     display: flex;
     position: absolute;
-    z-index: 1;
     left: 50%;
     width: 240px;
     height: 56px;
@@ -101,7 +101,8 @@
     left: 200px;
 }
 
-/* main-section-story */
+/* =================== MAIN STORY =================== */
+
 .main-section-story {
     position: relative;
 }
@@ -178,7 +179,7 @@
 }
 
 /* 슬라이드 컨테이너 */
-.main-section-story .tabpanel {
+.main-section-story .container .tabpanel {
     position: relative;
     margin-top: -350px;
     margin-left: 520px;
@@ -255,10 +256,10 @@
 
     position: absolute;
     text-align: center;
-    z-index: 10;
 }
 
-/* main-section-alist */
+/* =================== 에이리스트 =================== */
+
 .main-section-alist {
     background-image: url(/images/main/main_alist_pc.jpg);
     background-size: cover;
@@ -326,7 +327,8 @@
     word-wrap: break-word;
 }
 
-/* BRAND SURPORT */
+/* =================== BRAND SURPORT =================== */
+
 .main-section-support .container{
     display: inline-block;
     width: 100%;
@@ -342,9 +344,8 @@
     transform: translate(-50%, -50%);
 }
 
-.main-section-support .main-title{
+.main-section-support .container .main-title{
     font-family: 'Noto Sans', sans-serif;
-
 
     display: inline-block;
     margin-top: 8vh;
@@ -355,7 +356,8 @@
     font-size: 96px;
     font-weight: 800;
 }
-.main-section-support .flex-left img{
+
+.main-section-support .container .flex-left img{
     height: 552px;
     position: relative;
     margin-top: -100px;
@@ -368,7 +370,6 @@
     position: absolute;
     margin-top: -290px;
     margin-left: 900px;
-    z-index: -1;
 }
 
 .main-section-support .flex-right u{
@@ -387,7 +388,6 @@
     margin-top: 30px;
 
     position: absolute;
-    z-index: 1;
 }
 .main-section-support .flex-right .swiper img:first-child{
     display: inline;
@@ -407,14 +407,14 @@
     right: 136px;
 }
 
-/* FRANCHISE */
+/* =================== FRANCHISE =================== */
+
 .main-section-franchise {
    background-color: #f5f5f5;
 }
 
 .main-section-franchise .container {
     position: relative;
-    z-index: 1;
     text-align: center;
     margin: 0 auto;
     padding: 0 48px;
@@ -488,7 +488,8 @@
     color: #fff;   
 }
 
-/* NEWS & NOTICE */
+/* =================== NEWS & NOTICE  =================== */
+
 .main-section-news .container {
     display: inline-block;
     width: 100%;

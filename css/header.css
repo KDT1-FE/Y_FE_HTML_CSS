@@ -8,7 +8,7 @@ header {
     left: 0;
     width: 100%;
     /* header를 창 전체 너비로 설정합니다. */
-    z-index: 100;
+    z-index: 1;
     /* 다른 요소 위에 표시하기 위해 z-index를 사용합니다. */
 }
 
@@ -34,7 +34,6 @@ header:hover .logo-container {
 
 header .main-menu {
     position: fixed;
-    z-index: 1;
     display: flex;
     justify-content: center;
     width: 100%;

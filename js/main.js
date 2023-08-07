@@ -1,26 +1,4 @@
 /**
- *  배너 닫기
- */
-function closeBn() {
-  const bnEl = document.querySelector('.header-banner')
-  const clsBtn = document.getElementById('closeBtn')
-  const onTodayCls = document.getElementById('text-chkbox')
-
-  if (!bnEl || !clsBtn || !onTodayCls) {
-    return // 요소가 존재하지 않으면 함수 종료
-  }
-
-  clsBtn.addEventListener('click', () => {
-    bnEl.remove()
-  })
-
-  onTodayCls.addEventListener('click', () => {
-    bnEl.remove()
-  })
-}
-closeBn()
-
-/**
  * 슬라이드 요소 관리
  */
 const SECONDS_TO_MS = 1000
@@ -112,3 +90,53 @@ function floatUpAnimation(selector) {
 }
 
 floatUpAnimation('.event .fade-in')
+
+/**
+ *  오늘 하루 그만보기
+ */
+function closeBn() {
+  const bnEl = document.querySelector('.header-banner')
+  const clsBtn = document.getElementById('closeBtn')
+  const onTodayCls = document.getElementById('text-chkbox')
+
+  if (!bnEl || !clsBtn || !onTodayCls) {
+    return // 요소가 존재하지 않으면 함수 종료
+  }
+
+  clsBtn.addEventListener('click', () => {
+    bnEl.remove()
+  })
+
+  onTodayCls.addEventListener('click', () => {
+    bnEl.remove()
+  })
+
+  const cookieName = 'bannerClosedForToday'
+  const expirationDays = 1 // 쿠키 유효 기간을 하루로 설정
+
+  // 쿠키 유효기간 지정 & 생성
+  function setCookie(name, value, days) {
+    const expires = new Date()
+    expires.setDate(expires.getDate() + days)
+    document.cookie = `${name}=${value}; expires=${expires.toUTCString()}; path=/`
+  }
+  // 쿠키 불러오기
+  function getCookie(name) {
+    const cookies = document.cookie.split('; ')
+    for (const cookie of cookies) {
+      const [cookieName, cookieValue] = cookie.split('=')
+      if (cookieName === name) {
+        return cookieValue
+      }
+    }
+    return null
+  }
+  // 쿠키 상태확인
+  const today = new Date().toLocaleDateString()
+  if (getCookie(cookieName) !== today) {
+    setCookie(cookieName, today, expirationDays)
+  } else {
+    bnEl.remove()
+  }
+}
+closeBn()

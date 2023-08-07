@@ -122,8 +122,8 @@ var swiper7 = new Swiper('.ad__container', {
         clickable: true,
     },
     navigation: {
-        prevEl: '.left-btn-seven',
-        nextEl: '.right-btn-seven',
+        prevEl: '.ad__button--left',
+        nextEl: '.ad__button--right',
     },
 });
 

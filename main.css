@@ -200,7 +200,7 @@ html div span a h3 {
 
 .header_wrap .menu_bar nav ul li a:hover {
   color: #ea094b;
-  transition: 0.2s;
+  transition: opacity 0.2s;
   opacity: 1;
 }
 
@@ -227,7 +227,7 @@ html div span a h3 {
 
 .header_wrap .menu_bar .menu_center li:hover span a:hover {
   color: #ea094b;
-  transition: 0.2s;
+  transition: opacity 0.2s;
   opacity: 1;
 }
 
@@ -402,7 +402,7 @@ html div span a h3 {
   flex-direction: row;
   position: absolute;
   top: -200px;
-  left: 165px;
+  left: 10%;
 }
 
 .find img {
@@ -426,7 +426,7 @@ html div span a h3 {
 
 .find a:hover > img {
   transform: scale(1.4);
-  transition: 0.5s;
+  transition: scale 0.5s;
 }
 
 /* notice slider 영역 */
@@ -583,7 +583,7 @@ html div span a h3 {
   margin-right: -30px;
   padding: 15px;
   text-shadow: 2px 2px #525252;
-  transition: 0.2s;
+  transition: opacity 0.2s;
   opacity: 1;
 }
 
@@ -619,7 +619,7 @@ html div span a h3 {
   margin-right: -10px;
   padding: 15px;
   text-shadow: 2px 2px #525252;
-  transition: 0.2s;
+  transition: opacity 0.2s;
   opacity: 1;
 }
 

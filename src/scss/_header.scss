@@ -15,57 +15,62 @@
 
 #header-logo {
   padding-left: 32px;
-}
 
-#header-logo svg {
-  width: 148px;
-  height: 48px;
+  svg {
+    width: 148px;
+    height: 48px;
 
-  padding: 0px 16px;
+    padding: 0px 16px;
 
-  color: #f9f8f8;
+    color: $white;
+  }
 }
 
 .header-nav-products {
   width: 620px;
 
-  margin-left: 80px;
-  padding: 0px 8px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-left: 80px;
+  padding: 0px 8px;
 }
 
 .header-nav-etc {
   width: 250px;
   line-height: 27px;
 
-  padding-right: 32px;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  padding-right: 32px;
 }
 
 .header-nav li a {
   padding: 4px 8px;
+
   transition: 0.4s;
-}
 
-.header-nav li a:hover {
-  border-radius: 3px;
-  background-color: #b3b9bc4b;
-}
+  &:hover {
+    border-radius: 3px;
 
-.header-nav li a span {
-  margin: 0px 8px;
+    background-color: #b3b9bc4b;
+  }
 
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 450;
-  letter-spacing: 0.5px;
-  color: #f9f8f8;
+  span {
+    margin: 0px 8px;
+
+    font: {
+      size: 14px;
+      weight: 450;
+      family: "Open Sans", sans-serif;
+    }
+
+    color: $white;
+    letter-spacing: 0.5px;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -1,0 +1,51 @@
+body {
+  font-family: "NotoSans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  height: 5000px;
+}
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  object-fit: cover;
+  backface-visibility: hidden;
+}
+.btn {
+  display: block;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 64px;
+  margin-top: 48px;
+  height: 60px;
+  line-height: 58px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "NotoSans";
+}
+.btn--white {
+  position: relative;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn--white:hover {
+  color: #222;
+  background-color: #fff;
+}
+.btn--black {
+  position: relative;
+  color: #333;
+  border: 1px solid #333;
+}
+.btn--black:hover {
+  color: #fff;
+  background-color: #333;
+}

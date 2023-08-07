@@ -40,7 +40,7 @@
               <li><a href="#">로그인하기</a></li>
             </ul>
           </nav>
-          <div class="header__mobile_menu" onclick="mobile_nav_menu()">
+          <div class="header__mobile_menu" onclick="mobile_menu()">
             <button class="transparent">
               <span></span>
               <span></span>
@@ -60,86 +60,89 @@
         </div>
       </header>
       <main>
-        <section class="section__register-banner">
+        <section class="section__register--banner">
           <article>
-            <div class="section__register-text">
-              <div>
-                <h1 class="mb0"><span class="thick">Spotify⁠ Premium</span>⁠ 멤버가 되어보세요.⁠ 1개월⁠ 무료입니다.</h1>
+            <div class="section__register--inner_container">
+              <div class="section__register--text">
+                <div>
+                  <h1>Spotify⁠ Premium 멤버가 되어보세요.⁠ 1개월⁠ 무료입니다.</h1>
+                </div>
+                <div>
+                  <h2 class="weight400">매월 최소 10,900원입니다(부가세 별도). 언제든 해지 가능합니다.</h2>
+                </div>
+                <div class="section__register--button">
+                  <div>
+                    <button class="black white-text">시작하기</button>
+                  </div>
+                  <div>
+                    <button>요금제 보기</button>
+                  </div>
+                </div>
+                <div>
+                  <p class="xsmall-text">이후에는 월정액 요금이 적용됩니다. 개인 요금제에만 적용되며, 아직 Premium에 가입하지 않았던 분들을 위한 것 입니다. <span><a href="#" class="black-text">약관</a></span>이 적용됩니다.</p>
+                </div>
               </div>
-              <div>
-                <h2 class="weight400">매월 최소 10,900원입니다(부가세 별도). 언제든 해지 가능합니다.</h2>
-              </div>
-              <div class="section__register-button">
-                <button class="black white-text">시작하기</button>
-                <button>요금제 보기</button>
-                <br>
-                <br>
-              </div>
-              <div>
-                <p class="xsmall-text">이후에는 월정액 요금이 적용됩니다. 개인 요금제에만 적용되며, 아직 Premium에 가입하지 않았던 분들을 위한 것 입니다. <span><a href="#" class="black-text">약관</a></span>이 적용됩니다.</p>
-              </div>
-            </div>
-            <div class="section__register-image">
-              <img src="./assets/image/register-banner-image.JPG" alt="logo image"></img>
-            </div>
-          </article>
-        </section>
-        <section class="section__download-banner"> 
-          <article>
-            <div class="section__download-text">
-              <div>
-                <h1>앱을 다운로드하세요</h1>
-              </div>
-              <div>
-                <h2 class="weight400">1대의 모바일 기기에서 7일 동안 무료로 Spotify Premium 멤버십을 이용해보세요. 결제 세부 정보는 필요하지 않습니다.</h2>
-                <br>
-              </div>
-              <div class="section__download-image">
-                <a href="#"><img src="./assets/image/google-play-store-badge.svg" alt=""></a>
-                <a href="#"><img src="./assets/image/app-store-badge.svg" alt=""></a>
-                <br>
-                <br>
-              </div>
-              <div>
-                <p class="xsmall-text">약관이 적용됩니다. Premium을 이미 이용해 보셨거나 다른 기기로 이용하시려는 경우 이 프로모션을 이용할 수 없습니다.<br><br>
-                  7일 후에도 계속 Spotify 서비스를 이용하려면 Premium을 구독해야 합니다.</p>
+              <div class="section__register--image">
+                <div></div>
               </div>
             </div>
           </article>
         </section>
-        <section class="section__reason-banner">
+        <section class="section__download--banner"> 
           <article>
-            <div class="section__reason-text">
+            <div>
+              <div class="section__download--text">
+                <div>
+                  <h1>앱을 다운로드하세요</h1>
+                </div>
+                <div>
+                  <h2 class="weight400">1대의 모바일 기기에서 7일 동안 무료로 Spotify Premium 멤버십을 이용해보세요. 결제 세부 정보는 필요하지 않습니다.</h2>
+                </div>
+                <div class="section__download--image">
+                  <a href="#"><img src="./assets/image/google-play-store-badge.svg" alt=""></a>
+                  <a href="#"><img src="./assets/image/app-store-badge.svg" alt=""></a>
+                </div>
+                <div>
+                  <p class="xsmall-text"><a href="#">약관</a>이 적용됩니다. Premium을 이미 이용해 보셨거나 다른 기기로 이용하시려는 경우 이 프로모션을 이용할 수 없습니다.</p>
+                  <br>
+                  <p class="xsmall-text">7일 후에도 계속 Spotify 서비스를 이용하려면 Premium을 구독해야 합니다.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="section__reason--banner">
+          <article>
+            <div class="section__reason--text">
               <div>
                 <h1>Spotify를 이용해야 하는 이유</h1>
               </div>
             </div>
-            <br>
-            <ul class="section__reason-list">
+            <ul class="section__reason--list">
               <li>
-                <img src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" alt="">
-                <div>
+                <div class="section__reason--inner_img first"></div>
+                <div class="section__reason--inner_text">
                   <p class="fs20 thick">새로운 음악 발견하기</p>
                   <p>8천만 개가 넘는 트랙을 즐겨보세요.</p>
                 </div>
               </li>
               <li>
-                <img src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" alt="">
-                <div>
+                <div class="section__reason--inner_img second"></div>
+                <div class="section__reason--inner_text">
                   <p class="fs20 thick">나만의 맞춤 플레이리스트</p>
                   <p>음악 취향에 맞춰 만들었습니다.</p>
                 </div>
               </li>
               <li>
-                <img src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" alt="">
-                <div>
+                <div class="section__reason--inner_img third"></div>
+                <div class="section__reason--inner_text">
                   <p class="fs20 thick">오프라인에서 감상</p>
                   <p>내 기기에 노래 다운로드.</p>
                 </div>
               </li>
               <li>
-                <img src="https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012" alt="">
-                <div>
+                <div class="section__reason--inner_img fourth"></div>
+                <div class="section__reason--inner_text">
                   <p class="fs20 thick">여러 기기에서 스트리밍</p>
                   <p>모바일, PC, 태블릿에서 음악을 들어보세요.</p>
                 </div>
@@ -147,179 +150,216 @@
             </ul>
           </article>
         </section>
-        <section class="section__price-choice">
+        <section class="section__price--choice">
           <article>
-            <div class="section__price-text">
-              <h1 class="fs40 thick">요금제 선택하기</h1>
+            <div class="section__price--text">
+              <h1 class="thick">요금제 선택하기</h1>
               <p>휴대폰, 스피커 및 기타 기기에서 제한 없이 마음껏 들으세요.</p>
             </div>
-            <div class="section__price-list">
-              <div class="section__price-name">
-                <p class="price-badge white-text thick">1개월 무료</p>
+            <div class="section__price--list">
+              <div class="section__price--name" id="child">
+                <ul>
+                  <li>
+                    <span>1개월 무료</span>
+                  </li>
+                </ul>
                 <h2 class="fs24">개인</h2>
                 <p>체험 기간 이후 매월 10,900원 정기결제(부가세 별도).</p>
                 <p>계정 1개</p>
                 <hr>
               </div>
-              <ul class="section__price-ul">
+              <ul class="section__price--ul" id="child">
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>무광고로 음악 감상하기</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>다운로드하여 오프라인에서 감상</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>나만의 맞춤 플레이리스트</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>8천만 곡 감상 가능</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>여러 디바이스에서 감상</p>
                 </li>
                 <br>
                 <br>
               </ul>
-              <div class="section__price-button">
+              <div class="section__price--button" id="child">
                 <a href="#">
                   <button class="black white-text">시작하기</button>
                 </a>
               </div>
-              <div class="section__price-small-text">
+              <div class="section__price--small-text" id="child">
                 <p class="small-text">체험 기간 이후 매월 정기결제되고 <span><a href="#" class="black-text">이용 약관</a></span>이 적용됩니다. <br>
                   Premium을 이미 이용해 봤다면 참여할 수 없습니다.</p>
               </div>
-              <div class="section__price-name">
-                <p class="price-badge white-text thick">1개월 무료</p>
+              <div class="section__price--name" id="child">
+                <ul>
+                  <li>
+                    <span>1개월 무료</span>
+                  </li>
+                </ul>
                 <h2 class="fs24">듀오</h2>
                 <p>매월 16,350원 정기결제(부가세 별도).</p>
                 <p>계정 2개</p>
-                <br>
                 <hr>
               </div>
 
-              <ul class="section__price-ul">
+              <ul class="section__price--ul" id="child">
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>Premium 별도 계정 2개</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>무광고로 음악 감상하기</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>다운로드하여 오프라인에서 감상</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>나만의 맞춤 플레이리스트</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>8천만 곡 감상 가능</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>여러 디바이스에서 감상</p>
                 </li>
               </ul>
-              <div class="section__price-button">
+              <div class="section__price--button" id="child">
                 <a href="#">
                   <button class="black white-text">시작하기</button>
                 </a>
               </div>
-              <div class="section__price-small-text">
-                <p class="small-text"><span><a href="#" class="black-text">이용 약관</a></span>이 적용됩니다. 아직 Premium 구독을 해본 적이 없는<br>
-                  사용자만 참여할 수 있습니다. 같은 주소지에 거주하는 두 사람<br>을 위한 서비스입니다.</p>
+              <div class="section__price--small-text" id="child">
+                <p class="small-text"><span><a href="#" class="black-text">이용 약관</a></span>이 적용됩니다. 아직 Premium 구독을 해본 적이 없는
+                  사용자만 참여할 수 있습니다. 같은 주소지에 거주하는 두 사람을 위한 서비스입니다.</p>
               </div>
 
-              <div class="section__price-name">
-                <h2 class="fs24">개인</h2>
-                <p>체험 기간 이후 매월 10,900원 정기결제(부가세 별도).</p>
+              <div class="section__price--name" id="child">
+                <h2 class="fs24">베이직</h2>
+                <p>매월 7,900원(부가세 별도)</p>
                 <p>계정 1개</p>
-                <br>
-                <br>
                 <hr>
               </div>
-              <ul class="section__price-ul">
+              <ul class="section__price--ul" id="child">
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>무광고로 음악 감상하기</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
-                  <p>다운로드하여 오프라인에서 감상</p>
-                </li>
-                <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>나만의 맞춤 플레이리스트</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>8천만 곡 감상 가능</p>
                 </li>
                 <li>
-                  <img src="./assets/image/icons8-done.svg" alt="">
+                  <div class="section__price--inner_div">
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-label=""><polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#181818"></polyline></svg>
+                  </div>
                   <p>여러 디바이스에서 감상</p>
                 </li>
+
               </ul>
-              <div class="section__price-button">
+              <div class="section__price--button" id="child">
                 <a href="#">
                   <button class="black white-text">시작하기</button>
                 </a>
               </div>
-              <div class="section__price-small-text">
+              <div class="section__price--small-text" id="child">
                 <p class="small-text">체험 기간 이후 매월 정기결제되고 <span><a href="#" class="black-text">이용 약관</a></span>이 적용됩니다. <br>
                   Premium을 이미 이용해 봤다면 참여할 수 없습니다.</p>
               </div>
             </div>
           </article>
         </section>
-        <section class="section__qna">
-          <article>
-            <div class="section__qna-text">
+        <section>
+          <article class="section__qna">
+            <div class="section__qna--text">
               <h1 class="fs40 thick">궁금한 점이 있으신가요?</h1>
-              <h2 class="fs24">답변을 드리겠습니다.</h2>
+              <h2 class="fs24 weight400">답변을 드리겠습니다.</h2>
             </div>
-            <ul class="section__qna-list">
+            <ul class="section__qna--list">
               <li>
                 <detail>
-                  <summary>
+                  <summary class="section__qna--summary section__qna--toggle">
                     <div>Spotify Premium이란 무엇인가요?</div>
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 16 12 7 4 16" fill="none" stroke="#181818"></polyline></svg>
                   </summary>
-                  <p class="small-text weight400">Spotify Premium은 유료 멤버십 서비스입니다. 대한민국에서는 베이직, 개인 및 듀오 요금제로 Spotify Premium을 사용할 수 있습니다.</p>
+                  <p class="small-text weight400" >Spotify Premium은 유료 멤버십 서비스입니다. 대한민국에서는 베이직, 개인 및 듀오 요금제로 Spotify Premium을 사용할 수 있습니다.</p>
                 </detail>
               </li>
               <li>
-                  <summary>
+                  <summary class="section__qna--summary section__qna--toggle">
                     <div>Spotify Premium을 무료로 이용해볼 수 있나요?</div>
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 16 12 7 4 16" fill="none" stroke="#181818"></polyline></svg>
                   </summary>
                   <p class="small-text weight400">예. 아직 Premium을 이용해 보신 적이 없다면 1개의 모바일 폰에서 7일 동안 무료로 Spotify Premium을 이용하실 수 있습니다. 결제 세부 정보는 필요하지 않습니다. 7일 무료 체험 기간 이후에 개인 또는 듀오 요금제를 구독하면 1개월 동안 무료로 Premium 멤버십을 이용하실 수 있습니다.</p>
                 </detail>
               </li>
               <li>
-                  <summary>
-                    <div>S7일간 무료로 Spotify Premium을 이용하려면 어떻게 해야 하나요?</div>
+                  <summary class="section__qna--summary section__qna--toggle">
+                    <div>7일간 무료로 Spotify Premium을 이용하려면 어떻게 해야 하나요?</div>
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 16 12 7 4 16" fill="none" stroke="#181818"></polyline></svg>
                   </summary>
                   <p class="small-text weight400">Spotify Premium에 가입한 다음 모바일 폰의 Spotify 앱을 통해서 7일간 무료로 체험해 보실 수 있습니다. 이 기간에는 모바일 폰 이외의 다른 기기에 이 혜택이 제공되지 않습니다.</p>
                 </detail>
               </li>
               <li>
-                  <summary>
+                  <summary class="section__qna--summary section__qna--toggle">
                     <div>내 프로모션 기간이 종료되기 전에 Spotify Premium을 해지할 수 있나요?</div>
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 16 12 7 4 16" fill="none" stroke="#181818"></polyline></svg>
                   </summary>
                   <p class="small-text weight400">예. 계정 페이지에서 언제든 해지 가능합니다.</p>
                 </detail>
               </li>
               <li>
-                  <summary>
+                  <summary class="section__qna--summary section__qna--toggle">
                     <div>Spotify에서 곡을 찾으려면 어떻게 해야 하나요?</div>
+                    <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 16 12 7 4 16" fill="none" stroke="#181818"></polyline></svg>
                   </summary>
                   <p class="small-text weight400">Spotify에서는 원하는 곡을 검색할 수 있는 음악 검색 기능을 쉽게 사용할 수 있습니다. iOS 또는 Android 앱에서도 노래가사검색이 지원됩니다.</p>
                 </detail>

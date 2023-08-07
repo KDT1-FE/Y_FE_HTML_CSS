@@ -196,3 +196,7 @@ a.footer-info-link {
     line-height: 1.8rem;
     color: hsla(0, 0%, 7%, 0.4);
 }
+
+.footer-info-li_inline {
+    display: inline;
+}

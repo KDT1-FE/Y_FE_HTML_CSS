@@ -29,10 +29,6 @@ a:visited {
 	color: black;
 }
 
-ul li {
-    display: inline;
-}
-
 input {
     border: none;
 }

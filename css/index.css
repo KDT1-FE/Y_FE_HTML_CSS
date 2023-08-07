@@ -1,0 +1,492 @@
+/* main-vis */
+.main-vis {
+  background-image: url(https://images.ctfassets.net/u1nb1km7t5q7/1ImHDZcfCHVObmERhgmltw/d0bba361449ac0d21a82111be2863145/Aesop_Category_Skin_Care_Primary_Full_Bleed_Desktop_2880x1044px.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+  padding-top: 110px;
+  padding-bottom: 180px;
+  display: flex;
+}
+
+.main-vis .logo svg{
+  margin-left: 40px;
+  width: 120px;
+  height: 40px;
+}
+
+.main-vis .txt-wrap {
+  margin-left: 5%;
+  width: calc(33.33333% - 80px);
+
+}
+
+.main-vis .txt-wrap .main-vis-title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.main-vis .txt-wrap .desc {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* sub-nav */
+.sub-nav {
+  background-color: #ebeade ;
+  padding: 45px 40px;
+  color: #666;
+  display: flex;
+}
+
+.selected {
+  border-bottom: 1px solid;
+  position: relative;
+}
+
+.selected::after {
+  content: "|";
+  height: 100%;
+  position: absolute;
+  width: 1px;
+  padding: 0 15px;
+}
+
+.sub-nav ul {
+  display: flex;
+  padding-left: 20px;
+}
+
+.sub-nav .sub-nav-item {
+  padding: 0 10px;
+}
+
+.sub-nav .sub-nav-item::after {
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease-in;
+  border-bottom: 1px solid;
+  margin-top: 0;
+}
+
+
+.sub-nav .sub-nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.section-title {
+  padding: 50px 80px 60px 80px;
+  color: #333;
+  font-size: 30px;
+}
+
+.grid-category {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  margin-bottom: 100px;
+}
+
+.grid-category .grid-item {
+  border: 0.5px solid #fff;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.grid-category .item-thumb {
+  height: 100%;
+
+}
+
+.grid-category .item-thumb img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-category .item-thumb::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:  linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.001) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  opacity: 0;
+  transition: .4s cubic-bezier(.215,.61,.355,1);
+}
+
+
+.grid-category .grid-item:hover .item-thumb::before {
+  opacity: 1;
+}
+
+.grid-category .grid-item-title{
+  position: absolute;
+  padding: 20px;
+  color:  var(--color-white);
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+/* best item */
+.best-item .swiper {
+  margin: 0 80px 40px;
+  overflow-x: unset;
+}
+
+.best-item .swiper-wrapper {
+  position: relative;
+}
+
+.best-item .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 422px;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.swiper-slide .img-wrap {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide .img-wrap img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide .txt-wrap {
+  margin-bottom: 50px;
+}
+
+.swiper-slide .product-name{
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 2px;
+  width: 100%;
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+  position: absolute;
+  top: calc(50% - 80px);
+  width: 80px;
+  height: 80px;
+  background: #333;
+  color:  var(--color-white);
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+
+.swiper-btn-prev {
+  left: -160px;
+}
+.swiper-btn-next {
+  right: -160px;
+}
+
+.swiper:hover .swiper-btn-prev{
+  transform: translateX(80px);
+}
+
+.swiper:hover .swiper-btn-next {
+  transform: translateX(-80px);
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+
+.skin-type {
+  background-color: #ebeade;
+  padding-top: 100px;
+}
+
+.skin-type .section-title {
+  padding-bottom: 20px;
+}
+.grid-skin-type {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 80px;
+  column-gap: 40px;
+  margin-bottom: 150px;
+}
+
+.grid-skin-type .grid-item {
+  margin: 40px 0;
+  border-top: 1px solid;
+}
+
+.grid-skin-type .item-name {
+font-size: 18px;
+padding-top: 20px; 
+margin-bottom: 15px;
+font-weight: 700;
+width: fit-content;
+}
+
+.grid-skin-type .item-desc {
+  font-size: 16px;
+  color: #666;
+}
+
+.grid-skin-type .material-symbols-outlined {
+  position: absolute;
+  margin-left: 5px;
+}
+
+.grid-skin-type .item-name::after {
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease-in;
+  border-bottom: 1px solid;
+  margin-top: 0;
+}
+
+
+.grid-skin-type .grid-item:hover .item-name:after {
+  transform: scaleX(1);
+}
+
+.find-skin-type {
+  color:  var(--color-white);
+  background: url(https://www.aesop.com/u1nb1km7t5q7/3YaJbvUsAnHr9Wnb6GTU7m/9ce27fe81388b8726f41d3ce91bb2c77/Aesop_Healthy_Skin_Care_and_Support_2022_Web_Homepage_Primary_Consultant_Full_Bleed_Desktop_L_2880x1044px.jpg) center center / cover no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: calc((29 / 80) * 100%);
+  position: relative;
+}
+
+.find-skin-type .title-wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+}
+
+.find-skin-type .section-sub-title {
+  font-size: 30px;
+  color:  var(--color-white);
+  margin-bottom: 30px;
+}
+.find-skin-type .desc {
+  margin-bottom: 30px;
+}
+
+
+/* blend */
+.blend {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blend .title-wrap{
+  padding-top: 80px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.blend .title-add {
+ font-size: 14px;
+ padding-left: 80px;
+ font-weight: 700;
+}
+
+.blend .section-title{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.blend .desc {
+  padding-left: 80px;
+  width: 40%;
+}
+.blend .grid-blend {
+  margin-top: 60px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.blend .grid-item {
+  /* width: calc(100% / 3); */
+  padding: 40px 40px 65px;
+  text-align: center;
+  transition:  .3s cubic-bezier(.215,.61,.355,1);
+  position: relative;
+}
+
+.blend .grid-item:hover {
+  background-color: #f0efe1;
+}
+
+.blend .grid-item:hover .btn-more {
+  opacity: 1;
+}
+
+.blend .img-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+.blend .img-wrap img {
+  max-width: 100%;
+}
+
+.blend .product-name {
+  line-height: 1.7;
+  margin-bottom: 7px;
+}
+.blend .product-price {
+  height: 60px;
+}
+
+.blend .info-wrap {
+  text-align: left;
+  border-top: 2px solid #4a4a4a;
+}
+
+.blend .info-wrap {
+  margin-top: 14px;
+}
+.blend .info-row {
+  display: flex;
+  padding: 20px 0 20px;
+  border-bottom: 1px solid #d5d4c9;
+}
+.blend .info-title {
+  padding-right: 15px;
+  font-weight: 700;
+  width: 90px;
+}
+.blend .info-desc {
+  width: 100%;
+}
+
+.blend .btn-more {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition:  .3s cubic-bezier(.215,.61,.355,1);
+  justify-content: center;
+}
+
+
+.inquiry {
+  padding: 150px 0;
+  background-color: #ebe2d5;
+  display: flex;
+}
+.inquiry .section-title {
+  padding-top: 0;
+}
+.inquiry .left-block {
+  width: 40%;
+}
+
+.inquiry .right-block {
+  width: 60%;
+  padding-left: 8px;
+}
+
+.inquiry .right-block .desc {
+  font-size: 16px;
+}
+
+.inquiry .right-block .btn{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* articles */
+
+.articles {
+  padding: 150px 20px 150px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.articles .flex-item {
+ padding: 0 20px;
+}
+
+.flex-article .img-wrap {
+  width: 100%;
+}
+
+.flex-article .img-wrap img {
+  width: 100%; 
+}
+
+
+.articles .flex-item img{
+  transition:  1s cubic-bezier(.215,.61,.355,1);
+}
+
+.articles .flex-item:hover img{
+  filter: grayscale(100%);
+}
+
+.articles .lab {
+  display: block;
+  margin: 20px 0 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(51,51,51,.2);
+  font-weight: 700;
+}
+
+.articles .lab::after {
+  content:"•";
+  padding: 0 10px;
+}
+
+.articles .article-title {
+  width: fit-content;
+  color: #4a4a4a;
+  font-size: 30px;
+  padding-bottom: 1.5px;
+  border-bottom: 1px solid transparent;
+}
+.articles .flex-item:hover .article-title {
+  border-bottom: 1px solid #4a4a4a;
+  transition:  1s cubic-bezier(.215,.61,.355,1);
+}
+
+.articles .reading-time {
+  display: block;
+  color: #666;
+  font-size: 16px;
+  margin: 15px 0;
+  font-weight: 700;
+}

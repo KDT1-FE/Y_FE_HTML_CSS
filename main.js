@@ -3,6 +3,7 @@ showSlides();
 
 function showSlides() {
   let i;
+  const SECONDS_TO_MS = 1000;
   let slides = document.getElementsByClassName("my-slides");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -12,7 +13,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 7000); // Change image every 5 seconds
+  setTimeout(showSlides, 7 * SECONDS_TO_MS); // Change image every 7 seconds
 }
 
 // Get the elements needed

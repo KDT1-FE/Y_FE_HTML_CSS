@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="학습 및 과제를 위한 naverVIBE 클론 사이트 입니다.">
     <title>NAVER VIBE</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/header.css" />
@@ -28,14 +28,14 @@
       <div class="header_submenu">
         <hr />
         <a href="#" class="header_signin_area">
-            <img class="user_icon" src="./assets/user.png" />
+            <img class="user_icon" src="./assets/user.png" alt="user_icon" />
           <span class="login_txt">로그인</span>
         </a>
         <hr />
         <div class="header_member">
           <p class="member_p">로그인하고 할인 멤버십 확인하기</p>
-          <a href="#" class="member_button_area">
-            <img class="member_icon" src="./assets/love.png" />
+          <a href="#" class="member_button_area" aria-label="">
+            <img alt="member_icon" class="member_icon" src="./assets/love.png" />
             <span class="member_text">멤버십 구독</span>
           </a>
         </div>
@@ -44,30 +44,48 @@
         </div>
         <div class="header_menu">
           <ul>
-          <li><a href="#"><img src="./assets/music.png" alt="" /><span>투데이</span></a></li>
-          <li><a href="#"><img src="./assets/trophy.png" alt="" /><span>차트</span></a></li>
-          <li><a href="#"><img src="./assets/sparkles.png" alt="" /><span>최신앨범</span></a></li>
-          <li><a href="#"><img src="./assets/vinyl.png" alt="" /><span>dj스테이션</span></a></li>
-          <li><a href="#"><img src="./assets/magazine.png" alt="" /><span>vibe mag</span></a></li>
-          <li><a href="#"><img src="./assets/add-to-playlist.png" alt="" /><span>이달의 노래</span></a></li>
+          <li><a href="#"><img src="./assets/music.png" alt="music_icon" /><span>투데이</span></a></li>
+          <li><a href="#"><img src="./assets/trophy.png" alt="trophy_icon" /><span>차트</span></a></li>
+          <li><a href="#"><img src="./assets/sparkles.png" alt="sparkles_icon" /><span>최신앨범</span></a></li>
+          <li><a href="#"><img src="./assets/vinyl.png" alt="vinyl_icon" /><span>dj스테이션</span></a></li>
+          <li><a href="#"><img src="./assets/magazine.png" alt="magazine_icon" /><span>vibe mag</span></a></li>
+          <li><a href="#"><img src="./assets/add-to-playlist.png" alt="add_to_playlist_icon" /><span>이달의 노래</span></a></li>
         <hr/>
-          <li><a href="#"><img src="./assets/heart.png" alt="" /><span>서비스 소개</span></a></li>
-          <li><a href="#"><img src="./assets/money.png" alt="" /><span>내돈내듣</span></a></li>
-          <li><a href="#"><img src="./assets/stage.png" alt="" /><span>onstage</span></a></li>
-          <li><a href="#"><img src="./assets/mic.png" alt="" /><span>vibe 오디오</span></a></li>
+          <li><a href="#"><img src="./assets/heart.png" alt="heart_icon" /><span>서비스 소개</span></a></li>
+          <li><a href="#"><img src="./assets/money.png" alt="money_icon" /><span>내돈내듣</span></a></li>
+          <li><a href="#"><img src="./assets/stage.png" alt="stage_icon" /><span>onstage</span></a></li>
+          <li><a href="#"><img src="./assets/mic.png" alt="mic_icon" /><span>vibe 오디오</span></a></li>
         </ul>
         </div>
       </div>
       <a href="/dasktop.html" class="header_install">데스크톱앱 설치</a>
     </header>
     <section class="main">
+      <header class="main__header">
+        <div class="main__header_logo_container">
+          <a aria-label="logo" href="/index.html" class="main__header_logo">
+            <span class="main__header_naver">naver</span>
+            <span class="main__header_vibe">vibe</span>
+          </a>
+          <a href="#" class="app_store">앱설치</a>
+        </div>
+        <div class="header__btn_container">
+          <a class="header__btn_membership" aria-label="멤버쉽구독" href="#">멤버십 구독</a>
+          <button class="header__btn_search">
+            <img src="./assets/icon/search_white.png" alt="header__search">
+          </button>
+          <button class="header__btn_menu">
+            <img src="./assets/icon/more.png" alt="">
+          </button>
+        </div>
+      </header>
       <div class="section_music_container">
         <div class="section_banner">
           <div class="banner_img">
-            <img src="./assets/cover.png"/>
+            <img alt="배너이미지" src="./assets/cover.jpeg"/>
           </div>
           <div class="banner_text_area">
-            <img src="https://music-phinf.pstatic.net/20200620_15/1592637690919PFLOp_PNG/icon_special.png" />
+            <img alt="스페셜 아이콘" src="https://music-phinf.pstatic.net/20200620_15/1592637690919PFLOp_PNG/icon_special.png" />
             <div class="banner_text">
               <h1>컴백 소식이 들려, <br> 오마이걸</h1>
               <h4>가장 오마이걸다운 모습으로 돌아왔다. 가장 뜨겁고 가장 시원한 여름이 담긴 노래로.</ㅇ>
@@ -86,7 +104,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/omygirl.png" />
+                    <img alt="오마이걸컴백이미지" src="./assets/magazine/omygirl.png" />
                     <div class="sub_text_magazine">
                       <span>컴백 소식이 들려,<br>오마이걸</span>
                       <p>2023.07.25</p>
@@ -96,7 +114,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine3.png" />
+                    <img alt="포스트말론 이미지" src="./assets/magazine/magazine3.png" />
                     <div class="sub_text_magazine">
                       <span>이주의 디깅 #163<br>포스트 말론</span>
                       <p>2023.07.25</p>
@@ -106,7 +124,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine2.png" />
+                    <img alt="앨 이미지" src="./assets/magazine/magazine2.png" />
                     <div class="sub_text_magazine">
                       <span>상반기,<br>화제의 알앤비 앨</span>
                       <p>2023.07.14</p>
@@ -116,7 +134,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine1.png" />
+                    <img alt="이센스 빈지노 이미지" src="./assets/magazine/magazine1.png" />
                     <div class="sub_text_magazine">
                       <span>진짜는 앨범으로 말한다:<br>이센스, 빈지노</span>
                       <p>2023.07.21</p>
@@ -126,7 +144,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine6.png" />
+                    <img alt="빈지노 이미지" src="./assets/magazine/magazine6.png" />
                     <div class="sub_text_magazine">
                       <span>이주의 디깅#162<br>빈지노</span>
                       <p>2023.07.13</p>
@@ -136,7 +154,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/magazine7.png" />
+                    <img alt="세븐틴 준 이미지" src="./assets/magazine/magazine7.png" />
                     <div class="sub_text_magazine">
                       <span>사이코 외전,<br>세븐틴 준</span>
                       <p>2023.07.25</p>
@@ -146,7 +164,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/zerobase.png" />
+                    <img alt="제로베이스원 이미지" src="./assets/magazine/zerobase.png" />
                     <div class="sub_text_magazine">
                       <span>제로베이스원,<br>찬란한 청춘의 시작</span>
                       <p>2023.07.10</p>
@@ -156,7 +174,7 @@
               <li>
                 <a href="#">
                   <div class="magazine_contents">
-                    <img src="./assets/magazine/new.png" />
+                    <img alt="뉴진스 이미지" src="./assets/magazine/new.png" />
                     <div class="sub_text_magazine">
                       <span>New Release #151 :<br>뉴진스, 도미닉 파이크</span>
                       <p>2023.07.11</p>
@@ -165,8 +183,8 @@
                 </a></li>
             </ul>
           </div>
-          <button class="magazine_next"></button>
-          <button class="magazine_prev"></button>
+          <button class="magazine_next" aria-label="매거진_다음버튼"></button>
+          <button class="magazine_prev" aria-label="매거진_이전버튼"></button>
         </div>
         <div class="news_container">
           <div class="text_container_news">
@@ -177,7 +195,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/박효신.png" />
+                    <img alt="박효신이미지" src="./assets/news/박효신.png" />
                     <div class="sub_text_news">
                       <span>박효신이 4년 만에 팬미팅을 개최합니다</span>
                       <p>관련 뉴스 보기</p>
@@ -188,7 +206,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/정국.png" />
+                    <img alt="정국이미지" src="./assets/news/정국.png" />
                     <div class="sub_text_news">
                       <span>BTS 정국이 빌보드 ‘핫100’ 1위에 올랐습니다</span>
                       <p>관련 뉴스 보기</p>
@@ -199,7 +217,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/샤이니.png" />
+                    <img alt="샤이니이미지" src="./assets/news/샤이니.png" />
                     <div class="sub_text_news">
                       <span>샤이니의 ‘HARD’ 앨범이 영국 i-D에 이름을 올렸습니다</span>
                       <p>관련 뉴스 보기</p>
@@ -210,7 +228,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/세븐틴.png" />
+                    <img alt="세븐틴 이미지" src="./assets/news/세븐틴.png" />
                     <div class="sub_text_news">
                       <span>세븐틴이  '팔로우' 투 서울 공연을 성황리에 마쳤습니다</span>
                       <p>관련 뉴스 보기</p>
@@ -221,7 +239,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/tmxmfpdlzlwm.png" />
+                    <img alt="스트레이키즈 이미지" src="./assets/news/tmxmfpdlzlwm.png" />
                     <div class="sub_text_news">
                       <span>스트레이 키즈가 K팝 최초 롤라팔루자 파리 헤드라이너로 무대에 섭니다</span>
                       <p>관련 뉴스 보기</p>
@@ -232,7 +250,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/늉.png" />
+                    <img alt="뉴진스이미지" src="./assets/news/늉.png" />
                     <div class="sub_text_news">
                       <span>뉴진스가 빌보드 핫 100 차트에 올랐습니다</span>
                       <p>관련 뉴스 보기</p>
@@ -243,7 +261,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/127.png" />
+                    <img alt="NCT이미지" src="./assets/news/127.png" />
                     <div class="sub_text_news">
                       <span>NCT 127이 7주년 기념 팬미팅를 성황리에 마쳤습니다</span>
                       <p>관련 뉴스 보기</p>
@@ -254,7 +272,7 @@
               <li>
                 <a href="#">
                   <div class="news_contents">
-                    <img src="./assets/news/123.png" />
+                    <img alt="여자아이들이미지" src="./assets/news/123.png" />
                     <div class="sub_text_news">
                       <span>(여자)아이들이 첫 미국 디지털 싱글을 공개했습니다</span>
                       <p>관련 뉴스 보기</p>
@@ -264,8 +282,8 @@
               </li>
             </ul> 
           </div>
-          <button class="news_next"></button>
-          <button class="news_prev"></button>
+          <button class="news_next" aria-label="뉴스다음버튼"></button>
+          <button class="news_prev" aria-label="뉴스이전버"></button>
         </div>
         <div class="vibe_container">
           <div class="text_container_vibe">
@@ -277,7 +295,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe0.png" />
+                    <img alt="vibe이미지1" src="./assets/vibe/vibe0.png" />
                     <div class="sub_text_vibe">
                       <span>최애랑 비밀 연애 중</span>
                       <p>vibe</p>
@@ -288,7 +306,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe1.png" />
+                    <img alt="vibe이미지2" src="./assets/vibe/vibe1.png" />
                     <div class="sub_text_vibe">
                       <span>Hot Girls Never Die 💘</span>
                       <p>vibe</p>
@@ -299,7 +317,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe2.jpg" />
+                    <img alt="vibe이미지3" src="./assets/vibe/vibe2.jpg" />
                     <div class="sub_text_vibe">
                       <span>하이틴 무드</span>
                       <p>vibe</p>
@@ -310,7 +328,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe3.png" />
+                    <img alt="vibe이미지4" src="./assets/vibe/vibe3.png" />
                     <div class="sub_text_vibe">
                       <span>하이틴 세계관 핵인싸 파티걸</span>
                       <p>vibe</p>
@@ -321,7 +339,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe4.png" />
+                    <img alt="vibe이미지5" src="./assets/vibe/vibe4.png" />
                     <div class="sub_text_vibe">
                       <span> 뉴욕에서 브이로그 찍는 That Girl 루틴 </span>
                       <p>vibe</p>
@@ -332,7 +350,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe5.png" />
+                    <img alt="vibe이미지6" src="./assets/vibe/vibe5.png" />
                     <div class="sub_text_vibe">
                       <span>낭만이 넘치는 캠퍼스 잔디 밭에서</span>
                       <p>vibe</p>
@@ -343,7 +361,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe6.png" />
+                    <img alt="vibe이미지7" src="./assets/vibe/vibe6.png" />
                     <div class="sub_text_vibe">
                       <span>걸어 다니는 명품 인플루언서의 삶</span>
                       <p>vibe</p>
@@ -354,7 +372,7 @@
               <li>
                 <a href="#">
                   <div class="vibe_contents">
-                    <img src="./assets/vibe/vibe7.png" />
+                    <img alt="vibe이미지8" src="./assets/vibe/vibe7.png" />
                     <div class="sub_text_vibe">
                       <span>사랑에 빠진 사랑의 신 큐피드</span>
                       <p>vibe</p>
@@ -364,8 +382,8 @@
               </li>
             </ul>
           </div>
-          <button class="vibe_next"></button>
-          <button class="vibe_prev"></button>
+          <button class="vibe_next" aria-label="vibe다음버튼"></button>
+          <button class="vibe_prev" aria-label="vibe이전버튼"></button>
         </div>
         <div class="pick_container">
             <div class="text_container_pick">
@@ -377,7 +395,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick0.png" />
+                      <img alt="pick이미지1" src="./assets/pick/pick0.png" />
                       <div class="sub_text_pick">
                         <span>최애랑 비밀 연애 중</span>
                         <p>vibe</p>
@@ -388,7 +406,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick1.png" />
+                      <img alt="pick이미지2" src="./assets/pick/pick1.png" />
                       <div class="sub_text_pick">
                         <span>Hot Girls Never Die 💘</span>
                         <p>vibe</p>
@@ -399,7 +417,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick2.png" />
+                      <img alt="pick이미지3" src="./assets/pick/pick2.png" />
                       <div class="sub_text_pick">
                         <span>하이틴 무드</span>
                         <p>vibe</p>
@@ -410,7 +428,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick3.png" />
+                      <img alt="pick이미지4" src="./assets/pick/pick3.png" />
                       <div class="sub_text_pick">
                         <span>하이틴 세계관 핵인싸 파티걸</span>
                         <p>vibe</p>
@@ -421,7 +439,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick4.png" />
+                      <img alt="pick이미지5" src="./assets/pick/pick4.png" />
                       <div class="sub_text_pick">
                         <span>노래방 K-Pop 콜렉션</span>
                         <p>vibe</p>
@@ -432,7 +450,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick5.png" />
+                      <img alt="pick이미지6" src="./assets/pick/pick5.png" />
                       <div class="sub_text_pick">
                         <span>노래방 Pop 콜렉션</span>
                         <p>vibe</p>
@@ -443,7 +461,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick6.png" />
+                      <img alt="pick이미지7" src="./assets/pick/pick6.png" />
                       <div class="sub_text_pick">
                         <span>노래방 국내 발라드 콜렉션</span>
                         <p>vibe</p>
@@ -454,7 +472,7 @@
                 <li>
                   <a href="#">
                     <div class="pick_contents">
-                      <img src="./assets/pick/pick7.png" />
+                      <img alt="pick이미지8" src="./assets/pick/pick7.png" />
                       <div class="sub_text_pick">
                         <span>노래방 국내 댄스 콜렉션</span>
                         <p>vibe</p>
@@ -464,11 +482,11 @@
                 </li>
               </ul>
             </div>
-            <button class="pick_next"></button>
-            <button class="pick_prev"></button>
+            <button class="pick_next" aria-label="pick_next_button" ></button>
+            <button class="pick_prev" aria-label="pick_prev_button"></button>
         </div>
         <div class="event_container">
-          <img src="./assets/event/video-tape.png"/>
+          <img alt="video_tape_icon" src="./assets/event/video-tape.png"/>
           <div class="event_text_container">
             <div class="text_container">
               <h3>아티스트 고르고 매일 믹스테잎 받기</h3>
@@ -476,10 +494,10 @@
             </div>  
             <div class="event_btn_container">
               <a class="event_appStore" href="https://apps.apple.com/kr/app/id1338631589">
-                <img src="./assets/event/Download_on_the_App_Store-400px.png" />
+                <img alt="app_store_icon" src="./assets/event/Download_on_the_App_Store-400px.png" />
               </a>
               <a class="event_googlePlay" href="https://play.google.com/store/apps/details?id=com.naver.vibe&pli=1">
-                <img src="./assets/event/Get-it-on-Google-Play-400px.png" alt="">
+                <img alt="google_play_icon" src="./assets/event/Get-it-on-Google-Play-400px.png" alt="">
               </a>
             </div>
           </div>  
@@ -493,7 +511,7 @@
               수천 개의 플레이리스트가 트렌드에 맞게 업데이트.</p>
         </div>
         <div class="promotion_image_container">
-          <img class="" src="./assets/promotion/today_thumbs.1d76741b.png"/>
+          <img alt="promotion_icon" src="./assets/promotion/today_thumbs.1d76741b.png"/>
         </div>
       </div>
       <footer class="footer">
@@ -509,9 +527,9 @@
               </ul>
             </div>
             <div class="social_container">
-              <button class="facebook"></button>
-              <button class="instagram"></button>
-              <button class="naver"></button>
+              <button class="facebook" aria-label="facebook_icon"></button>
+              <button class="instagram" aria-label="instagram_icon"></button>
+              <button class="naver" aria-label="naver_icon"></button>
             </div>
           </div>
           <hr>
@@ -547,7 +565,7 @@
     <div class="player">
       <div class="player_musicInfo_area">
         <div class="musicInfo_icon_box">
-          <img src="./assets/play_music.png" />
+          <img alt="play_music_icon" src="./assets/play_music.png" />
         </div>
         <div class="player_musicInfo_text">
           <div class="musicInfo_text_first">오늘 뭐 듣지?</div>
@@ -555,20 +573,20 @@
         </div>
       </div>
       <div class="player_btn_area">
-        <button class="music_btn"><img src="./assets/random.png" /></button>
-        <button class="music_btn"><img class="back" src="./assets/music-player-back.png" /></button>
-        <button class="play_btn"><img class="play_icon" src="./assets/play-button.png" /></button>
-        <button class="music_btn"><img src="./assets/music-player-next.png" /></button>
-        <button class="music_btn"><img src="./assets/refresh.png" /></button>
+        <button class="music_btn change" aria-label="music_btn"><img alt="random_icon" src="./assets/random.png" /></button>
+        <button class="music_btn" aria-label="music_btn"><img alt="music_player_back_icon" class="back" src="./assets/music-player-back.png" /></button>
+        <button class="play_btn" aria-label="play_btn"><img alt="play_button_icon" class="play_icon" src="./assets/play-button.png" /></button>
+        <button class="music_btn" aria-label="music_btn"><img alt="player_next_icon" src="./assets/music-player-next.png" /></button>
+        <button class="music_btn rotate" aria-label="music_btn"><img alt="refresh_icon" src="./assets/refresh.png" /></button>
       </div>
       <div class="player_sound_area">
           <span><p>00:00</p> / <p>00:00</p></span>
-          <img src="./assets/speaker-filled-audio-tool.png" />
-          <div>
-            <input class="range" max="10" min="0" step="1" type="range" />          
+          <img class="player_audio_img" alt="audio_tool_icon" src="./assets/speaker-filled-audio-tool.png" />
+          <div class="player_input_container">
+            <input aria-label="range" class="range" max="10" min="0" step="1" type="range" />          
           </div>
-          <button class="playlist_btn">
-            <img src="./assets/playlist.png" /> 
+          <button class="playlist_btn" aria-label="playlist_btn">
+            <img alt="playlist" src="./assets/playlist.png" /> 
           </button>
       </div>
     </div>

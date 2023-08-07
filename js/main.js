@@ -94,6 +94,9 @@ floatUpAnimation('.event .fade-in')
 /**
  *  오늘 하루 그만보기
  */
+/**
+ *  오늘 하루 그만보기
+ */
 function closeBn() {
   const bnEl = document.querySelector('.header-banner')
   const clsBtn = document.getElementById('closeBtn')
@@ -103,23 +106,21 @@ function closeBn() {
     return // 요소가 존재하지 않으면 함수 종료
   }
 
-  clsBtn.addEventListener('click', () => {
-    bnEl.remove()
-  })
-
-  onTodayCls.addEventListener('click', () => {
-    bnEl.remove()
-  })
-
   const cookieName = 'bannerClosedForToday'
-  const expirationDays = 1 // 쿠키 유효 기간을 하루로 설정
 
-  // 쿠키 유효기간 지정 & 생성
-  function setCookie(name, value, days) {
+  // 쿠키 생성 및 유효기간 지정
+  function handleBannerClose() {
+    bnEl.remove()
+    const expirationDays = 1 // 쿠키 유효 기간을 하루로 설정
     const expires = new Date()
-    expires.setDate(expires.getDate() + days)
-    document.cookie = `${name}=${value}; expires=${expires.toUTCString()}; path=/`
+    expires.setDate(expires.getDate() + expirationDays)
+    document.cookie = `${cookieName}=true; expires=${expires.toUTCString()}; path=/`
   }
+
+  clsBtn.addEventListener('click', handleBannerClose)
+
+  onTodayCls.addEventListener('click', handleBannerClose)
+
   // 쿠키 불러오기
   function getCookie(name) {
     const cookies = document.cookie.split('; ')
@@ -131,12 +132,10 @@ function closeBn() {
     }
     return null
   }
-  // 쿠키 상태확인
-  const today = new Date().toLocaleDateString()
-  if (getCookie(cookieName) !== today) {
-    setCookie(cookieName, today, expirationDays)
-  } else {
+
+  if (getCookie(cookieName) === 'true') {
     bnEl.remove()
   }
 }
+
 closeBn()

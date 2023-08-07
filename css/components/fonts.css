@@ -1,32 +1,43 @@
 @font-face {
   font-family: 'BauerBodoni';
-  src:
-    url(../../assets/fonts/BauerBodoni.woff) format('woff'),
+  src: url(../../assets/fonts/BauerBodoni.woff) format('woff'),
     url(../../assets/fonts/BauerBodoni.woff2) format('woff2');
 }
 @font-face {
   font-family: 'BauerBodoni-Italic';
-  src:
-    url(../../assets/fonts/BauerBodoni-italic.woff) format('woff'),
+  src: url(../../assets/fonts/BauerBodoni-italic.woff) format('woff'),
     url(../../assets/fonts/BauerBodoni-italic.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk';
   font-weight: 400;
-  src:
-    url(../../assets/fonts/PostGrotesk-Light.woff) format('woff'),
+  src: url(../../assets/fonts/PostGrotesk-Light.woff) format('woff'),
     url(../../assets/fonts/PostGrotesk-Light.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk';
   font-weight: 500;
-  src:
-    url(../../assets/fonts/PostGrotesk-Book.woff) format('woff'),
+  src: url(../../assets/fonts/PostGrotesk-Book.woff) format('woff'),
     url(../../assets/fonts/PostGrotesk-Book.woff2) format('woff2');
 }
 @font-face {
   font-family: 'PostGrotesk-Bold';
-  src:
-    url(../../assets/fonts/PostGrotesk-Medium.woff) format('woff'),
+  src: url(../../assets/fonts/PostGrotesk-Medium.woff) format('woff'),
     url(../../assets/fonts/PostGrotesk-Medium.woff2) format('woff2');
+}
+
+.BauerBodoni {
+  font-family: 'BauerBodoni', sans-serif;
+}
+
+.BauerBodoni-italic {
+  font-family: 'BauerBodoni-Italic', sans-serif;
+}
+
+.PostGrotesk {
+  font-family: 'PostGrotesk', sans-serif;
+}
+
+.PostGrotesk--bold {
+  font-family: 'PostGrotesk-Bold', sans-serif;
 }

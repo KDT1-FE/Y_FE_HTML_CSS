@@ -48,7 +48,6 @@ header .menu-container .menu {
 }
 header .menu-container .menu li .menu-name {
   position: relative;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -95,7 +94,6 @@ header .menu-container .icons li .country .country-flag,
 }
 header .menu-container .icons li .country .country-currency,
 .footer-bottom .section3 .country .country-currency {
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 1px;
@@ -162,12 +160,10 @@ header .menu-container .icons li .cart:hover,
   align-items: baseline;
 }
 .cart-container .title .bag {
-  font-family: 'BauerBodoni', sans-serif;
   font-size: 30px;
   color: #5c5c5c;
 }
 .cart-container .title .count {
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 16px;
   color: #5c5c5c;
 }
@@ -177,7 +173,6 @@ header .menu-container .icons li .cart:hover,
   left: 30%;
   width: 200px;
   height: 20px;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   text-align: center;
@@ -188,7 +183,6 @@ header .menu-container .icons li .cart:hover,
   left: 66px;
   width: 350px;
   height: 45px;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #5c5c5c;

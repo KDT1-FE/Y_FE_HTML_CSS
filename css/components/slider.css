@@ -118,7 +118,6 @@
   position: absolute;
   width: 100%;
   height: 20px;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 14px;
   color: #646467;
   display: flex;
@@ -131,7 +130,6 @@
   top: 420px;
   width: 100%;
   height: 40px;
-  font-family: 'BauerBodoni', sans-serif;
   font-size: 1.2rem;
   color: #646467;
   display: flex;
@@ -139,12 +137,6 @@
   align-items: center;
 }
 
-.slide1 .aqua-media .name .font,
-.slide1 .universalis .name .font,
-.slide1 .vitae .name .font,
-.slide1 .celestia .name .font {
-  font-family: 'BauerBodoni-Italic';
-}
 .slide1 .rouge,
 .slide1 .aqua-media,
 .slide1 .number-724,
@@ -197,7 +189,6 @@
   top: 346px;
   width: 100%;
   height: 36px;
-  font-family: 'BauerBodoni', sans-serif;
   font-size: 1.75rem;
   letter-spacing: 1px;
   line-height: 2.2rem;
@@ -276,7 +267,6 @@
   position: absolute;
   width: 100%;
   height: 20px;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 14px;
   color: #646467;
   display: flex;
@@ -329,7 +319,6 @@
   top: 400px;
   width: 100%;
   height: 40px;
-  font-family: 'BauerBodoni', sans-serif;
   font-size: 1.2rem;
   color: #646467;
   display: flex;

@@ -21,7 +21,6 @@ footer .inner {
   height: 210px;
 }
 .footer-main .menu-contents .menu-name {
-  font-family: 'BauerBodoni', sans-serif;
   font-size: 20px;
   color: #646467;
   margin-bottom: 25px;
@@ -32,7 +31,6 @@ footer .inner {
 }
 .footer-main .menu-contents .menu-list a {
   position: relative;
-  font-family: 'PostGrotesk-Bold', sans-serif;
   font-size: 12px;
   color: #646467;
   letter-spacing: 1px;
@@ -61,7 +59,6 @@ footer .inner {
   display: flex;
   justify-content: left;
   align-items: center;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 12px;
   letter-spacing: 0.2px;
   color: #4a4a4f;

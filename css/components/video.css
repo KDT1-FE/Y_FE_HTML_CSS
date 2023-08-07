@@ -13,7 +13,6 @@
   position: absolute;
   top: 187px;
   left: 40px;
-  font-family: BauerBodoni;
   font-size: 3.4375rem;
   color: #fff;
   line-height: 4rem;
@@ -31,7 +30,6 @@
 }
 .main-video .button .discover {
   display: inline-block;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 1.2px;

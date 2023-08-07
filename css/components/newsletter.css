@@ -8,12 +8,10 @@
   color: #5c5c5c;
 }
 .newsletter .title {
-  font-family: 'BauerBodoni', sans-serif;
   font-size: 30px;
   margin-bottom: 15px;
 }
 .newsletter .subtitle {
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 16px;
   letter-spacing: 0.2px;
 }
@@ -36,7 +34,6 @@
   position: absolute;
   top: 54px;
   left: 0;
-  font-family: 'PostGrotesk-Bold', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   color: #5c5c5c;
@@ -65,7 +62,6 @@
   position: absolute;
   top: 85px;
   right: 0;
-  font-family: 'PostGrotesk', sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;

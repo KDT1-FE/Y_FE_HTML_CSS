@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10.5px;
+  line-height: 10.5px;
+}
+
+form,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+#wrap {
+  text-align: center;
+}
+#wrap-center {
+  width: 1280px;
+  display: inline-block;
+}
+#header {
+  text-align: left;
+  position: relative;
+  height: 64px;
+}
+#header-hamburger,
+#header-naverpay,
+#header-notice {
+  position: absolute;
+  top: 18px;
+  padding: 10px;
+  display: inline-block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#header-hamburger:hover::before,
+#header-naverpay:hover::before,
+#header-notice:hover::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  left: 1px;
+  top: 1px;
+  width: 44px;
+  height: 44px;
+  background-color: #e4e4e4;
+  border-radius: 50%;
+}
+#header-hamburger > div,
+#header-naverpay > div,
+#header-notice > div {
+  background-image: url(../assets/sp_main.png);
+  width: 26px;
+  height: 26px;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 422px 405px;
+}
+#header-hamburger {
+  left: -10px;
+}
+
+#header-hamburger > div {
+  background-position: -335px -284px;
+}
+
+#header-naverpay {
+  right: 42px;
+  padding: 10px 8px;
+}
+
+#header-naverpay > div {
+  width: 30px;
+  background-position: -31px -316px;
+}
+
+#header-notice {
+  right: -10px;
+}
+
+#header-notice > div {
+  background-position: -364px -27px;
+}
+#main {
+  height: 1200px;
+}
+
+#search > form {
+  display: inline-flex;
+  height: 60px;
+  width: 708px;
+  border: 1px solid #03c75a;
+  border-radius: 33px;
+  text-align: left;
+}
+
+#search > form:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+#search > form > input {
+  height: 100%;
+  width: 480px;
+  padding: 17px 0;
+  border: none;
+  outline: none;
+}
+
+#search-svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  margin-right: 12px;
+  padding-left: 10px;
+  height: 100%;
+  position: relative;
+}
+
+#search-svg::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #e4e4e4;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 20px;
+}
+
+#search-svg svg {
+  width: 24px;
+  height: 24px;
+  fill: #03c75a;
+}
+#search-input {
+  width: 480px;
+  padding: 17px 0;
+  font-size: 2rem;
+  line-height: 24px;
+  border: none;
+  outline: none;
+}
+#search-input::placeholder {
+  color: white;
+}
+#search-input:focus::placeholder {
+  color: #e4e4e4;
+}
+#search-right {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+#search-button {
+  padding: 17px 27px 16px 10px;
+}
+
+#search-button,
+#search-recent,
+#search-keyboard {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+#search-button::before,
+#search-recent::before,
+#search-keyboard:before {
+  content: "";
+  display: block;
+  background-image: url(../assets/sp_main.png);
+  background-size: 422px 405px;
+  background-repeat: no-repeat;
+}
+#search-keyboard:before {
+  background-position: -270px -234px;
+  width: 24px;
+  height: 16px;
+}
+#search-keyboard:hover::before {
+  filter: brightness(0.7);
+}
+#search-recent::before {
+  background-position: -412px -352px;
+  width: 10px;
+  height: 6px;
+}
+
+#search-button::before {
+  background-position: -364px -132px;
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,118 @@
+#nav > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#nav a:visited {
+  color: black;
+}
+
+#nav li {
+  display: flex;
+  justify-content: center;
+  width: 64px;
+  margin-left: 14px;
+  margin-right: 0;
+  margin-top: 2px;
+}
+
+#nav li:nth-of-type(1) {
+  margin-left: 0;
+}
+
+#nav a {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+#nav li {
+  content: "";
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/sp_main.png);
+  background-size: 422px 405px;
+  background-repeat: no-repeat;
+  background-position: 0px -128px;
+  width: 54px;
+  height: 54px;
+}
+
+#nav li:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+#nav a div {
+  content: "";
+  display: inline-block;
+  background-image: url(../assets/sp_main.png);
+  background-size: 422px 405px;
+  background-position: -250px -90px;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+  margin: 0 3;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(1) ::after {
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(2) a div {
+  background-position: -250px 0px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(3) a div {
+  background-position: -201px -98px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(4) a div {
+  background-position: -90px -209px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(5) a div {
+  background-position: 0px -209px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(6) a div {
+  background-position: -180px -209px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(7) a div {
+  background-position: -45px -209px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(8) a div {
+  background-position: -201px 0px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(9) a div {
+  background-position: -225px -209px;
+  margin-bottom: 10px;
+}
+
+#nav li:nth-of-type(10) a div {
+  background-position: -250px -135px;
+  margin-bottom: 10px;
+}
+
+#nav a span {
+  margin-top: 10px;
+  /* 적용 안되는 이유 찾기 */
+}

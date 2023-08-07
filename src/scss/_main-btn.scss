@@ -1,0 +1,109 @@
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.snappin-box-btn {
+  width: auto;
+  height: 40px;
+
+  display: flex;
+
+  position: absolute;
+  bottom: 5rem;
+
+  animation: {
+    name: fadeInUp;
+    duration: 1s;
+    delay: 2s;
+    fill-mode: both;
+  }
+
+  a {
+    width: 250px;
+    height: 100%;
+
+    margin: {
+      right: 10px;
+      bottom: 16px;
+      left: 10px;
+    }
+    border-radius: 3px;
+
+    line-height: 40px;
+
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.9;
+
+    &:first-child {
+      color: $white;
+      background-color: #0e1410cc;
+    }
+
+    &:last-child {
+      color: $black;
+      background-color: #e7e6e5;
+    }
+  }
+}
+
+.test-drive .snappin-box-btn a {
+  border: 3px solid $white;
+
+  line-height: 35px;
+
+  color: $white;
+  background-color: transparent;
+}
+
+.modelY .modelY-chevron {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  bottom: 20px;
+
+  cursor: pointer;
+
+  animation: {
+    name: upDown;
+    duration: 1s;
+    direction: alternate;
+    iteration-count: infinite;
+  }
+}
+
+.powerwall .snappin-box-btn a {
+  color: $white;
+  background-color: #0e1410cc;
+}
+
+.accessories .snappin-box-btn {
+  margin-bottom: 70px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translate3d(0, 0%, 0);
+  }
+  50% {
+    transform: translate3d(0, 25%, 0);
+  }
+  70% {
+    transform: translate3d(0, 0%, 0);
+  }
+}

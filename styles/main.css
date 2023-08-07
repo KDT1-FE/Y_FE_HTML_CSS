@@ -293,6 +293,8 @@ aside,
 }
 
 #shop-second-box {
+  display: flex;
+  justify-content: space-around;
   box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
   background-color: hwb(0 99% 0%);
   border-radius: 4px;
@@ -300,12 +302,9 @@ aside,
   height: 80px;
   font-size: 1.4rem;
   line-height: 1.7rem;
-  padding-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-right: 11px;
   margin-top: 16px;
-  display: flex;
+  padding: 20px 5px 0;
+  margin: 16px 11px 0 0;
 }
 
 #shop-third-box {
@@ -356,7 +355,7 @@ aside,
   border-top: 1px solid grey;
 }
 
-#main-news footer {
+#main-news-last {
   flex: 0;
   border-top: 1px solid #e4e4e4;
   padding: 10px 0 11px;
@@ -376,17 +375,17 @@ aside,
   width: 33px;
   height: 33px;
 }
-#main-news-footer strong span {
+#main-news-last strong span {
   color: hsl(235, 89%, 62%);
 }
 
-#main-shopping footer {
+#main-shopping-last {
   flex: 0;
   border-top: 1px solid #e4e4e4;
   text-align: center;
 }
 
-#main-shopping-footer strong span {
+#main-shopping-last strong span {
   color: #9858f5;
 }
 
@@ -397,9 +396,10 @@ aside,
 
 #shop-second-box div {
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
-  flex-flow: column;
+  /* flex-flow: column; */
 }
 
 #shop-second-box div:nth-of-type(1) div {
@@ -430,7 +430,6 @@ aside,
   background-size: 122px 106px;
   background-repeat: no-repeat;
   background-position: -60px -68px;
-
   width: 17px;
   height: 16px;
   margin-bottom: 10px;

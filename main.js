@@ -1,11 +1,11 @@
 // header link click animation
 
 const leftleftLinkEls = document.querySelectorAll(".header-nav__left li");
-leftleftLinkEls.forEach((leftLinkEl, i) => {
-  leftleftLinkEls[i].addEventListener("click", () => {
-    leftleftLinkEls[i].classList.add("active");
+leftleftLinkEls.forEach((leftLinkEl) => {
+  leftLinkEl.addEventListener("click", () => {
+    leftLinkEl.classList.add("active");
     const classTimer = setTimeout(() => {
-      leftleftLinkEls[i].classList.remove("active");
+      leftLinkEl.classList.remove("active");
     }, 300);
   });
 });
@@ -140,7 +140,7 @@ const bubbleHandle = (x, y) => {
 };
 
 const observer = new IntersectionObserver((e) => {
-  e.forEach((v, i) => {
+  e.forEach((v) => {
     if (v.isIntersecting) {
       const currentY = window.scrollY;
       const currentH = v.target.offsetHeight;
@@ -158,7 +158,7 @@ const observer = new IntersectionObserver((e) => {
 });
 
 const observer2 = new IntersectionObserver((e) => {
-  e.forEach((v, i) => {
+  e.forEach((v) => {
     const currentY = window.scrollY;
     const currentH = v.target.offsetHeight;
     if (v.isIntersecting) {
@@ -176,7 +176,7 @@ const observer2 = new IntersectionObserver((e) => {
 
 const cardEls = document.querySelectorAll(".section-2__business--card > div");
 
-cardEls.forEach((cardEl, i) => {
+cardEls.forEach((cardEl) => {
   observer.observe(cardEl);
 });
 observer.observe(award);

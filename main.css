@@ -143,6 +143,18 @@ header .header-nav .header-nav__left li.active::before {
   transition: all 0.2s;
 }
 
+/* header .header-nav .header-nav__left li:active {
+  background-color: rgba(200, 200, 200, 0.5);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+header .header-nav .header-nav__left li.active {
+  background-color: rgba(200, 200, 200, 0.5);
+  overflow: hidden;
+  transition: all 0.2s;
+} */
+
 header .header-nav .header-nav__left li > a {
   padding: 1.25rem;
   font-size: 18px;

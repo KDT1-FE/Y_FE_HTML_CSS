@@ -100,7 +100,6 @@ header {
 
 .lang-list {
   color: white;
-  cursor: pointer;
 }
 
 .lang-list li {
@@ -113,7 +112,7 @@ header {
   font-weight: 700;
 }
 
-.video {
+.main-video {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -121,7 +120,7 @@ header {
   z-index: 2;
 }
 
-.video-inner {
+.main-video-inner {
   position: absolute;
   width: 1240px;
   padding: 20px 20px;

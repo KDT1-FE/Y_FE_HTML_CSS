@@ -1,5 +1,3 @@
-let i=0;
-let j=0;
 const HeadMenuEls=document.querySelector('.HeadMenuBtn')
 const NaviEl=document.getElementById('HeadNavi')
 const HeadLogoEl=document.querySelector('.HeadLogoImg')

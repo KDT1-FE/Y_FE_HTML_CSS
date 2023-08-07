@@ -993,6 +993,6 @@ body {
   box-sizing: border-box;
 }
 
-button:hover {
+button {
   cursor: pointer;
 }

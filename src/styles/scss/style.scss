@@ -1,15 +1,15 @@
-@import './_header.scss';
-@import './_top-banner.scss';
-@import './_main-article.scss';
-@import './_article-bar.scss';
-@import './sub-article.scss';
-@import './bottom-section.scss';
-@import './footer.scss';
+@import "./_header.scss";
+@import "./_top-banner.scss";
+@import "./_main-article.scss";
+@import "./_article-bar.scss";
+@import "./sub-article.scss";
+@import "./bottom-section.scss";
+@import "./footer.scss";
 body {
-  font-family: 'Pretendard Variable';
+  font-family: "Pretendard Variable";
   margin: 0;
   box-sizing: border-box;
 }
-button:hover {
+button {
   cursor: pointer;
 }

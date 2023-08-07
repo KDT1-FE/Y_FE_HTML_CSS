@@ -116,7 +116,6 @@ footer {
 
 .footer-symbol ul li a {
   height: 40px;
-  min-height: 40px;
   display: flex;
   align-items: center;
 }
@@ -202,6 +201,10 @@ footer {
   border-radius: 0.25rem;
 }
 
+.site .dropdown-menu.show {
+  display: block;
+}
+
 .site .dropdown-menu .dropdown-item {
   display: block;
   width: 100%;
@@ -239,29 +242,25 @@ footer {
 }
 
 .footer-sns .facebook {
-  background-image: url('../asset/footer-sns-facebook.svg');
+  background-image: url(/asset/footer-sns-facebook.svg);
 }
-
 .footer-sns .youtube {
-  background-image: url('../asset/footer-sns-youtube.svg');
+  background-image: url(/asset/footer-sns-youtube.svg);
 }
-
 .footer-sns .twitter {
-  background-image: url('../asset/footer-sns-twitter.svg');
+  background-image: url(/asset/footer-sns-twitter.svg);
 }
-
 .footer-sns .lgblog {
-  background-image: url('../asset/footer-sns-lgblog.svg');
+  background-image: url(/asset/footer-sns-lgblog.svg);
 }
-
 .footer-sns .insta {
-  background-image: url('../asset/footer-sns-instagram.svg');
+  background-image: url(/asset/footer-sns-insta.svg);
 }
-
 .footer-sns .kakaostory {
-  background-image: url('../asset/footer-sns-kakao.svg');
+  background-image: url(/asset/footer-sns-kakaostory.svg);
+}
+.footer-sns .naverblog {
+  background-image: url(/asset/footer-sns-naverblog.svg);
 }
 
-.footer-sns .naverblog {
-  background-image: url('../asset/footer-sns-naverblog.svg');
-}
+/*# sourceMappingURL=footer.css.map */

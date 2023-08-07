@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column-reverse;
 }
-.chatbot--btn {
+.chatbot__toggle {
   width: 62px;
   height: 62px;
   background: url('../asset/quick-menu-octopus2.png') no-repeat;
@@ -17,15 +17,15 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.sub-menu {
+.chatbot__submenu {
   display: none;
 }
 
-.sub-menu.show {
+.chatbot__submenu.show {
   display: block;
 }
 
-.chatbot--btn.show {
+.chatbot__toggle.show {
   background: url('../asset/quick-menu-plus-wh.svg') #e6007e 17px 17px no-repeat;
   transform: rotate(45deg);
 }
@@ -52,8 +52,8 @@
   transition: all 0.5s;
   white-space: nowrap;
 }
-.quick-chatbot > .chatbot--btn,
-.center-chatbot > .chatbot--btn {
+.quick-chatbot > .chatbot__toggle,
+.center-chatbot > .chatbot__toggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,14 +311,13 @@
   background-image: url('../asset/20230711-035937-777-j0u8IyaO.jpg');
 }
 
-.item-container .item-box:last-child {
+.item-container .item-box:nth-child(4) {
   background-image: url('../asset/20230628-043246-125-KnHNERTf.jpg');
 }
 
 .item-box.fade-in {
   opacity: 0;
   transform: translateY(50px);
-  transition: all 0.5s ease-in-out;
 }
 
 /* PAYMENT */

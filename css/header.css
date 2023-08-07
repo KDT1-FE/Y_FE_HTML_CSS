@@ -28,12 +28,6 @@
   user-select: none;
 }
 .c-chkbox input[type='checkbox'] {
-  position: absolute;
-  left: 0px;
-  outline: none;
-  border: 0;
-  width: 22px;
-  height: 22px;
   display: none;
 }
 
@@ -89,8 +83,8 @@
   transform: rotate(-45deg);
 }
 
-/* HEADER */
-.header-wrap {
+/* HEADER-TOP */
+.header {
   position: sticky;
   top: 0;
   left: 0;
@@ -142,34 +136,29 @@
   font-weight: 700;
 }
 
-/* NAVI */
-.header-navi {
+/* HEADER-NAVI */
+.header__container {
+  position: relative;
+}
+
+.header__container > .header__inner {
+  position: static;
+}
+
+.header__nav {
   height: 57px;
   display: flex;
   align-content: center;
 }
 
-ul.header-sub-menu {
-  position: relative;
-  display: flex;
-  margin-left: auto;
-  align-content: center;
-}
-
-ul.header-sub-menu li {
-  padding: 7px;
-}
-.header-navi-menu {
+.main-menu {
   display: flex;
 }
 
-.header-nav-lst {
-  display: flex;
-}
-.item + li {
+.main-menu-item + li {
   padding-left: 48px;
 }
-.item .item__name {
+.main-menu-item .main-menu-tit {
   color: #fff;
   font-weight: 400;
   font-weight: 400;
@@ -179,30 +168,22 @@ ul.header-sub-menu li {
   white-space: nowrap;
 }
 
-.item .item__name span {
+.main-menu-item .main-menu-tit span {
   display: flex;
   align-items: center;
   position: relative;
 }
-.item .item__name .tooltip {
+.main-menu-item .main-menu-tit .tooltip {
   position: absolute;
   top: -27px;
   left: 50%;
   transform: translate(-50%);
 }
-.item .item__name .new {
+.main-menu-item .main-menu-tit .new {
   margin-top: -19px;
 }
 
-.header-wrap__container {
-  position: relative;
-}
-
-.header-wrap__container > .inner {
-  position: static;
-}
-
-.item .item__wrap {
+.main-menu-item .main-menu__sub {
   width: 100%;
   position: absolute;
   top: 57px;
@@ -213,11 +194,11 @@ ul.header-sub-menu li {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.item:hover .item__wrap {
+.main-menu-item:hover .main-menu__sub {
   display: block;
 }
 
-.item__wrap > .inner {
+.main-menu__sub-list {
   display: flex;
   margin: auto;
   padding: 20px 0;
@@ -225,50 +206,50 @@ ul.header-sub-menu li {
   background: #fff;
 }
 
-.item__wrap > .inner li {
+.main-menu__sub-list li {
   width: 180px;
   padding-right: 10px;
   line-height: 28px;
   font-size: 14px;
 }
-.item__wrap > .inner li:before {
+.main-menu__sub-list li:before {
   padding-right: 0;
 }
 
-.item__wrap > .inner li h4:first-child {
+.main-menu__sub-title:first-child {
   width: 180px;
 }
 
-.item__wrap > .inner li h4 {
+.main-menu__sub-title {
   padding: 3px 0 8px 0;
   color: #000;
   width: 100%;
 }
 
-.item__wrap > .inner li h4 a {
+.main-menu__sub-title a {
   color: #000;
   font-weight: 800;
   height: 28px;
   font-size: 1.05rem;
 }
 
-.item__wrap > .inner li h4 a:hover {
+.main-menu__sub-title a:hover {
   border-bottom: 1px solid #000;
 }
 
-.item__wrap > .inner li ul {
+.main-menu__sub-list li ul {
   min-height: 224px;
 }
 
-.item__wrap > .inner li ul li a {
+.main-menu__sub-list li ul li a {
   color: #666;
 }
 
-.item__wrap > .inner li ul li a:hover {
+.main-menu__sub-list li ul li a:hover {
   text-decoration: underline;
 }
 
-.item__wrap > .inner ul li::before {
+.main-menu__sub-list ul li::before {
   content: '-';
   display: inline-block;
   margin-right: 2px;
@@ -298,4 +279,16 @@ ul.header-sub-menu li {
 
 .sub__shortcut li .thumb img {
   width: 100%;
+}
+
+/* HEADER-SUB */
+.header .sub-menu {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  align-content: center;
+}
+
+.header .sub-menu li {
+  padding: 7px;
 }

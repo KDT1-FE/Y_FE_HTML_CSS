@@ -236,6 +236,10 @@ input[id="select_box4"]:checked ~ .slide-nav .label4 {
   line-height: 16px;
 }
 
+.slide-text-box p {
+  margin-bottom: 0;
+}
+
 .select_img {
   opacity: 0;
   transition-duration: 3s;

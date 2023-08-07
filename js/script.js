@@ -65,8 +65,8 @@ var swiper4 = new Swiper('.movie__container', {
         clickable: true,
     },
     navigation: {
-        prevEl: '.left-btn-four',
-        nextEl: '.right-btn-four',
+        prevEl: '.movie__button--left',
+        nextEl: '.movie__button--right',
     },
 });
 

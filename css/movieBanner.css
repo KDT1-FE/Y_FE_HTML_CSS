@@ -4,209 +4,120 @@
 ------------------------------------
 */
 
-
-.movieBanner {
-    width: 130.4rem;
-    margin: 10rem auto;
-}
-
-.mySwiper4 {
-    position: relative;
-    overflow: hidden;
-    width: 130.4rem;
-    height: 10%;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mySwiper4 .swiper-wrapper {
-    width: 100%;
-    height: auto;
+.movie__banner {
     display: flex;
-    box-sizing: content-box;
-    justify-content: space-between;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
     position: relative;
 }
 
-.mySwiper4 .swiper-wrapper > .swiper-slide {
-    width: auto;
-    height: auto;
-    display: inline-flex;
-    border-radius: 1.2rem;
-    box-sizing : border-box;
-    overflow: hidden;
-    padding-bottom: 2rem;
+.movie__container {
+    width: 100%;
+    height: 110%;
+
+    margin: 0 auto;
 }
 
-.mySwiper4 .element__image {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 1.2rem;
-    height: 40rem;
+.movie__item--block {
+    border: none;
+}
+
+.movie__item--info {
+    display: flex;
+    flex-direction: column;
+
+    width: 95%;
+    height: 100%;
+
     position: relative;
-    width: 100%;
 }
 
-.mySwiper4 .element__image::before {
-    content: '';
+.movie__item--info-number {
     position: absolute;
-    left: 0;
-    right: 0;
+    transform: translateY(-100%);
     top: 0;
-    bottom: 0;
-    display: block;
-    width: 100;
-    height: 100;
-    z-index: 1;
-}
-
-.mySwiper4 > .swiper-wrapper > img {
-    position: absolute;
-    top: 50%;
     left: 0;
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    transform: translateY(-50%);
-}
-.mySwiper4 .element__info {
-    height: 10.6rem;
-    padding: 1.2rem 1rem 1.2rem;
-    position: relative;
-    box-sizing: border-box;
-    vertical-align: bottom;
-}
 
-.mySwiper4 .upper-number {
-    position: absolute;
-    top: -10.6rem;
-    left: 2rem;
-    font-size: 7rem;
-    line-height: 8.35rem;
+    font-size: 4rem;
     font-weight: 700;
-    z-index: 50;
+
     color: #fff;
 }
 
-.mySwiper4 .info--upper {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+.movie__item--info-upper {
     display: flex;
     flex-direction: column;
-    align-items: start;
+
+    margin-top: 1rem;
+
+    position: relative;
+
+    line-height: 1.6rem;
+}
+
+.movie__item--info-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.movie__item--info-theater {
+    font-size: 0.9rem;
     font-weight: 400;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100%;
-    justify-content: start;
-    color: #111
 }
 
-.mySwiper4 .upper__course {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    font-weight: 700;
-}
-
-.mySwiper4 .upper__lodge {
-    margin-top: 0.5rem;
-    color: #999;
-}
-
-.mySwiper4 .info--downer {
-    font-size: 2rem;
-    line-height: 2.4rem;
-    color: #111;
-    font-weight: 700;
-    display: flex;
-    justify-content: start;
-    vertical-align: middle;
-}
-
-.mySwiper4 .info--downer .downer-light {
-    font-size: 1.4rem;
-    line-height: 1.7rem;
+.movie__item--info-downer {
+    font-size: 0.9rem;
     font-weight: 400;
-    color: #999;
+
+    color: silver;
 }
-.views {
-    width: 100%;
-    height: 100%;
+
+.movie__item--view-all {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
+
+    margin: auto 0;
+
+    font-size: 1rem;
+
+    transform: translateY(-50%);
 }
 
-.view-all {
-    width: 4rem;
-    height: 4rem;
+.movie__item--view-icon {
+    width: 3rem;
+    height: 3rem;
     transform: scaleX(-1);
     margin-bottom: 0.7rem;
-
 }
 
-.up-sit {
-    display: block;
-    margin-top: 1rem;
-    color: #1769ff;
-    border: 1px solid #1769ff;
-    padding: 0.3rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
+.movie__item--info-upsit {
+    padding: 0.1rem 0.3rem;
+
+    position: absolute;
+    bottom: -35%;
+
+    font-size: 0.4rem;
+    line-height: 1.3rem;
+
+    color: #4a95ff;
+    border: 0.01rem solid #4a95ff;
+    border-radius: 0.3rem;
 }
-.down-sit {
-    display: block;
-    margin-top: 1rem;
+
+.movie__item--info-downsit {
+    padding: 0.1rem 0.3rem;
+
+    position: absolute;
+    bottom: -35%;
+
+    font-size: 0.4rem;
+    line-height: 1.3rem;
+
     color: tomato;
-    border: 1px solid tomato;
-    padding: 0.3rem 1rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-}
-
-.movieBanner .shopping__content {
-    width: auto;
-    position: relative;
-}
-
-.movieBanner .shopping__content .right-btn-four {
-    position: absolute;
-    right: 0;
-    z-index: 50;
-    top: 50%;
-    z-index: 31;
-    width: 4.8rem;
-    height: 4.8rem;
-    margin-top: -1.5rem;
-    transform: translateX(50%);
-    background: hsla(0, 0%, 100%, 0.9);
-    border: 0.1rem solid rgba(0,0,0,0.1);
-    box-shadow: 0 0 0.8rem rgba(0,0,0,.13);
-    align-items: center;
-    justify-content: center;
-    border-radius: 10rem;
-}
-
-.movieBanner .shopping__content .right-btn-four::before {
-    content: '다음';
-    color: transparent;
-    width: 3.8rem;
-    height: 4rem;
-    margin-left: 0.3rem;
-    background-image: url("../assets/image/right-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.movieBanner .shopping__bottom {
-    position: relative;
-}
-
-.movieBanner .shopping__bottom > button {
-    position: absolute;
-    bottom: -5.5rem;
+    border: 0.01rem solid tomato;
+    border-radius: 0.3rem;
 }

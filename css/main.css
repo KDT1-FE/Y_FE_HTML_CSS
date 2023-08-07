@@ -104,6 +104,8 @@ input:focus {
 .slide__image {
     width: 100%;
     border-radius: 0.7rem;
+
+    object-fit: contain;
 }
 
 .slide__image--inner {

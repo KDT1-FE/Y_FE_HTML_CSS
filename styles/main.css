@@ -323,3 +323,85 @@
   padding: 1rem 0;
   gap: 1rem;
 }
+
+@media (max-width: 999px) {
+  .main {
+    margin: 0 auto;
+  }
+  .main__header {
+    visibility: visible;
+  }
+  .banner_img {
+    width: 100%;
+    height: 20rem;
+  }
+  .banner_text_area {
+    margin: 3rem;
+    display: none;
+  }
+  .musicInfo_icon_box {
+    display: none;
+  }
+  .magazine_container,
+  .news_container,
+  .vibe_container,
+  .pick_container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+.main__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__header_logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  padding: 1rem;
+  cursor: pointer;
+}
+.main__header_naver {
+  font-size: 15px;
+  font-weight: 400;
+}
+.main__header_vibe {
+  font-size: 25px;
+  font-weight: 400;
+}
+.header__btn_membership {
+  color: #dd345d;
+  font-weight: bold;
+}
+.section_music_container {
+  width: 100%;
+  margin: 0 auto;
+}
+.header__btn_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 20px;
+}
+.main__header_logo_container {
+  display: flex;
+  align-items: center;
+}
+.header__btn_search,
+.header__btn_menu {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.header__btn_search img,
+.header__btn_menu img {
+  width: 1.3rem;
+  height: 1.3rem;
+}

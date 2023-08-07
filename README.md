@@ -9,7 +9,7 @@
 
 ## 구현 모습
 
-![](./assets/images/homepage_gif.gif)
+![](./assets/images/graphics/homepage_gif.gif)
 
 ## 요구사항
 

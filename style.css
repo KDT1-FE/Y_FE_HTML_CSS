@@ -151,7 +151,7 @@ header {
 }
 
 .google-btn {
-  background-image: url(./assets/images/google-button.949f5984.svg);
+  background-image: url(./assets/images/icons/google-button.949f5984.svg);
   background-position: 0 0;
   width: 232px;
   height: 66px;
@@ -163,11 +163,11 @@ header {
 
 .google-btn:hover {
   transition: background-image 0.5s;
-  background-image: url(./assets/images/google-button-over.4ba29f79.svg);
+  background-image: url(./assets/images/icons/google-button-over.4ba29f79.svg);
 }
 
 .apple-btn {
-  background-image: url(./assets/images/apple-button.2ea6bb50.svg);
+  background-image: url(./assets/images/icons/apple-button.2ea6bb50.svg);
   background-position: 0 0;
   background-color: #00ff0000;
   width: 232px;
@@ -180,7 +180,7 @@ header {
 
 .apple-btn:hover {
   transition: background-image 0.5s;
-  background-image: url(./assets/images/apple-button-over.1224e23f.svg);
+  background-image: url(./assets/images/icons/apple-button-over.1224e23f.svg);
 }
 
 .down-button-wrap {
@@ -188,7 +188,7 @@ header {
 }
 
 .down-button {
-  background-image: url(./assets/images/bottom-direction.e1410d78.svg);
+  background-image: url(./assets/images/icons/bottom-direction.e1410d78.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   position: absolute;
@@ -255,14 +255,14 @@ header {
   display: inline-block;
   width: 55px;
   height: 55px;
-  background-image: url(./assets/images/button-more.62d0e592.svg);
+  background-image: url(./assets/images/icons/button-more.62d0e592.svg);
   border: none;
   background-color: #00ff0000;
 }
 
 .card1-more-button:hover {
   transition: background-image 0.5s;
-  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
+  background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
   cursor: pointer;
 }
 
@@ -272,7 +272,7 @@ header {
 
 .down-button-color2 {
   color: #c7c7c7;
-  background-image: url(./assets/images/bottom-direction-gray.189a271c.svg);
+  background-image: url(./assets/images/icons/bottom-direction-gray.189a271c.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   position: absolute;
@@ -374,20 +374,20 @@ header {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: url(./assets/images/button-more.62d0e592.svg);
+  background-image: url(./assets/images/icons/button-more.62d0e592.svg);
   border: none;
   background-color: #00ff0000;
 }
 
 .card2-more-button:hover {
   transition: background-image 0.5s;
-  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
+  background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
   cursor: pointer;
 }
 
 .card2-down-button {
   color: white;
-  background-image: url(./assets/images/bottom-direction.e1410d78.svg);
+  background-image: url(./assets/images/icons/bottom-direction.e1410d78.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   position: absolute;
@@ -495,20 +495,20 @@ header {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-image: url(./assets/images/button-more.62d0e592.svg);
+  background-image: url(./assets/images/icons/button-more.62d0e592.svg);
   border: none;
   background-color: #00ff0000;
 }
 
 .card3-more-button:hover {
   transition: background-image 0.5s;
-  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
+  background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
   cursor: pointer;
 }
 
 .card3-down-button {
   color: #ffffff;
-  background-image: url(./assets/images/bottom-direction.e1410d78.svg);
+  background-image: url(./assets/images/icons/bottom-direction.e1410d78.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   position: absolute;
@@ -525,7 +525,7 @@ header {
 }
 
 .card4-wrap {
-  background-image: url(./assets/images/bg-1.b9bd5fd1.png);
+  background-image: url(./assets/images/graphics/bg-1.b9bd5fd1.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -574,20 +574,20 @@ header {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-image: url(./assets/images/button-more.62d0e592.svg);
+  background-image: url(./assets/images/icons/button-more.62d0e592.svg);
   border: none;
   background-color: #00ff0000;
 }
 
 .card4-more-button:hover {
   transition: background-image 0.5s;
-  background-image: url(./assets/images/button-more-over.d13d8c6f.svg);
+  background-image: url(./assets/images/icons/button-more-over.d13d8c6f.svg);
   cursor: pointer;
 }
 
 .card4-down-button {
   color: #ffffff;
-  background-image: url(./assets/images/bottom-direction.e1410d78.svg);
+  background-image: url(./assets/images/icons/bottom-direction.e1410d78.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   position: absolute;
@@ -650,7 +650,7 @@ header {
 }
 
 .left-button {
-  background-image: url(./assets/images/button-prev.8da624e6.svg);
+  background-image: url(./assets/images/icons/button-prev.8da624e6.svg);
   width: 58px;
   height: 58px;
   background-color: #00ff0000;
@@ -660,12 +660,12 @@ header {
 }
 
 .left-button:hover {
-  background-image: url(./assets/images/button-prev-over.b66ad111.svg);
+  background-image: url(./assets/images/icons/button-prev-over.b66ad111.svg);
   transition: background-image 0.4s;
 }
 
 .right-button {
-  background-image: url(./assets/images/button-next.8a4be8bb.svg);
+  background-image: url(./assets/images/icons/button-next.8a4be8bb.svg);
   width: 58px;
   height: 58px;
   background-color: #00ff0000;
@@ -674,7 +674,7 @@ header {
 }
 
 .right-button:hover {
-  background-image: url(./assets/images/button-next-over.c2841edf.svg);
+  background-image: url(./assets/images/icons/button-next-over.c2841edf.svg);
   transition: background-image 0.4s;
 }
 
@@ -709,7 +709,7 @@ header {
 }
 
 .ticket-list1-more-button {
-  background-image: url(/assets/images/button-more.62d0e592.svg);
+  background-image: url(/assets/images/icons/button-more.62d0e592.svg);
   width: 55px;
   height: 55px;
   background-color: #00ff0000;
@@ -731,7 +731,7 @@ header {
 
 .ticket-list1-text-wrap {
   padding-top: 166px;
-  background-image: url(./assets/images/ticket-icon.809361d9.svg);
+  background-image: url(./assets/images/icons/ticket-icon.809361d9.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -769,7 +769,7 @@ header {
 }
 
 .ticket-list2-more-button {
-  background-image: url(/assets/images/button-more.62d0e592.svg);
+  background-image: url(/assets/images/icons/button-more.62d0e592.svg);
   width: 55px;
   height: 55px;
   background-color: #00ff0000;
@@ -791,7 +791,7 @@ header {
 
 .ticket-list2-text-wrap {
   padding-top: 166px;
-  background-image: url(./assets/images/sale-icon.2d3b6fff.svg);
+  background-image: url(./assets/images/icons/sale-icon.2d3b6fff.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;

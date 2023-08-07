@@ -28,7 +28,7 @@ main section {
     margin: 0 auto;
     padding: 3rem 0 6rem;
 }
-[type='radio'] {
+.radio-button_display-none {
     display: none;
 }
 .common-title {
@@ -155,7 +155,7 @@ main section {
     align-items: center;
     justify-content: center;
     font-size: 0;
-    z-index: 100;
+    z-index: 5;
 }
 
 .swiper-button::after {
@@ -223,17 +223,17 @@ main section {
     position: relative;
 }
 .content-shopping-list ul:nth-of-type(2) {
-    z-index: -2;
+    
     position: absolute;
     top: 0;
 }
 .content-shopping-list ul:nth-of-type(3) {
-    z-index: -2;
+    
     position: absolute;
     top: 0;
 }
 .content-shopping-list ul:nth-of-type(4) {
-    z-index: -2;
+    
     position: absolute;
     top: 0;
 }
@@ -264,13 +264,13 @@ button.tab-button_selected {
 }
 
 .content-shopping-tab:has([id='shopping-radio2']:checked) ~ .content-shopping-inner div ul:nth-of-type(2) {
-    z-index: 99;
+    z-index: 3;
 }
 .content-shopping-tab:has([id='shopping-radio3']:checked) ~ .content-shopping-inner div ul:nth-of-type(3) {
-    z-index: 99;
+    z-index: 3;
 }
 .content-shopping-tab:has([id='shopping-radio4']:checked) ~ .content-shopping-inner div ul:nth-of-type(4) {
-    z-index: 99;
+    z-index: 3;
 }
 
 .swiper ul li > a:nth-of-type(1) {
@@ -295,7 +295,7 @@ button.tab-button_selected {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 4;
     width: 100%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -360,21 +360,17 @@ button.tab-button_selected {
     display: flex;
 }
 .content-tour-list ul:nth-of-type(1) {
-    z-index: 0;
     position: relative;
 }
 .content-tour-list ul:nth-of-type(2) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-tour-list ul:nth-of-type(3) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-tour-list ul:nth-of-type(4) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
@@ -459,21 +455,17 @@ button.tab-button_selected {
     display: flex;
 }
 .content-ticket-list ul:nth-of-type(1) {
-    z-index: 0;
     position: relative;
 }
 .content-ticket-list ul:nth-of-type(2) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-ticket-list ul:nth-of-type(3) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-ticket-list ul:nth-of-type(4) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
@@ -579,21 +571,17 @@ button.tab-button_selected {
     display: flex;
 }
 .content-live-list ul:nth-of-type(1) {
-    z-index: 0;
     position: relative;
 }
 .content-live-list ul:nth-of-type(2) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-live-list ul:nth-of-type(3) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-live-list ul:nth-of-type(4) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
@@ -775,21 +763,17 @@ button.tab-button_selected {
     display: flex;
 }
 .content-book-list ul:nth-of-type(1) {
-    z-index: 0;
     position: relative;
 }
 .content-book-list ul:nth-of-type(2) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-book-list ul:nth-of-type(3) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
 .content-book-list ul:nth-of-type(4) {
-    z-index: -2;
     position: absolute;
     top: 0;
 }
@@ -882,7 +866,6 @@ button.tab-button_selected {
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 1;
     display: flex;
     transition-property: transform;
     box-sizing: content-box;

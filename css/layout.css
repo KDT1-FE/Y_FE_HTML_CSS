@@ -24,6 +24,7 @@ header {
   display: block;
   line-height: 1.5;
   padding-right: 10px;
+  font-weight: lighter;
 }
 
 
@@ -45,7 +46,7 @@ header {
 }
 
 .header-menu .header-menu-item {
-  margin-right: 20px;
+  margin-right: 0.75vw;
   padding: 4px;
   cursor: pointer;
 }

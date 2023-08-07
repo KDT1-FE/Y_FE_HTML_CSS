@@ -131,7 +131,7 @@
 .grid-category .grid-item-title{
   position: absolute;
   padding: 20px;
-  color: #fffef2;
+  color:  var(--color-white);
   font-size: 24px;
   font-weight: 600;
   z-index: 2;
@@ -194,7 +194,7 @@
   width: 80px;
   height: 80px;
   background: #333;
-  color: #fffef2;
+  color:  var(--color-white);
   z-index: 1;
   cursor: pointer;
   outline: none;
@@ -278,7 +278,7 @@ width: fit-content;
 }
 
 .find-skin-type {
-  color: #fffef2;
+  color:  var(--color-white);
   background: url(https://www.aesop.com/u1nb1km7t5q7/3YaJbvUsAnHr9Wnb6GTU7m/9ce27fe81388b8726f41d3ce91bb2c77/Aesop_Healthy_Skin_Care_and_Support_2022_Web_Homepage_Primary_Consultant_Full_Bleed_Desktop_L_2880x1044px.jpg) center center / cover no-repeat;
   width: 100%;
   height: 0;
@@ -295,7 +295,7 @@ width: fit-content;
 
 .find-skin-type .section-sub-title {
   font-size: 30px;
-  color: #fffef2;
+  color:  var(--color-white);
   margin-bottom: 30px;
 }
 .find-skin-type .desc {
@@ -311,6 +311,8 @@ width: fit-content;
 
 .blend .title-wrap{
   padding-top: 80px;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .blend .title-add {
@@ -328,22 +330,23 @@ width: fit-content;
   padding-left: 80px;
   width: 40%;
 }
-.blend .flex-blend {
+.blend .grid-blend {
   margin-top: 60px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.blend .flex-item {
-  width: calc(100% / 3);
+.blend .grid-item {
+  /* width: calc(100% / 3); */
   padding: 40px 40px 65px;
   text-align: center;
   transition:  .3s cubic-bezier(.215,.61,.355,1);
   position: relative;
 }
 
-.blend .flex-item:hover {
+.blend .grid-item:hover {
   background-color: #f0efe1;
 }
 
-.blend .flex-item:hover .btn-more {
+.blend .grid-item:hover .btn-more {
   opacity: 1;
 }
 
@@ -429,6 +432,8 @@ width: fit-content;
 
 .articles {
   padding: 150px 20px 150px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .articles .flex-item {

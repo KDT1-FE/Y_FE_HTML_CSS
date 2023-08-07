@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+.hidden{
+  display: none;
+}
+
 .fade{
   opacity: 0;
   transition: .4s;

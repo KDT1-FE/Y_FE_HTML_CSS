@@ -70,7 +70,7 @@ var swiper4 = new Swiper('.movie__container', {
     },
 });
 
-var swiper5 = new Swiper('.mySwiper5', {
+var swiper5 = new Swiper('.live__container', {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 4,
@@ -84,8 +84,8 @@ var swiper5 = new Swiper('.mySwiper5', {
         clickable: true,
     },
     navigation: {
-        prevEl: '.left-btn-five',
-        nextEl: '.right-btn-five',
+        prevEl: '.live__button--left',
+        nextEl: '.live__button--right',
     },
 });
 

@@ -1,3 +1,5 @@
+$wrapper-z-index: 10;
+$button-z-index: 200;
 @mixin slider {
   position: relative;
   margin-bottom: 5.325vw;
@@ -11,7 +13,7 @@
   align-items: flex-end;
   max-width: 1060px;
   margin: 0 auto;
-  z-index: 10;
+  z-index: $wrapper-z-index;
 } // main-wrapper, sub-wrapper 사용
 @mixin text {
   position: relative;
@@ -48,10 +50,10 @@
   min-height: 36px;
   bottom: 2vw;
   padding: 0;
-  z-index: 200;
+  z-index: $button-z-index;
 }
 @mixin next {
-  z-index: 200;
+  z-index: $button-z-index;
   position: absolute;
   border-radius: 18px;
   border: 1px solid #e1e2e4;

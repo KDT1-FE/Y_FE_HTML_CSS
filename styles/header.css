@@ -56,23 +56,8 @@ header {
   background-color: transparent;
 }
 
-.header-search_span {
-  position: absolute;
-  left: 1.6rem;
-  top: 1.1rem;
-  display: block;
-  height: 2.6rem;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  color: #000;
-  cursor: text;
-  font-weight: 400;
-}
-
 .header-search_input::placeholder {
   position: absolute;
-  left: 1.6rem;
-  top: 1.1rem;
   display: block;
   height: 2.6rem;
   font-size: 1.6rem;

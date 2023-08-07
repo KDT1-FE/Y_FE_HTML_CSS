@@ -27,6 +27,10 @@
     overflow: hidden;
     overflow-x:scroll;
   }
+
+  .sub-nav::-webkit-scrollbar {
+    display: none;
+  }
   .sub-nav .selected {
     flex-shrink: 0;
     margin-left: 34px;
@@ -110,7 +114,7 @@
 
 @media screen and (max-width: 625px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
  .nav-wrap .nav-primary{
     display: none;

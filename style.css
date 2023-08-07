@@ -33,11 +33,6 @@
   font-weight: 300;
 }
 
-@font-face{
-  font-family: Noto Sans;
-  src: url('./static/font/Noto_Sans_KR/NotoSansKR-Thin.otf');
-  font-weight: 100;
-}
 
 @keyframes appear{
   from {
@@ -61,24 +56,13 @@
 }
 
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
+html, body, h1, h2, h3, h4, h5, h6{
+	margin: 0; 
 	padding: 0;
 	border: 0;
   word-break: keep-all;
 }
+
 body {
 	line-height: 1;
   font-family: TossFaceFont, Noto Sans;
@@ -161,26 +145,26 @@ a{
   white-space: nowrap;
 }
 
-.navbar_lan{
+.navbar_lang{
   display: flex;
   margin-left: 40px;
 }
-.navbar_lan li{
+.navbar_lang li{
   padding: 0 15px;
   white-space: nowrap;
 }
 
-.navbar_lan li:last-of-type{
+.navbar_lang li:last-of-type{
   margin-right: 200px;
 }
 
-.navbar_menu a, .navbar_lan li {
+.navbar_menu a, .navbar_lang li {
   font-size: 14px;
   line-height: 20px;
   color: rgb(78, 89, 104);
 }
 
-.navbar_lan li:last-of-type a{
+.navbar_lang li:last-of-type a{
   color: #b0b8c1;
 }
 

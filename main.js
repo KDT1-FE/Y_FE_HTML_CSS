@@ -1,24 +1,3 @@
-/* 
-
-코드리뷰하시는 멘토님께, 
-
-toss.im 홈페이지에서 특정 위치에 도달했을 경우, 
-순서대로 3~6개 정도 되는 요소를 시간간격을 두고 애니메이션과 함께 나타나는(opacity)
-효과들이 많았습니다.
-
-이 과정들을 순서대로 구현하다보니, setTimeout을 중첩하여 쌓아 나갔습니다.
-
-6개되는 요소들을 setTimeout으로 중첩하여 쌓다보니 indent가 6,7,8 과 같이
-터무니 없이 올라가 가독성이 떨어지고, 유지보수가 복잡해졌습니다.
-
-혹시나 Promise 객체를 이용하여 더 간단하게 만들 수 있을까요?
-
-아니더라도 컴팩트하고 간단한 코드를 추천해주실 수 있을까요?
-
-읽어주셔서 감사합니다.
-
-*/
-
 /* load나 resize, reset 시에 초기화 부분 */
 
 addEventListener('load',()=>{
@@ -33,7 +12,6 @@ addEventListener('reset',()=>{
 
 const initalize = ()=>{
     let windowHeight = window.outerHeight
-    //console.log('initialize', windowHeight)
 }
 
 /* intro 애니메이션 */
@@ -50,10 +28,13 @@ const initalize = ()=>{
 //     },400)
 // }
 
+const introWrap = document.querySelector('.intro_wrap')
+const introContainer = document.querySelector('.intro_container')
+
 setTimeout(()=>{
-    const introContainer = document.querySelector('.intro_container')
     introContainer.style.display="block"
-},400)
+}, 400)
+
 
 let windowHeight = window.innerHeight
 

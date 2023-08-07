@@ -1,10 +1,12 @@
 footer {
+  max-width: 1024px;
   margin: 0 auto;
-  align-items: center;
+  padding: 26px 8px;
+
   display: flex;
   flex-direction: column;
-  max-width: 1024px;
-  padding: 26px 8px;
+  align-items: center;
+
   text-align: center;
 }
 
@@ -16,9 +18,11 @@ footer {
 .footer-ul {
   font-size: 11px;
   line-height: 15px;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
   margin: 0 auto 15px;
   padding: 0;
 }
@@ -29,10 +33,13 @@ footer {
 
 .footer-select {
   border: 0;
+
   margin: 8px 0;
   padding: 0 26px;
+
   text-align: center;
   color: silver;
+
   background-color: rgba(255, 255, 255, 0);
 }
 

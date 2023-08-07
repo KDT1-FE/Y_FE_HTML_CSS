@@ -10,6 +10,7 @@
 .navigation {
   height: 70px;
   padding: 0 36px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,11 +30,13 @@
 .btn {
   margin: 5px;
   border-radius: 5px;
-  font-size: 18px;
+
   display: flex;
   align-items: center;
-  transition: all 0.2s ease 0s;
+
+  font-size: 18px;
   color: white;
+  transition: all 0.2s ease 0s;
 }
 
 .sign-up {

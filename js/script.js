@@ -89,7 +89,7 @@ var swiper5 = new Swiper('.live__container', {
     },
 });
 
-var swiper6 = new Swiper('.mySwiper6', {
+var swiper6 = new Swiper('.book__container', {
     slidesPerView: 5,
     spaceBetween: 30,
     slidesPerGroup: 5,
@@ -103,12 +103,12 @@ var swiper6 = new Swiper('.mySwiper6', {
         clickable: true,
     },
     navigation: {
-        prevEl: '.left-btn-six',
-        nextEl: '.right-btn-six',
+        prevEl: '.book__button--left',
+        nextEl: '.book__button--right',
     },
 });
 
-var swiper7 = new Swiper('.mySwiper7', {
+var swiper7 = new Swiper('.ad__container', {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 4,

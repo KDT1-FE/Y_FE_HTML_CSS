@@ -4,122 +4,71 @@
 ---------------------------------------
 */
 
-.bookBanner {
-    width: 130.4rem;
-    margin: 10rem auto;
-}
-
-.mySwiper6 {
-    position: relative;
-    overflow: hidden;
-    width: 130.4rem;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 0rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mySwiper6 .swiper-wrapper {
-    width: 100%;
-    height: 100%;
+.book__banner {
     display: flex;
-    box-sizing: content-box;
+    flex-direction: column;
+
+    width: 100%;
+    height: 90%;
+
     position: relative;
-    justify-content: space-between;
 }
 
-.mySwiper6 .swiper-wrapper .swiper-slide {
-    width: 231px;
-    height: 100%;
-    display: inline-flex;
-    box-sizing : border-box;
-    overflow: hidden;
-    padding-bottom: 2rem;
-}
-
-.mySwiper6 .swiper-wrapper .swiper-slide .element__image {
-    overflow: hidden;
-    position: relative;
-    width: inherit;
-    height: 334px;
-}
-
-
-.mySwiper6 > .swiper-wrapper .swiper-slide .element__image img {
+.book__container {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 0rem;
-}
-.mySwiper6 .element__info {
-    color: #111;
+
+    margin: 0 auto;
 }
 
-.mySwiper6 .element__info .book-name {
+.book__item--block {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-radius: 0;
+}
+
+.book__item--image-container {
+    width: 100%;
+    height: 70%;
+
+    border: 0.03rem solid gainsboro;
+    box-sizing: border-box;
     overflow: hidden;
-    word-break: break-all;
-    text-overflow: ellipsis;
+}
+
+.book__slide--image {
+    border-radius: 0;
+}
+
+.book__item--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+
+    padding: 1rem;
+
+    font-size: 1rem;
+}
+
+.book__item--name {
+    display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: 500;
+    overflow: hidden;
+
+    margin-bottom: 1rem;
 }
 
-.mySwiper6 .element__price {
-    font-size: 1.8rem;
-    margin-top: 0.4rem;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-.mySwiper6 .element__price .money {
-    font-size: 1.6rem;
-    font-weight: 400;
+.book__item--price {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
-.bookBanner .shopping__content {
-    width: auto;
-    position: relative;
-}
-
-.bookBanner .shopping__content .right-btn-six {
-    position: absolute;
-    right: 0;
-    z-index: 50;
-    top: 50%;
-    z-index: 31;
-    width: 4.8rem;
-    height: 4.8rem;
-    margin-top: -1.5rem;
-    transform: translateX(50%);
-    background: hsla(0, 0%, 100%, 0.9);
-    border: 0.1rem solid rgba(0,0,0,0.1);
-    box-shadow: 0 0 0.8rem rgba(0,0,0,.13);
-    align-items: center;
-    justify-content: center;
-    border-radius: 10rem;
-}
-
-.bookBanner .shopping__content .right-btn-six::before {
-    content: '다음';
-    color: transparent;
-    width: 3.8rem;
-    height: 4rem;
-    margin-left: 0.3rem;
-    background-image: url("../assets/image/right-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.bookBanner .shopping__bottom {
-    position: relative;
-}
-
-.bookBanner .shopping__bottom > button {
-    position: absolute;
-    bottom: -0.8rem;
+.book__item--unit {
+    font-size: 1.1rem;
+    font-weight: 300;
 }

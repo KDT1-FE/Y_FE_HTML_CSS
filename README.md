@@ -1,45 +1,67 @@
-[참고 내용]
+# Knotted Clone Coding 🍩 💛
 
-👀 자신이 원하는 사이트 레이아웃 클론
-원하는 사이트(페이지)를 자유롭게 선택하고 레이아웃을 클론 코딩하세요.
-평소에 도전해 보고 싶었거나 혹은 자신의 수준에 맞는 사이트(페이지)를 선택하세요.
-과제 수행 및 리뷰 기간은 별도 공지를 참고하세요!
+## ✍️ 기획 의도
 
-과제 수행 및 제출 방법
+- Knotted 홈페이지를 clone하며, 화면 구성의 기본적인 레이아웃을 익히기
+- 사용 목적에 따른 적절한 js 라이브러리를 가져와 사용하기
+- SEO를 고려해 시맨틱 태그를 최대한 활용하기
+- CSS Flex와 Grid 사용법 체화
 
-1. 현재 저장소를 로컬에 클론(Clone)합니다.
-2. 자신의 본명으로 브랜치를 생성합니다.(구분 가능하도록 본명을 꼭 파스칼케이스로 표시하세요, git branch KDT0_이름)
-3. 자신의 본명 브랜치에서 과제를 수행합니다.
-4. 과제 수행이 완료되면, 자신의 본명 브랜치를 원격 저장소에 푸시(Push)합니다.(main 브랜치에 푸시하지 않도록 꼭 주의하세요, git push origin KDT0_이름)
-5. 저장소에서 main 브랜치를 대상으로 Pull Request 생성하면, 과제 제출이 완료됩니다!(E.g, main <== KDT0_이름)
+## 🔗 링크
+
+- 참고 링크 : [Knotted](https://knotted-order.com/)
+- 클론 링크 : [my-Knotted](https://knotted.netlify.app/)
+
+## 👩‍💻 프로젝트 설명
+
+- HEADER
+
+  - `z-index:10` 와 `position:fixed` 를 이용해서 헤더를 항상 상단에 고정
+  - `hover`시 텍스트 색의 변화 및 요소 위치 변화
+  - `media query`를 이용해 스크린 `width`의 변화 감지
+  - PC 🖥️
+  - ![header_pc](https://github.com/noSPkeepgoing/TIL/assets/125979833/734b861f-0e91-4c05-9dd9-d4a8885f8c05)
+
+  - Mobile 📱
+    ![header_mb](https://github.com/noSPkeepgoing/TIL/assets/125979833/e0d0520a-3a7a-4c01-9d52-ae64d8ddf0b2)
+
+- FOOTER
+  - `hover`시 색상 변화
+  ![footer_pc](https://github.com/noSPkeepgoing/TIL/assets/125979833/1c4840ee-30c4-493d-9328-5eeb0dbcc310)
+- SECTION - Main Top Banner
+
+  - `swiper.js`를 이용한 자동 슬라이드 효과
+  - 무한 `loop` 와 `pagination`을 이용한 `UI/UX` 개선
+  - 스크린 넓이 `960px`를 기준으로 다른 이미지를 보임
+  - PC 🖥️
+    ![main_slider_pc](https://github.com/noSPkeepgoing/TIL/assets/125979833/230a57c9-cf4a-481f-a5f6-a7f6f1348e02)
+  - Mobile 📱
+    ![main_slide_mb](https://github.com/noSPkeepgoing/TIL/assets/125979833/5ba83f79-48c5-48ae-b030-8f2f0beb7de0)
+
+- SECTION - Best Menu
+
+  - `swiper.js`를 이용한 슬라이드 효과
+  - 사용자가 조작 가능한 `navigation button` 추가
+  - `transform: translateX`를 이용한 애니메이션 효과
+  - 이미지 `hover`시 `opacity` 변화
+  - PC 🖥️
+    ![best_menu_pc](https://github.com/noSPkeepgoing/TIL/assets/125979833/9b75f0a6-fe13-40e8-939d-f5465257ea44)
+  - Mobile 📱
+    ![best_menu_mb](https://github.com/noSPkeepgoing/TIL/assets/125979833/070616e9-5e15-4ad5-a8bf-bf6820c2583b)
+
+- SECTION - Instagram
+  - `grid`를 이용한 레이아웃 구성
+  - PC 🖥️
+      <img width="1459" alt="insta_grid_pc" src="https://github.com/noSPkeepgoing/TIL/assets/125979833/800ebdd0-e5f3-409e-817f-9af5cb4e778f">
+
+  - Mobile 📱
+     <img width="351" alt="insta_grid_mb" src="https://github.com/noSPkeepgoing/TIL/assets/125979833/86926306-eb2a-48d6-83ed-d22b73894ffe">
 
 
-- main 혹은 다른 사람의 브랜치로 절대 병합하지 않도록 주의하세요!
-- Pull Request에서 보이는 설명을 다른 사람들이 이해하기 쉽도록 꼼꼼하게 작성하세요!
-- Pull Request에서 과제 제출 후 절대 병합(Merge)하지 않도록 주의하세요!
-- 과제 수행 및 제출 과정에서 문제가 발생한 경우, 바로 담당 멘토나 강사에서 얘기하세요!
+## 👏 마무리
 
-필수 요구사항
+어렵지 않게 생각했었는데, 생각보다 오래 걸렸다.
 
-- 과제에 대한 설명을 포함한 README.md 파일을 제공하세요!
-- 과제 결과와 비교할 수 있는 실제 사이트(페이지)의 주소를 명시하세요!
-- 과정에서 사용한 프로젝트 폴더/파일이 모두 포함돼야 합니다, 일부 파일만 제출하지 마세요!
-- 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
+JS의 부재가 크게 느껴지면서도 생각보다 순수 CSS만으로도 다양한 기능을 충분히 구현할 수 있다는 것을 알게되어 흥미로웠다.
 
-선택 요구사항
-
-- < header >, < section > 등 시멘틱 태그를 최대한 활용해보세요.
-- 실제 사이트의 레거시 코드 활용보단 최신의 CSS Flex 혹은 Grid 등을 활용해보세요.
-- 부분적으로 BEM 방법론을 도입해보세요.
-- JS가 필요한 부분은 되도록 생략하되 이유를 명시해보세요.(CSS로 대체 가능한지 피드백이 있을 수 있겠죠?!)
-- JS가 필요한 부분 중 구현할 부분이 있다면 자유롭게 구현해보세요.(JS 과제가 아니니까 가볍게 구현하시길 추천해요)
-
-손쉬운 이미지 추출 방법
-
-사이트 클론에 필요한 이미지를 좀 더 쉽게 추출하기 위해서 Chrome 확장 프로그램인 Image Downloader를 사용하세요.
-
-1. 원하는 사이트 접속
-2. Image Downloader 확장 프로그램 실행
-3. 다운로드 원하는 이미지 선택
-4. 서브 폴더 이름(Save to subfolder) 명시
-5. 다운로드!
+이번 프로젝트를 기반으로 처음부터 요령 부리지 않고, 기초부터 차근차근 생각할 수 있는 사람으로 성장했으면 한다.

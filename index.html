@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knotted</title>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script type="module" defer src="./js/slide.js"></script>
+    <!-- description -->
+    <script type="module" defer src="./js/description.js"></script>
+    <!-- responsive header toggle -->
+    <script type="module" defer src="./js/app.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="inner">
+        <div class="logo"><a href="/"></a></div>
+        <button class="toggle"></button>
+        <nav class="navbar-box hide">
+          <ul class="navbar-box__tap">
+            <li><a href="#">RESERVATION</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">LOCATION</a></li>
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">PROPOSAL</a></li>
+            <li><a href="#">HELP</a></li>
+          </ul>
+          <ul class="navbar-box__icons">
+            <li>
+              <img class="icon" src="./images/icon_login.png" alt="LOGIN" />
+              <a href="#">LOGIN</a>
+            </li>
+            <li>
+              <img class="icon" src="./images/icon_mypage.png" alt="MY PAGE" />
+              <a href="#">MY&nbsp;PAGE</a>
+            </li>
+            <li>
+              <img class="icon" src="./images/icon_cart.png" alt="CART" />
+              <a href="#">CART</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN TOP BANNER -->
+    <section class="main swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <a href="#">
+            <img
+              src="./images/main_slide1.png"
+              alt="모코코 멜론 크림 도넛 세트"
+              class="pc"
+            />
+            <img
+              src="./images/main_slide1_mb.png"
+              alt="모코코 멜론 크림 도넛 세트"
+              class="mobile"
+            />
+          </a>
+        </li>
+        <li class="swiper-slide">
+          <a href="#">
+            <img
+              src="./images/main_slide2.png"
+              alt="노티드 베이커리 예약하러 가기"
+              class="pc"
+            />
+            <img
+              src="./images/main_slide2_mb.png"
+              alt="노티드 베이커리 예약하러 가기"
+              class="mobile"
+            />
+          </a>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- BEST MENU -->
+    <section class="menu">
+      <div class="inner">
+        <!-- description -->
+        <div class="menu-description">
+          <h3 class="title">OUR BEST MENU</h3>
+          <div class="description-group show">
+            <a href="javascirpt:void(0)" class="name-en">Milk Cream Donut</a>
+            <p class="name-ko">우유 생크림 도넛</p>
+            <div class="price">3,900</div>
+          </div>
+          <div class="description-group">
+            <a href="javascirpt:void(0)" class="name-en">
+              Classic Vanilla Donut
+            </a>
+            <p class="name-ko">클래식 바닐라 도넛</p>
+            <div class="price">3,500</div>
+          </div>
+          <div class="description-group">
+            <a href="javascirpt:void(0)" class="name-en">Earl Grey Donut </a>
+            <p class="name-ko">얼그레이 도넛</p>
+            <div class="price">3,500</div>
+          </div>
+          <div class="description-group">
+            <a href="javascirpt:void(0)" class="name-en">Choco pudding Donut</a>
+            <p class="name-ko">초코푸딩 도넛</p>
+            <div class="price">3,900</div>
+          </div>
+          <div class="description-group">
+            <a href="javascirpt:void(0)" class="name-en">Kaya Butter Donut</a>
+            <p class="name-ko">카야 버터 도넛</p>
+            <div class="price">3,900</div>
+          </div>
+        </div>
+
+        <!-- image -->
+        <div class="menu-image swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="javascirpt:void(0)">
+                <img src="./images/best_milk.jpeg" alt="우유 생크림 도넛" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="javascirpt:void(0)">
+                <img
+                  src="./images/best_classic.jpeg"
+                  alt="클래식 바닐라 도넛"
+                />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="javascirpt:void(0)">
+                <img src="./images/best_earlgrey.jpeg" alt="얼그레이 도넛" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="javascirpt:void(0)">
+                <img src="./images/best_choco.jpeg" alt="초코푸딩 도넛" />
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="javascirpt:void(0)">
+                <img src="./images/best_kaya.jpeg" alt="카야버터 도넛" />
+              </a>
+            </li>
+            <li class="swiper-slide"></li>
+            <li class="swiper-slide"></li>
+          </ul>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST GOODS -->
+    <section class="goods">
+      <div class="inner">
+        <h3 class="title">OUR BEST GOODS</h3>
+      </div>
+    </section>
+
+    <!-- EVENT -->
+    <section class="event">
+      <div class="inner">
+        <h3 class="title">EVENT</h3>
+        <ul class="event-image">
+          <li>
+            <a href="#">
+              <img src="./images/event.png" alt="썸머 레시피!" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="insta">
+      <div class="inner">
+        <h3 class="title">INSTAGRAM</h3>
+        <ul class="insta-image">
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_1.jpeg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_2.jpeg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_3.jpeg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_4.jpeg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_5.jpeg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_6.jpeg" alt="" />
+            </a>
+          </li>
+          <li class="pc">
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_7.jpeg" alt="" />
+            </a>
+          </li>
+          <li class="pc">
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_8.jpeg" alt="" />
+            </a>
+          </li>
+          <li class="pc">
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_9.jpeg" alt="" />
+            </a>
+          </li>
+          <li class="pc">
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_10.jpeg" alt="" />
+            </a>
+          </li>
+          <li class="pc">
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_11.jpeg" alt="" />
+            </a>
+          </li>
+          <li class="pc">
+            <a
+              target="_blank"
+              rel="noreferrer noindex"
+              href="https://www.instagram.com/cafeknotted/"
+            >
+              <img src="./images/insta_12.jpeg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+      <div>
+        <h3 class="title">Sign up newsletter</h3>
+        <p>
+          메일주소를 남겨주시면 회원가입 없이 <br />
+          노티드의 신제품, 이벤트 소식을 받아보실 수 있습니다.
+        </p>
+      </div>
+      <div class="newsletter-right">
+        <p class="mailbox">
+          <input type="text" />
+          <button type="submit">subscribe</button>
+        </p>
+        <p>
+          <input type="checkbox" id="newsletter" />
+          <label for="newsletter">개인정보 수집 및 이용에 동의합니다.</label>
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <ul class="board">
+          <li><a href="#">1:1문의</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">자주묻는질문</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">위치기반서비스이용약관</a></li>
+        </ul>
+        <ul class="info">
+          <li>회사명 : 노티드(주식회사 지에프에프지)</li>
+          <li>대표이사명 : 이준범</li>
+          <li>사업자등록번호 : 248-81-00620</li>
+          <li>통신판매업신고번호 : 2020-서울강남-02297</li>
+          <li>주소 : 서울특별시 강남구 도산대로51길 16</li>
+        </ul>
+        <p>Copyright &copy; 2021 Knotted. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

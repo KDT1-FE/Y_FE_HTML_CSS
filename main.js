@@ -35,7 +35,7 @@ const sidesImages = document.querySelectorAll(".sides img");
 
 // Function to change the image on hover
 function changeImageOnHover(event) {
-  const image = event.target;
+  const image = event.currentTarget;
   const altImageSrc = image.getAttribute("data-hover-src");
 
   if (altImageSrc) {

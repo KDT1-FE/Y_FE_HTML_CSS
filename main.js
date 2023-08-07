@@ -9,12 +9,11 @@ const blackLogo = document.querySelector(".header-inner-wrapper .black")
 const headerTextColor = document.querySelectorAll("header .navi-list .navi-text > a span")
 const headerRightTextColor = document.querySelector(".header-right-area .right-element")
 const headerBorderColor = document.querySelector(".header-inner-wrapper")
-let isMouseOver = false;
-
 
 hovermenus.forEach(item => {
   //마우스 올렸을 때 헤더 변화 
   item.addEventListener('mouseover',function(){
+    let isMouseOver = false;
     isMouseOver = true;
     if(isMouseOver){
       gsap.to(whiteLogo, 0, {display:'none'})
@@ -34,13 +33,6 @@ hovermenus.forEach(item => {
 //헤더 스크롤 이벤트
 window.addEventListener('scroll',_.throttle(function(){
     if(window.scrollY>=200){
-      gsap.to(whiteLogo, 0, {display:'none'})
-      gsap.to(blackLogo, 0, {display:'block'})
-      gsap.to(headerBg, .1, {backgroundColor:'white'})
-      gsap.to(headerTextColor, .1, {color:'black'})
-      gsap.to(headerRightTextColor, .1, {color:'black'})
-      gsap.to(headerBorderColor, .1, {borderBottomColor:'black'})
-    }else if(isMouseOver){
       gsap.to(whiteLogo, 0, {display:'none'})
       gsap.to(blackLogo, 0, {display:'block'})
       gsap.to(headerBg, .1, {backgroundColor:'white'})

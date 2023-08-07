@@ -6,7 +6,7 @@ footer {
     background-color: #fff;
     box-sizing: border-box;
 }
-.footer-footerPolicy {
+.footer-policy {
     max-width: none;
     height: 5rem;
     padding: 0;
@@ -16,7 +16,7 @@ footer {
     block-size: border-box;
     text-align: center;
 }
-.footer-policyList {
+.footer-policy-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@ footer {
     margin: 0 auto;
 }
 
-.footer-policyList > li::before {
+.footer-policy-list > li::before {
     display: inline-block;
     position: absolute;
     content: '';
@@ -39,7 +39,7 @@ footer {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.footer-policyList > li {
+.footer-policy-list > li {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -48,8 +48,8 @@ footer {
     padding: 0 3.1rem;
     line-height: 1.7rem;
 }
-.footer-policyList > li button,
-.footer-policyList > li a {
+.footer-policy-list > li button,
+.footer-policy-list > li a {
     font-size: 1.3rem;
     line-height: 1.6rem;
     vertical-align: middle;
@@ -57,7 +57,7 @@ footer {
     color: #333;
     cursor: pointer;
 }
-.footer-policyList > li button:after {
+.footer-policy-list > li button:after {
     content: '';
     display: inline-block;
     width: 0.8rem;
@@ -66,13 +66,13 @@ footer {
     background: url(/assets/icons/arrow_pc.svg) no-repeat 50%;
     vertical-align: 0.1rem;
 }
-.footer-policyList > li:first-child::before {
+.footer-policy-list > li:first-child::before {
     display: none;
 }
-.footer-policyList > li:first-child {
+.footer-policy-list > li:first-child {
     padding-left: 0;
 }
-.footer-policyList > li:nth-of-type(3) > a {
+.footer-policy-list > li:nth-of-type(3) > a {
     font-weight: 700;
 }
 
@@ -85,7 +85,7 @@ footer {
     font-size: 1.1rem;
 }
 
-.footer-footerInfoWrapper {
+.footer-info-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -95,19 +95,19 @@ footer {
     box-sizing: border-box;
 }
 
-.footer-footerInfoWrapper > div:first-of-type {
+.footer-info-wrapper > div:first-of-type {
     padding-right: 2.1rem;
 }
 
-.footer-footerInfoWrapper > div:last-of-type {
+.footer-info-wrapper > div:last-of-type {
     padding-left: 21px;
 }
 
-.footer-footerInfoWrapper > div:last-of-type ul li {
+.footer-info-wrapper > div:last-of-type ul li {
     display: block;
 }
 
-.footer-footerInfoWrapper div:nth-of-type(2)::before {
+.footer-info-wrapper div:nth-of-type(2)::before {
     content: '';
     display: block;
     position: absolute;
@@ -118,13 +118,13 @@ footer {
     margin-left: -0.05rem;
     background-color: rgba(0, 0, 0, 0.01);
 }
-a.footer-infoLink {
+a.footer-info-link {
     color: #4a95ff;
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
 }
 
-.footer-footerInfo {
+.footer-info {
     display: flex;
     width: 50%;
     margin: 0;
@@ -132,7 +132,7 @@ a.footer-infoLink {
     overflow: hidden;
 }
 
-.footer-footerInfo > h2 {
+.footer-info > h2 {
     display: block;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -144,8 +144,8 @@ a.footer-infoLink {
     white-space: nowrap;
 }
 
-.footer-footerInfo_list,
-.footer-footerInfo_tel {
+.footer-info-list,
+.footer-info_tel {
     max-width: none;
     margin: 0;
     padding: 0;
@@ -154,16 +154,16 @@ a.footer-infoLink {
     text-align: left;
     line-height: 1.7rem;
 }
-.footer-footerInfo_list li {
+.footer-info-list li {
     display: inline-block;
 }
 
-.footer-footerInfo_tel div:first-child {
+.footer-info_tel div:first-child {
     display: flex;
     margin-top: 1rem;
 }
 
-.footer-footerInfo_tel h3 {
+.footer-info_tel h3 {
     margin-right: 1rem;
     font-size: 1.2rem;
     line-height: 1.7rem;
@@ -171,11 +171,11 @@ a.footer-infoLink {
     color: #111;
 }
 
-.footer-footerInfo_noColorLink {
+.footer-info-link_no-color {
     color: #666;
 }
 
-.footer-footerInfo-customerCenter div a:nth-of-type(2)::before {
+.footer-info-customer-center div a:nth-of-type(2)::before {
     content: '';
     display: inline-block;
     width: 0.1rem;
@@ -183,7 +183,7 @@ a.footer-infoLink {
     margin: 0 0.6rem;
     background: #666;
 }
-.footer-footerInfo_tel_bar::after {
+.footer-info_tel-bar::after {
     content: '';
     display: inline-block;
     width: 0.1rem;
@@ -191,14 +191,14 @@ a.footer-infoLink {
     margin: 0 0.4rem;
     background: rgba(0, 0, 0, 0.3);
 }
-.footer-footerInfo_notice {
+.footer-info-notice {
     display: block;
     max-width: none;
     text-align: left;
     margin: 1rem 0 0;
     font-size: 1.1rem;
 }
-.footer-footerInfo_notice p {
+.footer-info-notice p {
     font-size: 1.1rem;
     line-height: 1.8rem;
     color: hsla(0, 0%, 7%, 0.4);

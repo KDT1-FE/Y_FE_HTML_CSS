@@ -1,17 +1,17 @@
 @media (width <= 1024px) {
-    .commonTitle h2 {
+    .common-title h2 {
         font-size: 2rem;
         font-weight: 700;
         line-height: 2.4rem;
     }
-    .commonTitle p {
+    .common-title p {
         margin-top: 0.2rem;
         font-size: 1.5rem;
         line-height: 1.8rem;
         color: hsla(0, 0%, 7%, 0.5);
     }
-    .commonTabList button,
-    .commonTabList a {
+    .common-tab-list button,
+    .common-tab-list a {
         height: 3.4rem;
         line-height: 3.4rem;
         padding: 0 1.4rem;
@@ -34,44 +34,44 @@ main section {
 [type='radio'] {
     display: none;
 }
-.commonTitle {
+.common-title {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.commonTitle h2 {
+.common-title h2 {
     font-size: 2.8rem;
     line-height: 3.3rem;
     font-weight: 700;
 }
-.commonTitle p {
+.common-title p {
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin-top: 0.2rem;
     color: hsla(0, 0%, 7%, 0.5);
 }
-.commonItemInfo {
+.common-item-info {
     font-family: Pretendard;
 }
 
-.commonPrice {
+.common-price {
     font-size: 2rem;
     line-height: 2.4rem;
     font-weight: 700;
 }
-.commonSale {
+.common-sale {
     margin-right: 0.2rem;
     color: #ef3e43;
 }
-.commonWon {
+.common-money_won {
     color: #333;
     font-size: 1.8rem;
     font-weight: 400;
 }
-.commonTabWrapper {
+.common-tab-wrapper {
     text-align: center;
 }
-.commonTabList {
+.common-tab-list {
     display: inline-block;
     padding: 0 2rem;
     margin: 0 auto;
@@ -79,13 +79,13 @@ main section {
     box-sizing: border-box;
     overflow: hidden;
 }
-.commonInner {
+.common-inner {
     position: relative;
 }
-.commonLink {
+.common-link {
     text-align: center;
 }
-.commonItemName {
+.common-item-name {
     margin-top: 0.6rem;
     font-size: 1.5rem;
     line-height: 1.8rem;
@@ -96,8 +96,8 @@ main section {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.commonTabList button,
-.commonTabList a {
+.common-tab-list button,
+.common-tab-list a {
     height: 4.4rem;
     line-height: 4.4rem;
     padding: 0 2rem;
@@ -110,7 +110,7 @@ main section {
     background-color: #fff;
     color: #111;
 }
-.commonLink a {
+.common-link a {
     display: inline-block;
     width: auto;
     height: 5.6rem;
@@ -125,16 +125,16 @@ main section {
     text-align: center;
     font-weight: 700;
 }
-.content-today-sectionInner {
+.content-today {
     position: relative;
 }
 
-.content-today-bannerList {
+.content-today-banner-list {
     display: flex;
     overflow: hidden;
 }
 
-.content-today-bannerList ul {
+.content-today-banner-list ul {
     position: relative;
     width: 100%;
     height: 100%;
@@ -149,16 +149,16 @@ main section {
     animation-iteration-count: infinite;
 }
 
-.content-today-imagelist li {
+.content-today-image-list li {
     margin-right: 24px;
 }
 
-.content-today-imagelist li img {
+.content-today-image-list li img {
     max-width: 62.8rem;
     border-radius: 1.4rem;
 }
 
-.swiperBtn {
+.swiper-button {
     display: flex;
     position: absolute;
     top: 50%;
@@ -177,38 +177,38 @@ main section {
     z-index: 100;
 }
 
-.swiperBtn::after {
+.swiper-button::after {
     content: '';
     width: 1.8rem;
     height: 2.8rem;
     background: url(/assets/icons/slider_arrow.svg) no-repeat 50%;
 }
 
-.content-today-sectionInner button:nth-of-type(1):after {
+.content-today button:nth-of-type(1):after {
     transform: rotate(180deg);
 }
 
-.content-today-sectionInner button:nth-of-type(1) {
+.content-today button:nth-of-type(1) {
     left: -2.3rem;
 }
 
-.content-today-sectionInner button:nth-of-type(2) {
+.content-today button:nth-of-type(2) {
     right: -2.3rem;
 }
 
-.commonTabList ul {
+.common-tab-list ul {
     height: 44px;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.commonTabList li {
+.common-tab-list li {
     display: inline-block;
     width: auto;
     margin-right: 0.5rem;
 }
 
-.commonTabList ul li label {
+.common-tab-list ul li label {
     cursor: pointer;
 }
 
@@ -230,7 +230,7 @@ main section {
     margin-right: 5px;
 }
 
-.commonLink span::after {
+.common-link span::after {
     content: '';
     display: inline-block;
     width: 0.7rem;
@@ -273,7 +273,7 @@ main section {
     margin-right: 0;
 }
 
-button.tabButton-selected {
+button.tab-button_selected {
     background-color: #333;
     color: #fff;
     text-shadow: 0.025rem 0 0.01rem, -0.025rem 0 0.01rem;
@@ -285,7 +285,7 @@ button.tabButton-selected {
     text-shadow: 0.025rem 0 0.01rem, -0.025rem 0 0.01rem;
 }
 
-.commonTabList button[aria-selected='true'] {
+.common-tab-list button[aria-selected='true'] {
     background-color: #333;
     color: #fff;
     text-shadow: 0.025rem 0 0.01rem, -0.025rem 0 0.01rem;
@@ -375,7 +375,7 @@ button.tabButton-selected {
     height: 10.6rem;
     box-sizing: border-box;
 }
-.content-shopping-inner .content-shopping_swiperBtn {
+.content-shopping-inner .content-shopping_swiper-button {
     top: 180px;
     right: -23px;
 }
@@ -446,7 +446,7 @@ button.tabButton-selected {
     position: relative;
     padding: 2.3rem 2rem 1.8rem;
 }
-.content-tour-inner .content-tour_swiperBtn {
+.content-tour-inner .content-tour_swiper-button {
     bottom: 210px;
     right: -23px;
 }
@@ -468,7 +468,7 @@ button.tabButton-selected {
     font-weight: 700;
 }
 
-.commonItemBenefit {
+.common-item-benefit {
     font-size: 1.5rem;
     line-height: 1.8rem;
     width: 100%;
@@ -478,7 +478,7 @@ button.tabButton-selected {
     color: #1769ff;
 }
 
-.commonItemName2 {
+.common-item-name2 {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -550,7 +550,7 @@ button.tabButton-selected {
     padding: 2.3rem 2rem 1.8rem;
 }
 
-.content-ticket_ticketName {
+.content-ticket_ticket-name {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.2rem;
@@ -563,7 +563,7 @@ button.tabButton-selected {
     color: #111;
 }
 
-.content-ticket_ticketPlace {
+.content-ticket_ticket-place {
     margin: 0.7rem 0;
     font-size: 1.5rem;
     line-height: 1.8rem;
@@ -574,7 +574,7 @@ button.tabButton-selected {
     color: #666;
 }
 
-.content-ticket_ticketDate {
+.content-ticket_ticket-date {
     font-size: 1.4rem;
     line-height: 1.7rem;
     width: 100%;
@@ -585,12 +585,12 @@ button.tabButton-selected {
 
 }
 
-.content-ticket_ticketBadge {
+.content-ticket_ticket-badge {
     display: flex;
     flex-flow: row wrap;
     margin-top: 0.7rem;
 }
-.ticketBadge {
+.ticket-badge {
     height: 2.4rem;
     padding: 0 0.8rem;
     line-height: 2.4rem;
@@ -599,11 +599,11 @@ button.tabButton-selected {
     border: 0.1rem solid;
     border-radius: 0.3rem;
 }
-.ticketBadge_blue {
+.ticket-badge_blue {
     border-color: rgba(74, 149, 255, 0.3);
     color: #4a95ff;
 }
-.ticketBadge_red {
+.ticket-badge_red {
     border-color: rgba(239, 62, 67, 0.3);
     color: #ef3e43;
 }
@@ -688,7 +688,7 @@ button.tabButton-selected {
         linear-gradient(180deg, transparent 56.75%, rgba(0, 0, 0, 0.5) 87.59%);
 }
 
-.content-live-itemInfo {
+.content-live-item-info {
     position: absolute;
     left: 0;
     top: 2rem;
@@ -698,7 +698,7 @@ button.tabButton-selected {
     z-index: 2;
 }
 
-.content-live-itemInfo .live_itemBadge {
+.content-live-item-info .live_item-badge {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -710,7 +710,7 @@ button.tabButton-selected {
     border-radius: 1.6rem;
     font-weight: 700;
 }
-.content-live-itemInfo .live_itemName {
+.content-live-item-info .live_item-name {
     display: -webkit-box;
     overflow: hidden;
     word-break: break-all;
@@ -723,7 +723,7 @@ button.tabButton-selected {
     font-weight: 700;
     text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
-.content-live-itemSoonInfo {
+.content-live-item-soon {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -733,7 +733,7 @@ button.tabButton-selected {
     text-align: center;
     top: 0;
 }
-.content-live-itemSoonInfoInner {
+.content-live-item-soon-text {
     color: #fff;
     z-index: 1;
 }
@@ -747,7 +747,7 @@ button.tabButton-selected {
     font-size: 5rem;
     line-height: 6rem;
 }
-.content-live-TvProduct {
+.content-live-tv-product {
     position: absolute;
     left: 0;
     bottom: 2rem;
@@ -757,16 +757,16 @@ button.tabButton-selected {
     box-sizing: border-box;
     z-index: 1;
 }
-.content-live-TvProduct a::before {
+.content-live-tv-product a::before {
     display: none;
 }
-.content-live-TvProduct a {
+.content-live-tv-product a {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     height: 100%;
 }
-.content-live-TvProduct_img {
+.content-live-tv-product_img {
     position: absolute;
     left: 2rem;
     top: 0;
@@ -776,7 +776,7 @@ button.tabButton-selected {
     overflow: hidden;
     background-color: #fff;
 }
-.content-live-TvProduct_img img {
+.content-live-tv-product_img img {
     position: absolute;
     height: 100%;
     top: 0;
@@ -788,11 +788,11 @@ button.tabButton-selected {
     transform: translateX(-50%);
     object-fit: cover;
 }
-.content-live-TvProduct_info {
+.content-live-tv-product_info {
     width: calc(100% - 6.4rem - 1.2rem);
     position: relative;
 }
-.content-live-TvProduct_name {
+.content-live-tv-product_name {
     display: -webkit-box;
     overflow: hidden;
     word-break: break-all;
@@ -808,7 +808,7 @@ button.tabButton-selected {
     color: #fff;
     box-sizing: border-box;
 }
-.content-live-TvProduct_price {
+.content-live-tv-product_price {
     position: absolute;
     left: 0;
     bottom: 0.7rem;
@@ -892,7 +892,7 @@ button.tabButton-selected {
 .content-book-info {
     text-align: center;
 }
-.bookName {
+.book-name {
     display: -webkit-box;
     overflow: hidden;
     word-break: break-all;
@@ -903,40 +903,40 @@ button.tabButton-selected {
     line-height: 1.8rem;
     color: #111;
 }
-.bookPrice {
+.book-price {
     margin-top: 0.4rem;
 }
 
-.content-event-sectionInner {
+.content-event {
     position: relative;
 }
 
-.content-event-bannerList {
+.content-event-banner-list {
     display: flex;
     overflow: hidden;
 }
 
-.content-event-imagelist li {
+.content-event-image-list li {
     margin-right: 24px;
 }
 
-.content-event-imagelist li img {
+.content-event-image-list li img {
     max-width: 30rem;
     border-radius: 3.4rem;
 }
-.content-event-sectionInner button:nth-of-type(1):after {
+.content-event button:nth-of-type(1):after {
     transform: rotate(180deg);
 }
 
-.content-event-sectionInner button:nth-of-type(1) {
+.content-event button:nth-of-type(1) {
     left: -2.3rem;
 }
 
-.content-event-sectionInner button:nth-of-type(2) {
+.content-event button:nth-of-type(2) {
     right: -2.3rem;
 }
 
-.content-event-bannerList ul {
+.content-event-banner-list ul {
     position: relative;
     width: 100%;
     height: 100%;
@@ -947,16 +947,16 @@ button.tabButton-selected {
     animation: autoSwiper2 20s infinite;
 }
 
-.content-ticket_swiperBtn {
+.content-ticket_swiper-button {
     top: 230px;
     right: -23px;
 }
-.content-book_swiperBtn {
+.content-book_swiper-button {
     bottom: 210px;
     right: 0;
 }
 
-.commonPrice em {
+.common-price em {
     color: #111;
 }
 

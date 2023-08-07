@@ -60,7 +60,9 @@ function reorganizeCarouselWrapper(direction, items) {
 // 메인 슬라이드 translate 함수
 function translateContainer(direction) {
   topBannerItems.style.transitionDuration = "500ms";
-  let information = topBannerItems.children[3].firstElementChild;
+  let information =
+    topBannerItems.children[topBannerItems.childElementCount / 2]
+      .firstElementChild;
   information.style.visibility = "hidden";
   information.style.opacity = 0;
   if (direction === next) {
@@ -77,8 +79,10 @@ function reorganizeEl(direction) {
   topBannerItems.removeAttribute("style");
   let information =
     direction === prev
-      ? topBannerItems.children[2].firstElementChild
-      : topBannerItems.children[4].firstElementChild;
+      ? topBannerItems.children[topBannerItems.childElementCount / 2 - 1]
+          .firstElementChild
+      : topBannerItems.children[topBannerItems.childElementCount / 2 + 1]
+          .firstElementChild;
   information.style.opacity = 1;
   information.style.visibility = "visible";
   direction === prev

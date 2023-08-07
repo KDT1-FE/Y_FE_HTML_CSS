@@ -278,7 +278,6 @@ body {
 .review__card {
     height: 500px;
     display: block;
-    float: left;
     width: calc(100%/4 - 30px);
     box-sizing: border-box;
 }
@@ -314,7 +313,8 @@ body {
     overflow: hidden;
 }
 .review__card__img > img {
-    height: auto;
+    width: 100%;
+    height: 260px;
     object-fit: cover;
     cursor: pointer;
 }
@@ -422,7 +422,7 @@ body {
     margin: 2px 0 0 0;
 }
 .review__product__dt{
-    display: inline-block;
+    display: flex;
     justify-content: space-between;
     font-size: 13px;
     font-weight: bold;
@@ -431,7 +431,6 @@ body {
 }
 .review__product__title {
     display: inline-block;
-    float: left;
     width: 91px;
     margin: 0;
     font-size: 13px;
@@ -444,7 +443,6 @@ body {
 .review__product__likes {
     position: relative;
     display: inline-block;
-    float: left;
     width: 53px;
     padding: 0 20px 0 0;
     text-align: right;

@@ -1,3 +1,7 @@
+html div span a h3 {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 .my-slides {
   display: none;
 }
@@ -25,7 +29,6 @@
 }
 
 .txtArea strong {
-  font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
   color: #fff;
   font-size: 5em;
@@ -33,7 +36,6 @@
 }
 
 .txtArea span {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 18px;
   color: #fff;
   margin-top: 30px;
@@ -42,7 +44,6 @@
 }
 
 .txtArea a {
-  font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   font-size: 1em;
   font-weight: 700;
@@ -53,7 +54,6 @@
 
 .my-slides:nth-child(2) strong,
 .my-slides:nth-child(3) strong {
-  font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
   color: #212121;
   font-size: 5em;
@@ -62,7 +62,6 @@
 
 .my-slides:nth-child(2) span,
 .my-slides:nth-child(3) span {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 18px;
   color: #212121;
   margin-top: 30px;
@@ -72,7 +71,6 @@
 
 .my-slides:nth-child(2) a,
 .my-slides:nth-child(3) a {
-  font-family: "Noto Sans KR", sans-serif;
   color: #212121;
   font-size: 1em;
   font-weight: 700;
@@ -108,7 +106,6 @@
   right: 3%;
   padding: 15px;
   border-radius: 20px;
-  font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   background-color: rgba(92, 92, 92, 0.2);
   font-size: 20px;
@@ -215,12 +212,12 @@
 }
 
 .header_wrap .menu_bar .menu_center li span a {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
   letter-spacing: 2px;
   line-height: 30px;
   color: #fff;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .header_wrap .menu_bar .menu_center:hover li span a {
@@ -271,7 +268,6 @@
 }
 
 .header_wrap .menu_bar .menu_center li a {
-  font-family: "Noto Sans KR", sans-serif;
   color: #242424;
   text-decoration: none;
   font-size: 14px;
@@ -360,7 +356,6 @@
 }
 
 .sidebar ul li a {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
@@ -396,7 +391,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 20px;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   color: #ea094b;
   background-color: #fff;
@@ -421,7 +415,6 @@
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .find a:hover {
@@ -491,7 +484,6 @@
 
 .notice_swiper .change_outer .element {
   display: block;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
 }
 
@@ -547,7 +539,6 @@
 }
 
 .footer_wrap .events .event1 h3 {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 4em;
   letter-spacing: -4px;
   margin-left: 50px;
@@ -557,7 +548,6 @@
 }
 
 .footer_wrap .events .event2 h3 {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 4em;
   letter-spacing: -4px;
   margin-left: 30px;
@@ -567,14 +557,12 @@
 }
 
 .footer_wrap .events .event1 span {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
   margin-left: 50px;
   color: #484848;
 }
 
 .footer_wrap .events .event2 span {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
   margin-left: 30px;
   color: #e6e6e6;
@@ -653,7 +641,6 @@
 }
 
 .footer_wrap .utils .util_left a {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 13px;
   margin-right: 20px;
   color: #fff;
@@ -671,7 +658,6 @@
 }
 
 .footer_wrap .utils .util_left .biz {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 12px;
   margin-top: 30px;
   color: #c0c0c0;

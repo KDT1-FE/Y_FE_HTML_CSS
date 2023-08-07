@@ -53,26 +53,23 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.footer-bottom .section1 {
+.footer-bottom .section1,
+.footer-bottom .section2,
+.footer-bottom .section3 {
   display: flex;
-  justify-content: left;
   align-items: center;
+}
+.footer-bottom .section1 {
   font-size: 12px;
   letter-spacing: 0.2px;
   color: #4a4a4f;
 }
-.footer-bottom .section2 {
-  display: flex;
+.footer-bottom .section2,
+.footer-bottom .section3 {
   justify-content: center;
-  align-items: center;
 }
 .footer-bottom .section2 .logo {
   width: 50px;
   height: 50px;
   cursor: pointer;
-}
-.footer-bottom .section3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -47,47 +47,40 @@ body {
     cursor: pointer;
 }
 
-.swiper-button-next {
+.swiper__button__prev,
+.swiper__button__next {
     position: absolute;
-    padding: 400px 0 0 53px;
     width: 250px;
     height: 385px;
+    padding-top: 450px;
     background-color: rgba(0, 0, 0, 0.001);
+    border: none;
     z-index: 1;
 }
 .swiper__button__prev {
-    position: absolute;
-    padding: 400px 0 0 53px;
-    width: 250px;
-    height: 385px;
-    background-color: rgba(0, 0, 0, 0.001);
-    z-index: 1;
+    padding-left: 50px;
+    left: 50px;
 }
 .swiper__button__next {
-    position: absolute;
-    padding: 400px 53px 0 0;
-    width: 250px;
-    height: 385px;
-    text-align: right;
-    background-color: rgba(0, 0, 0, 0.001);
-    right: 0;
-    z-index: 1;
+    padding-right: 50px;
+    right: 50px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 54px;
+    height: 54px;
+    background-position: center;
+    border-radius: 50%;
+    border: none;
 }
 .swiper-button-prev{
     background: url(../assets/icons/slide_l.png) no-repeat;
-    width: 54px;
-    height: 54px;
-    background-position: center;
-    border-radius: 50%;
 }
 .swiper-button-next{
     background: url(../assets/icons/slide_r.png) no-repeat;
-    width: 54px;
-    height: 54px;
-    background-position: center;
-    border-radius: 50%;
-    top: calc(50% - 195px);
 }
+
 
 .swiper-button-prev::after,
 .swiper-button-next::after {

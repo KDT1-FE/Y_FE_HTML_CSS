@@ -1,0 +1,50 @@
+.snappin-box-text {
+  max-width: 400px;
+
+  position: absolute;
+  top: 14%;
+
+  text-align: center;
+
+  &:first-child h2 {
+    color: $black;
+  }
+
+  h2 {
+    font-size: 42px;
+
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: $white;
+
+    animation: {
+      name: fadeInUp;
+      delay: 1s;
+      duration: 1s;
+      fill-mode: both;
+    }
+  }
+
+  &:first-child p {
+    color: $black;
+  }
+
+  p {
+    padding: 7px 0;
+
+    font-size: 14px;
+    color: $white;
+
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  a {
+    text: {
+      decoration: underline;
+      underline-position: under;
+    }
+  }
+}

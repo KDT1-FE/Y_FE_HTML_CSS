@@ -4,13 +4,12 @@
 ---------------------------------------
 */
 
-
 .liveBanner {
     width: 130.4rem;
     margin: 6rem auto;
 }
 
-.liveBanner .shopping__title .live-img{
+.liveBanner .shopping__title .live-img {
     width: 16rem;
 }
 
@@ -59,7 +58,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.4) 18.65%, transparent 39.75%), linear-gradient(180deg, transparent 56.75%, rgba(0,0,0,0.5) 87.59%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 18.65%, transparent 39.75%), linear-gradient(180deg, transparent 56.75%, rgba(0, 0, 0, 0.5) 87.59%);
 }
 
 .mySwiper5 > .swiper-wrapper > .swiper-slide img {
@@ -87,7 +86,7 @@
     height: 100%;
     display: flex;
     color: #fff;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -117,7 +116,7 @@
     font-size: 1.3rem;
     line-height: 3.2rem;
     color: #fff;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1.6rem;
     font-weight: 700;
 }
@@ -128,7 +127,7 @@
     text-align: start;
     color: #fff;
     font-weight: 700;
-    text-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+    text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
 .mySwiper5 .live__bottom--info {
@@ -180,8 +179,8 @@
     position: absolute;
     display: flex;
     top: 3.9rem;
-    font-size : 1.5rem;
-    line-height: 2.0rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
 }
 
@@ -215,7 +214,6 @@
     height: 4rem;
     transform: scaleX(-1);
     margin-bottom: 0.7rem;
-
 }
 
 .up-sit {
@@ -253,8 +251,8 @@
     margin-top: -1.5rem;
     transform: translateX(50%);
     background: hsla(0, 0%, 100%, 0.9);
-    border: 0.1rem solid rgba(0,0,0,0.1);
-    box-shadow: 0 0 0.8rem rgba(0,0,0,.13);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
     align-items: center;
     justify-content: center;
     border-radius: 10rem;
@@ -266,7 +264,7 @@
     width: 3.8rem;
     height: 4rem;
     margin-left: 0.3rem;
-    background-image: url("../assets/image/right-arrow.svg");
+    background-image: url('../assets/image/right-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

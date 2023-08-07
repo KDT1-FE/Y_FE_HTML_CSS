@@ -11,12 +11,12 @@ var swiper = new Swiper('.event__container', {
         clickable: true,
     },
     navigation: {
-        prevEl: '.left-btn',
-        nextEl: '.right-btn',
+        prevEl: '.event__button--left',
+        nextEl: '.event__button--right',
     },
 });
 
-var swiper2 = new Swiper('.mySwiper2', {
+var swiper2 = new Swiper('.shopping__container', {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 4,

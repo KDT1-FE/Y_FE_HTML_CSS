@@ -62,6 +62,9 @@ input:focus {
     outline: none;
 }
 
+/* ---------------------------------------
+            SWIPER CSS
+--------------------------------------- */
 .main__wrapper {
     width: 75%;
 
@@ -73,6 +76,82 @@ input:focus {
     background-position: center;
     background-size: contain;
     cursor: pointer;
+}
+
+.swiper-container {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+}
+
+.slide__image {
+    width: 100%;
+    border-radius: 0.7rem;
+    object-fit: cover;
+}
+.left-btn {
+    width: 3rem;
+    height: 3rem;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translate(-50%, -50%) rotateY(180deg);
+
+    border-radius: 10rem;
+    background: hsla(0, 0%, 100%, 0.8);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+}
+
+.left-btn::before {
+    width: 0.8rem;
+    height: 0.5rem;
+
+    content: '다음';
+    color: transparent;
+
+    background-image: url('../assets/image/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.right-btn {
+    width: 3rem;
+    height: 3rem;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translate(50%, -50%);
+
+    border-radius: 10rem;
+    background: hsla(0, 0%, 100%, 0.8);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+}
+
+.right-btn::before {
+    width: 0.8rem;
+    height: 0.5rem;
+
+    content: '다음';
+    color: transparent;
+
+    background-image: url('../assets/image/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 @media (max-width: 800px) {

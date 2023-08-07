@@ -154,7 +154,7 @@ html div span a h3 {
   width: 100%;
 }
 
-.header_wrap nav:after {
+.header_wrap nav::after {
   display: flex;
   content: "";
   width: 100%;
@@ -170,7 +170,7 @@ html div span a h3 {
   pointer-events: none;
 }
 
-.header_wrap nav:hover:after {
+.header_wrap nav:hover::after {
   height: 280px;
   opacity: 1;
 }
@@ -200,7 +200,7 @@ html div span a h3 {
 
 .header_wrap .menu_bar nav ul li a:hover {
   color: #ea094b;
-  transition: opacity 0.2s;
+  transition: 0.2s;
   opacity: 1;
 }
 
@@ -235,7 +235,7 @@ html div span a h3 {
   font-weight: 700;
 }
 
-.header_wrap .menu_bar .menu_center li span a:after {
+.header_wrap .menu_bar .menu_center li span a::after {
   display: block;
   content: "";
   width: 100%;
@@ -249,7 +249,7 @@ html div span a h3 {
   font-weight: 700;
 }
 
-.header_wrap .menu_bar .menu_center li:hover span a:after {
+.header_wrap .menu_bar .menu_center li:hover span a::after {
   display: block;
   content: "";
   width: 100%;
@@ -426,7 +426,7 @@ html div span a h3 {
 
 .find a:hover > img {
   transform: scale(1.4);
-  transition: scale 0.5s;
+  transition: 0.5s;
 }
 
 /* notice slider 영역 */
@@ -541,18 +541,14 @@ html div span a h3 {
 .footer_wrap .events .event1 h3 {
   font-size: 4em;
   letter-spacing: -4px;
-  margin-left: 50px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin: 50px 50px 30px;
   color: #fff;
 }
 
 .footer_wrap .events .event2 h3 {
   font-size: 4em;
   letter-spacing: -4px;
-  margin-left: 30px;
-  margin-top: 180px;
-  margin-bottom: 30px;
+  margin: 180px 30px 30px;
   color: #fff;
 }
 
@@ -583,7 +579,7 @@ html div span a h3 {
   margin-right: -30px;
   padding: 15px;
   text-shadow: 2px 2px #525252;
-  transition: opacity 0.2s;
+  transition: 0.2s;
   opacity: 1;
 }
 
@@ -619,7 +615,7 @@ html div span a h3 {
   margin-right: -10px;
   padding: 15px;
   text-shadow: 2px 2px #525252;
-  transition: opacity 0.2s;
+  transition: 0.2s;
   opacity: 1;
 }
 

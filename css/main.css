@@ -127,6 +127,7 @@ header .nav-list {
   justify-content: space-between;
   list-style: none;
   margin: 0 -2rem;
+  white-space: nowrap;
 }
 header .nav-list .nav-item {
   font-size: 1.2rem;
@@ -386,7 +387,9 @@ header .nav-list .nav-item .item__contents .contents__menu > ul > li ul li:hover
 .apple-tv-plus {
   margin: auto;
   cursor: pointer;
-  border-bottom: 3.8rem solid #fff;
+}
+.apple-tv-plus .swiper {
+  padding-bottom: 50px;
 }
 .apple-tv-plus .swiper .swiper-wrapper {
   max-height: 66.725rem;

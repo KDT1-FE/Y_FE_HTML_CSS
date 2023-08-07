@@ -24,7 +24,6 @@
 @media screen and (max-width: 1025px) {
   .sub-nav {
     padding: 12px 0px;
-    overflow: hidden;
     overflow-x:scroll;
   }
 

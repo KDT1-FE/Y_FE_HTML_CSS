@@ -1,0 +1,28 @@
+/* COMMON */
+body {
+    background: transparent;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans', sans-serif; */
+    overflow-x: hidden;
+    /* 가로 스크롤 제거 */
+}
+
+img {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}

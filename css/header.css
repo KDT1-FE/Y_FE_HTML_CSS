@@ -1,0 +1,138 @@
+/* HEADER */
+header {
+    /* background: transparent;
+    height: 100px;
+    position: relative; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* header를 창 전체 너비로 설정합니다. */
+    z-index: 100;
+    /* 다른 요소 위에 표시하기 위해 z-index를 사용합니다. */
+}
+
+header:hover {
+    background-color: #fff;
+    height: 424px;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+header .logo-container {
+    background-image: url(/images/logo/logo_white.svg);
+    height: 30px;
+    width: 216px;
+    position: fixed;
+    top: 35px;
+    left: 60px;
+    margin: auto 0;
+}
+
+header:hover .logo-container {
+    background-image: url(/images/logo/logo_black.svg);
+}
+
+header .main-menu {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+/* 상단 고정 메뉴 */
+header .main-menu .item .item__name {
+    font-size: 100%;
+    padding: 37px 70px 37px 0;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 700;
+    color: #fff;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+header:hover .main-menu .item .item__name {
+    color: #333;
+}
+
+header .main-menu .item .item__contents {
+    display: none;
+}
+
+header:hover .main-menu .item .item__contents {
+    display: block;
+}
+
+/* header .main-menu .item .item__contents .contents__menu {
+    background-color: #ffffff00;
+} */
+
+/* header .main-menu .item .item__contents .contents__menu{
+    padding-right: 50px;
+} */
+
+/* header:hover .main-menu .item .item__contents .contents__menu{
+    transition: all 3s ease;
+} */
+
+/* 메뉴 세부 사항 */
+header .main-menu .item .item__contents .contents__menu .depth-01 {
+    font-weight: bold;
+    color: rgb(55, 55, 55);
+    line-height: 250%;
+    font-size: 16px;
+    margin-left: 5px;
+    padding-right: 25px;
+}
+
+header .main-menu .item .item__contents .contents__menu .depth-01 .depth-02 {
+    font-weight: bold;
+    color: rgb(144, 144, 144);
+    font-weight: 400;
+    font-size: small;
+    line-height: 230%;
+}
+
+/* BUTTON */
+header button {
+    position: fixed;
+}
+
+header .btn-language {
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 38px 40px 0 0;
+    width: 100px;
+
+    float: right;
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    right: 60px;
+
+}
+
+header:hover .btn-language {
+    border: 1px solid #333;
+    color: #333;
+}
+
+header .btn-allmenu {
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 38px 0px 0 0;
+    right: 30px;
+    background: url(../images/icon/ico_allmenu_white.svg);
+}
+
+header:hover .btn-allmenu {
+    background-image: url(../images/icon/ico_allmenu_black.svg);
+}

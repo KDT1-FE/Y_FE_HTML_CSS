@@ -9,7 +9,7 @@ header {
 .header-wrap {
   max-width: 128rem;
   height: 16rem;
-  padding: 3rem 0 0;
+  padding-top: 3rem;
   margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ header {
 .header-content-top h1 {
   width: 15.1rem;
   height: 3.8rem;
-  margin: 0 2rem 0 0;
+  margin-right: 2rem;
   background: url(../assets/icons/logo.svg) no-repeat 50%;
   background-size: 100%;
   cursor: pointer;
@@ -162,7 +162,7 @@ header {
 }
 .header-main-menu li a span {
   padding-top: 2px;
-  margin: 0 0 0 0.6rem;
+  margin-left: 0.6rem;
   height: 19px;
   text-align: left;
 }

@@ -22,7 +22,6 @@ header .header-inner-wrapper {
   height: 107px;
   position: relative;
   z-index: 9;
-  background-color: 255,255,255,0;
   opacity: 1;
   border-bottom:1px solid transparent;
   border-bottom-color: transparent;
@@ -83,7 +82,7 @@ header .navi-list .navi-text > a span::before{
   background-color: #2e2b2b;
   transition: all 0.3s;
 }
-header .navi-list .navi-text > a span:hover:before{
+header .navi-list .navi-text > a span:hover::before{
   width:100%;
 }
 
@@ -280,11 +279,11 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 .product-description .meta .text {
   padding-right: 12px;
 }
-.product-description .meta .lastPrice{
+.product-description .meta .last-price{
   color:lightgray;
   text-decoration:line-through;
 }
-.product-description .meta .currentPrice{
+.product-description .meta .current-price{
   font-size: 14px;
 }
 .product-description .meta .right{
@@ -314,7 +313,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
 }
 .half-banner-container .first:hover img,
 .half-banner-container .second:hover img{
-  transform: scale(1.15, 1.15);
+  transform: scale(1.15);
 }
 .half-banner-container .text-area{
   line-height: 1.8;
@@ -387,7 +386,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   display: flex;
 }
 .stories-container .box{
-  width:calc(100%/4);
+  width:25%;
   border:1px solid black;
   border-right:none;
   text-align: center;
@@ -419,7 +418,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   margin-top:30px;
   background-color: white;
   position:relative;
-  transition: all 0.2s linaer;
+  transition: all 0.2s linear;
   z-index: 1;
   cursor: pointer;
 }
@@ -453,7 +452,7 @@ header .navi-list .navi-text .sub-menu .depth3 li{
   width:100%;
 }
 .business-solution-slider .swiper-pagination-bullet { 
-	width: 33.3%; /*여기 수정하기 */
+	width: 33.3%;
 	border-radius:1px;
 	height: 4px; 
 	background: lightgray; 

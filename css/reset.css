@@ -26,7 +26,6 @@ a {
 }
 a:hover, a:focus {
   color: #000;
-  /* text-decoration: underline; */
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;

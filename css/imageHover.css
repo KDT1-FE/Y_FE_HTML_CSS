@@ -33,16 +33,16 @@
   background-size: 100%;
 }
 /* 공통 */
-.has-swiper .box .images:hover img{
+.has-swiper .box .images:hover img {
   opacity: 0;
   transform: scale(1.1);
   background-size: 110%;
-  transition:opacity 1s,transform 1s;
+  transition: opacity 1s, transform 1s;
 }
-.originImg{
-  display:inline;
-  transition:opacity 1s;
-  opacity:1;
+.origin-img {
+  display: inline;
+  transition: opacity 1s;
+  opacity: 1;
 }
 
 /* select#섹션 */

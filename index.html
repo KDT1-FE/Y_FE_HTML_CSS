@@ -10,10 +10,12 @@
     <meta name="description"
         content="라이엇 게임즈에서 5대5 캐릭터 기반 전술 슈팅 게임, 발로란트를 선보입니다. 정밀한 총격전과 다양한 스킬 구사가 결합된 발로란트에 대해 더 자세히 알아보세요.">
     <title>발로란트: 라이엇 게임즈의 5대5 캐릭터 기반 전술 슈팅 게임</title>
-    <link rel="icon" href="assets/img/valorant-icon.jpg">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="./assets/img/valorant-icon.jpg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -50,7 +52,7 @@
         <!-- nav bar -->
         <div class="center-section">
             <div class="nav-item">
-                <a href="javascript:void(0)" class="nav-a">
+                <a class="nav-a">
                     <p class="p">게임 정보
                         <svg width="10" height="5" class="_16evwnRjE9JvfFbOuuC-EF _1lBECl9xmO0n7vnCvf6_dD"
                             viewBox="0 0 8 5">
@@ -198,7 +200,6 @@
     <!-- 1. '동영상' 섹션 -->
     <section class="first_section">
         <div class="triangle"></div>
-
         <video muted autoplay loop>
             <source src="./assets/video/Valorant_Deadlock.mp4" type="video/mp4">
         </video>
@@ -211,7 +212,7 @@
                 <img src="./assets/img/valorant_logo.png" style="color: #ece8e1;" alt="발로란트 로고">
             </div>
             <div class="valorant-button">
-                <button class="red-button">
+                <button type="button" class="red-button">
                     <span class="top-square"></span>
                     <span class="bottom-square"></span>
                     <span class="button-squre"></span>
@@ -300,7 +301,7 @@
                         <span>에볼루션</span>
                     </h2>
                     <div class="valorant-button">
-                        <button class="red-button">
+                        <button type="button" class="red-button">
                             <a href="https://playvalorant.com/ko-kr/news/game-updates/defy-definition-episode-7-act-1/">
                                 <span class="top-square"></span>
                                 <span class="bottom-square"></span>
@@ -361,7 +362,7 @@
                         </span>
                     </div>
                     <div class="valorant-button">
-                        <button class="red-button">
+                        <button type="button" class="red-button">
                             <a href="https://playvalorant.com/ko-kr/news/announcements/beginners-guide/">
                                 <span class="top-square"></span>
                                 <span class="bottom-square"></span>
@@ -394,7 +395,7 @@
                 </div>
                 <div class="agent-showbtn">
                     <div class="valorant-button">
-                        <button class="white-button">
+                        <button type="button" class="white-button">
                             <a href="https://playvalorant.com/ko-kr/agents/">
                                 <span class="top-square"></span>
                                 <span class="bottom-square"></span>
@@ -421,7 +422,7 @@
                 <h2><span>맵</span></h2>
                 <h5>전 세계에서 싸우세요</h5>
                 <p><span>팀 전략, 환상적인 플레이, 클러치 상황에 맞게 기획된 각 맵에서 창의적인 판단력을 뽐내고 오랫동안 다른 플레이어들이 따라 할 플레이를 선보이세요.</span></p>
-                <button class="red-button">
+                <button type="button" class="red-button">
                     <a href="https://playvalorant.com/ko-kr/maps/">
                         <span class="top-square"></span>
                         <span class="bottom-square"></span>
@@ -445,14 +446,10 @@
             </div>
             <div class="contact-sns">
                 <ul>
-                    <li><a href="https://www.facebook.com/VALORANTKR/"><i class="fa-brands fa-facebook"
-                                style="color: #f9f9f9;"></i></a></li>
-                    <li><a href="https://twitter.com/valorant"><i class="fa-brands fa-twitter"
-                                style="color: #f9f9f9;"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC9M8GGVwPqc9ubNruArCNPg"><i
-                                class="fa-brands fa-youtube" style="color: #f9f9f9;"></i></a></li>
-                    <li><a href="https://www.instagram.com/valorantkr/"><i class="fa-brands fa-instagram"
-                                style="color: #f9f9f9;"></i></a></li>
+                    <li><a href="https://www.facebook.com/VALORANTKR/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/valorant"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC9M8GGVwPqc9ubNruArCNPg"><i class="fa-brands fa-youtube" ></i></a></li>
+                    <li><a href="https://www.instagram.com/valorantkr/"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="game-logo">
@@ -492,9 +489,6 @@
             </div>
         </div>
     </footer>
-    <script>
-
-    </script>
 </body>
 
 

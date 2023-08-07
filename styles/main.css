@@ -64,7 +64,7 @@
   background: #016cf9;
 }
 
-.price {
+.mian-price {
   margin-bottom: 0;
   font-size: 11px;
   line-height: 15px;
@@ -220,7 +220,7 @@ input[id="select_box4"]:checked ~ .slide-nav .label4 {
   background-size: 100%;
 }
 
-.desktop {
+.only-desktop {
   display: none;
 }
 
@@ -278,11 +278,11 @@ input[id="select_box4"]:checked ~ div #imgbox .select4 {
     top: auto;
   }
 
-  .mobile {
+  .only-mobile {
     display: none;
   }
 
-  .desktop {
+  .only-desktop {
     display: block;
   }
 

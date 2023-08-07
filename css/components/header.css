@@ -1,4 +1,4 @@
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-header .menu-container {
+.header .menu-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -24,20 +24,20 @@ header .menu-container {
   justify-content: center;
   align-items: center;
 }
-header .menu-container > a {
+.header .menu-container > a {
   position: absolute;
   width: 90px;
   height: 100%;
   top: 0;
   left: 0;
 }
-header .menu-container > a .logo {
+.header .menu-container > a .logo {
   position: absolute;
   width: 50px;
   top: 29px;
   left: 0;
 }
-header .menu-container .menu {
+.header .menu-container .menu {
   position: absolute;
   width: 1020px;
   height: 100%;
@@ -46,14 +46,14 @@ header .menu-container .menu {
   justify-content: space-between;
   align-items: center;
 }
-header .menu-container .menu li .menu-name {
+.header .menu-container .menu li .menu-name {
   position: relative;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 1px;
   color: #646467;
 }
-header .menu-container .menu li .menu-name::after {
+.header .menu-container .menu li .menu-name::after {
   content: '';
   position: absolute;
   top: calc(100% + 4px);
@@ -62,10 +62,10 @@ header .menu-container .menu li .menu-name::after {
   border-bottom: 1px solid #646467;
   transition: width 0.5s;
 }
-header .menu-container .menu li:hover .menu-name::after {
+.header .menu-container .menu li:hover .menu-name::after {
   width: 100%;
 }
-header .menu-container .icons {
+.header .menu-container .icons {
   position: absolute;
   width: 208px;
   height: 100%;
@@ -75,24 +75,24 @@ header .menu-container .icons {
   justify-content: space-between;
   align-items: center;
 }
-header .menu-container .icons li {
+.header .menu-container .icons li {
   display: flex;
   justify-content: center;
 }
-header .menu-container .icons li .country,
+.header .menu-container .icons li .country,
 .footer-bottom .section3 .country {
   width: 56px;
   height: 12px;
   display: flex;
 }
-header .menu-container .icons li .country .country-flag,
+.header .menu-container .icons li .country .country-flag,
 .footer-bottom .section3 .country .country-flag {
   background-image: url(../assets/images/flag-france.svg);
   background-size: contain;
   width: 16px;
   height: 12px;
 }
-header .menu-container .icons li .country .country-currency,
+.header .menu-container .icons li .country .country-currency,
 .footer-bottom .section3 .country .country-currency {
   font-size: 0.75rem;
   font-weight: 500;
@@ -100,27 +100,27 @@ header .menu-container .icons li .country .country-currency,
   color: #646467;
   text-indent: 4px;
 }
-header .menu-container .icons li a {
+.header .menu-container .icons li a {
   text-indent: -9999px;
   width: 19px;
   height: 18px;
 }
-header .menu-container .icons li .search {
+.header .menu-container .icons li .search {
   background-image: url(../assets/images/icon-search.svg);
 }
-header .menu-container .icons li .location {
+.header .menu-container .icons li .location {
   background-image: url(../assets/images/icon-location.svg);
 }
-header .menu-container .icons li .account {
+.header .menu-container .icons li .account {
   background-image: url(../assets/images/icon-account.svg);
 }
-header .menu-container .icons li .cart {
+.header .menu-container .icons li .cart {
   background-image: url(../assets/images/icon-cart.svg);
   width: 19px;
   height: 18px;
 }
-header .menu-container .icons li .country:hover,
-header .menu-container .icons li .cart:hover,
+.header .menu-container .icons li .country:hover,
+.header .menu-container .icons li .cart:hover,
 .footer-bottom .section3 .country {
   cursor: pointer;
 }

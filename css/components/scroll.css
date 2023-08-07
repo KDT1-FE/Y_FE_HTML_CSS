@@ -16,7 +16,7 @@
 .to-top.hide {
   opacity: 0;
 }
-.to-top img {
+.to-top .to-top__image {
   width: 25px;
   height: 60px;
 }

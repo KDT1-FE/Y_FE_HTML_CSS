@@ -23,8 +23,8 @@
 .swiper-button-next {
   right: 20px;
 }
-.swiper-button-prev img,
-.swiper-button-next img {
+.swiper-button-prev .swiper-button__image,
+.swiper-button-next .swiper-button__image {
   width: 16px;
   height: 24px;
 }

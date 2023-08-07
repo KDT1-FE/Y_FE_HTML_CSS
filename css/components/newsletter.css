@@ -20,7 +20,7 @@
   width: 345px;
   height: 125px;
 }
-.newsletter .email input {
+.newsletter .email .input {
   position: absolute;
   top: 50px;
   left: 0;
@@ -30,7 +30,7 @@
   border: none;
   border-bottom: 1px solid #5c5c5c;
 }
-.newsletter .email label {
+.newsletter .email .label {
   position: absolute;
   top: 54px;
   left: 0;
@@ -39,7 +39,7 @@
   color: #5c5c5c;
   transition: 0.3s;
 }
-.newsletter .email input:focus ~ label {
+.newsletter .email .input:focus ~ .label {
   transform: translateY(-25px);
 }
 .newsletter .email button {
@@ -55,7 +55,7 @@
   background-color: #fff;
   transition: 0.2s;
 }
-.newsletter .email button:hover {
+.newsletter .email .button:hover {
   transform: translateX(5px);
 }
 .newsletter .email .policy {
@@ -67,12 +67,12 @@
   letter-spacing: 1px;
   color: #4a4a4f;
 }
-.newsletter .email .policy a {
+.newsletter .email .policy .link {
   position: relative;
   color: #5c5c5c;
   font-weight: 500;
 }
-.newsletter .email .policy a::after {
+.newsletter .email .policy .link::after {
   content: '';
   position: absolute;
   top: calc(100% + 3px);

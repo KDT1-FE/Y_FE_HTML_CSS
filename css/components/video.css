@@ -3,7 +3,7 @@
   padding-top: 103px;
   padding-bottom: 180px;
 }
-.main-video video {
+.main-video .video {
   width: 100%;
   height: 640px;
   object-fit: cover;

@@ -13,6 +13,7 @@ const SectionModelEl=document.querySelector('.SectionModelList')
 const SectionSearchEls=document.querySelector('.SectionSearchContainer')
 const CarListEl=document.querySelector('.CarListModels')
 const CarList=document.querySelector('.CarList')
+const CarTypeEl=document.querySelector('.CarType')
 const ADEl=document.querySelectorAll('.AD')
 const ServiceEl=document.querySelector('.Service')
 const SpaceEls=document.querySelectorAll('.Space')
@@ -20,82 +21,121 @@ const SnsEl=document.querySelector('.SNS')
 const FooterEl=document.querySelector('.Footer')
 const menuEl=document.querySelector('.Quickmenu')
 const specific = document.querySelector('.specific_cartype')
-HeadMenuEls.addEventListener('click', function(e) {
-  i++;
-  if(i%2!=0){
-    NaviEl.style.display="block";
-    HeadLogoEl.style.display='none';
-    SearchEl.style.display='block';
-    SectionEls.style.display='none';
-    SectionSearchEls.style.display='none';
-    SectionModelEl.style.display='none';
-    CarListEl.style.display='none';
-    CarList.style.display='none';
-    CarTypeEl.style.display='none';
-    ServiceEl.style.display='none';
-    SnsEl.style.display='none';
-    specific.style.display='none';
-    ADEl.forEach(element => {
-      element.style.display = 'none';
-    });
-    SpaceEls.forEach(element => {
-      element.style.display='none';
-    });
-    FooterEl.style.display='none';
-    menuEl.style.display='none';
-    HeadLines1.style.animation='420ms ease 0s 1 normal forwards running disappear';
-    HeadLines2.style.animation='240ms ease 180ms 1 normal forwards running leftX';
-    HeadLines3.style.animation='240ms ease 180ms 1 normal forwards running rightX';
-    HeadLines4.style.animation='420ms ease 0s 1 normal forwards running disappear';
+class MenuHandler {
+  constructor() {
+    this.i = 0;
+    this.HeadMenuEls = HeadMenuEls;
+    this.NaviEl = NaviEl;
+    this.HeadLogoEl = HeadLogoEl;
+    this.SearchEl = SearchEl;
+    this.HeadLines1 = HeadLines1;
+    this.HeadLines2 = HeadLines2;
+    this.HeadLines3 = HeadLines3;
+    this.HeadLines4 = HeadLines4;
+    this.SectionEls = SectionEls;
+    this.SectionModelEl = SectionModelEl;
+    this.SectionSearchEls = SectionSearchEls;
+    this.CarListEl = CarListEl;
+    this.CarList = CarList;
+    this.CarTypeEl = CarTypeEl;
+    this.ADEl = ADEl;
+    this.ServiceEl = ServiceEl;
+    this.SpaceEls = SpaceEls;
+    this.SnsEl = SnsEl;
+    this.FooterEl = FooterEl;
+    this.menuEl = menuEl;
+    this.specific = specific;
+
+    this.HeadMenuEls.addEventListener('click', this.toggleMenu.bind(this));
   }
-  else{
-    NaviEl.style.display='none';
-    HeadLogoEl.style.display='block';
-    SearchEl.style.display='none';
-    SectionEls.style.display='block';
-    SectionSearchEls.style.display='flex';
-    SectionModelEl.style.display='inline-block';
-    CarListEl.style.display='flex';
-    CarList.style.display='block';
-    ServiceEl.style.display='block';
-    SnsEl.style.display='block';
-    specific.style.display='block';
-    ADEl.forEach(element => {
-      element.style.display = 'flex';
-    });
-    SpaceEls.forEach(element => {
-      element.style.display='block';
-    });
-    FooterEl.style.display='block';
-    menuEl.style.display='block';
-    if(ModelTypeEl.getAttribute('aria-selected')=='true'){
-      CarTypeEl.style.display='block';
+
+  toggleMenu() {
+    this.i++;
+    if (this.i % 2 !== 0) {
+      this.NaviEl.style.display = "block";
+      this.HeadLogoEl.style.display = 'none';
+      this.SearchEl.style.display = 'block';
+      this.SectionEls.style.display = 'none';
+      this.SectionSearchEls.style.display = 'none';
+      this.SectionModelEl.style.display = 'none';
+      this.CarListEl.style.display = 'none';
+      this.CarList.style.display = 'none';
+      this.CarTypeEl.style.display = 'none'; 
+      this.ServiceEl.style.display = 'none';
+      this.SnsEl.style.display = 'none';
+      this.specific.style.display = 'none';
+      this.ADEl.forEach(element => {
+        element.style.display = 'none';
+      });
+      this.SpaceEls.forEach(element => {
+        element.style.display = 'none';
+      });
+      this.FooterEl.style.display = 'none';
+      this.menuEl.style.display = 'none';
+      this.HeadLines1.style.animation = '420ms ease 0s 1 normal forwards running disappear';
+      this.HeadLines2.style.animation = '240ms ease 180ms 1 normal forwards running leftX';
+      this.HeadLines3.style.animation = '240ms ease 180ms 1 normal forwards running rightX';
+      this.HeadLines4.style.animation = '420ms ease 0s 1 normal forwards running disappear';
+    } else {
+      this.NaviEl.style.display = 'none';
+      this.HeadLogoEl.style.display = 'block';
+      this.SearchEl.style.display = 'none';
+      this.SectionEls.style.display = 'block';
+      this.SectionSearchEls.style.display = 'flex';
+      this.SectionModelEl.style.display = 'inline-block';
+      this.CarListEl.style.display = 'flex';
+      this.CarList.style.display = 'block';
+      this.ServiceEl.style.display = 'block';
+      this.SnsEl.style.display = 'block';
+      this.specific.style.display = 'block';
+      this.ADEl.forEach(element => {
+        element.style.display = 'flex';
+      });
+      this.SpaceEls.forEach(element => {
+        element.style.display = 'block';
+      });
+      this.FooterEl.style.display = 'block';
+      this.menuEl.style.display = 'block';
+      if (ModelTypeEl.getAttribute('aria-selected') == 'true') { // Commented out because ModelTypeEl is not defined in the code snippet
+        this.CarTypeEl.style.display = 'block';
+      }
+      this.HeadLines1.style.animation = '420ms ease 0s 1 normal none running disappearback';
+      this.HeadLines2.style.animation = '240ms ease 0s 1 normal none running leftbackX';
+      this.HeadLines3.style.animation = '240ms ease 0s 1 normal none running rightbackX';
+      this.HeadLines4.style.animation = '420ms ease 0s 1 normal none running disappearback';
     }
-    HeadLines1.style.animation='420ms ease 0s 1 normal none running disappearback';
-    HeadLines2.style.animation='240ms ease 0s 1 normal none running leftbackX';
-    HeadLines3.style.animation='240ms ease 0s 1 normal none running rightbackX';
-    HeadLines4.style.animation='420ms ease 0s 1 normal none running disappearback';
   }
-});
+}
+const menuHandler = new MenuHandler();
 
 const DownEl=document.querySelector('.SectionDropdown > .material-symbols-outlined')
 const dropdownEl=document.querySelector('.Dropdownlayout')
-DownEl.addEventListener('click',function(e){
-  j++;
-  if(j%2!=0){
-    DownEl.style.transform='rotate(180deg)';
-    dropdownEl.style.display='block';
+class DropdownHandler {
+  constructor() {
+    this.j = 0;
+    this.DownEl = DownEl;
+    this.dropdownEl = dropdownEl;
+
+    this.DownEl.addEventListener('click', this.toggleDropdown.bind(this));
   }
-  else{
-    DownEl.style.transform='none';
-    dropdownEl.style.display='none';
+
+  toggleDropdown() {
+    this.j++;
+    if (this.j % 2 !== 0) {
+      this.DownEl.style.transform = 'rotate(180deg)';
+      this.dropdownEl.style.display = 'block';
+    } else {
+      this.DownEl.style.transform = 'none';
+      this.dropdownEl.style.display = 'none';
+    }
   }
-})
+}
+
+const dropdownHandler = new DropdownHandler();
 
 const ModelEl=document.querySelector('.SectionModel')
 const ModelTypeEl=document.querySelector('.SectionModelType')
 const CarEl=document.querySelector('.CarListSroll')
-const CarTypeEl=document.querySelector('.CarType')
 const LeftEl=document.querySelector('.Left')
 const RightEl=document.querySelector('.Right')
 
@@ -412,6 +452,7 @@ function stripSpaces(text) {
 xbtn.addEventListener('click',function(e){
   specific.style.display='none';
 })
+
 const listEl=document.querySelector('.list')
 carimg.forEach(element => {
     element.addEventListener('click', function(e){

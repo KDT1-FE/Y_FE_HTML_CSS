@@ -11,6 +11,9 @@
   font-family: 'Audi Type Normal';
 }
 
+html, body {
+  margin: 0;
+}
 /* header */
 .HeadContainer {
   position: relative;
@@ -574,7 +577,6 @@
 
 .Right > .material-symbols-outlined {
     height: 48px;
-    right: calc(50% - 35px);
     position: absolute;
     top: calc(50% - 24px);
     width: 48px;

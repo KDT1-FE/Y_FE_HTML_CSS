@@ -114,12 +114,10 @@ header {
   text-indent: -9999rem;
 }
 
-.header-top-right {
+.header-mymenu {
   display: flex;
   align-items: center;
   padding-right: 1.5rem;
-}
-.header-mymenu {
   position: relative;
 }
 .header-mymenu li {
@@ -137,7 +135,7 @@ header {
 .header-mymenu li:nth-last-child(3)::after {
   content: '';
   position: absolute;
-  right: -1.2rem;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   display: block;
@@ -148,11 +146,8 @@ header {
 }
 
 .header-content-bottom {
-  padding: 3rem 0 2rem;
-}
-
-.header-main-nav {
   display: flex;
+  padding: 3rem 0 2rem;
 }
 
 .header-main-menu,

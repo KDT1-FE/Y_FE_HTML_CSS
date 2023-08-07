@@ -66,11 +66,7 @@ main section {
     font-size: 1.8rem;
     font-weight: 400;
 }
-.common-tab-wrapper {
-    text-align: center;
-}
 .common-tab-list {
-    display: inline-block;
     padding: 0 2rem;
     margin: 0 auto;
     text-align: center;
@@ -123,7 +119,7 @@ main section {
     text-align: center;
     font-weight: 700;
 }
-.content-today {
+.content-today-wrap {
     position: relative;
 }
 
@@ -182,15 +178,15 @@ main section {
     background: url(../assets/icons/slider_arrow.svg) no-repeat 50%;
 }
 
-.content-today button:nth-of-type(1):after {
+.content-today-wrap button:nth-of-type(1):after {
     transform: rotate(180deg);
 }
 
-.content-today button:nth-of-type(1) {
+.content-today-wrap button:nth-of-type(1) {
     left: -2.3rem;
 }
 
-.content-today button:nth-of-type(2) {
+.content-today-wrap button:nth-of-type(2) {
     right: -2.3rem;
 }
 

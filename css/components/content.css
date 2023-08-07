@@ -13,7 +13,7 @@
   background-image: url(../../assets/images/fragrance-finder.webp);
   width: 666px;
   height: 464px;
-  background-size: 666px 464px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .content .fragrance-finder .intro .title {
@@ -71,7 +71,7 @@
   background-image: url(../../assets/images/token-of-appreciation.jpeg);
   width: 666px;
   height: 464px;
-  background-size: 666px 464px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .content .token-of-appreciation .intro .title {
@@ -178,7 +178,7 @@
   background-image: url(../../assets/images/724.webp);
   width: 666px;
   height: 464px;
-  background-size: 666px 464px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .content .number-724 .intro .title {
@@ -237,7 +237,7 @@
   background-image: url(../../assets/images/token-of-appreciation.jpeg);
   width: 666px;
   height: 464px;
-  background-size: 666px 464px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .content .aqua-media-cologne-forte .intro .title {
@@ -299,7 +299,7 @@
   background-image: url(../../assets/images/scented-candles.webp);
   width: 666px;
   height: 464px;
-  background-size: 666px 464px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .content .scented-candles .intro .title {
@@ -357,7 +357,7 @@
   background-image: url(../../assets/images/bath-and-body.webp);
   width: 666px;
   height: 464px;
-  background-size: 666px 464px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .content .bath-and-body .intro .title {
@@ -423,7 +423,7 @@
   background-image: url(../../assets/images/womens-fragrances.webp);
   width: 435px;
   height: 285px;
-  background-size: 435px 285px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .last-content .womens-fragrances .intro .title {
@@ -482,7 +482,7 @@
   background-image: url(../../assets/images/mens-fragrances.webp);
   width: 435px;
   height: 285px;
-  background-size: 435px 285px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .last-content .mens-fragrances .intro .title {
@@ -541,7 +541,7 @@
   background-image: url(../../assets/images/unisex-fragrances.webp);
   width: 435px;
   height: 285px;
-  background-size: 435px 285px;
+  background-size: cover;
   margin-bottom: 26px;
 }
 .last-content .unisex-fragrances .intro .title {

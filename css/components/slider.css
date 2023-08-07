@@ -177,7 +177,7 @@
 .slide1 .matin .image {
   width: 100%;
   height: 364px;
-  background-size: 364px 364px;
+  background-size: cover;
   transition: 0.8s;
 }
 .slide1 .rouge .name,

@@ -1,3 +1,6 @@
+@import "variables", "header", "menu", "main-content", "main-text", "main-btn",
+  "footer";
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -7,28 +10,20 @@
   display: none;
 }
 
-.hidden {
-  display: none;
-}
-
 button {
   border: none;
 
   background-color: transparent;
-  color: #171A20;
+  color: $black;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #171A20;
+  color: $black;
 }
 
-.white {
-  color: #F9F8F8;
-}
-
-.black{
-  color: #171A20;
+.hidden {
+  display: none;
 }

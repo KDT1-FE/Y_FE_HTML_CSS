@@ -14,30 +14,31 @@
 
 .footer-nav-items {
   height: 50px;
+
   display: flex;
-}
 
-.footer-nav-items li {
-  margin-right: 14px;
-  letter-spacing: 0.5px;
-}
+  li {
+    margin-right: 14px;
+    letter-spacing: 0.5px;
 
-.footer-nav-items li a {
-  font-size: 12px;
-  color: #c6ccd4;
+    a {
+      font-size: 12px;
+      color: #c6ccd4;
+    }
+  }
 }
 
 .footer-nav-banner {
   max-width: 560px;
 
+  font-size: 10px;
+  color: #c6ccd4;
+
   text-align: center;
   letter-spacing: 0.5px;
   line-height: 20px;
 
-  font-size: 10px;
-  color: #c6ccd4;
-}
-
-.footer-nav-banner a {
-  color: #c6ccd4;
+  a {
+    color: #c6ccd4;
+  }
 }

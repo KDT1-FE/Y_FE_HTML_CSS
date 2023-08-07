@@ -202,30 +202,11 @@ header {
 .header-mainMenu li:first-child {
   margin-left: 0;
 }
-.header-mainMenu li:nth-of-type(1) img {
-  content: url(/assets/icons/icon_tour.png);
-}
-.header-mainMenu li:nth-of-type(2) img {
-  content: url(/assets/icons/icon_ticket.png);
-}
-.header-mainMenu li:nth-of-type(3) img {
-  content: url(/assets/icons/icon_shopping.png);
-}
-.header-mainMenu li:nth-of-type(4) img {
-  content: url(/assets/icons/icon_book.png);
-}
-.header-mainMenu li:nth-of-type(5) img {
-  content: url(/assets/icons/icon_triple.png);
-}
-.header-mainMenu li:nth-of-type(6) img:nth-of-type(1) {
-  content: url(/assets/icons/icon_special2.png);
-}
 .header-mainMenu li:nth-of-type(6) img:nth-of-type(2) {
   margin-left: 4px;
   display: inline-block;
   width: 2.3rem;
   height: 1.5rem;
-  content: url(/assets/icons/badge_hot.svg);
 }
 
 .header-eventMenu a {

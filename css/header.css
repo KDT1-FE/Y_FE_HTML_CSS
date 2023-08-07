@@ -1,0 +1,151 @@
+/* HEADER */
+header {
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+}
+
+header:hover {
+    height: 424px;
+
+    background-color: #fff;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+header .logo-container {
+    background-image: url(/images/logo/logo_white.svg);
+
+    width: 216px;
+    height: 30px;
+
+    margin: auto 0;
+
+    position: fixed;
+    top: 35px;
+    left: 60px;
+}
+
+header:hover .logo-container {
+    background-image: url(/images/logo/logo_black.svg);
+}
+
+header .main-menu {
+    width: 100%;
+
+    padding-left: 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: fixed;
+}
+
+/* 상단 고정 메뉴 */
+header .main-menu .item .item__name {
+    padding: 37px 70px 37px 0;
+
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 100%;
+    font-weight: 700;
+    color: #fff;
+    
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+header:hover .main-menu .item .item__name {
+    color: #333;
+}
+
+header .main-menu .item .item__contents {
+    display: none;
+}
+
+header:hover .main-menu .item .item__contents {
+    display: block;
+}
+
+/* header .main-menu .item .item__contents .contents__menu {
+    background-color: #ffffff00;
+} */
+
+/* header .main-menu .item .item__contents .contents__menu{
+    padding-right: 50px;
+} */
+
+/* header:hover .main-menu .item .item__contents .contents__menu{
+    transition: all 3s ease;
+} */
+
+/* 메뉴 세부 사항 */
+header .main-menu .item .item__contents .contents__menu .depth-01 {
+    margin-left: 5px;
+    padding-right: 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 250%;
+    color: rgb(55, 55, 55);
+}
+
+header .main-menu .item .item__contents .contents__menu .depth-01 .depth-02 {
+    font-size: small;
+    font-weight: 400;
+    line-height: 230%;
+    color: rgb(144, 144, 144);
+}
+
+/* BUTTON */
+header button {
+    position: fixed;
+}
+
+header .btn-language {
+    width: 100px;
+    height: 30px;
+
+    margin: 38px 40px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    right: 60px;
+
+    border: 1px solid #fff;
+    border-radius: 15px;
+
+    text-align: center;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+header:hover .btn-language {
+    border: 1px solid #333;
+    color: #333;
+}
+
+header .btn-allmenu {
+    width: 24px;
+    height: 24px;
+
+    margin-top: 38px;
+
+    float: right;
+
+    right: 30px;
+
+    background: url(../images/icon/ico_allmenu_white.svg);
+}
+
+header:hover .btn-allmenu {
+    background-image: url(../images/icon/ico_allmenu_black.svg);
+}

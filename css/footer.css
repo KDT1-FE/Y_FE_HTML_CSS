@@ -1,0 +1,260 @@
+/* FOOTER */
+.main-section-footer {
+    width: 100%;
+
+    display: table-cell;
+    table-layout: fixed;
+
+    position: relative;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.main-section-footer #footer {
+    width: 100vw;
+
+    margin-top: 400px;
+    padding: 48px 0;
+
+    display: block;
+
+    background-color: #222;
+
+    color: #fff;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.main-section-footer .container {
+    width: 100%;
+    max-width: 1312px;
+
+    margin: 0 auto;
+    padding: 0 48px;
+
+    display: inline-block;
+    text-align: left;
+
+    position: relative;
+}
+
+.footer-top::after {
+    clear: both;
+    content: ' ';
+
+    display: table;
+}
+
+.footer-top-menu li {
+    margin-top: 16px;
+
+    display: block;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+
+}
+
+.footer-top-menu li:first-child {
+    margin-top: 0;
+}
+
+.footer-top-menu ul li {
+    display: block;
+    
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-top-menu ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-top-cs {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.footer-top-cs dl:first-child {
+    margin-top: 0;
+    margin-bottom: 34px;
+}
+
+.footer-top-cs dl {
+    display: block;
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-top-cs dt {
+    margin-bottom: 6px;
+
+    display: block;
+
+    font-family: 'Mark Pro';
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-top-cs dd {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-top-cs dd li:first-child {
+    margin-left: 0;
+}
+
+.footer-top-cs dd li {
+    margin-left: 20px;   
+
+    display: inline-block;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom {
+    margin: 48px 0;
+    padding-top: 48px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+
+.footer-bottom-menu ul li {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-menu ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom-menu li {
+    margin-right: 40px;    
+    margin-bottom: 30px;
+
+    display: inline-block;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-menu ul li strong {
+    color: #f5ce3e;
+}
+
+.footer-bottom-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-info ul {
+    margin-bottom: 8px;
+
+    display: flex;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+
+.footer-bottom-info__address li {
+    vertical-align: middle;
+}
+
+.footer-bottom-info li:before {
+    width: 1px;
+    height: 11px;
+
+    margin-left: 12px;
+    margin-right: 12px;
+
+    content: '';
+    display: inline-block;
+
+    border-left: 1px solid #777;
+
+    line-height: 1;
+}
+
+.footer-bottom-info li:first-child::before {
+    content: none;
+}
+
+.footer-bottom-copy {
+    margin-top: 16px;
+    margin-bottom: 24px;
+
+    display: block;
+
+    font-family: 'Mark Pro';
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-copy span {
+    margin-right: 4px;
+
+    display: inline-block;
+
+    transition: all .3s cubic-bezier(0.16, 0.04, 0.03, 0.95);
+}
+
+.footer-bottom-sns {
+    display: flex;
+
+    position: absolute;
+    right: 100px;
+}
+
+.footer-bottom-sns i {
+    padding: 10px;
+}
+
+.icon-foot-sns-insta {
+    width: 32px;
+    height: 32px;
+
+    background: url(../images/icon/ico_foot_sns_insta.svg) 50% 50% no-repeat;
+}
+
+.icon-foot-sns-youtube {
+    width: 32px;
+    height: 32px;
+
+    background: url(../images/icon/ico_foot_sns_youtube.svg) 50% 50% no-repeat;
+}
+
+.icon-foot-sns-twitter {
+    width: 32px;
+    height: 32px;
+
+    background: url(../images/icon/ico_foot_sns_twitter.svg) 50% 50% no-repeat;
+}
+
+.footer-bottom::after {
+    clear: both;
+    
+    content: ' ';
+    display: table;
+}

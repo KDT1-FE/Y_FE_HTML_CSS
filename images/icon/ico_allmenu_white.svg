@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2{stroke:#fff;stroke-width:2px}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="ico_24_category" transform="translate(-6 -6)">
+        <path id="area" d="M0 0H24V24H0z" class="cls-1" transform="translate(6 6)"/>
+        <g id="ico" transform="translate(6 6)">
+            <g id="사각형_238" class="cls-2">
+                <path d="M0 0H11V11H0z" class="cls-4" transform="translate(13 13)"/>
+                <path d="M1 1H10V10H1z" class="cls-1" transform="translate(13 13)"/>
+            </g>
+            <g id="사각형_240" fill="none" stroke="#d60037" stroke-width="2px">
+                <path d="M0 0H11V11H0z" class="cls-4" transform="translate(13)"/>
+                <path d="M1 1H10V10H1z" class="cls-1" transform="translate(13)"/>
+            </g>
+            <g id="사각형_241" class="cls-2">
+                <path d="M0 0H11V11H0z" class="cls-4" transform="translate(0 13)"/>
+                <path d="M1 1H10V10H1z" class="cls-1" transform="translate(0 13)"/>
+            </g>
+            <g id="사각형_242" class="cls-2">
+                <path d="M0 0H11V11H0z" class="cls-4"/>
+                <path d="M1 1H10V10H1z" class="cls-1"/>
+            </g>
+        </g>
+    </g>
+</svg>

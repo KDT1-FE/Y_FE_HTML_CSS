@@ -1,0 +1,308 @@
+h1 {
+  margin: 0;
+}
+
+.p {
+  font-weight: bold;
+  background-color: #80808000;
+  border-radius: 8px;
+}
+
+.nav-a {
+  cursor: pointer;
+}
+
+.nav-a:hover .p {
+  background-color: #8080804d;
+}
+
+.underline {
+  z-index: 2000;
+  position: absolute;
+  bottom: 6px;
+  height: 4px;
+  width: 100%;
+  background-color: #ff465600;
+  border-radius: 8px;
+}
+
+.nav-item ul {
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item ul li {
+  width: 168px;
+  height: 35px;
+  /* margin: auto; */
+}
+
+.nav-item ul div {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background-color: #ff4656;
+  border-radius: 2px;
+}
+
+.nav-item ul li a {
+  display: grid;
+  padding: 8px 16px;
+  width: 82%;
+  height: 45%;
+  font-weight: 500;
+  color: #c7c7c7;
+  background-color: #44444400;
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+
+.game-event > li {
+  padding-bottom: 15px;
+  height: 100%;
+}
+
+.nav-item ul li a:hover {
+  background-color: #444444;
+}
+
+.nav-a:hover .underline {
+  background-color: #ff4656;
+}
+
+header {
+  z-index: 20000;
+  width: 100%;
+  height: 80px;
+  color: white;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font: tahoma, sans-serif;
+  justify-content: center;
+  position: fixed;
+}
+
+.header_logo2 {
+  margin-left: 28px;
+}
+
+.riot_logo > a > img {
+  width: 85px;
+}
+
+.nav-item {
+  position: relative;
+  height: 80px;
+}
+
+.game-infomation {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #292929;
+  border-radius: 0 0 2px 2px;
+  width: 200px;
+  height: 150px;
+  top: 70px;
+  /* 초기에는 숨김 처리 */
+  opacity: 0;
+  /* 초기에는 숨김 처리 */
+  visibility: hidden;
+}
+
+.nav-item:hover .game-infomation {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-item:hover .nav-a .p {
+  background-color: #8080804d;
+  /* 게임 정보 p 태그에 hover 효과를 부여 */
+}
+
+.game-news {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #292929;
+  border-radius: 0 0 2px 2px;
+  width: 200px;
+  height: 330px;
+  top: 70px;
+  opacity: 0;
+  /* 초기에는 숨김 처리 */
+  visibility: hidden;
+  /* 초기에는 숨김 처리 */
+}
+
+.nav-item:hover .game-news {
+  opacity: 1;
+  /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+  visibility: visible;
+  /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
+.game-support {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #292929;
+  border-radius: 0 0 2px 2px;
+  width: 200px;
+  height: 150px;
+  top: 70px;
+  opacity: 0;
+  /* 초기에는 숨김 처리 */
+  visibility: hidden;
+  /* 초기에는 숨김 처리 */
+}
+
+.nav-item .game-event li a {
+  height: 70%;
+}
+
+.nav-item:hover .game-support {
+  opacity: 1;
+  /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+  visibility: visible;
+  /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
+.game-event {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #292929;
+  border-radius: 0 0 2px 2px;
+  width: 200px;
+  height: 199px;
+  top: 70px;
+  opacity: 0;
+  /* 초기에는 숨김 처리 */
+  visibility: hidden;
+  /* 초기에는 숨김 처리 */
+}
+
+.nav-item:hover .game-event {
+  opacity: 1;
+  /* 마우스를 호버할 때, 투명도를 1로 변경하여 나타나게 함 */
+  visibility: visible;
+  /* 마우스를 호버할 때, 숨김 처리 해제 */
+}
+
+.game-sns {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #292929;
+  border-radius: 0 0 2px 2px;
+  width: 200px;
+  height: 231px;
+  top: 70px;
+  opacity: 0;
+  /* 초기에는 숨김 처리 */
+  visibility: hidden;
+  /* 초기에는 숨김 처리 */
+}
+
+.nav-item:hover .game-sns {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  letter-spacing: 0.01em;
+  font-size: 13px;
+  color: white;
+}
+
+.header > .center-section > .nav-item > .dropdown > a > p,
+.header > .center-section > .nav-item > a > p,
+.header > .center-section > .nav-item > .arrow > a > p {
+  padding: 7.5px 16px;
+  margin: 0 4px 0 0;
+}
+
+.playnow_btn {
+  padding: 8px 16px;
+}
+
+.nav-right-a {
+  width: 125px;
+  height: 22px;
+  padding: 5px;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 51, 66) 0%,
+    rgb(255, 48, 64) 0.01%,
+    rgb(255, 125, 102) 100%
+  );
+  color: #111;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 36px;
+}
+
+.center-section {
+  margin-left: 35px;
+  width: 100%;
+  height: 100%;
+}
+
+.center-section > div {
+  display: inline-block;
+}
+
+.center-section > div > a {
+  text-decoration: none;
+}
+
+.right-section {
+  display: flex;
+  height: 100%;
+  width: 256px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 32px;
+}
+
+.search {
+  padding: 10px 0;
+}
+
+.search > img {
+  width: 22px;
+  height: 27px;
+  color: #f9f9f9;
+}
+
+.lang > a > i {
+  align-items: center;
+  justify-content: center;
+  /* width: 32px;
+    height: 32px;
+    background-color: #c7c7c7; */
+}
+
+.playnow_btn {
+  width: 100px;
+  /* background: (135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%) */
+}

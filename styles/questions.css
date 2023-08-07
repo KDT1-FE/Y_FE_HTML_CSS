@@ -12,28 +12,23 @@
   background-color: #12151d;
   border: 0;
   cursor: pointer;
-}
 
-.accordion-btn span {
-  box-sizing: border-box;
-  display: inline-block;
-  margin: 0;
   padding-right: 26px;
   position: relative;
   width: 100%;
   text-align: left;
 }
 
-.accordion-btn :after {
+.accordion-btn:after {
   color: #f9f9f9;
   content: "+";
   font-size: 40px;
   line-height: 0.8;
   position: absolute;
-  right: 0;
+  right: 24px;
   top: calc(50% - 16px);
 }
-.open .accordion-btn :after {
+.open .accordion-btn:after {
   content: "–";
 }
 

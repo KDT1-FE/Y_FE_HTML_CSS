@@ -58,6 +58,11 @@ h1 {
   text-transform: capitalize;
 }
 
+.game-event > li {
+  padding-bottom: 15px;
+  height: 100%;
+}
+
 .nav-item ul li a:hover {
   background-color: #444444;
 }

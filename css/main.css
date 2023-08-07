@@ -118,7 +118,8 @@ h2 {
   background-color: #ece8e1;
 }
 
-.top-square {
+.agent-showbtn > .valorant-button > button > a::before {
+  content: "";
   position: absolute;
   right: -8px;
   top: -10px;
@@ -128,7 +129,8 @@ h2 {
   border-bottom: none;
 }
 
-.bottom-square {
+.agent-showbtn > .valorant-button > button > a::after {
+  content: "";
   position: absolute;
   right: -8px;
   bottom: -8px;
@@ -230,6 +232,28 @@ h2 {
 
 .valorant-info > button {
   margin: 4.25rem 0 6rem;
+}
+
+.valorant-info > .valorant-button > .red-button::before {
+  content: "";
+  position: absolute;
+  right: -8px;
+  bottom: -10px;
+  width: 260px;
+  height: 31px;
+  border: 1px solid hsla(38, 22%, 90%, 0.5);
+  border-top: none;
+}
+
+.valorant-info > .valorant-button > .red-button::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: -12px;
+  width: 260px;
+  height: 31px;
+  border: 1px solid hsla(38, 22%, 90%, 0.5);
+  border-bottom: none;
 }
 
 .background-word1,
@@ -549,20 +573,6 @@ h2 {
   border-bottom-style: none;
 }
 
-/* #rs1 {
-   width: 8px;
-   height: 8px;
-   top: 65px;
-   left: 36.5rem;
-}
-
-#rs2{
-   width: 8px;
-   height: 8px;
-   top: 65px;
-   left: 39.5rem;
-} */
-
 .fourth-container > #rs1 {
   top: 30rem;
   left: 39.9rem;
@@ -647,7 +657,8 @@ h2 {
   color: #383e3a;
 }
 
-.fourth-text > .valorant-button > button > a > .top-square {
+.valorant-button > button > a::before {
+  content: "";
   position: absolute;
   right: -8px;
   top: -8px;
@@ -657,13 +668,24 @@ h2 {
   border-bottom: none;
 }
 
-.fourth-text > .valorant-button > button > a > .bottom-square {
+.valorant-button > button > a::after {
+  content: "";
   position: absolute;
   right: -8px;
   bottom: -8px;
   width: 260px;
   height: 31px;
   border: 1px solid #bdbcb7;
+  border-top: none;
+}
+
+.third-content > .valorant-button > button > a::before {
+  border: 1px solid hsla(38, 22%, 90%, 0.5);
+  border-bottom: none;
+}
+
+.third-content > .valorant-button > button > a::after {
+  border: 1px solid hsla(38, 22%, 90%, 0.5);
   border-top: none;
 }
 
@@ -867,7 +889,8 @@ h2 {
   color: #768079;
 }
 
-.map-info > button > a > .top-square {
+.map-info > button > a::before {
+  content: "";
   position: absolute;
   right: -8px;
   top: -8px;
@@ -877,7 +900,8 @@ h2 {
   border-bottom: none;
 }
 
-.map-info > button > a > .bottom-square {
+.map-info > button > a::after {
+  content: "";
   position: absolute;
   right: -8px;
   bottom: -8px;

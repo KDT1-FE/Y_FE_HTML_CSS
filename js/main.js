@@ -42,6 +42,6 @@ const observer = new IntersectionObserver((e) => {
 
 const fadeEls = document.querySelectorAll(".fade")
 
-fadeEls.forEach((fadeEl, i) => {
+fadeEls.forEach((fadeEl) => {
   observer.observe(fadeEl);
 })

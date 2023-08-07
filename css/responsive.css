@@ -24,6 +24,7 @@
 @media screen and (max-width: 1025px) {
   .sub-nav {
     padding: 12px 0px;
+    overflow: hidden;
     overflow-x:scroll;
   }
   .sub-nav .selected {
@@ -108,6 +109,9 @@
 }
 
 @media screen and (max-width: 625px) {
+  body {
+    overflow: hidden;
+  }
  .nav-wrap .nav-primary{
     display: none;
   }

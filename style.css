@@ -75,11 +75,11 @@ header {
   align-items: center;
 }
 
-.sub-menu-wrap li {
+.sub-menu-wrap p {
   color: black;
 }
 
-.sub-menu-wrap > li:hover {
+.sub-menu-wrap > p:hover {
   color: #3c93ff;
 }
 

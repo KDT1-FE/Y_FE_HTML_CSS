@@ -6,6 +6,11 @@ var swiper = new Swiper('.event__container', {
     loop: true,
     loofFillGroupWithBlank: true,
 
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -116,6 +121,11 @@ var swiper7 = new Swiper('.ad__container', {
     fade: true,
     loop: true,
     loofFillGroupWithBlank: true,
+
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
 
     pagination: {
         el: '.swiper-pagination',

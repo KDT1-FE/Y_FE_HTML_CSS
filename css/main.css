@@ -56,10 +56,10 @@ button.play_button {
 }
 
 button.play_button.puase {
-    background-image: url(../asset/img/visual_pause.svg);
+    background-image: url(/asset/img/visual_pause.svg);
 }
  button.play_button.play {
-    background-image: url(../asset/img/visual_play.svg);
+    background-image: url(/asset/img/visual_play.svg);
 }
 button.play_button:hover {
     background-color:rgba(93,113,152,.6);
@@ -149,23 +149,23 @@ button.red_button::before, button.red_button::after {
 }
 button.red_button::before {
     background-image: 
-        url(../asset/img/d4-button-filigree-left.webp), 
-        url(../asset/img/d4-button-filigree-right.webp), 
-        url(../asset/img/d4-button-filigree-center.webp), 
-        url(../asset/img/d4-button-primary-left-base.webp), 
-        url(../asset/img/d4-button-primary-right-base.webp), 
-        url(../asset/img/d4-button-primary-tile-base.webp);
+        url(/asset/img/d4-button-filigree-left.webp), 
+        url(/asset/img/d4-button-filigree-right.webp), 
+        url(/asset/img/d4-button-filigree-center.webp), 
+        url(/asset/img/d4-button-primary-left-base.webp), 
+        url(/asset/img/d4-button-primary-right-base.webp), 
+        url(/asset/img/d4-button-primary-tile-base.webp);
 }
 
 button.red_button::after {
     opacity: 0;
     background-image: 
-        url(../asset/img/d4-button-filigree-left.webp), 
-        url(../asset/img/d4-button-filigree-right.webp), 
-        url(../asset/img/d4-button-filigree-center.webp), 
-        url(../asset/img/d4-button-primary-left-hover.webp), 
-        url(../asset/img/d4-button-primary-right-hover.webp), 
-        url(../asset/img/d4-button-primary-tile-hover.webp);
+        url(/asset/img/d4-button-filigree-left.webp), 
+        url(/asset/img/d4-button-filigree-right.webp), 
+        url(/asset/img/d4-button-filigree-center.webp), 
+        url(/asset/img/d4-button-primary-left-hover.webp), 
+        url(/asset/img/d4-button-primary-right-hover.webp), 
+        url(/asset/img/d4-button-primary-tile-hover.webp);
 }
 
 button.red_button:hover::after {
@@ -222,10 +222,10 @@ button.red_button:hover::after {
 }
 
 #overview .overview-inner-first .overview-inner-left .overlay-inner {
-    background-image: url(../asset/img/D4_Gampeplay-Launch-Trailer_Thumb_global.webp);
+    background-image: url(/asset/img/D4_Gampeplay-Launch-Trailer_Thumb_global.webp);
 }
 #overview .overview-inner-second .overview-inner-left .overlay-inner {
-    background-image: url(../asset/img/D4_Story-Launch-Trailer_Thumb_global.jpg);
+    background-image: url(/asset/img/D4_Story-Launch-Trailer_Thumb_global.jpg);
 }
 
 .youtube-overlay .overlay:hover .overlay-inner {
@@ -243,7 +243,7 @@ button.red_button:hover::after {
     background: transparent;
     cursor: pointer;
     transition:filter 0.7s cubic-bezier(0.215,0.61,0.355,1);
-    background-image: url(../asset/img/circle-frame.webp);
+    background-image: url(/asset/img/circle-frame.webp);
     background-repeat: no-repeat;
     background-size: 55px;
     background-position: center center;
@@ -307,7 +307,7 @@ button.red_button:hover::after {
     display:none;
     width:100%;
     height:100%;
-    background-image: url(../asset/img/d4-tab-underline-2.webp);
+    background-image: url(/asset/img/d4-tab-underline-2.webp);
     background-size: 120px auto;
     background-repeat: no-repeat;
     background-position: center 8px;
@@ -356,16 +356,16 @@ button.brown_button::before, button.brown_button::after {
 }
 
 button.brown_button::before{
-    background-image: url(../asset/img/d4-button-secondary-left-base.webp),
-    url(../asset/img/d4-button-secondary-right-base.webp),
-    url(../asset/img/d4-button-secondary-tile-base.webp);
+    background-image: url(/asset/img/d4-button-secondary-left-base.webp),
+    url(/asset/img/d4-button-secondary-right-base.webp),
+    url(/asset/img/d4-button-secondary-tile-base.webp);
 }
 
 button.brown_button::after{
     opacity: 0;
-    background-image: url(../asset/img/d4-button-secondary-left-hover.webp),
-    url(../asset/img/d4-button-secondary-right-hover.webp),
-    url(../asset/img/d4-button-secondary-tile-hover.webp);
+    background-image: url(/asset/img/d4-button-secondary-left-hover.webp),
+    url(/asset/img/d4-button-secondary-right-hover.webp),
+    url(/asset/img/d4-button-secondary-tile-hover.webp);
 }
 
 button.brown_button:hover::after {
@@ -384,7 +384,7 @@ button.brown_button i {
 button.brown_button svg {color:#E5E0C8}
 
 #spotlight {
-    background-image: linear-gradient(0deg, rgba(111, 25, 6, 0.82), rgba(111, 25, 6, 0.82)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../asset/img/leather-texture_800.webp);
+    background-image: linear-gradient(0deg, rgba(111, 25, 6, 0.82), rgba(111, 25, 6, 0.82)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(/asset/img/leather-texture_800.webp);
     background-blend-mode: color, normal, normal, normal, normal;
     box-shadow:  inset 0px 1px 0px rgba(0, 0, 0, 0.24), inset 0px 2px 0px rgba(255, 255, 255, 0.06), inset 0px -1px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 0px rgba(255, 255, 255, 0.06);
     background-repeat: repeat;
@@ -425,7 +425,7 @@ button.brown_button svg {color:#E5E0C8}
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    background-image: url(../asset/img/d4-season-1-emblem-logo-kokr-2.png);
+    background-image: url(/asset/img/d4-season-1-emblem-logo-kokr-2.png);
     background-size: auto 90%;
     background-repeat: no-repeat;
     background-position: top center;
@@ -443,7 +443,7 @@ button.brown_button svg {color:#E5E0C8}
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    background-image: url(../asset/img/d4_season1_narrative_trailer_thumbnail_agnostic.webp);
+    background-image: url(/asset/img/d4_season1_narrative_trailer_thumbnail_agnostic.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -454,7 +454,7 @@ button.brown_button svg {color:#E5E0C8}
 }
 
 #news {
-    background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../asset/img/leather-texture_800.webp);
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(/asset/img/leather-texture_800.webp);
     box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.24), inset 0px 2px 0px rgba(255, 255, 255, 0.06), inset 0px -1px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 0px rgba(255, 255, 255, 0.06);
     background-repeat: repeat;
     padding:80px 40px;
@@ -639,19 +639,19 @@ span.text-sub {
 }
 
 #classes .youtube-overlay.first .overlay-inner {
-    background-image: url(../asset/img/D4_Story-Class-Trailer-Barbarian_Thumb_global.webp);
+    background-image: url(/asset/img/D4_Story-Class-Trailer-Barbarian_Thumb_global.webp);
 }
 #classes .youtube-overlay.second .overlay-inner {
-    background-image: url(../asset/img/D4_Story-Class-Trailer-Druid_Thumb_global.webp);
+    background-image: url(/asset/img/D4_Story-Class-Trailer-Druid_Thumb_global.webp);
 }
 #classes .youtube-overlay.third .overlay-inner {
-    background-image: url(../asset/img/D4_Story-Class-Trailer-Necromancer_Thumb_global.webp);
+    background-image: url(/asset/img/D4_Story-Class-Trailer-Necromancer_Thumb_global.webp);
 }
 #classes .youtube-overlay.fourth .overlay-inner {
-    background-image: url(../asset/img/D4_Story-Class-Trailer-Rogue_Thumb_global.webp);
+    background-image: url(/asset/img/D4_Story-Class-Trailer-Rogue_Thumb_global.webp);
 }
 #classes .youtube-overlay.fifth .overlay-inner {
-    background-image: url(../asset/img/D4_Story-Class-Trailer-Sorcerer_Thumb_global.webp);
+    background-image: url(/asset/img/D4_Story-Class-Trailer-Sorcerer_Thumb_global.webp);
 }
 
 #classes .classes-bg{
@@ -666,7 +666,7 @@ span.text-sub {
 }
 
 #classes .classes-bg .classes-character {
-    background-image: url(../asset/img/D4-Launch_Class-Section-Barbarian_001.webp);
+    background-image: url(/asset/img/D4-Launch_Class-Section-Barbarian_001.webp);
     transform-style: preserve-3d;
     backface-visibility: hidden;
     bottom: 0px;
@@ -699,7 +699,7 @@ span.text-sub {
 #classes .classes-bg .classes-bgimg {
     width: 100%;
     height:100%;
-    background-image: url(../asset/img/D4-Launch_Class-Section-BG_001.webp);
+    background-image: url(/asset/img/D4-Launch_Class-Section-BG_001.webp);
     background-position: center 81%;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -788,48 +788,48 @@ span.text-sub {
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(1)::before {
-    background-image: url(../asset/img/d4-classes-icon-barbarian-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-barbarian-base.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(1)::after {
-    background-image: url(../asset/img/d4-classes-icon-barbarian-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-barbarian-hover.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(2)::before {
-    background-image: url(../asset/img/d4-classes-icon-druid-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-druid-base.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(2)::after {
-    background-image: url(../asset/img/d4-classes-icon-druid-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-druid-hover.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(3)::before {
-    background-image: url(../asset/img/d4-classes-icon-necromancer-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-necromancer-base.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(3)::after {
-    background-image: url(../asset/img/d4-classes-icon-necromancer-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-necromancer-hover.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(4)::before {
-    background-image: url(../asset/img/d4-classes-icon-rogue-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-rogue-base.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(4)::after {
-    background-image: url(../asset/img/d4-classes-icon-rogue-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-rogue-hover.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(5)::before {
-    background-image: url(../asset/img/d4-classes-icon-sorcerer-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-sorcerer-base.webp);
 }
 
 .swiper-pagination .swiper-pagination-bullet:nth-child(5)::after {
-    background-image: url(../asset/img/d4-classes-icon-sorcerer-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-sorcerer-hover.webp);
 }
 
 
 #world {
-    background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(../asset/img/leather-texture_800.webp);
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(/asset/img/leather-texture_800.webp);
     box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.24), inset 0px 2px 0px rgba(255, 255, 255, 0.06), inset 0px -1px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 0px rgba(255, 255, 255, 0.06);
     background-repeat: repeat;
     padding:80px 40px;
@@ -883,43 +883,43 @@ span.text-sub {
 
 
 .world-pagination .swiper-pagination-bullet:nth-child(1)::before {
-    background-image: url(../asset/img/d4-classes-icon-worldbosses-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-worldbosses-base.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(1)::after {
-    background-image: url(../asset/img/d4-classes-icon-worldbosses-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-worldbosses-hover.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(2)::before {
-    background-image: url(../asset/img/d4-classes-icon-dungeons-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-dungeons-base.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(2)::after {
-    background-image: url(../asset/img/d4-classes-icon-dungeons-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-dungeons-hover.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(3)::before {
-    background-image: url(../asset/img/d4-classes-icon-strongholds-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-strongholds-base.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(3)::after {
-    background-image: url(../asset/img/d4-classes-icon-strongholds-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-strongholds-hover.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(4)::before {
-    background-image: url(../asset/img/d4-classes-icon-pvp-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-pvp-base.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(4)::after {
-    background-image: url(../asset/img/d4-classes-icon-pvp-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-pvp-hover.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(5)::before {
-    background-image: url(../asset/img/d4-classes-icon-mounts-base.webp);
+    background-image: url(/asset/img/d4-classes-icon-mounts-base.webp);
 }
 
 .world-pagination .swiper-pagination-bullet:nth-child(5)::after {
-    background-image: url(../asset/img/d4-classes-icon-mounts-hover.webp);
+    background-image: url(/asset/img/d4-classes-icon-mounts-hover.webp);
 }
 
 .slide-inner .txt-cont strong{
@@ -941,7 +941,7 @@ span.text-sub {
     object-fit: cover;
     vertical-align: middle;
     box-sizing: border-box;
-    background: url(../asset/img/circle-frame.webp), radial-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 16%, rgba(0, 0, 0, 0) 20%);
+    background: url(/asset/img/circle-frame.webp), radial-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 16%, rgba(0, 0, 0, 0) 20%);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 52px 52px, 200px 200px;
@@ -987,7 +987,7 @@ span.text-sub {
 }
 #bullets .swiper-pagination-bullet{
     filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(#6f1906 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
-    background-image: url(../asset/img/Chicklet.svg);
+    background-image: url(/asset/img/Chicklet.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1005,7 +1005,7 @@ span.text-sub {
     padding:80px 40px;
     justify-content: center;
     display: flex;
-    background: url(../asset/img/d4-lilith-bg-light.webp);
+    background: url(/asset/img/d4-lilith-bg-light.webp);
     background-size: 2600px auto !important;
     background-position: center top;
     background-repeat: no-repeat;

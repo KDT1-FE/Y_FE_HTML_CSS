@@ -128,7 +128,7 @@ var swiper7 = new Swiper('.ad__container', {
 });
 
 window.addEventListener('scroll', function () {
-    var header = document.querySelector('.fixed-header');
+    var header = document.querySelector('.header__container--fixed');
     var scrollTop = document.documentElement.scrollTop;
 
     if (scrollTop > 100) {

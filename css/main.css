@@ -21,7 +21,7 @@
     height: -webkit-fill-available;
 }
 #visual .visual_in .video-js {
-    width:100% !important; 
+    width:100%; 
 }
 #visual .visual_in .video-js video{
     position: relative; 

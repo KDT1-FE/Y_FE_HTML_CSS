@@ -1,0 +1,1309 @@
+@font-face {
+  font-family: 'Audi Type';
+  src: local('Audi Type Normal'), local('Audi-Type-Normal'),
+      url('AudiTypeScreen-Normal.woff2') format('woff2'),
+      url('AudiTypeScreen-Normal.woff') format('woff'),
+      url('AudiTypeScreen-Normal.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  font-family: 'Audi Type Normal';
+}
+
+html, body {
+  margin: 0;
+}
+/* header */
+.HeadContainer {
+  position: relative;
+  width: 100%;
+  height: 72px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.Inner {
+  display: flex;
+  height: 72px;
+  padding: 0 70px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.HeadLogo {
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 16px;
+  width: 33%;
+}
+
+.HeadLogoImg {
+  height: 40px;
+  width: 69px;
+  margin: 0 auto;
+}
+
+.HeadMenu {
+  display: block;
+  position: relative;
+  order: -1;
+  width: 33%;
+}
+
+.HeadMenuBtn {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  border: 0 none;
+  margin: 24px 0;
+  text-align: left;
+}
+
+.HeadLines {
+  height: 18px;
+  position: relative;
+  width: 18px;
+  margin: 3px 12px 3px 3px;
+}
+
+.HeadLine1 {
+  top: 6px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  height: 1px;
+  position: absolute;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+100% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+}
+
+@keyframes disappearback {
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+50% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+0% {
+    opacity: 0;
+    transform: translateY(3px);
+}
+}
+
+.HeadLine2 {
+  height: 1px;
+  top: 9px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  position: absolute;
+}
+
+@keyframes leftX {
+0% {
+    transform: rotate(0deg);
+}
+
+100% {
+    transform: rotate(45deg);
+}
+}
+
+@keyframes leftbackX {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.HeadLine3 {
+  height: 1px;
+  top: 9px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  position: absolute;
+}
+
+@keyframes rightX {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(-45deg);
+}
+
+}
+
+@keyframes rightbackX {
+  100% {
+      transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+      transform: rotate(-45deg);
+  }
+  
+  }
+
+
+.HeadLine4 {
+  height: 1px;
+  top: 12px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  position: absolute;
+}
+
+.HeadAnother {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33%;
+}
+
+.HeadAnother > .material-symbols-outlined {
+  width: 24px;
+  height: 24px;
+  display: none;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.HeadFont {
+  font-size: 16px;
+  font-stretch: 105%;
+  line-height: 24px;
+}
+
+#HeadNavi {
+  padding: 24px 70px;
+  position: relative;
+  display: none;
+  max-width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+
+.HeadNaviFont1 {
+  cursor: pointer;
+  color: gray;
+  padding: 12px 0;
+  line-height: 24px;
+}
+
+.HeadNaviContainer{
+  display: flex;
+  cursor: pointer;
+  color: gray;
+  padding: 12px 0;
+  line-height: 24px;
+}
+
+.HeadNaviFont2 {
+  display: flex;
+  cursor: pointer;
+  color: gray;
+  padding: 12px 0;
+  line-height: 24px;
+  justify-content: space-between;
+}
+
+.HeadNaviFontRight{
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeadNaviFont1:hover,
+.HeadNaviFont2:hover{
+  color: black;
+}
+
+/* section */
+.SectionContainer {
+  height: 679.6px;
+  max-width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.SectionContainerImg {
+  height: 643.6px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.SectionSubContainer {
+  position: absolute;
+  bottom: 0;
+  height: 220px;
+  padding: 0 45px;
+}
+
+.SectionTitle {
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+
+.SectionDescription {
+  color: white;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+.SectionLook {
+  width: 149.81px;
+  height: 56px;
+  cursor: pointer;
+  margin: 0px 4px 28px 0px;
+  padding: 16px 32px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.SectionLook:hover{
+  background-color: #666;
+}
+
+.SectionSearchContainer{
+  display: flex;
+  padding: 0 45px;
+  width: inherit;
+  height: 90px;
+  background-color: #4c4c4c;
+  margin-bottom: 60px;
+}
+
+.SearchTitle{
+  margin: 12px 0 24px;
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 3.5rem;
+}
+
+.SectionDropdown {
+  box-sizing: border-box;
+  display: flex;
+  width: 300px;
+  height: 52.8px;
+  margin-left: 50px;
+  margin-top: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.SectionDropdown .material-symbols-outlined {
+  cursor: pointer;
+}
+
+.SectionDropdown:hover {
+  border-bottom: 2px solid white;
+}
+
+.Dropdownlayout {
+  position: absolute;
+  height: auto;
+  display: none;
+  width: 270px;
+  max-height: 288px;
+  overflow-y: scroll;
+  list-style: none;
+  background-color: #d9d9d9;
+  z-index: 1;
+  top: 810px;
+  padding-left: 0;
+}
+
+.title {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subgroup {
+  padding: 12px 12px 12px 30px;
+}
+
+.SectionText {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.SectionDropdownTitle{
+  display: block;
+  height: 18px;
+  color: #b3b3b3;
+  margin-bottom: 3px;
+  font-size: 15px;
+  line-height: 1.8rem;
+}
+
+.SectionCarsCategory {
+  color: white;
+  font-size: 16px;
+  height: 24px;
+  line-height: 2.4rem;
+}
+
+.SectionDropdown > .material-symbols-outlined {
+  transition: .3s;
+  transform: none;
+  margin-top: 30px;
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.SectionCarNums {
+  display: flex;
+  width: 500px;
+  height: 45px;
+  align-items: flex-end;
+  margin: 18px 0 3px 30px;
+}
+
+.SectionNewCarsContainer{
+  width: auto;
+  height: 24px;
+  text-decoration: none;
+  display: flex;
+}
+
+.SectionNewCarsContainer:hover .SectionNumOfNewcars,
+.SectionNewCarsContainer:hover .SectionNewCars, 
+.SectionNewCarsContainer:hover .material-symbols-outlined{
+  cursor: pointer;
+  color: gray;
+}
+
+.SectionNumOfNewcars{
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: white;
+
+}
+.SectionNewCars {
+  margin-left: 10px;
+  padding-right: 15px;
+  margin-bottom: 0px;
+  width: 70px;
+  color: white;
+}
+
+.SectionNewCarsContainer > .material-symbols-outlined {
+  color: white;
+}
+
+.SectionOldCarsContainer{
+  width: auto;
+  height: 24px;
+  text-decoration: none;
+  display: flex;
+}
+
+.SectionOldCarsContainer:hover .SectionNumOfOldcars,
+.SectionOldCarsContainer:hover .SectionOldCars, 
+.SectionOldCarsContainer:hover .material-symbols-outlined{
+  cursor: pointer;
+  color: gray;
+}
+
+.SectionNumOfOldcars{
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: white;
+
+}
+.SectionOldCars {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  width: 140px;
+  color: white;
+}
+
+.SectionOldCarsContainer > .material-symbols-outlined {
+  color: white;
+}
+
+.SectionModelList{
+  padding: 0 45px;
+  width: 92%;
+}
+
+.SectionModel{
+  margin-left: 0!important;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.SectionModelType{
+  display: inline-block;
+  margin-left: 30px;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+
+.CarList{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.CarListSroll{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.CarListSroll::-webkit-scrollbar{
+  display: none;
+}
+
+.CarListModels{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 43px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  list-style: none;
+  animation: .3s ease-out forwards;
+
+}
+
+.Cars {
+  animation-delay: calc(.1s * 0);
+}
+
+.CarImg {
+  cursor: pointer;
+}
+
+.CarImg:hover .CarName{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #4c4c4c;
+}
+
+.CarImg:hover .CarImage {
+  transform: scale(1.1);
+}
+
+.CarImage {
+  padding: 0;
+  transform: scale(1);
+  height: 100px;
+  margin: 0 auto;
+}
+
+.CarName {
+  display: block;
+  text-align: center;
+}
+
+.Left {
+    background: #fff;
+    display: none;
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 54px;
+    cursor: pointer;
+    border-right: 1px solid #b3b3b3;
+}
+
+.Left > .material-symbols-outlined {
+    height: 48px;
+    left: calc(50% - 10px);
+    position: absolute;
+    top: calc(50% - 24px);
+    width: 48px;
+}
+
+.Right {
+  background: #fff;
+    display: block;
+    height: 150px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 54px;
+    cursor: pointer;
+    
+    border-left: 1px solid #b3b3b3;
+}
+
+.Right > .material-symbols-outlined {
+    height: 48px;
+    position: absolute;
+    top: calc(50% - 24px);
+    width: 48px;
+}
+
+.CarType {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+
+.RightType {
+  background: #fff;
+    display: block;
+    height: 130px;
+    right: 0;
+    position: absolute;
+    top: -6px;
+    width: 54px;
+    cursor: pointer;
+    border-left: 1px solid #b3b3b3;
+}
+
+.RightType > .material-symbols-outlined {
+    height: 48px;
+    right: calc(50% - 35px);
+    position: absolute;
+    top: calc(50% - 24px);
+    width: 48px;
+}
+
+/* article */
+
+.AD {
+  display: flex;
+  margin: 250px 13%;
+  height: 100%;
+  position: relative;
+
+}
+
+.AD1 {
+  padding-bottom: 50%;
+  align-self: flex-start;
+  flex: 0 0 50%;
+  position: relative;
+
+}
+
+.AD1pic {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.AD1text {
+  align-self: center;
+  margin-block-start: unset;
+  margin-inline-start: 40px;
+  flex: 0 1 auto;
+}
+
+.AD1title{
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: -0.015em;
+  line-height: 60px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.AD1des{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 45px;
+}
+
+.AD1btn{
+  width: 149.81px;
+  height: 56px;
+  cursor: pointer;
+  margin: 10px 4px 28px 0px;
+  padding: 16px 32px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.AD1btn:hover {
+  background-color: #666;
+}
+
+.Service {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 60px;
+}
+
+.Servicetitle {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 4.2rem;
+}
+
+.Compos {
+  display: flex;
+  height: 550px;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.ServiceComponent1 {
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.CompoImg1 {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.ServiceComponent2 {
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.CompoImg2 {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+
+.ServiceComponent3 {
+  margin-bottom: 0;
+  width: calc(33.33333%);
+  text-decoration: none;
+}
+
+.CompoImg3 {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.CompoText {
+  width: calc(100% - 30px);
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.CompoLook {
+  color: black;
+  display: flex;
+}
+
+.CompoLook > .material-symbols-outlined {
+  color: black;
+  margin-left: 10px;
+}
+
+.SNS {
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 75px 60px;
+}
+
+.YoutubeContainer {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.YoutubeContainer > .material-symbols-outlined {
+  position: absolute;
+  fill: #fff;
+  height: 48px;
+  margin-left: calc(50% - 24px);
+  margin-top: calc(28.125% - 24px);
+  width: 48px;
+  z-index: 1;
+  color: white;
+}
+
+.ServiceComponent1_2 {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+  background-color:#d9d9d9;
+}
+
+.ServiceComponent2_2 {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  width: calc(33.33333% - 4px);
+  margin-bottom: 0;
+  margin-right: 4px;
+  text-decoration: none;
+  background-color:#d9d9d9;
+}
+
+.ServiceComponent3_2 {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  width: calc(33.33333%);
+  text-decoration: none;
+  background-color:#d9d9d9;
+}
+
+.SocialText1 {
+  margin: 12px 24px 0;
+  color: black;
+  width: calc(100% - 35px);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 2rem;
+}
+
+.SocialText1 p{
+  margin: 5px;
+}
+
+.SocialText2 {
+  margin: 12px 24px 0;
+  color: black;
+  width: calc(100% - 30px);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 2rem;
+}
+
+.SocialText2 p{
+  margin: 5px;
+}
+
+.SocialText3 {
+  margin: 12px 24px 0;
+  color: black;
+  width: calc(100% - 40px);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 2rem;
+}
+
+.SocialText3 p{
+  margin: 5px;
+}
+
+.SocialDes {
+  margin: 12px 50px 24px 30px;
+  color: black;
+}
+
+.SocialLogo {
+  position: absolute;
+  bottom: 0;
+  color: black;
+  margin: 0 24px 18px;
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+}
+
+.LogoImg {
+  fill: #000;
+  height: 24px;
+  width: 24px;
+}
+
+.LogoText{
+  margin-left: 15px;
+}
+
+.Space {
+  padding: 42px 4%;
+}
+
+/* footer */
+
+.Footer {
+  padding: 24px 60px 40px 60px;
+  height: 100%;
+  background-color: black;
+}
+
+.UpScroll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.Up {
+  text-decoration: none;
+  display: flex;
+}
+
+.Up span {
+  color: white;
+}
+
+.Categories {
+  box-sizing: border-box;
+  margin: 40px 0 0;
+}
+
+.CategoriesUL {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-left: 0;
+  width: 100%;
+}
+
+.CategoriesUL1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+  flex-flow: row wrap;
+  padding-left: 0;
+  width: 100%;
+}
+
+.CategoriesLI {
+  margin-top: 0px;
+  margin: 0 28px 0 0;
+  padding: 0px;
+  width: 15%;
+}
+
+.Category > span:hover{
+  color:#b3b3b3;
+}
+
+.Category {
+  margin-bottom: 28px;
+}
+
+.Category > span {
+  color: white;
+  cursor: pointer;
+}
+
+.Items {
+  box-sizing: border-box;
+}
+
+.Items ul {
+  padding: 0px;
+}
+
+.Items ul li {
+  padding: 0 0 12px;
+  box-sizing: border-box;
+}
+
+.Items ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.Items ul li a:hover {
+  color:#b3b3b3
+}
+
+.Media {
+  display: flex;
+  margin: 0 0 12px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.Media ul {
+  box-sizing: border-box;
+}
+
+.Media li {
+  display: inline-block;
+}
+
+.Media li img {
+  position: relative;
+  color: white;
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
+.Copyright {
+  border-top: 1px solid #666;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Legal ul {
+  display: inline-flex;
+  flex-flow: row wrap;
+  list-style: none;
+  position: relative;
+  bottom: 3px;
+  left: 20px;
+}
+
+.Legal ul li {
+  padding-right: 24px;
+  color: white;
+  font-size: 12px;
+}
+
+.Last {
+  margin-top: 24px;
+}
+
+.Last span {
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.Quickmenu {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  z-index: 15;
+  transition: transform .45s;
+  background: #000;
+}
+
+.Quickmenu ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.Quickmenu ul li {
+  position: relative;
+}
+
+.Quickmenu ul li .menucontainer{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+i.icons {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  transition: background-color .3s;
+}
+
+.menucontainer:hover .icons,.menucontainer:hover .Textmenu
+{
+  background-color: gray;
+  cursor: pointer;
+}
+
+
+.icon {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+}
+
+.Textmenu {
+  display: none;
+  align-items: center;
+  top: 0;
+  left: 100%;
+  width: 120px;
+  height: 100%;
+  padding: 0 20px;
+  background-color: #000;
+  font-size: 13px;
+  letter-spacing: -1px;
+  transition: .3s;
+}
+
+.specific_cartype {
+  display: none;
+  border-top: 1px solid black;
+  height: auto;
+  width: auto;
+  padding-top: 0!important;
+}
+
+.btnspancontainer {
+  min-height: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.btnspancontainer .xbtn {
+  cursor: pointer;
+}
+
+.first {
+  display: block;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+}
+
+.list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4%;
+  width: 100%;
+  list-style: none;
+}
+
+.second {
+  cursor: pointer;
+}
+
+.third1 {
+  display: block;
+  height: auto;
+}
+
+.fourth1 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.third2 {
+  display: block;
+  height: auto;
+}
+
+.fourth2 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.third3 {
+  display: block;
+  height: auto;
+}
+
+.fourth3 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.third4 {
+  display: block;
+  height: auto;
+}
+
+.fourth4 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third5 {
+  display: block;
+  height: auto;
+}
+
+.fourth5 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third6 {
+  display: block;
+  height: auto;
+}
+
+.fourth6 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third7 {
+  display: block;
+  height: auto;
+}
+
+.fourth7 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third8 {
+  display: block;
+  height: auto;
+}
+
+.fourth8 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third9 {
+  display: block;
+  height: auto;
+}
+
+.fourth9 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third10 {
+  display: block;
+  height: auto;
+}
+
+.fourth10 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third11 {
+  display: block;
+  height: auto;
+}
+
+.fourth11 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third12 {
+  display: block;
+  height: auto;
+}
+
+.fourth12 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third13 {
+  display: block;
+  height: auto;
+}
+
+.fourth13 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third14 {
+  display: block;
+  height: auto;
+}
+
+.fourth14 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.third15 {
+  display: block;
+  height: auto;
+}
+
+.fourth15 {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.second:hover {
+  transform: scale(1.1);
+  color: gray;
+  text-decoration: underline;
+}

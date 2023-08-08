@@ -36,7 +36,7 @@
     position:absolute; 
     left: 25px;
     margin-top:650px;
-    z-index:99;
+    z-index:10;
 }
 #visual .visual_in .control-bar .play {
     display:none;
@@ -204,7 +204,7 @@ button.red_button:hover::after {
     height:0; 
     overflow:hidden; 
     background-color: #000;
-    z-index: 999;
+    z-index: 10;
     width:100%; 
     border: 1px solid rgba(255, 255, 255, 0.07);
     box-sizing: border-box;
@@ -429,7 +429,7 @@ button.brown_button svg {color:#E5E0C8}
     background-size: auto 90%;
     background-repeat: no-repeat;
     background-position: top center;
-    z-index: 999;
+    z-index: 10;
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.07);
     box-sizing: border-box;
@@ -537,7 +537,7 @@ button.brown_button svg {color:#E5E0C8}
     width: 100%;
     height: 100%;
     top:0;
-    z-index: 999999;
+    z-index: 10;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.07);
 }
@@ -711,7 +711,7 @@ span.text-sub {
 .swiper-pagination{
     position:absolute; 
     top:280px;
-    z-index: 999;
+    z-index: 10;
     height:100px;
     width:100% !important;
     max-width: 630px;
@@ -722,7 +722,7 @@ span.text-sub {
 .world-pagination {
     position:absolute; 
     top:70px;
-    z-index: 999;
+    z-index: 10;
     height:100px;
     width:100% !important;
     max-width: 630px;

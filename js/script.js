@@ -129,7 +129,7 @@ var swiper7 = new Swiper('.ad__container', {
 
 window.addEventListener('scroll', function () {
     var header = document.querySelector('.fixed-header');
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var scrollTop = document.documentElement.scrollTop;
 
     if (scrollTop > 100) {
         // 특정 위치(여기서는 100px) 아래로 스크롤했을 때
@@ -137,4 +137,22 @@ window.addEventListener('scroll', function () {
     } else {
         header.style.top = '-100px'; // 헤더를 숨기도록 설정
     }
+});
+
+document.querySelectorAll('.footer__banner--title-modal').forEach(function (el, index) {
+    el.addEventListener('mouseover', function () {
+        document.querySelectorAll('.hover__menu')[index].classList.add('show');
+    });
+});
+
+document.querySelectorAll('.hover__menu').forEach(function (el, index) {
+    el.addEventListener('mouseleave', function () {
+        el.classList.remove('show');
+    });
+});
+
+window.addEventListener('mouseleave', function () {
+    this.document.querySelectorAll('hover__menu').forEach(function (el) {
+        el.classList.remove('show');
+    });
 });

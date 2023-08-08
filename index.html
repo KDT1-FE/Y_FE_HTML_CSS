@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>디아블로® IV</title>
+    <link rel="icon" href="/asset/img/favi.png" type="image/x-icon">
+
+    <!-- 백그라운드 비디오 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video-js.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.8.1/video.min.js"></script>
+
+    <!-- SWIPER 외부 라이브러리 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="/js/main.js"></script>
+
+    <link rel="stylesheet" href="/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="/css/common.css" type="text/css">
+    <link rel="stylesheet" href="/css/font.css" type="text/css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="left-section">
+                <h1 class="logo">
+                    <a href="https://www.blizzard.com/ko-kr/">
+                        <img src="/asset/img/header-logo-blizzard.svg" alt="블리자드" />
+                    </a>
+                </h1>
+            </div>
+        
+            <div class="center-section">
+                <h2 class="diablo-logo">
+                    <a href="./">
+                        <img src="/asset/img/header-logo.svg" alt="디아블로®" />
+                    </a>
+                </h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a data-href="#overview" onclick="scrollMove(this)">개요</a>
+                        </li>
+                        <li>
+                            <a href="https://diablo4.blizzard.com/ko-kr/season">시즌</a>
+                        </li>
+                        <li>
+                            <a data-href="#spotlight" onclick="scrollMove(this)">이야기</a>
+                        </li>
+                        <li>
+                            <a data-href="#news" onclick="scrollMove(this)">새소식</a>
+                        </li>
+                        <li>
+                            <a data-href="#classes" onclick="scrollMove(this)">직업</a>
+                        </li>
+                        <li>
+                            <a data-href="#world" onclick="scrollMove(this)">세계</a>
+                        </li>
+                        <li>
+                            <a href="https://kr.forums.blizzard.com/ko/d4/">토론장</a>
+                        </li>
+                        <li class="menu-more">
+                            <a href="javascript:void(0);"><img src="/asset/img/header-more.svg" alt="더보기"></a>
+                            <div class="inner-nav">
+                                <ul class="inner-nav-list">
+                                    <li>
+                                        <a href="https://gear.blizzard.com/collections/diablo" target="_blank">기어스토어 <i class="link-btn">바로가기</i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.blizzard.kr/" target="_blank">이벤트 <i class="link-btn">바로가기</i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-section">
+                <div class="customer">
+                    <a href="javascript:void(0);">계정</a>
+                    <div class="inner-nav">
+                            <div class="inner-nav-wrap">
+                            <div class="inner-nav-list">
+                                <div class="nav-top">
+                                    <a href="javascript:void(0);">로그인</a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://account.battle.net/login/ko/?ref=https://oauth.battle.net/authorize?response_type%3Dcode%26client_id%3D057adb2af62a4d59904f74754838c4c8%26scope%3Daccount.full%2520commerce.virtualcurrency.full%2520account-settings.full%26state%3D8gVQ3A-fqoINX8khn-_OFftY2hHzof5JGFxyNNfUOPo%253D%26redirect_uri%3Dhttps://account.battle.net/callback/oauth2/code/account-settings&app=bas">계정 관리</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://account.battle.net/creation/flow/creation-full">무료 회원 가입</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="nav-bottom">
+                                    <li>
+                                        <a href="https://kr.battle.net/support/ko/">고객지원</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://kr.shop.battle.net/ko-kr">샵</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://download.battle.net/ko-kr/?product=bnetdesk">Battle.net 앱 다운로드</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="header-buy">구매하기</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <section id="visual" class="main_visual">
+                <div class="visual_in">
+
+
+                    <div class="visual-content">
+                        <img src="/asset/img/main-visual-logo.webp" loading="lazy" alt="디아블로" />
+                        <div class="visual-content-text">
+                            <h3 class="title">지옥에 오신 것을 환영합니다</h3>
+                            <p class="normal-text">지옥문이 열리고, 디아블로 IV가 출시되었습니다</p>
+                        </div>
+                        <button class="red_button">구매하기</button>
+                        <div class="visual-content-logo">
+                            <ul>
+                                <li class="first"><img src="/asset/img/visual-logo01.svg" loading="lazy" alt="배틀넷"></li>
+                                <li class="second"><img src="/asset/img/visual-logo02.svg" loading="lazy" alt="배틀넷"></li>
+                                <li class="third"><img src="/asset/img/visual-logo03.svg" loading="lazy" alt="배틀넷"></li>
+                                <li class="fourth"><img src="/asset/img/visual-logo04.svg" loading="lazy" alt="배틀넷"></li>
+                            </ul>
+                        </div>
+                        <div class="control-bar">
+                            <button class="play_button puase">puase</button>
+                            <button class="play_button play">play</button>
+                        </div>
+                    </div>
+                    
+                    <video id="myPlayer" class="video-js vjs-default-skin" loading="lazy" webkit-playsinline loop="loop"></video>
+                    
+                </div>
+            </section>
+
+            <section id="overview" class="main_overview">
+                <div class="overview-wrap">
+                    <div class="overview-inner">
+                        <div class="overview-inner-cont overview-inner-first on">
+                            <div class="overview-inner-left youtube-overlay firstOver">
+                                <div class="overlay">
+                                    <div class="overlay-inner"></div>
+                                    <button onclick="birthModal('.firstOver')"><img src="/asset/img/icon-play.svg" loading="lazy" alt="재생하기"></button>
+                                </div>
+                                <div class="youtube">
+                                    <iframe id="player" frameborder="0" allowfullscreen="1" data-src="https://www.youtube-nocookie.com/embed/i1kfjcjZ6Qw?controls=0&amp;autoplay=1&amp;mute=0&amp;loop=0&amp;playsinline=0&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdiablo4.blizzard.com&amp;widgetid=12" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="디아블로 IV | 게임플레이 출시 트레일러" width="640" height="360" src="" tabindex="-1"></iframe>
+                                </div>
+                            </div>
+                            <div class="overview-inner-right">
+                                <div class="overview-tap">
+                                    <ul>
+                                        <li><button onclick="tabClickFunc('first')" class="tab-button tab-button-first on">게임플레이</button></li>
+                                        <li><button onclick="tabClickFunc('second')" class="tab-button tab-button-second">이야기</button></li>
+                                    </ul>
+                                </div>
+                                <p class="normal-text">
+                                    드높은 천상과 불타는 지옥 사이에서 끝없는 전투가 펼쳐지는 가운데, 
+                                    혼돈이 성역을 삼켜 버리려 합니다. 
+                                    끝없이 몰려드는 악마들, 다양한 능력과 악몽 같은 던전, 
+                                    전설적인 전리품으로 가득한 광활한 오픈 월드는 모험과 파괴를 약속합니다. 
+                                    살아남아 어둠을 정복하라 - 그러지 못하면 암흑에 굴복할 수밖에 없습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="overview-inner-cont overview-inner-second">
+                            <div class="overview-inner-left youtube-overlay secondOver">
+                                <div class="overlay">
+                                    <div class="overlay-inner"></div>
+                                    <button onclick="birthModal('.secondOver')"><img src="/asset/img/icon-play.svg" loading="lazy" alt="재생하기"></button>
+                                </div>
+                                <div class="youtube">
+                                    <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="디아블로 IV | 스토리 출시 트레일러" width="640" height="360" data-src="https://www.youtube-nocookie.com/embed/C1O3hlecTb8?controls=0&amp;autoplay=1&amp;mute=0&amp;loop=0&amp;playsinline=0&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdiablo4.blizzard.com&amp;widgetid=12" tabindex="-1"></iframe>
+                                </div>
+                            </div>
+                            <div class="overview-inner-right">
+                                <div class="overview-tap">
+                                    <ul>
+                                        <li><button onclick="tabClickFunc('first')" class="tab-button">게임플레이</button></li>
+                                        <li><button onclick="tabClickFunc('second')" class="tab-button on">이야기</button></li>
+                                    </ul>
+                                </div>
+                                <p class="normal-text">
+                                    이나리우스와 릴리트는 드높은 천상과 불타는 지옥 사이에서 벌어지는 영원한 분쟁을 피해, 
+                                    훔친 세계석으로 성역을 창조하고 네팔렘에게 생명을 주었습니다. 
+                                    혼혈인 자손들이 파멸할까 두려웠던 릴리트는 폭력으로써 네팔렘을 보호하려 했고, 
+                                    그 결과 이나리우스는 그녀에게 등을 돌리고 심연으로 그녀를 추방했습니다. 
+                                    그 후 둘은 적이 되었습니다. 릴리트가 돌아오며 어둠과 증오의 시대가 도래합니다. 
+                                    성역을 기다리는 것은 어떤 운명일까요?
+                                </p>
+                                <button class="brown_button">
+                                    시네마틱 
+                                    <i class="play-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewBox="0 0 24 24" part="icon blz-icon"><path stroke="none" d="M6 5.573c0-1.267 1.604-2.012 2.777-1.291l10.46 6.427c1.017.624 1.017 1.958 0 2.582l-10.46 6.427C7.604 20.439 6 19.694 6 18.427V5.573Z"></path></svg>
+                                        play
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="spotlight">
+                <div class="spotlight-wrap">
+                    <div class="spotlight-left">
+                        <h3 class="title">7월 21일, 악의 종자의 시즌이 시작됩니다</h3>
+                        <p class="normal-text">릴리트의 타락이 새로운 형태로 성역에 퍼져, 악의 종자 괴물들이 태어났습니다. 
+                            이 괴물들은 아수라장이 된 땅을 거닐며, 정신을 잃고 무차별적인 살상을 자행하고 있습니다. 
+                            새로운 게임플레이, 시즌 여정, 배틀 패스 등 다양한 콘텐츠가 추가되는 
+                            첫 번째 디아블로 IV 시즌에 대해 자세히 알아보십시오.</p>
+                        <button class="brown_button">
+                            자세히 보기
+                        </button>
+                    </div>
+                    <div class="spotlight-right">
+                        <div class="season-img" role="img" aria-label="악의 종자 시즌">악의 종자 시즌</div>
+                        <div class="season-bg"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="news">
+                <div class="news-wrap">
+                    <h3 class="title">새소식</h3>
+                    <div class="news-swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="img-cont"><img src="/asset/img/UCA6W0AZUREM1685750636109.jpg" loading="lazy" alt="디아블로 IV 패치 노트" /></div>
+                                <div class="txt-cont">
+                                    <strong>디아블로 IV 패치 노트</strong>
+                                    <span>7월 27일</span>
+                                </div>
+                                <a href="https://news.blizzard.com/ko-kr/diablo4/23964909/%EB%94%94%EC%95%84%EB%B8%94%EB%A1%9C-iv-%ED%8C%A8%EC%B9%98-%EB%85%B8%ED%8A%B8" target="_blank"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-cont"><img src="/asset/img/Y4IUKYPTBHLD1689978150874.jpg" loading="lazy" alt="악의 종자 시즌 모닥불 대화 따라잡기" /></div>
+                                <div class="txt-cont">
+                                    <strong>악의 종자 시즌 모닥불 대화 따라잡기</strong>
+                                    <span>7월 22일</span>
+                                </div>
+                                <a href="https://news.blizzard.com/ko-kr/diablo4/23985148/%EC%95%85%EC%9D%98-%EC%A2%85%EC%9E%90-%EC%8B%9C%EC%A6%8C-%EB%AA%A8%EB%8B%A5%EB%B6%88-%EB%8C%80%ED%99%94-%EB%94%B0%EB%9D%BC%EC%9E%A1%EA%B8%B0" target="_blank"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-cont"><img src="/asset/img/PM41L0JLEGJA1689791749843.png" loading="lazy" alt="디아블로 IV 단편 소설: '뼈의 성소'(작가: Carly Anne West)" /></div>
+                                <div class="txt-cont">
+                                    <strong>디아블로 IV 단편 소설: "뼈의 성소"(작가: Carly Anne West)</strong>
+                                    <span>7월 22일</span>
+                                </div>
+                                <a href="https://news.blizzard.com/ko-kr/diablo4/23972666/%EB%94%94%EC%95%84%EB%B8%94%EB%A1%9C-iv-%EB%8B%A8%ED%8E%B8-%EC%86%8C%EC%84%A4%3A-%EB%BC%88%EC%9D%98-%EC%84%B1%EC%86%8C-%EC%9E%91%EA%B0%80%3A-carly-anne-west" target="_blank"></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-cont"><img src="/asset/img/Y4IUKYPTBHLD1689978150874.jpg" loading="lazy" alt="악의 종자 시즌 - 모닥불 대화를 놓치지 마세요!" /></div>
+                                <div class="txt-cont">
+                                    <strong>악의 종자 시즌 - 모닥불 대화를 놓치지 마세요!</strong>
+                                    <span>7월 20일</span>
+                                </div>
+                                <a href="https://news.blizzard.com/ko-kr/diablo4/23972667/%EC%95%85%EC%9D%98-%EC%A2%85%EC%9E%90-%EC%8B%9C%EC%A6%8C-%EB%AA%A8%EB%8B%A5%EB%B6%88-%EB%8C%80%ED%99%94%EB%A5%BC-%EB%86%93%EC%B9%98%EC%A7%80-%EB%A7%88%EC%84%B8%EC%9A%94" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="brown_button">전체 보기 
+                        <i class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" part="icon blz-icon"><path d="M7 17 17 7m0 0H7m10 0v10"></path></svg>
+                            link
+                        </i>
+                    </button>
+                </div>
+                <script>
+                    const swiper = new Swiper('.news-swiper', {
+                    // Optional parameters
+                    spaceBetween: 15,
+                    direction: 'horizontal',
+                    loop: false,
+                    autoplay : false,
+                    slidesPerView: 2,
+                    breakpoints: {
+                        1260: {
+                            slidesPerView: 4, 
+                            spaceBetween: 30,
+                        },
+                        960: {
+                            slidesPerView: 3, 
+                            spaceBetween: 30,
+                        }
+
+                    }
+                    });
+                </script>
+            </section>
+
+            <section id="classes">
+                <div class="classes-wrap">
+                    <div class="classes-top">
+
+                        <div class="classes-text">
+                            <span class="text-sub">내 마음대로 플레이하는 디아블로 IV</span>
+                            <h3 class="title">나만의 성역 만들기</h3>
+                            <p class="normal-text">
+                                나만의 경험을 만들어 가십시오. 캐릭터의 외형, 피에 굶주린 지옥의 하수인들을 처치할 때 사용할 기술, 
+                                캐릭터의 능력을 강화하고 외형을 변화시키는 장비 등 모든 것을 선택할 수 있습니다.
+                            </p>
+                        </div>
+
+                        <div class="classes-list">
+                            <ul class="text-list">
+                                <li>
+                                    <div class="list-img">
+                                        <img src="/asset/img/D4-Launch_Media-Thumbs_Character-Creation_700.webp" loading="lazy" alt="캐릭터 생성" />
+                                    </div>
+                                    <div class="list-txt">
+                                        <strong>캐릭터 생성</strong>
+                                        <p>
+                                            직업마다 특유의 헤어스타일이 준비되어 있고, 플레이어들은 눈동자 색, 
+                                            신체 표식, 장식 등의 세부적인 요소까지 캐릭터의 외형을 지정하여 
+                                            무려 8조 가지가 넘는 조합을 만들어 낼 수 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img">
+                                        <img src="/asset/img/D4-Launch_Media-Thumbs_Gear_700.jpg" loading="lazy" alt="장비" />
+                                    </div>
+                                    <div class="list-txt">
+                                        <strong>장비</strong>
+                                        <p>
+                                            모험을 하며 발견하는 아이템 중에 즐겨 쓰게 되는 장비가 있을 것입니다. 
+                                            아이템은 찾았을 때의 상태 그대로 사용해도 되지만, 보너스를 추출하거나 
+                                            제작을 통해 특정 속성을 조합하는 등의 방법으로 변화시켜 플레이 방식을 진화시킬 수도 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img">
+                                        <img src="/asset/img/D4-Launch_Media-Thumbs_Skill-Trees_700.jpg" loading="lazy" alt="기술 트리" />
+                                    </div>
+                                    <div class="list-txt">
+                                        <strong>기술 트리</strong>
+                                        <p>
+                                            레벨을 올리면서 여러 카테고리의 기술을 선택하여 캐릭터를 더 강력하게 육성하십시오. 
+                                            지속 효과, 공격 및 방어 기술, 원소 기술을 업그레이드하고 기존의 능력을 강화하십시오. 
+                                            특정 분야에 집중해도 되고, 여러 전문화를 오가며 선택해도 됩니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-img">
+                                        <img src="/asset/img/D4-Launch_Media-Thumbs_Paragon-Boards_700.jpg" loading="lazy" alt="정복자 보드" />
+                                    </div>
+                                    <div class="list-txt">
+                                        <strong>정복자 보드</strong>
+                                        <p>
+                                            게임 후반에는 정복자 포인트로 능력치를 올리거나 더 강력한 효과를 얻어, 
+                                            계속 캐릭터의 빌드와 기술을 확장하고 변경해 나아갈 수 있습니다. 
+                                            수치 분석을 통해 마음에 드는 빌드를 완성해 보십시오.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="classes-bottom">
+                        <div class="bottom-inner">
+                            <h3 class="title">직업</h3>
+                            <div class="classes-swiper">
+                                <div class="swiper-pagination"></div>
+                                <ul class="swiper-wrapper">
+
+                                    <li class="swiper-slide">
+                                        <p class="normal-text">
+                                            야만용사는 타의 추종을 불허하는 힘을 지니고 있으며, 
+                                            전투 시 상황에 맞춰 모든 무기를 능숙하게 다룰 수 있습니다. 
+                                            이들이 위협적인 전장의 함성을 내지르고 강력한 일격으로 대지를 뒤흔들면, 
+                                            밀려들던 악마 무리들도 맥을 못 춥니다.
+                                        </p>
+                                        <div class="youtube-overlay first classes01">
+                                            <div class="overlay">
+                                                <div class="overlay-inner"></div>
+                                                <button onclick="birthModal('.classes01')"><img src="/asset/img/icon-play.svg" loading="lazy" alt="재생하기"></button>
+                                            </div>
+                                            <div class="youtube">
+                                                <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="디아블로 IV | 직업 트레일러 - 야만용사 편" width="640" height="360" data-src="https://www.youtube-nocookie.com/embed/QK7MArjTPN4?controls=0&amp;autoplay=1&amp;mute=0&amp;loop=0&amp;playsinline=0&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdiablo4.blizzard.com&amp;widgetid=13" tabindex="-1"></iframe>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <p class="normal-text">
+                                            무자비한 변신술사 드루이드는 거대한 곰 형상과 
+                                            광포한 늑대인간 형상을 자유롭게 넘나들며 야생동물들과 함께 싸웁니다. 
+                                            이들은 대지와 바람, 폭풍의 힘을 자유자재로 부리며 자연의 분노를 표출하여 적을 파멸시킵니다.
+                                        </p>
+                                        <div class="youtube-overlay second classes02">
+                                            <div class="overlay">
+                                                <div class="overlay-inner"></div>
+                                                <button onclick="birthModal('.classes02')"><img src="/asset/img/icon-play.svg" loading="lazy" alt="재생하기"></button>
+                                            </div>
+                                            <div class="youtube">
+                                                <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="디아블로 IV | 직업 트레일러 - 드루이드 편" width="640" height="360" data-src="https://www.youtube-nocookie.com/embed/iHV7AH832uc?controls=0&amp;autoplay=1&amp;mute=0&amp;loop=0&amp;playsinline=0&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdiablo4.blizzard.com&amp;widgetid=14" tabindex="-1"></iframe>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <p class="normal-text">
+                                            강령술사는 교활한 소환사로, 복수심에 불타는 언데드 무리를 불러냅니다. 
+                                            이들의 정수는 뼈와 피, 어둠의 세 가지 강력한 영역으로 흘러들어 적을 쓰러뜨립니다.
+                                        </p>
+                                        <div class="youtube-overlay third classes03">
+                                            <div class="overlay">
+                                                <div class="overlay-inner"></div>
+                                                <button onclick="birthModal('.classes03')"><img src="/asset/img/icon-play.svg" loading="lazy" alt="재생하기"></button>
+                                            </div>
+                                            <div class="youtube">
+                                                <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="디아블로 IV | 직업 트레일러 - 강령술사 편" width="640" height="360" data-src="https://www.youtube-nocookie.com/embed/2jzkrk70JB8?controls=0&amp;autoplay=1&amp;mute=0&amp;loop=0&amp;playsinline=0&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdiablo4.blizzard.com&amp;widgetid=15" tabindex="-1"></iframe>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <p class="normal-text">
+                                            도적은 원거리 전투나 근접 전투를 전문으로 하는 기민한 전사입니다. 
+                                            이들은 힘을 주입한 무기와 강력한 연계 공격으로 어떤 적이든 꺾을 수 있고, 
+                                            치명적인 독과 어둠 마법으로 무기를 강화하여 악마를 일방적으로 학살할 수 있습니다.
+                                        </p>
+                                        <div class="youtube-overlay fourth classes04">
+                                            <div class="overlay">
+                                                <div class="overlay-inner"></div>
+                                                <button onclick="birthModal('.classes04')"><img src="/asset/img/icon-play.svg" loading="lazy" alt="재생하기"></button>
+                                            </div>
+                                            <div class="youtube">
+                                                <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="디아블로 IV | 직업 트레일러 - 도적 편" width="640" height="360" data-src="https://www.youtube-nocookie.com/embed/Ou8yZWNySAQ?controls=0&amp;autoplay=1&amp;mute=0&amp;loop=0&amp;playsinline=0&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdiablo4.blizzard.com&amp;widgetid=16" tabindex="-1"></iframe>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="swiper-slide">
+                                        <p class="normal-text">
+                                            원소술사는 원소의 힘을 사용해 승리를 확보합니다. 
+                                            이들은 자연의 거친 힘을 사용해 번개 화살을 뿜고, 
+                                            얼음 파편으로 적을 꿰뚫으며, 이글거리는 운석을 퍼부어 적을 궤멸합니다.
+                                        </p>
+                                        <div class="youtube-overlay fifth classes05">
+                                            <div class="overlay">
+                                                <div class="overlay-inner"></div>
+                                                <button onclick="birthModal('.classes05')"><img src="/asset/img/icon-play.svg" loading="lazy" alt="재생하기"></button>
+                                            </div>
+                                            <div class="youtube">
+                                                <iframe id="player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="디아블로 IV | 직업 트레일러 - 원소술사 편" width="640" height="360" data-src="https://www.youtube-nocookie.com/embed/gpmHcYAeNak?controls=0&amp;autoplay=1&amp;mute=0&amp;loop=0&amp;playsinline=0&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fdiablo4.blizzard.com&amp;widgetid=17" tabindex="-1"></iframe>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <div class="swiper-button"></div>
+                            </div>
+                        </div>
+                        <script>
+                            var bullet = ['야만용사', '드루이드', '강령술사', '도적', '원소술사'];
+                            const swiper2 = new Swiper('.classes-swiper', {
+                            // Optional parameters
+                            effect : 'fade',
+                            fadeEffect: { 
+                            crossFade: true 
+                            },
+                            direction: 'horizontal',
+                            loop: false,
+                            allowTouchMove : false,
+                            slidesPerView: 1,
+                            pagination: {
+                                el: ".swiper-pagination",
+                                clickable: true,
+                                renderBullet: function (index, className) {
+                                    return '<div class="' + className + '" onclick="changeChar(this);"><span>' + (bullet[index]) + '</span></div>';
+                                }
+                            },
+                            });
+
+                            let character, background;
+                            let x = 0, y = 0;
+                            let mx = 0, my = 0;
+                            const speed = 0.02;
+
+                            const loop = () =>{
+                                mx += (x - mx) * speed;
+                                my += (y - my) * speed;
+                                window.requestAnimationFrame(loop);
+                            }
+
+                            const mouseFunc = (e) =>{
+                                x = (e.clientX-window.innerWidth/2), y = (e.clientY-window.innerHeight/2);
+                                character.style.transform = `translate(${-(mx/50)}px, ${-(my/50)}px)`;
+                                background.style.transform = `translate(${-(mx/25)}px, ${-(my/25)}px)`;
+                            }
+
+                            window.onload = () =>{
+                                $('.wrap').fadeIn(1000); // 페이지 로드 된 이후 출력
+                                character = document.getElementById("classes-character");
+                                background = document.getElementById("classes-bgimg");
+                                loop();
+                                window.addEventListener("mousemove", mouseFunc);
+                            }
+
+
+                            function getIndex(ele) {
+                                var _i = 0;
+                                while((ele = ele.previousSibling) != null ) {
+                                    _i++;
+                                }
+                                return _i;
+                            }
+
+                                function changeChar(elem) {
+                                    var charIndex = getIndex(elem);
+                                        if (charIndex === 0) {
+                                            character.style.backgroundImage = 'url(/asset/img/D4-Launch_Class-Section-Barbarian_001.webp)';
+                                        } else if (charIndex === 1) {
+                                            character.style.backgroundImage = 'url(/asset/img/D4-Launch_Class-Section-Druid_001.png)';
+                                        } else if (charIndex === 2) {
+                                            character.style.backgroundImage = 'url(/asset/img/D4-Launch_Class-Section-Necromancer_001.png)';
+                                        } else if (charIndex === 3) {
+                                            character.style.backgroundImage = 'url(/asset/img/D4-Launch_Class-Section-Rogue_001.png)';
+                                        } else {
+                                            character.style.backgroundImage = 'url(/asset/img/D4-Launch_Class-Section-Sorcerer_001.png)';
+                                        }
+
+                                }
+
+                        </script>
+                    </div>
+
+                </div>
+                <div class="classes-bg">
+                    <div id="classes-bgimg" class="classes-bgimg"></div>
+                    <div id="classes-character" class="classes-character"></div>
+                </div>
+            </section>
+
+            <section id="world" class="world">
+                <div class="world-wrap">
+                    <div class="world-top">
+                        <h3 class="title">오픈 월드</h3>
+                        <p class="normal-text">불타는 지옥과 싸우며 성역 세계를 발견하십시오. 다른 모험가들과 힘을 합쳐 악마 세력과 싸우고, 잃어버린 비밀을 밝혀내십시오.</p>
+                    </div>
+                    <div class="world-bottom">
+                        <div class="world-swiper">
+                            <div class="world-pagination"></div>
+                            <ul class="swiper-wrapper">
+
+                                <li class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <div class="img-cont">
+                                            <img src="/asset/img/D4-Launch_Media-Thumbs_World-Bosses_640.webp" loading="lazy" alt="야외 우두머리" />
+                                        </div>
+                                        <div class="txt-cont">
+                                            <strong>야외 우두머리</strong>
+                                            <p class="normal-text">
+                                                야외 우두머리는 오픈 월드 지역에 등장하며, 여러 단계로 이루어진 전투를 통해 쓰러뜨릴 수 있습니다. 
+                                                플레이어들은 힘을 합쳐 야외 우두머리를 쓰러뜨려야 하고(최대 12명까지 한 번에 전투에 참여 가능), 
+                                                승리하면 고유 아이템을 보상으로 받을 수 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <div class="img-cont">
+                                            <img src="/asset/img/D4-Launch_Media-Thumbs_Dungeons_1600.webp" loading="lazy" alt="던전" />
+                                        </div>
+                                        <div class="txt-cont">
+                                            <strong>던전</strong>
+                                            <p class="normal-text">
+                                                스토리를 진행하면서 괴물이 득시글거리는 120개가 넘는 던전을 탐험할 수 있습니다. 
+                                                괴물들을 쓰러뜨리고 값진 경험치와 전리품을 보상으로 받으십시오.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <div class="img-cont">
+                                            <img src="/asset/img/D4-Launch_Media-Thumbs_Strongholds_1600.webp" loading="lazy" alt="보루" />
+                                        </div>
+                                        <div class="txt-cont">
+                                            <strong>보루</strong>
+                                            <p class="normal-text">
+                                                영웅적인 모험가들은 이러한 보루에 득시글거리는 적을 소탕하고 보루를 되찾아 성역의 주민들에게 돌려줄 수 있습니다. 
+                                                마을이 예전의 모습으로 돌아갈 수는 없겠지만, 승리는 오래가는 흔적을 남깁니다. 
+                                                적대적이었던 지역도 안전한 안식처로 변할 수 있죠.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <div class="img-cont">
+                                            <img src="/asset/img/D4-Launch_Media-Thumbs_PvP_1600.webp" loading="lazy" alt="PVP" />
+                                        </div>
+                                        <div class="txt-cont">
+                                            <strong>PVP</strong>
+                                            <p class="normal-text">
+                                                PvP 지역에 들어서면 전투의 판도가 바뀝니다. 
+                                                위험하지만 그만큼 보상도 주어지는 이런 지역에서 자신의 상태를 '적대적'으로 설정하면 
+                                                다른 플레이어들을 공격해 값진 전리품을 빼앗을 수 있습니다. 하지만 조심하십시오. 
+                                                거꾸로 자신이 공격받을 수도 있는 법입니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="swiper-slide">
+                                    <div class="slide-inner">
+                                        <div class="img-cont">
+                                            <img src="/asset/img/D4-Launch_Media-Thumbs_Mounts_1600.webp" loading="lazy" alt="탈것" />
+                                        </div>
+                                        <div class="txt-cont">
+                                            <strong>탈것</strong>
+                                            <p class="normal-text">
+                                                충성스러운 군마에 올라타 성역 세계를 빠르게 이동하십시오. 
+                                                모험을 하며 수집한 노획품과 방어구로 탈것을 자유롭게 꾸밀 수 있습니다. 
+                                                *탈것을 이용하려면 게임 내에서 탈것을 잠금 해제한 상태여야 합니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <div class="world-control">
+                                <div class="swiper-button-next"><img src="/asset/img/icon-arrow-down.svg" loading="lazy" alt="다음"></div>
+                                <div class="swiper-button-prev"><img src="/asset/img/icon-arrow-down.svg" loading="lazy" alt="이전"></div>
+                            </div>
+                        </div>
+                        <script>
+                            var bullet2 = ['야외 우두머리', '던전', '보루', 'PVP', '탈것'];
+                            const swiper3 = new Swiper('.world-swiper', {
+                            // Optional parameters
+                            effect : 'fade',
+                            fadeEffect: { 
+                            crossFade: true 
+                            },
+                            direction: 'horizontal',
+                            loop: true,
+                            allowTouchMove : true,
+                            slidesPerView: 1,
+                            pagination: {
+                                el: ".world-pagination",
+                                clickable: true,
+                                renderBullet: function (index, className) {
+                                    return '<div class="' + className + '"><span>' + (bullet2[index]) + '</span></div>';
+                                }
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            }
+                            });
+                        </script>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="outro" class="outro">
+                <div class="outro-wrap">
+                    <div class="text-cont">
+                        <span class="text-sub">디아블로 4 구매</span>
+                        <h3 class="title">상품 비교</h3>
+                        <p class="normal-text">디지털 딜럭스 또는 얼티밋 에디션으로 디아블로 IV 경험을 업그레이드하세요.</p>
+                    </div>
+                    <div class="table-container">
+                        <table class="desktop-comparison-table">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-thumbnail-cell ">
+                                        <img src="/asset/img/d4-base-edition.webp" loading="lazy" alt="일반판">
+                                    </td>
+                                    <td class="product-thumbnail-cell ">
+                                        <img src="/asset/img/d4-deluxe-edition.webp" loading="lazy" alt="디지털 디럭스 에디션">
+                                    </td>
+                                    <td class="product-thumbnail-cell ">
+                                        <img src="/asset/img/d4-ultimate-edition.webp" loading="lazy" alt="얼티밋 에디션">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th class="product-option-header " style="width: calc(80%/3)">
+                                        <div part="product-header-text" class="product-header-text">일반판</div>
+                                    </th>
+                                    <th class="product-option-header " style="width: calc(80%/3)">
+                                        <div part="product-header-text" class="product-header-text">디지털 딜럭스 에디션</div>
+                                    </th>
+                                    <th class="product-option-header " style="width: calc(80%/3)">
+                                        <div part="product-header-text" class="product-header-text">얼티밋 에디션</div>
+                                        <div part="product-subheading-text" class="product-subheading ">최고 가성비</div>
+                                    </th>
+                                </tr>
+                                <tr class="button-row">
+                                    <td></td>
+                                    <td class="comparison-button-cell ">
+                                        <button>선택</button>
+                                    </td>
+                                    <td class="comparison-button-cell ">
+                                        <button>선택</button>
+                                    </td>
+                                    <td class="comparison-button-cell ">
+                                        <button>선택</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">Battle.net용 디아블로® IV</td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">디아블로 III 이나리우스 날개 및 이나리우스 멀록 애완동물**</td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">월드 오브 워크래프트 격노의 융합체 탈것**</td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">디아블로 이모탈™ 암영 날개 달린 어둠 꾸미기 아이템 세트**</td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">유혹 탈것*</td>
+                                    <td class="odd">
+                                        
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">지옥벼림 갑각 탈것 방어구*</td>
+                                    <td class="odd">
+                                        
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">프리미엄 시즌 배틀 패스 잠금 해제***</td>
+                                    <td class="odd">
+                                        
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">더욱 진행이 빠른 시즌 배틀 패스(프리미엄 시즌 배틀 패스와 20단계 건너뛰기, 꾸미기 아이템)***</td>
+                                    <td class="odd">
+                                        
+                                    </td>
+                                    <td class="odd">
+
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="feature-label-table-cell">창조주의 날개 감정표현</td>
+                                    <td class="odd">
+                                        
+                                    </td>
+                                    <td class="odd">
+
+                                    </td>
+                                    <td class="odd">
+                                        <img src="/asset/img/odd.svg" loading="lazy" alt="가능">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="legalese-wrapper">
+                        <div class="legalese-block">
+                            <p>*탈것은 사용 전 게임 내에서 미리 해제해야 합니다.</p>
+                            <p>**디아블로 III, 월드 오브 워크래프트® 및 디아블로 이모탈은 별도 판매되거나 별도 다운로드가 필요합니다.</p>
+                            <p>***배틀 패스는 1시즌에 해제됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="social" class="social">
+                <h3 class="title">소셜 서비스</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/DiabloKR" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-facebook" viewBox="0 0 48 48" part="icon blz-icon"><title id="blz-icon-title-facebook">Facebook</title><path stroke="none" d="M42 24.11C42 14.108 33.941 6 24 6S6 14.108 6 24.11C6 33.15 12.582 40.641 21.188 42V29.345h-4.57V24.11h4.57v-3.99c0-4.539 2.687-7.046 6.798-7.046 1.97 0 4.03.354 4.03.354v4.457h-2.27c-2.236 0-2.933 1.396-2.933 2.828v3.397h4.992l-.798 5.235h-4.195V42C35.419 40.641 42 33.15 42 24.11Z"></path></svg></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC0gAVwGvV-_hyXY5wnp7BEQ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-youtube" viewBox="0 0 48 48" part="icon blz-icon"><title id="blz-icon-title-youtube">YouTube</title><path stroke="none" d="M19.909 29.91V18.09L30.364 24l-10.455 5.91Zm23.255-15.538a5.01 5.01 0 0 0-3.536-3.536C36.508 10 24 10 24 10s-12.508 0-15.628.836a5.01 5.01 0 0 0-3.536 3.536C4 17.492 4 24 4 24s0 6.508.836 9.628a5.01 5.01 0 0 0 3.536 3.536C11.492 38 24 38 24 38s12.508 0 15.628-.836a5.01 5.01 0 0 0 3.536-3.536C44 30.508 44 24 44 24s0-6.508-.836-9.628"></path></svg></a>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section id="modal">
+
+                <div class="first-modal modal-wrap">
+                    <div class="content">
+                        <div class="top-bar">
+                            <button class="modal-close" onclick="modalClose('.first-modal');">
+                                <svg xmlns="http://www.w3.org/2000/svg" color="#fff" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" part="icon blz-icon"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                        <div class="inner-content">
+                            <div class="modal-text">
+                                <h3 class="title">연령 확인</h3>
+                                <p class="normal-text">계속하려면 생년월일을 입력하세요.</p>
+                            </div>
+                            <form action="javascript:birthCheck();" id="birthForm" method="post">
+                                <select required class="form-control input-sm" id="year" name="year">
+                                    <option disabled selected value="">년</option>
+                                </select>
+                                <select required class="form-control input-sm" id="month" name="month">
+                                    <option disabled value="">월</option>
+                                </select>
+                                <select required class="form-control input-sm" id="day" name="day">
+                                    <option disabled value="">일</option>
+                                </select>
+                                <div class="submit-box">
+                                    <button type="submit" class="red_button">계속</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="second-modal modal-wrap">
+                    <div class="content">
+                        <div class="top-bar">
+                            <button class="modal-close" onclick="modalClose('.second-modal');">
+                                <svg xmlns="http://www.w3.org/2000/svg" color="#fff" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" part="icon blz-icon"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+                            </button>
+                        </div>
+                        <div class="inner-content">
+                            <div class="modal-text">
+                                <p class="white-text">죄송합니다. 귀하께서는 해당 콘텐츠를 이용할 수 없습니다.</p>
+                            </div>
+                            <form id="birthForm">
+                                <div class="submit-box">
+                                    <button type="button" class="red_button" onclick="modalClose('.second-modal');">닫기</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </div>
+
+        <footer id="footer">
+            <div class="langcont">
+                <div id="selector-toggler" tabindex="0" role="button" aria-haspopup="true" aria-label="언어 선택">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" color="#009dff" viewBox="0 0 64 64" focusable="false" aria-hidden="true">    <g>        <path d="M32,7.448C18.461,7.448,7.449,18.462,7.449,32c0,13.538,11.013,24.552,24.551,24.552   c13.538,0,24.551-11.014,24.551-24.552C56.551,18.462,45.538,7.448,32,7.448z M39.68,45.697v-5.55h1.261v5.55H39.68z M53.235,32   c0,0.351-0.036,0.694-0.053,1.041l-0.41-0.41l-3.152,3.152l-3.082-3.082h-2.601l-0.963,0.961l-4.557-4.556v-2.153h-4.438   l-2.544-2.544l-3.129,3.13h3.349l1.306,1.306H36.6l5.904,5.904v1.87l-3.528,3.528v5.746l-4.292,4.292h-1.794l-2.765-2.764v-7.469   l-1.939-1.941h-3.104l-3.201-3.199v-3.491l4.509-3.782v-4.123l7.275-7.273l2.182,2.182h5.044l3.525-3.525   C49.751,18.657,53.235,24.914,53.235,32z M18.312,15.778c0.73-0.616,1.506-1.176,2.316-1.69h9.044l-4.511,4.51h-2.989l-2.12,2.12   h-1.74V15.778z M15.335,18.865v4.212l-3.965,3.965C12.097,24.011,13.465,21.235,15.335,18.865z M10.865,33.997l9.417,7.119v3.492   l-2.803,2.859C13.811,44.021,11.36,39.299,10.865,33.997z"></path>    </g>    </svg>
+                    한국어
+                </div>
+                <div id="dropdown" role="listbox">
+                    <div id="dropdown-container">
+                        <ul>
+                            <li><a href="">English (US)</a></li>
+                            <li><a href="">Español (EU)</a></li>
+                            <li><a href="">Español (Latino)</a></li>
+                            <li><a href="">Français</a></li>
+                            <li><a href="">Português (Brasil)</a></li>
+                            <li><a href="">Italiano</a></li>
+                            <li><a href="">日本語</a></li>
+                            <li><a href="">Polski</a></li>
+                            <li><a href="">Deutsch</a></li>
+                            <li><a href="">Русский</a></li>
+                            <li><a href="">English (EU)</a></li>
+                            <li><a href="">한국어</a></li>
+                            <li><a href="">繁體中文</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="blizzard-logo">
+                <a href=""><img src="/asset/img/foot-blizzard.svg" alt="블리자드"></a>
+            </div>
+        
+            <p class="footer-link">
+                <a href="">인재 채용</a>
+                <a href="">회사 소개</a>
+                <a href="">고객지원</a>
+                <a href="">문의 등록</a>
+                <a href="">보도 자료</a>
+                <a href="">API</a>
+                <a href="">BATTLE.NET PC방</a>
+            </p>
+        
+            <div class="battlenet">한 곳에서 모든 게임을 플레이할 수 있는 <a href="">Battle.net 앱</a></div>
+        
+            <div class="inc">
+                <p>©2023 Blizzard Entertainment, Inc.<br>
+                    여기서 언급된 다른 모든  <a href="">상표</a>는 각 소유권자들의 자산입니다.</p>
+                <span>
+                    <a href="">개인정보 처리방침</a>
+                    <a href="">법률 관련 문서</a>
+                    <a href="">이용 약관</a>
+                    <a href="">쿠키정보 처리방침</a>
+                    <a href="">쿠키 설정</a>
+                </span>
+            </div>
+        
+            <div class="company">
+                블리자드 엔터테인먼트 유한 회사<br>
+                주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층<br>
+                대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: <a href="">websupport@blizzard.co.kr</a><br>
+                사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | <a href="">사업자정보확인</a><br>
+                대표이사: 다니엘 알레그레 | 개인정보 보호책임자: 이강호
+            </div>
+        
+            <div class="foot-img">
+                <p><a href=""><img src="/asset/img/18.0ZgFc.png" alt="청소년이용불가"></a> <img src="/asset/img/violence.1pDPe.png" alt="폭력성"></p>
+                <a href=""><img src="/asset/img/Diablo_IV_KR.png" alt="디아블로 상세정보"></a>
+            </div>
+        
+        </footer>
+    </div>
+    
+
+</body>
+</html>

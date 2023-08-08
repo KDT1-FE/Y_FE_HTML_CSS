@@ -214,7 +214,7 @@ button.red_button:hover::after {
     position:absolute; 
     background-repeat: no-repeat;
     background-size: cover;
-    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+    transition:opacity, filter 0.7s cubic-bezier(0.215,0.61,0.355,1);
     top:0;
     width: 100%;
     height: 100%;
@@ -242,7 +242,7 @@ button.red_button:hover::after {
     position:absolute;
     background: transparent;
     cursor: pointer;
-    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
+    transition:filter 0.7s cubic-bezier(0.215,0.61,0.355,1);
     background-image: url(../asset/img/circle-frame.webp);
     background-repeat: no-repeat;
     background-size: 55px;
@@ -677,7 +677,7 @@ span.text-sub {
     width: 100%;
     height:100vh;
     background-repeat: no-repeat;
-    transition:all 0.5s cubic-bezier(0.215,0.61,0.355,1);
+    transition:background-image 0.5s cubic-bezier(0.215,0.61,0.355,1);
 }
 #classes .classes-bg .classes-character.on {
     animation-duration: 0.5s;
@@ -752,7 +752,6 @@ span.text-sub {
     color: #878582;
     margin-top: 10px;
     display: inline-block;
-    transition: filter 350ms;
 }
 
 .swiper-pagination .swiper-pagination-bullet::before, .swiper-pagination .swiper-pagination-bullet::after,
@@ -946,7 +945,6 @@ span.text-sub {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 52px 52px, 200px 200px;
-    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
 }
 
 .swiper-button-prev:hover, .swiper-button-next:hover{
@@ -957,7 +955,6 @@ span.text-sub {
     drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 6px) 
     brightness(1.5)
     contrast(1.2);
-    transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -1126,7 +1123,7 @@ td.odd img {width:24px; height:24px;}
 #social {text-align: center;}
 #social h3.title {font-size:32px}
 #social ul {padding-top:20px; display: flex; justify-content: center; gap: 10px;}
-#social ul li svg {width:48px; height:48px; color:rgba(255,255,255,0.8); transition:all 0.7s cubic-bezier(0.215,0.61,0.355,1);}
+#social ul li svg {width:48px; height:48px; color:rgba(255,255,255,0.8); transition:filter 0.7s cubic-bezier(0.215,0.61,0.355,1);}
 #social ul li a:hover svg {color:#fff; }
 
 

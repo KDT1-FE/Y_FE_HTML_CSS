@@ -139,14 +139,21 @@ window.addEventListener('scroll', function () {
     }
 });
 
+/*
 document.querySelectorAll('.footer__banner--title-modal').forEach(function (el, index) {
     el.addEventListener('mouseover', function () {
         document.querySelectorAll('.hover__menu')[index].classList.add('show');
     });
 });
 
-document.querySelectorAll('.hover__menu').forEach(function (el, index) {
+document.querySelectorAll('.hover__menu').forEach(function (el) {
     el.addEventListener('mouseleave', function () {
+        el.classList.remove('show');
+    });
+});
+
+document.querySelectorAll('.footer__banner--title-modal').forEach(function (el) {
+    el.addEventListener('mouseover', function () {
         el.classList.remove('show');
     });
 });
@@ -154,5 +161,17 @@ document.querySelectorAll('.hover__menu').forEach(function (el, index) {
 window.addEventListener('mouseleave', function () {
     this.document.querySelectorAll('hover__menu').forEach(function (el) {
         el.classList.remove('show');
+    });
+});
+*/
+
+document.querySelectorAll('.footer__modal--button').forEach(function (container, index) {
+    container.addEventListener('mouseover', function () {
+        document.querySelectorAll('.hover__menu')[index].classList.add('show');
+    });
+
+    container.addEventListener('mouseleave', function () {
+        // 해당 인덱스의 메뉴를 숨깁니다.
+        document.querySelectorAll('.hover__menu')[index].classList.remove('show');
     });
 });

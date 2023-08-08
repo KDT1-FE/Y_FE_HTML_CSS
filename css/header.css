@@ -112,38 +112,9 @@
     cursor: pointer;
 }
 
-.header__top--hover-menu {
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    padding: 1.5rem 1rem;
-
-    position: absolute;
-    top: 170%;
+.header__hover.hover__menu {
+    top: 150%;
     right: 0;
-
-    background: #fff;
-    box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
-    border-radius: 1.4rem;
-
-    z-index: 2;
-}
-
-.header__top--hover-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__top--hover-item {
-    display: block;
-
-    line-height: 1.8rem;
-    white-space: nowrap;
-
-    cursor: pointer;
 }
 
 .header__top--toggle-text {

@@ -90,8 +90,12 @@
 
     margin: 0 auto;
 
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     white-space: nowrap;
+}
+
+:where(.header__hover) b {
+    font-weight: 600;
 }
 
 .footer__banner--item:not(:first-child)::before {

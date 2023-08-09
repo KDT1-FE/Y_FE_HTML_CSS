@@ -88,6 +88,12 @@ input:focus {
     height: 100%;
 
     overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.swiper-container.active {
+    opacity: 1;`
 }
 
 .swiper-wrapper {

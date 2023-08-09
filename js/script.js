@@ -158,3 +158,34 @@ document.querySelectorAll('.footer__modal--button').forEach(function (container,
         document.querySelectorAll('.hover__menu')[index].classList.remove('show');
     });
 });
+
+// intersection observer //
+
+//타겟 선언
+const target = document.querySelectorAll('.swiper-container');
+
+//option 설정
+const option = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3,
+};
+
+//콜백 함수
+const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active');
+        }
+    });
+};
+
+// IntersectionObserver 생성
+const observer = new IntersectionObserver(callback, option);
+
+// target 관찰
+target.forEach((target) => {
+    observer.observe(target);
+});

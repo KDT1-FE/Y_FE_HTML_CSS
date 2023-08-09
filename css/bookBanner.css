@@ -1,0 +1,78 @@
+/*
+---------------------------------------
+            BOOK BANNER
+---------------------------------------
+*/
+
+.book__banner {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.book__container {
+    width: 100%;
+    height: 90%;
+
+    margin: 0 auto;
+}
+
+.book__item--block {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-radius: 0;
+}
+
+.book__item--image-container {
+    width: 100%;
+    height: 90%;
+
+    border: 0.03rem solid gainsboro;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.book__slide--image {
+    border-radius: 0;
+}
+
+.book__item--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+
+    padding: 1rem;
+
+    font-size: 1rem;
+}
+
+.book__item--name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    margin-bottom: 1rem;
+}
+
+.book__item--price {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.book__item--unit {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.book__section {
+    transform: translateY(-100%);
+}

@@ -1,0 +1,79 @@
+/*
+------------------------------------
+            TRIP BANNER
+------------------------------------
+*/
+
+.trip__banner {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.trip__container {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+.trip__item--image-container {
+    width: 100%;
+    height: 70%;
+
+    overflow: hidden;
+}
+
+.trip__item--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    position: relative;
+
+    width: 80%;
+    height: 20%;
+}
+
+.trip__item--info-upper {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.item--info-button {
+    display: inline-block;
+
+    position: absolute;
+    transform: translateY(-50%);
+
+    font-size: 0.8rem;
+
+    padding: 0.5rem;
+
+    color: white;
+    background-color: #1769ff;
+    border-radius: 0.5rem;
+}
+
+.trip__item--info-title {
+    color: #1769ff;
+}
+
+.trip__item--info-downer {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    line-height: 1.8rem;
+}
+
+.trip__item--info-unit {
+    font-weight: 400;
+}

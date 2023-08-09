@@ -1,0 +1,235 @@
+/*
+----------------------------------
+    Header  Style
+----------------------------------
+*/
+
+.header {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+    margin: 1rem auto;
+
+    white-space: nowrap;
+}
+
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+
+.header__top--left {
+    display: flex;
+    align-items: center;
+}
+
+.header__top--logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__top--interpark-logo {
+    width: 9.125rem;
+    height: 3.125rem;
+
+    background-image: url('../assets/image/interpark_logo.svg');
+}
+
+.header__top--interpark-word {
+    font-size: 2rem;
+    font-weight: 600;
+
+    margin-left: -0.5rem;
+}
+
+.header__top--input {
+    display: flex;
+
+    margin-left: 1.5rem;
+}
+
+.header__top--input-text {
+    display: flex;
+    align-items: center;
+
+    width: 27.2rem;
+    height: 2.8rem;
+
+    position: relative;
+
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 2.4rem;
+}
+
+.header__top--input-space {
+    display: inline-block;
+
+    width: calc(100% - 4rem);
+
+    margin-left: 1rem;
+
+    background-color: transparent;
+    border: none;
+}
+
+.header__top--input-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+
+    position: absolute;
+
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+
+    background-image: url('../assets/image/header_search.svg');
+}
+
+.header__top--right {
+    display: flex;
+    align-items: center;
+
+    margin-right: 0.5%;
+}
+
+.header__top--menu {
+    display: flex;
+
+    position: relative;
+
+    gap: 1.3rem;
+}
+
+.header__top--toggle-btn {
+    cursor: pointer;
+}
+
+.header__hover.hover__menu {
+    top: 150%;
+    right: 0;
+}
+
+.header__top--toggle-text {
+    position: relative;
+}
+
+.header__top--toggle-text::before {
+    display: block;
+    content: '';
+
+    width: 3rem;
+    height: 0.5rem;
+
+    position: absolute;
+    right: -50%;
+    top: 35%;
+
+    background-image: url('../assets/image/under.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header__bottom {
+    margin-top: 1.5rem;
+}
+
+.header__bottom--menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header__bottom--menu-item {
+    display: flex;
+    align-items: center;
+
+    margin-right: 1.3rem;
+
+    font-weight: 600;
+}
+
+.header__bottom--menu-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+
+    margin-right: 0.5rem;
+}
+
+.header__bottom--menu-icon-hot {
+    width: 1.4rem;
+    height: 1.4rem;
+
+    margin-left: 0.2rem;
+
+    background-image: url('../assets/image/icon_hot.svg');
+}
+
+.header__bottom--menu-event-text {
+    position: relative;
+
+    font-weight: 600;
+}
+
+.header__bottom--menu-event-text::before {
+    content: '';
+
+    width: 0.1rem;
+    height: 1rem;
+
+    position: absolute;
+    top: 50%;
+    left: -0.75rem;
+
+    background-color: #ededed;
+    transform: translateY(-50%);
+}
+
+/*
+----------------------------------------
+            FIXED HEADER
+----------------------------------------
+*/
+
+.header__container--fixed {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 4.5rem;
+
+    position: fixed;
+    z-index: 4;
+
+    color: #111;
+    background-color: #fff;
+    border-bottom: 0.01rem solid rgba(0, 0, 0, 0.1);
+
+    transition: top 0.3s;
+}
+
+.header__wrapper--fixed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 75%;
+
+    margin: 0 auto;
+}
+
+.header__left--fixed {
+    display: flex;
+    align-items: center;
+    text-align: start;
+
+    gap: 1.3rem;
+}

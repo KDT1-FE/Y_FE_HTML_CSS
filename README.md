@@ -3,7 +3,7 @@
 ### 🔗 사이트 URL
 
 * [당근마켓 홈페이지](https://www.daangn.com)
-* [데모 사이트](https://delicate-meringue-7c0c2d.netlify.app/)
+* [데모 사이트](https://dabin-hailey-daangn-clone.netlify.app/)
 <br>
 
 ### 📆 프로젝트 기간

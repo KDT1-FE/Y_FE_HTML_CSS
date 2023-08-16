@@ -6,7 +6,7 @@
 - 브라우저상 결과는 같지만, 알아보기 쉽게 직관적으로 토스의 홈페이지 애니메이션 방식을 바꾼 곳도 있습니다.
 - 수 십개의 이벤트 핸들러가 존재하다보니, 성능 저하가 발생하였습니다. 이를 예방하고자, 한번만 일어나는 이벤트들은, 이벤트 발생 후 이벤트를 제거하여 줬으며, 이에 사용된 변수들의 메모리도 반환시켜줬습니다.
 
-- 😁[토스 홈페이지](https://toss.im)         😎[배포용 링크](https://kdt0-choiwuhyeok--silver-beijinho-ba5d8e.netlify.app) 
+- 😁[토스 홈페이지](https://toss.im)         😎[배포용 링크](https://tossclonecoding.netlify.app) 
 <br>
 
 ## 🎁기술 스택

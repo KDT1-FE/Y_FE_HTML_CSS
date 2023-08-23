@@ -1,0 +1,209 @@
+footer {
+  background-color: #FFF;
+  color: #212124;
+  border-top: 1px solid #eaebee;
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 76.8rem;
+  margin: 0 auto;
+}
+
+.footer-top {
+  padding: 4.8rem 0;
+}
+
+.footer-download {
+  width: 30.4rem;
+  float: right;
+  display: flex;
+  flex-direction: column;;
+}
+
+.footer-download-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.footer-download-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.footer-download .download-button {
+  background-color: #f2f3f6;
+  width: 14.7rem;
+  height: 4.4rem;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-download .download-button:hover {
+  background-color: #f2f3f6;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.footer-download .download-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.download-button span {
+  vertical-align: middle;
+}
+
+.download-button img {
+  vertical-align: middle;
+  width: 16px;
+  padding-right: 5px;
+}
+
+.download-button .app-store-logo {
+  width: 20px;
+}
+
+.footer-menu {
+  max-width: 76.8rem;
+  display: flex;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.footer-menu ul:last-child {
+  margin-right: 15%;
+}
+
+.footer-menu li {
+  width: fit-content;
+  list-style: none;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #212124;
+}
+
+.footer-bottom {
+  border-top: 1px solid #eaebee;
+  padding: 2.4rem 0 10rem;
+  display: grid;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-bottom-company {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.footer-bottom-icons {
+  margin-top: 0;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom-policy {
+  grid-column: 1/4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-info {
+  color: #868b94;
+  font-size: 1.3008rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.footer-bottom-contact {
+  margin-bottom: 1.6rem;
+}
+
+.footer-bottom-contact a {
+  color: #868b94;
+  font-size: 1.3008rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.footer-bottom-contact a:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.text-underline:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-icons a {
+  padding-top: 0.4rem;
+}
+
+.footer-bottom-icons a:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+/* 아이콘에 hover 하면 색변함 */
+.footer-bottom-icons a:hover {
+opacity: 64%;
+}
+
+.select-nation {
+  color: #868b94;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select-nation select {
+  color: #868b94;
+  background-color: #FFF;
+  border: none;
+  padding-left: 0.4rem;
+  -webkit-appearance: none; /* 옵션 옆에 생기는 기호 제거 */
+  outline: 0; /* 옵션 클릭하면 생기는 테두리 제거 */
+}
+
+.policy-text {
+  color: #868b94;
+  font-size: 1.3008rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.policy-text:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.footer-bottom-policy .text-gray {
+color: #4d5159;
+}
